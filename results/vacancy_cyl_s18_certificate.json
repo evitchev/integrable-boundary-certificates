@@ -1,0 +1,34 @@
+{
+ "task": "cyl sigma=18 vacancy, solutions 1, 2, 3",
+ "verdict": "VACANT (certified over Q), all three solutions",
+ "method": "genuine_kernel_modp (GF(p) certificate: tags == d-rank pins exact dimensions; kernels grow, ranks drop mod p)",
+ "prime": 2305843009213693951,
+ "prime_form": "2^61 - 1 (sparse_linalg.MODP_PRIME)",
+ "candidates": 7563,
+ "target_dimension": 25258,
+ "per_solution": {
+  "cyl1": {
+   "tags": 5106,
+   "d_rank": 5106,
+   "elapsed_seconds": 19099
+  },
+  "cyl2": {
+   "tags": 5106,
+   "d_rank": 5106,
+   "elapsed_seconds": 19232
+  },
+  "cyl3": {
+   "tags": 5106,
+   "d_rank": 5106,
+   "elapsed_seconds": 19187
+  }
+ },
+ "runner": "code/vacancy_final_modp.py",
+ "invocation": "python3 -u vacancy_final_modp.py (Pool(7), tasks ('cyl', sol, 18))",
+ "environment": "python 3.12 (python3-env), curve point t=2 via mixed_engine/cyl_P4",
+ "launch_commit": "8da5424b1b00753f3ff6da44b601e0d2d94e4904",
+ "launch_commit_note": "batch launched 2026-08-06 immediately after this commit; these tasks completed (~5.3 h each) well before both the later runner edits and the 2026-08-08 session teardown that killed the still-running sigma=20 workers",
+ "consequence": "cylindrical [I7, I11] = 0 identically over Q(t) for all three solutions (Jacobi + semicontinuity)",
+ "raw_log_excerpt": "results/vacancy_cyl_s18_certificate.log",
+ "extracted": "2026-08-08"
+}

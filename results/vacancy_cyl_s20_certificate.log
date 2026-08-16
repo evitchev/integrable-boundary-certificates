@@ -1,0 +1,28 @@
+[hb cyl3 s20 p0 +0s rss=51M] start (mod p): 16901 candidates at spin 21
+[hb cyl1 s20 p0 +0s rss=51M] start (mod p): 16901 candidates at spin 21
+[hb cyl2 s20 p0 +0s rss=51M] start (mod p): 16901 candidates at spin 21
+[hb cyl3 s20 p0 +0s rss=89M] target dim 54370; 36876 d-columns
+[hb cyl2 s20 p0 +0s rss=89M] target dim 54370; 36876 d-columns
+[hb cyl1 s20 p0 +0s rss=89M] target dim 54370; 36876 d-columns
+--- above: start block of the ABANDONED relaunch #2 (killed at 64.2% by the 2026-08-08 23:04 reboot); below: relaunch #3, which completed ---
+[hb cyl3 s20 p0 +0s rss=52M] start (mod p): 16901 candidates at spin 21
+[hb cyl2 s20 p0 +0s rss=52M] start (mod p): 16901 candidates at spin 21
+[hb cyl1 s20 p0 +0s rss=51M] start (mod p): 16901 candidates at spin 21
+[hb cyl3 s20 p0 +0s rss=89M] target dim 54370; 36876 d-columns
+[hb cyl1 s20 p0 +0s rss=89M] target dim 54370; 36876 d-columns
+[hb cyl2 s20 p0 +0s rss=89M] target dim 54370; 36876 d-columns
+[hb cyl3 s20 p0 +190798s rss=8244M] done: tags 11491, d-rank 11491, VACANT (certified over Q)
+cyl3 s20: VACANT (certified over Q, prime #0; tags = d-rank = 11491)
+[hb cyl1 s20 p0 +190966s rss=8245M] done: tags 11491, d-rank 11491, VACANT (certified over Q)
+cyl1 s20: VACANT (certified over Q, prime #0; tags = d-rank = 11491)
+[hb cyl2 s20 p0 +192385s rss=8244M] done: tags 11491, d-rank 11491, VACANT (certified over Q)
+cyl2 s20: VACANT (certified over Q, prime #0; tags = d-rank = 11491)
+
+Extracted 2026-08-11 from ~/vacancy_logs/s20_relaunch.log (relaunch #3:
+checkpointed certifier, detached, cron-guarded; preregistration in
+results/vacancy_s20_launch.json).  tags = d-rank at prime 2^61-1
+(MODP_PRIME) for each of the three cylindrical solutions, 16901
+candidates, target dimension 54370
+=> genuine vacancy over Q at cyl sigma=20 for Sol 1, 2, 3
+=> cylindrical [I9, I11] = 0 identically over Q(t), all three
+solutions -- the last three instances of the 21-pair ledger.

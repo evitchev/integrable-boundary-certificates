@@ -1,0 +1,768 @@
+{
+  "schema_version": 1,
+  "description": "Claim-to-certification registry for draft/main.tex (R1-R8). Consumed by run_certifications.py. Modes: 'run' executes by default ('expensive': true defers to --full); 'artifact' verifies pinned hashes by default and regenerates only under --full. PUBLIC EDITION: draft/dossier entries pruned; artifact pins re-pinned at post-redaction public hashes (see EXPORT_RECORD.json transformation log); provenance lint is public_lint.py under the two-tier model.",
+  "certifications": [
+    {
+      "id": "validate_component_engine",
+      "claims": [
+        "R1",
+        "R3",
+        "R7"
+      ],
+      "description": "Component OPE engine validations V1-V5: Virasoro TT, KdV [I3,I5]=0 (eqs. 28-29), paperclip [I3,I5]=0 at sampled n (eqs. 47-51), negative controls.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "validate.py"
+      ],
+      "timeout_s": 120,
+      "required_markers": [
+        "All validations passed."
+      ]
+    },
+    {
+      "id": "validate_invariant_engine",
+      "claims": [
+        "R5",
+        "R7"
+      ],
+      "description": "Symbolic-N invariant engine validations W1-W5: exact component agreement at N=2,3; KdV and O(N) [I3,I5]=0 identically in N; unique A2(2) I7 at a generic curve point (validates eq. 34 end-to-end).",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "invariant_validate.py"
+      ],
+      "timeout_s": 300,
+      "required_markers": [
+        "All invariant-engine validations passed."
+      ]
+    },
+    {
+      "id": "erratum_eq51_p6",
+      "claims": [
+        "R7"
+      ],
+      "description": "Erratum to eq. (51): re-solves the spin-5 paperclip charge from scratch and prints solved-vs-transcribed coefficient columns; the corrected P6[10] value -21889/14040 (carrying the missing factor n) must appear.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "diagnose_p6.py"
+      ],
+      "timeout_s": 120,
+      "required_markers": [
+        "-21889/14040"
+      ]
+    },
+    {
+      "id": "symbolic_commutativity",
+      "claims": [
+        "R3"
+      ],
+      "description": "[I3,I5]=0 and [I3,I7]=0 identically in n by symbolic computation over the corrected eq. (51) and the new P8.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "verify_symbolic.py"
+      ],
+      "timeout_s": 300,
+      "required_markers": [
+        "[I_3, I_7] = 0 identically in n: True",
+        "Symbolic verification complete"
+      ]
+    },
+    {
+      "id": "vacancy_tables_and_I5I7",
+      "claims": [
+        "R1",
+        "R3"
+      ],
+      "description": "Even-spin vacancy / multiplicity-one spectral tables (KdV and paperclip through charge spin 10) and [I5,I7]=0 at 20 rational n with degree bound 14, hence identically in n.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "vacancy.py"
+      ],
+      "timeout_s": 900,
+      "required_markers": [
+        "hence [I_5, I_7] = 0 identically in n."
+      ]
+    },
+    {
+      "id": "screening_fit_lvz_vectors",
+      "claims": [
+        "R4"
+      ],
+      "description": "Fitting vertex operators against [Q,I3]=[Q,I5]=0 returns the four LVZ screening vectors at generic n (e.g. (±sqrt(6)i/2, ±sqrt(10)/2) at n=3) AND the two extra pure-Y vectors (0,±sqrt2) at n=2 - the non-exhaustiveness acknowledged in R4 must remain visible in the output.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "screening_fit.py"
+      ],
+      "timeout_s": 300,
+      "required_markers": [
+        "(sqrt(6)*I/2, sqrt(10)/2)",
+        "(0, sqrt(2))"
+      ]
+    },
+    {
+      "id": "screening_annihilates_p8",
+      "claims": [
+        "R2",
+        "R4"
+      ],
+      "description": "All four LVZ screenings annihilate the independently computed spin-7 charge: the spin-7 verification of the four-screening characterization.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "test_screening_prediction.py"
+      ],
+      "timeout_s": 600,
+      "required_markers": [
+        "All four screenings annihilate I_3, I_5 AND the predicted I_7."
+      ]
+    },
+    {
+      "id": "a2_i7_formula_certification",
+      "claims": [
+        "R5",
+        "R7"
+      ],
+      "description": "From-scratch kernel solves certifying the I7 formulas: eq. (30) erratum 657->675 (the -118/675*N term must appear) and the eq. (35) sign corrections.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "diagnose_I7_formulas.py"
+      ],
+      "timeout_s": 300,
+      "required_markers": [
+        "certifying eq. 30",
+        "certifying eq. 35",
+        "-118/675*N"
+      ]
+    },
+    {
+      "id": "a2_infinitude_dictionary",
+      "claims": [
+        "R5"
+      ],
+      "description": "Exact generic Coulomb-gas dictionary needed to apply the Feigin--Frenkel all-spin theorem: point-split Phi_1,2/Phi_2,1 screening coefficients, c and sheet parametrization, coefficient-by-coefficient agreement with Vitchev eqs. (34), (36), (41), (42), and the joint-kernel lemma (Virasoro screenings S_a, S_-2/a impose no condition on the pencil, so each sheet's charge lies in the full twisted affine-Toda screening datum; asserted after external review).",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "a2_infinitude_certificate.py"
+      ],
+      "timeout_s": 300,
+      "required_markers": [
+        "generic A_2^(2) IM degrees < 50",
+        "screening equations checked: 2 + 2"
+      ]
+    },
+    {
+      "id": "cylindrical_mutual_commutativity",
+      "claims": [
+        "R6"
+      ],
+      "description": "Direct [I5,I7]=[I5,I9]=0 checks for cylindrical Solutions 2 and 3 at generic curve points.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_mutual_check.py"
+      ],
+      "timeout_s": 900,
+      "required_markers": [
+        "All direct cylindrical mutual-commutativity checks passed."
+      ]
+    },
+    {
+      "id": "resurgence_borel_check",
+      "claims": [
+        "survey-sec5"
+      ],
+      "description": "Quasiclassical/resurgence check: Gevrey-1 growth with nearest Borel singularity at |t|=4pi.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "survey_checks.py"
+      ],
+      "timeout_s": 120,
+      "required_markers": [
+        "nearest Borel singularity |t| = 4 pi"
+      ]
+    },
+    {
+      "id": "a2_branch_point_mechanism",
+      "claims": [
+        "R5"
+      ],
+      "description": "Branch-point hypothesis refutation: kernel tables at N=1 vs the branch coefficients in the formal algebra (c=1 enhancement is finite-N-relation driven). ~13 min single-threaded, so deferred to --full.  Audit-hardened 2026-08-09: previously printed booleans and exited 0 regardless (the registry marker 'ker ad_' was weak); now fail-closed -- 10 checks assert multiplicity one at sigma=3/7/9, the all-odd 0/1 kernel scan row, all three mutual commutators, I_3' != KdV mod d, and the two nonvanishing cross-tower commutators -- with a unique completion marker.",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "a2_branch_check.py"
+      ],
+      "timeout_s": 2400,
+      "required_markers": [
+        "A2 BRANCH MECHANISM COMPLETE (fail-closed)"
+      ]
+    },
+    {
+      "id": "paperclip_p8_artifact",
+      "claims": [
+        "R2"
+      ],
+      "description": "The explicit spin-7 paperclip density: hash-pinned committed artifact; --full regenerates via compute_p8.py (writes results/paperclip_P8.json in place).",
+      "mode": "artifact",
+      "command": [
+        "PYTHON",
+        "compute_p8.py"
+      ],
+      "timeout_s": 7200,
+      "required_markers": [],
+      "artifacts": [
+        {
+          "path": "results/paperclip_P8.json",
+          "sha256": "sha256:da99cb9e43ae84b63f63e0f4f7807b7a131d7e420b877a869e08c7158d6c112c"
+        },
+        {
+          "path": "results/paperclip_P8.md",
+          "sha256": "sha256:a281db4d55e70af3cef7f9fc37dabc799fd8a12759219d1f961c320337cc3119"
+        }
+      ]
+    },
+    {
+      "id": "qt_promotion_artifact",
+      "claims": [
+        "R5",
+        "R6"
+      ],
+      "description": "Q(t)-symbolic densities for A2(2) I11/I13 and cylindrical I7/I9/I11 with commutators verified identically in t: hash-pinned committed artifact; --full regenerates via promote_qt.py (~160 min on 11 workers, fail-closed).",
+      "mode": "artifact",
+      "command": [
+        "PYTHON",
+        "promote_qt.py"
+      ],
+      "timeout_s": 21600,
+      "required_markers": [],
+      "artifacts": [
+        {
+          "path": "results/qt_promotion.json",
+          "sha256": "sha256:4cd5025379fbac3c137c2a25ecf84cf7065990be3916b218c7d0879b40a7cb60"
+        },
+        {
+          "path": "results/qt_promotion.md",
+          "sha256": "sha256:b0b12e6b86474a9aa149fc40607e3b9726b7accbe359826e7b9053e31fc42069"
+        }
+      ]
+    },
+    {
+      "id": "results_documentation_pins",
+      "claims": [
+        "R5",
+        "R6",
+        "R7"
+      ],
+      "description": "Integrity pins for the committed narrative result documents. Documentation only - certification authority lives in the raw JSON/log pins (raw_certificate_pins, the *_artifact entries) per the Codex round-4 preference; these pins keep the prose in sync with the certified state.",
+      "mode": "artifact",
+      "artifacts": [
+        {
+          "path": "results/a2_generic_scan.md",
+          "sha256": "sha256:2f4637e8aa1eadec9fedfd43e0ae24122fd1e5a9090c6dc24e5acdbcab96abd9"
+        },
+        {
+          "path": "results/cylindrical_diagnosis.md",
+          "sha256": "sha256:1f5e5a4823b2f21b527366f9a7dc5edb51207e5fecf3cd320dc74f1c78b24dd8"
+        },
+        {
+          "path": "results/I7_certified.md",
+          "sha256": "sha256:4e92f16c9c1e04a090adf854d48aa602802de399467453b534029096303e5f1b"
+        },
+        {
+          "path": "results/mutual_checks.md",
+          "sha256": "sha256:9b476d9bf2e6609d82afc2e6ab416cb2931e1a4712f102c017b4cac806795671"
+        }
+      ]
+    },
+    {
+      "id": "validate_super_engine",
+      "claims": [],
+      "description": "N=1 super-OPE engine validations V1'a-V1'i: translation across parities, Res(G,G)=2T canary ({G,G}=2T supercharge algebra), SUSY variations, fermion zero-mode simple pole, Koszul sign/square-zero units, graded antisymmetry mod d, exact bosonic-subalgebra agreement with ope_engine, negative control. Phase-1 infrastructure for the SUSY-generalization program (private research note); certifies no draft claim yet.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "super_validate.py"
+      ],
+      "timeout_s": 120,
+      "required_markers": [
+        "ALL SUPER-ENGINE CHECKS PASS"
+      ]
+    },
+    {
+      "id": "super_kdv_calibration",
+      "claims": [],
+      "description": "Phase-2 SUSY calibration (audit-corrected): derives the standard quantum super-KdV I3 = :TT: - 1/4 :G dG: (POINT-SPLIT composites; prior art Kulish-Zeitlin hep-th/0312159, Chistyakova-Litvinov-Orlov 2110.05870) selected by G-invariance in the composite pencil; scans the full ad_I3 centralizer through sigma=8 (multiplicity one at sigma in {1/2,1,3,5,7}, even and half-integer vacancy elsewhere in range); direct checks [I5,I7], [G,I5], [G,I7], [I3,I5], [I3,I7]. Fail-closed; deterministic JSON.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "super_kdv.py"
+      ],
+      "timeout_s": 300,
+      "required_markers": [
+        "SUPER-KDV CALIBRATION COMPLETE"
+      ]
+    },
+    {
+      "id": "super_screening_fit",
+      "claims": [],
+      "description": "Fermionic screening analysis (audit-corrected): stage-0 sign validation (G and T impose no alpha-conditions); point-split pencil conditions showing alpha=+-1 screens EVERY kappa (screening does not select the ray; G-invariance does, kappa=-1/4); I5 conditions divisible by (alpha^2-1), alpha=0 excluded (generic-stratum statement). Sympy-heavy, deferred to --full.",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "super_screening_fit.py"
+      ],
+      "timeout_s": 900,
+      "required_markers": [
+        "SUPER-SCREENING FIT COMPLETE"
+      ]
+    },
+    {
+      "id": "super_kdv_ext",
+      "claims": [],
+      "description": "Extended corrected calibration through sigma=11: tower I3..I11 multiplicity one, vacancy elsewhere in range, direct [I5,I9], [I7,I9] checks. ~30 min; backs the sigma<=11 statements in results/super_kdv_calibration.md (audit finding 5).",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "super_kdv.py",
+        "24"
+      ],
+      "timeout_s": 5400,
+      "required_markers": [
+        "SUPER-KDV CALIBRATION COMPLETE"
+      ]
+    },
+    {
+      "id": "super_screening_deep",
+      "claims": [],
+      "description": "Deep screening verification: I7's 19 conditions all divisible by (alpha^2-1), alpha=0 excluded (audit finding 5: registers the --deep run backing the spin-7 locus claim).",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "super_screening_fit.py",
+        "--deep"
+      ],
+      "timeout_s": 1800,
+      "required_markers": [
+        "SUPER-SCREENING FIT COMPLETE"
+      ]
+    },
+    {
+      "id": "super_lambda_phase3",
+      "claims": [],
+      "description": "Phase-3 background-charge family, hardened per audit round 3: Res(G_lam,G_lam)=2T_lam symbolic; kappa(lam) asserted = -1/4; naive-ray solution set asserted exactly {kappa=-1/4, s=1/4, lam=+-sqrt(10)/4} with back-substitution; locus asserted = F-*F+ = (a^2-2la-1)(a^2+2la-1), reproducing the quartic at lam*; selection structure asserted: F- divides every free-kappa condition (single pair kappa-blind at all lam), the DUAL S+- pair selects kappa=-1/4 for lam!=0, certified branch-safely at lam=3/4 with positive and negative controls. Backs results/super_lambda.md.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "super_lambda.py"
+      ],
+      "timeout_s": 900,
+      "required_markers": [
+        "SUPER-LAMBDA PHASE-3 COMPLETE"
+      ]
+    },
+    {
+      "id": "paperclip_p10_artifact",
+      "claims": [
+        "R4"
+      ],
+      "description": "The spin-9 paperclip density P10 (49-sample rational reconstruction, multiplicity one per sample, held-out verified; denominator 63n^4(3n+4)(9n+10)(9n+14)(9n+16) extends the resonance pattern to (9n+2j), j=5..8): hash-pinned committed artifact; --full regenerates via compute_p10.py (writes results/paperclip_P10.{json,md} in place).",
+      "mode": "artifact",
+      "command": [
+        "PYTHON",
+        "compute_p10.py"
+      ],
+      "timeout_s": 7200,
+      "required_markers": [
+        "P10 COMPLETE"
+      ],
+      "artifacts": [
+        {
+          "path": "results/paperclip_P10.json",
+          "sha256": "sha256:3ade59f8412da8e9fd076decc10923929f4b14dd7859f806767ded0f6096233f"
+        },
+        {
+          "path": "results/paperclip_P10.md",
+          "sha256": "sha256:bbb30a083c1b0d1e11fe2e4a3769d83a3f8582fb80db2b12d17d21d79c44ef71"
+        }
+      ]
+    },
+    {
+      "id": "screening_spin9",
+      "claims": [
+        "R4"
+      ],
+      "description": "All four LVZ screening vectors annihilate the independently computed oint P10 at n=2,3 (all sign choices) -- the spin-9 upgrade of the four-screening verification. Sympy-heavy; deferred to --full.",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "test_screening_prediction_s9.py"
+      ],
+      "timeout_s": 3600,
+      "required_markers": [
+        "SPIN-9 SCREENING TEST PASSED"
+      ]
+    },
+    {
+      "id": "modp_validate",
+      "claims": [],
+      "description": "GF(p) vacancy certifier validated against 11 known exact verdicts across all three engines (cylindrical s4/s5/s6/s7, a2 s5/s7/s8/s9, paperclip s8/s12): certified vacancies exactly where exact runs said vacant, exact dim-1 upper bounds where charges exist. Backs the vacancy_final_modp batch verdicts.",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "modp_validate.py"
+      ],
+      "timeout_s": 1800,
+      "required_markers": [
+        "ALL MOD-P VALIDATIONS PASSED"
+      ]
+    },
+    {
+      "id": "paperclip_vacancy_1214",
+      "claims": [
+        "R1"
+      ],
+      "description": "Paperclip even-spin vacancies at sigma=12,14, VACANT at two generic n each (extends the bootstrap lemma's even-vacancy hypothesis range from sigma<=10 to sigma<=14; results/paperclip_vacancy_1214.md).",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "paperclip_vacancy_1214.py"
+      ],
+      "timeout_s": 1800,
+      "required_markers": [
+        "ALL VACANT"
+      ]
+    },
+    {
+      "id": "lv_g4_reference",
+      "claims": [],
+      "description": "LV 2105.04018 G4 structural coefficients transcribed from the LaTeX source; nine-label free-limit analysis asserted symbolically (finite exactly for (D,D),(B,C),(C,B); axis-quartic -(2/3)(n-1) for DD -- zero at the rank-one point n=1 -- and -(2n+1)/3 for BC/CB). The downstream O(N)-invariance no-go is a separately-labelled mathematical argument requiring block dimension >= 2, not a machine check. Backs the cylindrical BCD dictionary analysis (private note), section 2(a).",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "lv_g4_reference.py"
+      ],
+      "timeout_s": 600,
+      "required_markers": [
+        "LV G4 FREE-LIMIT ANALYSIS PASSED"
+      ]
+    },
+    {
+      "id": "cyl_membership",
+      "claims": [],
+      "description": "Subalgebra-membership decision computation for the cylindrical towers: exact I3/I5/I7 representatives tested against subalgebras A<=2k (X boson + Y-singlets of spin <= 2k, k=1..4), mod total derivatives; six conditions asserted fail-closed with retained controls.  Result: finite-range ladder through I7 (I3 closes at singlet spin 4, I5 at 6, I7 at 8), excluding the direct LV rank-2 W(2,4) match; a finite W(2,4,6,8)-type closure of the full towers is NOT excluded.  Non-membership at t=2 is generic by semicontinuity; table independently reproduced by dense exact ranks in review.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_membership.py"
+      ],
+      "timeout_s": 300,
+      "required_markers": [
+        "finite-range ladder through I7",
+        "CYL MEMBERSHIP COMPUTATION COMPLETE"
+      ]
+    },
+    {
+      "id": "cyl_membership_ext",
+      "claims": [],
+      "description": "Ladder extension: exact I9/I11 representatives tested against A<=8 and A<=10 with span controls; I9 not in A<=8 and I11 not in A<=10 for all three solutions, excluding the finite W(2,4,6,8) candidate -- the membership ladder covers I3..I11, the full known cylindrical charge content.  Outcomes were open before the run; only mechanical integrity is asserted.  Non-membership at t=2 generic by semicontinuity.",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "cyl_membership_ext.py"
+      ],
+      "timeout_s": 1200,
+      "required_markers": [
+        "the ladder CONTINUES",
+        "CYL LADDER EXTENSION COMPLETE"
+      ]
+    },
+    {
+      "id": "c1_enhanced_fingerprint",
+      "claims": [],
+      "description": "Enhanced c=1 tower fingerprint (finite range I3'..I9'): I3' re-derived (multiplicity one, ray (1111)-5/2(13)), certified distinct from the c=1 KdV ray with [I3_KdV,I5(c=1)] != 0; the I3' screening condition equals const*a(a^2-8)(2a^2-1) exactly; branch-safe checks at BOTH signs with sqrt3 control: exactly four nonzero momenta {+-1/sqrt2,+-2sqrt2} screen I3',I5,I7',I9'.  Self-dual degeneracy: the KdV pair +-sqrt2 annihilates I5 and I7' but NOT I3' or I9'; COMPLETE joint {+-sqrt2} kernel table certified at charge spins 1..9: dims 1,0,1,0,2,0,3,1,4 (series q+q^3+2q^5+3q^7+q^8+4q^9, including the even spin-8 class), with independent KdV/A2 classes at weights 6,8.  Merger arithmetic at a^2=2 asserted as CANDIDATE mechanism.  38 checks, ~110 s, fast suite.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "c1_enhanced_fingerprint.py"
+      ],
+      "timeout_s": 600,
+      "required_markers": [
+        "complete joint-kernel table at charge spins 1..9",
+        "C1 ENHANCED-TOWER FINGERPRINT CERTIFIED"
+      ]
+    },
+    {
+      "id": "getmanov_stage2",
+      "claims": [],
+      "description": "Getmanov identification (KL 1910.05947 cigar W-infinity), audit-corrected twice: W2/W3 transcribed with every stated OPE reproduced (c(k)=2+6/k; W3W3 pole tower; W2W4 mixing); W4 solved from the W3W3 pole-2; I3^G annihilated by its three screenings at k=1/4.  IDENTIFICATION: phi-axis pullback ratio -(k^2+12k+16)/(2k) matches the enhanced 5/2 at (k+1)(k+16)=0 with exact I3'-ray equality at k=-1,-16; theta locus k^3+23k^2+55k+42.  A FORMAL ANALYTIC-CONTINUATION candidate at the I3-ray level (isolated matches expected; I5 comparison decisive).  Lift structure certified: exactly one branch-correlated dual pair lifts to the full charge, complement emergent, nothing on theta.  31 checks; passes py3.8/sympy1.13 and py3.12/1.14; ~2 s.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "getmanov_stage2.py"
+      ],
+      "timeout_s": 300,
+      "required_markers": [
+        "GETMANOV AXIS-PULLBACK MATCHES FOUND",
+        "GETMANOV STAGE-2 COMPLETE"
+      ]
+    },
+    {
+      "id": "getmanov_i5_pullback",
+      "claims": [],
+      "description": "The decisive Getmanov identification test, audit-corrected: the weight-6 Getmanov charge space (FULL joint kernel of the three screenings mod d, robust to I5-normalization ambiguities) via CORRELATION-PRESERVING restriction of scalars (full split vectors; B-stable spaces with K-dim = Q-dim/|B| asserted) and sparse integer elimination.  Validations: generic weight-4 K-dim 1 with assembled I3^G ray equality; both special-point weight-4 pullbacks reproduce the certified I3' ray; comparators independent; K-dims match the reviewer's independent grouped table ((2,1) at k=-1, (1,1) at k=-16).  VERDICT (baked as fail-closed regression check): the enhanced I5 class is NOT in the phi-axis pullback span at k=-1 or k=-16 -- the two RATIONAL phi-axis candidates are excluded at I5.  Theta-axis (irrational cubic) and tilted embeddings untested; AKNS disfavored, not excluded.  13 checks (incl. generic I5^G multiplicity one and certified KdV absence at both points), ~48 s.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "getmanov_i5_pullback.py"
+      ],
+      "timeout_s": 600,
+      "required_markers": [
+        "I5 PULLBACK FAILS at both points",
+        "GETMANOV I5 PULLBACK TEST COMPLETE"
+      ],
+      "forbidden_markers": [
+        "FAIL ",
+        "FAILURES:",
+        "TEST FAILED",
+        "Traceback",
+        "MISMATCH"
+      ]
+    },
+    {
+      "id": "getmanov_theta_axis",
+      "claims": [],
+      "description": "Closes the last axis-aligned Getmanov locus: the theta-axis I3 matching cubic k^3+23k^2+55k+42 (irreducible, asserted) tested at ALL THREE roots and both sqrt branches in one exact computation over A = Q[k,u,v]/(C, u^2+k/2, v^2-(k+2)/2), dim 12 -- PROVEN A FIELD (z=u+v satisfies a review-supplied irreducible degree-12 polynomial, asserted in-algebra), so match ideals are 0 or A and Q-dim 12 = A-rank 1.  Membership via the match ideal E(t) = {a : a*t in span}.  Controls (degree-1 algebra k+1, independent stack): certified phi-axis facts reproduce (E4=4/4, E6=0, KdV 0), theta k=-1 negative reproduces, and the k=-1 w6 kernel Q-dim 8 = A-rank 2 enrichment is ASSERTED.  VERDICT (baked fail-closed): E4 = 12/12 with weight-4 joint AND pullback Q-dims asserted at 12 (A-rank 1) -- genuine RAY EQUALITY on the full cubic -- but E6(A2) = 0/12 and E6(KdV) = 0/12: the enhanced I5 class is absent at every root and branch (w6 fiber A-rank 1).  With the phi-axis exclusion: no axis-aligned Getmanov embedding reproduces the enhanced tower at two-charge depth; tilted embeddings only remain.  16 checks; passes py3.8/sympy1.13 and py3.12/1.14; ~7 s.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "getmanov_theta_axis.py"
+      ],
+      "timeout_s": 300,
+      "required_markers": [
+        "theta-axis EXCLUDED AT I5 at every root and branch",
+        "GETMANOV THETA-AXIS TEST COMPLETE"
+      ]
+    },
+    {
+      "id": "symmetric_pair_character",
+      "claims": [],
+      "description": "The q^8 resolution, upgraded to an ALL-WEIGHT THEOREM (review round; citation verified against the paper): the joint {+-sqrt2} kernel at c=1 is the horizontal-sl2 FIXED-POINT subVOA V_{A1}^{sl2} = L(1,0), the c=1 Virasoro vacuum algebra (Dong-Griess arXiv:q-alg/9710017 Cor 2.4 -- the review's '2.1' is the adjacent equation label) -- i.e. the T-COMPOSITE charges -- so dim(w) = p_ge2(w)-p_ge2(w-1) for ALL w>=2 (E,F zero modes commute with L_-1; grades semisimple; invariants exact; L_-1 injective).  NOT an affine coset commutant.  This full run independently verifies 13 consecutive weights 2..14 (cross-stack at 2..10 incl. the even-spin spin-8 class; four falsifiable predictions 2,7,3,10 at 11..14 confirmed) plus dictionary, negative control, and T-composite anchors.  Corrects the odd-spin (sigma-1)/2 observation (fails at sigma=11).  Pinned artifact results/symmetric_pair_dims.json.  34 checks, ~43 min (py3.12).",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "symmetric_pair_character.py"
+      ],
+      "timeout_s": 5400,
+      "required_markers": [
+        "SYMMETRIC-PAIR CHARACTER IDENTITY CERTIFIED (weights 2..14)",
+        "SYMMETRIC-PAIR CHARACTER COMPLETE"
+      ],
+      "expensive": true,
+      "artifacts": [
+        {
+          "path": "results/symmetric_pair_dims.json",
+          "sha256": "sha256:efb7ab5ac22a685f58a754d63ccbbbb48c54b5116c5fa833a19c5092382839ef"
+        }
+      ]
+    },
+    {
+      "id": "symmetric_pair_character_fast",
+      "claims": [],
+      "description": "Fast-suite companion of symmetric_pair_character: recomputes the joint {+-sqrt2} kernel charge dims at weights 2..8 (~1 s), asserts the theorem formula, the partition identity, h=1 dictionary, J^3 negative control, T-composite anchors (KdV I3 in / I3' out at w4; both I5 classes in at w6), and READS results/symmetric_pair_dims.json (dims 2..8 vs this run, 9..14 vs the theorem, run_commit resolves; the file's SHA-256 is pinned on the expensive entry, verified every pass).  26 checks.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "symmetric_pair_character.py",
+        "fast"
+      ],
+      "timeout_s": 300,
+      "required_markers": [
+        "SYMMETRIC-PAIR CHARACTER FAST SUITE PASSED",
+        "SYMMETRIC-PAIR CHARACTER COMPLETE"
+      ]
+    },
+    {
+      "id": "collapsed_validate",
+      "claims": [
+        "R6",
+        "engines"
+      ],
+      "description": "Collapsed Wick enumerator validation: exact equality original-vs-collapsed on multiplicity-heavy monomials plus a physics regression through residue_mixed_cur with the router monkeypatched in. Probed at 351 s, hence expensive-flagged (runs under --full).",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "collapsed_validate.py"
+      ],
+      "timeout_s": 1200,
+      "required_markers": [
+        "ALL COLLAPSED VALIDATIONS PASSED"
+      ]
+    },
+    {
+      "id": "raw_certificate_pins",
+      "claims": [
+        "R5",
+        "R6",
+        "provenance"
+      ],
+      "description": "Raw JSON/log certificates as the certification authority (Codex round 4: prefer raw pins over narrative-md): the committed sigma=18 (cylindrical) and sigma=24 (a2) vacancy certificates with their run logs; extended 2026-08-11 with the sigma=20 certificates and the merged batch JSON (ledger 21/21).",
+      "mode": "artifact",
+      "artifacts": [
+        {
+          "path": "results/vacancy_cyl_s18_certificate.json",
+          "sha256": "sha256:e6b0718f7fcaa6ccae8169e9551bbf58b852a95f9d8717b17d24b30bfab7774a"
+        },
+        {
+          "path": "results/vacancy_cyl_s18_certificate.log",
+          "sha256": "sha256:02d3e48a69af7463d1dfa7a59f105cfccb10b5ccf2c8f8979bef8eb7b3915bbe"
+        },
+        {
+          "path": "results/vacancy_a2_s24_certificate.json",
+          "sha256": "sha256:e22193b21dcceecb71387ccd459584c45a198b71465ee39e8a6e5c16fb739be8"
+        },
+        {
+          "path": "results/vacancy_a2_s24_certificate.log",
+          "sha256": "sha256:2d6c8e81146a021ce7a80f2664ba674f873e762f2ba05f18a8a81231c0a517f5"
+        },
+        {
+          "path": "results/vacancy_cyl_s20_certificate.json",
+          "sha256": "sha256:21047c0fc48d55f7a70db804664173267ab3446d853102c2c3dec094ce0c5c07"
+        },
+        {
+          "path": "results/vacancy_cyl_s20_certificate.log",
+          "sha256": "sha256:b6acdec2429deb5437dbc3888f51c68a27b95152d28b27a982f94cacf9ce3f00"
+        },
+        {
+          "path": "results/vacancy_final_modp.json",
+          "sha256": "sha256:96547722d67ec9d04f558446d388e4145293c806793e552446a68c707ed89f23"
+        },
+        {
+          "path": "results/vacancy_s20_launch.json",
+          "sha256": "sha256:22b1e6d5764b97fa40802525b3c414ac017d4f6f56002e67f3ff4c6feea2dd01"
+        },
+        {
+          "path": "results/vacancy_final_modp_s20.json",
+          "sha256": "sha256:ece5dc277b7e5a8c2a4f8cf3d3d63e53c3c3ada372c0338e588b0e1bc10509b6"
+        }
+      ]
+    },
+    {
+      "id": "vacancy_final_modp_smoke",
+      "claims": [
+        "R5",
+        "R6"
+      ],
+      "description": "High-spin vacancy via the SUPERSEDING GF(p) stack (vacancy_final_modp.py replaced the fraction-free vacancy_high.py, whose heavy sectors OOM'd and probe-measured at weeks-scale). The smoke task set (cyl sigma=12, one worker) verifies the certified kernel path end-to-end; the production batches (full/cyl20) are detached setsid launches, deliberately NOT certifier checks - their authority is the raw certificates in raw_certificate_pins. Do not run under --full while a production batch is live (memory/core contention with the 18 GB-capped workers).",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "vacancy_final_modp.py",
+        "smoke"
+      ],
+      "timeout_s": 3600,
+      "required_markers": [
+        "ALL VACANT (certified)"
+      ]
+    },
+    {
+      "id": "lean_certificates",
+      "claims": [
+        "R1",
+        "R3"
+      ],
+      "description": "Kernel-checked Lean 4 + Mathlib proofs of the abstract skeletons (lean/Bootstrap.lean): draft Lemma 1 (bootstrap lemma, graded-Lie form and as-stated odd-spin form) and R3's degree-bound interpolation argument. Includes a negative control (a false proof must be rejected). Expensive: the pinned Lean toolchain is machine-local, not part of the sympy-only portable core; fails loudly where absent. Division of labor per lean/README.md: Lean certifies the skeletons, the engines certify the instances.",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "lean_check.py"
+      ],
+      "timeout_s": 1800,
+      "required_markers": [
+        "ALL LEAN CERTIFICATES KERNEL-CHECKED"
+      ]
+    },
+    {
+      "id": "ff_ising_quotient",
+      "claims": [],
+      "description": "FF quotient experiment I (Ising, t=+-7): dictionary coherence (c(a) re-derived from ope_pole; curve_point(+-7)=(1/2,-+7/2); the dual points a^2=3/2, 8/3 hit c=1/2 with matching sheet signs); the level-6 Ising vacuum null field DERIVED in-engine as the unique primary weight-6 T-composite (dim 1 at both Ising points, dim 0 at the a=3 control); and the ONE-SHEET resolution, baked with exact ranks ((1,1) dying, (1,2) surviving): at BOTH dual realizations Vitchev's s=-7/2 spin-5 charge (physical t=+7, K=225/8) has charge class EQUAL to the null-field class modulo total derivatives -- it vanishes in the Ising quotient -- while the deck-conjugate s=+7/2 charge (K=15) survives as a nonzero class.  Priority: the dropout itself is prior art (FF Sec. 4.8.3, citing [Zam, fz]); the E8 pattern is conjectural there; the explicit density/null-class exhibit in Vitchev normalization and the one-sheet resolution are new in this project, with earlier literature not exhaustively searched.  16 checks; py3.8 and py3.12; ~1 s.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "ff_ising_quotient.py"
+      ],
+      "timeout_s": 300,
+      "required_markers": [
+        "VERDICT: ONE SHEET DIES",
+        "FF ISING QUOTIENT EXPERIMENT COMPLETE"
+      ]
+    },
+    {
+      "id": "c1_four_condition_char",
+      "claims": [
+        "companion Sec. 2: four-condition characterization (joint kernel multiplicity one at odd spins 1..9, zero at even, weights 2..10)"
+      ],
+      "description": "The four-condition CHARACTERIZATION (adversarial-review upgrade): the momenta {+-1/sqrt2, +-2sqrt2} are the c=1 Kac momenta alpha_{r,s}=(s-r)/sqrt2 of Phi_12/Phi_21 (h=1/4) and Phi_15/Phi_51 (h=4), asserted; the joint kernel of ALL FOUR first-order conservation conditions has charge K-dim exactly 1 at every odd spin 1..9 and 0 at every even spin (weights 2..10, restriction of scalars over Q(sqrt2)) -- so through the range the enhanced tower (together with the spin-1 charge ∮T) IS, with multiplicity one, the common conserved structure of the Phi_12/Phi_21 and Phi_15/Phi_51 perturbations at c=1.  The four conditions characterize the tower, not merely admit it.  Scoping (corrected on review): all four labels lie in the single known A2(2) family of integrable directions -- Phi_15 included, per Kausch-Takacs-Watts and Berkovich-McCoy-Pearce -- as c<1 M(p,p') antecedents of the formal c=1 labels; relevance bears on flows, not the first-order condition.  13 checks; py3.8 and py3.12; ~14 s.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "c1_four_condition_char.py"
+      ],
+      "timeout_s": 600,
+      "required_markers": [
+        "FOUR-CONDITION CHARACTERIZATION CERTIFIED",
+        "FOUR-CONDITION CHARACTERIZATION COMPLETE"
+      ]
+    },
+    {
+      "id": "public_provenance_lint",
+      "claims": [
+        "provenance"
+      ],
+      "description": "Public two-tier provenance verification: RELEASE_MANIFEST file hashes, artifact semantic agreement (launch declarations and merged-record sources), and the privacy screen recorded in EXPORT_RECORD.json. Private-development commit SHAs inside artifacts are opaque archival references by design; see README section 'Provenance model'.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "public_lint.py"
+      ],
+      "timeout_s": 300,
+      "required_markers": [
+        "PUBLIC PROVENANCE LINT PASSED"
+      ]
+    }
+  ],
+  "coverage_gaps": [
+    "R2's zero/pole-divisor and duality-covariance prose is verified narratively (second audit pass), not by a retained script.",
+    "R8 is a data-backed conjecture: the kernel side comes from vacancy_tables_and_I5I7 and the screening side from screening_annihilates_p8; no certification can apply to the conjecture itself.",
+    "Cylindrical printed I5 formulas eqs. (54)/(56)/(58) are not encoded; the R7 erratum is deliberately narrowed to eqs. (53)/(55)/(57).",
+    "Mutual commutativity of higher promoted pairs: COMPLETE 2026-08-11 -- all 21 instances of the inventory (18 cylindrical pair instances + the three higher A2(2) pairs; brackets with each family's defining low charge vanish by construction) are proved identically over Q(t) via even-spin vacancy certificates (fraction-free through sigma=16; GF(p) tags=d-rank certificates for cyl sigma=18 x3 = 5106, A2 sigma=24 = 5117, cyl sigma=20 x3 = 11491).  Evidence: raw_certificate_pins artifacts incl. the preregistered launch declaration and the merged batch record; results/vacancy_final.md supersedes the partial doc.  The historical 70-71-point checks stand as independent evidence.  This closes computed-range mutual commutativity; it does NOT prove infinitude of the cylindrical hierarchies.",
+    "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
+  ],
+  "_public_edition": {
+    "generated_on": "2026-08-16",
+    "pruned_entry_ids": [
+      "certificate_provenance_lint",
+      "dossier_evidence_pins",
+      "draft_builds_and_hash"
+    ],
+    "artifact_pins_dropped_as_private": 0
+  }
+}

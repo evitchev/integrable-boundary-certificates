@@ -1,0 +1,31 @@
+{
+ "product": "naive-concatenation",
+ "stage0": {
+  "G": [],
+  "T": []
+ },
+ "pencil_conditions": [
+  "alpha*(4*alpha**4*kappa - 2*alpha**4 - 18*alpha**2*kappa + 9*alpha**2 + 12*kappa)",
+  "4*alpha**4*kappa - 2*alpha**4 - 10*alpha**2*kappa + 11*alpha**2 + 4*kappa - 2",
+  "alpha**3*(4*kappa + 1)"
+ ],
+ "branches": {
+  "bare_psi_kappa": [
+   "1/2"
+  ],
+  "nonzero_alpha_kappa": [
+   "-1/4"
+  ],
+  "bare_psi_exact_at_kappa_half": true
+ },
+ "selection": "G-invariance selects kappa = -1/4",
+ "locus": "2*alpha**4 - 9*alpha**2 + 2",
+ "verified": {
+  "I5": {
+   "n_conditions": 7,
+   "all_divisible_by_locus": true,
+   "alpha0_excluded": true,
+   "exact_at_pm1": null
+  }
+ }
+}

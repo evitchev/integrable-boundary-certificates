@@ -1,0 +1,72 @@
+{
+ "candidates": 16901,
+ "consequence": "cylindrical [I9, I11] = 0 identically over Q(t) for all three solutions (Jacobi + one-point-vacancy specialization, kernel-checked in lean/Specialization.lean); completes the 21-instance ledger",
+ "launch_declaration": "results/vacancy_s20_launch.json",
+ "method": "genuine_kernel_modp (GF(p) certificate: tags == d-rank pins exact dimensions; kernels grow, ranks drop mod p); checkpointed run",
+ "per_solution": {
+  "cyl1": {
+   "d_rank": 11491,
+   "elapsed_seconds": 190966,
+   "tags": 11491
+  },
+  "cyl2": {
+   "d_rank": 11491,
+   "elapsed_seconds": 192385,
+   "tags": 11491
+  },
+  "cyl3": {
+   "d_rank": 11491,
+   "elapsed_seconds": 190798,
+   "tags": 11491
+  }
+ },
+ "prime": 2305843009213693951,
+ "prime_form": "2^61 - 1 (sparse_linalg.MODP_PRIME)",
+ "provenance": {
+  "certificate_generation_commit": "e1ba06e1c5852269fa89d93c89517468529d54dc",
+  "dirty_path_count": 9,
+  "dirty_paths": [
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "results/vacancy_cyl_s20_certificate.log",
+   "results/vacancy_final_modp_s20.json"
+  ],
+  "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+  "post_commit_restamp": {
+   "certificate_generation_commit": "87e888a8385ca17c3d2cfccb5022db95faa37278",
+   "dirty_path_count": 7,
+   "dirty_paths": [
+    "[untracked-workspace-file]",
+    "[untracked-workspace-file]",
+    "[untracked-workspace-file]",
+    "[untracked-workspace-file]",
+    "[untracked-workspace-file]",
+    "[untracked-workspace-file]",
+    "[untracked-workspace-file]"
+   ],
+   "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+   "python": "3.12.8",
+   "stamped_at_utc": "2026-08-12T04:59:02+00:00",
+   "sympy": "1.14.0",
+   "worktree_dirty": true
+  },
+  "post_commit_restamp_note": "The original provenance block records worktree_dirty with the artifact's own sources among the dirty paths: generation necessarily ran inside the closing pass, which writes all artifacts and commits only after review -- so at stamp time its outputs were uncommitted by construction.  This re-stamp was taken after the closing commit; the only remaining dirty paths are untracked working files of a co-resident agent, none of which is a source of this artifact.",
+  "python": "3.12.8",
+  "runner_launch_commit": "f3b22a8e1894299bad150765252c3c2f32f3f4a4",
+  "runner_launch_commit_source": "results/vacancy_s20_launch.json (stamped at declaration, clean tree)",
+  "stamped_at_utc": "2026-08-11T11:27:08+00:00",
+  "sympy": "1.14.0",
+  "worktree_dirty": true
+ },
+ "raw_log_excerpt": "results/vacancy_cyl_s20_certificate.log",
+ "runner": "code/vacancy_final_modp.py (cyl20 task set)",
+ "target_dimension": 54370,
+ "task": "cyl sigma=20 vacancy, solutions 1, 2, 3",
+ "verdict": "VACANT (certified over Q), all three solutions",
+ "verdict_date": "2026-08-11"
+}

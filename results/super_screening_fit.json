@@ -1,0 +1,36 @@
+{
+ "product": "point-split",
+ "stage0": {
+  "G": [],
+  "T": []
+ },
+ "pencil_conditions": [
+  "alpha*(alpha - 1)*(alpha + 1)*(2*alpha**2*kappa - alpha**2 - 6*kappa)",
+  "(alpha - 1)**2*(alpha + 1)**2*(2*kappa - 1)",
+  "alpha*(alpha - 1)*(alpha + 1)*(4*kappa + 1)"
+ ],
+ "branches": {
+  "bare_psi_kappa": [
+   "1/2"
+  ],
+  "alpha_pm1_screens_every_kappa": true,
+  "generators_exact_at_pm1": true,
+  "bare_psi_exact_at_kappa_half": true
+ },
+ "selection": "G-invariance selects kappa = -1/4 (screening does not select in the point-split pencil)",
+ "locus": "alpha**2 - 1",
+ "verified": {
+  "I5": {
+   "n_conditions": 7,
+   "all_divisible_by_locus": true,
+   "alpha0_excluded": true,
+   "exact_at_pm1": true
+  },
+  "I7": {
+   "n_conditions": 19,
+   "all_divisible_by_locus": true,
+   "alpha0_excluded": true,
+   "exact_at_pm1": true
+  }
+ }
+}

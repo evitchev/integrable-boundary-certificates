@@ -1,0 +1,21 @@
+[hb cyl2 s18 p0 +0s rss=48M] start (mod p): 7563 candidates at spin 19
+[hb cyl3 s18 p0 +0s rss=48M] start (mod p): 7563 candidates at spin 19
+[hb cyl1 s18 p0 +0s rss=48M] start (mod p): 7563 candidates at spin 19
+[hb cyl3 s18 p0 +0s rss=65M] target dim 25258; 16901 d-columns
+[hb cyl1 s18 p0 +0s rss=65M] target dim 25258; 16901 d-columns
+[hb cyl2 s18 p0 +0s rss=65M] target dim 25258; 16901 d-columns
+[hb cyl1 s18 p0 +19099s rss=2195M] done: tags 5106, d-rank 5106, VACANT (certified over Q)
+cyl1 s18: VACANT (certified over Q, prime #0; tags = d-rank = 5106)
+[hb cyl3 s18 p0 +19187s rss=2195M] done: tags 5106, d-rank 5106, VACANT (certified over Q)
+cyl3 s18: VACANT (certified over Q, prime #0; tags = d-rank = 5106)
+[hb cyl2 s18 p0 +19232s rss=2195M] done: tags 5106, d-rank 5106, VACANT (certified over Q)
+cyl2 s18: VACANT (certified over Q, prime #0; tags = d-rank = 5106)
+
+Extracted 2026-08-08 from the 7-task GF(p) batch heartbeat log
+(preserved in full at ~/vacancy_logs/batch7_killed_at_90pct_2026-08-08.log
+after the batch's sigma=20 workers were killed by a session teardown;
+the sigma=18 tasks above had COMPLETED long before the kill).
+tags = d-rank = 5106 at prime 2^61-1 (MODP_PRIME) for each of the
+three cylindrical solutions, 7563 candidates, target dimension 25258
+=> genuine vacancy over Q at cyl sigma=18 for Sol 1, 2, 3
+=> cylindrical [I7, I11] = 0 identically over Q(t), all three solutions.

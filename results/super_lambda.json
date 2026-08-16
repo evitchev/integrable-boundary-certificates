@@ -1,0 +1,56 @@
+{
+ "checks": {
+  "GG_eq_2T_symbolic": true
+ },
+ "kappa_of_lambda": "-1/4",
+ "hypothesis": {
+  "solutions": [
+   "(-1/4, 1/4, -sqrt(10)/4)",
+   "(-1/4, 1/4, sqrt(10)/4)"
+  ],
+  "solution_set_exact": true,
+  "back_substitution_ok": true,
+  "verdict": "CONFIRMED: naive I3 ray = I3(lambda*) member (ray-level; higher stored charges pinned by centralizer equality + multiplicity one in range)"
+ },
+ "locus": {
+  "conditions": [
+   "-alpha*(alpha**2 - 2*alpha*lam - 1)*(alpha**2 + 2*alpha*lam - 1)",
+   "-3*(alpha**2 - 2*alpha*lam - 1)*(alpha**2 + 2*alpha*lam - 1)"
+  ],
+  "gcd": "(alpha**2 - 2*alpha*lam - 1)*(alpha**2 + 2*alpha*lam - 1)",
+  "is_Fminus_times_Fplus": true,
+  "matches_naive_quartic_at_lambda_star": true
+ },
+ "selection": {
+  "conditions": [
+   "alpha*(alpha**2 - 2*alpha*lam - 1)*(2*alpha**2*kappa - alpha**2 + 12*alpha*kappa*lam - 6*kappa)",
+   "(alpha**2 - 2*alpha*lam - 1)*(2*alpha**2*kappa - alpha**2 + 12*alpha*kappa*lam - 2*kappa + 1)",
+   "(alpha + 6*lam)*(4*kappa + 1)*(alpha**2 - 2*alpha*lam - 1)"
+  ],
+  "F_minus_divides_every_condition": true,
+  "kappa_m14_locus_is_dual_pair": true,
+  "branch_safe_table_lam_3_4": {
+   "0": {
+    "2": true,
+    "-1/2": true,
+    "1/2": false,
+    "-2": false
+   },
+   "1": {
+    "2": true,
+    "-1/2": true,
+    "1/2": false,
+    "-2": false
+   },
+   "-1/4": {
+    "2": true,
+    "-1/2": true,
+    "1/2": true,
+    "-2": true
+   }
+  },
+  "branch_safe_table_ok": true,
+  "statement": "the single pair F- is kappa-blind at every lam; kappa = -1/4 adjoins the sign-reflected pair F+; the DUAL S+- pair selects the super-KdV ray for lam != 0; at lam = 0 the pairs coincide and screening cannot select"
+ },
+ "anomalies": []
+}

@@ -1,0 +1,20 @@
+{
+ "task": "a2 sigma=24 vacancy",
+ "verdict": "VACANT (certified over Q)",
+ "method": "genuine_kernel_modp (GF(p) certificate: tags == d-rank pins exact dimensions; kernels grow, ranks drop mod p)",
+ "prime": 2305843009213693951,
+ "prime_form": "2^61 - 1 (sparse_linalg.MODP_PRIME)",
+ "candidates": 6989,
+ "target_dimension": 34057,
+ "tags": 5117,
+ "d_rank": 5117,
+ "elapsed_seconds": 107676,
+ "runner": "code/vacancy_final_modp.py",
+ "invocation": "python3 -u vacancy_final_modp.py (Pool(7), task ('a2', None, 24))",
+ "environment": "python 3.12 (python3-env), curve point t=2 via invariant_engine.curve_point",
+ "launch_commit": "8da5424b1b00753f3ff6da44b601e0d2d94e4904",
+ "launch_commit_note": "batch launched 2026-08-06 immediately after this commit; the runner file was edited later (memory-cap handling only, d164270/2aa55ab-era) but the running batch executes the launch-time code from memory",
+ "consequence": "A2(2) [I11,I13] = 0 identically over Q(t) (Jacobi + semicontinuity); completes the A2(2) pair program",
+ "raw_log_excerpt": "results/vacancy_a2_s24_certificate.log",
+ "extracted": "2026-08-07"
+}

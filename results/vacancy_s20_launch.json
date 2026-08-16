@@ -1,0 +1,20 @@
+{
+  "acceptance": "tags == d-rank at prime 2^61-1 for each solution => genuine vacancy over Q at cyl sigma=20 => cylindrical [I9,I11] = 0 identically over Q(t) for all three solutions (Jacobi + semicontinuity); completes the 21/21 mutual-commutativity ledger",
+  "kind": "launch_declaration",
+  "notes": "Relaunch #3 of the sigma=20 trio (killed at 90.5% by a session teardown, then at 64.2% by the 2026-08-08 23:04 reboot).  This launch runs the checkpointed certifier of commit f3b22a8 (kill/resume smoke-tested at sigma=12 before production), detached via setsid with a user-cron @reboot relaunch guarded by batch-JSON existence; checkpoints under ~/vacancy_logs/ckpts/ every 1500 candidates.  Declaration written ~15 min after the 23:23 launch; worktree clean at HEAD = the running code.",
+  "provenance": {
+    "dirty_path_count": 0,
+    "dirty_paths": [],
+    "launch_commit": "f3b22a8e1894299bad150765252c3c2f32f3f4a4",
+    "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+    "python": "3.12.8",
+    "stamped_at_utc": "2026-08-09T03:27:28+00:00",
+    "sympy": "1.14.0",
+    "worktree_dirty": false
+  },
+  "tasks": [
+    "cyl1 s20",
+    "cyl2 s20",
+    "cyl3 s20"
+  ]
+}

@@ -1,0 +1,3 @@
+# The engines and all certifications are pure Python + sympy.
+# Certified environment (results/certification_manifest.json): sympy 1.14.0.
+sympy>=1.12

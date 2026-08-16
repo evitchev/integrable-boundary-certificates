@@ -1,0 +1,60 @@
+{
+  "description": "Submission-state certification seal at the manuscript freeze: the five hours-class checks named by the release gatekeeper, run to completion at this tree state, plus the full fast suite.",
+  "expensive_checks": [
+    {
+      "id": "a2_branch_point_mechanism",
+      "status": "pass",
+      "wall_minutes": 13
+    },
+    {
+      "id": "collapsed_validate",
+      "status": "pass",
+      "wall_minutes": 3
+    },
+    {
+      "id": "vacancy_final_modp_smoke",
+      "status": "pass",
+      "wall_minutes": 1
+    },
+    {
+      "id": "lean_certificates",
+      "status": "pass",
+      "wall_minutes": 3
+    },
+    {
+      "id": "symmetric_pair_character",
+      "status": "pass",
+      "wall_minutes": 31
+    }
+  ],
+  "fast_suite": {
+    "failures": 0,
+    "passed": 32,
+    "pinned_only": 11,
+    "status": "passed_fast_checks_and_pins",
+    "total": 43
+  },
+  "honest_scope": "A certification-state record at the freeze, not a scientific claim: it certifies that every registered check either passed at this tree state or has an intact hash-pinned artifact.",
+  "kind": "freeze_seal",
+  "provenance": {
+    "dirty_path_count": 8,
+    "dirty_paths": [
+      "results/vacancy_final_modp_smoke.json",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]"
+    ],
+    "launch_commit": "598818406fc53315207662a1256e04f7843a2c55",
+    "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+    "python": "3.12.8",
+    "stamped_at_utc": "2026-08-15T20:28:16+00:00",
+    "sympy": "1.14.0",
+    "worktree_dirty": true
+  },
+  "skipped_regenerations": "compute_p8, promote_qt, and the multi-day GF(p) vacancy batches are pinned-only by design (release gate caveat): their committed raw certificates verify by hash; nothing is re-run.",
+  "worktree_note": "The residual dirty state recorded in provenance.dirty_paths consists exclusively of another session's untracked agent-workspace files ([untracked-workspace-files], [untracked-workspace-file]) plus this seal file itself at stamp time; no tracked repository content was modified. The smoke-run output produced by this seal batch is committed alongside."
+}

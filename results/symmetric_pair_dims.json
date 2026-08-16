@@ -1,0 +1,24 @@
+{
+ "object": "joint {+-sqrt2} kernel charge dimensions, one boson, c=1",
+ "dims_by_weight": {
+  "2": 1,
+  "3": 0,
+  "4": 1,
+  "5": 0,
+  "6": 2,
+  "7": 0,
+  "8": 3,
+  "9": 1,
+  "10": 4,
+  "11": 2,
+  "12": 7,
+  "13": 3,
+  "14": 10
+ },
+ "formula": "p_ge2(w) - p_ge2(w-1); ALL-WEIGHT THEOREM via Dong-Griess arXiv:q-alg/9710017 Cor 2.4 (V_{A1}^{sl2} = L(1,0), c=1 Virasoro vacuum VOA) + invariants-exactness charge step",
+ "certificate": "code/symmetric_pair_character.py (full mode)",
+ "elapsed_seconds": 2598,
+ "run_commit": "558a7c79caae25b817d68defea9245c6ee3e88f9",
+ "command": "python3 symmetric_pair_character.py",
+ "date": "2026-08-08"
+}

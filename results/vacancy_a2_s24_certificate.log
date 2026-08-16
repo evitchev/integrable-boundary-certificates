@@ -1,0 +1,27 @@
+[hb a2 s24 p0 +96610s rss=13199M] candidate 6666/6989, rows 26678, tags 4845
+[hb a2 s24 p0 +97210s rss=13208M] candidate 6688/6989, rows 26685, tags 4860
+[hb a2 s24 p0 +97832s rss=13210M] candidate 6709/6989, rows 26687, tags 4879
+[hb a2 s24 p0 +98458s rss=13215M] candidate 6730/6989, rows 26691, tags 4896
+[hb a2 s24 p0 +99063s rss=13221M] candidate 6749/6989, rows 26695, tags 4911
+[hb a2 s24 p0 +99672s rss=13224M] candidate 6766/6989, rows 26698, tags 4925
+[hb a2 s24 p0 +100292s rss=13227M] candidate 6785/6989, rows 26701, tags 4941
+[hb a2 s24 p0 +100914s rss=13233M] candidate 6802/6989, rows 26705, tags 4954
+[hb a2 s24 p0 +101529s rss=13242M] candidate 6819/6989, rows 26709, tags 4967
+[hb a2 s24 p0 +102147s rss=13257M] candidate 6836/6989, rows 26711, tags 4982
+[hb a2 s24 p0 +102758s rss=13269M] candidate 6850/6989, rows 26712, tags 4995
+[hb a2 s24 p0 +103362s rss=13276M] candidate 6867/6989, rows 26714, tags 5010
+[hb a2 s24 p0 +103984s rss=13281M] candidate 6882/6989, rows 26715, tags 5024
+[hb a2 s24 p0 +104602s rss=13288M] candidate 6896/6989, rows 26718, tags 5035
+[hb a2 s24 p0 +105206s rss=13304M] candidate 6914/6989, rows 26722, tags 5049
+[hb a2 s24 p0 +105843s rss=13319M] candidate 6929/6989, rows 26723, tags 5063
+[hb a2 s24 p0 +106473s rss=13324M] candidate 6947/6989, rows 26725, tags 5079
+[hb a2 s24 p0 +107085s rss=13325M] candidate 6962/6989, rows 26726, tags 5093
+[hb a2 s24 p0 +107676s rss=13338M] done: tags 5117, d-rank 5117, VACANT (certified over Q)
+a2 s24: VACANT (certified over Q, prime #0; tags = d-rank = 5117)
+---
+Extracted 2026-08-07 from the vacancy_final_modp batch task log
+(session task bihp93ae3; batch launched 2026-08-06).  Certificate:
+tags = d-rank = 5117 at prime 2^61-1 (MODP_PRIME), 6989 candidates,
+target dimension 34057 => genuine vacancy over Q at a2 sigma=24
+=> A2(2) [I11,I13] = 0 identically over Q(t) (Jacobi +
+semicontinuity).  Final batch JSON follows when all workers land.

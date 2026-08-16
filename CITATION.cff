@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use these engines or certificates, please cite the
+  accompanying papers and this repository."
+title: "integrable-boundary-certificates"
+authors:
+  - family-names: "Vitchev"
+    given-names: "Evgueniy"
+    orcid: "https://orcid.org/0009-0000-2613-454X"
+license: MIT
+repository-code: "https://github.com/PLACEHOLDER/integrable-boundary-certificates"
