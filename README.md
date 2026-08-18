@@ -2,9 +2,15 @@
 
 Exact-arithmetic engines and machine certificates for the results of
 
-- *Commuting local integrals of motion for free bosonic CFTs and
-  integrable boundary states* (E. Vitchev, arXiv:XXXX.XXXXX), and
-- its companion on the enhanced c=1 tower (arXiv:XXXX.XXXXX).
+- *Commuting integrals of motion for free bosonic CFTs revisited:
+  certified densities, spectral rigidity, and the solvability of
+  the bilinear commutativity systems* (E. Vitchev, 2026), and
+- *An enhanced odd-spin tower at c = 1: characterization by
+  perturbing momenta, exclusion of named candidates, and the
+  Virasoro vacuum algebra at the self-dual point* (E. Vitchev,
+  2026).
+
+arXiv identifiers will be added upon announcement.
 
 Pure Python; the only dependency is `sympy` (see `requirements.txt`).
 
@@ -27,11 +33,13 @@ provenance remains archived. Commit identifiers inside certified
 artifacts are opaque archival references into the private
 development history — never mutated here and not resolvable in this
 repository by design. Public verification is content-based:
-`RELEASE_MANIFEST.json` pins the SHA-256 of every file,
-`EXPORT_RECORD.json` records the export (including a small set of
-documented local-path redactions with pre/post hashes), and
-`code/public_lint.py` re-verifies hashes, artifact cross-agreement,
-and the privacy screen from any clean clone.
+`RELEASE_MANIFEST.json` pins the SHA-256 of every file in the
+release (everything except the manifest itself),
+`EXPORT_RECORD.json` records the export (documented redactions as
+rule labels, counts, and post-redaction hashes), and
+`code/public_lint.py` re-verifies hashes, release completeness,
+artifact cross-agreement, and the privacy screen from any clean
+clone.
 
 ## License
 

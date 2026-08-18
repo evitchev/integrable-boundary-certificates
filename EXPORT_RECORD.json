@@ -1,14 +1,13 @@
 {
   "schema_version": 1,
   "kind": "public_export_record",
-  "private_freeze_commit": "8da86befb6b2ece68128c5c2887a776d5e5de499",
+  "private_freeze_commit": "6d62d0e29188af385f29ffac3a7445c491e37ed2",
   "private_worktree_dirty_at_export": true,
-  "exported_at_utc": "2026-08-16T23:02:00+00:00",
-  "exporter_sha256": "sha256:361bb44269af5c2c9b7c6b4946eb42fb3e1b857d3d2dad2526c622da3ee973bb",
-  "file_count": 101,
+  "exported_at_utc": "2026-08-18T16:43:17+00:00",
+  "exporter_sha256": "sha256:3a9f2c79b8ee6dc7e1120e591a923030d7722f5ce6139cff0b08f330cdcfcf05",
+  "source_file_count": 102,
   "transformation_log": {
     "results/freeze_seal_2026_08_15.json": {
-      "private_sha256": "sha256:dab15071d159c220c5e55c1e7a6914f2e156ae6c7d4df46284106315422fcf18",
       "public_sha256": "sha256:0c55d0399134b93f161c919f09b5acbd9263e97429e72f6b3e3fcc9e8c9a3433",
       "redactions": [
         {
@@ -22,7 +21,6 @@
       ]
     },
     "results/mutual_checks.md": {
-      "private_sha256": "sha256:abffe50146ff501f89ffd1c21c7024c916c6e175c6247a4b9b19ac2ffd4638eb",
       "public_sha256": "sha256:9b476d9bf2e6609d82afc2e6ab416cb2931e1a4712f102c017b4cac806795671",
       "redactions": [
         {
@@ -32,7 +30,6 @@
       ]
     },
     "results/paperclip_vacancy_1214.md": {
-      "private_sha256": "sha256:5c4dab4542138ad03aa2465cd14293e5a000a639ac73636ebeaebc3027709998",
       "public_sha256": "sha256:b999588495548ba7c8500e04b88391d9cfc4019957c416d1f7106f05907a2f7e",
       "redactions": [
         {
@@ -42,7 +39,6 @@
       ]
     },
     "results/super_kdv_calibration.md": {
-      "private_sha256": "sha256:fa66b2a84fd3fc896c919cec8b30325dca287b5c62e7c25231534a374c9cf448",
       "public_sha256": "sha256:34a03761e6341c17f98216ce86581125263b8afe49a656a1f8fcf43130b0305a",
       "redactions": [
         {
@@ -56,7 +52,6 @@
       ]
     },
     "results/symmetric_pair_dims.json": {
-      "private_sha256": "sha256:f2d584da871e487b02596eedb9e7475ca499d992298b99bc4a225b338e103aad",
       "public_sha256": "sha256:efb7ab5ac22a685f58a754d63ccbbbb48c54b5116c5fa833a19c5092382839ef",
       "redactions": [
         {
@@ -66,7 +61,6 @@
       ]
     },
     "results/vacancy_a2_s24_certificate.json": {
-      "private_sha256": "sha256:4b0cf29e1956eb45cbffa5cde2aa73a7dbbff6688d726dcf0a1a497135f1db14",
       "public_sha256": "sha256:e22193b21dcceecb71387ccd459584c45a198b71465ee39e8a6e5c16fb739be8",
       "redactions": [
         {
@@ -80,7 +74,6 @@
       ]
     },
     "results/vacancy_cyl_s18_certificate.json": {
-      "private_sha256": "sha256:bcd8147c28673a01c586af4c2b796d3d1b7176bee7c10e1b387281172a23c381",
       "public_sha256": "sha256:e6b0718f7fcaa6ccae8169e9551bbf58b852a95f9d8717b17d24b30bfab7774a",
       "redactions": [
         {
@@ -94,7 +87,6 @@
       ]
     },
     "results/vacancy_cyl_s20_certificate.json": {
-      "private_sha256": "sha256:bf128e79f4f1e8891ff9c2231a7469b34bfac6beccc3dbf046e36144f221b56a",
       "public_sha256": "sha256:21047c0fc48d55f7a70db804664173267ab3446d853102c2c3dec094ce0c5c07",
       "redactions": [
         {
@@ -104,7 +96,6 @@
       ]
     },
     "results/vacancy_final_modp.json": {
-      "private_sha256": "sha256:71fe9792f8d92dd25959f52d196fb01957fcb4a4cf265a78fb27bdd767d24f31",
       "public_sha256": "sha256:96547722d67ec9d04f558446d388e4145293c806793e552446a68c707ed89f23",
       "redactions": [
         {
@@ -122,8 +113,8 @@
       "notes/20\\d\\d",
       "ROADMAP"
     ],
-    "private_deny_count": 30,
-    "private_deny_sha256": "sha256:24866da1831c676594c2264e0e5e4d10c51a29edb17f274a31da577509aaaf4e",
+    "private_deny_count": 23,
+    "private_deny_sha256": "sha256:53c737d78d41101ba967185941a4d1504d53041139df290de168b280f271901d",
     "violations": 0
   },
   "provenance_model": "Two-tier (Decision 2): private-development commit SHAs inside artifacts are opaque archival references \u2014 never mutated, never publicly resolvable. Public verification is content-based via RELEASE_MANIFEST.json and public_lint.py. This record binds the export to the private freeze commit for the archive holder."

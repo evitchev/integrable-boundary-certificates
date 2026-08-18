@@ -60,6 +60,17 @@ def check_manifest(failures: list[str]) -> int:
             failures.append(
                 f"hash mismatch: {rel} is {actual[:20]}…, manifest "
                 f"says {pinned[:20]}…")
+    listed = set(manifest.get("files", {}))
+    generated = {"RELEASE_MANIFEST.json", "certification_manifest.json",
+                 "certification_manifest.partial.json"}
+    for path in sorted(ROOT.rglob("*")):
+        if (not path.is_file() or ".git" in path.parts
+                or "__pycache__" in path.parts or path.suffix == ".pyc"
+                or path.name in generated):
+            continue
+        rel = path.relative_to(ROOT).as_posix()
+        if rel not in listed:
+            failures.append(f"unmanifested file in release: {rel}")
     return checked
 
 
@@ -68,6 +79,14 @@ def _semantic_checks(payload, name: str, failures: list[str],
     prov = payload.get("provenance", {})
     rlc = prov.get("runner_launch_commit")
     decl_ref = payload.get("launch_declaration")
+    if "launch_declaration" in payload and (
+            not isinstance(decl_ref, str) or not decl_ref):
+        failures.append(f"{name}: launch_declaration present but "
+                        "empty or null (fail-closed)")
+    if decl_ref and (not isinstance(rlc, str) or not rlc):
+        failures.append(f"{name}: launch_declaration present but "
+                        "runner_launch_commit missing or null "
+                        "(fail-closed)")
     if rlc and decl_ref:
         decl_path = ROOT / decl_ref
         if not decl_path.exists():
