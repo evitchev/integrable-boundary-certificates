@@ -733,6 +733,71 @@
       ]
     },
     {
+      "id": "kdv_identification",
+      "claims": [
+        "c=-25/2 identification: the enhanced c=1 tower is quantum KdV at c_{1,4} in Feigin-Fuchs realization on the c=1 boson (T_Q at Q^2=9/8)"
+      ],
+      "description": "The 2026-08-18 identification (external independent-engine review, confirmed in-engine same day): TT == (1/4)[(dphi)^4+(4Q^2-2)(d^2phi)^2] mod d SYMBOLIC in Q, so the enhanced I'3 is KdV I3 at Q^2=9/8 (c=-25/2=c_{1,4}); :T:TT::+(7/8):dTdT: == (1/8)P6 mod d at that Q with A,lambda EXACT (A=(4Q^2-1)/4, BLZ form), so I5 is KdV I5; the screening-quartet identity alpha^4-(kappa+6)alpha^2+4=(alpha^2-a^2)(alpha^2-4/a^2) at kappa=a^2-6+4/a^2 identifies the certified four momenta {+-1/sqrt2,+-2sqrt2} as the FF quartet {+-a,+-2/a} at a^2=1/2.  Two negative controls (wrong quantum shift; Q^2=1).  With certified multiplicity one and pairwise commutativity, seals class-by-class identification wherever the KdV class is nonzero.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "kdv_identification.py"
+      ],
+      "timeout_s": 600,
+      "required_markers": [
+        "KDV C=-25/2 IDENTIFICATION CERTIFIED"
+      ]
+    },
+    {
+      "id": "kdv_tower_classes",
+      "claims": [
+        "c=-25/2 identification, class-by-class: ker ad_{I'3} = tower classes at sigma 5,7,9 (mult 1 odd / 0 even); even-sector sine-Gordon pair kernel K-dim 1 at odd sigma 1..9 (infinitude anchor)"
+      ],
+      "description": "Campaign item 2 + finite-range item 4: ker ad_{I'3} multiplicity exactly 1 at odd spins 5,7,9 and 0 at even 4,6,8, with the kernel class EQUAL to the tower (ker ad_{I5}) class mod d at each odd spin; even-sector {e^{+-phi/sqrt2}} pair kernel K-dim exactly 1 at odd spins 1..9, 0 at even (Q-dims 2/0 in split representation); genericity control at a=2; INFORMATIONAL full-space table records an odd-parity stray class at sigma=6 (killed by the quartet), flagged for study.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "kdv_tower_classes.py"
+      ],
+      "timeout_s": 1800,
+      "required_markers": [
+        "KDV TOWER CLASS-BY-CLASS CERTIFIED"
+      ]
+    },
+    {
+      "id": "z2_mechanism",
+      "claims": [
+        "c=1 enhancement mechanism: even-sector +-alpha kernel coincidence; the A2(2) pair symmetrizes to the FF quartet at the branch point"
+      ],
+      "description": "Campaign item 3: for alpha in {1/sqrt2, sqrt2, 2} and weights 2..9 the even-sector kernels of +alpha, -alpha, and the pair coincide (dimension equality of the intersection forces containment both ways); the c=1 A2(2) pair {sqrt2, -1/sqrt2} has the same even-sector joint kernel as the symmetrized quartet at every weight 2..9 -- the containment driver of A2(2)|_{c=1} into KdV at c=-25/2; negative control: on the FULL space at w=6 the single kernels (Q-dim 4) strictly exceed the pair (Q-dim 2), so the mechanism is charge parity, not condition identity.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "z2_mechanism.py"
+      ],
+      "timeout_s": 1200,
+      "required_markers": [
+        "Z2 MECHANISM CERTIFIED"
+      ]
+    },
+    {
+      "id": "odd_sector_j",
+      "claims": [
+        "the full-space centralizer's odd-parity sector: the spin-6 charge J commutes with the tower (I'3, I5, I'7, I'9), conserved under +-1/sqrt2 only; c_{1,2} even-sector kernel jump (K-dim 2 at spin 7) is real"
+      ],
+      "description": "Round-2 review finding confirmed in-engine: J = oint[(64/7)(dphi)^7 - 40(dphi)^3(d2phi)^2 + dphi(d3phi)^2] is a nonzero odd-parity class commuting with I'3, I5, I'7, I'9 (tower reps recomputed in-run), conserved under e^{+-phi/sqrt2} and not under e^{+-2sqrt2 phi} -- consistent with the review's identification J ~ [Q_{2sqrt2}, Q_{-2sqrt2}] (weight-7 singlet-algebra generator; the residue identification itself is the review's, so attributed).  Negative control: perturbed coefficient breaks commutativity.  Plus the c_{1,p} jump fact: at a=1 (c=-2) the even-sector pair kernel has K-dim 2 at spin 7.  Runtime ~25 min (the [I'9,J] weight-16 reduction), hence expensive.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "odd_sector_j.py"
+      ],
+      "timeout_s": 3600,
+      "expensive": true,
+      "required_markers": [
+        "ODD-SECTOR J CERTIFIED"
+      ]
+    },
+    {
       "id": "public_provenance_lint",
       "claims": [
         "provenance"
@@ -757,7 +822,7 @@
     "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
   ],
   "_public_edition": {
-    "generated_on": "2026-08-18",
+    "generated_on": "2026-08-19",
     "pruned_entry_ids": [
       "certificate_provenance_lint",
       "dossier_evidence_pins",
