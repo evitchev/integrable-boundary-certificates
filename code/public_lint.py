@@ -61,14 +61,19 @@ def check_manifest(failures: list[str]) -> int:
                 f"hash mismatch: {rel} is {actual[:20]}…, manifest "
                 f"says {pinned[:20]}…")
     listed = set(manifest.get("files", {}))
-    generated = {"RELEASE_MANIFEST.json", "certification_manifest.json",
-                 "certification_manifest.partial.json"}
+    # Root-RELATIVE paths: a basename match would let an unmanifested
+    # file hide anywhere under a whitelisted name (v1.1.1 audit fix;
+    # demonstrated with evil/RELEASE_MANIFEST.json against v1.1.0).
+    generated = {"RELEASE_MANIFEST.json",
+                 "results/certification_manifest.json",
+                 "results/certification_manifest.partial.json"}
     for path in sorted(ROOT.rglob("*")):
         if (not path.is_file() or ".git" in path.parts
-                or "__pycache__" in path.parts or path.suffix == ".pyc"
-                or path.name in generated):
+                or "__pycache__" in path.parts or path.suffix == ".pyc"):
             continue
         rel = path.relative_to(ROOT).as_posix()
+        if rel in generated:
+            continue
         if rel not in listed:
             failures.append(f"unmanifested file in release: {rel}")
     return checked

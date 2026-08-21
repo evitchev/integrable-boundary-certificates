@@ -5,10 +5,9 @@ Exact-arithmetic engines and machine certificates for the results of
 - *Commuting integrals of motion for free bosonic CFTs revisited:
   certified densities, spectral rigidity, and the solvability of
   the bilinear commutativity systems* (E. Vitchev, 2026), and
-- *An enhanced odd-spin tower at c = 1: characterization by
-  perturbing momenta, exclusion of named candidates, and the
-  Virasoro vacuum algebra at the self-dual point* (E. Vitchev,
-  2026).
+- *The enhanced odd-spin tower at c = 1 is quantum KdV at
+  c_{1,4} = -25/2: identification, mechanism, and the Virasoro
+  vacuum algebra at the self-dual point* (E. Vitchev, 2026).
 
 arXiv identifiers will be added upon announcement.
 
@@ -25,6 +24,18 @@ Pure Python; the only dependency is `sympy` (see `requirements.txt`).
 The Lean certificates (`lean/`) additionally require a local
 Lean 4.24 + Mathlib toolchain; their check fails loudly, not
 silently, where the toolchain is absent.
+
+## Independent verification engine
+
+`independent/` contains a second exact free-boson OPE engine and
+check scripts written **from scratch, from the papers' stated
+conventions**, by the independent review credited in the companion
+paper's Acknowledgments — imported verbatim (provenance and the
+original archive hash in `independent/PROVENANCE.md`).  Its
+results are concordant with the registered certificates and extend
+the tower/KdV class-by-class coincidence through charge spin 15.
+These are evidence artifacts, not registered certificates: they
+are not run by `run_certifications.py`.
 
 ## Provenance model
 

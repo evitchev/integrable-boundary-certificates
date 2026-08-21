@@ -785,7 +785,7 @@
       "claims": [
         "the full-space centralizer's odd-parity sector: the spin-6 charge J commutes with the tower (I'3, I5, I'7, I'9), conserved under +-1/sqrt2 only; c_{1,2} even-sector kernel jump (K-dim 2 at spin 7) is real"
       ],
-      "description": "Round-2 review finding confirmed in-engine: J = oint[(64/7)(dphi)^7 - 40(dphi)^3(d2phi)^2 + dphi(d3phi)^2] is a nonzero odd-parity class commuting with I'3, I5, I'7, I'9 (tower reps recomputed in-run), conserved under e^{+-phi/sqrt2} and not under e^{+-2sqrt2 phi} -- consistent with the review's identification J ~ [Q_{2sqrt2}, Q_{-2sqrt2}] (weight-7 singlet-algebra generator; the residue identification itself is the review's, so attributed).  Negative control: perturbed coefficient breaks commutativity.  Plus the c_{1,p} jump fact: at a=1 (c=-2) the even-sector pair kernel has K-dim 2 at spin 7.  Runtime ~25 min (the [I'9,J] weight-16 reduction), hence expensive.",
+      "description": "Round-2 review finding confirmed in-engine: J = oint[(64/7)(dphi)^7 - 40(dphi)^3(d2phi)^2 + dphi(d3phi)^2] is a nonzero odd-parity class commuting with I'3, I5, I'7, I'9 (tower reps recomputed in-run), conserved under e^{+-phi/sqrt2} and not under e^{+-2sqrt2 phi} -- consistent with the review's identification J ~ [Q_{2sqrt2}, Q_{-2sqrt2}] (weight-7 singlet-algebra generator; the residue identification, originally the review's, is since 2026-08-20 certified separately in j_commutator_identification.py).  Negative control: perturbed coefficient breaks commutativity.  Plus the c_{1,p} jump fact: at a=1 (c=-2) the even-sector pair kernel has K-dim 2 at spin 7.  Runtime ~25 min (the [I'9,J] weight-16 reduction), hence expensive.",
       "mode": "run",
       "command": [
         "PYTHON",
@@ -796,6 +796,22 @@
       "required_markers": [
         "ODD-SECTOR J CERTIFIED"
       ]
+    },
+    {
+      "id": "j_commutator_identification",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "j_commutator_identification.py"
+      ],
+      "description": "Codex-audit round closure (2026-08-20): the odd-sector identification, previously attributed to the round-2 review, certified in-engine with the exact constant: [Q_{2sqrt2}, Q_{-2sqrt2}] = (sqrt2/45) J mod d (residue = complete Bell polynomial S_7 in t_k = 2sqrt2 d^k phi/k!); parity-even part of the residue is a total derivative; negative control: perturbed J' not proportional.  Settles the round-3 report's inverted normalization (J = (45/sqrt2)[Q+,Q-]).  With odd_sector_j.py and Jacobi, makes the all-spin quartet-kernel commutation of J self-contained.",
+      "claims": [
+        "[Q_{2sqrt2}, Q_{-2sqrt2}] == (sqrt2/45) J mod total derivatives, constant exact; parity-even residue part is a total derivative"
+      ],
+      "required_markers": [
+        "J-COMMUTATOR IDENTIFICATION CERTIFIED"
+      ],
+      "timeout_s": 300
     },
     {
       "id": "public_provenance_lint",
@@ -822,7 +838,7 @@
     "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
   ],
   "_public_edition": {
-    "generated_on": "2026-08-19",
+    "generated_on": "2026-08-21",
     "pruned_entry_ids": [
       "certificate_provenance_lint",
       "dossier_evidence_pins",

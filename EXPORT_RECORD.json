@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "kind": "public_export_record",
-  "private_freeze_commit": "4201c5381bcf58db11064eb502509f951547651c",
+  "private_freeze_commit": "1bf289418195c558245f3596e4357b1ce5fca253",
   "private_worktree_dirty_at_export": true,
-  "exported_at_utc": "2026-08-19T05:50:36+00:00",
-  "exporter_sha256": "sha256:3a9f2c79b8ee6dc7e1120e591a923030d7722f5ce6139cff0b08f330cdcfcf05",
-  "source_file_count": 107,
+  "exported_at_utc": "2026-08-21T12:49:54+00:00",
+  "exporter_sha256": "sha256:0224bb8dcb5fff9afe84b55b51c95f59414b176ca2cac167ec63f4671bcb0f4f",
+  "source_file_count": 120,
   "transformation_log": {
     "results/freeze_seal_2026_08_15.json": {
       "public_sha256": "sha256:0c55d0399134b93f161c919f09b5acbd9263e97429e72f6b3e3fcc9e8c9a3433",
@@ -113,8 +113,8 @@
       "notes/20\\d\\d",
       "ROADMAP"
     ],
-    "private_deny_count": 23,
-    "private_deny_sha256": "sha256:53c737d78d41101ba967185941a4d1504d53041139df290de168b280f271901d",
+    "private_deny_count": 16,
+    "private_deny_sha256": "sha256:98c62abeda6233376fda1bf6e17d4fe8e30a93b4ffb47702183c0fdefdbb94d9",
     "violations": 0
   },
   "provenance_model": "Two-tier (Decision 2): private-development commit SHAs inside artifacts are opaque archival references \u2014 never mutated, never publicly resolvable. Public verification is content-based via RELEASE_MANIFEST.json and public_lint.py. This record binds the export to the private freeze commit for the archive holder."

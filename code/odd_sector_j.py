@@ -12,8 +12,10 @@ commutator [Q_{2sqrt2}, Q_{-2sqrt2}] (the h_{3,1} = 7 generator at
 c_{1,4}), whence by the Jacobi identity it commutes with every
 charge annihilated by both +-2sqrt2 conditions -- the entire
 quartet kernel, at all spins.  This certificate pins the certified
-part of that picture (the residue identification itself is the
-review's, consistent with everything below):
+part of that picture (the residue identification, originally the
+review's, is since 2026-08-20 certified separately in
+j_commutator_identification.py with the exact constant
+[Q_+, Q_-] = (sqrt2/45) J):
 
  1. J is a nonzero charge class (nonzero mod total derivatives).
  2. [J, I3'] = [J, I5] = [J, I7'] = [J, I9'] = 0 mod d, with the
