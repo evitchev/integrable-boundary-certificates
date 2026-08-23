@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "kind": "public_export_record",
-  "private_freeze_commit": "1bf289418195c558245f3596e4357b1ce5fca253",
+  "private_freeze_commit": "dcb325d6a3415396b961f1ffe2e0806c135ec72a",
   "private_worktree_dirty_at_export": true,
-  "exported_at_utc": "2026-08-21T12:49:54+00:00",
-  "exporter_sha256": "sha256:0224bb8dcb5fff9afe84b55b51c95f59414b176ca2cac167ec63f4671bcb0f4f",
-  "source_file_count": 120,
+  "exported_at_utc": "2026-08-23T02:19:33+00:00",
+  "exporter_sha256": "sha256:63406320f45c7f9ce8d64bd21e7f0e38b5b2a523854e900b82a1fe5273619bbe",
+  "source_file_count": 132,
   "transformation_log": {
     "results/freeze_seal_2026_08_15.json": {
       "public_sha256": "sha256:0c55d0399134b93f161c919f09b5acbd9263e97429e72f6b3e3fcc9e8c9a3433",

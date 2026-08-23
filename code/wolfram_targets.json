@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "source": "wolfram/HANDOFF-SPEC.md",
+  "targets": {
+    "T1":  {"kind": "boolean", "expected": true,
+            "statement": ":T_Q T_Q: = 1/4[(dphi)^4 + (4Q^2-2)(d2phi)^2] mod d, identically in Q"},
+    "T2":  {"kind": "boolean", "expected": true,
+            "statement": "at Q^2=9/8: :T:TT:: + (7/8):dT dT: = (1/8) P6 mod d"},
+    "T3":  {"kind": "exact", "expected": "Sqrt[2]/45",
+            "statement": "Res e^{2sqrt2 phi} e^{-2sqrt2 phi} = r * J_density mod d"},
+    "T4":  {"kind": "set", "expected": ["1/2", "8"],
+            "statement": "screening locus alpha^2 of oint[(dphi)^4 + (5/2)(d2phi)^2]"},
+    "T5":  {"kind": "list", "expected": [1, 0, 1, 0, 2, 0, 3, 1, 4, 2, 7, 3, 10],
+            "statement": "joint +-sqrt2 kernel dimensions, weights 2..14"},
+    "T6a": {"kind": "boolean", "expected": true,
+            "statement": "cylindrical Sol 1 at (28,-9) == Sol 2 at (28,9)"},
+    "T6b": {"kind": "boolean", "expected": true,
+            "statement": "N=28 density = 4[7:T_X^2: + 6 T_X T_Y + :T_Y^2:] mod d"},
+    "T6c": {"kind": "boolean_pair", "expected": [true, false],
+            "statement": "N=28 density conserved under e^{+-sqrt2 X}; not under e^{+-sqrt3 X}"}
+  }
+}

@@ -701,6 +701,23 @@
       ]
     },
     {
+      "id": "wolfram_triangle",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "wolfram_triangle.py"
+      ],
+      "description": "Verification triangle (2026-08-22): an independent Mathematica replication of targets T1-T6c (wolfram/HANDOFF-SPEC.md), written by a clean-context implementer from the papers and the spec only (no access to code/, results/*.json, independent/, or the targets), on Wolfram Engine 15.0 with K. Thielemans' OPEdefs 3.1 (vendored unmodified, wolfram/OPEdefs/) for point-split normal products and a from-spec generating-function Wick engine for vertex residues (cross-checked against OPEdefs on 44 monomials). The runner re-executes wolfram/triangle_targets.wls and compares results/wolfram_triangle.json fail-closed with code/wolfram_targets.json: Theorem 1(i)/(ii), the sqrt2/45 constant, the spin-3 screening locus {1/2,8}, the thirteen L(1,0) dimensions, and the three N=28 statements -- all agree. EXPENSIVE and machine-local like the Lean entry: proprietary toolchain; fails LOUDLY where wolframscript is absent; the certificate authority stays in the open stack. ~60 s with a kernel.",
+      "claims": [
+        "independent Mathematica replication (unrelated implementation, vendor, algorithm lineage) agrees with every baked target T1-T6c"
+      ],
+      "required_markers": [
+        "WOLFRAM TRIANGLE VERIFIED"
+      ],
+      "expensive": true,
+      "timeout_s": 3600
+    },
+    {
       "id": "ff_ising_quotient",
       "claims": [],
       "description": "FF quotient experiment I (Ising, t=+-7): dictionary coherence (c(a) re-derived from ope_pole; curve_point(+-7)=(1/2,-+7/2); the dual points a^2=3/2, 8/3 hit c=1/2 with matching sheet signs); the level-6 Ising vacuum null field DERIVED in-engine as the unique primary weight-6 T-composite (dim 1 at both Ising points, dim 0 at the a=3 control); and the ONE-SHEET resolution, baked with exact ranks ((1,1) dying, (1,2) surviving): at BOTH dual realizations Vitchev's s=-7/2 spin-5 charge (physical t=+7, K=225/8) has charge class EQUAL to the null-field class modulo total derivatives -- it vanishes in the Ising quotient -- while the deck-conjugate s=+7/2 charge (K=15) survives as a nonzero class.  Priority: the dropout itself is prior art (FF Sec. 4.8.3, citing [Zam, fz]); the E8 pattern is conjectural there; the explicit density/null-class exhibit in Vitchev normalization and the one-sheet resolution are new in this project, with earlier literature not exhaustively searched.  16 checks; py3.8 and py3.12; ~1 s.",
@@ -814,6 +831,40 @@
       "timeout_s": 300
     },
     {
+      "id": "cyl_hidden_kdv_scan",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_hidden_kdv_scan.py"
+      ],
+      "description": "Post-publication item 1 (2026-08-21): the hidden-KdV / sinh-Gordon exclusion for the three cylindrical families ALONG the curve s^2=(N-25)(N-1), both sheets. Part A: the invariant KdV ray 4:T_Q^2: (in-engine, full parity; its X-odd class 4Q (2)_X(11)_Y is nonzero, so a Z2-even family meets it only at Q=0) matches no solution at any N!=0; at N=0 Solutions 2,3 ARE the c=1 ray (control). Part B: e^{aX} screening of I_3 in the mixed representation, symbolic in (N,s): exactly two condition polynomials per solution; exact finite locus on the curve baked (Sol1 (1,0),(28,-9); Sol2 (0,5),(28,9),(-25/2,-45/2); Sol3 (-2,-9) at a in {+-1,+-2}, (-25/2,-45/2),(0,-5),(1,0)); generic points: none. Part C: tower level -- at the a^2=2 points with I_5 multiplicity one the unique I_5 is screened too (X enters only through T_X; N=28 physical); Sol 3 at (-2,-9) decouples as c=-2 KdV on X (+) KdV on Y (kernel dim 2 with a pure-Y charge); (-25/2,-45/2) is a multiplicity-jump point (I_5 kernel dim 2) whose e^{sqrt2 X}-screened subspace has dim 1 (P_1 - (48/17) P_0; common quotient coordinates -- Codex audit correction of a per-current rescaling bug that had reported 0): a tower-level embedding inside an enlarged kernel. Solution 2 ALSO decouples at (-2,-9) as the free quadratic X-hierarchy (+) KdV on Y. Locus completeness is fail-closed via a lex Groebner basis (zero-dimensional ideal). Controls: c=1 ray at a^2=2; cross term alone at a^2=2 (fact); Q^2=1 ray + cross term: none.",
+      "claims": [
+        "cylindrical I_3 families are not the invariant background-charge KdV ray at any N != 0",
+        "X-axis sinh-Gordon screening of the cylindrical I_3 occurs only on an exactly computed finite locus of the curve",
+        "tower-level self-dual (a^2=2) embeddings at the multiplicity-one locus points and inside the enlarged kernel at (-25/2,-45/2) (screened dim 1 of 2); decouplings of Solutions 2 and 3 at (-2,-9); locus completeness via Groebner"
+      ],
+      "required_markers": [
+        "CYLINDRICAL HIDDEN-KDV SCAN CERTIFIED"
+      ],
+      "timeout_s": 600
+    },
+    {
+      "id": "cyl_n28_tower_embedding",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_n28_tower_embedding.py"
+      ],
+      "description": "Follow-up to cyl_hidden_kdv_scan Part C (2026-08-22, Codex-audited same day): at (N,s) = (28,-9) [Solution 1] and (28,9) [Solution 2], I_5 (recomputed, unique) and the promoted Q(t)-symbolic I_7, I_9, I_11 (results/qt_promotion.json, A(N)+sB(N) coordinates, pole-free at N=28) are NONZERO CHARGE CLASSES (asserted mod d), each re-verified to commute with I_3 in-engine at the point, and all conserved to first order under e^{+-sqrt2 X}, exactly over Q(sqrt2) (doubled-field sparse elimination in the mixed representation). MERGER: the two solutions' I_3 coincide exactly and their normalized I_5..I_11 classes coincide -- one tower on the two deck-conjugate points; the common I_3 is exactly 4[7:T_X^2: + 6 T_X T_Y + :T_Y^2:]. Finite-range merger/embedding through I_11 (no all-spin claim). Controls: the N=28 I_7 is not screened at a=sqrt3; at a generic curve point neither I_3 nor I_7 is screened at a=sqrt2. ~30 s.",
+      "claims": [
+        "at N=28 cylindrical Solutions 1 and 2 coincide through I_11 and the merged tower I_3..I_11 is conserved under e^{+-sqrt2 X} (finite-range; nonzero classes asserted)"
+      ],
+      "required_markers": [
+        "N=28 TOWER EMBEDDING CERTIFIED"
+      ],
+      "timeout_s": 600
+    },
+    {
       "id": "public_provenance_lint",
       "claims": [
         "provenance"
@@ -838,7 +889,7 @@
     "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
   ],
   "_public_edition": {
-    "generated_on": "2026-08-21",
+    "generated_on": "2026-08-22",
     "pruned_entry_ids": [
       "certificate_provenance_lint",
       "dossier_evidence_pins",

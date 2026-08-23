@@ -158,7 +158,12 @@ def check_privacy(failures: list[str]) -> int:
             "EXPORT_RECORD.json carries no deny patterns (fail-closed)")
         return 0
     screened = 0
-    skip = {"EXPORT_RECORD.json", "certification_manifest.json"}
+    # Root-RELATIVE exemptions (v1.1.2 audit fix: a basename match let a
+    # manifested evil/EXPORT_RECORD.json carry private paths past the
+    # screen on the live v1.1.1 tag -- a verifier defect, no leak).
+    skip = {"EXPORT_RECORD.json",
+            "results/certification_manifest.json",
+            "results/certification_manifest.partial.json"}
     for path in sorted(ROOT.rglob("*")):
         if not path.is_file() or ".git" in path.parts:
             continue
@@ -166,7 +171,7 @@ def check_privacy(failures: list[str]) -> int:
         # local user's absolute paths by nature; the screen certifies
         # shipped content, not run residue.
         if ("__pycache__" in path.parts or path.suffix == ".pyc"
-                or path.name in skip):
+                or path.relative_to(ROOT).as_posix() in skip):
             continue
         try:
             text = path.read_text(encoding="utf-8", errors="ignore")

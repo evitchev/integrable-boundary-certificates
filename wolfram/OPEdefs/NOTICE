@@ -1,0 +1,9 @@
+OPEdefs 3.1 (beta 4) by Kris Thielemans -- redistributed here UNMODIFIED
+under the terms stated in the header of OPEdefs.m ("You're free to
+redistribute this package, on the only condition you keep this header
+and don't distribute modified code").  It is NOT covered by this
+repository's MIT license.  Files: OPEdefs.m, Delta.m, doc31.pdf
+(the package and its documentation as distributed).  Used by
+wolfram/triangle_targets.wls for point-split normal-ordered products;
+historically, the package Freeman--Hornfeck--West used in 1992 to find
+the S_n commuting families.
