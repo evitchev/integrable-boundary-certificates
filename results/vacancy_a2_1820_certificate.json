@@ -1,0 +1,58 @@
+{
+ "object": "A2(2) even-spin vacancy at sigma = 18, 20",
+ "records": [
+  {
+   "family": "a2",
+   "sigma": 18,
+   "prime": 2305843009213693951,
+   "prime_index": 0,
+   "tags": 678,
+   "derivative_rank": 678,
+   "genuine_gap": 0,
+   "verdict": "VACANT"
+  },
+  {
+   "family": "a2",
+   "sigma": 20,
+   "prime": 2305843009213693951,
+   "prime_index": 0,
+   "tags": 1351,
+   "derivative_rank": 1351,
+   "genuine_gap": 0,
+   "verdict": "VACANT"
+  }
+ ],
+ "ranks_preregistered": false,
+ "rank_note": "no exact ranks were retained by the 2026-08-02/03 fraction-free/sparse runs; the tags recorded here are established by this computation, with the rigorous acceptance tags == d-rank at the prime",
+ "curve_point_t": "2",
+ "primes_offered": [
+  2305843009213693951,
+  2305843009213693967
+ ],
+ "acceptance": "for each sigma, verdict VACANT with tags == d-rank => genuine vacancy over Q => the A2(2) pairs ([I7,I11] at 18, [I7,I13] at 20) hold identically over Q(t), by Jacobi + the specialization lemma; with these two, all 21 ledger instances rest on the registered GF(p) certifier",
+ "supersedes": "the 'fraction-free / sparse+collapsed' row of results/vacancy_final.md (2026-08-02/03 runs, no retained artifact)",
+ "provenance": {
+  "launch_commit": "7c1e3e8522d0929bfe3591e477aa5529e5b108f3",
+  "stamped_at_utc": "2026-08-25T18:09:17+00:00",
+  "python": "3.12.8",
+  "sympy": "1.14.0",
+  "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+  "worktree_dirty": true,
+  "dirty_paths": [
+   "results/vacancy_final.md",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "MEMORY.md",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "code/vacancy_a2_1820.py",
+   "draft/main.bbl",
+   "draft/main.blg",
+   "memory/",
+   "[untracked-workspace-file]"
+  ],
+  "dirty_path_count": 13
+ }
+}

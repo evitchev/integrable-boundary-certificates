@@ -941,7 +941,7 @@
       "claims": [
         "R6"
       ],
-      "description": "Cylindrical even-spin vacancies at sigma=12,14,16 for all three curve solutions: nine GF(p) tags=d-rank certificates, all VACANT over Q (tags = d-rank = 379 at sigma=12, 929 at 14, 2211 at 16).  Recomputes under the GF(p) certifier the four lowest cylindrical pairs ([I5,I7] at sigma=12, [I5,I9] at 14, [I5,I11] and [I7,I9] at 16), whose original fraction-free run (vacancy_high.py, git history only, 6ebd63c) retained no per-task artifact; this puts all 21 instances of the mutual-commutativity inventory on one footing.  The retained artifact carries per-task records (prime, prime_index, tags, derivative_rank, genuine_gap, verdict) and the run enforces the exact ranks, not merely genuine_gap == 0.  Measured wall time ~1400-1650 s (1414 s and 1358 s here, 1619 s on an independent Python 3.8 rerun): expensive, NOT a fast-suite entry.  The artifact is an artifact of record -- a run whose payload agrees leaves the file byte-identical, so the pin below is stable across re-runs; a payload disagreement rewrites it and breaks the pin, which is the intended alarm.",
+      "description": "Cylindrical even-spin vacancies at sigma=12,14,16 for all three curve solutions: nine GF(p) tags=d-rank certificates, all VACANT over Q (tags = d-rank = 379 at sigma=12, 929 at 14, 2211 at 16).  Recomputes under the GF(p) certifier the four lowest cylindrical pairs ([I5,I7] at sigma=12, [I5,I9] at 14, [I5,I11] and [I7,I9] at 16), whose original fraction-free run (vacancy_high.py, git history only, 6ebd63c) retained no per-task artifact; this put the eighteen cylindrical instances on the registered GF(p) footing (the two A2(2) sigma=18/20 instances joined with vacancy_a2_1820, 2026-08-25, completing all 21).  The retained artifact carries per-task records (prime, prime_index, tags, derivative_rank, genuine_gap, verdict) and the run enforces the exact ranks, not merely genuine_gap == 0.  Measured wall time ~1400-1650 s (1414 s and 1358 s here, 1619 s on an independent Python 3.8 rerun): expensive, NOT a fast-suite entry.  The artifact is an artifact of record -- a run whose payload agrees leaves the file byte-identical, so the pin below is stable across re-runs; a payload disagreement rewrites it and breaks the pin, which is the intended alarm.",
       "mode": "run",
       "expensive": true,
       "command": [
@@ -956,6 +956,29 @@
         {
           "path": "results/vacancy_cyl_121416_certificate.json",
           "sha256": "sha256:92bddeba11f18a15e6ba7acc0e3db18f394530bee7b65c4c6bc01dcd3a002493"
+        }
+      ]
+    },
+    {
+      "id": "vacancy_a2_1820",
+      "claims": [
+        "R6"
+      ],
+      "description": "A2(2) even-spin vacancies at sigma=18 and 20: two GF(p) tags=d-rank certificates, both VACANT over Q at the first prime (tags = d-rank = 678 at sigma=18, 1351 at 20).  Recomputes under the registered GF(p) certifier the last two ledger instances ([I7,I11] at 18, [I7,I13] at 20) that still rested on the 2026-08-02/03 fraction-free/sparse runs with no retained artifact (Codex finding, 2026-08-24) -- with these, all 21 instances of the mutual-commutativity inventory literally rest on the registered certifier.  No prior exact ranks existed for these two sectors, so the tags are recorded by this run, not preregistered (documented in the artifact); acceptance is verdict VACANT with tags == d-rank, the rigorous one-prime equality.  Measured wall time: sigma=18 ~1.6 h, sigma=20 ~5.0 h (18077 s), peak RSS 2.5 GB: expensive, NOT a fast-suite entry.  Artifact-of-record semantics as vacancy_cyl_121416 (payload-stable, pin breaks only on disagreement).",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "vacancy_a2_1820.py"
+      ],
+      "timeout_s": 36000,
+      "required_markers": [
+        "A2 SIGMA-18/20 VACANCY CERTIFIED"
+      ],
+      "artifacts": [
+        {
+          "path": "results/vacancy_a2_1820_certificate.json",
+          "sha256": "sha256:bd050b0f10db5817d265ce5c71452ebfa91059bd58ba130a53c019db49f36676"
         }
       ]
     },
@@ -980,11 +1003,11 @@
     "R2's zero/pole-divisor and duality-covariance prose is verified narratively (second audit pass), not by a retained script.",
     "R8 is a data-backed conjecture: the kernel side comes from vacancy_tables_and_I5I7 and the screening side from screening_annihilates_p8; no certification can apply to the conjecture itself.",
     "Cylindrical printed I5 formulas eqs. (54)/(56)/(58) are not encoded; the R7 erratum is deliberately narrowed to eqs. (53)/(55)/(57).",
-    "Mutual commutativity of higher promoted pairs: COMPLETE 2026-08-11 -- all 21 instances of the inventory (18 cylindrical pair instances + the three higher A2(2) pairs; brackets with each family's defining low charge vanish by construction) are proved identically over Q(t) via even-spin vacancy certificates, all nine on the same GF(p) tags=d-rank footing (cyl sigma=12 x3 = 379, sigma=14 x3 = 929, sigma=16 x3 = 2211 [vacancy_cyl_121416, 2026-08-24, superseding the earlier fraction-free run that retained no artifact]; cyl sigma=18 x3 = 5106, A2 sigma=24 = 5117, cyl sigma=20 x3 = 11491).  Evidence: pinned artifacts incl. the preregistered launch declaration and the merged batch record; results/vacancy_final.md supersedes the partial doc.  The historical 70-71-point checks stand as independent evidence.  This closes computed-range mutual commutativity; it does NOT prove infinitude of the cylindrical hierarchies.",
+    "Mutual commutativity of higher promoted pairs: COMPLETE 2026-08-11 -- all 21 instances of the inventory (18 cylindrical pair instances + the three higher A2(2) pairs; brackets with each family's defining low charge vanish by construction) are proved identically over Q(t) via even-spin vacancy certificates, ALL EIGHTEEN sector verdicts on the same GF(p) tags=d-rank footing (cyl sigma=12 x3 = 379, sigma=14 x3 = 929, sigma=16 x3 = 2211 [vacancy_cyl_121416, 2026-08-24]; cyl sigma=18 x3 = 5106, cyl sigma=20 x3 = 11491; A2 sigma=18 = 678, sigma=20 = 1351 [vacancy_a2_1820, 2026-08-25], sigma=24 = 5117; the two batches supersede the earlier fraction-free runs that retained no artifacts).  Evidence: pinned artifacts incl. the preregistered launch declaration and the merged batch record; results/vacancy_final.md supersedes the partial doc.  The historical 70-71-point checks stand as independent evidence.  This closes computed-range mutual commutativity; it does NOT prove infinitude of the cylindrical hierarchies.",
     "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
   ],
   "_public_edition": {
-    "generated_on": "2026-08-24",
+    "generated_on": "2026-08-25",
     "pruned_entry_ids": [
       "certificate_provenance_lint",
       "check_spin13_run_record",

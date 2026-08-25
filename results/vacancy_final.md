@@ -11,8 +11,8 @@ identically over Q(t).
 
 | sector | verdict | evidence |
 |---|---|---|
-| cyl sigma=12,14,16 (Sol 1,2,3 each) | VACANT x9 (fraction-free) | vacancy_high batch 2026-08-01/02 |
-| A2(2) sigma=18, 20 | VACANT (fraction-free / sparse+collapsed) | 2026-08-02/03 runs |
+| cyl sigma=12,14,16 (Sol 1,2,3 each) | VACANT x9, GF(p) tags=d-rank=379/929/2211 | vacancy_cyl_121416_certificate.json (2026-08-24; supersedes the fraction-free vacancy_high batch 2026-08-01/02) |
+| A2(2) sigma=18, 20 | VACANT x2, GF(p) tags=d-rank=678/1351 | vacancy_a2_1820_certificate.json (2026-08-25; supersedes the fraction-free/sparse 2026-08-02/03 runs) |
 | cyl sigma=18 (Sol 1,2,3) | VACANT x3, GF(p) tags=d-rank=5106 | vacancy_cyl_s18_certificate.{log,json} |
 | A2(2) sigma=24 | VACANT, GF(p) tags=d-rank=5117 | vacancy_a2_s24_certificate.{log,json} |
 | cyl sigma=20 (Sol 1,2,3) | VACANT x3, GF(p) tags=d-rank=11491/11491/11491 | vacancy_cyl_s20_certificate.{log,json} |
