@@ -253,8 +253,12 @@ for sigma in (3, 5, 7, 9, 11):
 P4c = cyl_P4(2, F(28), F(9))
 from mixed_engine import _M
 check("C7: the common N=28 I_3 density is exactly "
-      "7(dX)^4 + 6(dX)^2(dY.dY) + (dY.dY)^2 - 14(d2X)^2 - 2(d2Y.d2Y) "
-      "= 4[7 :T_X^2: + 6 T_X T_Y + :T_Y^2:] with no further terms",
+      "7(dX)^4 + 6(dX)^2(dY.dY) + (dY.dY)^2 - 14(d2X)^2 - 2(d2Y.d2Y) -- i.e. "
+      "7[4:T_X^2:] + 6[4 T_X T_Y] + [4:T_Y^2:] MODULO TOTAL DERIVATIVES, with the "
+      "bracketed class representatives the mod-d identities certified in "
+      "kdv_identification.py (X) and cyl_hidden_kdv_scan.py A0-A3 (Y, cross); "
+      "the normal-product identity is also established independently by the "
+      "triangle's T6b",
       P4c == {_M((1, 1, 1, 1)): F(7), _M((1, 1), [(1, 1)]): F(6),
               _M((), [(1, 1), (1, 1)]): F(1), _M((2, 2)): F(-14),
               _M((), [(2, 2)]): F(-2)})

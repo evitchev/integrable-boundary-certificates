@@ -707,7 +707,7 @@
         "PYTHON",
         "wolfram_triangle.py"
       ],
-      "description": "Verification triangle (2026-08-22): an independent Mathematica replication of targets T1-T6c (wolfram/HANDOFF-SPEC.md), written by a clean-context implementer from the papers and the spec only (no access to code/, results/*.json, independent/, or the targets), on Wolfram Engine 15.0 with K. Thielemans' OPEdefs 3.1 (vendored unmodified, wolfram/OPEdefs/) for point-split normal products and a from-spec generating-function Wick engine for vertex residues (cross-checked against OPEdefs on 44 monomials). The runner re-executes wolfram/triangle_targets.wls and compares results/wolfram_triangle.json fail-closed with code/wolfram_targets.json: Theorem 1(i)/(ii), the sqrt2/45 constant, the spin-3 screening locus {1/2,8}, the thirteen L(1,0) dimensions, and the three N=28 statements -- all agree. EXPENSIVE and machine-local like the Lean entry: proprietary toolchain; fails LOUDLY where wolframscript is absent; the certificate authority stays in the open stack. ~60 s with a kernel.",
+      "description": "Verification triangle (2026-08-22): an independent Mathematica replication of targets T1-T6c (wolfram/HANDOFF-SPEC.md), written by a clean-context implementer from the papers and the spec only (no access to code/, results/*.json, or independent/; the spec states the expected values, so this is an independent IMPLEMENTATION checked against specified regression targets, not a blind prediction), on Wolfram Engine 15.0 with K. Thielemans' OPEdefs 3.1 (vendored unmodified, wolfram/OPEdefs/) for point-split normal products and a from-spec generating-function Wick engine for vertex residues (cross-checked against OPEdefs on 44 monomials). The runner re-executes wolfram/triangle_targets.wls and compares results/wolfram_triangle.json fail-closed with code/wolfram_targets.json: Theorem 1(i)/(ii), the sqrt2/45 constant, the spin-3 screening locus {1/2,8}, the thirteen L(1,0) dimensions, and the three N=28 statements -- all agree. EXPENSIVE and machine-local like the Lean entry: proprietary toolchain; fails LOUDLY where wolframscript is absent; the certificate authority stays in the open stack. ~60 s with a kernel.",
       "claims": [
         "independent Mathematica replication (unrelated implementation, vendor, algorithm lineage) agrees with every baked target T1-T6c"
       ],
@@ -865,6 +865,101 @@
       "timeout_s": 600
     },
     {
+      "id": "cyl_jump_point_tower",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_jump_point_tower.py"
+      ],
+      "description": "The (-25/2,-45/2) jump point of the cylindrical curve up the tower (2026-08-22): Solutions 2 and 3 have the SAME I_3 there (same-sheet merger; 4[:T_X^2: - 3 T_X T_Y + :T_Y^2:]); full ad_{I_3} kernels at weights 6,8,10,12 have dims 2,1,1,1 (the multiplicity jump is confined to spin 5); the e^{sqrt2 X}-screened subspace has dim 1 at every weight (0 at a^2=3): the self-dual line runs through I_11 with exactly one extra, genuinely mixed (not pure-Y) charge at spin 5; the promoted generic I_7, I_9, I_11 of BOTH solutions specialize pole-free to the unique kernel class -- the generic towers meet here and the generic line is the screened line. Exact over Q(sqrt2); finite-range (spins <= 11). ~80 s.",
+      "claims": [
+        "at (-25/2,-45/2): Solutions 2 and 3 merge; kernel dims 2,1,1,1 at spins 5..11; screened line through I_11; extra spin-5 class mixed; generic towers of both solutions coincide there"
+      ],
+      "required_markers": [
+        "JUMP-POINT TOWER CERTIFIED"
+      ],
+      "timeout_s": 900
+    },
+    {
+      "id": "cyl_strata_points",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_strata_points.py"
+      ],
+      "description": "Open-stack certification of the Mathematica lab's multiplicity stratification of the cylindrical curve (wolfram/lab/cyl_strata.wls; lab opener, 2026-08-23), spins 5/7/9: kernel dims of ad_{I_3} at every lab-reported jump point for all three solutions -- (-2,-9) dims 2,2,2 (decoupling; Sol 2,3), (-25/2,-45/2) dims 2,1,1 (Sol 2,3), (-24,-35) dims 1,1,2 for Solution 3 ONLY [NEW, found exactly by the lab, never by sampling] -- plus the N=1 endpoint and the N=28 embedding point at multiplicity one. Mechanism at (-24,-35): a pure multiplicity jump -- no e^{sqrt2 X}-screened direction, no pure-X/Y element, I_3 not X-screened there. The lab's COMPLETENESS statement (no other jump points) is a lab result, typed as such in its JSON; this certificate pins the positive content. ~70 s.",
+      "claims": [
+        "lab-found multiplicity jump points of the cylindrical families at spins 5-9 confirmed; (-24,-35) is a new pure multiplicity jump of Solution 3 at spin 9"
+      ],
+      "required_markers": [
+        "STRATIFICATION POINTS CERTIFIED"
+      ],
+      "timeout_s": 900
+    },
+    {
+      "id": "cyl_strata_points_s11",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_strata_points_s11.py"
+      ],
+      "description": "Open-stack certification of the lab's spin-11 stratification (wolfram/lab, weight-12 matrices 461x160, 2026-08-23): Solution 2 at (-143/4,-189/4) [t = 9/7, NEW] has kernel dims 1,1,1,2 at spins 5,7,9,11 -- a spin-11-only pure multiplicity jump (no screened direction, no pure-X/Y element); Solutions 1 and 3 at multiplicity one there; (-24,-35) Solution 3 back to dim 1 at spin 11; (-2,-9) decoupling persists (dims 2) for Solutions 2 and 3. Seven weight-12 kernels, ~6 min, hence expensive.",
+      "claims": [
+        "(-143/4,-189/4) is a spin-11-only pure multiplicity jump of cylindrical Solution 2; the other lab-reported spin-11 data confirmed"
+      ],
+      "required_markers": [
+        "SPIN-11 STRATIFICATION POINTS CERTIFIED"
+      ],
+      "expensive": true,
+      "timeout_s": 1800
+    },
+    {
+      "id": "cyl_spin13_prediction",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_spin13_prediction.py"
+      ],
+      "description": "Preregistered spin-13 test of the lab hypothesis t_k=(2k+3)/(2k+1) (results/cyl_spin13_preregistration.md, committed f5d6521 before any weight-14 kernel was computed). Outcome: NOT CONFIRMED -- all three cylindrical Solutions have spin-13 ad_{I_3} kernel dimension 1 at t=11/9, (N,s)=(-238/5,-297/5), equal to the preregistered baseline (t=2 probe; the generic spin-13 multiplicity is not yet established symbolically -- that is the global weight-14 stratification's job); not a refutation (the sequence skips spin 7). Controls as preregistered: (-2,-9) decoupling dim 2 for Solutions 2,3 (weight 14 sees jumps), single-spin points back to 1, t=5/4 and 7/6 at the baseline. Nineteen exact weight-14 kernels (929 densities), ~13 min each, run in parallel; expensive.",
+      "claims": [
+        "the preregistered t=11/9 spin-13 jump is not observed on any sheet; the spin-13 kernel dimensions at the 19 preregistered points are as pinned"
+      ],
+      "required_markers": [
+        "SPIN-13 PREDICTION TEST CERTIFIED"
+      ],
+      "expensive": true,
+      "timeout_s": 3600,
+      "artifacts": [
+        {
+          "path": "results/cyl_spin13_prediction_run.json",
+          "sha256": "sha256:029a5b1acc9cf1583e074a5dfe423efb162176ce008d992f0f88867a2584aaa8"
+        }
+      ]
+    },
+    {
+      "id": "vacancy_cyl_121416",
+      "claims": [
+        "R6"
+      ],
+      "description": "Cylindrical even-spin vacancies at sigma=12,14,16 for all three curve solutions: nine GF(p) tags=d-rank certificates, all VACANT over Q (tags = d-rank = 379 at sigma=12, 929 at 14, 2211 at 16).  Recomputes under the GF(p) certifier the four lowest cylindrical pairs ([I5,I7] at sigma=12, [I5,I9] at 14, [I5,I11] and [I7,I9] at 16), whose original fraction-free run (vacancy_high.py, git history only, 6ebd63c) retained no per-task artifact; this puts all 21 instances of the mutual-commutativity inventory on one footing.  The retained artifact carries per-task records (prime, prime_index, tags, derivative_rank, genuine_gap, verdict) and the run enforces the exact ranks, not merely genuine_gap == 0.  Measured wall time ~1400-1650 s (1414 s and 1358 s here, 1619 s on an independent Python 3.8 rerun): expensive, NOT a fast-suite entry.  The artifact is an artifact of record -- a run whose payload agrees leaves the file byte-identical, so the pin below is stable across re-runs; a payload disagreement rewrites it and breaks the pin, which is the intended alarm.",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "vacancy_cyl_121416.py"
+      ],
+      "timeout_s": 3600,
+      "required_markers": [
+        "CYL SIGMA-12/14/16 VACANCY CERTIFIED"
+      ],
+      "artifacts": [
+        {
+          "path": "results/vacancy_cyl_121416_certificate.json",
+          "sha256": "sha256:92bddeba11f18a15e6ba7acc0e3db18f394530bee7b65c4c6bc01dcd3a002493"
+        }
+      ]
+    },
+    {
       "id": "public_provenance_lint",
       "claims": [
         "provenance"
@@ -885,13 +980,14 @@
     "R2's zero/pole-divisor and duality-covariance prose is verified narratively (second audit pass), not by a retained script.",
     "R8 is a data-backed conjecture: the kernel side comes from vacancy_tables_and_I5I7 and the screening side from screening_annihilates_p8; no certification can apply to the conjecture itself.",
     "Cylindrical printed I5 formulas eqs. (54)/(56)/(58) are not encoded; the R7 erratum is deliberately narrowed to eqs. (53)/(55)/(57).",
-    "Mutual commutativity of higher promoted pairs: COMPLETE 2026-08-11 -- all 21 instances of the inventory (18 cylindrical pair instances + the three higher A2(2) pairs; brackets with each family's defining low charge vanish by construction) are proved identically over Q(t) via even-spin vacancy certificates (fraction-free through sigma=16; GF(p) tags=d-rank certificates for cyl sigma=18 x3 = 5106, A2 sigma=24 = 5117, cyl sigma=20 x3 = 11491).  Evidence: raw_certificate_pins artifacts incl. the preregistered launch declaration and the merged batch record; results/vacancy_final.md supersedes the partial doc.  The historical 70-71-point checks stand as independent evidence.  This closes computed-range mutual commutativity; it does NOT prove infinitude of the cylindrical hierarchies.",
+    "Mutual commutativity of higher promoted pairs: COMPLETE 2026-08-11 -- all 21 instances of the inventory (18 cylindrical pair instances + the three higher A2(2) pairs; brackets with each family's defining low charge vanish by construction) are proved identically over Q(t) via even-spin vacancy certificates, all nine on the same GF(p) tags=d-rank footing (cyl sigma=12 x3 = 379, sigma=14 x3 = 929, sigma=16 x3 = 2211 [vacancy_cyl_121416, 2026-08-24, superseding the earlier fraction-free run that retained no artifact]; cyl sigma=18 x3 = 5106, A2 sigma=24 = 5117, cyl sigma=20 x3 = 11491).  Evidence: pinned artifacts incl. the preregistered launch declaration and the merged batch record; results/vacancy_final.md supersedes the partial doc.  The historical 70-71-point checks stand as independent evidence.  This closes computed-range mutual commutativity; it does NOT prove infinitude of the cylindrical hierarchies.",
     "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
   ],
   "_public_edition": {
-    "generated_on": "2026-08-22",
+    "generated_on": "2026-08-24",
     "pruned_entry_ids": [
       "certificate_provenance_lint",
+      "check_spin13_run_record",
       "dossier_evidence_pins",
       "draft_builds_and_hash"
     ],

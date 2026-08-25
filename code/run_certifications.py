@@ -89,16 +89,56 @@ def worktree_state() -> dict:
         ["git", "-C", str(ROOT), "status", "--porcelain"],
         capture_output=True, text=True,
     )
+    if status.returncode != 0:
+        # provenance must fail UNKNOWN, never clean (audit, round 7)
+        return {
+            "worktree_dirty": None,
+            "provenance_error": (f"git status exited {status.returncode}: "
+                                 f"{status.stderr.strip()[:200]}"),
+        }
     paths = [line[3:] for line in status.stdout.splitlines() if line]
+    tracked = [line[3:] for line in status.stdout.splitlines()
+               if line and not line.startswith("??")]
+    untracked = [line[3:] for line in status.stdout.splitlines()
+                 if line.startswith("??")]
     return {
         "worktree_dirty": bool(paths),
         "dirty_path_count": len(paths),
         "dirty_paths": paths[:40],
+        # tracked-dirty means the committed sources themselves differ from
+        # `git_commit`; untracked files can still affect execution (modules,
+        # configuration, artifacts), so both are recorded (rounds 5, 7)
+        "tracked_dirty": bool(tracked),
+        "tracked_dirty_paths": tracked[:40],
+        "untracked_paths": untracked[:40],
     }
+
+
+# Every key the runner actually consults.  A key outside this set is a
+# typo, and a typo in a pin key is silent: the entry would appear to be
+# pinned while nothing was ever hashed (observed 2026-08-24, where an
+# entry carried "raw_certificate_pins" -- a phrase from another entry's
+# prose -- instead of "artifacts").  Fail closed instead.
+KNOWN_ENTRY_KEYS = {
+    "id", "claims", "description", "mode", "command", "cwd", "timeout_s",
+    "expensive", "required_markers", "forbidden_markers", "artifacts",
+}
 
 
 def run_entry(entry: dict, *, execute: bool) -> dict:
     """Execute (or hash-verify) one certification entry."""
+
+    unknown = sorted(set(entry) - KNOWN_ENTRY_KEYS)
+    if unknown:
+        return {
+            "id": entry.get("id", "<no id>"),
+            "claims": entry.get("claims", []),
+            "description": entry.get("description", ""),
+            "mode": entry.get("mode", "<none>"),
+            "status": "failed",
+            "artifact_hashes": {},
+            "failures": [f"unknown_entry_key:{k}" for k in unknown],
+        }
 
     result = {
         "id": entry["id"],
@@ -222,6 +262,8 @@ def main() -> int:
             "failed": len(failed),
             "skipped_expensive": sum(
                 1 for r in results if r["status"] == "skipped_expensive"),
+            "pins_verified": sum(
+                1 for r in results if r["status"] == "pass_pins_verified"),
         },
         "status": "failed" if failed else (
             "passed_fast_checks_and_pins" if not args.full
@@ -244,9 +286,12 @@ def main() -> int:
                       encoding="utf-8")
     staged.replace(manifest_path)
     print(f"\nmanifest: {manifest_path}")
+    s = manifest["summary"]
     print(f"status: {manifest['status']} "
-          f"({manifest['summary']['passed']}/{manifest['summary']['total']} "
-          f"passed, {manifest['summary']['skipped_expensive']} pinned-only)")
+          f"({s['passed'] - s['pins_verified']} executed passes, "
+          f"{s['pins_verified']} pins-verified, "
+          f"{s['skipped_expensive']} skipped-expensive, "
+          f"of {s['total']})")
     return 1 if failed else 0
 
 

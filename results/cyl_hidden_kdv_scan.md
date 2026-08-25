@@ -74,8 +74,9 @@ control: a KdV ray at Q^2 = 1 plus the cross term has no common root.
   pair +-sqrt2 means X enters only through its stress tensor (the
   joint +-sqrt2 kernel is L(1,0)_X, the companion's Section 6): at
   these points the tower through spin 5 lives in L(1,0)_X (x)
-  (Y-invariants) -- e.g. at (28, 9) the density is
-  4 (7 T_X + T_Y)(T_X + T_Y) up to the usual quantum terms.  N = 1 is
+  (Y-invariants) -- e.g. at (28, 9) the I_3 class is, modulo total
+  derivatives, 4 [7 :T_X^2: + 6 T_X T_Y + :T_Y^2:] (see the N = 28
+  follow-up below).  N = 1 is
   the branch point (Sol 1 = Sol 3 there, the paperclip n = -1
   reduction) and N = 0 has no Y; N = 28 is a PHYSICAL integer, with
   Solutions 1 and 2 embedded on opposite sheets.
@@ -160,7 +161,11 @@ coincide too: Solutions 1 and 2 are ONE family there through the
 entire known range.  The common spin-3 density is exactly
 
     7 (dX)^4 + 6 (dX)^2 (dY.dY) + (dY.dY)^2 - 14 (d2X)^2 - 2 (d2Y.d2Y)
-    = 4 [ 7 :T_X^2: + 6 T_X T_Y + :T_Y^2: ]
+    = 4 [ 7 :T_X^2: + 6 T_X T_Y + :T_Y^2: ]   MODULO TOTAL DERIVATIVES
+
+(the first line is a density identity; the T-composite line is a class
+identity -- the normal-ordered products differ from the density by
+total derivatives)
 
 with no further terms -- a T-composite through and through.  (A
 first version of this note wrote 4(7T_X + T_Y)(T_X + T_Y); that has
@@ -192,3 +197,49 @@ certificate so its marker is self-contained.  (6) LOW, fixed --
 explicit fail-closed flag check (survives python -O) and a
 __file__-relative data path.  Wording "genuine tower-level
 degeneration point" replaced by "finite-range merger/embedding".
+
+## Follow-up (2026-08-22): the (-25/2, -45/2) jump point up the tower
+
+Certificate `code/cyl_jump_point_tower.py` (registered; ~80 s).  The full
+ad_{I_3} kernel was computed at weights 6, 8, 10, 12 (spins 5-11) at
+(N, s) = (-25/2, -45/2) -- the promoted generic densities cannot be
+trusted to span an enlarged kernel -- and the e^{sqrt2 X}-screened
+subspace inside it measured exactly over Q(sqrt2).
+
+* SECOND MERGER, on one sheet: Solutions 2 and 3 have the same I_3 at
+  this point, (dX)^4 - 2(d2X)^2 - 3(dX)^2(dY.dY) + (dY.dY)^2 - 2(d2Y.d2Y)
+  = 4[:T_X^2: - 3 T_X T_Y + :T_Y^2:] MODULO TOTAL DERIVATIVES (a
+  T-composite again as a charge-class identity; per bosonic block the
+  difference is -2((d2X)^2 + dX d3X) = -2 d(dX d2X), a total
+  derivative, and likewise for Y), and their
+  promoted generic I_7, I_9, I_11 both specialize pole-free to the
+  unique kernel class there: the two generic towers meet through I_11.
+  (The N = 28 merger paired deck-conjugate points of Solutions 1 and 2;
+  this one is a single point shared by Solutions 2 and 3.)
+* Kernel dimensions 2, 1, 1, 1 at spins 5, 7, 9, 11: the multiplicity
+  jump is confined to spin 5 in the known range.
+* Screened dimensions 1, 1, 1, 1 at a^2 = 2 (and 0, 0, 0, 0 at a^2 = 3):
+  the self-dual line runs through I_11, and at spins 7-11 the unique
+  class IS that line -- the generic line is the screened line.  So the
+  point is a tower-level L(1,0)_X-type embedding with exactly one extra
+  charge, at spin 5.
+* That extra spin-5 class is genuinely MIXED: no combination of the
+  spin-5 kernel is pure-Y, so this is not a decoupling (contrast the
+  (-2,-9) point).  What it is -- an extra O(N)-invariant charge that
+  commutes with I_3 only at this point and involves X beyond T_X -- is
+  open; its existence at exactly one spin is the signature of a
+  jumping locus of the multiplicity function, not of the screening
+  locus.
+
+Status: finite-range (spins <= 11).  Summary of the three non-trivial
+points of the cylindrical curve found so far:
+  (28, -+9)        merger of Sol 1 and Sol 2 (deck-conjugate points),
+                   screened through I_11, multiplicity one;
+  (-25/2, -45/2)   merger of Sol 2 and Sol 3 (same point), screened
+                   through I_11, one extra mixed charge at spin 5;
+  (-2, -9)         decouplings: Sol 3 = KdV(c=-2)_X (+) KdV_Y,
+                   Sol 2 = free-quadratic_X (+) KdV_Y.
+Open, and the first targets of the Mathematica lab: the complete
+multiplicity stratification of the curve (where else does the spin-5
+kernel jump? at which spins elsewhere?), and the structure of the
+merged families at the two merger points.

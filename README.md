@@ -41,8 +41,10 @@ are not run by `run_certifications.py`.
 
 `wolfram/triangle_targets.wls` is a second independent replication,
 written by a clean-context implementer from the papers and a hand-off
-spec only (no access to this repository's engines, stored results,
-or target values), on the Wolfram Engine with K. Thielemans'
+spec only (no access to this repository's engines, stored results, or
+code; the spec states the expected values, so this is an independent
+IMPLEMENTATION checked against specified regression targets, not a
+blind prediction), on the Wolfram Engine with K. Thielemans'
 OPEdefs 3.1 (`wolfram/OPEdefs/`, redistributed unmodified under its
 own terms -- see the NOTICE there; not covered by this repository's
 MIT license).  It reproduces the headline targets -- the two

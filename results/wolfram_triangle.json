@@ -4,24 +4,24 @@
 		"exact":true,
 		"notes":"T_Q = NO[J,J]/2 + Q J' with J = d phi (OPEdefs); :T_Q T_Q: = NO[T_Q,T_Q] (point-split). Class coordinates of NO[T_Q,T_Q] - (1/4)[(d phi)^4 + (4Q^2-2)(d2 phi)^2] modulo total derivatives, computed with symbolic Q: {0, 0} (all identically zero in Q). Explicit NO[T_Q,T_Q] as a Wick polynomial: fld[phi, 1]^4/4 + Q^2*fld[phi, 2]^2 + (fld[phi, 1]*fld[phi, 3])/2 + Q*(fld[phi, 1]^2*fld[phi, 2] + fld[phi, 4]/3). Monomials (d phi)^4, (d2 phi)^2 are read as Wick-normal-ordered monomials, equal to right-nested point-split products of the basic field (identity verified in validation (c)).",
 		"engine":"Wolfram Language 15.0.0 for Linux x86 (64-bit) (May 26, 2026) / OPEdefs 3.1 (beta 4) by K. Thielemans (vendored unmodified, wolfram/OPEdefs/) for point-split normal-ordered products; total-derivative quotient by exact linear algebra (this script)",
-		"script_sha256":"6f545a61c0153354cbaa3932b20586098d6fba21e9504360af23606fbffab07a",
-		"run":"2026-08-23T02:18:32Z"
+		"script_sha256":"f6458307aff0651363cd3fb62ff6110b2ae3bb56e14ca6b80252f616e731de95",
+		"run":"2026-08-23T15:32:01Z"
 	},
 	"T2":{
 		"value":true,
 		"exact":true,
 		"notes":"Left side NO[T_Q, NO[T_Q,T_Q]] + (7/8) NO[T_Q', T_Q'] (OPEdefs, right-nested), T_Q' = derivative of the composite (Leibniz).  Evaluated at both roots Q = +-3/(2 Sqrt[2]) of Q^2 = 9/8: {True, True}.  Class coordinates of (lhs - P6/8) modulo d as functions of symbolic Q (factored): {(9 - 8*Q^2)/64, (Q*(-9 + 8*Q^2))/4, (-3*(-9 + 8*Q^2))/16, 0} -- vanish exactly on 8Q^2 - 9 = 0.  P6 = (d phi)^6 + (5/2)(d phi)^2 (d2 phi)^2 + (31/24)(d3 phi)^2 read as Wick monomials.",
 		"engine":"Wolfram Language 15.0.0 for Linux x86 (64-bit) (May 26, 2026) / OPEdefs 3.1 (beta 4) by K. Thielemans (vendored unmodified, wolfram/OPEdefs/) for point-split normal-ordered products; total-derivative quotient by exact linear algebra (this script)",
-		"script_sha256":"6f545a61c0153354cbaa3932b20586098d6fba21e9504360af23606fbffab07a",
-		"run":"2026-08-23T02:18:32Z"
+		"script_sha256":"f6458307aff0651363cd3fb62ff6110b2ae3bb56e14ca6b80252f616e731de95",
+		"run":"2026-08-23T15:32:01Z"
 	},
 	"T3":{
 		"value":"Sqrt[2]/45",
 		"exact":true,
 		"notes":"Residue computed from the explicit free-field formula e^{a phi(z)} e^{-a phi(w)} = (z-w)^(-a^2) :exp(a Sum_{k>=1} (z-w)^k/k! d^k phi(w)): with a = 2 Sqrt[2] (a^2 = 8, eighth-order pole; residue = (z-w)^7 coefficient of the normal-ordered exponential), the sign <phi(z) phi(w)> = +log(z-w) being forced by <d phi d phi> = +(z-w)^-2 and by the spec's weight formula h = alpha^2/2 at Q = 0 (checked in validation (b) via OPEdefs).  The charge class of the residue is compared with that of J_density modulo total derivatives; proportionality holds for the whole residue: True.  Residue (Wick polynomial): (64*Sqrt[2]*fld[phi, 1]^7)/315 + (32*fld[phi, 1]^5*fld[phi, 2])/15 + (8*Sqrt[2]*fld[phi, 1]^3*fld[phi, 2]^2)/3 + (4*fld[phi, 1]*fld[phi, 2]^3)/3 + (8*Sqrt[2]*fld[phi, 1]^4*fld[phi, 3])/9 + (8*fld[phi, 1]^2*fld[phi, 2]*fld[phi, 3])/3 + (Sqrt[2]*fld[phi, 2]^2*fld[phi, 3])/3 + (2*Sqrt[2]*fld[phi, 1]*fld[phi, 3]^2)/9 + (4*fld[phi, 1]^3*fld[phi, 4])/9 + (Sqrt[2]*fld[phi, 1]*fld[phi, 2]*fld[phi, 4])/3 + (fld[phi, 3]*fld[phi, 4])/18 + (Sqrt[2]*fld[phi, 1]^2*fld[phi, 5])/15 + (fld[phi, 2]*fld[phi, 5])/30 + (fld[phi, 1]*fld[phi, 6])/90 + fld[phi, 7]/(1260*Sqrt[2]).  Parity-even part of the residue is a total derivative: True.  Ambiguity: the ordering e^{+a}(z) e^{-a}(w) is taken literally from the spec; the opposite ordering would flip the sign of r.  Class coordinates: residue {Sqrt[2]/45, 0, (8*Sqrt[2])/9, (64*Sqrt[2])/315}, J {1, 0, 40, 64/7}.",
 		"engine":"Wolfram Language 15.0.0 for Linux x86 (64-bit) (May 26, 2026) / vertex-operator residues by this script's generating-function Wick engine (conventions of the hand-off spec), cross-checked against OPEdefs 3.1 (beta 4) by K. Thielemans through weight 7; twisted-derivative quotient by exact linear algebra",
-		"script_sha256":"6f545a61c0153354cbaa3932b20586098d6fba21e9504360af23606fbffab07a",
-		"run":"2026-08-23T02:18:32Z"
+		"script_sha256":"f6458307aff0651363cd3fb62ff6110b2ae3bb56e14ca6b80252f616e731de95",
+		"run":"2026-08-23T15:32:01Z"
 	},
 	"T4":{
 		"value":[
@@ -31,8 +31,8 @@
 		"exact":true,
 		"notes":"Residue of [(d phi)^4 + (5/2)(d2 phi)^2](z) e^{alpha phi(w)} (symbolic alpha, Q = 0) reduced modulo the twisted image Im(d + alpha d phi) at weight 3 via a basis of the annihilator (the twisted derivative V_2 -> V_3 is injective for every alpha, so no parameter-dependent pivots).  Condition polynomial(s): {-(alpha*(-8 + alpha^2)*(-1 + 2*alpha^2))}.  Full root set in alpha: {0, -(1/Sqrt[2]), 1/Sqrt[2], -2*Sqrt[2], 2*Sqrt[2]}.  VALUE = sorted set of alpha^2 over the NONZERO roots (the spec names {1/2, 8} and mentions alpha = 0 parenthetically; the trivial root alpha = 0 is recorded here and excluded from the value).  For the generic ray (d phi)^4 + kappa (d2 phi)^2 the condition is {-2*alpha*(4 - 6*alpha^2 + alpha^4 - alpha^2*kappa)}.",
 		"engine":"Wolfram Language 15.0.0 for Linux x86 (64-bit) (May 26, 2026) / vertex-operator residues by this script's generating-function Wick engine (conventions of the hand-off spec), cross-checked against OPEdefs 3.1 (beta 4) by K. Thielemans through weight 7; twisted-derivative quotient by exact linear algebra",
-		"script_sha256":"6f545a61c0153354cbaa3932b20586098d6fba21e9504360af23606fbffab07a",
-		"run":"2026-08-23T02:18:32Z"
+		"script_sha256":"f6458307aff0651363cd3fb62ff6110b2ae3bb56e14ca6b80252f616e731de95",
+		"run":"2026-08-23T15:32:01Z"
 	},
 	"T5":{
 		"value":[
@@ -53,24 +53,24 @@
 		"exact":true,
 		"notes":"For each density weight w = 2..14: the space of classes [P] in V_w / d V_{w-1} (V_w = all Wick monomials of weight w in d^k phi, both parities) such that Res P(z) e^{+-Sqrt[2] phi(w)} lies in Im(d +- Sqrt[2] d phi). Computed as dim ker(combined annihilator . residue matrices on V_w) - dim V_{w-1} (d is injective and Im d lies in the kernel, which is asserted).  Dimensions over Q(Sqrt[2]).  Cross-checked by an all-rational path (boson rescaled so that the propagator is 2/(z-w)^2 and the momenta are +-1; identical dimensions): True.  dim V_w = p(w) (partitions).",
 		"engine":"Wolfram Language 15.0.0 for Linux x86 (64-bit) (May 26, 2026) / vertex-operator residues by this script's generating-function Wick engine (conventions of the hand-off spec), cross-checked against OPEdefs 3.1 (beta 4) by K. Thielemans through weight 7; twisted-derivative quotient by exact linear algebra",
-		"script_sha256":"6f545a61c0153354cbaa3932b20586098d6fba21e9504360af23606fbffab07a",
-		"run":"2026-08-23T02:18:32Z"
+		"script_sha256":"f6458307aff0651363cd3fb62ff6110b2ae3bb56e14ca6b80252f616e731de95",
+		"run":"2026-08-23T15:32:01Z"
 	},
 	"T6a":{
 		"value":true,
 		"exact":true,
 		"notes":"Coefficients in the monomial order [(dX)^4, (dX)^2 (dY.dY), (dY.dY)^2, (d2X)^2, (d2Y.d2Y)] taken from the spec's Sol 1 / Sol 2 formulas: Sol 1 at (N,s) = (28,-9): {7, 6, 1, -14, -2}; Sol 2 at (28,9): {7, 6, 1, -14, -2}.  Both points satisfy s^2 = (N-25)(N-1): True.  The Y-part (dY.dY)^2 - 2 (d2Y.d2Y) is as stated in the spec's normalisation rule.",
 		"engine":"Wolfram Language 15.0.0 for Linux x86 (64-bit) (May 26, 2026) (exact rational arithmetic on the spec's coefficient formulas)",
-		"script_sha256":"6f545a61c0153354cbaa3932b20586098d6fba21e9504360af23606fbffab07a",
-		"run":"2026-08-23T02:18:32Z"
+		"script_sha256":"f6458307aff0651363cd3fb62ff6110b2ae3bb56e14ca6b80252f616e731de95",
+		"run":"2026-08-23T15:32:01Z"
 	},
 	"T6b":{
 		"value":true,
 		"exact":true,
 		"notes":"T_X = NO[JX,JX]/2, T_Y = Sum_i NO[JY_i,JY_i]/2 (OPEdefs, explicit bosons; NO[TX,TY] computed by OPEdefs, it has no contractions).  Compared with the Sol-1 density at (28,-9) modulo total derivatives in the multi-boson Wick algebra, with N_explicit = 2 and 3 (the spec's permitted simplification; coefficient values at N = 28 kept).  N_explicit=2: 4[7 NO[TX,TX] + 6 NO[TX,TY] + NO[TY,TY]] = 7*fld[X, 1]^4 + 14*fld[X, 1]*fld[X, 3] + 6*fld[X, 1]^2*fld[Y1, 1]^2 + fld[Y1, 1]^4 + 2*fld[Y1, 1]*fld[Y1, 3] + 6*fld[X, 1]^2*fld[Y2, 1]^2 + 2*fld[Y1, 1]^2*fld[Y2, 1]^2 + fld[Y2, 1]^4 + 2*fld[Y2, 1]*fld[Y2, 3]; difference from Sol-1 density: 14*fld[X, 2]^2 + 14*fld[X, 1]*fld[X, 3] + 2*fld[Y1, 2]^2 + 2*fld[Y1, 1]*fld[Y1, 3] + 2*fld[Y2, 2]^2 + 2*fld[Y2, 1]*fld[Y2, 3]; total derivative: True  N_explicit=3: 4[7 NO[TX,TX] + 6 NO[TX,TY] + NO[TY,TY]] = 7*fld[X, 1]^4 + 14*fld[X, 1]*fld[X, 3] + 6*fld[X, 1]^2*fld[Y1, 1]^2 + fld[Y1, 1]^4 + 2*fld[Y1, 1]*fld[Y1, 3] + 6*fld[X, 1]^2*fld[Y2, 1]^2 + 2*fld[Y1, 1]^2*fld[Y2, 1]^2 + fld[Y2, 1]^4 + 2*fld[Y2, 1]*fld[Y2, 3] + 6*fld[X, 1]^2*fld[Y3, 1]^2 + 2*fld[Y1, 1]^2*fld[Y3, 1]^2 + 2*fld[Y2, 1]^2*fld[Y3, 1]^2 + fld[Y3, 1]^4 + 2*fld[Y3, 1]*fld[Y3, 3]; difference from Sol-1 density: 14*fld[X, 2]^2 + 14*fld[X, 1]*fld[X, 3] + 2*fld[Y1, 2]^2 + 2*fld[Y1, 1]*fld[Y1, 3] + 2*fld[Y2, 2]^2 + 2*fld[Y2, 1]*fld[Y2, 3] + 2*fld[Y3, 2]^2 + 2*fld[Y3, 1]*fld[Y3, 3]; total derivative: True",
 		"engine":"Wolfram Language 15.0.0 for Linux x86 (64-bit) (May 26, 2026) / OPEdefs 3.1 (beta 4) by K. Thielemans (vendored unmodified, wolfram/OPEdefs/) for point-split normal-ordered products; total-derivative quotient by exact linear algebra (this script)",
-		"script_sha256":"6f545a61c0153354cbaa3932b20586098d6fba21e9504360af23606fbffab07a",
-		"run":"2026-08-23T02:18:32Z"
+		"script_sha256":"f6458307aff0651363cd3fb62ff6110b2ae3bb56e14ca6b80252f616e731de95",
+		"run":"2026-08-23T15:32:01Z"
 	},
 	"T6c":{
 		"value":[
@@ -80,15 +80,15 @@
 		"exact":true,
 		"notes":"Density = Sol 1 at (28,-9) (equal to Sol 2 at (28,9) by T6a), weight 4, fields X, Y_1..Y_n.  Residue against e^{alpha X} contracts only dX-factors (Y's are spectators); conservation iff the residue lies in Im(d + alpha dX) at weight 3 in the multi-boson Wick algebra.  Results per momentum [+Sqrt[2], -Sqrt[2], +Sqrt[3], -Sqrt[3]]: N_explicit=2: {True, True, False, False}; N_explicit=3: {True, True, False, False}.  VALUE = [conserved under BOTH e^{+Sqrt[2]X} and e^{-Sqrt[2]X}, conserved under BOTH e^{+Sqrt[3]X} and e^{-Sqrt[3]X}] (the density is even in X, so the two signs agree).",
 		"engine":"Wolfram Language 15.0.0 for Linux x86 (64-bit) (May 26, 2026) / vertex-operator residues by this script's generating-function Wick engine (conventions of the hand-off spec), cross-checked against OPEdefs 3.1 (beta 4) by K. Thielemans through weight 7; twisted-derivative quotient by exact linear algebra",
-		"script_sha256":"6f545a61c0153354cbaa3932b20586098d6fba21e9504360af23606fbffab07a",
-		"run":"2026-08-23T02:18:32Z"
+		"script_sha256":"f6458307aff0651363cd3fb62ff6110b2ae3bb56e14ca6b80252f616e731de95",
+		"run":"2026-08-23T15:32:01Z"
 	},
 	"_provenance":{
 		"script":"wolfram/triangle_targets.wls",
-		"script_sha256":"6f545a61c0153354cbaa3932b20586098d6fba21e9504360af23606fbffab07a",
+		"script_sha256":"f6458307aff0651363cd3fb62ff6110b2ae3bb56e14ca6b80252f616e731de95",
 		"kernel_version":"15.0.0 for Linux x86 (64-bit) (May 26, 2026)",
 		"kernel_version_number":"15.0",
-		"run_utc":"2026-08-23T02:18:32Z",
+		"run_utc":"2026-08-23T15:32:01Z",
 		"ope_package":"OPEdefs 3.1 (beta 4) by K. Thielemans",
 		"ope_package_files":{
 			"Delta.m":"0b0fa3fd137cd1ff7b46e58ca3ebe735c01c643accae829ffca9a4b8b671b364",
@@ -96,7 +96,7 @@
 		},
 		"ope_package_source":"https://people.maths.ox.ac.uk/beem/materials/OPEdefs.zip",
 		"ope_package_license":"From the OPEdefs.m header: \"You're free to redistribute this package, on the only condition you keep this header and don't distribute modified code.\" (no warranty; author asks to be contacted by users). Used unmodified.",
-		"independence":"Inputs: wolfram/HANDOFF-SPEC.md, draft/enhanced_c1.tex, draft/main.tex. No project code, results, or target values were read.",
+		"independence":"Independent implementation with specified regression targets: inputs wolfram/HANDOFF-SPEC.md (which names the target quantities and their expected values, pinned from the Python stack before this script ran), draft/enhanced_c1.tex, draft/main.tex. No project code or results were read. This is an independent replication, not a blind prediction.",
 		"ambiguities":[
 			"Monomials such as (d phi)^4 in the spec/papers are read as Wick-normal-ordered monomials; verified in OPEdefs that these coincide with right-nested point-split products of the basic field derivatives (no correction terms).",
 			"Sign of the vertex OPE: d phi(z) e^{alpha phi(w)} ~ +alpha e^{alpha phi}(w)/(z-w) (i.e. <phi phi> = +log(z-w)), fixed by the spec's <d phi d phi> = +(z-w)^-2 and its weight formula h = alpha(alpha-2Q)/2, which OPEdefs reproduces with this sign.",

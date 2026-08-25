@@ -43,6 +43,28 @@ def main():
     if not SCRIPT.exists():
         print(f"REPLICATION SCRIPT MISSING: {SCRIPT.relative_to(ROOT)}")
         return 1
+    # freshness (audit fix): remove any prior artifact so a failed Export
+    # cannot leave a stale file in place, and bind the output to THIS
+    # script and THIS invocation afterwards
+    import time as _time
+    t_start = _time.time()
+    # the committed file is the artifact of record (the implementer's
+    # execution, pinned by the typed-claims mirror); keep it, require a
+    # FRESH execution to agree with it value by value, and restore it
+    reference = OUTPUT.read_bytes() if OUTPUT.exists() else None
+    try:
+        return _fresh_run_and_compare(ws, reference, t_start)
+    finally:
+        # byte-exact restoration on EVERY exit (failure, timeout, missing or
+        # malformed output, stale output, hash mismatch, exception): the
+        # artifact of record is never left deleted (audit fix, round 4)
+        if reference is not None:
+            OUTPUT.write_bytes(reference)
+
+
+def _fresh_run_and_compare(ws, reference, t_start):
+    if OUTPUT.exists():
+        OUTPUT.unlink()
     run = subprocess.run([ws, "-file", str(SCRIPT)], capture_output=True,
                          text=True, timeout=3600)
     if run.returncode != 0:
@@ -52,7 +74,27 @@ def main():
     if not OUTPUT.exists():
         print(f"REPLICATION OUTPUT MISSING: {OUTPUT.relative_to(ROOT)}")
         return 1
+    if OUTPUT.stat().st_mtime < t_start:
+        print("REPLICATION OUTPUT STALE: predates this invocation")
+        return 1
     got = json.loads(OUTPUT.read_text())
+    script_hash = sha256(SCRIPT)
+    recorded = {str(v.get("script_sha256", "")) for v in got.values()
+                if isinstance(v, dict) and v.get("script_sha256")}
+    if not recorded or any(script_hash.split(":")[1] not in h for h in recorded):
+        print(f"SCRIPT HASH MISMATCH: output records {recorded}, current "
+              f"script is {script_hash}")
+        return 1
+    if reference is not None:
+        ref = json.loads(reference.decode())
+        fresh_vals = {k: v.get("value") for k, v in got.items() if isinstance(v, dict)}
+        ref_vals = {k: v.get("value") for k, v in ref.items() if isinstance(v, dict)}
+        if fresh_vals != ref_vals:
+            print(f"FRESH RUN DISAGREES WITH THE ARTIFACT OF RECORD: {fresh_vals} vs {ref_vals}")
+            return 1
+        fresh_hash = sha256(OUTPUT)            # (the caller restores the artifact of record)
+        print(f"fresh execution agrees with the artifact of record; fresh output "
+              f"pin {fresh_hash}")
     targets = json.loads(TARGETS.read_text())["targets"]
     failures = 0
     for cid, tgt in targets.items():

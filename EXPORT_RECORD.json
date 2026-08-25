@@ -1,12 +1,34 @@
 {
   "schema_version": 1,
   "kind": "public_export_record",
-  "private_freeze_commit": "dcb325d6a3415396b961f1ffe2e0806c135ec72a",
+  "private_freeze_commit": "ed669c65e82017b9333de983864371ccbfd9d0fc",
   "private_worktree_dirty_at_export": true,
-  "exported_at_utc": "2026-08-23T02:19:33+00:00",
-  "exporter_sha256": "sha256:63406320f45c7f9ce8d64bd21e7f0e38b5b2a523854e900b82a1fe5273619bbe",
-  "source_file_count": 132,
+  "exported_at_utc": "2026-08-25T03:30:44+00:00",
+  "exporter_sha256": "sha256:15dc495e48d04237b68b2ab5d962e49e7d411b5b1ccb97fe89e853009e939c9a",
+  "source_file_count": 173,
   "transformation_log": {
+    "results/cyl_spin13_prediction_run.json": {
+      "public_sha256": "sha256:029a5b1acc9cf1583e074a5dfe423efb162176ce008d992f0f88867a2584aaa8",
+      "redactions": [
+        {
+          "rule": "[untracked-workspace-file]",
+          "count": 7
+        },
+        {
+          "rule": "python3",
+          "count": 1
+        }
+      ]
+    },
+    "results/cyl_strata_lab.md": {
+      "public_sha256": "sha256:1f82c63c21c981bd3aa9f04eddae9fca7e851dcee4f80537075310fed7e15b89",
+      "redactions": [
+        {
+          "rule": "[private-note]",
+          "count": 1
+        }
+      ]
+    },
     "results/freeze_seal_2026_08_15.json": {
       "public_sha256": "sha256:0c55d0399134b93f161c919f09b5acbd9263e97429e72f6b3e3fcc9e8c9a3433",
       "redactions": [

@@ -544,7 +544,7 @@ results["_provenance"] = <|
   "ope_package_files" -> AssociationThread[FileNameTake /@ opedefsFiles -> opedefsSHA],
   "ope_package_source" -> opedefsURL,
   "ope_package_license" -> "From the OPEdefs.m header: \"You're free to redistribute this package, on the only condition you keep this header and don't distribute modified code.\" (no warranty; author asks to be contacted by users). Used unmodified.",
-  "independence" -> "Inputs: wolfram/HANDOFF-SPEC.md, draft/enhanced_c1.tex, draft/main.tex. No project code, results, or target values were read.",
+  "independence" -> "Independent implementation with specified regression targets: inputs wolfram/HANDOFF-SPEC.md (which names the target quantities and their expected values, pinned from the Python stack before this script ran), draft/enhanced_c1.tex, draft/main.tex. No project code or results were read. This is an independent replication, not a blind prediction.",
   (* hostname and absolute command line deliberately omitted: both are
      privacy-screen tokens, and neither adds provenance beyond the
      script hash, kernel version, and run stamp recorded above. *)

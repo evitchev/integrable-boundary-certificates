@@ -1,0 +1,117 @@
+{
+ "object": "cylindrical even-spin vacancy at sigma = 12, 14, 16",
+ "records": [
+  {
+   "solution": 1,
+   "sigma": 12,
+   "prime": 2305843009213693951,
+   "prime_index": 0,
+   "tags": 379,
+   "derivative_rank": 379,
+   "genuine_gap": 0,
+   "verdict": "VACANT"
+  },
+  {
+   "solution": 2,
+   "sigma": 12,
+   "prime": 2305843009213693951,
+   "prime_index": 0,
+   "tags": 379,
+   "derivative_rank": 379,
+   "genuine_gap": 0,
+   "verdict": "VACANT"
+  },
+  {
+   "solution": 3,
+   "sigma": 12,
+   "prime": 2305843009213693951,
+   "prime_index": 0,
+   "tags": 379,
+   "derivative_rank": 379,
+   "genuine_gap": 0,
+   "verdict": "VACANT"
+  },
+  {
+   "solution": 1,
+   "sigma": 14,
+   "prime": 2305843009213693951,
+   "prime_index": 0,
+   "tags": 929,
+   "derivative_rank": 929,
+   "genuine_gap": 0,
+   "verdict": "VACANT"
+  },
+  {
+   "solution": 2,
+   "sigma": 14,
+   "prime": 2305843009213693951,
+   "prime_index": 0,
+   "tags": 929,
+   "derivative_rank": 929,
+   "genuine_gap": 0,
+   "verdict": "VACANT"
+  },
+  {
+   "solution": 3,
+   "sigma": 14,
+   "prime": 2305843009213693951,
+   "prime_index": 0,
+   "tags": 929,
+   "derivative_rank": 929,
+   "genuine_gap": 0,
+   "verdict": "VACANT"
+  },
+  {
+   "solution": 1,
+   "sigma": 16,
+   "prime": 2305843009213693951,
+   "prime_index": 0,
+   "tags": 2211,
+   "derivative_rank": 2211,
+   "genuine_gap": 0,
+   "verdict": "VACANT"
+  },
+  {
+   "solution": 2,
+   "sigma": 16,
+   "prime": 2305843009213693951,
+   "prime_index": 0,
+   "tags": 2211,
+   "derivative_rank": 2211,
+   "genuine_gap": 0,
+   "verdict": "VACANT"
+  },
+  {
+   "solution": 3,
+   "sigma": 16,
+   "prime": 2305843009213693951,
+   "prime_index": 0,
+   "tags": 2211,
+   "derivative_rank": 2211,
+   "genuine_gap": 0,
+   "verdict": "VACANT"
+  }
+ ],
+ "expected_tags": {
+  "12": 379,
+  "14": 929,
+  "16": 2211
+ },
+ "curve_point_t": "2",
+ "primes_offered": [
+  2305843009213693951,
+  2305843009213693967
+ ],
+ "acceptance": "for each task, verdict VACANT with tags == d-rank == the expected rank => genuine vacancy over Q => the four lowest cylindrical pairs ([I5,I7] at 12, [I5,I9] at 14, [I5,I11] and [I7,I9] at 16) hold identically over Q(t) for all three solutions, by Jacobi + the specialization lemma",
+ "supersedes": "the narrative table in results/vacancy_final.md, produced by code/vacancy_high.py (git history only, 6ebd63c), which retained no per-task artifact",
+ "provenance": {
+  "launch_commit": "7e9d3b0fcfe074ddcae3b357fc32307d159fffc6",
+  "stamped_at_utc": "2026-08-25T01:19:35+00:00",
+  "python": "3.8.10",
+  "sympy": "1.13.3",
+  "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.29",
+  "worktree_dirty": false,
+  "dirty_paths": [],
+  "dirty_path_count": 0
+ }
+}

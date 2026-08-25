@@ -1,0 +1,169 @@
+{
+	"sol1":{
+		"rows":24,
+		"cols":12,
+		"generic_rank":11,
+		"generic_multiplicity":1,
+		"det_degree":20,
+		"jumps":[],
+		"rejected_candidates":[
+			{
+				"factor":"-9 + t",
+				"degree":1,
+				"t0":"9",
+				"N":"7\/10",
+				"s":"-27\/10",
+				"rank":11,
+				"nullity":1,
+				"jump":0
+			},
+			{
+				"factor":"-1 + t",
+				"note":"parametrization pole t=+-1, not a curve point"
+			},
+			{
+				"factor":"1 + t",
+				"note":"parametrization pole t=+-1, not a curve point"
+			},
+			{
+				"factor":"103 + 63*t - 30*t^2 - 11*t^3 + 3*t^4",
+				"degree":4,
+				"t0":"Root[103 + 63*#1 - 30*#1^2 - 11*#1^3 + 3*#1^4 & , 1, 0]",
+				"N":"Root[2002 + 8639*#1 + 4308*#1^2 + 587*#1^3 + 16*#1^4 & , 2, 0]",
+				"s":"Root[533952 + 95184*#1 - 3753*#1^2 - 597*#1^3 + 16*#1^4 & , 3, 0]",
+				"rank":11,
+				"nullity":1,
+				"jump":0
+			}
+		]
+	},
+	"sol2":{
+		"rows":24,
+		"cols":12,
+		"generic_rank":11,
+		"generic_multiplicity":1,
+		"det_degree":44,
+		"jumps":[
+			{
+				"factor":"-3 + t",
+				"degree":1,
+				"t0":"3",
+				"N":"-2",
+				"s":"-9",
+				"rank":10,
+				"nullity":2,
+				"jump":1
+			},
+			{
+				"factor":"-5 + 3*t",
+				"degree":1,
+				"t0":"5\/3",
+				"N":"-25\/2",
+				"s":"-45\/2",
+				"rank":10,
+				"nullity":2,
+				"jump":1
+			}
+		],
+		"rejected_candidates":[
+			{
+				"factor":"-1 + t",
+				"note":"parametrization pole t=+-1, not a curve point"
+			},
+			{
+				"factor":"1 + t",
+				"note":"parametrization pole t=+-1, not a curve point"
+			},
+			{
+				"factor":"-11 + 5*t",
+				"degree":1,
+				"t0":"11\/5",
+				"N":"-21\/4",
+				"s":"-55\/4",
+				"rank":11,
+				"nullity":1,
+				"jump":0
+			},
+			{
+				"factor":"-1605 + 1277*t + 746*t^2 - 770*t^3 - 53*t^4 + 117*t^5",
+				"degree":5,
+				"t0":"Root[-1605 + 1277*#1 + 746*#1^2 - 770*#1^3 - 53*#1^4 + 117*#1^5 & , 1, 0]",
+				"N":"Root[1027900 + 390812*#1 + 54735*#1^2 + 4700*#1^3 + 259*#1^4 + 6*#1^5 & , 3, 0]",
+				"s":"Root[20280780 - 289548*#1 - 84729*#1^2 - 3288*#1^3 + 127*#1^4 + 6*#1^5 & , 2, 0]",
+				"rank":11,
+				"nullity":1,
+				"jump":0
+			}
+		]
+	},
+	"sol3":{
+		"rows":24,
+		"cols":12,
+		"generic_rank":11,
+		"generic_multiplicity":1,
+		"det_degree":42,
+		"jumps":[
+			{
+				"factor":"-3 + t",
+				"degree":1,
+				"t0":"3",
+				"N":"-2",
+				"s":"-9",
+				"rank":10,
+				"nullity":2,
+				"jump":1
+			},
+			{
+				"factor":"-5 + 3*t",
+				"degree":1,
+				"t0":"5\/3",
+				"N":"-25\/2",
+				"s":"-45\/2",
+				"rank":10,
+				"nullity":2,
+				"jump":1
+			}
+		],
+		"rejected_candidates":[
+			{
+				"factor":"-1 + t",
+				"note":"parametrization pole t=+-1, not a curve point"
+			},
+			{
+				"factor":"1 + t",
+				"note":"parametrization pole t=+-1, not a curve point"
+			},
+			{
+				"factor":"5 + t",
+				"degree":1,
+				"t0":"-5",
+				"N":"0",
+				"s":"5",
+				"rank":11,
+				"nullity":1,
+				"jump":0
+			},
+			{
+				"factor":"-313 + 385*t - 153*t^2 + 15*t^3 + 2*t^4",
+				"degree":4,
+				"t0":"Root[-313 + 385*#1 - 153*#1^2 + 15*#1^3 + 2*#1^4 & , 1, 0]",
+				"N":"Root[-3971 + 2736*#1 + 1680*#1^2 + 383*#1^3 + 36*#1^4 & , 2, 0]",
+				"s":"Root[-135216 + 49185*#1 + 14739*#1^2 + 1255*#1^3 + 36*#1^4 & , 2, 0]",
+				"rank":11,
+				"nullity":1,
+				"jump":0
+			}
+		]
+	},
+	"provenance":{
+		"weight":6,
+		"engine":"15.0.0 for Linux x86 (64-bit) (May 26, 2026)",
+		"script_sha256":"df4e3d240406ea915027a15becebc264a6d5ba6dee5aff79f962de7bbed636f6",
+		"matrix_sha256":{
+			"sol1":"39d50390b43e2e6179789fb1c10e9f99d19945e28d52ce5a277c7e39e760aaad",
+			"sol2":"2ee46a841148a751aa39fdc6e63edd7eb0e2582bff1588a4933687da14d6dd90",
+			"sol3":"acb9f528b28e7fad757dbb5987dab0e5ed5e7c0fbbfa794c958de97aa146dc0f"
+		},
+		"status":"LAB HYPOTHESIS -- certify in the open stack before claiming"
+	}
+}
