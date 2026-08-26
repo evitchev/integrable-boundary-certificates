@@ -1,0 +1,43 @@
+{
+ "object": "spin-14 (weight-15) genuine commutator kernels at the c=1 branch point: ker ad_{I5} (tower side) and ker ad_{I'3} (shifted KdV side), modulo total derivatives, one boson",
+ "tower_ker_ad_I5_dim": 0,
+ "kdv_ker_ad_I3p_dim": 0,
+ "acceptance": "both centralizer dimensions independently zero",
+ "launch": {
+  "launch_commit_at_start": "59fb70d7b6df4f00edda5c2ee412f16e0bda69fb",
+  "worktree_dirty_at_start": true,
+  "script_sha256_at_start": "9348650d023e8e8a4b6d4d3f9c93ff1cc4c12d908ea549f2522f798128a64acb",
+  "invocation": [
+   "python3",
+   "kdv_tower_spin14_vacancy.py"
+  ]
+ },
+ "script_sha256": "9348650d023e8e8a4b6d4d3f9c93ff1cc4c12d908ea549f2522f798128a64acb",
+ "invocation": [
+  "python3",
+  "kdv_tower_spin14_vacancy.py"
+ ],
+ "provenance": {
+  "launch_commit": "59fb70d7b6df4f00edda5c2ee412f16e0bda69fb",
+  "stamped_at_utc": "2026-08-26T20:09:14+00:00",
+  "python": "3.12.8",
+  "sympy": "1.14.0",
+  "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+  "worktree_dirty": true,
+  "dirty_paths": [
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "draft/main.bbl",
+   "draft/main.blg",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "results/paperclip_joint_kernel_79.json"
+  ],
+  "dirty_path_count": 12
+ }
+}

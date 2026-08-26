@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
   "kind": "public_export_record",
-  "private_freeze_commit": "0a49a6b9426009e779eb59fb601b0377d4eafab4",
+  "private_freeze_commit": "ad13eae4ce52659f08819f8858dd8272fb9563fc",
   "private_worktree_dirty_at_export": true,
-  "exported_at_utc": "2026-08-25T18:20:34+00:00",
-  "exporter_sha256": "sha256:15dc495e48d04237b68b2ab5d962e49e7d411b5b1ccb97fe89e853009e939c9a",
-  "source_file_count": 175,
+  "exported_at_utc": "2026-08-26T20:27:41+00:00",
+  "exporter_sha256": "sha256:77d60f8a79b6c0ced140d9020b3bf8ed4f7274ab22e5153cfbfeecadeed76d67",
+  "source_file_count": 180,
   "transformation_log": {
     "results/cyl_spin13_prediction_run.json": {
-      "public_sha256": "sha256:029a5b1acc9cf1583e074a5dfe423efb162176ce008d992f0f88867a2584aaa8",
+      "public_sha256": "sha256:f230ee5acda67746a22d5db768a87c932f033612ff9f5829850a071b8b0eacb8",
       "redactions": [
         {
           "rule": "[untracked-workspace-file]",
-          "count": 7
+          "count": 9
         },
         {
           "rule": "python3",
@@ -42,12 +42,30 @@
         }
       ]
     },
+    "results/kdv_tower_spin14_vacancy.json": {
+      "public_sha256": "sha256:48b145ffb4efb8be67c431eeae1c167c172d3a421e035124c562ca267ec30fb3",
+      "redactions": [
+        {
+          "rule": "[untracked-workspace-file]",
+          "count": 9
+        }
+      ]
+    },
     "results/mutual_checks.md": {
       "public_sha256": "sha256:9b476d9bf2e6609d82afc2e6ab416cb2931e1a4712f102c017b4cac806795671",
       "redactions": [
         {
           "rule": "[road-map]",
           "count": 1
+        }
+      ]
+    },
+    "results/paperclip_joint_kernel_79.json": {
+      "public_sha256": "sha256:c9c2018eb5b46cdb1624339dc976ff5d7033ac3318b73e88ebeda9fb8bfa8a57",
+      "redactions": [
+        {
+          "rule": "[untracked-workspace-file]",
+          "count": 9
         }
       ]
     },
@@ -83,11 +101,11 @@
       ]
     },
     "results/vacancy_a2_1820_certificate.json": {
-      "public_sha256": "sha256:bd050b0f10db5817d265ce5c71452ebfa91059bd58ba130a53c019db49f36676",
+      "public_sha256": "sha256:30ae39a6a1b8aa17f8df4490b45fe794cae1ecbbaeb4b9e721d0711d7f53606e",
       "redactions": [
         {
           "rule": "[untracked-workspace-file]",
-          "count": 7
+          "count": 9
         }
       ]
     },
@@ -144,8 +162,8 @@
       "notes/20\\d\\d",
       "ROADMAP"
     ],
-    "private_deny_count": 16,
-    "private_deny_sha256": "sha256:98c62abeda6233376fda1bf6e17d4fe8e30a93b4ffb47702183c0fdefdbb94d9",
+    "private_deny_count": 18,
+    "private_deny_sha256": "sha256:82b7be00d45a24b8b6249558e890cbcbb581156fc36fe60136977bfa5ad361fd",
     "violations": 0
   },
   "provenance_model": "Two-tier (Decision 2): private-development commit SHAs inside artifacts are opaque archival references \u2014 never mutated, never publicly resolvable. Public verification is content-based via RELEASE_MANIFEST.json and public_lint.py. This record binds the export to the private freeze commit for the archive holder."

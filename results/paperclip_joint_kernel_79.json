@@ -1,0 +1,82 @@
+{
+ "controls": [
+  {
+   "n": "2",
+   "weight": 6,
+   "cokernel_dim": 1,
+   "witness_block_dim": 1
+  },
+  {
+   "n": "3",
+   "weight": 6,
+   "cokernel_dim": 1,
+   "witness_block_dim": 1
+  }
+ ],
+ "points": [
+  {
+   "n": "2",
+   "weight": 8,
+   "charge_spin": 7,
+   "class_dim": 1,
+   "known_charge_in_kernel": true
+  },
+  {
+   "n": "3",
+   "weight": 8,
+   "charge_spin": 7,
+   "class_dim": 1,
+   "known_charge_in_kernel": true
+  },
+  {
+   "n": "2",
+   "weight": 10,
+   "charge_spin": 9,
+   "class_dim": 1,
+   "known_charge_in_kernel": true
+  },
+  {
+   "n": "3",
+   "weight": 10,
+   "charge_spin": 9,
+   "class_dim": 1,
+   "known_charge_in_kernel": true
+  }
+ ],
+ "launch": {
+  "launch_commit_at_start": "59fb70d7b6df4f00edda5c2ee412f16e0bda69fb",
+  "worktree_dirty_at_start": true,
+  "script_sha256_at_start": "42f189bdaf20765b3da222b6f2128cbc041132a37410a76d4e7a3ca7d66559a4",
+  "invocation": [
+   "python3",
+   "paperclip_joint_kernel_79.py"
+  ]
+ },
+ "script_sha256": "42f189bdaf20765b3da222b6f2128cbc041132a37410a76d4e7a3ca7d66559a4",
+ "object": "joint kernel of the four paperclip screenings on the Z2xZ2-invariant sector, modulo total derivatives, at sampled n = 2, 3, spins 7 and 9",
+ "acceptance": "class dimension exactly 1 at each point, known charge a member (hence spans); method control: cokernel-projection == witness-block at weight 6",
+ "provenance": {
+  "launch_commit": "59fb70d7b6df4f00edda5c2ee412f16e0bda69fb",
+  "stamped_at_utc": "2026-08-26T20:16:28+00:00",
+  "python": "3.12.8",
+  "sympy": "1.14.0",
+  "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+  "worktree_dirty": true,
+  "dirty_paths": [
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "draft/main.bbl",
+   "draft/main.blg",
+   "[untracked-workspace-file]",
+   "[untracked-workspace-file]",
+   "results/kdv_tower_spin14_vacancy.json",
+   "results/paperclip_joint_kernel_79.json"
+  ],
+  "dirty_path_count": 13
+ }
+}

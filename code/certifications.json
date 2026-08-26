@@ -669,7 +669,7 @@
         "R5",
         "R6"
       ],
-      "description": "High-spin vacancy via the SUPERSEDING GF(p) stack (vacancy_final_modp.py replaced the fraction-free vacancy_high.py, whose heavy sectors OOM'd and probe-measured at weeks-scale). The smoke task set (cyl sigma=12, one worker) verifies the certified kernel path end-to-end; the production batches (full/cyl20) are detached setsid launches, deliberately NOT certifier checks - their authority is the raw certificates in raw_certificate_pins. Do not run under --full while a production batch is live (memory/core contention with the 18 GB-capped workers).",
+      "description": "High-spin vacancy via the SUPERSEDING GF(p) stack (vacancy_final_modp.py replaced the fraction-free vacancy_high.py, whose heavy sectors OOM'd and probe-measured at weeks-scale). The smoke task set (cyl sigma=12, one worker) verifies the certified kernel path end-to-end; the production batches (full/cyl20) are detached setsid launches, deliberately NOT certifier checks - their authority is the raw certificates in raw_certificate_pins. Do not run under --full while a production batch is live (RAM/core contention with the 18 GB-capped workers).",
       "mode": "run",
       "expensive": true,
       "command": [
@@ -698,6 +698,64 @@
       "timeout_s": 1800,
       "required_markers": [
         "ALL LEAN CERTIFICATES KERNEL-CHECKED"
+      ]
+    },
+    {
+      "id": "independent_engine_artifacts",
+      "mode": "artifact",
+      "description": "Integrity pins for the independent verification engine (review-supplied, vendored verbatim with provenance in independent/PROVENANCE.md): the eight scripts and their OPE engine behind the manuscript's 'independently verified through sigma<=15' statements (Table 1 and Section 6), including the spin-14/15 extension of the tower/KdV class-by-class coincidence and the paperclip P_10 spin-9/10 checks. Registered so those statements are pinned to auditable artifacts under the registry standard rather than resting on the Acknowledgments alone (review round 2026-08-25, adopted); the engine remains review-attributed -- the certificate authority for re-derived statements stays with this project's own stack.",
+      "claims": [
+        "the sigma<=15 independent-engine extension and its scripts are pinned, auditable artifacts"
+      ],
+      "artifacts": [
+        {
+          "path": "independent/01_engine_sanity.py",
+          "sha256": "sha256:b2ce6cadfc1dfb95645507f3e2f275ccad770a5697821d35048ceb0e2779860f"
+        },
+        {
+          "path": "independent/02_kdv_background_charge_identification.py",
+          "sha256": "sha256:fd80c44ddc23903c1f1ccfbe331acb342899f2974b94ecd5425ae9ac196a6046"
+        },
+        {
+          "path": "independent/03_tower_equals_kdv_at_c_minus_25_over_2.py",
+          "sha256": "sha256:37720055fec41e54103bcdb6e2a1262dbdc52e3b332fd82e90aed7ef04d6b8b9"
+        },
+        {
+          "path": "independent/04_vertex_conditions_and_kernels.py",
+          "sha256": "sha256:93160927297121a8309feaff15734d9ade756c2860e499bcd4b875f19e662f86"
+        },
+        {
+          "path": "independent/05_a22_joint_kernel_at_c1.py",
+          "sha256": "sha256:280d5866afa4691ba72d536dae380c4231609cbccab66a4d6455dc94dbff50f8"
+        },
+        {
+          "path": "independent/06_spin14_15_extension.py",
+          "sha256": "sha256:826b913977e248de8977a6ccf1db236caf8c482fcdd2072da8733f47d6206733"
+        },
+        {
+          "path": "independent/07_paperclip_two_boson_checks.py",
+          "sha256": "sha256:342c6c7701395a4194e45b0c3b92467975dc976101ddd5ca45036d4e38a02dbd"
+        },
+        {
+          "path": "independent/08_paperclip_P10_and_spin9_10.py",
+          "sha256": "sha256:19c335c437b3687f80a6f7decbacf66d1abfe5b2ffb9a3bcb4d093056a79eeb0"
+        },
+        {
+          "path": "independent/PROVENANCE.md",
+          "sha256": "sha256:292ea0b0ee06bf1212c6a54490f44220cc25c23b838a1059f2a66e84db9b84ca"
+        },
+        {
+          "path": "independent/README.md",
+          "sha256": "sha256:99df50b503a4443e3db7dca6a073e376c8f84682ffc2793f8e3955b535251490"
+        },
+        {
+          "path": "independent/ope.py",
+          "sha256": "sha256:6910bcf718f3641ac9b312a378a3e3c28d214d991e94bb868d282bc1a422afd6"
+        },
+        {
+          "path": "independent/qsqrt2.py",
+          "sha256": "sha256:e858ba801c3e2bee39c72dc6798e35adc1c6ee05628900c5a831e683508927dc"
+        }
       ]
     },
     {
@@ -932,8 +990,23 @@
       "artifacts": [
         {
           "path": "results/cyl_spin13_prediction_run.json",
-          "sha256": "sha256:029a5b1acc9cf1583e074a5dfe423efb162176ce008d992f0f88867a2584aaa8"
+          "sha256": "sha256:f230ee5acda67746a22d5db768a87c932f033612ff9f5829850a071b8b0eacb8"
         }
+      ]
+    },
+    {
+      "id": "check_spin13_run_record_public",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "check_spin13_run_record_public.py"
+      ],
+      "description": "Public-edition variant of check_spin13_run_record (operator decision 2026-08-25): runs the three repository-local semantic checks of the retained spin-13 run record and explicitly reports the two git-bound checks (commit resolves; certificate bytes match at that commit) as NOT VERIFIABLE IN THIS EDITION -- honest reporting, not fail-open and not a silently weakened check.  Ships publicly (the private edition is CODE_EXCLUDEd since v1.1.3); also runs in the private suite as a guard that the public edition itself stays green.",
+      "claims": [
+        "the retained cyl_spin13_prediction run record passes the repository-local semantic checks; the git-bound checks are explicitly scoped out of the public edition"
+      ],
+      "required_markers": [
+        "SPIN-13 RUN RECORD (PUBLIC EDITION) VERIFIED"
       ]
     },
     {
@@ -964,7 +1037,7 @@
       "claims": [
         "R6"
       ],
-      "description": "A2(2) even-spin vacancies at sigma=18 and 20: two GF(p) tags=d-rank certificates, both VACANT over Q at the first prime (tags = d-rank = 678 at sigma=18, 1351 at 20).  Recomputes under the registered GF(p) certifier the last two ledger instances ([I7,I11] at 18, [I7,I13] at 20) that still rested on the 2026-08-02/03 fraction-free/sparse runs with no retained artifact (Codex finding, 2026-08-24) -- with these, all 21 instances of the mutual-commutativity inventory literally rest on the registered certifier.  No prior exact ranks existed for these two sectors, so the tags are recorded by this run, not preregistered (documented in the artifact); acceptance is verdict VACANT with tags == d-rank, the rigorous one-prime equality.  Measured wall time: sigma=18 ~1.6 h, sigma=20 ~5.0 h (18077 s), peak RSS 2.5 GB: expensive, NOT a fast-suite entry.  Artifact-of-record semantics as vacancy_cyl_121416 (payload-stable, pin breaks only on disagreement).",
+      "description": "A2(2) even-spin vacancies at sigma=18 and 20: two GF(p) tags=d-rank certificates, both VACANT over Q at the first prime (tags = d-rank = 678 at sigma=18, 1351 at 20).  Recomputes under the registered GF(p) certifier the last two ledger instances ([I7,I11] at 18, [I7,I13] at 20) that still rested on the 2026-08-02/03 fraction-free/sparse runs with no retained artifact (Codex finding, 2026-08-24) -- with these, all 21 instances of the mutual-commutativity inventory literally rest on the registered certifier.  No prior exact ranks existed for these two sectors, so the tags are recorded by this run, not preregistered (documented in the artifact); acceptance is verdict VACANT with tags == d-rank, the rigorous one-prime equality.  Measured wall time (clean-source rerun, per-task elapsed_s in the artifact): sigma=18 5889 s, sigma=20 18425 s, peak RSS 2.5 GB: expensive, NOT a fast-suite entry.  The artifact records the certifier's own script SHA-256 and invocation, and its launch commit contains the exact source (first run 2026-08-25 launched from a then-untracked script, same verdicts/ranks; superseded by this clean-source run, Codex provenance finding closed).  Artifact-of-record semantics as vacancy_cyl_121416 (payload-stable, pin breaks only on disagreement).",
       "mode": "run",
       "expensive": true,
       "command": [
@@ -978,7 +1051,53 @@
       "artifacts": [
         {
           "path": "results/vacancy_a2_1820_certificate.json",
-          "sha256": "sha256:bd050b0f10db5817d265ce5c71452ebfa91059bd58ba130a53c019db49f36676"
+          "sha256": "sha256:30ae39a6a1b8aa17f8df4490b45fe794cae1ecbbaeb4b9e721d0711d7f53606e"
+        }
+      ]
+    },
+    {
+      "id": "paperclip_joint_kernel_79",
+      "claims": [
+        "R4"
+      ],
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "paperclip_joint_kernel_79.py"
+      ],
+      "timeout_s": 3600,
+      "description": "The uniqueness half of the LVZ four-screening characterization at the sampled parameters: the joint kernel of ALL FOUR paperclip screening conditions on the Z2xZ2-invariant two-boson sector, modulo total derivatives, has class dimension exactly 1 at n=2,3 and charge spins 7,9, and the known P_8/P_10 charges are members AND nonzero classes (membership + dim 1 + nonzero => they span; a total-derivative representative cannot fake this).  Method control: the cokernel-projection computation must agree with the original witness-block construction at weight 6, both n, before the main points run.  DomainMatrix linear algebra over the algebraic extension fields; ~10-12 min: expensive.  Paths are relative to code/, the registry runner's workdir (house pattern; fails loud elsewhere).  Launch-time provenance captured at process start (worktree_dirty_at_start uses git status --porcelain INCLUDING untracked workspace files; the stamp's dirty_paths show untracked-only, so the tracked source is exactly the launch commit 59fb70d).  Artifact of record is payload-stable (canonical comparison; agreeing re-runs preserve the pin).",
+      "required_markers": [
+        "PAPERCLIP JOINT KERNEL CERTIFIED"
+      ],
+      "artifacts": [
+        {
+          "path": "results/paperclip_joint_kernel_79.json",
+          "sha256": "sha256:c9c2018eb5b46cdb1624339dc976ff5d7033ac3318b73e88ebeda9fb8bfa8a57"
+        }
+      ]
+    },
+    {
+      "id": "kdv_tower_spin14_vacancy",
+      "claims": [
+        "R5"
+      ],
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "kdv_tower_spin14_vacancy.py"
+      ],
+      "timeout_s": 1800,
+      "description": "Spin-14 vacancy of BOTH CENTRALIZERS at the c=1 branch point, re-derived in-stack with the same genuine_kernel machinery and normalizations as the certified sigma<=9 range: ker ad_{I5} (tower side) and ker ad_{I'3} (shifted-KdV side) both have genuine class dimension 0 at charge spin 14, computed directly and unconditionally -- enforced separately, then 0==0 as the spin-14 instance of the class-by-class equality.  Redirected (review 2026-08-26) from a first version that computed SCREENING kernels, whose emptiness does not bound the centralizers at exceptional coupling; also closes the vendored independent program's conditional gap (06_spin14_15_extension.py skips the second kernel when the first is empty).  Control: reproduces I'3 uniqueness at sigma=3.  Paths relative to code/ (runner workdir); launch-time provenance as in paperclip_joint_kernel_79 (launch commit 59fb70d, tracked source clean); payload-stable artifact.",
+      "required_markers": [
+        "SPIN-14 CENTRALIZER VACANCY CERTIFIED"
+      ],
+      "artifacts": [
+        {
+          "path": "results/kdv_tower_spin14_vacancy.json",
+          "sha256": "sha256:48b145ffb4efb8be67c431eeae1c167c172d3a421e035124c562ca267ec30fb3"
         }
       ]
     },
@@ -1007,9 +1126,10 @@
     "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
   ],
   "_public_edition": {
-    "generated_on": "2026-08-25",
+    "generated_on": "2026-08-26",
     "pruned_entry_ids": [
       "certificate_provenance_lint",
+      "check_a2_1820_provenance",
       "check_spin13_run_record",
       "dossier_evidence_pins",
       "draft_builds_and_hash"

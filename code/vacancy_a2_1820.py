@@ -10,6 +10,13 @@ This script closes the gap by recomputing both under the same GF(p)
 certifier that produced the sigma=24 A2(2) verdict and the cylindrical
 12/14/16, 18, 20 verdicts, retaining a per-task artifact.
 
+Provenance hardening (Codex, 2026-08-25): the payload records the
+script's own SHA-256, the invocation, and per-task elapsed seconds --
+the first run launched from an UNTRACKED script (honestly recorded in
+its stamp, but the launch commit could not reconstruct the program);
+this version is committed before launch, so the recorded commit
+contains the exact source.
+
 Unlike the cylindrical 12/14/16 batch, NO prior exact ranks exist for
 these two sectors (the old runs retained no rank record), so the tags
 are RECORDED here, not preregistered; acceptance is verdict VACANT with
@@ -42,6 +49,8 @@ def _init():
 
 
 def task(sigma):
+    import time
+    t0 = time.time()
     N, s = curve_point(T0)
     label = f"a2 s{sigma}"
     rec = {"family": "a2", "sigma": sigma}
@@ -55,12 +64,15 @@ def task(sigma):
                        derivative_rank=drank, genuine_gap=tags - drank)
             if vac:
                 rec["verdict"] = "VACANT"
+                rec["elapsed_s"] = round(time.time() - t0, 1)
                 print(f"{label}: VACANT (certified over Q, prime #{pi}; "
-                      f"tags = d-rank = {tags})", flush=True)
+                      f"tags = d-rank = {tags}; {rec['elapsed_s']} s)",
+                      flush=True)
                 return rec
             print(f"{label}: prime #{pi} inconclusive "
                   f"(bound {tags - drank}); escalating", flush=True)
         rec["verdict"] = "INCONCLUSIVE"
+        rec["elapsed_s"] = round(time.time() - t0, 1)
         print(f"{label}: INCONCLUSIVE after {len(PRIMES)} primes "
               f"(genuine_Q <= {tags - drank})", flush=True)
         return rec
@@ -72,6 +84,24 @@ def task(sigma):
 
 
 if __name__ == "__main__":
+    # Launch-time provenance, captured BEFORE any computation (review
+    # finding 2026-08-26: certificate.stamp() records completion-time
+    # HEAD under the name launch_commit; for a multi-hour run the two
+    # can differ).  The stamp block remains as completion-time state.
+    import hashlib
+    import subprocess
+    _root = str(Path(__file__).resolve().parent.parent)
+    _launch = {
+        "launch_commit_at_start": subprocess.run(
+            ["git", "-C", _root, "rev-parse", "HEAD"],
+            capture_output=True, text=True).stdout.strip(),
+        "worktree_dirty_at_start": bool(subprocess.run(
+            ["git", "-C", _root, "status", "--porcelain"],
+            capture_output=True, text=True).stdout.strip()),
+        "script_sha256_at_start": hashlib.sha256(
+            Path(__file__).read_bytes()).hexdigest(),
+        "invocation": [Path(sys.executable).name, Path(__file__).name],
+    }
     with Pool(2, initializer=_init) as pool:
         records = pool.map(task, [18, 20])
     records.sort(key=lambda r: r["sigma"])
@@ -81,8 +111,13 @@ if __name__ == "__main__":
         and r.get("tags") == r.get("derivative_rank")
         for r in records)
 
+    import hashlib
     payload = {
         "object": "A2(2) even-spin vacancy at sigma = 18, 20",
+        "launch": _launch,                  # process-start state
+        "script_sha256": hashlib.sha256(
+            Path(__file__).read_bytes()).hexdigest(),
+        "invocation": [Path(sys.executable).name, Path(__file__).name],
         "records": records,
         "ranks_preregistered": False,
         "rank_note": ("no exact ranks were retained by the 2026-08-02/03 "
