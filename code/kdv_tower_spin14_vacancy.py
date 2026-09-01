@@ -64,17 +64,8 @@ A2_P6 = acc([(L((3, 0), (3, 0)), F(124, 96)),
 
 if __name__ == "__main__":
     _root = Path(__file__).resolve().parent.parent
-    _launch = {
-        "launch_commit_at_start": subprocess.run(
-            ["git", "-C", str(_root), "rev-parse", "HEAD"],
-            capture_output=True, text=True).stdout.strip(),
-        "worktree_dirty_at_start": bool(subprocess.run(
-            ["git", "-C", str(_root), "status", "--porcelain"],
-            capture_output=True, text=True).stdout.strip()),
-        "script_sha256_at_start": hashlib.sha256(
-            Path(__file__).read_bytes()).hexdigest(),
-        "invocation": [Path(sys.executable).name, Path(__file__).name],
-    }
+    from launch_provenance import capture_launch
+    _launch = capture_launch(_root, Path(__file__).resolve())
 
     ker3 = genuine_kernel(A2_P6, gen_basis(4, 1, True),
                           Sector(9, 1, True), Sector(4, 1, True))
@@ -117,7 +108,11 @@ if __name__ == "__main__":
     art = _root / "results" / "kdv_tower_spin14_vacancy.json"
 
     def _canon(d):
-        d = {k: v for k, v in d.items() if k not in ("provenance", "launch")}
+        d = {k: v for k, v in d.items()
+         if k not in ("provenance", "launch", "script_sha256",
+                      "invocation")}   # provenance-class keys: a
+    # provenance-only refactor must not fake a scientific change
+    # (review, 2026-08-27)
         return json.dumps(json.loads(json.dumps(d)), sort_keys=True)
 
     if art.exists() and _canon(json.loads(art.read_text())) == _canon(payload):

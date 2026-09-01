@@ -1,0 +1,58 @@
+{
+ "tool": "lab/modp_scan.py",
+ "weight": 18,
+ "prime": 10007,
+ "status": "lab record: single-prime residue scan; evidence, not a characteristic-zero completeness proof",
+ "sheets": {
+  "1": {
+   "rows": 5410,
+   "cols": 1813,
+   "matrix_sha256": "b459365146b208e69ea216b7e632c57f30cd4054f87655c7ace33b8a6837547c",
+   "generic_rank": 1812,
+   "residues_evaluated": 10005,
+   "rank_drops": []
+  },
+  "2": {
+   "rows": 5410,
+   "cols": 1813,
+   "matrix_sha256": "63d40b6dcdbd887ecf9dac9cc5325eff0b44c7d3b26dc9323ad721672babf6b5",
+   "generic_rank": 1812,
+   "residues_evaluated": 10005,
+   "rank_drops": [
+    {
+     "residue": 3,
+     "rank": 1811,
+     "nullity": 2,
+     "lift": "3"
+    },
+    {
+     "residue": 7279,
+     "rank": 1811,
+     "nullity": 2,
+     "lift": "13/11"
+    }
+   ]
+  },
+  "3": {
+   "rows": 5410,
+   "cols": 1813,
+   "matrix_sha256": "9af5481be8862ba75f80b59834536361843e46c561a4907bb0072519e3cc5647",
+   "generic_rank": 1812,
+   "residues_evaluated": 10005,
+   "rank_drops": [
+    {
+     "residue": 3,
+     "rank": 1811,
+     "nullity": 2,
+     "lift": "3"
+    },
+    {
+     "residue": 2225,
+     "rank": 1811,
+     "nullity": 2,
+     "lift": "11/9"
+    }
+   ]
+  }
+ }
+}

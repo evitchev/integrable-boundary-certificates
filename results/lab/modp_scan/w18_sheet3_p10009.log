@@ -1,0 +1,100 @@
+parsed 5410x1813, max degree 4, parse 65.7s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (10.892s each)
+scanned residues [0,715): 714 evaluated (poles skipped) in 7760s; rank drops: 1
+  t = 3 (mod 10009)  rank 1811 (nullity 2)  lifts to t = 3
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812
+parsed 5410x1813, max degree 4, parse 43.4s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (5.136s each)
+scanned residues [1430,2145): 715 evaluated (poles skipped) in 7879s; rank drops: 0
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812
+parsed 5410x1813, max degree 4, parse 67.2s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (11.325s each)
+scanned residues [2145,2860): 715 evaluated (poles skipped) in 7907s; rank drops: 0
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812
+parsed 5410x1813, max degree 4, parse 68.7s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (11.444s each)
+scanned residues [2860,3575): 715 evaluated (poles skipped) in 7948s; rank drops: 0
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812
+parsed 5410x1813, max degree 4, parse 68.7s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (13.233s each)
+scanned residues [3575,4290): 715 evaluated (poles skipped) in 7560s; rank drops: 0
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812
+parsed 5410x1813, max degree 4, parse 68.5s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (13.415s each)
+scanned residues [4290,5005): 715 evaluated (poles skipped) in 7804s; rank drops: 0
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812
+parsed 5410x1813, max degree 4, parse 67.1s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (11.580s each)
+scanned residues [5005,5720): 715 evaluated (poles skipped) in 7372s; rank drops: 0
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812
+parsed 5410x1813, max degree 4, parse 64.8s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (9.477s each)
+scanned residues [5720,6435): 715 evaluated (poles skipped) in 7529s; rank drops: 0
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812
+parsed 5410x1813, max degree 4, parse 41.2s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (5.155s each)
+scanned residues [6435,7150): 715 evaluated (poles skipped) in 7790s; rank drops: 0
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812
+parsed 5410x1813, max degree 4, parse 61.8s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (7.512s each)
+scanned residues [7150,7865): 715 evaluated (poles skipped) in 7835s; rank drops: 1
+  t = 7786 (mod 10009)  rank 1811 (nullity 2)  lifts to t = 11/9
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812
+parsed 5410x1813, max degree 4, parse 67.8s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (12.114s each)
+scanned residues [715,1430): 715 evaluated (poles skipped) in 7776s; rank drops: 0
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812
+parsed 5410x1813, max degree 4, parse 61.6s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (11.197s each)
+scanned residues [7865,8580): 715 evaluated (poles skipped) in 7776s; rank drops: 0
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812
+parsed 5410x1813, max degree 4, parse 67.8s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (8.416s each)
+scanned residues [8580,9295): 715 evaluated (poles skipped) in 7575s; rank drops: 0
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812
+parsed 5410x1813, max degree 4, parse 68.6s
+generic ranks at t=2,5,7: (1812, 1812, 1812) (12.384s each)
+scanned residues [9295,10009): 713 evaluated (poles skipped) in 7860s; rank drops: 0
+  check t=3: residue 3, rank 1811
+  check t=9/7: residue 2861, rank 1812
+  check t=11/9: residue 7786, rank 1811
+  check t=2: residue 2, rank 1812

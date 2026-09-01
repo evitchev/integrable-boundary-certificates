@@ -373,6 +373,34 @@
       ]
     },
     {
+      "id": "super_phase3",
+      "claims": [
+        "SUSY Phase 3 (finite range, five sampled lambda in {0,3/4,1/2,1,2}, doubled weight <= 24): the ad_{I3(lam)} centralizer spectrum is identical at all five lambda -- dim 1 at sigma in {0,1/2,1,3,5,7,9,11}, 0 at every other spin in range; I5, I7, I9(lam) unique, mutually commuting G-singlets with no half-integer partners; at lam = 3/4 the joint kernel of all four fermionic screenings equals the centralizer for 3 <= w2 <= 16 (momentum exception at sigma = 0) and the dual pair's kernel equals the NS super-Virasoro vacuum class count p(h)-p(h-1) through w2 = 16 at lam in {3/4, 4/3, 5/12}"
+      ],
+      "description": "SUSY Phase 3 remainder (preregistered results/super_phase3_preregistration.md): S1 the ad_{I3(lam)} centralizer spectrum (classes mod d) per doubled weight w2=1..24 for lam in {0,3/4,1/2,1,2} pinned to the free-point pattern (dim 1 at sigma in {0,1/2,1,3,5,7,9,11}, 0 elsewhere); S2 I5,I7,I9(lam) unique joint (ad_G, ad_I3) kernels at w2=12,16,20, all direct brackets total derivatives, G-singlets, no fermionic partners (every odd w2>=5 vacant); S3 at lam=3/4 (N=1 (1,4) point, c=-21/4) the joint kernel of all four fermionic screenings psi e^{alpha X}, alpha in {2,-1/2,1/2,-2}, equals the centralizer at every 3<=w2<=16, momentum exception pinned at sigma=0; the dual pair F+={1/2,-2} alone has the NS super-Virasoro vacuum class count p(h)-p(h-1) (pinned prediction, also at lam=4/3 and 5/12) -- the refuted preregistered odd-slot clause is pinned as a record. Finite-range statements only (five sampled lambda, w2<=24). Expensive; launch-attested runner record predeclared; writes results/super_phase3.json (deterministic, pinned after the attested run).",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "super_phase3.py"
+      ],
+      "timeout_s": 21600,
+      "required_markers": [
+        "SUPER PHASE 3 CERTIFIED"
+      ],
+      "expensive": true,
+      "artifacts": [
+        {
+          "path": "results/super_phase3_run.json",
+          "kind": "runner_record",
+          "sha256": "sha256:bbae565d03d3eb5403a57593286e4fd88d89bef19d3444bb9b90e6847ffffe02"
+        },
+        {
+          "path": "results/super_phase3.json",
+          "sha256": "sha256:eab1520c057383864ae780715f0d0b4d07ae7ba9c50c888f2bf763863296f775"
+        }
+      ]
+    },
+    {
       "id": "paperclip_p10_artifact",
       "claims": [
         "R4"
@@ -990,8 +1018,271 @@
       "artifacts": [
         {
           "path": "results/cyl_spin13_prediction_run.json",
-          "sha256": "sha256:f230ee5acda67746a22d5db768a87c932f033612ff9f5829850a071b8b0eacb8"
+          "sha256": "sha256:f230ee5acda67746a22d5db768a87c932f033612ff9f5829850a071b8b0eacb8",
+          "kind": "runner_record"
         }
+      ]
+    },
+    {
+      "id": "cyl_spin13_sol3_sporadic",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_spin13_sol3_sporadic.py"
+      ],
+      "description": "Sporadic spin-13 jump found by the global weight-14 stratification lab (2026-08-27) and open-stack confirmed the same day: Solution 3 has spin-13 ad_{I_3} kernel dimension 2 at t=9/7, (N,s)=(-143/4,-189/4), the point that is spin-11-only on Solution 2; sheets 1 and 2 recomputed at dim 1 so the trio is self-contained. Refutes the t_k=(2k+3)/(2k+1) ladder in its naive form (its spin-13 slot t=11/9 is certified clean by cyl_spin13_prediction) while the observed jumping locus through spin 13 stays inside {3} u {t_k}; same curve point jumps at different spins on different sheets. Three exact weight-14 kernels (929 densities), ~13 min each, in parallel; expensive. Negative drill: kdim stubbed to wrong dims => 3 FAIL pins, exit 1.",
+      "claims": [
+        "Solution 3 has spin-13 ad_{I_3} kernel dimension 2 at t=9/7, (N,s)=(-143/4,-189/4) -- the first sporadic spin-13 point -- while Solutions 1 and 2 have dimension 1 there"
+      ],
+      "required_markers": [
+        "SPIN-13 SPORADIC POINT CERTIFIED"
+      ],
+      "expensive": true,
+      "timeout_s": 3600,
+      "artifacts": [
+        {
+          "path": "results/cyl_spin13_sol3_sporadic_run.json",
+          "sha256": "sha256:dfce44a283e97abee0a6fa1ef558566cbc0aa07895285d24d05c9e30bec1e20a",
+          "kind": "runner_record"
+        }
+      ]
+    },
+    {
+      "id": "cyl_spin15_ladder_probe",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_spin15_ladder_probe.py"
+      ],
+      "description": "Preregistered spin-15 (weight-16) probe of the two-ladder hypothesis H1 (results/cyl_spin15_preregistration.md, committed 43a2f65 before any weight-16 kernel): sheet 3 jumps at t_k at spin 4k+1, sheet 2 at t_k (odd k) at spin 3k+2, all single-spin; H1 predicted nothing at spin 15. Outcome (2026-08-27): all eight preregistered ad_{I_3} kernel dimensions are 1 -- baselines t=2 on all sheets, t3=9/7 on sheets 2,3 (the spin-13 sporadic point is single-spin), t4=11/9 on sheets 2,3, t2=7/5 on sheet 3. Null confirmation; the decisive double positive prediction is at spin 17 (weight 18). Eight exact weight-16 kernels (2211 densities), 2.3-2.9 h each, in parallel; expensive. Negative drill: kdim stubbed to wrong dims => 8 FAIL pins, exit 1.",
+      "claims": [
+        "at spin 15 no cylindrical Solution jumps at t2, t3, t4 or the t=2 baseline on the probed sheets: the sporadic spin-13 point of Solution 3 is single-spin and the two-ladder hypothesis H1 survives its first preregistered test"
+      ],
+      "required_markers": [
+        "SPIN-15 LADDER PROBE CERTIFIED"
+      ],
+      "expensive": true,
+      "timeout_s": 21600,
+      "artifacts": [
+        {
+          "path": "results/cyl_spin15_ladder_probe_run.json",
+          "sha256": "sha256:f977cf0a781569c144b4d321a98cc02de20fd0d17bda75b14a390c26aa59a944",
+          "kind": "runner_record"
+        }
+      ]
+    },
+    {
+      "id": "c1_spin15_l10_exit",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "c1_spin15_l10_exit.py"
+      ],
+      "description": "Preregistered test of the article's printed prediction that the c=1 tower member leaves L(1,0) at spin 15 (sigma = 3 mod 6 pattern; expectations committed bff6630 before the computation, script 899a222). Outcome (2026-08-28, 14.5 h single core): control I'3 unique at sigma=3; tower multiplicity one at sigma=15 in this stack (extends the certified range from sigma<=9); the spin-15 member is conserved under the a^2=2 quartet {+-1/sqrt2, +-2sqrt2} and NOT conserved under the L(1,0) rows +-sqrt2 -- exactly as printed -- nor under the sqrt3 control. The paper's first predict-then-verify success. Nine pinned rows, fail-closed; expensive.",
+      "claims": [
+        "the c=1 tower member at spin 15 is conserved under {+-1/sqrt2, +-2sqrt2} and not under +-sqrt2: the L(1,0) exit predicted at spin 15 is realized; tower multiplicity one holds at sigma=15"
+      ],
+      "required_markers": [
+        "SPIN-15 L(1,0) EXIT CERTIFIED"
+      ],
+      "expensive": true,
+      "timeout_s": 86400,
+      "artifacts": [
+        {
+          "path": "results/c1_spin15_l10_exit_run.json",
+          "sha256": "sha256:42f9a70b3c8c2ee39825f4df2145d2de3544deec4333fbfdc55074f769c21091",
+          "kind": "runner_record"
+        }
+      ]
+    },
+    {
+      "id": "cyl_spin15_stratification",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_spin15_stratification.py"
+      ],
+      "description": "Spin-15 (weight-16) stratification of the cylindrical curve (2026-08-28; pre-run expectations bd4aa59): residue scans over GF(10007) (every non-pole residue) and GF(10009) at the lifted point show sheet 1 with no rank drop and sheets 2,3 dropping exactly at t=3 and t=5/3. This certificate pins the EXACT kernel dimensions at those two lifted rational points: (-25/2,-45/2) dim 2 on the merged sheets 2 and 3 (the RECURRENCE: the point had jumped at spin 5 and returned to 1 at 7,9,11,13; exact kernels 13257 s / 12422 s, independently reproduced by the modular+CRT+exact-verification path), the (-2,-9) all-spin decoupling dim 2 on sheets 2,3, and sheet-1 controls dim 1 at both points (the last four preregistered from the scan before their exact kernels finished). SCOPE (Codex round 5): the scans finding no other reduction are evidence for, not a proof of, the absence of further characteristic-zero spin-15 points. Six exact weight-16 kernels, 2.5-3.7 h each, in parallel; expensive. Negative drill: kdim stubbed to wrong dims => 6 FAIL pins, exit 1.",
+      "claims": [
+        "exact spin-15 kernel dimensions at the two lifted rational points of the weight-16 residue scans: (-25/2,-45/2) has dimension 2 on both merged sheets -- the first recurrence at one point (spins 5 and 15) -- and 1 on sheet 1; the (-2,-9) decoupling has dimension 2 on sheets 2,3 and 1 on sheet 1; the complete GF(10007) scans detecting no other reduction are evidence, not proof, that no further characteristic-zero point exists"
+      ],
+      "required_markers": [
+        "SPIN-15 STRATIFICATION CERTIFIED"
+      ],
+      "expensive": true,
+      "timeout_s": 28800,
+      "artifacts": [
+        {
+          "path": "results/cyl_spin15_stratification_run.json",
+          "sha256": "sha256:158b57ef84f0cdeb349a2bff84c52222e0792ec213e656406a6fbfd011de045f",
+          "kind": "runner_record"
+        }
+      ]
+    },
+    {
+      "id": "cyl_spin17_double_prediction",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_spin17_double_prediction.py"
+      ],
+      "description": "Spin-17 (weight-18) double prediction of the two-ladder hypothesis, preregistered in results/cyl_spin17_preregistration.md (8444876) before any weight-18 kernel: sheet 3 jumps at t4=11/9 at spin 4*4+1 and sheet 2 at t5=13/11 (a point that had never jumped at any spin) at spin 3*5+2, nine controls at 1. Status (2026-08-29): fast-path outcome obtained (lab/fast_kernel2.py: all eleven dimensions as predicted, every genuine vector verified by exact identities in the certified engine; lab record under results/lab/fast_kernel2/); this certificate's eleven pure-Python kernels (24-30 h each, ~20 GB; IB_KERNEL_POOL bounds parallelism) are the preregistered independent method, running on the worker nodes -- ten of eleven in and agreeing at the time of registration; the artifact pin lands when the run completes. Per the pre-result addendum the predicted slots are strongly supported; the universal clauses are not established by eleven points. Negative drill: kdim stubbed to wrong dims => 11 FAIL pins, exit 1.",
+      "claims": [
+        "at spin 17 the cylindrical curve jumps at t4=11/9 on sheet 3 and at t5=13/11 on sheet 2 (kernel dimension 2 each) and at none of the nine preregistered control points -- the two-ladder hypothesis's double positive prediction, made before any weight-18 computation"
+      ],
+      "required_markers": [
+        "SPIN-17 DOUBLE PREDICTION CERTIFIED"
+      ],
+      "expensive": true,
+      "timeout_s": 345600,
+      "artifacts": [
+        {
+          "path": "results/cyl_spin17_double_prediction_run.json",
+          "kind": "runner_record",
+          "sha256": "sha256:2ffc65d5adc01071f8006f027d972447a987e7a381bfff2ea700ca0d35e3e563"
+        }
+      ]
+    },
+    {
+      "id": "cyl_coulomb_gas_parametrization",
+      "claims": [
+        "exact rational identities only: with x = (t-1)/(t+1), N = 13 - 6(x + 1/x) and s = 6(x - 1/x) identically in t (hence s^2 = (N-25)(N-1)); sheet exchange x -> 1/x is t -> -t; N is the value c(beta^2) with beta^2 = x (c_Y: the theory's full free-boson charge is N + 1); the named detected/predicted points map exactly -- t_k = (q+1)/(q-1) with q = 2k+2 and N(t_k) = c_(1,2k+2) for k = 1..5, t = 3 to c_(1,2) = -2, the odd-q rational points t = 2, 3/2, 4/3, 5/4, 6/5 to c_(1,q), q = 3..11 -- and c_(1,2k+2) = -(4k+1)(3k+2)/(k+1). Scan and kernel outcomes are certified by their own certificates, not here"
+      ],
+      "description": "Exact sympy identities (seconds): the cylindrical (N,s) curve is the standard central-charge parametrization with beta^2 = (t-1)/(t+1) (N = c_Y; total free-boson charge N + 1); sheet exchange is beta -> 1/beta (t -> -t); the detected/predicted jumping points map to c_(1,q) with q even, jump spins 2q-3 (sheet 3) and (3q-2)/2 (sheet 2) in the exact record; c_(1,2k+2) = -(4k+1)(3k+2)/(k+1) reproduces the N(t_k) observation. Arithmetic only -- scan/kernel outcomes live in their own certificates. Backs the jumping-locus mechanism analysis (private research note).",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_coulomb_gas_parametrization.py"
+      ],
+      "timeout_s": 600,
+      "required_markers": [
+        "COULOMB-GAS PARAMETRIZATION CERTIFIED"
+      ]
+    },
+    {
+      "id": "cyl_oddq_controls",
+      "claims": [
+        "odd-q controls (preregistered): at t = 2, 3/2, 4/3 (beta^2 = 1/q, q = 3, 5, 7 -- c_(1,3), c_(1,5), c_(1,7)) the exact spin-9, -11 and -13 kernels on Solutions 2 and 3 all have dimension 1 (generic): the odd-q rational points are certified generic exactly at the spins where the even-q neighbours t_2, t_3 jump (finite-range)"
+      ],
+      "description": "Anchors the even-q clause of the (1,q) reading with exact kernels instead of scans: 18 kernel dimensions (3 points x 2 sheets x spins 9, 11, 13; mixed_engine, the spin-13 sporadic machinery), every one pinned to 1. A dimension > 1 would be a FINDING (a jump at odd q), reported, never re-pinned. Preregistered results/cyl_oddq_controls_preregistration.md; expensive; launch-attested runner record predeclared.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_oddq_controls.py"
+      ],
+      "timeout_s": 14400,
+      "required_markers": [
+        "ODD-Q CONTROLS CERTIFIED"
+      ],
+      "expensive": true,
+      "artifacts": [
+        {
+          "path": "results/cyl_oddq_controls_run.json",
+          "kind": "runner_record",
+          "sha256": "sha256:c9264375c42d2b68f72b66972a81977d385e395f7f0edc9a8de478f5975ec594"
+        }
+      ]
+    },
+    {
+      "id": "cyl_discriminant_w1012",
+      "claims": [
+        "discriminant classification over Q-bar away from the parametrization poles t = +-1 at weights 10 and 12 (preregistered): one maximal minor D(t) of the ad_I3 matrix is a complete over-approximation of the rank-drop locus; every irreducible factor classified by exact rank (GF(p)-screened) -- jump sets exactly w10: sol1 {}, sol2 {3}, sol3 {3, 7/5}; w12: sol1 {}, sol2 {3, 9/7}, sol3 {3}; nullity 2 at every jump; beta^2 = (t-1)/(t+1) images exactly 1/2, 1/6 (w10 sol3), 1/8 (w12 sol2); no jump anywhere at beta^2 = 1/7, 1/5, 1/3 -- the odd-q Kac slots (incl. q = 7 solving 2q-3 = 11 at weight 12, sheet 3) are empty over ALL of Q-bar, strictly beyond the rational-residue scans"
+      ],
+      "description": "Fail-closed wrapper (code/cyl_discriminant_w1012.py) around wolfram/lab/cyl_discriminant.wls (rank machinery verbatim from the certified-w14 lab method; requires local Mathematica -- the wls hash is carried in the pinned artifact's provenance since a .wls is outside the Python import closure). Inputs sha-verified against the tracked sidecars. Writes results/cyl_discriminant_w1012.json (deterministic). Preregistered results/cyl_discriminant_preregistration.md; negative drill on a tampered w10-only copy proven (pin-level FAILs, no crash). Round 15: the wls and all matrix/sidecar inputs are declared sources, bound into the launch record.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_discriminant_w1012.py"
+      ],
+      "timeout_s": 21600,
+      "required_markers": [
+        "DISCRIMINANT W10/W12 CERTIFIED"
+      ],
+      "expensive": true,
+      "artifacts": [
+        {
+          "path": "results/cyl_discriminant_w1012_run.json",
+          "kind": "runner_record",
+          "sha256": "sha256:ad56e5ca7558dd8b1050ae5616654ed1199ccadeb1a1b6af8341d16007606553"
+        },
+        {
+          "path": "results/cyl_discriminant_w1012.json",
+          "sha256": "sha256:67c91315f765bbb9af24ccc2f2a36206003fe32ad1d834993bb8a51cc78c6157"
+        }
+      ],
+      "sources": [
+        "../wolfram/lab/cyl_discriminant.wls",
+        "../wolfram/lab/cyl_strata_w10_sol1.m",
+        "../wolfram/lab/cyl_strata_w10_sol1.json",
+        "../wolfram/lab/cyl_strata_w10_sol2.m",
+        "../wolfram/lab/cyl_strata_w10_sol2.json",
+        "../wolfram/lab/cyl_strata_w10_sol3.m",
+        "../wolfram/lab/cyl_strata_w10_sol3.json",
+        "../wolfram/lab/cyl_strata_w12_sol1.m",
+        "../wolfram/lab/cyl_strata_w12_sol1.json",
+        "../wolfram/lab/cyl_strata_w12_sol2.m",
+        "../wolfram/lab/cyl_strata_w12_sol2.json",
+        "../wolfram/lab/cyl_strata_w12_sol3.m",
+        "../wolfram/lab/cyl_strata_w12_sol3.json"
+      ]
+    },
+    {
+      "id": "cyl_t2_shadow",
+      "claims": [
+        "t_2 = 7/5 (c_{1,6}), Solution 3, weights 6-12: kernel dims [1,1,2,1]; NO screening structure extended to the c_{1,6} Kac pair -- e^{aX}-screened dims are 0 at a^2 = 1/3 and 12 (the roots of c(a)-1 = -3(a^2-2)^2/a^2 at c = -24), individually and jointly, at every weight, as at the certified a^2 = 2, 3; the spin-9 kernel is genuinely mixed (projection ranks 2, 2); the preregistered screened-shadow reading is REFUTED and recorded (foreseeable from the certified no-screening classification in cyl_strata_lab.md -- process rule adopted)"
+      ],
+      "description": "Outcome-form certificate of the t_2 shadow test (preregistration + refutation addendum in results/cyl_t2_shadow_preregistration.md): machinery loaded from the certified cyl_jump_point_tower prefix, generalized to fractional a^2 and joint screening, cross-validated against the template at the integer values. The Phi_{1,3}-shadow mechanism has no exponential-screening operationalization at the pure-multiplicity points; its real test is the singular-vector construction (mode-action extension). Negative drill on a tampered kernel expectation proven. Round 15: the dynamically executed template chain (jump_point_tower -> n28_tower_embedding and the engine modules) is declared sources, bound into the launch record.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_t2_shadow.py"
+      ],
+      "timeout_s": 7200,
+      "required_markers": [
+        "T2 SHADOW TEST CERTIFIED"
+      ],
+      "expensive": true,
+      "artifacts": [
+        {
+          "path": "results/cyl_t2_shadow_run.json",
+          "kind": "runner_record",
+          "sha256": "sha256:bd919ec3771070dd3cc0e9f144a0bfd7b7d01e7a3574c59d8ccb0555b358473a"
+        }
+      ],
+      "sources": [
+        "cyl_jump_point_tower.py",
+        "cyl_n28_tower_embedding.py",
+        "mixed_engine.py",
+        "sparse_linalg.py",
+        "invariant_engine.py",
+        "ope_engine.py"
+      ]
+    },
+    {
+      "id": "cyl_discriminant_w14",
+      "claims": [
+        "discriminant classification over Q-bar away from the parametrization poles t = +-1 at weight 14 (spin 13, preregistered): jump sets exactly -- sheet 1 empty, sheet 2 {3}, sheet 3 {3, 9/7} with nullity 2 and the (1-8x) factor at t_3 = c_{1,8} (2q-3 = 13 at q = 8); sheet 2 silent beyond c_{1,2} over all of Q-bar ((3q-2)/2 = 13 has no integer solution -- the Phi-reading's asymmetry prediction); no odd-q point jumps"
+      ],
+      "description": "Third rung of the discriminant program (after cyl_discriminant_w1012): same certified method (full-rank maximal minor as complete Q-bar over-approximation, every irreducible factor decided by exact rank, GF(p) screen) on the tracked 1082x365 weight-14 matrices, via wolfram/lab/cyl_discriminant.wls with weight argument 14. Preregistered results/cyl_discriminant_w14_preregistration.md; expensive (local Mathematica); runner record predeclared; artifact deterministic and pinned after the run. Round 15: the wls and all matrix/sidecar inputs are declared sources, bound into the launch record.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_discriminant_w14.py"
+      ],
+      "timeout_s": 21600,
+      "required_markers": [
+        "DISCRIMINANT W14 CERTIFIED"
+      ],
+      "expensive": true,
+      "artifacts": [],
+      "sources": [
+        "../wolfram/lab/cyl_discriminant.wls",
+        "../wolfram/lab/cyl_strata_w14_sol1.m",
+        "../wolfram/lab/cyl_strata_w14_sol1.json",
+        "../wolfram/lab/cyl_strata_w14_sol2.m",
+        "../wolfram/lab/cyl_strata_w14_sol2.json",
+        "../wolfram/lab/cyl_strata_w14_sol3.m",
+        "../wolfram/lab/cyl_strata_w14_sol3.json"
       ]
     },
     {
@@ -1067,14 +1358,14 @@
         "paperclip_joint_kernel_79.py"
       ],
       "timeout_s": 3600,
-      "description": "The uniqueness half of the LVZ four-screening characterization at the sampled parameters: the joint kernel of ALL FOUR paperclip screening conditions on the Z2xZ2-invariant two-boson sector, modulo total derivatives, has class dimension exactly 1 at n=2,3 and charge spins 7,9, and the known P_8/P_10 charges are members AND nonzero classes (membership + dim 1 + nonzero => they span; a total-derivative representative cannot fake this).  Method control: the cokernel-projection computation must agree with the original witness-block construction at weight 6, both n, before the main points run.  DomainMatrix linear algebra over the algebraic extension fields; ~10-12 min: expensive.  Paths are relative to code/, the registry runner's workdir (house pattern; fails loud elsewhere).  Launch-time provenance captured at process start (worktree_dirty_at_start uses git status --porcelain INCLUDING untracked workspace files; the stamp's dirty_paths show untracked-only, so the tracked source is exactly the launch commit 59fb70d).  Artifact of record is payload-stable (canonical comparison; agreeing re-runs preserve the pin).",
+      "description": "The uniqueness half of the LVZ four-screening characterization at the sampled parameters: the joint kernel of ALL FOUR paperclip screening conditions on the Z2xZ2-invariant two-boson sector, modulo total derivatives, has class dimension exactly 1 at n=2,3 and charge spins 7,9, and the known P_8/P_10 charges are members AND nonzero classes, both facts now recorded per point in the artifact (membership + dim 1 + nonzero => they span).  Method control: the cokernel-projection computation must agree with the original witness-block construction at weight 6, both n, before the main points run.  DomainMatrix linear algebra over the algebraic extension fields; ~10-12 min: expensive.  Paths are relative to code/, the registry runner's workdir (house pattern; fails loud elsewhere).  Launch-time provenance captured at process start, FAIL-CLOSED (a git failure aborts the run) with exact tracked/untracked dirty-path lists retained -- tracked_dirty_at_start is empty, so the tracked source is exactly the launch commit 65df20b.  Artifact of record is payload-stable (canonical comparison; agreeing re-runs preserve the pin).",
       "required_markers": [
         "PAPERCLIP JOINT KERNEL CERTIFIED"
       ],
       "artifacts": [
         {
           "path": "results/paperclip_joint_kernel_79.json",
-          "sha256": "sha256:c9c2018eb5b46cdb1624339dc976ff5d7033ac3318b73e88ebeda9fb8bfa8a57"
+          "sha256": "sha256:81e0500fc1008894fc456869b2a2d059d2892a4476dc5795491b4ddb780fab0f"
         }
       ]
     },
@@ -1090,14 +1381,125 @@
         "kdv_tower_spin14_vacancy.py"
       ],
       "timeout_s": 1800,
-      "description": "Spin-14 vacancy of BOTH CENTRALIZERS at the c=1 branch point, re-derived in-stack with the same genuine_kernel machinery and normalizations as the certified sigma<=9 range: ker ad_{I5} (tower side) and ker ad_{I'3} (shifted-KdV side) both have genuine class dimension 0 at charge spin 14, computed directly and unconditionally -- enforced separately, then 0==0 as the spin-14 instance of the class-by-class equality.  Redirected (review 2026-08-26) from a first version that computed SCREENING kernels, whose emptiness does not bound the centralizers at exceptional coupling; also closes the vendored independent program's conditional gap (06_spin14_15_extension.py skips the second kernel when the first is empty).  Control: reproduces I'3 uniqueness at sigma=3.  Paths relative to code/ (runner workdir); launch-time provenance as in paperclip_joint_kernel_79 (launch commit 59fb70d, tracked source clean); payload-stable artifact.",
+      "description": "Spin-14 vacancy of BOTH CENTRALIZERS at the c=1 branch point, re-derived in-stack with the same genuine_kernel machinery and normalizations as the certified sigma<=9 range: ker ad_{I5} (tower side) and ker ad_{I'3} (shifted-KdV side) both have genuine class dimension 0 at charge spin 14, computed directly and unconditionally -- enforced separately, then 0==0 as the spin-14 instance of the class-by-class equality.  Redirected (review 2026-08-26) from a first version that computed SCREENING kernels, whose emptiness does not bound the centralizers at exceptional coupling; also closes the vendored independent program's conditional gap (06_spin14_15_extension.py skips the second kernel when the first is empty).  Control: reproduces I'3 uniqueness at sigma=3.  Paths relative to code/ (runner workdir); launch-time provenance as in paperclip_joint_kernel_79, fail-closed with retained path lists (launch commit 65df20b, tracked_dirty_at_start empty); payload-stable artifact.",
       "required_markers": [
         "SPIN-14 CENTRALIZER VACANCY CERTIFIED"
       ],
       "artifacts": [
         {
           "path": "results/kdv_tower_spin14_vacancy.json",
-          "sha256": "sha256:48b145ffb4efb8be67c431eeae1c167c172d3a421e035124c562ca267ec30fb3"
+          "sha256": "sha256:57aec4c46e3fbe57bdd49f412cd4df21968efa48543283f0ff8252a54dc3771f"
+        }
+      ]
+    },
+    {
+      "id": "w18_lab_records",
+      "mode": "artifact",
+      "description": "Retained lab records at weight 18 (Codex round 8): the complete GF(10007) and GF(10009) residue-scan outputs of all three sheets ((p-2) non-pole residues each: 10005 and 10007 respectively; drops exactly at t=3 and t=11/9 on sheet 3, t=3 and t=13/11 on sheet 2, none on sheet 1) with a machine-readable summary bound to the matrix sha256 sidecars, and the fast-path JSON records for P1 and P2 carrying the full exact witnesses (v, S) of A v + D_t S = 0 (4 and 3 primes). Lab records: single-prime evidence and exact fast-path computations pending the registered pure-Python certificate; hash-pinned so they cannot drift silently.",
+      "claims": [],
+      "artifacts": [
+        {
+          "path": "results/lab/modp_scan/w18_p10007_summary.json",
+          "sha256": "sha256:2d31b2645f1ba20e4d29ec7daa38d7ff0c1ea898ebb8ff9bda389d434f18dafc",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w18_p10009_summary.json",
+          "sha256": "sha256:a3b8296a7acdc79d4641a95c40f43dda552cc7c87a9511f7d716a41efa52bd00",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w18_sheet1_p10007.log",
+          "sha256": "sha256:5c9b41942fa22ea72465039bfbf1f7c15afdeffe5923de106700707bc8a9d1e3",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w18_sheet1_p10009.log",
+          "sha256": "sha256:be7b792065a9a1e482363b31c75dfbc7e1c0bcae00d4cd1a7c74dbd7af073afa",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w18_sheet2_p10007.log",
+          "sha256": "sha256:be6beb32ee360f9c7631a79447dd3a40c75147ad6d274d8c673a19ca20d4e2b2",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w18_sheet2_p10009.log",
+          "sha256": "sha256:ea5b6cc1bfeb59aa5a9b9375c7433d0d02c0704879f0d7426390d7b1ed037ee8",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w18_sheet3_p10007.log",
+          "sha256": "sha256:665f6118a7838eb9c690228f70adb8a766dfbfd1f1cd433a183ad8c66d3fe475",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w18_sheet3_p10009.log",
+          "sha256": "sha256:a7d69c36fb857503199cb26d950bd20ed806faa10d370aeef70c34129ae0d971",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/fast_kernel2/w18_P1_sheet3_t4.json",
+          "sha256": "sha256:4c32f4266ad2addb13dd83f2915f22fc0d154f217e67a63a55dbe9d55c29492c",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/fast_kernel2/w18_P2_sheet2_t5.json",
+          "sha256": "sha256:3f96b21ec5352e187d58ec5f9881fd591b62d54e1d1d385ba694632a158fcdde",
+          "kind": "lab_record"
+        }
+      ]
+    },
+    {
+      "id": "w16_lab_records",
+      "mode": "artifact",
+      "description": "Retained lab records at weight 16: the complete GF(10007) residue-scan outputs of all three sheets (10004 non-pole residues in chunks plus t=0 separately; drops exactly at t=3 and t=5/3 on sheets 2 and 3, none on sheet 1), the GF(10009) full scans of all three sheets (10007 non-pole residues each; identical drops, none on sheet 1) and the GF(10009) point check at t=5/3, with machine-readable summaries bound to the matrix sha256 sidecars. Lab records: single-/double-prime evidence; the exact dimensions at the lifted points are certified by cyl_spin15_stratification and cyl_spin15_ladder_probe.",
+      "claims": [],
+      "artifacts": [
+        {
+          "path": "results/lab/modp_scan/w16_p10007_summary.json",
+          "sha256": "sha256:002cb894b20e28a3f64407c692c86056ed0dc85bb1fa82fa2be6c966b36e2ba9",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w16_p10009_summary.json",
+          "sha256": "sha256:f8bc1160b5048d35b571faf23f161d092e8c2685c625c570608afdfc91401c4b",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w16_sheet1_p10007.log",
+          "sha256": "sha256:27ab31e2637ebcd58bd87118707a2587ba4e00cd902a3855cb81350e784d3cdd",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w16_sheet1_p10009.log",
+          "sha256": "sha256:68995e1b1aee61adea74b23795bc14b8bfc48d9ecdd5b7694c7bb74903ae52bb",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w16_sheet2_p10007.log",
+          "sha256": "sha256:4737222f9e5b36350cb1e6d8599924a111fb472da7346a3d266d3023f77b37f5",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w16_sheet2_p10009.log",
+          "sha256": "sha256:8cc6527b479d146479c7c4cd367b86ce801729bc26cf694fc61d04b9db05a1e8",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w16_sheet2_p10009_t53_point.log",
+          "sha256": "sha256:f712e6e8417768054b1cc6e4d611094279a8259b34bd13f3cf624bc1f34c8840",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w16_sheet3_p10007.log",
+          "sha256": "sha256:6191121f5af89547b70bd5e6dbee98831bda3f3961a2d90a089aa075283b75d6",
+          "kind": "lab_record"
+        },
+        {
+          "path": "results/lab/modp_scan/w16_sheet3_p10009.log",
+          "sha256": "sha256:0f932041d03508d286b220bec9353f9d23c878d609b505bb69678a4177dce265",
+          "kind": "lab_record"
         }
       ]
     },
@@ -1126,7 +1528,7 @@
     "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
   ],
   "_public_edition": {
-    "generated_on": "2026-08-26",
+    "generated_on": "2026-09-01",
     "pruned_entry_ids": [
       "certificate_provenance_lint",
       "check_a2_1820_provenance",
@@ -1134,6 +1536,6 @@
       "dossier_evidence_pins",
       "draft_builds_and_hash"
     ],
-    "artifact_pins_dropped_as_private": 0
+    "artifact_pins_dropped_as_private": 1
   }
 }

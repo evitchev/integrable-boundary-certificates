@@ -1,0 +1,8 @@
+parsed 2457x821, max degree 4, parse 1174.7s
+generic ranks at t=2,5,7: (820, 820, 820) (0.751s each)
+scanned residues [3338,3339) = 1 in 1s; rank drops: 1
+  t = 3338 (mod 10009)  rank 819 (nullity 2)  lifts to t = 5/3
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 2861, rank 820
+  check t=11/9: residue 7786, rank 820
+  check t=2: residue 2, rank 820

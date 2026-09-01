@@ -1,0 +1,11 @@
+{
+ "weight": 14,
+ "solution": 3,
+ "rows": 1082,
+ "cols": 365,
+ "class_dim_w": 365,
+ "class_dim_target": 1082,
+ "curve": "N=(t^2-25)/(t^2-1), s=-24t/(t^2-1)",
+ "builder_sha256": "0a1c2a62ab0831335aff40c176ef1e5681e895f095ea360897a196a8baf9d749",
+ "matrix_sha256": "14eb6c9c42b935b13593c7940d898819918e39678840979fee5e9a66157af2e0"
+}

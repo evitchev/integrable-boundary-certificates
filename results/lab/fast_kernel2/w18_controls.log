@@ -1,0 +1,58 @@
+  sectors: cand 5106 (d-image 3293), target 16901 (d-image 11491); exact build 131.9s
+  prime 1: rank 13303, nullity 3294, kc 3293 -> U = 1; canonical class basis pivots [0] (980.0s)
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  3 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 1 with 4 prime(s): 1 vectors verified by exact identities, classes independent; total 5156.4s
+sol=1 N=-119/2 s=-143/2 dim=1 kc=3293 primes=4 time=5157s
+  sectors: cand 5106 (d-image 3293), target 16901 (d-image 11491); exact build 131.9s
+  prime 1: rank 13303, nullity 3294, kc 3293 -> U = 1; canonical class basis pivots [0] (980.9s)
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  3 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 1 with 4 prime(s): 1 vectors verified by exact identities, classes independent; total 5156.7s
+sol=1 N=-238/5 s=-297/5 dim=1 kc=3293 primes=4 time=5157s
+  sectors: cand 5106 (d-image 3293), target 16901 (d-image 11491); exact build 263.0s
+  prime 1: rank 13303, nullity 3294, kc 3293 -> U = 1; canonical class basis pivots [0] (1113.7s)
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 1 with 3 prime(s): 1 vectors verified by exact identities, classes independent; total 4419.2s
+sol=1 N=-7 s=-16 dim=1 kc=3293 primes=3 time=4420s
+  sectors: cand 5106 (d-image 3293), target 16901 (d-image 11491); exact build 141.3s
+  prime 1: rank 13303, nullity 3294, kc 3293 -> U = 1; canonical class basis pivots [0] (1055.4s)
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  3 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 1 with 4 prime(s): 1 vectors verified by exact identities, classes independent; total 5406.7s
+sol=2 N=-143/4 s=-189/4 dim=1 kc=3293 primes=4 time=5407s
+  sectors: cand 5106 (d-image 3293), target 16901 (d-image 11491); exact build 141.2s
+  prime 1: rank 13303, nullity 3294, kc 3293 -> U = 1; canonical class basis pivots [0] (1050.4s)
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 1 with 3 prime(s): 1 vectors verified by exact identities, classes independent; total 4119.0s
+sol=2 N=-238/5 s=-297/5 dim=1 kc=3293 primes=3 time=4120s
+  sectors: cand 5106 (d-image 3293), target 16901 (d-image 11491); exact build 144.3s
+  prime 1: rank 13303, nullity 3294, kc 3293 -> U = 1; canonical class basis pivots [0] (1162.1s)
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 1 with 3 prime(s): 1 vectors verified by exact identities, classes independent; total 4328.7s
+sol=2 N=-7 s=-16 dim=1 kc=3293 primes=3 time=4329s
+  sectors: cand 5106 (d-image 3293), target 16901 (d-image 11491); exact build 143.4s
+  prime 1: rank 13303, nullity 3294, kc 3293 -> U = 1; canonical class basis pivots [0] (1051.8s)
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  3 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 1 with 4 prime(s): 1 vectors verified by exact identities, classes independent; total 5425.8s
+sol=3 N=-119/2 s=-143/2 dim=1 kc=3293 primes=4 time=5426s
+  sectors: cand 5106 (d-image 3293), target 16901 (d-image 11491); exact build 132.6s
+  prime 1: rank 13303, nullity 3294, kc 3293 -> U = 1; canonical class basis pivots [0] (977.1s)
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 1 with 3 prime(s): 1 vectors verified by exact identities, classes independent; total 3963.4s
+sol=3 N=-143/4 s=-189/4 dim=1 kc=3293 primes=3 time=3964s
+  sectors: cand 5106 (d-image 3293), target 16901 (d-image 11491); exact build 267.6s
+  prime 1: rank 13303, nullity 3294, kc 3293 -> U = 1; canonical class basis pivots [0] (1116.7s)
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 1 with 3 prime(s): 1 vectors verified by exact identities, classes independent; total 4433.3s
+sol=3 N=-7 s=-16 dim=1 kc=3293 primes=3 time=4434s

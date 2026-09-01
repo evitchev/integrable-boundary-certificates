@@ -1,0 +1,58 @@
+{
+ "tool": "lab/modp_scan.py",
+ "weight": 16,
+ "prime": 10007,
+ "status": "lab record: residue scan; evidence, not a characteristic-zero completeness proof",
+ "sheets": {
+  "1": {
+   "rows": 2457,
+   "cols": 821,
+   "matrix_sha256": "1b03cefe772210e5a5bdb8a24a2a1db99e536ecc3f6cb18a150fc299a54375bf",
+   "generic_rank": 820,
+   "residues_evaluated": 10005,
+   "rank_drops": []
+  },
+  "2": {
+   "rows": 2457,
+   "cols": 821,
+   "matrix_sha256": "2378d6ae53d52dfb972a03593fd27eb0286ddb5551685bc791a46f80a01e2ca6",
+   "generic_rank": 820,
+   "residues_evaluated": 10005,
+   "rank_drops": [
+    {
+     "residue": 3,
+     "rank": 819,
+     "nullity": 2,
+     "lift": "3"
+    },
+    {
+     "residue": 6673,
+     "rank": 819,
+     "nullity": 2,
+     "lift": "5/3"
+    }
+   ]
+  },
+  "3": {
+   "rows": 2457,
+   "cols": 821,
+   "matrix_sha256": "507f8419102dfb361f83c818b0e0427ce54b9eaef075c38b861fa59773d7561d",
+   "generic_rank": 820,
+   "residues_evaluated": 10005,
+   "rank_drops": [
+    {
+     "residue": 3,
+     "rank": 819,
+     "nullity": 2,
+     "lift": "3"
+    },
+    {
+     "residue": 6673,
+     "rank": 819,
+     "nullity": 2,
+     "lift": "5/3"
+    }
+   ]
+  }
+ }
+}

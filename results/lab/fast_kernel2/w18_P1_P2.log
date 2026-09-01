@@ -1,0 +1,14 @@
+  sectors: cand 5106 (d-image 3293), target 16901 (d-image 11491); exact build 134.0s
+  prime 1: rank 13302, nullity 3295, kc 3293 -> U = 2; canonical class basis pivots [0, 128] (991.2s)
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  3 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 2 with 4 prime(s): 2 vectors verified by exact identities, classes independent; total 6428.3s
+sol=3 N=-238/5 s=-297/5 dim=2 kc=3293 primes=4 time=6429s
+  sectors: cand 5106 (d-image 3293), target 16901 (d-image 11491); exact build 127.6s
+  prime 1: rank 13302, nullity 3295, kc 3293 -> U = 2; canonical class basis pivots [0, 57] (945.3s)
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 2 with 3 prime(s): 2 vectors verified by exact identities, classes independent; total 4927.5s
+sol=2 N=-119/2 s=-143/2 dim=2 kc=3293 primes=3 time=4928s
+exit=0

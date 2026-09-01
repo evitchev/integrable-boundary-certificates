@@ -3,7 +3,12 @@
 Formal, machine-checked proofs of the abstract skeletons that the
 draft's arguments lean on, contributed by the cognitive agent
 (cross-project assessment item C). Checked with Lean 4.24 / Mathlib
-via a pinned local toolchain; run `python3 code/lean_check.py` (or the
+via a pinned local toolchain; `lean-toolchain` in this directory pins
+`leanprover/lean4:v4.24.0` for elan-based reproduction (Mathlib of the
+matching release is required on LEAN_PATH; note the LIMITATION that
+Mathlib itself is supplied by a machine-local wrapper, not yet by a
+repository-pinned Lake manifest); run `python3
+code/lean_check.py` (or the
 certifier's `lean_certificates` entry under `--only`/`--full`).
 
 ## Contents

@@ -1,0 +1,307 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-08-31",
+  "generated_at_utc": "2026-09-01T02:14:56+00:00",
+  "git_commit": "e5a44e55ab71483aeeff3c767b7674420b96ca5b",
+  "worktree": {
+    "worktree_dirty": true,
+    "dirty_path_count": 14,
+    "dirty_paths": [
+      "code/certifications.json",
+      "results/cyl_t2_shadow_run.json",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "draft/main.bbl",
+      "draft/main.blg",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "wolfram/lab/cyl_discriminant_w1012_wls.json"
+    ],
+    "tracked_dirty": true,
+    "tracked_dirty_paths": [
+      "code/certifications.json",
+      "results/cyl_t2_shadow_run.json"
+    ],
+    "untracked_paths": [
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "draft/main.bbl",
+      "draft/main.blg",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "wolfram/lab/cyl_discriminant_w1012_wls.json"
+    ]
+  },
+  "environment": {
+    "python": "3.12.8",
+    "python_executable": "python3",
+    "sympy": "1.14.0",
+    "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+    "machine": "x86_64"
+  },
+  "invocation": {
+    "full": false,
+    "only": "cyl_discriminant_w1012"
+  },
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_expensive": 0,
+    "pins_verified": 0
+  },
+  "status": "passed_fast_checks_and_pins",
+  "claim_coverage": {
+    "(-143/4,-189/4) is a spin-11-only pure multiplicity jump of cylindrical Solution 2; the other lab-reported spin-11 data confirmed": [
+      "cyl_strata_points_s11"
+    ],
+    "R1": [
+      "validate_component_engine",
+      "vacancy_tables_and_I5I7",
+      "paperclip_vacancy_1214",
+      "lean_certificates"
+    ],
+    "R2": [
+      "screening_annihilates_p8",
+      "paperclip_p8_artifact"
+    ],
+    "R3": [
+      "validate_component_engine",
+      "symbolic_commutativity",
+      "vacancy_tables_and_I5I7",
+      "lean_certificates"
+    ],
+    "R4": [
+      "screening_fit_lvz_vectors",
+      "screening_annihilates_p8",
+      "paperclip_p10_artifact",
+      "screening_spin9",
+      "paperclip_joint_kernel_79"
+    ],
+    "R5": [
+      "validate_invariant_engine",
+      "a2_i7_formula_certification",
+      "a2_infinitude_dictionary",
+      "a2_branch_point_mechanism",
+      "qt_promotion_artifact",
+      "results_documentation_pins",
+      "raw_certificate_pins",
+      "vacancy_final_modp_smoke",
+      "kdv_tower_spin14_vacancy"
+    ],
+    "R6": [
+      "cylindrical_mutual_commutativity",
+      "qt_promotion_artifact",
+      "results_documentation_pins",
+      "collapsed_validate",
+      "raw_certificate_pins",
+      "vacancy_final_modp_smoke",
+      "vacancy_cyl_121416",
+      "vacancy_a2_1820"
+    ],
+    "R7": [
+      "validate_component_engine",
+      "validate_invariant_engine",
+      "erratum_eq51_p6",
+      "a2_i7_formula_certification",
+      "results_documentation_pins"
+    ],
+    "SUSY Phase 3 (finite range, five sampled lambda in {0,3/4,1/2,1,2}, doubled weight <= 24): the ad_{I3(lam)} centralizer spectrum is identical at all five lambda -- dim 1 at sigma in {0,1/2,1,3,5,7,9,11}, 0 at every other spin in range; I5, I7, I9(lam) unique, mutually commuting G-singlets with no half-integer partners; at lam = 3/4 the joint kernel of all four fermionic screenings equals the centralizer for 3 <= w2 <= 16 (momentum exception at sigma = 0) and the dual pair's kernel equals the NS super-Virasoro vacuum class count p(h)-p(h-1) through w2 = 16 at lam in {3/4, 4/3, 5/12}": [
+      "super_phase3"
+    ],
+    "Solution 3 has spin-13 ad_{I_3} kernel dimension 2 at t=9/7, (N,s)=(-143/4,-189/4) -- the first sporadic spin-13 point -- while Solutions 1 and 2 have dimension 1 there": [
+      "cyl_spin13_sol3_sporadic"
+    ],
+    "X-axis sinh-Gordon screening of the cylindrical I_3 occurs only on an exactly computed finite locus of the curve": [
+      "cyl_hidden_kdv_scan"
+    ],
+    "[Q_{2sqrt2}, Q_{-2sqrt2}] == (sqrt2/45) J mod total derivatives, constant exact; parity-even residue part is a total derivative": [
+      "j_commutator_identification"
+    ],
+    "at (-25/2,-45/2): Solutions 2 and 3 merge; kernel dims 2,1,1,1 at spins 5..11; screened line through I_11; extra spin-5 class mixed; generic towers of both solutions coincide there": [
+      "cyl_jump_point_tower"
+    ],
+    "at N=28 cylindrical Solutions 1 and 2 coincide through I_11 and the merged tower I_3..I_11 is conserved under e^{+-sqrt2 X} (finite-range; nonzero classes asserted)": [
+      "cyl_n28_tower_embedding"
+    ],
+    "at spin 15 no cylindrical Solution jumps at t2, t3, t4 or the t=2 baseline on the probed sheets: the sporadic spin-13 point of Solution 3 is single-spin and the two-ladder hypothesis H1 survives its first preregistered test": [
+      "cyl_spin15_ladder_probe"
+    ],
+    "at spin 17 the cylindrical curve jumps at t4=11/9 on sheet 3 and at t5=13/11 on sheet 2 (kernel dimension 2 each) and at none of the nine preregistered control points -- the two-ladder hypothesis's double positive prediction, made before any weight-18 computation": [
+      "cyl_spin17_double_prediction"
+    ],
+    "c=-25/2 identification, class-by-class: ker ad_{I'3} = tower classes at sigma 5,7,9 (mult 1 odd / 0 even); even-sector sine-Gordon pair kernel K-dim 1 at odd sigma 1..9 (infinitude anchor)": [
+      "kdv_tower_classes"
+    ],
+    "c=-25/2 identification: the enhanced c=1 tower is quantum KdV at c_{1,4} in Feigin-Fuchs realization on the c=1 boson (T_Q at Q^2=9/8)": [
+      "kdv_identification"
+    ],
+    "c=1 enhancement mechanism: even-sector +-alpha kernel coincidence; the A2(2) pair symmetrizes to the FF quartet at the branch point": [
+      "z2_mechanism"
+    ],
+    "companion Sec. 2: four-condition characterization (joint kernel multiplicity one at odd spins 1..9, zero at even, weights 2..10)": [
+      "c1_four_condition_char"
+    ],
+    "cylindrical I_3 families are not the invariant background-charge KdV ray at any N != 0": [
+      "cyl_hidden_kdv_scan"
+    ],
+    "discriminant classification over Q-bar away from the parametrization poles t = +-1 at weight 14 (spin 13, preregistered): jump sets exactly -- sheet 1 empty, sheet 2 {3}, sheet 3 {3, 9/7} with nullity 2 and the (1-8x) factor at t_3 = c_{1,8} (2q-3 = 13 at q = 8); sheet 2 silent beyond c_{1,2} over all of Q-bar ((3q-2)/2 = 13 has no integer solution -- the Phi-reading's asymmetry prediction); no odd-q point jumps": [
+      "cyl_discriminant_w14"
+    ],
+    "discriminant classification over Q-bar away from the parametrization poles t = +-1 at weights 10 and 12 (preregistered): one maximal minor D(t) of the ad_I3 matrix is a complete over-approximation of the rank-drop locus; every irreducible factor classified by exact rank (GF(p)-screened) -- jump sets exactly w10: sol1 {}, sol2 {3}, sol3 {3, 7/5}; w12: sol1 {}, sol2 {3, 9/7}, sol3 {3}; nullity 2 at every jump; beta^2 = (t-1)/(t+1) images exactly 1/2, 1/6 (w10 sol3), 1/8 (w12 sol2); no jump anywhere at beta^2 = 1/7, 1/5, 1/3 -- the odd-q Kac slots (incl. q = 7 solving 2q-3 = 11 at weight 12, sheet 3) are empty over ALL of Q-bar, strictly beyond the rational-residue scans": [
+      "cyl_discriminant_w1012"
+    ],
+    "draft": [
+      "draft_builds_and_hash"
+    ],
+    "engines": [
+      "collapsed_validate"
+    ],
+    "exact rational identities only: with x = (t-1)/(t+1), N = 13 - 6(x + 1/x) and s = 6(x - 1/x) identically in t (hence s^2 = (N-25)(N-1)); sheet exchange x -> 1/x is t -> -t; N is the value c(beta^2) with beta^2 = x (c_Y: the theory's full free-boson charge is N + 1); the named detected/predicted points map exactly -- t_k = (q+1)/(q-1) with q = 2k+2 and N(t_k) = c_(1,2k+2) for k = 1..5, t = 3 to c_(1,2) = -2, the odd-q rational points t = 2, 3/2, 4/3, 5/4, 6/5 to c_(1,q), q = 3..11 -- and c_(1,2k+2) = -(4k+1)(3k+2)/(k+1). Scan and kernel outcomes are certified by their own certificates, not here": [
+      "cyl_coulomb_gas_parametrization"
+    ],
+    "exact spin-15 kernel dimensions at the two lifted rational points of the weight-16 residue scans: (-25/2,-45/2) has dimension 2 on both merged sheets -- the first recurrence at one point (spins 5 and 15) -- and 1 on sheet 1; the (-2,-9) decoupling has dimension 2 on sheets 2,3 and 1 on sheet 1; the complete GF(10007) scans detecting no other reduction are evidence, not proof, that no further characteristic-zero point exists": [
+      "cyl_spin15_stratification"
+    ],
+    "independent Mathematica replication (unrelated implementation, vendor, algorithm lineage) agrees with every baked target T1-T6c": [
+      "wolfram_triangle"
+    ],
+    "lab-found multiplicity jump points of the cylindrical families at spins 5-9 confirmed; (-24,-35) is a new pure multiplicity jump of Solution 3 at spin 9": [
+      "cyl_strata_points"
+    ],
+    "odd-q controls (preregistered): at t = 2, 3/2, 4/3 (beta^2 = 1/q, q = 3, 5, 7 -- c_(1,3), c_(1,5), c_(1,7)) the exact spin-9, -11 and -13 kernels on Solutions 2 and 3 all have dimension 1 (generic): the odd-q rational points are certified generic exactly at the spins where the even-q neighbours t_2, t_3 jump (finite-range)": [
+      "cyl_oddq_controls"
+    ],
+    "provenance": [
+      "certificate_provenance_lint",
+      "raw_certificate_pins",
+      "dossier_evidence_pins"
+    ],
+    "survey-sec5": [
+      "resurgence_borel_check"
+    ],
+    "t_2 = 7/5 (c_{1,6}), Solution 3, weights 6-12: kernel dims [1,1,2,1]; NO screening structure extended to the c_{1,6} Kac pair -- e^{aX}-screened dims are 0 at a^2 = 1/3 and 12 (the roots of c(a)-1 = -3(a^2-2)^2/a^2 at c = -24), individually and jointly, at every weight, as at the certified a^2 = 2, 3; the spin-9 kernel is genuinely mixed (projection ranks 2, 2); the preregistered screened-shadow reading is REFUTED and recorded (foreseeable from the certified no-screening classification in cyl_strata_lab.md -- process rule adopted)": [
+      "cyl_t2_shadow"
+    ],
+    "the a2 sigma=18/20 run's recorded provenance reconstructs the exact program (blob equality at launch and stamped commits)": [
+      "check_a2_1820_provenance"
+    ],
+    "the c=1 tower member at spin 15 is conserved under {+-1/sqrt2, +-2sqrt2} and not under +-sqrt2: the L(1,0) exit predicted at spin 15 is realized; tower multiplicity one holds at sigma=15": [
+      "c1_spin15_l10_exit"
+    ],
+    "the full-space centralizer's odd-parity sector: the spin-6 charge J commutes with the tower (I'3, I5, I'7, I'9), conserved under +-1/sqrt2 only; c_{1,2} even-sector kernel jump (K-dim 2 at spin 7) is real": [
+      "odd_sector_j"
+    ],
+    "the preregistered t=11/9 spin-13 jump is not observed on any sheet; the spin-13 kernel dimensions at the 19 preregistered points are as pinned": [
+      "cyl_spin13_prediction"
+    ],
+    "the retained cyl_spin13_prediction run record is semantically valid and binds to the current certificate": [
+      "check_spin13_run_record"
+    ],
+    "the retained cyl_spin13_prediction run record passes the repository-local semantic checks; the git-bound checks are explicitly scoped out of the public edition": [
+      "check_spin13_run_record_public"
+    ],
+    "the sigma<=15 independent-engine extension and its scripts are pinned, auditable artifacts": [
+      "independent_engine_artifacts"
+    ],
+    "tier3-character-lemma": [
+      "dossier_evidence_pins"
+    ],
+    "tower-level self-dual (a^2=2) embeddings at the multiplicity-one locus points and inside the enlarged kernel at (-25/2,-45/2) (screened dim 1 of 2); decouplings of Solutions 2 and 3 at (-2,-9); locus completeness via Groebner": [
+      "cyl_hidden_kdv_scan"
+    ]
+  },
+  "coverage_gaps": [
+    "R2's zero/pole-divisor and duality-covariance prose is verified narratively (second audit pass), not by a retained script.",
+    "R8 is a data-backed conjecture: the kernel side comes from vacancy_tables_and_I5I7 and the screening side from screening_annihilates_p8; no certification can apply to the conjecture itself.",
+    "Cylindrical printed I5 formulas eqs. (54)/(56)/(58) are not encoded; the R7 erratum is deliberately narrowed to eqs. (53)/(55)/(57).",
+    "Mutual commutativity of higher promoted pairs: COMPLETE 2026-08-11 -- all 21 instances of the inventory (18 cylindrical pair instances + the three higher A2(2) pairs; brackets with each family's defining low charge vanish by construction) are proved identically over Q(t) via even-spin vacancy certificates, ALL EIGHTEEN sector verdicts on the same GF(p) tags=d-rank footing (cyl sigma=12 x3 = 379, sigma=14 x3 = 929, sigma=16 x3 = 2211 [vacancy_cyl_121416, 2026-08-24]; cyl sigma=18 x3 = 5106, cyl sigma=20 x3 = 11491; A2 sigma=18 = 678, sigma=20 = 1351 [vacancy_a2_1820, 2026-08-25], sigma=24 = 5117; the two batches supersede the earlier fraction-free runs that retained no artifacts).  Evidence: pinned artifacts incl. the preregistered launch declaration and the merged batch record; results/vacancy_final.md supersedes the partial doc.  The historical 70-71-point checks stand as independent evidence.  This closes computed-range mutual commutativity; it does NOT prove infinitude of the cylindrical hierarchies.",
+    "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
+  ],
+  "results": [
+    {
+      "id": "cyl_discriminant_w1012",
+      "claims": [
+        "discriminant classification over Q-bar away from the parametrization poles t = +-1 at weights 10 and 12 (preregistered): one maximal minor D(t) of the ad_I3 matrix is a complete over-approximation of the rank-drop locus; every irreducible factor classified by exact rank (GF(p)-screened) -- jump sets exactly w10: sol1 {}, sol2 {3}, sol3 {3, 7/5}; w12: sol1 {}, sol2 {3, 9/7}, sol3 {3}; nullity 2 at every jump; beta^2 = (t-1)/(t+1) images exactly 1/2, 1/6 (w10 sol3), 1/8 (w12 sol2); no jump anywhere at beta^2 = 1/7, 1/5, 1/3 -- the odd-q Kac slots (incl. q = 7 solving 2q-3 = 11 at weight 12, sheet 3) are empty over ALL of Q-bar, strictly beyond the rational-residue scans"
+      ],
+      "description": "Fail-closed wrapper (code/cyl_discriminant_w1012.py) around wolfram/lab/cyl_discriminant.wls (rank machinery verbatim from the certified-w14 lab method; requires local Mathematica -- the wls hash is carried in the pinned artifact's provenance since a .wls is outside the Python import closure). Inputs sha-verified against the tracked sidecars. Writes results/cyl_discriminant_w1012.json (deterministic). Preregistered results/cyl_discriminant_preregistration.md; negative drill on a tampered w10-only copy proven (pin-level FAILs, no crash). Round 15: the wls and all matrix/sidecar inputs are declared sources, bound into the launch record.",
+      "mode": "run",
+      "executed": true,
+      "status": "pass",
+      "failures": [],
+      "runtime_s": 1120.4,
+      "artifact_hashes": {
+        "results/cyl_discriminant_w1012.json": "sha256:67c91315f765bbb9af24ccc2f2a36206003fe32ad1d834993bb8a51cc78c6157"
+      },
+      "script_sha256": "sha256:7f171c16fa46cdb415e3bcddb7e2208eefa50da40bbbac010d7543605339e5f1",
+      "sources_sha256": {
+        "../wolfram/lab/cyl_discriminant.wls": "sha256:995ab97bf172cdf41d3101d454879adcce9c75fb4db2522537a358ed7b2f4253",
+        "../wolfram/lab/cyl_strata_w10_sol1.json": "sha256:6747966c150a7f113ccfff3b32b0b70605f9886ff5c480f2a58570833cfd940d",
+        "../wolfram/lab/cyl_strata_w10_sol1.m": "sha256:baa6eeb9d71c9aa3b63b3d0ee8c4ce11d3abb58e0d2d6d80c0629111db5b0c1d",
+        "../wolfram/lab/cyl_strata_w10_sol2.json": "sha256:f22896b406b3e265d62fc8b240ac4deff274b43d27e47654335b63b623b2bc5b",
+        "../wolfram/lab/cyl_strata_w10_sol2.m": "sha256:410f47d2948ed35cbf4bdbe72b49dcc20fb902efffb372f9067be52ff4f17f89",
+        "../wolfram/lab/cyl_strata_w10_sol3.json": "sha256:a5c77d37181fafc742886edd8e35b5e7c1b0824b645069a5507cdc123ccc912b",
+        "../wolfram/lab/cyl_strata_w10_sol3.m": "sha256:b46b3b3470fa5b678c6d5985b6bf9ebd580f03af205f163386c50d65990fe35d",
+        "../wolfram/lab/cyl_strata_w12_sol1.json": "sha256:9016900e38a91da234e16986b12f0540d377989b86d675d9491e8ecc34e8b77b",
+        "../wolfram/lab/cyl_strata_w12_sol1.m": "sha256:1889d132c7b3b8fc057f3a7f8f786b2bf2ad0a0d944428d1ff54a5c4ebddb469",
+        "../wolfram/lab/cyl_strata_w12_sol2.json": "sha256:186d4cc40cf645c55298451899a5b6a979ec50ffc15acb2a25badb148c18e049",
+        "../wolfram/lab/cyl_strata_w12_sol2.m": "sha256:ee6b4060ecb484a5c69f94794991e9a28af83fd70b69c1e412117b75766c3fe7",
+        "../wolfram/lab/cyl_strata_w12_sol3.json": "sha256:e25bbc5515c26fb7b40fed8f08c416a2f645388c62617c298b4282fcc0a9ed54",
+        "../wolfram/lab/cyl_strata_w12_sol3.m": "sha256:5c1ff5c46b4b138b68b24a661111a90da87ae716ed8b190888d22f2fd6536bc8",
+        "cyl_discriminant_w1012.py": "sha256:7f171c16fa46cdb415e3bcddb7e2208eefa50da40bbbac010d7543605339e5f1"
+      },
+      "runner_sha256": "sha256:d3749131b236e838428f2660c792f6714d9df30f47dbf7370180b55958cfcd82",
+      "closure_unresolved": [],
+      "launch": {
+        "commit": "e5a44e55ab71483aeeff3c767b7674420b96ca5b",
+        "worktree": {
+          "worktree_dirty": true,
+          "dirty_path_count": 12,
+          "dirty_paths": [
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "draft/main.bbl",
+            "draft/main.blg",
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "wolfram/lab/cyl_discriminant_w1012_wls.json"
+          ],
+          "tracked_dirty": false,
+          "tracked_dirty_paths": [],
+          "untracked_paths": [
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "draft/main.bbl",
+            "draft/main.blg",
+            "[untracked-workspace-file]",
+            "[untracked-workspace-file]",
+            "wolfram/lab/cyl_discriminant_w1012_wls.json"
+          ]
+        },
+        "bytecode_clean": true
+      },
+      "exit_code": 0
+    }
+  ],
+  "partial_of": "certification_manifest.json"
+}

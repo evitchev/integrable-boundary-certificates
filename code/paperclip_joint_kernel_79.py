@@ -11,8 +11,9 @@ total derivative" via the generic-stratum elimination of
 screening_fit.screening_conditions, on the Z2 x Z2-invariant two-boson
 density space; solutions are then counted modulo ORDINARY total
 derivatives.  Expected: dimension exactly 1, spanned by the known
-charge (whose membership is already certified by R4's annihilation
-tests; equality of dimensions makes it the span).
+charge -- membership plus one-dimensionality plus the charge being a
+NONZERO class (each checked explicitly; membership alone would not
+rule out a total-derivative representative).
 
 Fail-closed: any dimension other than 1, at any of the four (n, sigma)
 points, fails the run.  Sampled-n scope: this is exact at n = 2, 3,
@@ -185,21 +186,10 @@ def joint_kernel_dim_witness_block(nval, w):
     return rKD - rD
 
 
-import hashlib
-import subprocess
 from pathlib import Path as _P
+from launch_provenance import capture_launch
 _ROOT = _P(__file__).resolve().parent.parent
-_LAUNCH = {
-    "launch_commit_at_start": subprocess.run(
-        ["git", "-C", str(_ROOT), "rev-parse", "HEAD"],
-        capture_output=True, text=True).stdout.strip(),
-    "worktree_dirty_at_start": bool(subprocess.run(
-        ["git", "-C", str(_ROOT), "status", "--porcelain"],
-        capture_output=True, text=True).stdout.strip()),
-    "script_sha256_at_start": hashlib.sha256(
-        _P(__file__).read_bytes()).hexdigest(),
-    "invocation": ["python3", _P(__file__).name],
-}
+_LAUNCH = capture_launch(_ROOT, _P(__file__).resolve())
 
 # METHOD CONTROL (review requirement): at the small weight 6 (charge
 # spin 5) the cokernel-projection method must agree with the original
@@ -250,7 +240,8 @@ for nval, w, path in [(F(2), 8, "../results/paperclip_P8.json"),
           nz)
     RECORDS["points"].append({"n": str(nval), "weight": w,
                               "charge_spin": w - 1, "class_dim": dim,
-                              "known_charge_in_kernel": not bad})
+                              "known_charge_in_kernel": not bad,
+                              "known_charge_nonzero_class": bool(nz)})
 
 print()
 if failures:
@@ -264,14 +255,19 @@ RECORDS["object"] = ("joint kernel of the four paperclip screenings on "
                      "the Z2xZ2-invariant sector, modulo total "
                      "derivatives, at sampled n = 2, 3, spins 7 and 9")
 RECORDS["acceptance"] = ("class dimension exactly 1 at each point, known "
-                         "charge a member (hence spans); method control: "
+                         "charge a member AND a nonzero class (hence "
+                         "spans); method control: "
                          "cokernel-projection == witness-block at weight 6")
 art = Path(__file__).resolve().parent.parent / "results" / \
     "paperclip_joint_kernel_79.json"
 
 
 def _canon(d):
-    d = {k: v for k, v in d.items() if k not in ("provenance", "launch")}
+    d = {k: v for k, v in d.items()
+         if k not in ("provenance", "launch", "script_sha256",
+                      "invocation")}   # provenance-class keys: a
+    # provenance-only refactor must not fake a scientific change
+    # (review, 2026-08-27)
     return json.dumps(json.loads(json.dumps(d)), sort_keys=True)
 
 

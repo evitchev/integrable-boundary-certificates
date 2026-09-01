@@ -1,12 +1,51 @@
 {
   "schema_version": 1,
   "kind": "public_export_record",
-  "private_freeze_commit": "ad13eae4ce52659f08819f8858dd8272fb9563fc",
+  "private_freeze_commit": "f2200d6eec13be95acbed4db6b68804481f19a70",
   "private_worktree_dirty_at_export": true,
-  "exported_at_utc": "2026-08-26T20:27:41+00:00",
-  "exporter_sha256": "sha256:77d60f8a79b6c0ced140d9020b3bf8ed4f7274ab22e5153cfbfeecadeed76d67",
-  "source_file_count": 180,
+  "exported_at_utc": "2026-09-01T05:42:37+00:00",
+  "exporter_sha256": "sha256:c520e0917f4d11a4b8d62a1fbdbaaedc51acbd841ae43779772f56c8bfda26cf",
+  "source_file_count": 258,
   "transformation_log": {
+    "results/c1_spin15_l10_exit_run.json": {
+      "public_sha256": "sha256:42f9a70b3c8c2ee39825f4df2145d2de3544deec4333fbfdc55074f769c21091",
+      "redactions": [
+        {
+          "rule": "[untracked-workspace-file]",
+          "count": 18
+        },
+        {
+          "rule": "python3",
+          "count": 1
+        }
+      ]
+    },
+    "results/cyl_discriminant_w1012_run.json": {
+      "public_sha256": "sha256:ad56e5ca7558dd8b1050ae5616654ed1199ccadeb1a1b6af8341d16007606553",
+      "redactions": [
+        {
+          "rule": "[untracked-workspace-file]",
+          "count": 36
+        },
+        {
+          "rule": "python3",
+          "count": 1
+        }
+      ]
+    },
+    "results/cyl_oddq_controls_run.json": {
+      "public_sha256": "sha256:c9264375c42d2b68f72b66972a81977d385e395f7f0edc9a8de478f5975ec594",
+      "redactions": [
+        {
+          "rule": "[untracked-workspace-file]",
+          "count": 36
+        },
+        {
+          "rule": "python3",
+          "count": 1
+        }
+      ]
+    },
     "results/cyl_spin13_prediction_run.json": {
       "public_sha256": "sha256:f230ee5acda67746a22d5db768a87c932f033612ff9f5829850a071b8b0eacb8",
       "redactions": [
@@ -20,11 +59,73 @@
         }
       ]
     },
+    "results/cyl_spin13_sol3_sporadic_run.json": {
+      "public_sha256": "sha256:dfce44a283e97abee0a6fa1ef558566cbc0aa07895285d24d05c9e30bec1e20a",
+      "redactions": [
+        {
+          "rule": "[untracked-workspace-file]",
+          "count": 18
+        },
+        {
+          "rule": "python3",
+          "count": 1
+        }
+      ]
+    },
+    "results/cyl_spin15_ladder_probe_run.json": {
+      "public_sha256": "sha256:f977cf0a781569c144b4d321a98cc02de20fd0d17bda75b14a390c26aa59a944",
+      "redactions": [
+        {
+          "rule": "python3",
+          "count": 1
+        }
+      ]
+    },
+    "results/cyl_spin15_stratification_run.json": {
+      "public_sha256": "sha256:158b57ef84f0cdeb349a2bff84c52222e0792ec213e656406a6fbfd011de045f",
+      "redactions": [
+        {
+          "rule": "python3",
+          "count": 1
+        }
+      ]
+    },
+    "results/cyl_spin17_double_prediction_run.json": {
+      "public_sha256": "sha256:2ffc65d5adc01071f8006f027d972447a987e7a381bfff2ea700ca0d35e3e563",
+      "redactions": [
+        {
+          "rule": "python3",
+          "count": 1
+        }
+      ]
+    },
     "results/cyl_strata_lab.md": {
       "public_sha256": "sha256:1f82c63c21c981bd3aa9f04eddae9fca7e851dcee4f80537075310fed7e15b89",
       "redactions": [
         {
           "rule": "[private-note]",
+          "count": 1
+        }
+      ]
+    },
+    "results/cyl_t2_shadow_preregistration.md": {
+      "public_sha256": "sha256:ac73a9d8687d12af7e8e73072462f9130520ba37531fc385ee8f891092f34a56",
+      "redactions": [
+        {
+          "rule": "[private-note]",
+          "count": 1
+        }
+      ]
+    },
+    "results/cyl_t2_shadow_run.json": {
+      "public_sha256": "sha256:bd919ec3771070dd3cc0e9f144a0bfd7b7d01e7a3574c59d8ccb0555b358473a",
+      "redactions": [
+        {
+          "rule": "[untracked-workspace-file]",
+          "count": 36
+        },
+        {
+          "rule": "python3",
           "count": 1
         }
       ]
@@ -43,11 +144,11 @@
       ]
     },
     "results/kdv_tower_spin14_vacancy.json": {
-      "public_sha256": "sha256:48b145ffb4efb8be67c431eeae1c167c172d3a421e035124c562ca267ec30fb3",
+      "public_sha256": "sha256:57aec4c46e3fbe57bdd49f412cd4df21968efa48543283f0ff8252a54dc3771f",
       "redactions": [
         {
           "rule": "[untracked-workspace-file]",
-          "count": 9
+          "count": 18
         }
       ]
     },
@@ -61,11 +162,11 @@
       ]
     },
     "results/paperclip_joint_kernel_79.json": {
-      "public_sha256": "sha256:c9c2018eb5b46cdb1624339dc976ff5d7033ac3318b73e88ebeda9fb8bfa8a57",
+      "public_sha256": "sha256:81e0500fc1008894fc456869b2a2d059d2892a4476dc5795491b4ddb780fab0f",
       "redactions": [
         {
           "rule": "[untracked-workspace-file]",
-          "count": 9
+          "count": 18
         }
       ]
     },
@@ -87,6 +188,19 @@
         },
         {
           "rule": "python3-env",
+          "count": 1
+        }
+      ]
+    },
+    "results/super_phase3_run.json": {
+      "public_sha256": "sha256:bbae565d03d3eb5403a57593286e4fd88d89bef19d3444bb9b90e6847ffffe02",
+      "redactions": [
+        {
+          "rule": "[untracked-workspace-file]",
+          "count": 36
+        },
+        {
+          "rule": "python3",
           "count": 1
         }
       ]

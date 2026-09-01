@@ -49,6 +49,8 @@ _DIRTY_PATH_CAP = 40
 
 
 def _git(*args: str) -> subprocess.CompletedProcess:
+    # In a repository (ROOT/.git exists) a missing git executable is a
+    # hard failure -- provenance must never be silently absent there.
     return subprocess.run(["git", "-C", str(ROOT), *args],
                           capture_output=True, text=True)
 
@@ -67,6 +69,13 @@ def resolve_head_commit() -> str:
 
 def worktree_state() -> dict:
     status = _git("status", "--porcelain")
+    if status.returncode != 0:
+        # Codex round 2026-08-28: exit 128 used to be recorded as
+        # worktree_dirty=False; inside a repository this must raise.
+        raise RuntimeError(
+            f"git status exited {status.returncode}: "
+            f"{status.stderr.strip()[:200]} -- refusing to record a clean "
+            "worktree")
     paths = [line[3:] for line in status.stdout.splitlines() if line]
     return {
         "worktree_dirty": bool(paths),
@@ -76,11 +85,36 @@ def worktree_state() -> dict:
 
 
 def provenance_block() -> dict:
+    launch = None
+    if not (ROOT / ".git").exists():
+        # verify BEFORE importing sympy (Codex round 3: a shadowed sympy ran
+        # before the refusal); the bootstrap marker is required, see
+        # launch_provenance.capture_launch.
+        from launch_provenance import capture_launch
+        argv0 = Path(sys.argv[0]).resolve() if sys.argv and sys.argv[0] else None
+        script = argv0 if argv0 and argv0.is_file() else Path(__file__).resolve()
+        launch = capture_launch(ROOT, script)
     try:
         import sympy
         sympy_version = sympy.__version__
     except ImportError:
         sympy_version = "MISSING"
+    if launch is not None:
+        # archive execution context: the tree was verified above
+        # (Codex round 2: stamp() used to return an archive block unchecked)
+        return {
+            "context": launch["context"],
+            "release_freeze_commit": launch.get("release_freeze_commit"),
+            "release_tree_verified_files": launch.get(
+                "release_tree_verified_files"),
+            "launch_commit": None,
+            "stamped_at_utc": datetime.now(timezone.utc).isoformat(
+                timespec="seconds"),
+            "python": sys.version.split()[0],
+            "sympy": sympy_version,
+            "platform": platform.platform(),
+            "worktree_dirty": None,
+        }
     block = {
         "launch_commit": resolve_head_commit(),
         "stamped_at_utc": datetime.now(timezone.utc).isoformat(
@@ -152,9 +186,14 @@ def _cli() -> int:
     staged.write_text(json.dumps(stamped, indent=2, sort_keys=True) + "\n",
                       encoding="utf-8")
     staged.replace(target)
-    print(f"stamped {target} at "
-          f"{stamped['provenance']['launch_commit'][:12]} "
-          f"(dirty={stamped['provenance']['worktree_dirty']})")
+    prov = stamped["provenance"]
+    if prov.get("launch_commit"):
+        print(f"stamped {target} at {prov['launch_commit'][:12]} "
+              f"(dirty={prov['worktree_dirty']})")
+    else:
+        # archive context (Codex round 2: this line used to crash on None)
+        print(f"stamped {target} in context {prov.get('context')!r} "
+              f"(release freeze {str(prov.get('release_freeze_commit'))[:12]})")
     return 0
 
 

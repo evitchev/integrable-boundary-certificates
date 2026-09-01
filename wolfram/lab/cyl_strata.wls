@@ -91,13 +91,13 @@ Do[
   rowPiv = pivotCols[Transpose[Mg]];
   sub = M[[rowPiv, colPiv]];
   If[MatrixRank[sub /. t -> probes[[1]]] =!= r0, Print["submatrix selection failed"]; Abort[]];
-  tD = AbsoluteTiming[detD = TimeConstrained[Det[sub], 600, $Failed];][[1]];
+  tD = AbsoluteTiming[detD = TimeConstrained[Det[sub], 3600, $Failed];][[1]];
   If[detD === $Failed,
     (* fallback: evaluation / interpolation with a rigorous degree bound
        (sum over rows of the maximal entry degree), exact rational
        determinants at bound+1 points (avoiding the poles t = +-1),
        verified at 3 held-out points -- fail closed *)
-    degBound = Total[Max[Exponent[#, t] & /@ row] & /@ sub];
+    degBound = Total[Function[row, Max[Exponent[#, t] & /@ row]] /@ sub];
     pts = Select[Range[2, degBound + 12], # =!= 1 && # =!= -1 &];
     nodes = Take[pts, degBound + 1]; extra = Take[Drop[pts, degBound + 1], 3];
     tD = AbsoluteTiming[

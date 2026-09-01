@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-08-29",
+  "generated_at_utc": "2026-08-29T07:05:51+00:00",
+  "git_commit": "f6e5941236742b825f181eac0441b57c9edc3c30",
+  "worktree": {
+    "worktree_dirty": true,
+    "dirty_path_count": 11,
+    "dirty_paths": [
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "draft/main.bbl",
+      "draft/main.blg",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]"
+    ],
+    "tracked_dirty": false,
+    "tracked_dirty_paths": [],
+    "untracked_paths": [
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]",
+      "draft/main.bbl",
+      "draft/main.blg",
+      "[untracked-workspace-file]",
+      "[untracked-workspace-file]"
+    ]
+  },
+  "environment": {
+    "python": "3.12.8",
+    "python_executable": "python3",
+    "sympy": "1.14.0",
+    "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+    "machine": "x86_64"
+  },
+  "invocation": {
+    "full": false,
+    "only": "c1_spin15_l10_exit"
+  },
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_expensive": 0,
+    "pins_verified": 0
+  },
+  "status": "passed_fast_checks_and_pins",
+  "claim_coverage": {
+    "(-143/4,-189/4) is a spin-11-only pure multiplicity jump of cylindrical Solution 2; the other lab-reported spin-11 data confirmed": [
+      "cyl_strata_points_s11"
+    ],
+    "R1": [
+      "validate_component_engine",
+      "vacancy_tables_and_I5I7",
+      "paperclip_vacancy_1214",
+      "lean_certificates"
+    ],
+    "R2": [
+      "screening_annihilates_p8",
+      "paperclip_p8_artifact"
+    ],
+    "R3": [
+      "validate_component_engine",
+      "symbolic_commutativity",
+      "vacancy_tables_and_I5I7",
+      "lean_certificates"
+    ],
+    "R4": [
+      "screening_fit_lvz_vectors",
+      "screening_annihilates_p8",
+      "paperclip_p10_artifact",
+      "screening_spin9",
+      "paperclip_joint_kernel_79"
+    ],
+    "R5": [
+      "validate_invariant_engine",
+      "a2_i7_formula_certification",
+      "a2_infinitude_dictionary",
+      "a2_branch_point_mechanism",
+      "qt_promotion_artifact",
+      "results_documentation_pins",
+      "raw_certificate_pins",
+      "vacancy_final_modp_smoke",
+      "kdv_tower_spin14_vacancy"
+    ],
+    "R6": [
+      "cylindrical_mutual_commutativity",
+      "qt_promotion_artifact",
+      "results_documentation_pins",
+      "collapsed_validate",
+      "raw_certificate_pins",
+      "vacancy_final_modp_smoke",
+      "vacancy_cyl_121416",
+      "vacancy_a2_1820"
+    ],
+    "R7": [
+      "validate_component_engine",
+      "validate_invariant_engine",
+      "erratum_eq51_p6",
+      "a2_i7_formula_certification",
+      "results_documentation_pins"
+    ],
+    "Solution 3 has spin-13 ad_{I_3} kernel dimension 2 at t=9/7, (N,s)=(-143/4,-189/4) -- the first sporadic spin-13 point -- while Solutions 1 and 2 have dimension 1 there": [
+      "cyl_spin13_sol3_sporadic"
+    ],
+    "X-axis sinh-Gordon screening of the cylindrical I_3 occurs only on an exactly computed finite locus of the curve": [
+      "cyl_hidden_kdv_scan"
+    ],
+    "[Q_{2sqrt2}, Q_{-2sqrt2}] == (sqrt2/45) J mod total derivatives, constant exact; parity-even residue part is a total derivative": [
+      "j_commutator_identification"
+    ],
+    "at (-25/2,-45/2): Solutions 2 and 3 merge; kernel dims 2,1,1,1 at spins 5..11; screened line through I_11; extra spin-5 class mixed; generic towers of both solutions coincide there": [
+      "cyl_jump_point_tower"
+    ],
+    "at N=28 cylindrical Solutions 1 and 2 coincide through I_11 and the merged tower I_3..I_11 is conserved under e^{+-sqrt2 X} (finite-range; nonzero classes asserted)": [
+      "cyl_n28_tower_embedding"
+    ],
+    "at spin 15 no cylindrical Solution jumps at t2, t3, t4 or the t=2 baseline on the probed sheets: the sporadic spin-13 point of Solution 3 is single-spin and the two-ladder hypothesis H1 survives its first preregistered test": [
+      "cyl_spin15_ladder_probe"
+    ],
+    "c=-25/2 identification, class-by-class: ker ad_{I'3} = tower classes at sigma 5,7,9 (mult 1 odd / 0 even); even-sector sine-Gordon pair kernel K-dim 1 at odd sigma 1..9 (infinitude anchor)": [
+      "kdv_tower_classes"
+    ],
+    "c=-25/2 identification: the enhanced c=1 tower is quantum KdV at c_{1,4} in Feigin-Fuchs realization on the c=1 boson (T_Q at Q^2=9/8)": [
+      "kdv_identification"
+    ],
+    "c=1 enhancement mechanism: even-sector +-alpha kernel coincidence; the A2(2) pair symmetrizes to the FF quartet at the branch point": [
+      "z2_mechanism"
+    ],
+    "companion Sec. 2: four-condition characterization (joint kernel multiplicity one at odd spins 1..9, zero at even, weights 2..10)": [
+      "c1_four_condition_char"
+    ],
+    "cylindrical I_3 families are not the invariant background-charge KdV ray at any N != 0": [
+      "cyl_hidden_kdv_scan"
+    ],
+    "draft": [
+      "draft_builds_and_hash"
+    ],
+    "engines": [
+      "collapsed_validate"
+    ],
+    "independent Mathematica replication (unrelated implementation, vendor, algorithm lineage) agrees with every baked target T1-T6c": [
+      "wolfram_triangle"
+    ],
+    "lab-found multiplicity jump points of the cylindrical families at spins 5-9 confirmed; (-24,-35) is a new pure multiplicity jump of Solution 3 at spin 9": [
+      "cyl_strata_points"
+    ],
+    "provenance": [
+      "certificate_provenance_lint",
+      "raw_certificate_pins",
+      "dossier_evidence_pins"
+    ],
+    "survey-sec5": [
+      "resurgence_borel_check"
+    ],
+    "the a2 sigma=18/20 run's recorded provenance reconstructs the exact program (blob equality at launch and stamped commits)": [
+      "check_a2_1820_provenance"
+    ],
+    "the c=1 tower member at spin 15 is conserved under {+-1/sqrt2, +-2sqrt2} and not under +-sqrt2: the L(1,0) exit predicted at spin 15 is realized; tower multiplicity one holds at sigma=15": [
+      "c1_spin15_l10_exit"
+    ],
+    "the full-space centralizer's odd-parity sector: the spin-6 charge J commutes with the tower (I'3, I5, I'7, I'9), conserved under +-1/sqrt2 only; c_{1,2} even-sector kernel jump (K-dim 2 at spin 7) is real": [
+      "odd_sector_j"
+    ],
+    "the preregistered t=11/9 spin-13 jump is not observed on any sheet; the spin-13 kernel dimensions at the 19 preregistered points are as pinned": [
+      "cyl_spin13_prediction"
+    ],
+    "the retained cyl_spin13_prediction run record is semantically valid and binds to the current certificate": [
+      "check_spin13_run_record"
+    ],
+    "the retained cyl_spin13_prediction run record passes the repository-local semantic checks; the git-bound checks are explicitly scoped out of the public edition": [
+      "check_spin13_run_record_public"
+    ],
+    "the sigma<=15 independent-engine extension and its scripts are pinned, auditable artifacts": [
+      "independent_engine_artifacts"
+    ],
+    "tier3-character-lemma": [
+      "dossier_evidence_pins"
+    ],
+    "tower-level self-dual (a^2=2) embeddings at the multiplicity-one locus points and inside the enlarged kernel at (-25/2,-45/2) (screened dim 1 of 2); decouplings of Solutions 2 and 3 at (-2,-9); locus completeness via Groebner": [
+      "cyl_hidden_kdv_scan"
+    ]
+  },
+  "coverage_gaps": [
+    "R2's zero/pole-divisor and duality-covariance prose is verified narratively (second audit pass), not by a retained script.",
+    "R8 is a data-backed conjecture: the kernel side comes from vacancy_tables_and_I5I7 and the screening side from screening_annihilates_p8; no certification can apply to the conjecture itself.",
+    "Cylindrical printed I5 formulas eqs. (54)/(56)/(58) are not encoded; the R7 erratum is deliberately narrowed to eqs. (53)/(55)/(57).",
+    "Mutual commutativity of higher promoted pairs: COMPLETE 2026-08-11 -- all 21 instances of the inventory (18 cylindrical pair instances + the three higher A2(2) pairs; brackets with each family's defining low charge vanish by construction) are proved identically over Q(t) via even-spin vacancy certificates, ALL EIGHTEEN sector verdicts on the same GF(p) tags=d-rank footing (cyl sigma=12 x3 = 379, sigma=14 x3 = 929, sigma=16 x3 = 2211 [vacancy_cyl_121416, 2026-08-24]; cyl sigma=18 x3 = 5106, cyl sigma=20 x3 = 11491; A2 sigma=18 = 678, sigma=20 = 1351 [vacancy_a2_1820, 2026-08-25], sigma=24 = 5117; the two batches supersede the earlier fraction-free runs that retained no artifacts).  Evidence: pinned artifacts incl. the preregistered launch declaration and the merged batch record; results/vacancy_final.md supersedes the partial doc.  The historical 70-71-point checks stand as independent evidence.  This closes computed-range mutual commutativity; it does NOT prove infinitude of the cylindrical hierarchies.",
+    "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
+  ],
+  "results": [
+    {
+      "id": "c1_spin15_l10_exit",
+      "claims": [
+        "the c=1 tower member at spin 15 is conserved under {+-1/sqrt2, +-2sqrt2} and not under +-sqrt2: the L(1,0) exit predicted at spin 15 is realized; tower multiplicity one holds at sigma=15"
+      ],
+      "description": "Preregistered test of the article's printed prediction that the c=1 tower member leaves L(1,0) at spin 15 (sigma = 3 mod 6 pattern; expectations committed bff6630 before the computation, script 899a222). Outcome (2026-08-28, 14.5 h single core): control I'3 unique at sigma=3; tower multiplicity one at sigma=15 in this stack (extends the certified range from sigma<=9); the spin-15 member is conserved under the a^2=2 quartet {+-1/sqrt2, +-2sqrt2} and NOT conserved under the L(1,0) rows +-sqrt2 -- exactly as printed -- nor under the sqrt3 control. The paper's first predict-then-verify success. Nine pinned rows, fail-closed; expensive.",
+      "mode": "run",
+      "executed": true,
+      "status": "pass",
+      "failures": [],
+      "runtime_s": 67249.7,
+      "artifact_hashes": {},
+      "exit_code": 0
+    }
+  ],
+  "partial_of": "certification_manifest.json"
+}

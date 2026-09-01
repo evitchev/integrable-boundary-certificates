@@ -1,0 +1,93 @@
+parsed 2457x821, max degree 4, parse 6438.9s
+generic ranks at t=2,5,7: (820, 820, 820) (3.084s each)
+scanned residues [1670,2504) = 834 in 1276s; rank drops: 0
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 4290, rank 820
+  check t=11/9: residue 2225, rank 820
+  check t=2: residue 2, rank 820
+parsed 2457x821, max degree 4, parse 6473.3s
+generic ranks at t=2,5,7: (820, 820, 820) (2.605s each)
+scanned residues [2504,3338) = 834 in 1111s; rank drops: 0
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 4290, rank 820
+  check t=11/9: residue 2225, rank 820
+  check t=2: residue 2, rank 820
+parsed 2457x821, max degree 4, parse 6177.9s
+generic ranks at t=2,5,7: (820, 820, 820) (3.297s each)
+scanned residues [2,836) = 834 in 1446s; rank drops: 1
+  t = 3 (mod 10007)  rank 819 (nullity 2)  lifts to t = 3
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 4290, rank 820
+  check t=11/9: residue 2225, rank 820
+  check t=2: residue 2, rank 820
+parsed 2457x821, max degree 4, parse 5863.3s
+generic ranks at t=2,5,7: (820, 820, 820) (6.818s each)
+scanned residues [3338,4172) = 834 in 1687s; rank drops: 0
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 4290, rank 820
+  check t=11/9: residue 2225, rank 820
+  check t=2: residue 2, rank 820
+parsed 2457x821, max degree 4, parse 6213.9s
+generic ranks at t=2,5,7: (820, 820, 820) (5.739s each)
+scanned residues [4172,5006) = 834 in 1485s; rank drops: 0
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 4290, rank 820
+  check t=11/9: residue 2225, rank 820
+  check t=2: residue 2, rank 820
+parsed 2457x821, max degree 4, parse 6407.0s
+generic ranks at t=2,5,7: (820, 820, 820) (2.167s each)
+scanned residues [5006,5840) = 834 in 1135s; rank drops: 0
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 4290, rank 820
+  check t=11/9: residue 2225, rank 820
+  check t=2: residue 2, rank 820
+parsed 2457x821, max degree 4, parse 6433.3s
+generic ranks at t=2,5,7: (820, 820, 820) (3.873s each)
+scanned residues [5840,6674) = 834 in 1344s; rank drops: 1
+  t = 6673 (mod 10007)  rank 819 (nullity 2)  lifts to t = 5/3
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 4290, rank 820
+  check t=11/9: residue 2225, rank 820
+  check t=2: residue 2, rank 820
+parsed 2457x821, max degree 4, parse 6440.1s
+generic ranks at t=2,5,7: (820, 820, 820) (4.854s each)
+scanned residues [6674,7508) = 834 in 1325s; rank drops: 0
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 4290, rank 820
+  check t=11/9: residue 2225, rank 820
+  check t=2: residue 2, rank 820
+parsed 2457x821, max degree 4, parse 6481.1s
+generic ranks at t=2,5,7: (820, 820, 820) (1.470s each)
+scanned residues [7508,8342) = 834 in 1240s; rank drops: 0
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 4290, rank 820
+  check t=11/9: residue 2225, rank 820
+  check t=2: residue 2, rank 820
+parsed 2457x821, max degree 4, parse 6405.8s
+generic ranks at t=2,5,7: (820, 820, 820) (3.375s each)
+scanned residues [8342,9176) = 834 in 1299s; rank drops: 0
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 4290, rank 820
+  check t=11/9: residue 2225, rank 820
+  check t=2: residue 2, rank 820
+parsed 2457x821, max degree 4, parse 6128.6s
+generic ranks at t=2,5,7: (820, 820, 820) (3.318s each)
+scanned residues [836,1670) = 834 in 1358s; rank drops: 0
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 4290, rank 820
+  check t=11/9: residue 2225, rank 820
+  check t=2: residue 2, rank 820
+parsed 2457x821, max degree 4, parse 6469.7s
+generic ranks at t=2,5,7: (820, 820, 820) (2.683s each)
+scanned residues [9176,10006) = 830 in 1355s; rank drops: 0
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 4290, rank 820
+  check t=11/9: residue 2225, rank 820
+  check t=2: residue 2, rank 820
+parsed 2457x821, max degree 4, parse 1344.0s
+generic ranks at t=2,5,7: (820, 820, 820) (1.279s each)
+scanned residues [0,1) = 1 in 1s; rank drops: 0
+  check t=3: residue 3, rank 819
+  check t=9/7: residue 4290, rank 820
+  check t=11/9: residue 2225, rank 820
+  check t=2: residue 2, rank 820
