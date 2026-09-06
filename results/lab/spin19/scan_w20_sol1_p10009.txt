@@ -1,0 +1,128 @@
+== scan_w20_sol1_p10009_chunk_0.out
+parsed 11618x3928, max degree 2, parse 140.0s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (84.969s each)
+scanned residues [0,626): 625 evaluated (poles skipped) in 49662s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_626.out
+parsed 11618x3928, max degree 2, parse 138.3s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (82.822s each)
+scanned residues [626,1251): 625 evaluated (poles skipped) in 49444s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_1251.out
+parsed 11618x3928, max degree 2, parse 142.6s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (88.373s each)
+scanned residues [1251,1877): 626 evaluated (poles skipped) in 49841s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_1877.out
+parsed 11618x3928, max degree 2, parse 139.5s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (86.766s each)
+scanned residues [1877,2502): 625 evaluated (poles skipped) in 49917s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_2502.out
+parsed 11618x3928, max degree 2, parse 143.0s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (89.051s each)
+scanned residues [2502,3128): 626 evaluated (poles skipped) in 49330s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_3128.out
+parsed 11618x3928, max degree 2, parse 142.3s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (87.101s each)
+scanned residues [3128,3753): 625 evaluated (poles skipped) in 49694s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_3753.out
+parsed 11618x3928, max degree 2, parse 142.7s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (87.085s each)
+scanned residues [3753,4379): 626 evaluated (poles skipped) in 49072s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_4379.out
+parsed 11618x3928, max degree 2, parse 142.1s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (89.420s each)
+scanned residues [4379,5004): 625 evaluated (poles skipped) in 49805s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_5004.out
+parsed 11618x3928, max degree 2, parse 143.8s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (89.060s each)
+scanned residues [5004,5630): 626 evaluated (poles skipped) in 49757s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_5630.out
+parsed 11618x3928, max degree 2, parse 138.9s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (83.419s each)
+scanned residues [5630,6256): 626 evaluated (poles skipped) in 49504s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_6256.out
+parsed 11618x3928, max degree 2, parse 139.1s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (86.277s each)
+scanned residues [6256,6881): 625 evaluated (poles skipped) in 49416s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_6881.out
+parsed 11618x3928, max degree 2, parse 143.6s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (89.291s each)
+scanned residues [6881,7507): 626 evaluated (poles skipped) in 49513s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_7507.out
+parsed 11618x3928, max degree 2, parse 139.9s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (82.644s each)
+scanned residues [7507,8132): 625 evaluated (poles skipped) in 48929s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_8132.out
+parsed 11618x3928, max degree 2, parse 137.9s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (82.542s each)
+scanned residues [8132,8758): 626 evaluated (poles skipped) in 50116s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_8758.out
+parsed 11618x3928, max degree 2, parse 137.5s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (80.729s each)
+scanned residues [8758,9383): 625 evaluated (poles skipped) in 48906s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol1_p10009_chunk_9383.out
+parsed 11618x3928, max degree 2, parse 142.3s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (88.315s each)
+scanned residues [9383,10009): 625 evaluated (poles skipped) in 49493s; rank drops: 0
+  check t=3: residue 3, rank 3927
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927

@@ -1,0 +1,225 @@
+== scan_w20_sol3_p10009_chunk_0.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 0 626 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 284.0s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (91.905s each)
+scanned residues [0,626): 625 evaluated (poles skipped) in 52803s; rank drops: 1
+  t = 3 (mod 10009)  rank 3926 (nullity 2)  lifts to t = 3
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_626.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 626 1251 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 286.0s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (92.761s each)
+scanned residues [626,1251): 625 evaluated (poles skipped) in 52700s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_1251.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 1251 1877 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 280.4s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (92.817s each)
+scanned residues [1251,1877): 626 evaluated (poles skipped) in 52359s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_1877.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 1877 2502 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 283.5s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (86.428s each)
+scanned residues [1877,2502): 625 evaluated (poles skipped) in 52752s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_2502.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 2502 3128 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 286.8s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (92.277s each)
+scanned residues [2502,3128): 626 evaluated (poles skipped) in 52500s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_3128.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 3128 3753 started=2026-09-04T21:12:52Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 272.8s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (82.295s each)
+scanned residues [3128,3753): 625 evaluated (poles skipped) in 52339s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_3753.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 3753 4379 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 276.0s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (83.794s each)
+scanned residues [3753,4379): 626 evaluated (poles skipped) in 52954s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_4379.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 4379 5004 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 268.1s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (82.858s each)
+scanned residues [4379,5004): 625 evaluated (poles skipped) in 52406s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_5004.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 5004 5630 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 277.4s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (83.778s each)
+scanned residues [5004,5630): 626 evaluated (poles skipped) in 52650s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_5630.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 5630 6256 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 271.5s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (83.587s each)
+scanned residues [5630,6256): 626 evaluated (poles skipped) in 52861s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_6256.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 6256 6881 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 275.9s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (93.212s each)
+scanned residues [6256,6881): 625 evaluated (poles skipped) in 52449s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_6881.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 6881 7507 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 275.6s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (85.915s each)
+scanned residues [6881,7507): 626 evaluated (poles skipped) in 52698s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_7507.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 7507 8132 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 276.1s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (93.034s each)
+scanned residues [7507,8132): 625 evaluated (poles skipped) in 52656s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_8132.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 8132 8758 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 281.4s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (90.694s each)
+scanned residues [8132,8758): 626 evaluated (poles skipped) in 52391s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_8758.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 8758 9383 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 278.1s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (91.002s each)
+scanned residues [8758,9383): 625 evaluated (poles skipped) in 52502s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927
+== scan_w20_sol3_p10009_chunk_9383.out
+ATTEST scanner_sha256=553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301
+ATTEST matrix=cyl_strata_w20_sol3.m matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST sidecar_matrix_sha256=396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9
+ATTEST host=scan-node python=3.12.8 flint=0.9.0
+ATTEST invocation=modp_scan.py 20 3 10009 9383 10009 started=2026-09-04T21:12:51Z
+ATTEST git=9e742a5ad5b05265fc9eb76e8606e0b1725a8616 dirty=0
+parsed 11618x3928, max degree 4, parse 279.2s
+generic ranks at t=2,5,7: (3927, 3927, 3927) (86.171s each)
+scanned residues [9383,10009): 625 evaluated (poles skipped) in 52225s; rank drops: 0
+  check t=3: residue 3, rank 3926
+  check t=9/7: residue 2861, rank 3927
+  check t=11/9: residue 7786, rank 3927
+  check t=2: residue 2, rank 3927

@@ -1,0 +1,18 @@
+PASS  K1 q = 4 (weight 6): the Y-type member's eigenvalue is proportional to prod_(s even, 2..4) Lambda_s x [Lambda_2 + (3 nu_12/beta) P^2]
+PASS  K2 q = 4: {nu_(1,s)^2} = {m^2 beta^2 : m in M}; M = sheet 3's orbit with |m| >= q/4 taken once; |M| = 2
+PASS  K3 q = 4: the eigenvalue is linear in P^2
+PASS  K4 q = 4: over Q(i sqrt2 beta) every irreducible factor is even in Q or a trivial split Q -+ a (a rational) -- no Q-shift orbit
+PASS  K1 q = 8 (weight 12): the Y-type member's eigenvalue is proportional to prod_(s even, 2..10) Lambda_s x [Lambda_4 + (3 nu_12/beta) P^2]
+PASS  K2 q = 8: {nu_(1,s)^2} = {m^2 beta^2 : m in M}; M = sheet 3's orbit with |m| >= q/4 taken once; |M| = 5
+PASS  K3 q = 8: the eigenvalue is linear in P^2
+PASS  K4 q = 8: over Q(i sqrt2 beta) every irreducible factor is even in Q or a trivial split Q -+ a (a rational) -- no Q-shift orbit
+PASS  K1 q = 12 (weight 18): the Y-type member's eigenvalue is proportional to prod_(s even, 2..16) Lambda_s x [Lambda_6 + (3 nu_12/beta) P^2]
+PASS  K2 q = 12: {nu_(1,s)^2} = {m^2 beta^2 : m in M}; M = sheet 3's orbit with |m| >= q/4 taken once; |M| = 8
+PASS  K3 q = 12: the eigenvalue is linear in P^2
+PASS  K4 q = 12: over Q(i sqrt2 beta) every irreducible factor is even in Q or a trivial split Q -+ a (a rational) -- no Q-shift orbit
+PASS  K5 q = 4: the X-type member's pure-X zeros [-1/2, 0] are X = -2 nu_(1,2)^2 = -1/2 and -2 nu_(1,4)^2 = 0
+PASS  K6 weight 16, t = 5/3: the Y-type member is prod_(s=2,4,6) Lambda_s (q = 4) times an irreducible quintic
+   quintic cofactor Q5 = (1376256*X**3*Y**2 + 688128*X**3*Y + 580608*X**3 - 1376256*X**2*Y**3 + 172032*X**2*Y**2 - 150528*X**2*Y + 362880*X**2 + 589824*X*Y**4 + 540672*X*Y**3 + 2052096*X*Y**2 + 1607424*X*Y + 625968*X - 98304*Y**5 - 282624*Y**4 - 1154048*Y**3 - 2066048*Y**2 - 1907192*Y - 615825)/98304
+PASS  K7 the filed prediction S2-16 equals the Kac form at q = 16 (s even 2..22; mixed s = 8; slope 21)
+PASS  Lambda_s(Q) = -2 h_(1,s) - Q^2 for all s used (q = 4, 8, 12, 16): the pure factors vanish where nu_Y^2 = h_(1,s)
+SHEET-2 READING CHECKS PASSED

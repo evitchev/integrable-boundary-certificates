@@ -1,0 +1,783 @@
+{
+ "weight": 20,
+ "spin": 19,
+ "preregistration": "e6dc226",
+ "scanner": "lab/modp_scan.py",
+ "scanner_sha256": "sha256:553013cd5b7cf4a3d308517d21d341e63da62a2cf917e87c760263e8dae1c301",
+ "generic_rank": {
+  "columns": 3928,
+  "rank": 3927,
+  "test_points": [
+   2,
+   5,
+   7
+  ]
+ },
+ "status": "sheets 1, 2 and 3 complete (two primes each); sheet 3 attested on both primes",
+ "evidence_class": "finite-field residue scans -- not a characteristic-zero proof",
+ "scans": [
+  {
+   "sheet": 1,
+   "prime": 10007,
+   "matrix_sha256": "47c2b6fef24c31052386fa687a87d2b723a23c67dcdcb5ed9680b241f35d5c72",
+   "chunks": [
+    {
+     "T0": 0,
+     "T1": 715,
+     "evaluated": 714,
+     "drops": []
+    },
+    {
+     "T0": 715,
+     "T1": 1334,
+     "evaluated": 619,
+     "drops": []
+    },
+    {
+     "T0": 1334,
+     "T1": 1954,
+     "evaluated": 620,
+     "drops": []
+    },
+    {
+     "T0": 1954,
+     "T1": 2573,
+     "evaluated": 619,
+     "drops": []
+    },
+    {
+     "T0": 2573,
+     "T1": 3193,
+     "evaluated": 620,
+     "drops": []
+    },
+    {
+     "T0": 3193,
+     "T1": 3812,
+     "evaluated": 619,
+     "drops": []
+    },
+    {
+     "T0": 3812,
+     "T1": 4432,
+     "evaluated": 620,
+     "drops": []
+    },
+    {
+     "T0": 4432,
+     "T1": 5051,
+     "evaluated": 619,
+     "drops": []
+    },
+    {
+     "T0": 5051,
+     "T1": 5671,
+     "evaluated": 620,
+     "drops": []
+    },
+    {
+     "T0": 5671,
+     "T1": 6290,
+     "evaluated": 619,
+     "drops": []
+    },
+    {
+     "T0": 6290,
+     "T1": 6910,
+     "evaluated": 620,
+     "drops": []
+    },
+    {
+     "T0": 6910,
+     "T1": 7529,
+     "evaluated": 619,
+     "drops": []
+    },
+    {
+     "T0": 7529,
+     "T1": 8149,
+     "evaluated": 620,
+     "drops": []
+    },
+    {
+     "T0": 8149,
+     "T1": 8768,
+     "evaluated": 619,
+     "drops": []
+    },
+    {
+     "T0": 8768,
+     "T1": 9388,
+     "evaluated": 620,
+     "drops": []
+    },
+    {
+     "T0": 9388,
+     "T1": 10007,
+     "evaluated": 618,
+     "drops": []
+    }
+   ],
+   "evaluated": 10005,
+   "drops": [],
+   "drop_details": [],
+   "checks": {
+    "3": 3927,
+    "9/7": 3927,
+    "11/9": 3927,
+    "2": 3927
+   },
+   "log": "results/lab/spin19/scan_w20_sol1_p10007.txt",
+   "attested": false
+  },
+  {
+   "sheet": 1,
+   "prime": 10009,
+   "matrix_sha256": "47c2b6fef24c31052386fa687a87d2b723a23c67dcdcb5ed9680b241f35d5c72",
+   "chunks": [
+    {
+     "T0": 0,
+     "T1": 626,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 626,
+     "T1": 1251,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 1251,
+     "T1": 1877,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 1877,
+     "T1": 2502,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 2502,
+     "T1": 3128,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 3128,
+     "T1": 3753,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 3753,
+     "T1": 4379,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 4379,
+     "T1": 5004,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 5004,
+     "T1": 5630,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 5630,
+     "T1": 6256,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 6256,
+     "T1": 6881,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 6881,
+     "T1": 7507,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 7507,
+     "T1": 8132,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 8132,
+     "T1": 8758,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 8758,
+     "T1": 9383,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 9383,
+     "T1": 10009,
+     "evaluated": 625,
+     "drops": []
+    }
+   ],
+   "evaluated": 10007,
+   "drops": [],
+   "drop_details": [],
+   "checks": {
+    "3": 3927,
+    "9/7": 3927,
+    "11/9": 3927,
+    "2": 3927
+   },
+   "log": "results/lab/spin19/scan_w20_sol1_p10009.txt",
+   "attested": false
+  },
+  {
+   "sheet": 2,
+   "prime": 10007,
+   "matrix_sha256": "471eddd20def828ad672241479bc92733f87f04f5a6b10cfd07b25d09ee38f03",
+   "chunks": [
+    {
+     "T0": 0,
+     "T1": 625,
+     "evaluated": 624,
+     "drops": [
+      {
+       "residue": 3,
+       "rank": 3926,
+       "nullity": 2,
+       "lift": "3"
+      }
+     ]
+    },
+    {
+     "T0": 625,
+     "T1": 1251,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 1251,
+     "T1": 1876,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 1876,
+     "T1": 2502,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 2502,
+     "T1": 3127,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 3127,
+     "T1": 3753,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 3753,
+     "T1": 4378,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 4378,
+     "T1": 5004,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 5004,
+     "T1": 5629,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 5629,
+     "T1": 6254,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 6254,
+     "T1": 6880,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 6880,
+     "T1": 7505,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 7505,
+     "T1": 8131,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 8131,
+     "T1": 8756,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 8756,
+     "T1": 9382,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 9382,
+     "T1": 10007,
+     "evaluated": 624,
+     "drops": []
+    }
+   ],
+   "evaluated": 10005,
+   "drops": [
+    3
+   ],
+   "drop_details": [
+    {
+     "residue": 3,
+     "rank": 3926,
+     "nullity": 2,
+     "lift": "3"
+    }
+   ],
+   "checks": {
+    "3": 3926,
+    "9/7": 3927,
+    "11/9": 3927,
+    "2": 3927
+   },
+   "log": "results/lab/spin19/scan_w20_sol2_p10007.txt",
+   "attested": false
+  },
+  {
+   "sheet": 2,
+   "prime": 10009,
+   "matrix_sha256": "471eddd20def828ad672241479bc92733f87f04f5a6b10cfd07b25d09ee38f03",
+   "chunks": [
+    {
+     "T0": 0,
+     "T1": 626,
+     "evaluated": 625,
+     "drops": [
+      {
+       "residue": 3,
+       "rank": 3926,
+       "nullity": 2,
+       "lift": "3"
+      }
+     ]
+    },
+    {
+     "T0": 626,
+     "T1": 1251,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 1251,
+     "T1": 1877,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 1877,
+     "T1": 2502,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 2502,
+     "T1": 3128,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 3128,
+     "T1": 3753,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 3753,
+     "T1": 4379,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 4379,
+     "T1": 5004,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 5004,
+     "T1": 5630,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 5630,
+     "T1": 6256,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 6256,
+     "T1": 6881,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 6881,
+     "T1": 7507,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 7507,
+     "T1": 8132,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 8132,
+     "T1": 8758,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 8758,
+     "T1": 9383,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 9383,
+     "T1": 10009,
+     "evaluated": 625,
+     "drops": []
+    }
+   ],
+   "evaluated": 10007,
+   "drops": [
+    3
+   ],
+   "drop_details": [
+    {
+     "residue": 3,
+     "rank": 3926,
+     "nullity": 2,
+     "lift": "3"
+    }
+   ],
+   "checks": {
+    "3": 3926,
+    "9/7": 3927,
+    "11/9": 3927,
+    "2": 3927
+   },
+   "log": "results/lab/spin19/scan_w20_sol2_p10009.txt",
+   "attested": false
+  },
+  {
+   "sheet": 3,
+   "prime": 10007,
+   "matrix_sha256": "396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9",
+   "chunks": [
+    {
+     "T0": 0,
+     "T1": 625,
+     "evaluated": 624,
+     "drops": [
+      {
+       "residue": 3,
+       "rank": 3926,
+       "nullity": 2,
+       "lift": "3"
+      }
+     ]
+    },
+    {
+     "T0": 625,
+     "T1": 1251,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 1251,
+     "T1": 1876,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 1876,
+     "T1": 2502,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 2502,
+     "T1": 3127,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 3127,
+     "T1": 3753,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 3753,
+     "T1": 4378,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 4378,
+     "T1": 5004,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 5004,
+     "T1": 5629,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 5629,
+     "T1": 6254,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 6254,
+     "T1": 6880,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 6880,
+     "T1": 7505,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 7505,
+     "T1": 8131,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 8131,
+     "T1": 8756,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 8756,
+     "T1": 9382,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 9382,
+     "T1": 10007,
+     "evaluated": 624,
+     "drops": []
+    }
+   ],
+   "evaluated": 10005,
+   "drops": [
+    3
+   ],
+   "drop_details": [
+    {
+     "residue": 3,
+     "rank": 3926,
+     "nullity": 2,
+     "lift": "3"
+    }
+   ],
+   "checks": {
+    "3": 3926,
+    "9/7": 3927,
+    "11/9": 3927,
+    "2": 3927
+   },
+   "log": "results/lab/spin19/scan_w20_sol3_p10007.txt",
+   "attested": true
+  },
+  {
+   "sheet": 3,
+   "prime": 10009,
+   "matrix_sha256": "396064a32b646bb50bfb85e79aef8c7810234ee031d826f2a1eccde4b11334b9",
+   "chunks": [
+    {
+     "T0": 0,
+     "T1": 626,
+     "evaluated": 625,
+     "drops": [
+      {
+       "residue": 3,
+       "rank": 3926,
+       "nullity": 2,
+       "lift": "3"
+      }
+     ]
+    },
+    {
+     "T0": 626,
+     "T1": 1251,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 1251,
+     "T1": 1877,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 1877,
+     "T1": 2502,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 2502,
+     "T1": 3128,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 3128,
+     "T1": 3753,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 3753,
+     "T1": 4379,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 4379,
+     "T1": 5004,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 5004,
+     "T1": 5630,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 5630,
+     "T1": 6256,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 6256,
+     "T1": 6881,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 6881,
+     "T1": 7507,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 7507,
+     "T1": 8132,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 8132,
+     "T1": 8758,
+     "evaluated": 626,
+     "drops": []
+    },
+    {
+     "T0": 8758,
+     "T1": 9383,
+     "evaluated": 625,
+     "drops": []
+    },
+    {
+     "T0": 9383,
+     "T1": 10009,
+     "evaluated": 625,
+     "drops": []
+    }
+   ],
+   "evaluated": 10007,
+   "drops": [
+    3
+   ],
+   "drop_details": [
+    {
+     "residue": 3,
+     "rank": 3926,
+     "nullity": 2,
+     "lift": "3"
+    }
+   ],
+   "checks": {
+    "3": 3926,
+    "9/7": 3927,
+    "11/9": 3927,
+    "2": 3927
+   },
+   "log": "results/lab/spin19/scan_w20_sol3_p10009.txt",
+   "attested": true
+  }
+ ],
+ "provenance": "The archived chunk logs contain no execution provenance (scanner hash, matrix hash, invocation, launch state); scanner_sha256 and matrix_sha256 are an operator-asserted retrospective association with the repository files (scanner unchanged since the runs; sidecars written by the builds). Future chunks run via lab/modp_scan_attested.sh, which prints scanner and matrix hashes, invocation and git state before computing. Attested scans (sheet 3): the archived chunk logs are verbatim copies of the node logs except that the ATTEST host field is redacted to 'scan-node' (hostnames are not published); the raw logs are retained off-repository.",
+ "inventory": [
+  [
+   1,
+   10007
+  ],
+  [
+   1,
+   10009
+  ],
+  [
+   2,
+   10007
+  ]
+ ]
+}

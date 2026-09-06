@@ -48,17 +48,84 @@ import sys
 _CODE_DIR = os.path.dirname(os.path.abspath(__file__))
 _ROOT_STR = os.path.dirname(_CODE_DIR)
 _ARCHIVE = not os.path.exists(os.path.join(_ROOT_STR, ".git"))   # a linked worktree has a .git FILE (Codex round 4)
+_GENERATED = {"RELEASE_MANIFEST.json", "results/certification_manifest.json",
+              "results/certification_manifest.partial.json"}
+
+
+def _tree_problems(root, files, gen=_GENERATED):
+    """Whole-tree check against a RELEASE_MANIFEST `files` map using the
+    standard library only (safe to run before anything from the tree is
+    imported): every pinned file present and matching, no unmanifested
+    file or directory, no symlink or non-regular entry, no bytecode.
+    Shared by the archive bootstrap and the repository-mode gate for a
+    public edition (Codex round 17: `git init` over an extracted archive
+    re-entered repository mode with no manifest check at all)."""
+    import hashlib as _hl
+    problems = []
+    for rel, pinned in sorted(files.items()):
+        p = os.path.join(root, rel)
+        if not os.path.isfile(p):
+            problems.append("missing: " + rel)
+            continue
+        with open(p, "rb") as fh:
+            if "sha256:" + _hl.sha256(fh.read()).hexdigest() != pinned:
+                problems.append("modified: " + rel)
+    # directories that hold manifested files (all ancestors)
+    expected_dirs = {""}
+    for rel in files:
+        parts = rel.split("/")[:-1]
+        for i in range(1, len(parts) + 1):
+            expected_dirs.add("/".join(parts[:i]))
+    for d, dirs, fnames in os.walk(root):
+        reld = os.path.relpath(d, root).replace(os.sep, "/")
+        reld = "" if reld == "." else reld
+        if os.path.basename(d) == "__pycache__":
+            problems.append("bytecode: " + reld + "/")
+            dirs[:] = []
+            continue
+        if reld and reld not in expected_dirs:
+            problems.append("unmanifested directory: " + reld + "/")
+        keep = []
+        for x in dirs:
+            if x == ".git":
+                continue
+            if os.path.islink(os.path.join(d, x)):
+                problems.append("symlink: " + (reld + "/" if reld else "") + x + "/")
+                continue
+            keep.append(x)
+        dirs[:] = keep
+        for f in fnames:
+            full = os.path.join(d, f)
+            rel = (reld + "/" if reld else "") + f
+            if os.path.islink(full):
+                problems.append("symlink: " + rel)
+            elif not os.path.isfile(full):
+                problems.append("non-regular: " + rel)
+            elif f.endswith(".pyc"):
+                problems.append("bytecode: " + rel)
+            elif f.endswith(".tmp") or rel in gen or rel in files:
+                continue
+            else:
+                problems.append("unmanifested: " + rel)
+    return problems
+
+
+# ISOLATED MODE IN BOTH CONTEXTS (Codex round 18, 2026-09-02, reproduced):
+# a clean clone with an untracked code/argparse.py executed that module at
+# the runner's own `import argparse` -- before the launch gate -- and an
+# exported tree given an empty .git did the same before being refused.
+# Under -I the script directory is not on sys.path and PYTHON* variables are
+# ignored, so every module-level import below is the standard library.
+if not sys.flags.isolated:
+    os.execv(sys.executable, [sys.executable, "-I", "-B",
+                              os.path.abspath(__file__)] + sys.argv[1:])
+sys.dont_write_bytecode = True
 if _ARCHIVE:
-    if not sys.flags.isolated:
-        os.execv(sys.executable, [sys.executable, "-I", "-B",
-                                  os.path.abspath(__file__)] + sys.argv[1:])
-    sys.dont_write_bytecode = True
     import hashlib
     import json as _json
 
     def _archive_bootstrap():
-        gen = {"RELEASE_MANIFEST.json", "results/certification_manifest.json",
-               "results/certification_manifest.partial.json"}
+        gen = _GENERATED
         man_path = os.path.join(_ROOT_STR, "RELEASE_MANIFEST.json")
         rec_path = os.path.join(_ROOT_STR, "EXPORT_RECORD.json")
         if not (os.path.isfile(man_path) and os.path.isfile(rec_path)):
@@ -82,52 +149,7 @@ if _ARCHIVE:
         if rec_pin != "sha256:" + hashlib.sha256(rec_bytes).hexdigest():
             sys.exit("archive gate REFUSED: EXPORT_RECORD.json does not match "
                      "its RELEASE_MANIFEST pin")
-        problems = []
-        for rel, pinned in sorted(files.items()):
-            p = os.path.join(_ROOT_STR, rel)
-            if not os.path.isfile(p):
-                problems.append("missing: " + rel)
-                continue
-            with open(p, "rb") as fh:
-                if "sha256:" + hashlib.sha256(fh.read()).hexdigest() != pinned:
-                    problems.append("modified: " + rel)
-        # directories that hold manifested files (all ancestors)
-        expected_dirs = {""}
-        for rel in files:
-            parts = rel.split("/")[:-1]
-            for i in range(1, len(parts) + 1):
-                expected_dirs.add("/".join(parts[:i]))
-        for d, dirs, fnames in os.walk(_ROOT_STR):
-            reld = os.path.relpath(d, _ROOT_STR).replace(os.sep, "/")
-            reld = "" if reld == "." else reld
-            if os.path.basename(d) == "__pycache__":
-                problems.append("bytecode: " + reld + "/")
-                dirs[:] = []
-                continue
-            if reld and reld not in expected_dirs:
-                problems.append("unmanifested directory: " + reld + "/")
-            keep = []
-            for x in dirs:
-                if x == ".git":
-                    continue
-                if os.path.islink(os.path.join(d, x)):
-                    problems.append("symlink: " + (reld + "/" if reld else "") + x + "/")
-                    continue
-                keep.append(x)
-            dirs[:] = keep
-            for f in fnames:
-                full = os.path.join(d, f)
-                rel = (reld + "/" if reld else "") + f
-                if os.path.islink(full):
-                    problems.append("symlink: " + rel)
-                elif not os.path.isfile(full):
-                    problems.append("non-regular: " + rel)
-                elif f.endswith(".pyc"):
-                    problems.append("bytecode: " + rel)
-                elif f.endswith(".tmp") or rel in gen or rel in files:
-                    continue
-                else:
-                    problems.append("unmanifested: " + rel)
+        problems = _tree_problems(_ROOT_STR, files, gen)
         if problems:
             sys.exit("archive gate REFUSED: release tree does not match "
                      "RELEASE_MANIFEST.json: " + "; ".join(sorted(problems)[:10]))
@@ -159,6 +181,43 @@ CODE_DIR = Path(__file__).resolve().parent
 ROOT = CODE_DIR.parent
 REGISTRY_PATH = CODE_DIR / "certifications.json"
 MANIFEST_PATH = ROOT / "results" / "certification_manifest.json"
+
+
+def _public_edition() -> bool:
+    """A genuine public edition: the exporter's EXPORT_RECORD.json at the
+    root, TRACKED in this repository, carrying a 40-hex private freeze
+    commit, and the registry stamped with _public_edition.  An untracked
+    or stray copy in the development repository does not qualify (Codex
+    round 16: the foreign-history downgrade must not be spoofable)."""
+    rec = ROOT / "EXPORT_RECORD.json"
+    if not rec.is_file():
+        return False
+    try:
+        d = json.loads(rec.read_text(encoding="utf-8"))
+        reg = json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
+    except Exception:
+        return False
+    fc = str(d.get("private_freeze_commit", ""))
+    if (d.get("kind") != "public_export_record"
+            or len(fc) != 40 or any(c not in "0123456789abcdef" for c in fc)
+            or not isinstance(reg.get("_public_edition"), dict)):
+        return False
+    if _ARCHIVE:
+        # git-free release archive: the trusted bootstrap above already
+        # verified EXPORT_RECORD.json byte-for-byte against
+        # RELEASE_MANIFEST.json (a stronger binding than `git ls-files`),
+        # and git may be absent from the environment entirely.
+        return True
+    try:
+        tracked = subprocess.run(
+            ["git", "-C", str(ROOT), "ls-files", "--error-unmatch", "EXPORT_RECORD.json"],
+            capture_output=True)
+    except OSError:
+        return False                       # no git: fail closed, not a public edition
+    return tracked.returncode == 0
+
+
+_PUBLIC_EDITION = _public_edition()
 FORBIDDEN_DEFAULT = ("Traceback", "FAIL", "MISMATCH")
 
 
@@ -510,12 +569,18 @@ def _check_run_record(path: Path, entry: dict, script, result: dict,
             elif len(commit) == 40 and subprocess.run(
                     ["git", "-C", str(ROOT), "cat-file", "-e", commit + "^{commit}"],
                     capture_output=True).returncode != 0:
-                # public/foreign-history context: the launch commit lives in
-                # the private repository (same epistemic situation as the
-                # archive branch above); current-tree hash agreement is
-                # still verified below via sources_changed checks.
-                result.setdefault("notes", []).append(
-                    f"blob_agreement_unverifiable_foreign_history:{path.name}")
+                if _PUBLIC_EDITION:
+                    # genuine public edition (EXPORT_RECORD.json present): the
+                    # launch commit lives in the private repository -- same
+                    # epistemic situation as the archive branch; current-tree
+                    # hash agreement is still verified via sources checks.
+                    result.setdefault("notes", []).append(
+                        f"blob_agreement_unverifiable_foreign_history:{path.name}")
+                else:
+                    # development repository: an unresolvable launch commit
+                    # is a broken record, not foreign history (Codex round 16:
+                    # a record re-pinned with a fake commit must FAIL here).
+                    problems.append(f"launch_commit_unresolvable_in_history:{commit[:12]}")
             elif len(commit) == 40:
                 to_check = dict(recorded)
                 if r0.get("runner_sha256"):
@@ -550,9 +615,11 @@ def _check_run_record(path: Path, entry: dict, script, result: dict,
             elif subprocess.run(
                     ["git", "-C", str(ROOT), "cat-file", "-e", commit + "^{commit}"],
                     capture_output=True).returncode != 0:
-                # public/foreign-history context (see the launch branch above)
-                result.setdefault("notes", []).append(
-                    f"legacy_source_unverifiable_foreign_history:{path.name}")
+                if _PUBLIC_EDITION:
+                    result.setdefault("notes", []).append(
+                        f"legacy_source_unverifiable_foreign_history:{path.name}")
+                else:
+                    problems.append(f"legacy_commit_unresolvable_in_history:{commit[:12]}")
             else:
                 for mod, h in current.items():
                     shown = subprocess.run(
@@ -575,19 +642,104 @@ def main() -> int:
                         help="run a single certification id")
     args = parser.parse_args()
 
-    if not (ROOT / ".git").exists():
-        # Archive gate (Codex round, 2026-08-28): in a git-free tree the
-        # runner executes nothing unless the WHOLE release tree matches
-        # RELEASE_MANIFEST.json.  Before this gate a stubbed certificate
-        # PASSed here in 0.1 s; public_lint.py caught it, the runner did not.
-        if str(CODE_DIR) not in sys.path:
-            sys.path.insert(0, str(CODE_DIR))   # tree verified above; safe now
-        from launch_provenance import capture_launch
+    # Launch gate, BOTH modes.  Archive (Codex round, 2026-08-28): in a
+    # git-free tree the runner executes nothing unless the WHOLE release
+    # tree matches RELEASE_MANIFEST.json.  Repository (Codex round 17,
+    # 2026-09-02, both reproduced): git must be usable, HEAD must resolve
+    # and `git rev-parse --show-toplevel` must be this tree -- a clone with
+    # git removed from PATH ran the fast suite with unknown provenance, and
+    # an extracted archive given an EMPTY .git skipped the bootstrap and
+    # PASSed a stubbed certificate.  capture_launch() implements exactly
+    # these refusals; before round 17 it was only called in the git-free
+    # branch.
+    if not _ARCHIVE:
+        # Repository mode: certificates run as subprocesses with cwd = code/,
+        # where an untracked module shadows the standard library for them
+        # (Codex round 18).  Refuse untracked entries under code/ outright --
+        # commit, remove or ignore them first.  Stdlib + git only, before
+        # anything from the tree is imported.
         try:
-            gate = capture_launch(ROOT, Path(__file__).resolve())
-        except SystemExit as exc:
-            print(f"archive gate REFUSED: {exc}", file=sys.stderr)
+            st = subprocess.run(["git", "-C", str(ROOT), "status", "--porcelain",
+                                 "--untracked-files=all", "--", "code"],
+                                capture_output=True, text=True)
+        except OSError as exc:
+            print(f"launch gate REFUSED: repository mode needs git ({exc})", file=sys.stderr)
             return 2
+        if st.returncode != 0:
+            print("launch gate REFUSED: git status failed in repository mode: "
+                  + st.stderr.strip()[:200], file=sys.stderr)
+            return 2
+        untracked = [l[3:] for l in st.stdout.splitlines() if l.startswith("??")]
+        if untracked:
+            print("launch gate REFUSED: untracked entries under code/ would be importable "
+                  "by certificates: " + ", ".join(untracked[:8]), file=sys.stderr)
+            return 2
+        # Codex round 19 (reproduced in a private clone): git's untracked listing
+        # EXCLUDES ignored files, and code/__pycache__/ is ignored -- an
+        # unchecked-hash launch_provenance.pyc planted there executed at the
+        # import below, before capture_launch().  -B stops writing bytecode, not
+        # reading it.  Refuse every ignored entry under code/ and, independently
+        # of git, any bytecode found by a stdlib walk.
+        try:
+            ig = subprocess.run(["git", "-C", str(ROOT), "ls-files", "--others", "--ignored",
+                                 "--exclude-standard", "--", "code"],
+                                capture_output=True, text=True)
+        except OSError as exc:
+            print(f"launch gate REFUSED: git ls-files failed ({exc})", file=sys.stderr)
+            return 2
+        if ig.returncode != 0:            # Codex round 20: fail closed, as for git status
+            print("launch gate REFUSED: git ls-files --ignored failed in repository mode: "
+                  + ig.stderr.strip()[:200], file=sys.stderr)
+            return 2
+        ignored = [l for l in ig.stdout.splitlines() if l.strip()]
+        bytecode = []
+        for d, dirs, fnames in os.walk(str(CODE_DIR)):
+            if os.path.basename(d) == "__pycache__":
+                bytecode.append(os.path.relpath(d, str(ROOT)) + "/")
+                dirs[:] = []
+                continue
+            bytecode += [os.path.relpath(os.path.join(d, f), str(ROOT))
+                         for f in fnames if f.endswith((".pyc", ".pyo"))]
+        if ignored or bytecode:
+            print("launch gate REFUSED: ignored entries or bytecode under code/ would be "
+                  "importable by the runner and by certificates (remove them; run with "
+                  "PYTHONDONTWRITEBYTECODE=1): "
+                  + ", ".join((ignored + bytecode)[:8]), file=sys.stderr)
+            return 2
+    if not _ARCHIVE and _PUBLIC_EDITION:
+        # A public edition in repository mode must ALSO be the released
+        # tree: `git init` over an extracted archive would otherwise
+        # re-enter repository mode with no manifest check at all.  Stdlib
+        # only, before anything from the tree is imported.
+        try:
+            man_files = json.loads(
+                (ROOT / "RELEASE_MANIFEST.json").read_text(encoding="utf-8")
+            ).get("files", {})
+        except (OSError, ValueError) as exc:
+            print(f"launch gate REFUSED: public edition without a readable "
+                  f"RELEASE_MANIFEST.json ({exc})", file=sys.stderr)
+            return 2
+        problems = _tree_problems(str(ROOT), man_files)
+        if problems:
+            print("launch gate REFUSED: public edition tree does not match "
+                  "RELEASE_MANIFEST.json: " + "; ".join(sorted(problems)[:10]),
+                  file=sys.stderr)
+            return 2
+    if str(CODE_DIR) not in sys.path:
+        sys.path.insert(0, str(CODE_DIR))   # archive: tree verified above
+    sys.dont_write_bytecode = True          # never leave bytecode in a release tree
+    from launch_provenance import capture_launch
+    try:
+        gate = capture_launch(ROOT, Path(__file__).resolve())
+    except SystemExit as exc:
+        print(f"launch gate REFUSED: {exc}", file=sys.stderr)
+        return 2
+    if gate["context"] == "development-clone":
+        print(f"launch gate: repository (HEAD "
+              f"{gate['launch_commit_at_start'][:12]}, tracked dirty: "
+              f"{len(gate['tracked_dirty_at_start'])}, public edition: "
+              f"{_PUBLIC_EDITION})")
+    else:
         print(f"archive gate: {gate['context']} "
               f"({gate.get('release_tree_verified_files')} files verified)")
 

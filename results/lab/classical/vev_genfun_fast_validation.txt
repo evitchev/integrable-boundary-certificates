@@ -1,0 +1,18 @@
+Solution 1 t = 2 weight 4: fast == sympy generating function: True  (0.00s vs 0.2s)
+Solution 1 t = 2 weight 6: fast == sympy generating function: True  (0.00s vs 1.3s)
+Solution 1 t = 2 weight 8: fast == sympy generating function: True  (0.01s vs 6.0s)
+Solution 1 t = 2 weight 10: fast == sympy generating function: True  (0.02s vs 36.7s)
+Solution 2 t = 2 weight 4: fast == sympy generating function: True  (0.00s vs 0.2s)
+Solution 2 t = 2 weight 6: fast == sympy generating function: True  (0.00s vs 1.3s)
+Solution 2 t = 2 weight 8: fast == sympy generating function: True  (0.01s vs 6.1s)
+Solution 2 t = 2 weight 10: fast == sympy generating function: True  (0.02s vs 36.8s)
+Solution 3 t = 2 weight 4: fast == sympy generating function: True  (0.00s vs 0.2s)
+Solution 3 t = 2 weight 6: fast == sympy generating function: True  (0.00s vs 1.2s)
+Solution 3 t = 2 weight 8: fast == sympy generating function: True  (0.01s vs 6.0s)
+Solution 3 t = 2 weight 10: fast == sympy generating function: True  (0.02s vs 36.8s)
+TWELVE-DENSITY VALIDATION PASSED
+w14: 324 monomials, VEV in 0.1s
+w14 equals the pinned eigenvalue: True
+w16: 816 monomials, VEV in 0.4s
+w16 equals the pinned eigenvalue: True
+FAST VEV VALIDATION PASSED

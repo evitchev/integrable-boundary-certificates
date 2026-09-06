@@ -1,0 +1,8 @@
+flatness: 34 polynomial conditions
+Hamiltonian-flow: 14 conditions
+Solve::svars: Equations may not give solutions for all "solve" variables.
+solutions: 2
+  {p1 -> 1/(2*alpha), p2 -> 0, q1 -> 0, b -> 0, c -> 2*gamma*q2}   det g2 = (18*q2*r^2*x^2)/alpha
+  {p1 -> q1/3, p2 -> q1, q2 -> q1/3, alpha -> 3/(2*q1), gamma -> 3/(2*q1), b -> 6, c -> 1}   det g2 = 4*q1^2*(r - x)^2*(r + x)^2
+DONE
+BH_DONE

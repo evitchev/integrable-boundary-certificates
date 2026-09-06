@@ -1,0 +1,4 @@
+factor (3X - Y + kappa)^2 + mu X: 7 conditions -> solutions []
+factor (6X + Y + kappa)^2 + mu X: 7 conditions -> solutions []
+DONE
+exit 0

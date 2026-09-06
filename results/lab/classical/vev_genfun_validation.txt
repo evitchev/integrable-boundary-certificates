@@ -1,0 +1,13 @@
+Solution 1 t = 2 weight 4: generating-function == recipe: True  (0.2s vs 0.0s)
+Solution 1 t = 2 weight 6: generating-function == recipe: True  (1.2s vs 0.0s)
+Solution 1 t = 2 weight 8: generating-function == recipe: True  (5.9s vs 0.5s)
+Solution 1 t = 2 weight 10: generating-function == recipe: True  (35.9s vs 8.4s)
+Solution 2 t = 2 weight 4: generating-function == recipe: True  (0.2s vs 0.0s)
+Solution 2 t = 2 weight 6: generating-function == recipe: True  (1.2s vs 0.0s)
+Solution 2 t = 2 weight 8: generating-function == recipe: True  (6.0s vs 0.5s)
+Solution 2 t = 2 weight 10: generating-function == recipe: True  (36.3s vs 8.4s)
+Solution 3 t = 2 weight 4: generating-function == recipe: True  (0.2s vs 0.0s)
+Solution 3 t = 2 weight 6: generating-function == recipe: True  (1.2s vs 0.0s)
+Solution 3 t = 2 weight 8: generating-function == recipe: True  (6.0s vs 0.5s)
+Solution 3 t = 2 weight 10: generating-function == recipe: True  (36.3s vs 8.4s)
+VALIDATION PASSED

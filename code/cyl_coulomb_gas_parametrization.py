@@ -14,7 +14,7 @@ Exact (sympy rationals), seconds.  Fail-closed.
     k = 1..5 (q = 4, 6, 8, 10, 12), and the all-spin decoupling point
     t = 3 is c_{1,2} = -2.  In terms of q the certified/predicted jump
     spins are 2q-3 on sheet 3 and (3q-2)/2 on sheet 2 (integer, odd, iff
-    q = 2 mod 4).
+    q = 0 mod 4, i.e. odd k).
 (3) The odd-q points t = (q+1)/(q-1) for q = 3, 5, 7, 9, 11 (t = 2, 3/2,
     4/3, 5/4, 6/5) are rational points of the curve too -- listed here as
     the points that the weight-14 symbolic stratification and the

@@ -1,0 +1,53 @@
+degenerate branch (aX + Y divides both top parts): gcd = 1
+linear factor: candidate polynomial in a: degree 13; factorization over Q: 5684836933907229924400177084763906062643096819198853120000000000000*a**12*(a + 15) (4s)
+   FACTOR FOUND: a = -15 lam = 40106/315 kappa = -85/24
+   FACTOR FOUND: a = 0 lam = 40106/315 kappa = -7/8
+   FACTOR FOUND: a = 0 lam = 40106/315 kappa = -19/8
+   FACTOR FOUND: a = 0 lam = 40106/315 kappa = -85/24
+   FACTOR FOUND: a = 0 lam = 40106/315 kappa = -121/24
+   FACTOR FOUND: a = 0 lam = 40106/315 kappa = -35/8
+   FACTOR FOUND: a = 0 lam = 40106/315 kappa = -39/8
+linear factors in the pencil: [(-15, 40106/315, -85/24), (0, 40106/315, -7/8), (0, 40106/315, -19/8), (0, 40106/315, -85/24), (0, 40106/315, -121/24), (0, 40106/315, -35/8), (0, 40106/315, -39/8)]
+quadratic search: (aX + Y)^2 divides the top part of the pencil: polynomial in a of degree 13 ; factorization: -1423107000*a**7*(a + 5)**6
+   a = -5, lam = 1734281/315, factor (aX + Y + kappa)^2 + mu X: candidate polynomial in kappa: 59604644775390625/993586176 (0s)
+   a = -5, lam = 1734281/315, factor (aX + Y + kappa)^2 + mu Y: candidate polynomial in kappa: 14551915228366851806640625/82798848 (0s)
+   a = 0, lam = 40106/315, factor (aX + Y + kappa)^2 + mu X: candidate polynomial in kappa: (8*kappa + 35)*(8*kappa + 39)/3623878656 (5s)
+      FACTOR FOUND: 0 40106/315 -35/8 0 + mu X
+      FACTOR FOUND: 0 40106/315 -39/8 0 + mu X
+   a = 0, lam = 40106/315, factor (aX + Y + kappa)^2 + mu Y: candidate polynomial in kappa: -390625*Y**7*(8*Y - 39)**2*(8*Y - 35)**2*(8*Y - 19)*(8*Y - 7)*(24*Y - 121)*(24*Y - 85)*(8*kappa - 39)*(8*kappa - 35)*(8*kappa + 35)*(8*kappa + 39)*(64*kappa**2 - 1573)**2*(64*kappa**2 - 1365)**4*(64*kappa**2 - 1105)**2*(64*kappa**2 - 741)**2*(64*kappa**2 - 665)**2*(64*kappa**2 - 273)**2*(64*kappa**2 - 245)**2*(64*kappa**2 - 133)*(192*kappa**2 - 4235)**2*(192*kappa**2 - 2975)**2*(192*kappa**2 - 2299)*(192*kappa**2 - 1615)*(192*kappa**2 - 847)*(192*kappa**2 - 595)*(576*kappa**2 - 10285)/508445240566321141870698943279820979704290791001586795544576 (2s)
+      FACTOR FOUND: 0 40106/315 39/8 -39/2 + mu Y
+      FACTOR FOUND: 0 40106/315 35/8 -35/2 + mu Y
+      FACTOR FOUND: 0 40106/315 -35/8 0 + mu Y
+      FACTOR FOUND: 0 40106/315 -39/8 0 + mu Y
+      FACTOR FOUND: 0 40106/315 -sqrt(133)/8 -13/4 + sqrt(133)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 sqrt(133)/8 -13/4 - sqrt(133)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 -11*sqrt(57)/24 -89/12 + 11*sqrt(57)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 11*sqrt(57)/24 -89/12 - 11*sqrt(57)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 -sqrt(4845)/24 -71/12 + sqrt(4845)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 sqrt(4845)/24 -71/12 - sqrt(4845)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 -11*sqrt(21)/24 -71/12 + 11*sqrt(21)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 11*sqrt(21)/24 -71/12 - 11*sqrt(21)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 -sqrt(1785)/24 -53/12 + sqrt(1785)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 sqrt(1785)/24 -53/12 - sqrt(1785)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 -11*sqrt(85)/24 -103/12 + 11*sqrt(85)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 11*sqrt(85)/24 -103/12 - 11*sqrt(85)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 -11*sqrt(13)/8 -119/12 + 11*sqrt(13)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 11*sqrt(13)/8 -119/12 - 11*sqrt(13)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 -sqrt(1105)/8 -101/12 + sqrt(1105)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 sqrt(1105)/8 -101/12 - sqrt(1105)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 -sqrt(741)/8 -29/4 + sqrt(741)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 sqrt(741)/8 -29/4 - sqrt(741)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 -sqrt(665)/8 -27/4 + sqrt(665)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 sqrt(665)/8 -27/4 - sqrt(665)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 -sqrt(273)/8 -23/4 + sqrt(273)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 sqrt(273)/8 -23/4 - sqrt(273)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 -7*sqrt(5)/8 -21/4 + 7*sqrt(5)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 7*sqrt(5)/8 -21/4 - 7*sqrt(5)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 -11*sqrt(105)/24 -113/12 + 11*sqrt(105)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 11*sqrt(105)/24 -113/12 - 11*sqrt(105)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 -5*sqrt(357)/24 -95/12 + 5*sqrt(357)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 5*sqrt(357)/24 -95/12 - 5*sqrt(357)/12 + mu Y
+      FACTOR FOUND: 0 40106/315 -sqrt(1365)/8 -37/4 + sqrt(1365)/4 + mu Y
+      FACTOR FOUND: 0 40106/315 sqrt(1365)/8 -37/4 - sqrt(1365)/4 + mu Y
+conjugate-quadratic factors in the pencil: [(0, 40106/315, -35/8, 0, '+ mu X'), (0, 40106/315, -39/8, 0, '+ mu X'), (0, 40106/315, 39/8, -39/2, '+ mu Y'), (0, 40106/315, 35/8, -35/2, '+ mu Y'), (0, 40106/315, -35/8, 0, '+ mu Y'), (0, 40106/315, -39/8, 0, '+ mu Y'), (0, 40106/315, -sqrt(133)/8, -13/4 + sqrt(133)/4, '+ mu Y'), (0, 40106/315, sqrt(133)/8, -13/4 - sqrt(133)/4, '+ mu Y'), (0, 40106/315, -11*sqrt(57)/24, -89/12 + 11*sqrt(57)/12, '+ mu Y'), (0, 40106/315, 11*sqrt(57)/24, -89/12 - 11*sqrt(57)/12, '+ mu Y'), (0, 40106/315, -sqrt(4845)/24, -71/12 + sqrt(4845)/12, '+ mu Y'), (0, 40106/315, sqrt(4845)/24, -71/12 - sqrt(4845)/12, '+ mu Y'), (0, 40106/315, -11*sqrt(21)/24, -71/12 + 11*sqrt(21)/12, '+ mu Y'), (0, 40106/315, 11*sqrt(21)/24, -71/12 - 11*sqrt(21)/12, '+ mu Y'), (0, 40106/315, -sqrt(1785)/24, -53/12 + sqrt(1785)/12, '+ mu Y'), (0, 40106/315, sqrt(1785)/24, -53/12 - sqrt(1785)/12, '+ mu Y'), (0, 40106/315, -11*sqrt(85)/24, -103/12 + 11*sqrt(85)/12, '+ mu Y'), (0, 40106/315, 11*sqrt(85)/24, -103/12 - 11*sqrt(85)/12, '+ mu Y'), (0, 40106/315, -11*sqrt(13)/8, -119/12 + 11*sqrt(13)/4, '+ mu Y'), (0, 40106/315, 11*sqrt(13)/8, -119/12 - 11*sqrt(13)/4, '+ mu Y'), (0, 40106/315, -sqrt(1105)/8, -101/12 + sqrt(1105)/4, '+ mu Y'), (0, 40106/315, sqrt(1105)/8, -101/12 - sqrt(1105)/4, '+ mu Y'), (0, 40106/315, -sqrt(741)/8, -29/4 + sqrt(741)/4, '+ mu Y'), (0, 40106/315, sqrt(741)/8, -29/4 - sqrt(741)/4, '+ mu Y'), (0, 40106/315, -sqrt(665)/8, -27/4 + sqrt(665)/4, '+ mu Y'), (0, 40106/315, sqrt(665)/8, -27/4 - sqrt(665)/4, '+ mu Y'), (0, 40106/315, -sqrt(273)/8, -23/4 + sqrt(273)/4, '+ mu Y'), (0, 40106/315, sqrt(273)/8, -23/4 - sqrt(273)/4, '+ mu Y'), (0, 40106/315, -7*sqrt(5)/8, -21/4 + 7*sqrt(5)/4, '+ mu Y'), (0, 40106/315, 7*sqrt(5)/8, -21/4 - 7*sqrt(5)/4, '+ mu Y'), (0, 40106/315, -11*sqrt(105)/24, -113/12 + 11*sqrt(105)/12, '+ mu Y'), (0, 40106/315, 11*sqrt(105)/24, -113/12 - 11*sqrt(105)/12, '+ mu Y'), (0, 40106/315, -5*sqrt(357)/24, -95/12 + 5*sqrt(357)/12, '+ mu Y'), (0, 40106/315, 5*sqrt(357)/24, -95/12 - 5*sqrt(357)/12, '+ mu Y'), (0, 40106/315, -sqrt(1365)/8, -37/4 + sqrt(1365)/4, '+ mu Y'), (0, 40106/315, sqrt(1365)/8, -37/4 - sqrt(1365)/4, '+ mu Y')]
+DONE

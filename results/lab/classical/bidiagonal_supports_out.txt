@@ -1,0 +1,17 @@
+PASS  D1: at all 445 isolated lattice points with W <= 30 the kernel is 2-dim and contains a right-supported density r^(2(k-j)) x (deg j) and a left-supported x^(W-2j') x (deg j'), independent
+   q = 4: W = 6, (j, j') = (1, 1), b = -3, c = 1 (on Solution 2's curve), F_R = r^4 (x^2 - r^2/3)  [slope 3 = 3(q-2)/2]
+   q = 8: W = 12, (j, j') = (1, 3), b = -3/4, c = 1/12 (on Solution 2's curve), F_R = r^10 (x^2 - r^2/9)  [slope 9 = 3(q-2)/2]
+   q = 12: W = 18, (j, j') = (1, 5), b = -3/7, c = 1/35 (on Solution 2's curve), F_R = r^16 (x^2 - r^2/15)  [slope 15 = 3(q-2)/2]
+   q = 16: W = 24, (j, j') = (1, 7), b = -3/10, c = 1/70 (on Solution 2's curve), F_R = r^22 (x^2 - r^2/21)  [slope 21 = 3(q-2)/2]
+   q = 20: W = 30, (j, j') = (1, 9), b = -3/13, c = 1/117 (on Solution 2's curve), F_R = r^28 (x^2 - r^2/27)  [slope 27 = 3(q-2)/2]
+PASS  D2: Solution 2's c_(1,q) series is its j = 1 lattice points (j' = q/2 - 1), and the right-supported density is r^(W-2)((W-3) x^2 - r^2): the sheet-2 law's top symbol and slope 3(q-2)/2 = W - 3, q = 4..20
+PASS  D2': Solution 2's j = 1 lattice weights through 36 are [6, 12, 18, 24, 30, 36] = 3q/2, q = 4, 8, ..., 24
+PASS  D3: at q = 4 the left-supported density is x^4 (x^2 - 3 r^2), the X-type member's top symbol (found: -3*r**2*x**4 + x**6)
+   Solution 3, q = 6 (W = 10, j = j' = 2): F_R = a5*r**6*(r**4 - 5*r**2*x**2 + 10*x**4);  F_L = a2*x**6*(10*r**4 - 5*r**2*x**2 + x**4)/10
+   Solution 3, q = 8 (W = 14, j = j' = 3): F_R = -a7*r**8*(-r**6 + 7*r**4*x**2 - 21*r**2*x**4 + 35*x**6);  F_L = -a3*x**8*(-35*r**6 + 21*r**4*x**2 - 7*r**2*x**4 + x**6)/35
+   Solution 3, q = 10 (W = 18, j = j' = 4): F_R = a9*r**10*(r**8 - 9*r**6*x**2 + 36*r**4*x**4 - 84*r**2*x**6 + 126*x**8);  F_L = a4*x**10*(126*r**8 - 84*r**6*x**2 + 36*r**4*x**4 - 9*r**2*x**6 + x**8)/126
+PASS  D5: at Solution 3's c_(1,q) points the left- and right-supported densities are the two halves of the binomial expansion of (x^2 - r^2)^(q-1) -- the pure-power density of the fusion member is their combination, q = 6, 8, 10
+PASS  D4: at Solution 3's c_(1,q) points (c = 1, j = j' = (q-2)/2) the supported densities are r^q (deg (q-2)/2) and x^q (deg (q-2)/2), q = 6, 8, 10
+PASS  D6: at all 49 palindromic lattice points (Solution 3, c = 1, j = j') with W <= 30, the symmetric combination of the two supports is (x^2 - r^2)^(2j+1) times a palindromic cofactor
+PASS  D6': the cofactor is constant (pure power) exactly at the first occurrences W = 4j + 2, i.e. the c_(1,q) points (found [(6, 1), (10, 2), (14, 3), (18, 4), (22, 5), (26, 6), (30, 7)])
+BIDIAGONAL SUPPORTS PASSED

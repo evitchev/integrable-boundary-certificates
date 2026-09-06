@@ -1,23 +1,28 @@
-"""Discriminant factorization at weight 14 -- fail-closed
-certificate (preregistered: results/cyl_discriminant_preregistration.md).
+"""Discriminant factorization at weight 14 (spin 13) -- fail-closed
+certificate (preregistered: results/cyl_discriminant_w14_preregistration.md).
 
-Drives wolfram/lab/cyl_discriminant.wls (the certified-w14 lab method:
-one maximal minor D(t) is a complete over-approximation of the Q-bar
-rank-drop locus; every irreducible factor classified by exact rank,
-GF(p)-screened for irrational factors), then pins:
+Third rung of the discriminant program (after weights 10/12,
+cyl_discriminant_w1012.py).  Drives wolfram/lab/cyl_discriminant.wls
+with weight argument 14 (the certified-w14 lab method: one maximal
+minor D(t) is a complete over-approximation of the Q-bar rank-drop
+locus away from the parametrization poles t = +-1; every irreducible
+factor classified by exact rank, GF(p)-screened for irrational
+factors), then pins:
 
-  H_F1  jump sets over Q-bar: w10 -- sol1 {}, sol2 {3}, sol3 {3, 7/5};
-        w12 -- sol1 {}, sol2 {3, 9/7}, sol3 {3}; nullity 2 at every jump;
-        every factor classified (no unclassified), poles only t = +-1.
-  H_F2  beta^2 images exactly 1/2 (t=3), 1/6 (w10 sol3), 1/8 (w12 sol2).
-  H_F3  the odd-q Kac slot is empty ALGEBRAICALLY: no jump anywhere at
-        beta^2 = 1/7, 1/5, 1/3 (t = 4/3, 3/2, 2) -- and specifically
-        (12, sol3) does not jump at 4/3 although 2q-3 = 11 at q = 7.
+  H_W14  spin-13 jump sets over Q-bar (t != +-1): sol1 {}, sol2 {3},
+         sol3 {3, 9/7}; nullity 2 at every jump; every factor
+         classified (no unclassified); cleared-denominator factors
+         only at t = +-1.
+  H_W14  beta^2 images exactly 1/2 (t = 3) and, on sol3, 1/8 (t = 9/7 =
+         c_{1,8}: the (1-8x) factor at its second Kac slot, 2q-3 = 13).
+  H_W14  no jump anywhere at beta^2 = 1/7, 1/5, 1/3; sheet 2 silent
+         beyond c_{1,2} ((3q-2)/2 = 13 has no integer solution) --
+         pinned over all of Q-bar minus the poles.
 
-Inputs sha-verified against the tracked sidecars' matrix_sha256.
-Writes results/cyl_discriminant_w14.json (deterministic).  Note: the
-run needs local Mathematica; per the license hazard the script sets NO
-subprocess timeout (the wls bounds its own Det step; the registry
+Inputs (three tracked matrices + sidecars) sha-verified; the wls and
+inputs are declared sources bound into the launch record.  Writes
+results/cyl_discriminant_w14.json (deterministic).  No subprocess
+timeout (license hazard; the wls bounds its own Det step; the registry
 timeout is the backstop).  Marker: DISCRIMINANT W14 CERTIFIED."""
 import hashlib
 import json

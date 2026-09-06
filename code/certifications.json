@@ -298,6 +298,22 @@
       ]
     },
     {
+      "id": "mixed_pole_validation",
+      "claims": [
+        "mixed_pole.ope_pole_mixed_mono (pole-k coefficients for the mixed Z2 x O(N) engine; M1 of the cylindrical oper lane): k = 1 reproduces mixed_engine.residue_mixed_mono on every weight-4 monomial pair and 40 random weight-6 pairs; T(z)T(w) with T = (dX)^2/2 + (dY.dY)/2 gives pole-4 = (N+1)/2, pole-3 = 0, pole-2 = 2T, pole-1 = dT at N = 3, -24, 7/2; pure-X inputs agree with the single-boson ope_poles at every pole order 0..8 on 81 (pair, k) cases"
+      ],
+      "description": "Three-leg validation of the new mixed pole-extraction layer (the residue-only mixed engine extended to arbitrary poles by reusing its Wick enumerators; mixed_engine.py itself untouched because it sits in pinned record closures). Cheap; runs every sweep.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "mixed_pole_validate.py"
+      ],
+      "timeout_s": 900,
+      "required_markers": [
+        "MIXED_POLE VALIDATED"
+      ]
+    },
+    {
       "id": "super_kdv_calibration",
       "claims": [],
       "description": "Phase-2 SUSY calibration (audit-corrected): derives the standard quantum super-KdV I3 = :TT: - 1/4 :G dG: (POINT-SPLIT composites; prior art Kulish-Zeitlin hep-th/0312159, Chistyakova-Litvinov-Orlov 2110.05870) selected by G-invariance in the composite pencil; scans the full ad_I3 centralizer through sigma=8 (multiplicity one at sigma in {1/2,1,3,5,7}, even and half-integer vacancy elsewhere in range); direct checks [I5,I7], [G,I5], [G,I7], [I3,I5], [I3,I7]. Fail-closed; deterministic JSON.",
@@ -1126,7 +1142,7 @@
         "PYTHON",
         "cyl_spin17_double_prediction.py"
       ],
-      "description": "Spin-17 (weight-18) double prediction of the two-ladder hypothesis, preregistered in results/cyl_spin17_preregistration.md (8444876) before any weight-18 kernel: sheet 3 jumps at t4=11/9 at spin 4*4+1 and sheet 2 at t5=13/11 (a point that had never jumped at any spin) at spin 3*5+2, nine controls at 1. Status (2026-08-29): fast-path outcome obtained (lab/fast_kernel2.py: all eleven dimensions as predicted, every genuine vector verified by exact identities in the certified engine; lab record under results/lab/fast_kernel2/); this certificate's eleven pure-Python kernels (24-30 h each, ~20 GB; IB_KERNEL_POOL bounds parallelism) are the preregistered independent method, running on the worker nodes -- ten of eleven in and agreeing at the time of registration; the artifact pin lands when the run completes. Per the pre-result addendum the predicted slots are strongly supported; the universal clauses are not established by eleven points. Negative drill: kdim stubbed to wrong dims => 11 FAIL pins, exit 1.",
+      "description": "Spin-17 (weight-18) double prediction of the two-ladder hypothesis, preregistered in results/cyl_spin17_preregistration.md (8444876) before any weight-18 kernel: sheet 3 jumps at t4=11/9 at spin 4*4+1 and sheet 2 at t5=13/11 (a point that had never jumped at any spin) at spin 3*5+2, nine controls at 1. Status (2026-08-29): fast-path outcome obtained (lab/fast_kernel2.py: all eleven dimensions as predicted, every genuine vector verified by exact identities in the certified engine; lab record under results/lab/fast_kernel2/); this certificate's eleven pure-Python kernels (24-30 h each, ~20 GB; IB_KERNEL_POOL bounds parallelism) are the preregistered independent method, running on the worker nodes -- ten of eleven in and agreeing at the time of registration; the artifact pin lands when the run completes. Per the pre-result addendum the predicted slots are strongly supported; the universal clauses are not established by eleven points. Negative drill: kdim stubbed to wrong dims => 11 FAIL pins, exit 1. Status (2026-09-01): CERTIFIED -- the launch-attested record (53.1 h registered run from the frozen clone at 310c4ee) landed and is sha-pinned; deletion-drilled; earlier status sentences in this description are historical.",
       "claims": [
         "at spin 17 the cylindrical curve jumps at t4=11/9 on sheet 3 and at t5=13/11 on sheet 2 (kernel dimension 2 each) and at none of the nine preregistered control points -- the two-ladder hypothesis's double positive prediction, made before any weight-18 computation"
       ],
@@ -1274,7 +1290,17 @@
         "DISCRIMINANT W14 CERTIFIED"
       ],
       "expensive": true,
-      "artifacts": [],
+      "artifacts": [
+        {
+          "path": "results/cyl_discriminant_w14_run.json",
+          "kind": "runner_record",
+          "sha256": "sha256:942484efc2544189996c711b2273647c247452407e43a4367edc455226161e52"
+        },
+        {
+          "path": "results/cyl_discriminant_w14.json",
+          "sha256": "sha256:4dc2361ce355990d46a0849c66080d9ad3b9d0b516ccfa16ac415de861d8ab1f"
+        }
+      ],
       "sources": [
         "../wolfram/lab/cyl_discriminant.wls",
         "../wolfram/lab/cyl_strata_w14_sol1.m",
@@ -1283,6 +1309,171 @@
         "../wolfram/lab/cyl_strata_w14_sol2.json",
         "../wolfram/lab/cyl_strata_w14_sol3.m",
         "../wolfram/lab/cyl_strata_w14_sol3.json"
+      ]
+    },
+    {
+      "id": "cyl_t2_primary",
+      "claims": [
+        "M2 (outcome form): at t_2 = 7/5 (Solution 3, spin 9) the 2-dim ad_I3 kernel contains ZERO T-primary class directions -- under T_total = (dX)^2/2 + (dY.dY)/2, T_X alone and T_Y alone (classes modulo Im d, poles k = 3..12 stacked, exact over Q) -- and the generic controls t = -7/5, 7/3, 11/5 (kernel dim 1) also give zero; the preregistered Phi_{1,3}-shadow expectation of exactly one primary direction at t_2 is REFUTED and recorded (the extra class is not a primary composite field, consistent with h_{1,3} being fractional) -- with a positive control (Codex round 17): the same detector returns exactly 1 on span{T_X, T_Y} at weight 2, where V = T_X - T_Y/N is T_total-primary (no poles of order >= 3, pole 2 = 2V, checked at all four points), and 0 on span{T_total}"
+      ],
+      "description": "First consumer of the M1 pole-extraction layer (code/mixed_pole.py). Preregistration + outcome in results/cyl_t2_primary_preregistration.md. Cheap (~1 min); runs every sweep; negative drills on a tampered kernel expectation and on the tampered positive-control count proven.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_t2_primary.py"
+      ],
+      "timeout_s": 900,
+      "required_markers": [
+        "T2 PRIMARY SPLIT CERTIFIED"
+      ]
+    },
+    {
+      "id": "cyl_mo2_profiles",
+      "claims": [
+        "M-O2 (outcome form): the gauge-invariant all-first-order profiles a_j (coefficients of (dX)^{W-2j}(dY.dY)^j, normalized to a_0 = 1) of the one-dimensional ad_{I_3} kernels of the three cylindrical solutions at weights 4, 6, 8 and 10 are the pinned exact rational functions of t (26 curve points per table, 25 where a certified jumping point is excluded, exact equality; in addition EVERY denominator root of every pinned profile -- 21 occurrences, 20 distinct values, in all, excluding t = +-1 and Solution 2's certified jump t = 3 -- is visited and the unnormalized (dX)^W coefficient vanishes there exactly; the formulas are certified on these fibers, not proven globally). Consequences pinned: Solution 3 is palindromic at all four weights with coupling u_W = C(W,2)(t-3)/(t+2W-7) (zero at the c_{1,2} decoupling point, pole at the unitary minimal model c_{s-3,s-2} on the partner branch); Solution 1 obeys the single closed form a_j = C(W,2j)(2j-1)!!(t-1)^j / prod_{i<=j}[(2i-1)t-(4W-1-6i)], whose i-th denominator vanishes at the Kac collision nu_{2s+2-4i,2s+1-2i} = 0 (s = W-1); Solution 2 has t = 3 as a pole of order j-1 for j >= 2. The weight-10 profiles of Solutions 1 and 3 were preregistered from the weight-6/8 forms (notes, 5ebfca2) and matched exactly.",
+        "Weight 4 (added 2026-09-04): the profiles [1, 6(t-1)/(t-9), (t-1)/(t-9)] (Solution 1, the closed form's W = 4 instance), [1, 12(t-1)/(5t-11), 8(t-1)^2/((t-3)(5t-11))] (Solution 2) and [1, 6(t-3)/(t+1), 1] (Solution 3, the coupling u_4 = 6(t-3)/(t+1) used by the oper-program exclusions) are reproduced exactly at 26 curve points each, with the pinned poles t = 9 and t = 11/5 verified as zeros of the (dX)^4 coefficient."
+      ],
+      "description": "Cylindrical oper program, M-O2 complete at weights 4, 6, 8, 10 (weight 4 added 2026-09-04 after a referee noted the u_4 input of the exclusions was not itself certified). Lab ~/ib-lab/mo2_profiles.py (nullspace rational interpolation, 4 hold-outs). Negative drill on a tampered pole location proven (6 FAIL lines). Runtime ~7 min (377 s measured with weight 4).",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_mo2_profiles.py"
+      ],
+      "timeout_s": 1800,
+      "required_markers": [
+        "MO2 PROFILES CERTIFIED"
+      ]
+    },
+    {
+      "id": "cyl_vev_validation",
+      "claims": [
+        "VEV recipe (code/cyl_vev.py): reading a plane density on the cylinder (d_z^k X -> d_w^{k-1} J), cylinder normal ordering on the momentum state |P,Q> (unpaired J -> momentum, contracted pair (a,b) -> (-1)^b R^{(a+b)}(0) with R = 1/(4 sinh^2(eps/2)) - 1/eps^2, O(N) cycles -> N and chains -> Q^2, article momenta P_art = iP) reproduces hep-th/0404195 eq. (59) (paperclip <I_3>, 6 coefficients) and eq. (60) (<I_5>, 10 coefficients) coefficient by coefficient (exact reconstruction on a full-rank evaluation set) at five values of n; the eq.-(51) erratum (factor n in the P_6^{[10]} coefficient) is required for (60); and the cylindrical <I_3> of Solutions 1, 2, 3 (mixed_engine.cyl_P4) at N = 1 equal 6x, 3/2x, 6x the paperclip (59) at n = -1, 2, -1 respectively, on all 6 coefficients -- the paper's N = 1 coincidences hold at the level of vacuum eigenvalues"
+      ],
+      "description": "Foundation of the cylindrical VEV program (analogue of hep-th/0404195 sec. 4 for the Z2 x O(N) families, never computed in the paper). Negative drill on a tampered contraction kernel proven (5 FAIL lines). Runtime ~1 min.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_vev_validate.py"
+      ],
+      "timeout_s": 900,
+      "required_markers": [
+        "CYL VEV VALIDATED"
+      ]
+    },
+    {
+      "id": "cyl_wkb_validation",
+      "claims": [
+        "WKB side (code/wkb.py, Riccati recursion + Beta-function integration for Psi'' = [kappa^2 (1+e^z)^m + V] Psi): for the paperclip ODE (62) of hep-th/0404195 in its corrected form (the ((n+2)Q^2/2 + 1/4) term multiplies e^z/(1+e^z)^2 as in LVZ (90)), S_1, S_3, S_5, S_7 equal alpha_s I_s + beta_s with the paper's own VEVs (59)-(61) and residuals exactly the Bernoulli constants of eq. (70); S_1 and S_5 equal the printed (65), (67) verbatim (executable); S_3 and S_7 differ from the printed (66), (68) in exactly one term each (executable: the P^2Q^2 term of (66) lacks (3n+4); the P^2Q^6 term of (68) has (2+n)^2 for (2+n)^3). The MINIMAL LVZ shape V = A e^z/(1+e^z) + B e^z/(1+e^z)^2 with A, B quadratic in (P,Q) is REFUTED for Solution 3: palindromic top-degree VEVs force C_5(ker l_1) = -32(m+1)/(5(5m+2)(5m+4)(5m+6)(5m+8)) = 0, i.e. m = -1 on the whole conic, the certified u_4 = 6(t-3)/(t+1) fixes r = (t-5)/(t-2), and the shape predicts u_6 = 3(5t-13)/(t+7) against the certified 15(t-3)/(t+5): the difference is -24(t-5)/((t+5)(t+7)), nonzero generically and vanishing only on the N = 0 fiber t = 5 and as t -> infinity (N = 1)"
+      ],
+      "description": "M-O4 first results. Negative drill on a tampered Beta-function value proven (9 FAIL lines). Runtime ~1 min.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_wkb_validate.py"
+      ],
+      "timeout_s": 1200,
+      "required_markers": [
+        "CYL WKB VALIDATED"
+      ]
+    },
+    {
+      "id": "cyl_vev_tables",
+      "claims": [
+        "The nine cylindrical VEV tables results/lab/vev/vev_sol{1,2,3}_w{6,8,10}.json -- <I_s>(P, Q^2; t) for spins 5, 7, 9 of Solutions 1-3 as rational functions of t (article momenta; plane-density (dX)^W coefficient normalized to 1), obtained in the lab by rational interpolation on 32 fit points with 4 hold-outs -- are verified on EIGHT exact fibres each: at every visited t the ad_{I_3} kernel is recomputed and the cylinder eigenvalue's coefficients, reconstructed exactly on a full-rank evaluation set, equal the stored functions coefficient by coefficient. The tables are certified on those fibres, not proven as global identities in t. Executable structural predicate on the stored tables: every irreducible denominator factor of a lower-degree coefficient divides the product of the top-degree (profile) denominators and (t-1)(t+1) -- no lower-degree poles beyond the profile lattice and the curve's poles. The files are hash-pinned."
+      ],
+      "description": "VEV side of the cylindrical oper program through spin 9 (lab ~/ib-lab/cyl_vev_weights.py: 32 fit points + 4 hold-outs per table). Negative drill on a tampered table coefficient proven (1 FAIL line). Runtime ~3 min.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_vev_tables.py"
+      ],
+      "timeout_s": 1800,
+      "required_markers": [
+        "CYL VEV TABLES CERTIFIED"
+      ],
+      "artifacts": [
+        {
+          "path": "results/lab/vev/vev_sol1_w10.json",
+          "sha256": "sha256:d006b9fb52afddd220954d8667789b2ed990c69278be7cf5dbb6a56c0f7945df"
+        },
+        {
+          "path": "results/lab/vev/vev_sol1_w6.json",
+          "sha256": "sha256:5632534282af8195a2e9cf01a56d5e71da383d9a20b96df7d414d18c7bee7d8b"
+        },
+        {
+          "path": "results/lab/vev/vev_sol1_w8.json",
+          "sha256": "sha256:b3fac7ef3162c198b900f5e05cfe69d03191a4e285042ddcac3555937a75f5fc"
+        },
+        {
+          "path": "results/lab/vev/vev_sol2_w10.json",
+          "sha256": "sha256:2b31cbaaa9d6eb1f7fbb8ee391deaa0bdb6ea580658f85c36ca2e769ab413b07"
+        },
+        {
+          "path": "results/lab/vev/vev_sol2_w6.json",
+          "sha256": "sha256:e631f1946695e35c5765fb963b1b3cfd6660779b77e4a0c31e07d5e95d9f553f"
+        },
+        {
+          "path": "results/lab/vev/vev_sol2_w8.json",
+          "sha256": "sha256:a837993d7d0b517cc02276d04e5d09236553383900ca0ee676653b6392d1af2c"
+        },
+        {
+          "path": "results/lab/vev/vev_sol3_w10.json",
+          "sha256": "sha256:51eecbbcfb14e32c67e7f031bb9bba65d3e0bbfe232a552ddf0917559f5e1f35"
+        },
+        {
+          "path": "results/lab/vev/vev_sol3_w6.json",
+          "sha256": "sha256:e748109e41771f19c3051a179b3102730014abb78c21f9d41b9471561c64ff9b"
+        },
+        {
+          "path": "results/lab/vev/vev_sol3_w8.json",
+          "sha256": "sha256:eb3d9c5d545e84fea24dc6000b0053f07c54e2a06b62c99886c89f84e8d70392"
+        }
+      ]
+    },
+    {
+      "id": "cyl_spin19_scans",
+      "claims": [
+        "Spin-19 (weight-20) two-prime residue scans, preregistration e6dc226: sheet 1 -- 10,005 residues at p = 10007 and 10,007 at p = 10009, ZERO rank drops (t = 3 included); sheet 2 -- 10,005 residues at p = 10007 and 10,007 at p = 10009, exactly ONE drop per prime, at residue 3 (rank 3926, nullity 2, lifting to t = 3, the all-spin decoupling); sheet 3 -- 10,005 residues at p = 10007 (ATTESTED launch: every chunk log carries the scanner and matrix hashes and the clean commit 0406a45, verified against the repository), exactly ONE drop, at residue 3 (rank 3926, nullity 2, lifting to t = 3), and NO drop at t = 7/5 -- the recurrence hypothesis R1u refuted on this prime, the preregistration e6dc226 ('nothing beyond the all-spin decoupling') holding on all three sheets; sheet 3 at p = 10009 (ATTESTED as well, commit 9e742a5): 10,007 residues, exactly ONE drop, at residue 3 (rank 3926, nullity 2, lifting to t = 3), none at t = 7/5 -- both primes agree; spin 19 is closed on all three sheets with two primes each, exactly as preregistered, with the check points t_3 = 9/7, t_4 = 11/9 and the q = 3 control t = 2 at the generic rank 3927 in every chunk. This is finite-field EVIDENCE consistent with the preregistered 'nothing beyond the all-spin decoupling', not a characteristic-zero proof. The machine-readable summary records prime, the 16 contiguous chunks covering [0, p) with per-chunk evaluated counts and drops, drop details, check points, the log path, and the scanner / matrix sidecar hashes; the certificate ENFORCES all of these against the archived chunk logs -- headers, chunk table entry by entry, moduli of drop lines, generic ranks, check points at their exact residues (num * den^-1 mod p), the exact (sheet, prime) inventory {(1, 10007), (1, 10009), (2, 10007), (2, 10009), (3, 10007), (3, 10009)}, and, for scans recorded as attested, exactly one valid attestation block per chunk (scanner hash, matrix == sidecar hash, 40-hex clean commit); the four scans archived before the attested wrapper existed (sheets 1 and 2, both primes) are recorded as unattested and the sheet-3 p = 10007 scan as attested. Provenance caveat, scoped to the four UNATTESTED scans (sheets 1 and 2, both primes): their logs carry no execution provenance, so for those four the scanner and matrix hashes are an operator-asserted retrospective association, not an execution binding; the two sheet-3 scans were run through the attested wrapper that prints provenance first, and their per-chunk attestation blocks are verified by the certificate. All six scans are in; nothing is pending (summary status field)."
+      ],
+      "description": "Spin-19 scan evidence (mod-p, python-flint, 16 chunks per prime on the worker nodes; logs archived from the nodes). Extended as further (sheet, prime) scans complete (re-pin). Negative drills proven on a tampered drop list, a forged chunk table, an altered log header, an altered check-point residue, an extra inventory entry and an attested flag without blocks.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_spin19_scans.py"
+      ],
+      "timeout_s": 120,
+      "required_markers": [
+        "SPIN-19 SCANS CONSISTENT"
+      ],
+      "artifacts": [
+        {
+          "path": "results/lab/spin19/summary.json",
+          "sha256": "sha256:c80241ed9c0bf916bcd3261ee1422c4362e4b1fb015625482409f1551734fecf"
+        },
+        {
+          "path": "results/lab/spin19/scan_w20_sol1_p10007.txt",
+          "sha256": "sha256:6e343d528e7287e35f8c88d38bc7e3600d903af52ac05612e877e9412ff7e372"
+        },
+        {
+          "path": "results/lab/spin19/scan_w20_sol1_p10009.txt",
+          "sha256": "sha256:05234958481cd8f11dc24e49d1e449524b74e95aae5a940548a1fe4055f57c8d"
+        },
+        {
+          "path": "results/lab/spin19/scan_w20_sol2_p10007.txt",
+          "sha256": "sha256:955aeebe0a04309c54a98f1e32b7ba25f6f358b29c661d4776432726f9a4a23d"
+        },
+        {
+          "path": "results/lab/spin19/scan_w20_sol2_p10009.txt",
+          "sha256": "sha256:bfe94903c9471411aa30a13f60f07927bc39820d867f74b23bce26d855ad94e8"
+        },
+        {
+          "path": "results/lab/spin19/scan_w20_sol3_p10007.txt",
+          "sha256": "sha256:dbd73e7d2c1a61f6a953457890e740490d5c41494d04c2aa08a4d0d37a8b6363"
+        },
+        {
+          "path": "results/lab/spin19/scan_w20_sol3_p10009.txt",
+          "sha256": "sha256:7d39ee7837c63e69d26a1fedc9def0106e357ae68a7eecb00afc4ab3a57290dd"
+        }
       ]
     },
     {
@@ -1504,6 +1695,590 @@
       ]
     },
     {
+      "id": "cyl_pole_lattice",
+      "claims": [
+        "The certified profile poles of the three cylindrical solutions at weights 4, 6, 8, 10 (POLES of cyl_mo2_profiles, plus the t = -1 pole of Solution 3's weight-10 profile) are Beta-function lattices s m(t) + 2j = 0, j in 1..s-1, of one Moebius exponent function per solution -- m_1 = (1-t)/(t+3), m_2 = (2t-14)/(t+5), m_3 = (3-t)/(t-5) -- anchored at t -> infinity to the paperclip values n = -1, 2, -1 (the lattice of the factors (2j + s n) of hep-th/0404195 eqs. (66)-(68)); Solution 1's closed-form denominators are the lattice factors exactly; Solution 3's certified jumping points t = (q+1)/(q-1), q = 4, 6, 8, are lattice points with j = (q-2)/2 at spin 2q-3, and no c_{1,q}, q = 2..12 even, is a lattice point at spin 19.  Negative controls inside (shifted pole, shifted exponent) and a registry-level drill on a tampered pole (1 FAIL line) proven."
+      ],
+      "description": "Oper program: the leading symbol's exponent read off the VEV pole lattices (ansatz note sec. 16). Exact Fraction arithmetic; runtime < 1 s. Registry-level drill on a tampered pole proven (1 FAIL line).",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_pole_lattice.py"
+      ],
+      "timeout_s": 600,
+      "required_markers": [
+        "POLE LATTICE CERTIFIED"
+      ]
+    },
+    {
+      "id": "cyl_first_order",
+      "claims": [
+        "First order around the N = 1 anchor of the cylindrical family: with the response columns of the WKB coefficients S_1..S_9 of the paperclip operator at n = -1 pinned here (produced in the lab with an independent Wolfram port of the integrator; the delta-m and u/(1+u)^{1,2,3} columns re-derived by code/wkb.py at spins 1-5 exactly), the base equals alpha_s I_s + beta_s of the paper at spins 3, 5, 7 and is proportional to the certified weight-10 tables at N = 1 at spin 9 (alpha_9 = -1/1440: the paperclip correspondence at spin 9); the pipeline recovers the paperclip's own n-deformation exactly (delta m = 1, delta A = X/2, delta B = Y/2); and for Solutions 3 and 1, with spins 1-9 (55 rational data coordinates from the certified tables and the pinned weight-4 table), the two LVZ terms, the (1+u)-library with growth terms, and the library with the moving-exponent columns at u = -1 and at the origin are INCONSISTENT with the first-order deformation, as is (spins 1-7) a fixed fourth point at u = -3, -9, -1/2, -2.  Negative controls inside (tampered coordinate; delta m = 2 rejected).  Classification: exact linear algebra on pinned exact inputs; the exclusions hold for the listed classes and affine momentum dependence."
+      ],
+      "description": "Oper program, first-order inverse problem (ansatz note secs. 17-19). The pinned columns are lab artifacts (Wolfram port, validated against code/wkb.py inside this certificate at spins 1-5 and in the lab at spins 1-7). Runtime ~7 min (432 s measured).",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_first_order.py"
+      ],
+      "timeout_s": 1800,
+      "required_markers": [
+        "FIRST ORDER CERTIFIED"
+      ],
+      "artifacts": [
+        {
+          "path": "results/lab/first_order/alpha9_sol1.json",
+          "sha256": "sha256:1e4ea644edc0dfaf7a441b7f51bade7cf43d4befbd823ff17131fd0aa9e360c2"
+        },
+        {
+          "path": "results/lab/first_order/alpha9_sol3.json",
+          "sha256": "sha256:1e4ea644edc0dfaf7a441b7f51bade7cf43d4befbd823ff17131fd0aa9e360c2"
+        },
+        {
+          "path": "results/lab/first_order/base_S.txt",
+          "sha256": "sha256:e7ab623394c344a84b3e1794831f5edff1cf760d28e00b7cf02df9ce9ff53b87"
+        },
+        {
+          "path": "results/lab/first_order/fp_v1_2_D.txt",
+          "sha256": "sha256:42954b8bb30c1ac8d2d8ac36c0070b221ff2e784e04ee39217081ec90f13d9f8"
+        },
+        {
+          "path": "results/lab/first_order/fp_v1_2_E.txt",
+          "sha256": "sha256:8e270f99b44e2c90c6b583df0a0d7d6dc62e8886df4953ee2e0157a62514888c"
+        },
+        {
+          "path": "results/lab/first_order/fp_v2_1_D5.txt",
+          "sha256": "sha256:286716bec112f81ed12ad776da99ced6d4ee03e90030b6d3edaa4ad99ac586e1"
+        },
+        {
+          "path": "results/lab/first_order/fp_v2_1_E.txt",
+          "sha256": "sha256:97fd3075aafa346c57060062e5767b2b4c2c7b536e064f05129c338e6619cc87"
+        },
+        {
+          "path": "results/lab/first_order/fp_v2_1_E5.txt",
+          "sha256": "sha256:2534f5d4c046b1c0f880155595fdbd9e614d830d355ea8526c3740f7b9535762"
+        },
+        {
+          "path": "results/lab/first_order/fp_v3_1_D.txt",
+          "sha256": "sha256:5908f95efdd675ebea114c569200d351c1f141bc62fd0a15210cfb8b44a7d440"
+        },
+        {
+          "path": "results/lab/first_order/fp_v3_1_E.txt",
+          "sha256": "sha256:0384f39da747319237c5a46c70a8a497dd96d1dcd2b6c205ed3b8d8aea65490b"
+        },
+        {
+          "path": "results/lab/first_order/fp_v9_1_D.txt",
+          "sha256": "sha256:4b799e93fc671e7a49bedd5a8f1698b6bd1db00510fcfb6d4d1436dadbeb9b1f"
+        },
+        {
+          "path": "results/lab/first_order/fp_v9_1_E.txt",
+          "sha256": "sha256:af2d1d82533c13eec3be0b4b23a926f6087cb2fa4d41185ece52212a87a53aa1"
+        },
+        {
+          "path": "results/lab/first_order/n-1_K0.txt",
+          "sha256": "sha256:61d0208c807db323948969efb97e8f2cc45a58f9ecf45413768ee5844c87ed88"
+        },
+        {
+          "path": "results/lab/first_order/n-1_K1.txt",
+          "sha256": "sha256:61d0208c807db323948969efb97e8f2cc45a58f9ecf45413768ee5844c87ed88"
+        },
+        {
+          "path": "results/lab/first_order/n-1_K2.txt",
+          "sha256": "sha256:61d0208c807db323948969efb97e8f2cc45a58f9ecf45413768ee5844c87ed88"
+        },
+        {
+          "path": "results/lab/first_order/n-1_K3.txt",
+          "sha256": "sha256:61d0208c807db323948969efb97e8f2cc45a58f9ecf45413768ee5844c87ed88"
+        },
+        {
+          "path": "results/lab/first_order/n-1_L1.txt",
+          "sha256": "sha256:36f1c728564ff271edf386e9bdba7e027c36deeedde744a73e7a71029fc3e9e7"
+        },
+        {
+          "path": "results/lab/first_order/n-1_L2.txt",
+          "sha256": "sha256:10f83cba2171ff5d6744040f69830257cceb1b31b96123dbecfee9daf023b8a6"
+        },
+        {
+          "path": "results/lab/first_order/n-1_M0.txt",
+          "sha256": "sha256:61d0208c807db323948969efb97e8f2cc45a58f9ecf45413768ee5844c87ed88"
+        },
+        {
+          "path": "results/lab/first_order/n-1_M1.txt",
+          "sha256": "sha256:61d0208c807db323948969efb97e8f2cc45a58f9ecf45413768ee5844c87ed88"
+        },
+        {
+          "path": "results/lab/first_order/n-1_M2.txt",
+          "sha256": "sha256:61d0208c807db323948969efb97e8f2cc45a58f9ecf45413768ee5844c87ed88"
+        },
+        {
+          "path": "results/lab/first_order/n-1_M3.txt",
+          "sha256": "sha256:61d0208c807db323948969efb97e8f2cc45a58f9ecf45413768ee5844c87ed88"
+        },
+        {
+          "path": "results/lab/first_order/n-1_P0.txt",
+          "sha256": "sha256:0909dce59958db340fd98e8fbd3b897cbd9c8a80e8811bd985c0610b15f9dbda"
+        },
+        {
+          "path": "results/lab/first_order/n-1_P1.txt",
+          "sha256": "sha256:0e3373873df2e5981cb984a0fc117f7abb1611bb3c0e028fba3287fbfebe3df6"
+        },
+        {
+          "path": "results/lab/first_order/n-1_Q0.txt",
+          "sha256": "sha256:38d70da2c18c8f64aeb76519ecdbee71b47082f45d4b78e59c73951e51c4f9c8"
+        },
+        {
+          "path": "results/lab/first_order/n-1_Q1.txt",
+          "sha256": "sha256:3e12c5a41c7fa3260615ce60d702d97aa632c5409c845ad26050915ba0f7652b"
+        },
+        {
+          "path": "results/lab/first_order/n-1_R0.txt",
+          "sha256": "sha256:0f6e110c01727fc711d0b7baf828f0184e6da3fb16f5424e73121f106f51d782"
+        },
+        {
+          "path": "results/lab/first_order/n-1_R1.txt",
+          "sha256": "sha256:7a03c0723ffda7ef8b14e16924ca04ee50d211150c8bc633970f9b9d2c3f2b7f"
+        },
+        {
+          "path": "results/lab/first_order/n-1_R2.txt",
+          "sha256": "sha256:bc6b96b35fd05621a56d2010effce9619e9b0927d894abdcb929d026c4d2f658"
+        },
+        {
+          "path": "results/lab/first_order/n-1_Z1.txt",
+          "sha256": "sha256:4dcb7ffa1c5522c5f7e1fa68d859e52ec7ad225f458c4ce5e89357dd4008ba48"
+        },
+        {
+          "path": "results/lab/first_order/n-1_Z2.txt",
+          "sha256": "sha256:f7702a2a202d3f38008aa5b69cb38bb578ff0abcb6dc36023d1025e4c7b9fd4d"
+        },
+        {
+          "path": "results/lab/first_order/n-1_a1.txt",
+          "sha256": "sha256:f0525d44a9870ad9624474d6d703465db83e290f06cdae351219b76c8e9252c4"
+        },
+        {
+          "path": "results/lab/first_order/n-1_a2.txt",
+          "sha256": "sha256:0d5b111dc4494f3fcc8a3ddfa5ad54557e8150c37ac804be53e9f9edef83bfc6"
+        },
+        {
+          "path": "results/lab/first_order/n-1_b1.txt",
+          "sha256": "sha256:d720bf7d1e40a35c34e30ed6503dbb2011495dc1c9f13b833bb4058c80a67972"
+        },
+        {
+          "path": "results/lab/first_order/n-1_b2.txt",
+          "sha256": "sha256:a8acb057d4d66823e1d5104d5c4a6c85950de8d2cc62bceb8b9978fef1a7d848"
+        },
+        {
+          "path": "results/lab/first_order/n-1_b3.txt",
+          "sha256": "sha256:6b70d8e764c0a7243ad2e60295db3738918139043a2bce9645be3a904aea0dff"
+        },
+        {
+          "path": "results/lab/first_order/n-1_b4.txt",
+          "sha256": "sha256:b4627870f48ac97e4013f8c1fe6c04e86690f45b7b6694d231947ee6b7668f6e"
+        },
+        {
+          "path": "results/lab/first_order/n-1_b5.txt",
+          "sha256": "sha256:c87ffc4a7b891a3eea253331c195125fe3bff801d4b9376b72fbe2c60a0bbe95"
+        },
+        {
+          "path": "results/lab/first_order/n-1_b6.txt",
+          "sha256": "sha256:c3a22788a19137b18f6b63cd8369f939f5dbef2a985367cd70c2c130ce590768"
+        },
+        {
+          "path": "results/lab/first_order/n-1_m.txt",
+          "sha256": "sha256:0909dce59958db340fd98e8fbd3b897cbd9c8a80e8811bd985c0610b15f9dbda"
+        },
+        {
+          "path": "results/lab/first_order/vev_w4_points.json",
+          "sha256": "sha256:6dd97090651f54574ee541339ffcdbfd184756ddd5ce78b840439411e6c0caf0"
+        },
+        {
+          "path": "results/lab/vev/vev_sol1_w10.json",
+          "sha256": "sha256:d006b9fb52afddd220954d8667789b2ed990c69278be7cf5dbb6a56c0f7945df"
+        },
+        {
+          "path": "results/lab/vev/vev_sol1_w6.json",
+          "sha256": "sha256:5632534282af8195a2e9cf01a56d5e71da383d9a20b96df7d414d18c7bee7d8b"
+        },
+        {
+          "path": "results/lab/vev/vev_sol1_w8.json",
+          "sha256": "sha256:b3fac7ef3162c198b900f5e05cfe69d03191a4e285042ddcac3555937a75f5fc"
+        },
+        {
+          "path": "results/lab/vev/vev_sol3_w10.json",
+          "sha256": "sha256:51eecbbcfb14e32c67e7f031bb9bba65d3e0bbfe232a552ddf0917559f5e1f35"
+        },
+        {
+          "path": "results/lab/vev/vev_sol3_w6.json",
+          "sha256": "sha256:e748109e41771f19c3051a179b3102730014abb78c21f9d41b9471561c64ff9b"
+        },
+        {
+          "path": "results/lab/vev/vev_sol3_w8.json",
+          "sha256": "sha256:eb3d9c5d545e84fea24dc6000b0053f07c54e2a06b62c99886c89f84e8d70392"
+        }
+      ]
+    },
+    {
+      "id": "cyl_heun_exact_elim",
+      "claims": [
+        "Under the proportionality reading of rationality (normalization constants may contain the pole position's transcendental), a momentum-dependent fourth regular singular point is excluded EXACTLY from the top-degree conditions: for the m = -1 Heun family at v = 3, 7/3, 5/2, 9, 1/2, 2 (spins 1-5) and for the sliding-pole family at v = 3 (spins 1-7), the Groebner basis of the top-degree system with the fourth point's coefficient scaled to 1 (four branches) and u_4 outside {+-2, 6} (t outside {5, 2, infinity}) is {1}.  Inputs: the general S_k at each position as pinned lab artifacts (results/lab/heun/general_S), whose spin-1 form is re-derived by hand inside.  Negative controls: dropping the palindromy conditions or the fourth point produces solutions."
+      ],
+      "description": "Oper program, exact eliminations at the sampled pole positions (ansatz note sec. 15). Runtime ~3 min (162 s measured). Registry-level drill on a tampered pinned file proven (1 FAIL line, the hand-derived S_1 check).",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_heun_exact_elim.py"
+      ],
+      "timeout_s": 1800,
+      "required_markers": [
+        "EXACT ELIMINATION CERTIFIED"
+      ],
+      "artifacts": [
+        {
+          "path": "results/lab/heun/general_S/heun_S_v1_2_k5.txt",
+          "sha256": "sha256:7d455bb1d40fe5eedd22bfa8085aa501bf611974f026a3bd6c637fe5eb5ba69e"
+        },
+        {
+          "path": "results/lab/heun/general_S/heun_S_v2_k5.txt",
+          "sha256": "sha256:3f8ce8dfd1981a03355e45a67e33c12d1c683c089fcc8f385024028d7336ad98"
+        },
+        {
+          "path": "results/lab/heun/general_S/heun_S_v3_k5.txt",
+          "sha256": "sha256:8b399a370d23eec156915394206c1abb3cae409662d9856edc0de04e216104b4"
+        },
+        {
+          "path": "results/lab/heun/general_S/heun_S_v5_2_k5.txt",
+          "sha256": "sha256:703c1c80631d5ac6ce0c3f550e470607e840461cc3c29b54ca340b06d3434917"
+        },
+        {
+          "path": "results/lab/heun/general_S/heun_S_v7_3_k5.txt",
+          "sha256": "sha256:e91027b64c2ff66c0277680d345ddf3e4e8f17e67988b1e2d23301ab9a5d8298"
+        },
+        {
+          "path": "results/lab/heun/general_S/heun_S_v9_k7.txt",
+          "sha256": "sha256:c5d5a7c0a09b6f6013d22a15471c05dafeeb56c78ee7b0861c655bff8b12f97d"
+        },
+        {
+          "path": "results/lab/heun/general_S/slide_S_v3_k7.txt",
+          "sha256": "sha256:222272b19c93cf2a3270ba5de235a17b47f5feb2929da4c407917616e58ec291"
+        }
+      ]
+    },
+    {
+      "id": "cyl_heun_rationality",
+      "claims": [
+        "Heun family at m = -1: the no-transcendental conditions of the WKB coefficients reconstructed as complete rational functions of the pole position v from 20 exact positions with 4 hold-outs each, under an ASSERTED degree bound 8 (spin 1: E = 2D(v-1); spin 3: D[(v-1)^2 A + B + (15v-14)(v-1)D/16 - (v^2-2v+4)/16]; spin 5: -3D(v-2)(Dv-D+v)(64A(v-1) + (63v-60)D - 4(v-1))/(256v); spin 7 on the momentum-dependent branch: 15D^2(v-4)(v-2)(3v-4)(Dv-D+v)(Dv-D+3v)/(8192v(v-1))).  Classification: exact finite-sample interpolation evidence, not a proof for all v.  Output pinned: results/lab/heun/heun_rationality.json."
+      ],
+      "description": "Oper program (ansatz note secs. 12, 14, 15). Fail-closed reconstruction; ~50 min, so deferred to --full; the pinned JSON is what the fast sweep verifies.",
+      "mode": "run",
+      "expensive": true,
+      "command": [
+        "PYTHON",
+        "cyl_heun_rationality.py"
+      ],
+      "timeout_s": 7200,
+      "required_markers": [
+        "HEUN RATIONALITY RECONSTRUCTED"
+      ],
+      "artifacts": [
+        {
+          "path": "results/lab/heun/heun_rationality.json",
+          "sha256": "sha256:1beed2e7172dd1f0349a90946709365a53289ea0cf0742d5524793a2329724bb"
+        }
+      ]
+    },
+    {
+      "id": "cyl_first_order_kernels",
+      "claims": [
+        "the pinned adjoint response kernels reproduce the pinned first-order columns u/(1+u)^b (b = 1..6), u, u^2 and the exponent direction at spins 1-9, exactly",
+        "a kappa^{-1} term in the potential does not change S_1, S_3, S_5 at first order (two shapes, wkb.py recursion): 2x2 first-order systems add no first-order direction beyond the potential class",
+        "the affine rational class u^p/(1+u)^q (1 <= p <= q+2, q <= 9 by explicit columns; every (p, q) by the symbolic identity of P8, for non-integral q as an identity of the meromorphic continuation wherever the moments are defined; coefficients 1, X, Y) with the exponent direction has rank 26 in the 55-dimensional first-order data space of spins 1-9; its left null space is the pinned set of 29 relations",
+        "the paperclip's n-deformation satisfies the 29 relations; cylindrical Solutions 1 and 3 do not (unknown block rank 7, augmented 8)",
+        "the pinned first-order density coefficients per mixed-basis monomial reproduce the pinned VEV tables' base and first order at weights 4, 6, 8, 10 for Solutions 1 and 3"
+      ],
+      "description": "First-order response kernels at the paperclip base (ansatz note sec. 21): the pinned adjoint kernels K_1..K_11 of the linearized Riccati recursion reproduce every pinned first-order column at spins 1-9; the kappa-odd lemma (a kappa^{-1} term is first-order invisible) recomputed with code/wkb.py; the affine rational deformation class of any pole order (q <= 9 by explicit columns; ALL (p, q) by a symbolic Pochhammer identity, Codex round 25) plus the exponent direction has rank 26 in the 55-dimensional data space of spins 1-9, i.e. 29 exact relations any such scalar operator forces, pinned and recomputed; the paperclip's own n-deformation satisfies them and cylindrical Solutions 1 and 3 violate them (rank 7 vs 8 with the ten normalization freedoms); the pinned first-order density coefficients per monomial reproduce the pinned VEV tables at weights 4-10; negative controls; the 29 relations proved as identities in symbolic (p, q). 11 PASS lines (P0-P8), ~4 min.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_first_order_kernels.py"
+      ],
+      "timeout_s": 1800,
+      "required_markers": [
+        "FIRST-ORDER KERNELS CERTIFIED"
+      ],
+      "artifacts": [
+        {
+          "path": "results/lab/relations/kernels_final.txt",
+          "sha256": "sha256:e9cd1e00b3d7953af8f09dcab83a9e447c9addf92d52f332d8133c7dd178e0e6"
+        },
+        {
+          "path": "results/lab/relations/affine_relations.txt",
+          "sha256": "sha256:dc7825074adcb9c76735200cb2c2469b744eed020a8effee6b0be62b15d0eccb"
+        },
+        {
+          "path": "results/lab/relations/density_first_order.json",
+          "sha256": "sha256:771e385d905ef87fb3b533e56ac7317f635742df77c47f5a7824c683225a40e6"
+        },
+        {
+          "path": "results/lab/first_order/n-1_b1.txt",
+          "sha256": "sha256:d720bf7d1e40a35c34e30ed6503dbb2011495dc1c9f13b833bb4058c80a67972"
+        },
+        {
+          "path": "results/lab/first_order/n-1_b2.txt",
+          "sha256": "sha256:a8acb057d4d66823e1d5104d5c4a6c85950de8d2cc62bceb8b9978fef1a7d848"
+        },
+        {
+          "path": "results/lab/first_order/n-1_b3.txt",
+          "sha256": "sha256:6b70d8e764c0a7243ad2e60295db3738918139043a2bce9645be3a904aea0dff"
+        },
+        {
+          "path": "results/lab/first_order/n-1_b4.txt",
+          "sha256": "sha256:b4627870f48ac97e4013f8c1fe6c04e86690f45b7b6694d231947ee6b7668f6e"
+        },
+        {
+          "path": "results/lab/first_order/n-1_b5.txt",
+          "sha256": "sha256:c87ffc4a7b891a3eea253331c195125fe3bff801d4b9376b72fbe2c60a0bbe95"
+        },
+        {
+          "path": "results/lab/first_order/n-1_b6.txt",
+          "sha256": "sha256:c3a22788a19137b18f6b63cd8369f939f5dbef2a985367cd70c2c130ce590768"
+        },
+        {
+          "path": "results/lab/first_order/n-1_a1.txt",
+          "sha256": "sha256:f0525d44a9870ad9624474d6d703465db83e290f06cdae351219b76c8e9252c4"
+        },
+        {
+          "path": "results/lab/first_order/n-1_a2.txt",
+          "sha256": "sha256:0d5b111dc4494f3fcc8a3ddfa5ad54557e8150c37ac804be53e9f9edef83bfc6"
+        },
+        {
+          "path": "results/lab/first_order/n-1_m.txt",
+          "sha256": "sha256:0909dce59958db340fd98e8fbd3b897cbd9c8a80e8811bd985c0610b15f9dbda"
+        }
+      ]
+    },
+    {
+      "id": "cyl_classical_hierarchy",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_classical_hierarchy.py"
+      ],
+      "timeout_s": 1800,
+      "description": "Classical limit of the cylindrical hierarchies (ansatz note secs. 23-24): the top momentum degree of the pinned eigenvalue tables Poisson-commutes pairwise (all six pairs at weights 4-10) as densities in the velocities under the flat two-component bracket; the weight-4 density x^4 + b x^2 r^2 + c r^4 determines the hierarchy (one polynomial density per weight, GENERICALLY over Q(b, c)); the profile denominators depend on b alone with zeros at b = 6j/(3j-s), the Beta lattice of m(b) = -2b/(3b-6), so the pinned pole-lattice exponents of all three families (and the paperclip's exponent for every n) follow from the certified weight-4 mixing coefficient; the exceptional locus (Codex round 25) is the decoupled line b = 0 plus isolated points computed exactly, whose isolated points meet the family curves at the non-decoupling classical jumping points (the decoupling line b = 0 carrying the t = 3 drop) and contain the certified quantum jumping points at weights 6 and 10; b = 0 is an exact decoupling; the (b, c)-plane geometry of the families against the paperclip curve c = b(b-4)/(4(b-3)), with the intersections reproducing the two-term survivors (t = 1 for Solutions 1, 2 being the closure point at the curve's pole, not a fiber). 12 checks (P3e, P3f added 2026-09-05) (P3d: the lifting rule), ~10 min.",
+      "claims": [
+        "the top-degree parts of the pinned weight-4..10 tables of Solutions 1, 2, 3 Poisson-commute pairwise (all six pairs) under diag(d, d) in (dX, |dY|)",
+        "for each solution the conservation PDE of the weight-4 density has a one-dimensional space of polynomial densities at weights 6, 8, 10, spanned by the certified density; for the generic quartic x^4 + b x^2 r^2 + c r^4 (over Q(b, c)) the same holds at weights 6-12",
+        "the universal profiles' denominators are polynomials in b alone with zeros exactly at b = 6j/(3j-s), j = 1..(s-1)/2: the Beta lattice of the exponent m(b) = -2b/(3b-6)",
+        "the exceptional locus of the universal hierarchy is the line b = 0 plus the isolated points {(-3,1)} (weight 6), {(-3/2,1/8), (-3/2,1), (-12,8)} (weight 8), {(-1,0), (-1,1/4), (-1,1), (-4,1), (-4,4)} (weight 10); on the families these are the isolated non-decoupling classical jumping points t = 5/3, 11/5, 7/5, 17/7 (Solution 3), 5/3, 2 (Solution 2), none (Solution 1), and they contain the certified non-decoupling quantum jumping points t = 5/3 (weight 6, sheets 2 and 3) and 7/5 (weight 10, sheet 3)",
+        "m(u_4) equals the pinned lattice exponents of Solutions 1 and 3, the lattice dual of Solution 2's, and -2-n on the paperclip family of eq. (59)",
+        "at b = 0 the universal densities are x^W + c^{W/2-1} r^W; the paperclip family is the curve c = b(b-4)/(4(b-3)); the families are c = 1, c = b/6, c = b^2/(6-b), meeting it at t -> infinity, t = 5 (Solution 3), t = -5 (Solution 2), and at the closure point t = 1 (Solutions 1, 2; the pole of the curve, not a fiber)",
+        "LAB RESULT, pinned not recomputed (lab/classical_rank_drop_locus.py 14 16 18, fail-closed exhaustive enumeration): the exceptional locus at weights 14, 16, 18 gives the non-decoupling classical jumping points Solution 3 {9/7, 19/9, 29/11}, {5/3, 25/11, 35/13}, {11/9, 21/11, 31/13, 41/15}; Solution 2 {3/2, 17/7}, {5/3, 5/2}, {13/11, 9/5, 23/9}; Solution 1 none -- containing the certified quantum jumping points 9/7 (w14, sheet 3), 5/3 (w16, sheets 2, 3), 11/9 and 13/11 (w18, sheets 3 and 2)",
+        "LAB RESULT, pinned not recomputed (lab/classical_rank_drop_locus.py 20 22, fail-closed exhaustive enumeration): non-decoupling classical jumping points Solution 3 {17/11, 27/13, 37/15, 47/17} (w20), {13/11, 23/13, 11/5, 43/17, 53/19} (w22); Solution 2 {4/3, 21/11, 13/5} (w20), {19/13, 2, 29/11} (w22); Solution 1 none -- t = 7/5 is NOT a classical jumping point at weight 20 (the recurrence hypothesis R1u fails classically, consistent with the sheet-3 spin-19 scan), and the two-ladder prediction for spin 21 (sheet 3 at t = 13/11) is a classical jumping point",
+        "the decoupling component b = 0 of the exceptional locus has nullity 2 at every weight; Solution 3 reaches it at t = 3 and Solution 2 reaches the decoupled point at infinity (c -> infinity) at t = 3 -- the classical face of the all-spin decoupling drop of sheets 2 and 3",
+        "LAB RESULT, pinned not recomputed (lab/classical_bihamiltonian.wls, lab/classical_frobenius_test.py; ansatz note sec. 27): with the free-field metric, a second flat metric of Lie-derivative form quadratic in the fields making the weight-4 flow bihamiltonian exists only on the decoupled line b = 0 and at the paperclip point (6, 1); the principal hierarchies of two-dimensional charge-0 Frobenius manifolds reach the same two loci only -- no second flat metric of the tested class (Lie-derivative form, quadratic in the fields) exists for the families at generic t; other classes are not covered",
+        "LAB RESULT, pinned not recomputed (lab/classical_rank_drop_locus.py 12): the exceptional locus at weight 12 gives the non-decoupling classical jumping points Solution 3 {13/7, 23/9}, Solution 2 {9/7, 7/3}, Solution 1 none -- containing the certified quantum jumping point 9/7 (w12, sheet 2); the closed form of P3c is checked against all three pinned loci",
+        "LAB RESULT, pinned not recomputed (lab/classical_lifting.py; ansatz note sec. 28): at the certified quantum jumps (t = 5/3 w6 on sheets 2 and 3, t = 7/5 w10 on sheet 3) the whole two-dimensional classical space lifts; at the classical-only points (11/5 w8, 2 w8 on sheet 2, 17/7 w10) exactly a line lifts and the obstruction of the other direction first appears at derivative-excess level 3",
+        "the lifting rule (P3d; lab/classical_lifting_rule.py; sec. 29): a classical jumping point is a certified quantum jumping point iff beta^2 = (t-1)/(t+1) = 1/(2k); predictions for spins 21-29 filed in results/cyl_spin19_21_preregistration.md",
+        "LAB RESULT, pinned not recomputed (extra_factorization.txt regenerated in full by lab/classical_extra_factorization.py; quantum_extra_out.txt; sec. 29 addenda): at every lattice point (s, j) of Solution 3 the extra classical density is (x^2 - r^2)^(2j+1) times a palindromic cofactor, the pure power at the first occurrence of each ladder rung (t = (k+2)/k, k = W/2); the quantum extra invariants at t = 5/3 (identical on sheets 2 and 3) and 7/5 are quantizations of (x^2 - r^2)^(W/2) with even-level corrections",
+        "LAB RESULT, pinned not recomputed (lab/classical_extra_commute.py; sec. 30): the extra invariant E_5 at t = 5/3 commutes with I_5, I_7 and I_9 exactly on both merged sheets (brackets at weights 11, 13, 15 vanish modulo total derivatives; the control bracket with a random weight-8 density has 173 nonzero terms) -- it commutes with the ordinary integrals through weight 10 (the checked range), not only with I_3",
+        "LAB RESULT, pinned not recomputed (lab/classical_extra_vev.py; sec. 30 addendum): the vacuum eigenvalues of the extra charges factorize -- at t = 5/3 (weight 6) into (8u+9)[(8u+5)^2 + 128P^2]/(-512), at t = 7/5 (weight 10) into (12u+25)[3(4u+7)^2 + 64P^2][3(4u+3)^2 + 256P^2]/(-27648), u = P^2 - Q^2 (article momenta) -- while the ordinary charges' eigenvalues at the same points do not",
+        "LAB RESULT, pinned not recomputed (lab/classical_fusion_product.py; sec. 31): the extra charges' eigenvalues at q = 1/beta^2 = 4 and 6 equal -prod_{m=-(q-2)/2}^{(q-2)/2} Lambda(P + i sqrt2 m beta) with Lambda = P^2 - Q^2 + (q-1)^2/(2q), exactly; the q = 8 eigenvalue is a filed prediction",
+        "LAB RESULT, pinned not recomputed (lab/classical_w14_fusion_test.py, lab/vev_genfun.py; sec. 31): the PREREGISTERED q = 8 prediction is confirmed -- the weight-14 extra charge at t = 9/7 on sheet 3 (fast-path kernel record pinned) has eigenvalue -prod_{m=-3}^{3} Lambda(P + i m/2), Lambda = P^2 - Q^2 + 49/16, every coefficient, by the generating-function vacuum recipe (validated against the certified recipe on the twelve certified densities; output pinned)",
+        "LAB RESULT, pinned not recomputed (lab/classical_w12_sheet2_*.py; sec. 33 addendum; CORRECTED 2026-09-06, sec. 36(d)): on sheet 2 at t = 9/7, weight 12, no element of the two-dimensional kernel pencil has a factor 3P^2 - Q^2 + kappa or 6P^2 + Q^2 + kappa (the two slopes of the distinguished top part) nor a conjugate-shift quadratic of those slopes -- so the X-orbit fusion product of Solution 3's palindromic points is absent on sheet 2's own point.  The earlier wording 'irreducible for every element of the pencil' was an overstatement: the slope-free search (lab/classical_pencil_search.py) finds the member lam = -2359/120 with top part -Y^5 (9X - Y), whose eigenvalue splits completely into linear factors -(16Y-49)(16Y-45)^2(16Y-33)(16Y-13)(144X-16Y+33)/2^24",
+        "LAB RESULT, pinned not recomputed (lab/classical_w16_recurrence_test.py, lab/classical_w16_fit.py; sec. 35): the recurrence charge of sheet 3 at t = 5/3, weight 16 (fast-path kernel record pinned) has eigenvalue e_15 = e_5 x R_10, exactly divisible by the weight-6 fusion element, with R_10 irreducible over Q(i sqrt2), top part (P^2-Q^2)^4 (P^2+Q^2), and not a polynomial in the ordinary charges' eigenvalues (nor e_5 times weight-4 products)",
+        "LAB RESULT, pinned not recomputed (lab/classical_w18_fusion_test.py; preregistered 2026-09-05 22:26; sec. 36): the extra charge of sheet 3 at t = 11/9 (q = 10, weight 18, kernel record pinned) has eigenvalue EXACTLY equal to the filed fusion product -prod_{m=-4}^{4} Lambda(P + i sqrt2 m/sqrt10), Lambda = P^2 - Q^2 + 81/20 -- the fourth coupling (q = 4, 6, 8, 10) and the second preregistered confirmation; computed with the exact-arithmetic generating-function recipe lab/vev_genfun_fast.py, validated exactly against lab/vev_genfun.py on the twelve certified densities and against the pinned weight-14 and weight-16 eigenvalues (results/lab/classical/vev_genfun_fast_validation.txt)",
+        "LAB RESULT, pinned not recomputed (lab/classical_pencil_search.py, results/lab/classical/pencil_search_out.txt; sec. 36(c)): SHEET-2 LAW, exact at q = 4, 8, 12 (t = 5/3, 9/7, 13/11; weights 6, 12, 18 = 3q/2; the weight-6 kernel certified, weights 12 and 18 from the pinned fast-path records): the kernel pencil contains a member with top part Y^(3q/4-1) ((3q/2-3) X - Y) (X = P^2, Y = Q^2, article momenta) whose eigenvalue is prod_{m in M} (c - 2 m^2 beta^2 - Y) times (c - 2 (q/4)^2 beta^2 - Y + (3q/2-3) X), c = (q-1)^2/(2q), beta^2 = 1/q, M = {0, +-1, ..., +-(q/4-1), q/4, ..., q/2-1} -- the Lambda factors of the sheet-3 fusion product evaluated at P = 0 over a truncated orbit, with a single factor carrying P^2; the form was fixed on q = 8, 12 and retrodicts q = 4 exactly",
+        "LAB RESULT, pinned not recomputed (same run; sec. 36(c)): on sheet 3 the slope-free search finds ONLY the pure-power member (the fusion product) at q = 6, 8, 10 (weights 10, 14, 18) -- no Y-type and no X-type member; at the merged point q = 4 (weight 6, sheets 2 and 3 identical) the pencil carries three structured members: the fusion product, the sheet-2 Y-type member (8Y-9)(8Y-5)(24X-8Y+5)/4608, and an X-type member -X(2X+1)(8X-24Y+31)/120 vanishing at P^2 = 0 and P^2 = -1/2 (nu_X = 0 and 1/2 in the BLZ dictionary); the X-type member appears nowhere else through weight 18",
+        "LAB RESULT, pinned not recomputed (same run; sec. 36(c)): the weight-16 recurrence pencil at t = 5/3 carries, besides e_5 x R_10, a Y-type member with top part -Y^5 (14X^3 - 14X^2 Y + 6XY^2 - Y^3) and eigenvalue -(8Y-9)(8Y-5)^2 x (irreducible quintic)/(3 2^24): the m = 0, +-1 pure-Y factors of the q = 4 law with a cofactor outside the law",
+        "LAB RESULT, pinned not recomputed (lab/classical_w18_sheet2_test.py, lab/classical_w18_sheet2_pencil.py; sec. 36(c)): at t = 13/11, weight 18, the classical conserved space of Solution 2 has nullity 2 with no member divisible by a square of x^2 - m r^2 for m in {1, 1/3, 3, 1/6, 6, 2, 1/2}; the member divisible by x^2 - r^2 lifts to a quantum element whose eigenvalue is irreducible over Q, Q(i), Q(i sqrt2), Q(i sqrt3), Q(i sqrt6), Q(sqrt2), Q(sqrt3), Q(sqrt6) and the biquadratic fields Q(i sqrt2, i sqrt3), Q(i, sqrt2), Q(i, sqrt3); the resultant search of the pencil then finds the Y-type member (lam = 40106/315) and shows its conjugate-quadratic hits are regroupings of the pure-Y linear factors",
+        "LAB RESULT, pinned not recomputed (lab/classical_sheet2_reading.py, 16 PASS lines; sec. 37(a)): KAC FORM of the sheet-2 law, exact at q = 4, 8, 12 -- with Lambda_s(Q) := Lambda(P = i sqrt2 nu_{1,s}, Q) = -2 h_{1,s} - Q^2 = (s-1)(2q-1-s)/(2q) - Q^2, the Y-type member's eigenvalue is proportional to prod_{s even, 2 <= s <= 3q/2-2} Lambda_s(Q) x [Lambda_{q/2}(Q) + (3 nu_{1,2}/beta) P^2]; the multiset {nu_{1,s}^2} is sheet 3's orbit {m^2 beta^2 : |m| <= q/2-1} with the points |m| >= q/4 taken once; the eigenvalue is linear in P^2; over Q(i sqrt2 beta) no factor carries a Q-shift; the X-type member at q = 4 vanishes exactly at nu_X = nu_{1,2}, nu_{1,4}; the weight-16 Y-type member is prod_{s=2,4,6} Lambda_s times an irreducible quintic; the filed prediction S2-16 equals the Kac form at q = 16",
+        "LAB RESULT, pinned not recomputed (lab/classical_cofactors.py; sec. 37(b)): the cofactors R_10 (e_15 = e_5 R_10, weight 16, t = 5/3) and Q_5 (the weight-16 Y-type member's quintic) are irreducible over Q and over Q(i), Q(sqrt2), Q(i sqrt2), Q(sqrt3), Q(i sqrt3), Q(sqrt6), Q(i sqrt6), Q(sqrt5), Q(i sqrt5) and the biquadratic fields Q(i, sqrt2), Q(i, sqrt3), Q(i sqrt2, i sqrt3), Q(sqrt2, sqrt3), Q(i sqrt2, sqrt5); under the P-shifts i sqrt2 k beta, k = 1/2, 1, 3/2, 2, neither has a common factor with e_5, e_15 or its own unshifted self; R_10's rational zeros on the Kac grid (nu_X = nu_{1,s}, nu_Y^2 = h_{1,s'}) are the eight points (s, s') = (-1,1), (1,-1), (0,2), (1,1), (2,0), (1,3), (2,2), (3,1), all with s' - s in {-2, 0, 2} (on the zero loci of e_5's three factors) though R_10 contains none of those factors; Q_5 has one, (2, 0); at Q = 0, R_10's rational X-roots are nu_X = nu_{1,3}, nu_{1,1}, nu_{1,-1}; R_10's discriminants in X and Y are irreducible over Q while Q_5's factor as -(8Y+7)^4 (8Y+27)^2 (64Y^2+32Y+27)(sextic) and (2X+1)^3 (degree 15): branch loci at the Kac values -2 h_{1,0}, -2 h_{2,2}, -2 nu_{1,2}^2",
+        "LAB RESULT, pinned not recomputed (lab/classical_tq_relation_test.py; sec. 37(c)): five candidate functional relations between the sheet-3 fusion product T_q(P, Q) and the sheet-2 Kac form e2_q are EXCLUDED exactly at q = 4, 8, 12 -- e2_q is not proportional to the linearization of T_q in P^2 at P = 0 with the outer orbit factors removed, nor at any orbit or half-orbit expansion point i sqrt2 k beta (k = 1/2..q/2: no common factor); T_q'(Q) Lambda_{q/2}(Q) != sigma T_q(0, Q); the mixed factor Lambda_{q/2} + sigma P^2 divides neither dT_q/dP^2 nor any difference or sum T_q(P + i sqrt2 k beta) -+ T_q(P - i sqrt2 k beta), k = 1/2..2; and e2_q is not a(Q) T_q(P + P0) + b(Q) T_q(P + P1) with polynomial a, b for any two orbit/half-orbit points",
+        "LAB RESULT, pinned not recomputed (lab/classical_bidiagonal_supports.py, 6 PASS lines; sec. 37(d)): from the bidiagonal theorem (P3f), at every isolated lattice point (j, j') the 2-dim classical kernel contains a RIGHT-supported density r^(2(k-j)) x (degree j) and a LEFT-supported x^(W-2j') x (degree j'), independent (all 445 affine lattice points with W <= 30); Solution 2's c_{1,q} series (t = (q+1)/(q-1), q = 0 mod 4, W = 3q/2) is exactly its j = 1 lattice points ((j, j') = (1, q/2-1); the j = 1 weights are 6, 12, ..., 36), where the right-supported density is r^(W-2)((W-3) x^2 - r^2): the sheet-2 law's top symbol, its slope 3(q-2)/2 = W - 3 and its linearity in P^2 (degree-j cofactor with j = 1) are DERIVED classically, q = 4..20; at q = 4 the left-supported density x^4 (x^2 - 3 r^2) is the X-type member's top symbol; at Solution 3's points (j = j' = (q-2)/2, c = 1) the supported densities r^q(...) and x^q(...) are the two halves of the binomial expansion of (x^2 - r^2)^(q-1), whose sum is the fusion member's pure-power density (q = 6, 8, 10); at all 49 palindromic lattice points (c = 1, j = j') with W <= 30 the symmetric combination of the supports is (x^2 - r^2)^(2j+1) times a palindromic cofactor, constant exactly at the first occurrences W = 4j + 2 (sec. 29's statement derived)",
+        "LAB RESULT, pinned not recomputed (lab/classical_pencil_quadratic_search.py on all eight kernel records; sec. 37(e)): conjugate-shift quadratic factors (a X + Y + kappa)^2 + mu X, + mu Y, and (X + kappa)^2 + mu Y with mu != 0 occur in the kernel pencils ONLY as the fusion members' conjugate pairs on sheet 3 (q = 4, 6, 8, 10 and the weight-16 recurrence's e_5 factor) and as regroupings of the Y-type members' pure-Y linear factors (q = 4, 8, 12 and weight 16): the non-fusion members at sheet 3's points and the non-Y-type members at sheet 2's points carry no conjugate-shift structure"
+      ],
+      "artifacts": [
+        {
+          "path": "results/lab/vev/vev_sol1_w6.json",
+          "sha256": "sha256:5632534282af8195a2e9cf01a56d5e71da383d9a20b96df7d414d18c7bee7d8b"
+        },
+        {
+          "path": "results/lab/vev/vev_sol1_w8.json",
+          "sha256": "sha256:b3fac7ef3162c198b900f5e05cfe69d03191a4e285042ddcac3555937a75f5fc"
+        },
+        {
+          "path": "results/lab/vev/vev_sol1_w10.json",
+          "sha256": "sha256:d006b9fb52afddd220954d8667789b2ed990c69278be7cf5dbb6a56c0f7945df"
+        },
+        {
+          "path": "results/lab/vev/vev_sol2_w6.json",
+          "sha256": "sha256:e631f1946695e35c5765fb963b1b3cfd6660779b77e4a0c31e07d5e95d9f553f"
+        },
+        {
+          "path": "results/lab/vev/vev_sol2_w8.json",
+          "sha256": "sha256:a837993d7d0b517cc02276d04e5d09236553383900ca0ee676653b6392d1af2c"
+        },
+        {
+          "path": "results/lab/vev/vev_sol2_w10.json",
+          "sha256": "sha256:2b31cbaaa9d6eb1f7fbb8ee391deaa0bdb6ea580658f85c36ca2e769ab413b07"
+        },
+        {
+          "path": "results/lab/vev/vev_sol3_w6.json",
+          "sha256": "sha256:e748109e41771f19c3051a179b3102730014abb78c21f9d41b9471561c64ff9b"
+        },
+        {
+          "path": "results/lab/vev/vev_sol3_w8.json",
+          "sha256": "sha256:eb3d9c5d545e84fea24dc6000b0053f07c54e2a06b62c99886c89f84e8d70392"
+        },
+        {
+          "path": "results/lab/vev/vev_sol3_w10.json",
+          "sha256": "sha256:51eecbbcfb14e32c67e7f031bb9bba65d3e0bbfe232a552ddf0917559f5e1f35"
+        },
+        {
+          "path": "results/lab/first_order/vev_w4_points.json",
+          "sha256": "sha256:6dd97090651f54574ee541339ffcdbfd184756ddd5ce78b840439411e6c0caf0"
+        },
+        {
+          "path": "results/lab/classical/rank_drop_locus_w14_18.txt",
+          "sha256": "sha256:911ff7d6c95cf6fb084a3e27f2d318df165c37914bf4cf2fb2a8d6ae6d7192e7"
+        },
+        {
+          "path": "results/lab/classical/rank_drop_locus_w20_22.txt",
+          "sha256": "sha256:962a4003d67d753ce2c08abc85050b6ff4a501db6e0b71986a8ddee09cba27a9"
+        },
+        {
+          "path": "results/lab/classical/bihamiltonian_out.txt",
+          "sha256": "sha256:95f6ec5cb451e6c0b78dd43558f1baa47276969aed5b55f11f2f1e63632983d2"
+        },
+        {
+          "path": "results/lab/classical/rank_drop_locus_w12.txt",
+          "sha256": "sha256:77d684a7d8ce8329771cb3584af4d4acb529c3ac80b12aa7a27c4766605ebd0c"
+        },
+        {
+          "path": "results/lab/classical/lifting_out.txt",
+          "sha256": "sha256:8515118288f29f8f22960376d3d73a5a2ba1616d4ce3f0780062b7eed865ee31"
+        },
+        {
+          "path": "results/lab/classical/extra_factorization.txt",
+          "sha256": "sha256:0c0059d314bbd7ae8949f5860397b4ccdc0ace53f3e4933c0ca5b63e43e551e6"
+        },
+        {
+          "path": "results/lab/classical/quantum_extra_out.txt",
+          "sha256": "sha256:01cee7e89aa3517822b83669d00eec0dce3d3bfa67c491a0a93c5e67aa5ee74a"
+        },
+        {
+          "path": "results/lab/classical/extra_commute_out.txt",
+          "sha256": "sha256:05fa3bd233c2bfc478cb2e85838d179cea812297f967a494579d56a0f71d479a"
+        },
+        {
+          "path": "results/lab/classical/extra_vev_out.txt",
+          "sha256": "sha256:947b32a127175ec9730e90842ace118685cff457ab2b70fe8c9dec351ca2fb2b"
+        },
+        {
+          "path": "results/lab/classical/fusion_product_out.txt",
+          "sha256": "sha256:d56f240b9d9395c256a89b6e40df91babf860f3cc9c338ffd382daa18002f409"
+        },
+        {
+          "path": "results/lab/classical/w14_fusion_test_out.txt",
+          "sha256": "sha256:747781b774d0930a2fd4770e89c4dfaa841858544a200cc87008011af5aead0e"
+        },
+        {
+          "path": "results/lab/fast_kernel2/w14_t97_sheet3.json",
+          "sha256": "sha256:881e703606283155645381ecbac0907e1d456029cd838574f3894e450b5ea316"
+        },
+        {
+          "path": "results/lab/classical/vev_genfun_validation.txt",
+          "sha256": "sha256:7b2aa0d64d4bb0d3d28084416c2815b61528a1274b9b7a5146ea456492d9a3d0"
+        },
+        {
+          "path": "results/lab/fast_kernel2/w12_t97_sheet2.json",
+          "sha256": "sha256:6dcbf8701f261200546e1776ff3ff8e8f89ef454e08d27f3ba591f8f2bf96043"
+        },
+        {
+          "path": "results/lab/classical/w12_sheet2_test_out.txt",
+          "sha256": "sha256:f91bb5d8860433aeaa1281d98e33f3c96c300a7faaaf65b50c62e06e3da88363"
+        },
+        {
+          "path": "results/lab/classical/w12_sheet2_factor_search_out.txt",
+          "sha256": "sha256:8ed8b542c8fc7a4e185c319bd9c20d49a88eba547022da5c6a3bdd0f59a65aaa"
+        },
+        {
+          "path": "results/lab/classical/w12_sheet2_quadratic_search_out.txt",
+          "sha256": "sha256:80cf291dac8109d041c684f4cd8e5b1524c976ad02fabc1aaaca22c73be5e540"
+        },
+        {
+          "path": "results/lab/fast_kernel2/w16_t53_sheet3.json",
+          "sha256": "sha256:8f061807fd94265b31f6ea72626c5ff16cfbeb1a20e4d085f4a12cf69585bf43"
+        },
+        {
+          "path": "results/lab/classical/w16_recurrence_test_out.txt",
+          "sha256": "sha256:e64fd25415834346d81e914cceb8e7aeb98b9910078561ef5b656c8728055388"
+        },
+        {
+          "path": "results/lab/classical/w16_fit_out.txt",
+          "sha256": "sha256:037a3f00139b1736c89e7b479e9a37fb67f25f60741145164792b7abc0724cd5"
+        },
+        {
+          "path": "results/lab/classical/vev_genfun_fast_validation.txt",
+          "sha256": "sha256:57c0f2df61dc143c798d2c4bf2376c7fddaafdb0326e6fdb187c8d1d12203a77"
+        },
+        {
+          "path": "results/lab/classical/w18_fusion_test_out.txt",
+          "sha256": "sha256:8ea392afd50826168e20a106182dd42a22250112fc67ec0e28c1f11588887467"
+        },
+        {
+          "path": "results/lab/fast_kernel2/w18_P1_sheet3_t4.json",
+          "sha256": "sha256:4c32f4266ad2addb13dd83f2915f22fc0d154f217e67a63a55dbe9d55c29492c"
+        },
+        {
+          "path": "results/lab/classical/pencil_search_out.txt",
+          "sha256": "sha256:00db2db803e6ce25fdeedd3cb29969ecb862c30b31e016b68ca11b22efea8290"
+        },
+        {
+          "path": "results/lab/classical/w18_sheet2_test_out.txt",
+          "sha256": "sha256:45da1bed38cc85ce8b41b1b49490189706459dd3c9134baf40fa8bf1184cada9"
+        },
+        {
+          "path": "results/lab/classical/w18_sheet2_pencil_out.txt",
+          "sha256": "sha256:8244be7ce6edeb16a5099762d1ae6a55ef58a03fe68c98a436502eb23a463d73"
+        },
+        {
+          "path": "results/lab/classical/kernel_w6_sol3_t5_3.json",
+          "sha256": "sha256:cbe73a38f6dda8075c1fdb22d9388863feafc8b90537c125e72946b0b9466dba"
+        },
+        {
+          "path": "results/lab/classical/kernel_w10_sol3_t7_5.json",
+          "sha256": "sha256:04b8a47875bd05731738f2c3a72dc7ac6b759855492592f0583bbb3dbd7f31cf"
+        },
+        {
+          "path": "results/lab/classical/kernel_w10_sol2_t7_5.json",
+          "sha256": "sha256:6ed2cf79c36584ad67d23843484e57fd9b13b1d44f038c41e63209cf03afd8fe"
+        },
+        {
+          "path": "results/lab/classical/sheet2_reading_out.txt",
+          "sha256": "sha256:48d563ed1ca10de045067314c04d4eee894a9154beea22813048bb903a3435e7"
+        },
+        {
+          "path": "results/lab/classical/cofactors_out.txt",
+          "sha256": "sha256:73be9502a49e94932732e22a8af31440322dd371f49dd46058fda8cb6eeeffd8"
+        },
+        {
+          "path": "results/lab/classical/tq_relation_test_out.txt",
+          "sha256": "sha256:3a65dffd1ab9dbf102838c4705efde2dca5de7fa5c0d22f6f7d79cb880c08db5"
+        },
+        {
+          "path": "results/lab/classical/bidiagonal_supports_out.txt",
+          "sha256": "sha256:d9bcee14a773ce10e87dd07b4cbf0d83189a1791a8b54d86d8d74aba1d452059"
+        },
+        {
+          "path": "results/lab/classical/pencil_quadratic_search_out.txt",
+          "sha256": "sha256:b70b04333049ddd08e34a6a93e22d194f62a12ada6579eb43d786a351b1ded45"
+        }
+      ],
+      "required_markers": [
+        "CLASSICAL HIERARCHY CERTIFIED"
+      ]
+    },
+    {
       "id": "public_provenance_lint",
       "claims": [
         "provenance"
@@ -1528,7 +2303,7 @@
     "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
   ],
   "_public_edition": {
-    "generated_on": "2026-09-01",
+    "generated_on": "2026-09-06",
     "pruned_entry_ids": [
       "certificate_provenance_lint",
       "check_a2_1820_provenance",
@@ -1536,6 +2311,7 @@
       "dossier_evidence_pins",
       "draft_builds_and_hash"
     ],
-    "artifact_pins_dropped_as_private": 1
+    "artifact_pins_dropped_not_exported": 0,
+    "pruned_pending_entry_ids": []
   }
 }

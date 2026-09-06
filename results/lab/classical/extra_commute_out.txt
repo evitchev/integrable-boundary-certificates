@@ -1,0 +1,15 @@
+Solution 3, t = 5/3: kernel dims w6 2, w8 1, w10 1; ordinary I_5 found: True
+   [E_5, I_3] = 0: True (by construction)
+   [E_5, I_5] = 0: (True, 0)
+   [E_5, I_7] = 0: (True, 0)
+   control [I_5, I_7] = 0: (True, 0)
+   control [E_5, random weight-8 density] = 0: (False, 173)
+   [E_5, I_9] = 0: (True, 0)
+Solution 2, t = 5/3: kernel dims w6 2, w8 1, w10 1; ordinary I_5 found: True
+   [E_5, I_3] = 0: True (by construction)
+   [E_5, I_5] = 0: (True, 0)
+   [E_5, I_7] = 0: (True, 0)
+   control [I_5, I_7] = 0: (True, 0)
+   control [E_5, random weight-8 density] = 0: (False, 173)
+   [E_5, I_9] = 0: (True, 0)
+DONE

@@ -1,0 +1,16 @@
+q = 4: R1 linearization at P = 0, outer factors removed: no (outer divides: False)
+q = 4: R3 T'(Q) Lambda_(q/2)(Q) = sigma T(0, Q): False
+q = 4: R2 expansion points k = 1/2..2: common factors with e2: NONE
+q = 4: R4 mixed factor divides: NONE
+q = 4: R5 e2 = a(Q) T(P + P0) + b(Q) T(P + P1) with polynomial a, b: NONE
+q = 8: R1 linearization at P = 0, outer factors removed: no (outer divides: False)
+q = 8: R3 T'(Q) Lambda_(q/2)(Q) = sigma T(0, Q): False
+q = 8: R2 expansion points k = 1/2..4: common factors with e2: NONE
+q = 8: R4 mixed factor divides: NONE
+q = 8: R5 e2 = a(Q) T(P + P0) + b(Q) T(P + P1) with polynomial a, b: NONE
+q = 12: R1 linearization at P = 0, outer factors removed: no (outer divides: False)
+q = 12: R3 T'(Q) Lambda_(q/2)(Q) = sigma T(0, Q): False
+q = 12: R2 expansion points k = 1/2..6: common factors with e2: NONE
+q = 12: R4 mixed factor divides: NONE
+q = 12: R5 e2 = a(Q) T(P + P0) + b(Q) T(P + P1) with polynomial a, b: NONE
+DONE

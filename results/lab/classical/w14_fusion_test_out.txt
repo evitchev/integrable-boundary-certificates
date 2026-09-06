@@ -1,0 +1,8 @@
+record: lab record: exact fast-path computation, pending independent certification by the registered pure-Python certificate genuine_dim 2 ; basis size 929
+combination with top part (x^2 - r^2)^7: found
+extra invariant: nonzero monomials 324 ; levels [0, 2, 4, 6, 8, 10, 12]
+VEV computed in 1073s
+eigenvalue (article momenta): -(16*P**2 - 16*Q**2 + 49)*(256*P**4 - 512*P**2*Q**2 + 1696*P**2 + 256*Q**4 - 1440*Q**2 + 2025)*(256*P**4 - 512*P**2*Q**2 + 2080*P**2 + 256*Q**4 - 1056*Q**2 + 1089)*(256*P**4 - 512*P**2*Q**2 + 2720*P**2 + 256*Q**4 - 416*Q**2 + 169)/268435456
+prediction: -(16*P**2 - 16*Q**2 + 49)*(256*P**4 - 512*P**2*Q**2 + 1696*P**2 + 256*Q**4 - 1440*Q**2 + 2025)*(256*P**4 - 512*P**2*Q**2 + 2080*P**2 + 256*Q**4 - 1056*Q**2 + 1089)*(256*P**4 - 512*P**2*Q**2 + 2720*P**2 + 256*Q**4 - 416*Q**2 + 169)/268435456
+FUSION PREDICTION AT q = 8: CONFIRMED ; difference: 0
+exit 0
