@@ -1,0 +1,173 @@
+q = 4: quintic with 161 terms
+q = 6: quintic with 161 terms
+q = 8: quintic with 161 terms
+q = 10: quintic with 161 terms
+q = 12: quintic with 161 terms
+q = 14: quintic with 161 terms
+q = 16: quintic with 161 terms
+q = 18: quintic with 161 terms
+q = 20: quintic with 161 terms
+q = 24: quintic with 161 terms
+fitting 161 coefficients on q in [4, 6, 8, 10, 12, 14, 16, 18], verifying on [20, 24]
+   lambda^5 X^0 Y^0: 1
+   lambda^4 X^2 Y^0: -5
+   lambda^4 X^1 Y^1: 30*(q - 2)/q
+   lambda^4 X^1 Y^0: -5*(3*q**3 - 12*q**2 - 8*q - 6)/q**2
+   lambda^4 X^0 Y^2: -5
+   lambda^4 X^0 Y^1: 5*(q**2 - 2*q + 24)/q
+   lambda^4 X^0 Y^0: NO rational fit of degree <= 3/3
+   lambda^3 X^4 Y^0: 10
+   lambda^3 X^3 Y^1: -120*(q - 2)/q
+   lambda^3 X^3 Y^0: 20*(3*q**3 - 12*q**2 - 8*q - 6)/q**2
+   lambda^3 X^2 Y^2: 20*(19*q**2 - 72*q + 72)/q**2
+   lambda^3 X^2 Y^1: NO rational fit of degree <= 3/3
+   lambda^3 X^2 Y^0: NO rational fit of degree <= 3/3
+   lambda^3 X^1 Y^3: -120*(q - 2)/q
+   lambda^3 X^1 Y^2: 20*(9*q**3 - 36*q**2 + 160*q - 294)/q**2
+   lambda^3 X^1 Y^1: NO rational fit of degree <= 3/3
+   lambda^3 X^1 Y^0: NO rational fit of degree <= 3/3
+   lambda^3 X^0 Y^4: 10
+   lambda^3 X^0 Y^3: -20*(q**2 - 2*q + 24)/q
+   lambda^3 X^0 Y^2: NO rational fit of degree <= 3/3
+   lambda^3 X^0 Y^1: NO rational fit of degree <= 3/3
+   lambda^3 X^0 Y^0: NO rational fit of degree <= 3/3
+   lambda^2 X^6 Y^0: -10
+   lambda^2 X^5 Y^1: 180*(q - 2)/q
+   lambda^2 X^5 Y^0: -30*(3*q**3 - 12*q**2 - 8*q - 6)/q**2
+   lambda^2 X^4 Y^2: -30*(37*q**2 - 144*q + 144)/q**2
+   lambda^2 X^4 Y^1: NO rational fit of degree <= 3/3
+   lambda^2 X^4 Y^0: NO rational fit of degree <= 3/3
+   lambda^2 X^3 Y^3: 360*(q - 2)*(7*q**2 - 24*q + 24)/q**3
+   lambda^2 X^3 Y^2: NO rational fit of degree <= 3/3
+   lambda^2 X^3 Y^1: NO rational fit of degree <= 3/3
+   lambda^2 X^3 Y^0: NO rational fit of degree <= 3/3
+   lambda^2 X^2 Y^4: -30*(37*q**2 - 144*q + 144)/q**2
+   lambda^2 X^2 Y^3: NO rational fit of degree <= 3/3
+   lambda^2 X^2 Y^2: NO rational fit of degree <= 3/3
+   lambda^2 X^2 Y^1: NO rational fit of degree <= 3/3
+   lambda^2 X^2 Y^0: NO rational fit of degree <= 3/3
+   lambda^2 X^1 Y^5: 180*(q - 2)/q
+   lambda^2 X^1 Y^4: -30*(15*q**3 - 60*q**2 + 328*q - 582)/q**2
+   lambda^2 X^1 Y^3: NO rational fit of degree <= 3/3
+   lambda^2 X^1 Y^2: NO rational fit of degree <= 3/3
+   lambda^2 X^1 Y^1: NO rational fit of degree <= 3/3
+   lambda^2 X^1 Y^0: NO rational fit of degree <= 3/3
+   lambda^2 X^0 Y^6: -10
+   lambda^2 X^0 Y^5: 30*(q**2 - 2*q + 24)/q
+   lambda^2 X^0 Y^4: NO rational fit of degree <= 3/3
+   lambda^2 X^0 Y^3: NO rational fit of degree <= 3/3
+   lambda^2 X^0 Y^2: NO rational fit of degree <= 3/3
+   lambda^2 X^0 Y^1: NO rational fit of degree <= 3/3
+   lambda^2 X^0 Y^0: NO rational fit of degree <= 3/3
+   lambda^1 X^8 Y^0: 5
+   lambda^1 X^7 Y^1: -120*(q - 2)/q
+   lambda^1 X^7 Y^0: 20*(3*q**3 - 12*q**2 - 8*q - 6)/q**2
+   lambda^1 X^6 Y^2: 20*(55*q**2 - 216*q + 216)/q**2
+   lambda^1 X^6 Y^1: NO rational fit of degree <= 3/3
+   lambda^1 X^6 Y^0: NO rational fit of degree <= 3/3
+   lambda^1 X^5 Y^3: -360*(q - 2)*(13*q**2 - 48*q + 48)/q**3
+   lambda^1 X^5 Y^2: NO rational fit of degree <= 3/3
+   lambda^1 X^5 Y^1: NO rational fit of degree <= 3/3
+   lambda^1 X^5 Y^0: NO rational fit of degree <= 3/3
+   lambda^1 X^4 Y^4: NO rational fit of degree <= 3/3
+   lambda^1 X^4 Y^3: NO rational fit of degree <= 3/3
+   lambda^1 X^4 Y^2: NO rational fit of degree <= 3/3
+   lambda^1 X^4 Y^1: NO rational fit of degree <= 3/3
+   lambda^1 X^4 Y^0: NO rational fit of degree <= 3/3
+   lambda^1 X^3 Y^5: -360*(q - 2)*(13*q**2 - 48*q + 48)/q**3
+   lambda^1 X^3 Y^4: NO rational fit of degree <= 3/3
+   lambda^1 X^3 Y^3: NO rational fit of degree <= 3/3
+   lambda^1 X^3 Y^2: NO rational fit of degree <= 3/3
+   lambda^1 X^3 Y^1: NO rational fit of degree <= 3/3
+   lambda^1 X^3 Y^0: NO rational fit of degree <= 3/3
+   lambda^1 X^2 Y^6: 20*(55*q**2 - 216*q + 216)/q**2
+   lambda^1 X^2 Y^5: NO rational fit of degree <= 3/3
+   lambda^1 X^2 Y^4: NO rational fit of degree <= 3/3
+   lambda^1 X^2 Y^3: NO rational fit of degree <= 3/3
+   lambda^1 X^2 Y^2: NO rational fit of degree <= 3/3
+   lambda^1 X^2 Y^1: NO rational fit of degree <= 3/3
+   lambda^1 X^2 Y^0: NO rational fit of degree <= 3/3
+   lambda^1 X^1 Y^7: -120*(q - 2)/q
+   lambda^1 X^1 Y^6: 20*(21*q**3 - 84*q**2 + 496*q - 870)/q**2
+   lambda^1 X^1 Y^5: NO rational fit of degree <= 3/3
+   lambda^1 X^1 Y^4: NO rational fit of degree <= 3/3
+   lambda^1 X^1 Y^3: NO rational fit of degree <= 3/3
+   lambda^1 X^1 Y^2: NO rational fit of degree <= 3/3
+   lambda^1 X^1 Y^1: NO rational fit of degree <= 3/3
+   lambda^1 X^1 Y^0: NO rational fit of degree <= 3/3
+   lambda^1 X^0 Y^8: 5
+   lambda^1 X^0 Y^7: -20*(q**2 - 2*q + 24)/q
+   lambda^1 X^0 Y^6: NO rational fit of degree <= 3/3
+   lambda^1 X^0 Y^5: NO rational fit of degree <= 3/3
+   lambda^1 X^0 Y^4: NO rational fit of degree <= 3/3
+   lambda^1 X^0 Y^3: NO rational fit of degree <= 3/3
+   lambda^1 X^0 Y^2: NO rational fit of degree <= 3/3
+   lambda^1 X^0 Y^1: NO rational fit of degree <= 3/3
+   lambda^1 X^0 Y^0: NO rational fit of degree <= 3/3
+   lambda^0 X^10 Y^0: -1
+   lambda^0 X^9 Y^1: 30*(q - 2)/q
+   lambda^0 X^9 Y^0: -5*(3*q**3 - 12*q**2 - 8*q - 6)/q**2
+   lambda^0 X^8 Y^2: -5*(73*q**2 - 288*q + 288)/q**2
+   lambda^0 X^8 Y^1: NO rational fit of degree <= 3/3
+   lambda^0 X^8 Y^0: NO rational fit of degree <= 3/3
+   lambda^0 X^7 Y^3: 120*(q - 2)*(19*q**2 - 72*q + 72)/q**3
+   lambda^0 X^7 Y^2: NO rational fit of degree <= 3/3
+   lambda^0 X^7 Y^1: NO rational fit of degree <= 3/3
+   lambda^0 X^7 Y^0: NO rational fit of degree <= 3/3
+   lambda^0 X^6 Y^4: NO rational fit of degree <= 3/3
+   lambda^0 X^6 Y^3: NO rational fit of degree <= 3/3
+   lambda^0 X^6 Y^2: NO rational fit of degree <= 3/3
+   lambda^0 X^6 Y^1: NO rational fit of degree <= 3/3
+   lambda^0 X^6 Y^0: NO rational fit of degree <= 3/3
+   lambda^0 X^5 Y^5: NO rational fit of degree <= 3/3
+   lambda^0 X^5 Y^4: NO rational fit of degree <= 3/3
+   lambda^0 X^5 Y^3: NO rational fit of degree <= 3/3
+   lambda^0 X^5 Y^2: NO rational fit of degree <= 3/3
+   lambda^0 X^5 Y^1: NO rational fit of degree <= 3/3
+   lambda^0 X^5 Y^0: NO rational fit of degree <= 3/3
+   lambda^0 X^4 Y^6: NO rational fit of degree <= 3/3
+   lambda^0 X^4 Y^5: NO rational fit of degree <= 3/3
+   lambda^0 X^4 Y^4: NO rational fit of degree <= 3/3
+   lambda^0 X^4 Y^3: NO rational fit of degree <= 3/3
+   lambda^0 X^4 Y^2: NO rational fit of degree <= 3/3
+   lambda^0 X^4 Y^1: NO rational fit of degree <= 3/3
+   lambda^0 X^4 Y^0: NO rational fit of degree <= 3/3
+   lambda^0 X^3 Y^7: 120*(q - 2)*(19*q**2 - 72*q + 72)/q**3
+   lambda^0 X^3 Y^6: NO rational fit of degree <= 3/3
+   lambda^0 X^3 Y^5: NO rational fit of degree <= 3/3
+   lambda^0 X^3 Y^4: NO rational fit of degree <= 3/3
+   lambda^0 X^3 Y^3: NO rational fit of degree <= 3/3
+   lambda^0 X^3 Y^2: NO rational fit of degree <= 3/3
+   lambda^0 X^3 Y^1: NO rational fit of degree <= 3/3
+   lambda^0 X^3 Y^0: NO rational fit of degree <= 3/3
+   lambda^0 X^2 Y^8: -5*(73*q**2 - 288*q + 288)/q**2
+   lambda^0 X^2 Y^7: NO rational fit of degree <= 3/3
+   lambda^0 X^2 Y^6: NO rational fit of degree <= 3/3
+   lambda^0 X^2 Y^5: NO rational fit of degree <= 3/3
+   lambda^0 X^2 Y^4: NO rational fit of degree <= 3/3
+   lambda^0 X^2 Y^3: NO rational fit of degree <= 3/3
+   lambda^0 X^2 Y^2: NO rational fit of degree <= 3/3
+   lambda^0 X^2 Y^1: NO rational fit of degree <= 3/3
+   lambda^0 X^2 Y^0: NO rational fit of degree <= 3/3
+   lambda^0 X^1 Y^9: 30*(q - 2)/q
+   lambda^0 X^1 Y^8: -5*(27*q**3 - 108*q**2 + 664*q - 1158)/q**2
+   lambda^0 X^1 Y^7: NO rational fit of degree <= 3/3
+   lambda^0 X^1 Y^6: NO rational fit of degree <= 3/3
+   lambda^0 X^1 Y^5: NO rational fit of degree <= 3/3
+   lambda^0 X^1 Y^4: NO rational fit of degree <= 3/3
+   lambda^0 X^1 Y^3: NO rational fit of degree <= 3/3
+   lambda^0 X^1 Y^2: NO rational fit of degree <= 3/3
+   lambda^0 X^1 Y^1: NO rational fit of degree <= 3/3
+   lambda^0 X^1 Y^0: NO rational fit of degree <= 3/3
+   lambda^0 X^0 Y^10: -1
+   lambda^0 X^0 Y^9: 5*(q**2 - 2*q + 24)/q
+   lambda^0 X^0 Y^8: NO rational fit of degree <= 3/3
+   lambda^0 X^0 Y^7: NO rational fit of degree <= 3/3
+   lambda^0 X^0 Y^6: NO rational fit of degree <= 3/3
+   lambda^0 X^0 Y^5: NO rational fit of degree <= 3/3
+   lambda^0 X^0 Y^4: NO rational fit of degree <= 3/3
+   lambda^0 X^0 Y^3: NO rational fit of degree <= 3/3
+   lambda^0 X^0 Y^2: NO rational fit of degree <= 3/3
+   lambda^0 X^0 Y^1: NO rational fit of degree <= 3/3
+   lambda^0 X^0 Y^0: NO rational fit of degree <= 3/3
+DONE

@@ -1,0 +1,5 @@
+Solution 2, t = 7/5: primary: o(v') - (5.13) = 0
+Solution 2, t = 7/5: level-2 matrix (9 x 9) built; P_1^2 = 1/6 - 8 = -47/6
+   (X, Y) = (-9/50, -1/50): det(M_2 - e_3) = -3919522423.71057  -> NONZERO: no level-2 state has I_3 = e_3
+   (X, Y) = (-18/25, -49/200): det(M_2 - e_3) = 1368443987.10070  -> NONZERO: no level-2 state has I_3 = e_3
+   (X, Y) = (-32/25, -2/25): det(M_2 - e_3) = 56336528131.8308  -> NONZERO: no level-2 state has I_3 = e_3

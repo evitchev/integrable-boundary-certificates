@@ -1,0 +1,15 @@
+(1) the two divided-difference identities, verified symbolically for n = 1..6:
+   n = 1: (u^n-v^n)/(u-v) flat over the full range: True;  (u v^n - v u^n)/(u-v) = -uv x flat over the interior: True
+   n = 2: (u^n-v^n)/(u-v) flat over the full range: True;  (u v^n - v u^n)/(u-v) = -uv x flat over the interior: True
+   n = 3: (u^n-v^n)/(u-v) flat over the full range: True;  (u v^n - v u^n)/(u-v) = -uv x flat over the interior: True
+   n = 4: (u^n-v^n)/(u-v) flat over the full range: True;  (u v^n - v u^n)/(u-v) = -uv x flat over the interior: True
+   n = 5: (u^n-v^n)/(u-v) flat over the full range: True;  (u v^n - v u^n)/(u-v) = -uv x flat over the interior: True
+   n = 6: (u^n-v^n)/(u-v) flat over the full range: True;  (u v^n - v u^n)/(u-v) = -uv x flat over the interior: True
+(2) the alpha+gamma = 4 structure (a sqrt b - b sqrt a)/(a - b) expanded in u, v: both families appear
+   present monomials u^r v^s (r+s <= 3) in the expansion: [(0, 1), (0, 2), (0, 3), (1, 0), (1, 1), (1, 2), (1, 3), (2, 0), (2, 1), (2, 2)]
+(3) VERDICT
+   A single flat family over the FULL range cannot match the deficit (that is what closed the multiplication-operator class).
+   A SUM of flat families over DIFFERENT ranges gives the edge monomials a different coefficient from the interior ones, which is
+   exactly what the deficit does (pure coefficients with their own denominator and their own closed form).  So the DIFFERENTIAL
+   class survives the flatness filter, and it is the class to fit next: its free data are the coefficients of the two (or more)
+   ranges at each spin, tied across spins by the continued-Beta coefficients of the single-sector functionals.

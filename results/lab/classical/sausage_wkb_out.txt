@@ -1,0 +1,35 @@
+=== spin 3 (k = 2), 0s
+   X^0 Y^2 / X^2: (3*lambda + 2)/(3*lambda)
+   X^1 Y^1 / X^2: 2
+   X^2 Y^0 / X^2: 1
+   X^0 Y^1 / X^2: -(15*lambda + 8)/(9*lambda)
+   X^1 Y^0 / X^2: -5/3
+   X^0 Y^0 / X^2: (9*lambda + 4)/(12*lambda)
+=== spin 5 (k = 3), 0s
+   X^0 Y^3 / X^3: (5*lambda + 2)*(5*lambda + 4)/(25*lambda**2)
+   X^1 Y^2 / X^3: 3*(5*lambda + 2)/(5*lambda)
+   X^2 Y^1 / X^3: 3
+   X^3 Y^0 / X^3: 1
+   X^0 Y^2 / X^3: -(5*lambda + 2)*(35*lambda + 24)/(50*lambda**2)
+   X^1 Y^1 / X^3: -(35*lambda + 8)/(5*lambda)
+   X^2 Y^0 / X^3: -7/2
+   X^0 Y^1 / X^3: (11025*lambda**2 + 10220*lambda + 2432)/(2500*lambda**2)
+   X^1 Y^0 / X^3: 7*(315*lambda + 52)/(500*lambda)
+   X^0 Y^0 / X^3: -(1975*lambda**2 + 1580*lambda + 352)/(1000*lambda**2)
+=== spin 7 (k = 4), 3s
+   X^0 Y^4 / X^4: (7*lambda + 2)*(7*lambda + 4)*(7*lambda + 6)/(343*lambda**3)
+   X^1 Y^3 / X^4: 4*(7*lambda + 2)*(7*lambda + 4)/(49*lambda**2)
+   X^2 Y^2 / X^4: 6*(7*lambda + 2)/(7*lambda)
+   X^3 Y^1 / X^4: 4
+   X^4 Y^0 / X^4: 1
+   X^0 Y^3 / X^4: -2*(7*lambda + 2)*(7*lambda + 4)*(21*lambda + 16)/(343*lambda**3)
+   X^1 Y^2 / X^4: -6*(7*lambda + 2)*(21*lambda + 8)/(49*lambda**2)
+   X^2 Y^1 / X^4: -2*(63*lambda + 8)/(7*lambda)
+   X^3 Y^0 / X^4: -6
+   X^0 Y^2 / X^4: 3*(7*lambda + 2)*(17297*lambda**2 + 20804*lambda + 6528)/(24010*lambda**3)
+   X^1 Y^1 / X^4: (51891*lambda**2 + 23436*lambda + 3200)/(1715*lambda**2)
+   X^2 Y^0 / X^4: 3*(2471*lambda + 236)/(490*lambda)
+   X^0 Y^1 / X^4: -(21520849*lambda**3 + 27982724*lambda**2 + 12789056*lambda + 1862656)/(1176490*lambda**3)
+   X^1 Y^0 / X^4: -(3074407*lambda**2 + 1093988*lambda + 126176)/(168070*lambda**2)
+   X^0 Y^0 / X^4: (11660971*lambda**3 + 13326824*lambda**2 + 5679632*lambda + 797824)/(1344560*lambda**3)
+DONE

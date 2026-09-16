@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<pillow>/wall_validation.py", line 87, in <module>
+    mach = {s_: machinery(s_) for s_ in (1, 3, 5)}
+                ^^^^^^^^^
+NameError: name 'machinery' is not defined

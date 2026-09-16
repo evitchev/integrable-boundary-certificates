@@ -1,0 +1,14 @@
+   spin 1 (degree 1): 1 products of rank 0 in the 3-dimensional space: NEW GENERATOR
+   spin 3 (degree 2): 3 products of rank 3 in the 6-dimensional space: NEW GENERATOR
+   spin 5 (degree 3): 6 products of rank 6 in the 10-dimensional space: NEW GENERATOR
+   spin 7 (degree 4): 11 products of rank 11 in the 15-dimensional space: in the ring (non-vacuous)
+   spin 9 (degree 5): 16 products of rank 16 in the 21-dimensional space: in the ring (non-vacuous)
+   spin 11 (degree 6): 23 products of rank 22 in the 28-dimensional space: in the ring (non-vacuous)
+Solution 2, t = 7/5: certified e_s: generators at spins [1, 3, 5] (degrees [1, 2, 3]); membership statements are data only where marked non-vacuous
+   spin 1 (degree 1): 1 products of rank 0 in the 3-dimensional space: NEW GENERATOR
+   spin 3 (degree 2): 3 products of rank 3 in the 6-dimensional space: NEW GENERATOR
+   spin 5 (degree 3): 6 products of rank 6 in the 10-dimensional space: NEW GENERATOR
+   spin 7 (degree 4): 11 products of rank 11 in the 15-dimensional space: NEW GENERATOR
+   spin 9 (degree 5): 18 products of rank 18 in the 21-dimensional space: NEW GENERATOR
+   spin 11 (degree 6): 29 products of rank 26 in the 28-dimensional space: in the ring (non-vacuous)
+Solution 2, t = 7/5: operator I_s (pillow primary, P_1^2 = 1/6): generators at spins [1, 3, 5, 7, 9] (degrees [1, 2, 3, 4, 5]); membership statements are data only where marked non-vacuous

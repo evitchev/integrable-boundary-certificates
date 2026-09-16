@@ -1,0 +1,67 @@
+======================================================================================================================
+(0) THE IDENTITY, checked at k = 4..9
+    rf(mu,i+2) rf(mu,j+2)/(i! j!) = mu^2 (mu+1)^2 P^(mu+2) for every (k, i), k <= 9: YES
+    P^(1), P^(2), P^(3) at d = 4: [1, 1, 1, 1, 1], [5, 8, 9, 8, 5], [15, 30, 36, 30, 15]   (= F, G, H)
+======================================================================================================================
+(1) THE DERIVATIVE SHAPE at integer nu, as a weight on P^(nu)
+    d = 2: d/dnu P^(nu)|_(nu=2) = [5/2, 4, 5/2]
+    d = 3: d/dnu P^(nu)|_(nu=2) = [13/3, 8, 8, 13/3]
+    d = 4: d/dnu P^(nu)|_(nu=2) = [77/12, 38/3, 15, 38/3, 77/12]
+    d = 5: d/dnu P^(nu)|_(nu=2) = [87/10, 107/6, 23, 23, 107/6, 87/10]
+    d = 6: d/dnu P^(nu)|_(nu=2) = [223/20, 117/5, 127/4, 104/3, 127/4, 117/5, 223/20]
+======================================================================================================================
+(2) DOES THE h^3 LAYER LIE IN A THREE-SHAPE SPAN INCLUDING THE DERIVATIVE?
+   span {P1, P2, dP(2)}:
+      spin 7: 2 values -> underdetermined
+      spin 9: 2 values -> underdetermined
+      spin 11: 3 values -> SQUARE
+      spin 13: 3 values -> SQUARE
+      spin 15: 4 values -> NO SOLUTION
+      -> spin 15 (the only discriminating spin): NO SOLUTION
+   span {P2, P3, dP(2)}:
+      spin 7: 2 values -> underdetermined
+      spin 9: 2 values -> underdetermined
+      spin 11: 3 values -> SQUARE
+      spin 13: 3 values -> SQUARE
+      spin 15: 4 values -> NO SOLUTION
+      -> spin 15 (the only discriminating spin): NO SOLUTION
+   span {P1, P2, dP(3)}:
+      spin 7: 2 values -> underdetermined
+      spin 9: 2 values -> underdetermined
+      spin 11: 3 values -> SQUARE
+      spin 13: 3 values -> SQUARE
+      spin 15: 4 values -> NO SOLUTION
+      -> spin 15 (the only discriminating spin): NO SOLUTION
+   span {P1, P3, dP(2)}:
+      spin 7: 2 values -> underdetermined
+      spin 9: 2 values -> underdetermined
+      spin 11: 3 values -> SQUARE
+      spin 13: 3 values -> SQUARE
+      spin 15: 4 values -> NO SOLUTION
+      -> spin 15 (the only discriminating spin): NO SOLUTION
+   span {P1, P2, P3 (refuted, as the control)}:
+      spin 7: 2 values -> underdetermined
+      spin 9: 2 values -> underdetermined
+      spin 11: 3 values -> SQUARE
+      spin 13: 3 values -> SQUARE
+      spin 15: 4 values -> NO SOLUTION
+      -> spin 15 (the only discriminating spin): NO SOLUTION
+======================================================================================================================
+READING: the derivative shape is the natural completion of the family, and the spin-15 constraint is the test of it.
+
+======================================================================================================================
+(3) THE REQUIRED THIRD SHAPE AT SPIN 15, as one number
+    the two functionals annihilating P^(1) and P^(2) at degree 6: [[3/5, -8/5, 1, 0], [4/5, -9/5, 0, 1]]
+    their values on the h^3 layer: r = [711/64, 4089/256]
+    SO ANY THIRD SHAPE S MUST SATISFY  (lam_1 . S) / (lam_2 . S) = 948/1363
+    P^(3) = H       : ratio 2/3   differs from the required 948/1363
+    P^(4)           : ratio 21/32   differs from the required 948/1363
+    dP/dnu at nu=2  : ratio 15/22   differs from the required 948/1363
+    dP/dnu at nu=3  : ratio 882/1333   differs from the required 948/1363
+    P^(1/2)         : ratio 21/29   differs from the required 948/1363
+    P^(-1)          : ratio oo   differs from the required 948/1363
+======================================================================================================================
+READING: the entire shape content of the h^3 layer at spin 15 is the single ratio above.  Every candidate tested -- the integer
+         members of the family, its nu-derivative at two integers, a half-integer power and a negative one -- gives a different
+         ratio, so the missing shape is outside this family.  Any future candidate can be tested against this one number before
+         any amplitude is fitted.

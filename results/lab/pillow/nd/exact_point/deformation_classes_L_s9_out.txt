@@ -1,0 +1,10 @@
+class ['L'] (Lambda power for kappa^-2 kinds: p = -1): 49 shapes; spins 3..9 (64s)
+   spins 3..5: 14 conditions, rank 10, augmented 11 -> inconsistent
+   spins 3..7: 28 conditions, rank 15, augmented 16 -> inconsistent
+   spins 3..9: 48 conditions, rank 20, augmented 21 -> inconsistent
+   hold-out: spins < 9: 28 conditions, rank 15, augmented 16; spin 9: 20 conditions, of which 0 are PREDICTED by the lower spins (in their row space) and 20 are accommodated by new freedom; full augmented consistency FAILS
+conditions: 48 (28 homogeneous at degrees k, k-1; 20 targets at degrees <= k-2); rank 20, augmented rank 21 on 49 shapes
+   homogeneous conditions alone: rank 13 -> kernel dimension 36 (0 means the class is dead by the exact layers alone on this shape space)
+   INCONSISTENT on this shape space: no first-order deformation in this class reproduces the targets
+   violated relation (6 terms): (29920/34101) r(9, 2, 1) + (-22417373/272808) r(9, 2, 3) + (-14960/11367) r(9, 3, 0) + (25045097/181872) r(9, 3, 2) + (79849/34101) r(9, 4, 0) + (-30977485/204606) r(9, 4, 1) = 0 for every member of the class; the targets give 1
+done (71s)

@@ -1,0 +1,19 @@
+======================================================================================================================
+(1) the certified endpoint charge and the model's limit, degree k-2 coefficients
+   spin 7:
+      [X^0 Y^2]: endpoint - model = 7/15   closed form's t -> oo limit = 7/15   MATCH
+      [X^1 Y^1]: endpoint - model = 14/3   closed form's t -> oo limit = 14/3   MATCH
+   spin 9:
+      [X^0 Y^3]: endpoint - model = 3/2   closed form's t -> oo limit = 3/2   MATCH
+      [X^1 Y^2]: endpoint - model = 77/2   closed form's t -> oo limit = 77/2   MATCH
+   spin 11:
+      [X^0 Y^4]: endpoint - model = 11/3   closed form's t -> oo limit = 11/3   MATCH
+      [X^1 Y^3]: endpoint - model = 176   closed form's t -> oo limit = 176   MATCH
+      [X^2 Y^2]: endpoint - model = 462   closed form's t -> oo limit = 462   MATCH
+   spin 13:
+      [X^0 Y^5]: endpoint - model = 91/12   closed form's t -> oo limit = 91/12   MATCH
+      [X^1 Y^4]: endpoint - model = 7007/12   closed form's t -> oo limit = 7007/12   MATCH
+      [X^2 Y^3]: endpoint - model = 29029/10   closed form's t -> oo limit = 29029/10   MATCH
+======================================================================================================================
+VERDICT: the deficit at the paperclip end equals the t -> infinity limit of our closed forms, so the reconstruction
+         extrapolates correctly to a point no fibre reached, checked against an independently certified endpoint.

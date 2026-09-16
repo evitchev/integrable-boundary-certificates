@@ -1,0 +1,33 @@
+
+=== fusion e5 (q=4): VEV with symbolic N in 1s; degree in N: 3
+factorization over Q in (X, Y, N):
+   [1] degree (X,Y,N) = 3,3,3: 35*N**3 - 1260*N**2*X + 1260*N**2*Y + 357*N**2 + 15120*N*X**2 - 30240*N*X*Y + 2016*N*X + 15120*N*Y**2 + 8064*N*Y + 1048*N - 60480*X**3 + 181440*X**2*Y - 75600*X**2 - 181440*X*Y**2 + 30240*X*Y - 22680* ...
+at the point N = -25/2 : (8*X - 8*Y + 9)*(64*X**2 - 128*X*Y + 208*X + 64*Y**2 - 80*Y + 25)/768
+factors of e(X = 0, Y; N) over Q: [(3, 3)] (degrees in Y, N)
+
+=== Y-type (q=4): VEV with symbolic N in 1s; degree in N: 3
+factorization over Q in (X, Y, N):
+   [1] degree (X,Y,N) = 1,3,3: 35*N**3 - 1260*N**2*X + 1260*N**2*Y + 357*N**2 - 30240*N*X*Y - 5544*N*X + 15120*N*Y**2 + 8064*N*Y + 1048*N - 181440*X*Y**2 - 60480*X*Y + 60480*Y**3 + 45360*Y**2 + 12600*Y - 900
+at the point N = -25/2 : (8*Y - 9)*(8*Y - 5)*(24*X - 8*Y + 5)/4608
+factors of e(X = 0, Y; N) over Q: [(3, 3)] (degrees in Y, N)
+
+=== X-type (q=4): VEV with symbolic N in 0s; degree in N: 1
+factorization over Q in (X, Y, N):
+   [1] degree (X,Y,N) = 1,0,0: 2*X + 1
+   [1] degree (X,Y,N) = 1,0,0: X
+   [1] degree (X,Y,N) = 1,1,1: N - 4*X + 12*Y - 3
+at the point N = -25/2 : -X*(2*X + 1)*(8*X - 24*Y + 31)/120
+factors of e(X = 0, Y; N) over Q: [] (degrees in Y, N)
+
+=== fusion e9 (q=6, sheet 3): VEV with symbolic N in 42s; degree in N: 5
+factorization over Q in (X, Y, N):
+   [1] degree (X,Y,N) = 5,5,5: 1155*N**5 - 69300*N**4*X + 69300*N**4*Y + 45045*N**4 + 1663200*N**3*X**2 - 3326400*N**3*X*Y - 997920*N**3*X + 1663200*N**3*Y**2 + 2106720*N**3*Y + 609422*N**3 - 19958400*N**2*X**3 + 59875200*N**2*X**2 ...
+at the point N = -24 : (12*X - 12*Y + 25)*(48*X**2 - 96*X*Y + 232*X + 48*Y**2 - 168*Y + 147)*(48*X**2 - 96*X*Y + 328*X + 48*Y**2 - 72*Y + 27)/5120
+factors of e(X = 0, Y; N) over Q: [(5, 5)] (degrees in Y, N)
+
+=== Y-type (q=8, sheet 2): VEV with symbolic N in 138s; degree in N: 6
+factorization over Q in (X, Y, N):
+   [1] degree (X,Y,N) = 1,6,6: 50050*N**6 - 5405400*N**5*X + 3603600*N**5*Y + 2852850*N**5 - 324324000*N**4*X*Y - 237837600*N**4*X + 108108000*N**4*Y**2 + 167567400*N**4*Y + 59537335*N**4 - 7783776000*N**3*X*Y**2 - 11156745600*N**3 ...
+at the point N = -143/4 : -(16*Y - 49)*(16*Y - 45)**2*(16*Y - 33)*(16*Y - 13)*(144*X - 16*Y + 33)/16777216
+factors of e(X = 0, Y; N) over Q: [(6, 6)] (degrees in Y, N)
+DONE

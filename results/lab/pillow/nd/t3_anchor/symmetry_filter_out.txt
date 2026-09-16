@@ -1,0 +1,14 @@
+FILTER 1 (symmetry): the deficit is symmetric under X <-> Y; a two-insertion pair (A, B) contributes symmetrically iff A = B or
+   the pair is symmetrized, so the surviving family A = x^(-2+2r), B = x^(-2-2r) must be symmetrized -- and then its leading layer
+   depends only on A B = x^-4, hence is the SAME flat family for every r (sec. 38(am)).
+FILTER 2 (flatness): so every member of that family predicts a FLAT leading layer.  Testing the pinned data:
+   spin 7: [X^2]/[X^1Y] = (3*t**3 - 19*t**2 + 81*t - 137)/(2*(15*t**3 + t**2 + 85*t - 141))  -> flat: False
+            large-t limit of that ratio: 1/10  (a flat family would give 1)
+   spin 9: [X^3]/[X^2Y] = 3*(t - 3)*(t**2 - 2*t + 21)/(77*t**3 + 7*t**2 + 431*t - 939)  -> flat: False
+            large-t limit of that ratio: 3/77  (a flat family would give 1)
+VERDICT: the whole surviving two-insertion family is excluded by the two cheapest filters together -- symmetry forces it to enter
+         symmetrized, symmetrization leaves its leading layer flat, and the deficit's leading layer is not flat.  So the classical
+         non-diagonal route is closed for the entire one-parameter family, not only for the pair A = B = x^-2 that Codex refuted.
+REMAINING inside non-diagonal mixing: objects whose leading layer is NOT governed by the classical limit -- i.e. where the quantum
+         (heat-kernel) corrections enter at the same depth as the classical term.  Codex's generating integral is the tool; the
+         filters above say what it must produce: symmetric, non-flat, with the pure part vanishing one order deeper than the mixed.

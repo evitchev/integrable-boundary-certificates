@@ -1,0 +1,10 @@
+Solution 3 exponents from the certified top symbol at spin 7: [{'a2': -(t - 3)/(t - 5), 'b2': -(t - 3)/(t - 5)}]
+   third exponent by the pillow sum rule c2 = -2 - a2 - b2 = 4/(t - 5)
+
+(1) route 15 PREDICTION, the i_1 = 2 pattern at spin 7, t = 2 (relative to the pure coefficient): [1, 10/11, 1]
+(2) the pillow operator's ACTUAL degree-2 mismatch pattern at t = 2: [1, 10/11, 1]
+(3) the two-tower/kernel deficit pattern (sec. 38(an)) at t = 2: [1, -34/3, 1]
+
+route 15's predicted pattern matches the pillow mismatch: True
+route 15's predicted pattern matches the two-tower/kernel deficit: False
+READING: the third sector accounts for the layer in one of the two descriptions

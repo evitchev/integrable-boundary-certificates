@@ -1,0 +1,7 @@
+spin 3: zeroth order agrees: True
+spin 5: zeroth order agrees: True
+16 first-order equations in 9 unknowns
+solutions: []
+Groebner basis: [1] -- NO solution (certificate)
+spin 3 alone: [{a1: mu3/4, a2: -4*b3 + 2*mu3 + 9/8, a3: 9*mu3/16 + 15/32, b1: 4*b3 - 2*mu3 - 3/2, b2: mu3/4, c1: 12*mu3 + 39/4}]
+REFUTED: the first-order deformation of the c = -2 anchor is not a mean-field shift of two KdV towers (spin 5 inconsistent with spin 3)

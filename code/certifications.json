@@ -732,7 +732,7 @@
         "R1",
         "R3"
       ],
-      "description": "Kernel-checked Lean 4 + Mathlib proofs of the abstract skeletons (lean/Bootstrap.lean): draft Lemma 1 (bootstrap lemma, graded-Lie form and as-stated odd-spin form) and R3's degree-bound interpolation argument. Includes a negative control (a false proof must be rejected). Expensive: the pinned Lean toolchain is machine-local, not part of the sympy-only portable core; fails loudly where absent. Division of labor per lean/README.md: Lean certifies the skeletons, the engines certify the instances.",
+      "description": "Kernel-checked Lean 4 + Mathlib proofs over every lean/*.lean file: lean/Bootstrap.lean (draft Lemma 1, the bootstrap lemma in graded-Lie and as-stated odd-spin form, and R3's degree-bound interpolation argument), lean/Specialization.lean (the specialization lemma and rational-section vanishing), lean/LatticeExponents.lean (the jumping-locus exponent lattice), and lean/KernelContiguity.lean (the three-term Gauss contiguity relation x_X w(1,0) + (x_Y+k) w(0,1) = (x_X+x_Y+k) w(0,0) among the shifted top-layer kernels of the cylindrical oper program, for every spin index and shift, with explicit non-degeneracy hypotheses; ansatz note secs. 38(az)-(bg)). Includes a negative control (a false proof must be rejected). Expensive: the pinned Lean toolchain is machine-local, not part of the sympy-only portable core; fails loudly where absent. Division of labor per lean/README.md: Lean certifies the skeletons, the engines certify the instances.",
       "mode": "run",
       "expensive": true,
       "command": [
@@ -2086,15 +2086,23 @@
         "LAB RESULT, pinned not recomputed (lab/classical_w12_sheet2_*.py; sec. 33 addendum; CORRECTED 2026-09-06, sec. 36(d)): on sheet 2 at t = 9/7, weight 12, no element of the two-dimensional kernel pencil has a factor 3P^2 - Q^2 + kappa or 6P^2 + Q^2 + kappa (the two slopes of the distinguished top part) nor a conjugate-shift quadratic of those slopes -- so the X-orbit fusion product of Solution 3's palindromic points is absent on sheet 2's own point.  The earlier wording 'irreducible for every element of the pencil' was an overstatement: the slope-free search (lab/classical_pencil_search.py) finds the member lam = -2359/120 with top part -Y^5 (9X - Y), whose eigenvalue splits completely into linear factors -(16Y-49)(16Y-45)^2(16Y-33)(16Y-13)(144X-16Y+33)/2^24",
         "LAB RESULT, pinned not recomputed (lab/classical_w16_recurrence_test.py, lab/classical_w16_fit.py; sec. 35): the recurrence charge of sheet 3 at t = 5/3, weight 16 (fast-path kernel record pinned) has eigenvalue e_15 = e_5 x R_10, exactly divisible by the weight-6 fusion element, with R_10 irreducible over Q(i sqrt2), top part (P^2-Q^2)^4 (P^2+Q^2), and not a polynomial in the ordinary charges' eigenvalues (nor e_5 times weight-4 products)",
         "LAB RESULT, pinned not recomputed (lab/classical_w18_fusion_test.py; preregistered 2026-09-05 22:26; sec. 36): the extra charge of sheet 3 at t = 11/9 (q = 10, weight 18, kernel record pinned) has eigenvalue EXACTLY equal to the filed fusion product -prod_{m=-4}^{4} Lambda(P + i sqrt2 m/sqrt10), Lambda = P^2 - Q^2 + 81/20 -- the fourth coupling (q = 4, 6, 8, 10) and the second preregistered confirmation; computed with the exact-arithmetic generating-function recipe lab/vev_genfun_fast.py, validated exactly against lab/vev_genfun.py on the twelve certified densities and against the pinned weight-14 and weight-16 eigenvalues (results/lab/classical/vev_genfun_fast_validation.txt)",
-        "LAB RESULT, pinned not recomputed (lab/classical_pencil_search.py, results/lab/classical/pencil_search_out.txt; sec. 36(c)): SHEET-2 LAW, exact at q = 4, 8, 12 (t = 5/3, 9/7, 13/11; weights 6, 12, 18 = 3q/2; the weight-6 kernel certified, weights 12 and 18 from the pinned fast-path records): the kernel pencil contains a member with top part Y^(3q/4-1) ((3q/2-3) X - Y) (X = P^2, Y = Q^2, article momenta) whose eigenvalue is prod_{m in M} (c - 2 m^2 beta^2 - Y) times (c - 2 (q/4)^2 beta^2 - Y + (3q/2-3) X), c = (q-1)^2/(2q), beta^2 = 1/q, M = {0, +-1, ..., +-(q/4-1), q/4, ..., q/2-1} -- the Lambda factors of the sheet-3 fusion product evaluated at P = 0 over a truncated orbit, with a single factor carrying P^2; the form was fixed on q = 8, 12 and retrodicts q = 4 exactly",
+        "LAB RESULT, pinned not recomputed (lab/classical_pencil_search.py, results/lab/classical/pencil_search_out.txt; sec. 36(c)): SHEET-2 LAW, exact at q = 4, 8, 12 (t = 5/3, 9/7, 13/11; weights 6, 12, 18 = 3q/2; the weight-6 kernel certified, weights 12 and 18 from the pinned fast-path records): the kernel pencil contains a member with top part Y^(3q/4-1) ((3q/2-3) X - Y) (X = P^2, Y = Q^2, article momenta) whose eigenvalue is prod_{m in M} (c - 2 m^2 beta^2 - Y) times (c - 2 (q/4)^2 beta^2 - Y + (3q/2-3) X), c = (q-1)^2/(2q), beta^2 = 1/q, M = {0, +-1, ..., +-(q/4-1), q/4, ..., q/2-1} -- the Lambda factors of the sheet-3 fusion product evaluated at P = 0 over a truncated orbit, with a single factor carrying P^2; the form was fixed on q = 8, 12 and retrodicts q = 4 exactly; the slope a of a linear factor a X + Y + kappa is searched over Q (rational roots of the top-degree condition), kappa over algebraic numbers",
         "LAB RESULT, pinned not recomputed (same run; sec. 36(c)): on sheet 3 the slope-free search finds ONLY the pure-power member (the fusion product) at q = 6, 8, 10 (weights 10, 14, 18) -- no Y-type and no X-type member; at the merged point q = 4 (weight 6, sheets 2 and 3 identical) the pencil carries three structured members: the fusion product, the sheet-2 Y-type member (8Y-9)(8Y-5)(24X-8Y+5)/4608, and an X-type member -X(2X+1)(8X-24Y+31)/120 vanishing at P^2 = 0 and P^2 = -1/2 (nu_X = 0 and 1/2 in the BLZ dictionary); the X-type member appears nowhere else through weight 18",
         "LAB RESULT, pinned not recomputed (same run; sec. 36(c)): the weight-16 recurrence pencil at t = 5/3 carries, besides e_5 x R_10, a Y-type member with top part -Y^5 (14X^3 - 14X^2 Y + 6XY^2 - Y^3) and eigenvalue -(8Y-9)(8Y-5)^2 x (irreducible quintic)/(3 2^24): the m = 0, +-1 pure-Y factors of the q = 4 law with a cofactor outside the law",
         "LAB RESULT, pinned not recomputed (lab/classical_w18_sheet2_test.py, lab/classical_w18_sheet2_pencil.py; sec. 36(c)): at t = 13/11, weight 18, the classical conserved space of Solution 2 has nullity 2 with no member divisible by a square of x^2 - m r^2 for m in {1, 1/3, 3, 1/6, 6, 2, 1/2}; the member divisible by x^2 - r^2 lifts to a quantum element whose eigenvalue is irreducible over Q, Q(i), Q(i sqrt2), Q(i sqrt3), Q(i sqrt6), Q(sqrt2), Q(sqrt3), Q(sqrt6) and the biquadratic fields Q(i sqrt2, i sqrt3), Q(i, sqrt2), Q(i, sqrt3); the resultant search of the pencil then finds the Y-type member (lam = 40106/315) and shows its conjugate-quadratic hits are regroupings of the pure-Y linear factors",
         "LAB RESULT, pinned not recomputed (lab/classical_sheet2_reading.py, 16 PASS lines; sec. 37(a)): KAC FORM of the sheet-2 law, exact at q = 4, 8, 12 -- with Lambda_s(Q) := Lambda(P = i sqrt2 nu_{1,s}, Q) = -2 h_{1,s} - Q^2 = (s-1)(2q-1-s)/(2q) - Q^2, the Y-type member's eigenvalue is proportional to prod_{s even, 2 <= s <= 3q/2-2} Lambda_s(Q) x [Lambda_{q/2}(Q) + (3 nu_{1,2}/beta) P^2]; the multiset {nu_{1,s}^2} is sheet 3's orbit {m^2 beta^2 : |m| <= q/2-1} with the points |m| >= q/4 taken once; the eigenvalue is linear in P^2; over Q(i sqrt2 beta) no factor carries a Q-shift; the X-type member at q = 4 vanishes exactly at nu_X = nu_{1,2}, nu_{1,4}; the weight-16 Y-type member is prod_{s=2,4,6} Lambda_s times an irreducible quintic; the filed prediction S2-16 equals the Kac form at q = 16",
         "LAB RESULT, pinned not recomputed (lab/classical_cofactors.py; sec. 37(b)): the cofactors R_10 (e_15 = e_5 R_10, weight 16, t = 5/3) and Q_5 (the weight-16 Y-type member's quintic) are irreducible over Q and over Q(i), Q(sqrt2), Q(i sqrt2), Q(sqrt3), Q(i sqrt3), Q(sqrt6), Q(i sqrt6), Q(sqrt5), Q(i sqrt5) and the biquadratic fields Q(i, sqrt2), Q(i, sqrt3), Q(i sqrt2, i sqrt3), Q(sqrt2, sqrt3), Q(i sqrt2, sqrt5); under the P-shifts i sqrt2 k beta, k = 1/2, 1, 3/2, 2, neither has a common factor with e_5, e_15 or its own unshifted self; R_10's rational zeros on the Kac grid (nu_X = nu_{1,s}, nu_Y^2 = h_{1,s'}) are the eight points (s, s') = (-1,1), (1,-1), (0,2), (1,1), (2,0), (1,3), (2,2), (3,1), all with s' - s in {-2, 0, 2} (on the zero loci of e_5's three factors) though R_10 contains none of those factors; Q_5 has one, (2, 0); at Q = 0, R_10's rational X-roots are nu_X = nu_{1,3}, nu_{1,1}, nu_{1,-1}; R_10's discriminants in X and Y are irreducible over Q while Q_5's factor as -(8Y+7)^4 (8Y+27)^2 (64Y^2+32Y+27)(sextic) and (2X+1)^3 (degree 15): branch loci at the Kac values -2 h_{1,0}, -2 h_{2,2}, -2 nu_{1,2}^2",
         "LAB RESULT, pinned not recomputed (lab/classical_tq_relation_test.py; sec. 37(c)): five candidate functional relations between the sheet-3 fusion product T_q(P, Q) and the sheet-2 Kac form e2_q are EXCLUDED exactly at q = 4, 8, 12 -- e2_q is not proportional to the linearization of T_q in P^2 at P = 0 with the outer orbit factors removed, nor at any orbit or half-orbit expansion point i sqrt2 k beta (k = 1/2..q/2: no common factor); T_q'(Q) Lambda_{q/2}(Q) != sigma T_q(0, Q); the mixed factor Lambda_{q/2} + sigma P^2 divides neither dT_q/dP^2 nor any difference or sum T_q(P + i sqrt2 k beta) -+ T_q(P - i sqrt2 k beta), k = 1/2..2; and e2_q is not a(Q) T_q(P + P0) + b(Q) T_q(P + P1) with polynomial a, b for any two orbit/half-orbit points",
-        "LAB RESULT, pinned not recomputed (lab/classical_bidiagonal_supports.py, 6 PASS lines; sec. 37(d)): from the bidiagonal theorem (P3f), at every isolated lattice point (j, j') the 2-dim classical kernel contains a RIGHT-supported density r^(2(k-j)) x (degree j) and a LEFT-supported x^(W-2j') x (degree j'), independent (all 445 affine lattice points with W <= 30); Solution 2's c_{1,q} series (t = (q+1)/(q-1), q = 0 mod 4, W = 3q/2) is exactly its j = 1 lattice points ((j, j') = (1, q/2-1); the j = 1 weights are 6, 12, ..., 36), where the right-supported density is r^(W-2)((W-3) x^2 - r^2): the sheet-2 law's top symbol, its slope 3(q-2)/2 = W - 3 and its linearity in P^2 (degree-j cofactor with j = 1) are DERIVED classically, q = 4..20; at q = 4 the left-supported density x^4 (x^2 - 3 r^2) is the X-type member's top symbol; at Solution 3's points (j = j' = (q-2)/2, c = 1) the supported densities r^q(...) and x^q(...) are the two halves of the binomial expansion of (x^2 - r^2)^(q-1), whose sum is the fusion member's pure-power density (q = 6, 8, 10); at all 49 palindromic lattice points (c = 1, j = j') with W <= 30 the symmetric combination of the supports is (x^2 - r^2)^(2j+1) times a palindromic cofactor, constant exactly at the first occurrences W = 4j + 2 (sec. 29's statement derived)",
-        "LAB RESULT, pinned not recomputed (lab/classical_pencil_quadratic_search.py on all eight kernel records; sec. 37(e)): conjugate-shift quadratic factors (a X + Y + kappa)^2 + mu X, + mu Y, and (X + kappa)^2 + mu Y with mu != 0 occur in the kernel pencils ONLY as the fusion members' conjugate pairs on sheet 3 (q = 4, 6, 8, 10 and the weight-16 recurrence's e_5 factor) and as regroupings of the Y-type members' pure-Y linear factors (q = 4, 8, 12 and weight 16): the non-fusion members at sheet 3's points and the non-Y-type members at sheet 2's points carry no conjugate-shift structure"
+        "LAB RESULT, pinned not recomputed (lab/classical_bidiagonal_supports.py, 8 PASS lines; sec. 37(d)): from the bidiagonal theorem (P3f), at every isolated lattice point (j, j') the 2-dim classical kernel contains a RIGHT-supported density r^(2(k-j)) x (degree j) and a LEFT-supported x^(W-2j') x (degree j'), independent (all 445 affine lattice points with W <= 30); Solution 2's c_{1,q} series (t = (q+1)/(q-1), q = 0 mod 4, W = 3q/2) is exactly its j = 1 lattice points ((j, j') = (1, q/2-1); the j = 1 weights are 6, 12, ..., 36), where the right-supported density is r^(W-2)((W-3) x^2 - r^2): the sheet-2 law's top symbol, its slope 3(q-2)/2 = W - 3 and its linearity in P^2 (degree-j cofactor with j = 1) are DERIVED classically, q = 4..20; at q = 4 the left-supported density x^4 (x^2 - 3 r^2) is the X-type member's top symbol; at Solution 3's points (j = j' = (q-2)/2, c = 1) the supported densities r^q(...) and x^q(...) are the two halves of the binomial expansion of (x^2 - r^2)^(q-1), whose sum is the fusion member's pure-power density (q = 6, 8, 10); at all 49 palindromic lattice points (c = 1, j = j') with W <= 30 the symmetric combination of the supports is (x^2 - r^2)^(2j+1) times a palindromic cofactor, constant exactly at the first occurrences W = 4j + 2 (sec. 29's statement derived)",
+        "LAB RESULT, pinned not recomputed (lab/classical_pencil_quadratic_search.py on the seven two-dimensional kernel records -- the eighth, weight 10 on sheet 2 at t = 7/5, is one-dimensional and has no pencil; slope a searched over Q, kappa and mu over algebraic numbers; sec. 37(e)): conjugate-shift quadratic factors (a X + Y + kappa)^2 + mu X, + mu Y, and (X + kappa)^2 + mu Y with mu != 0 occur in the kernel pencils ONLY as the fusion members' conjugate pairs on sheet 3 (q = 4, 6, 8, 10 and the weight-16 recurrence's e_5 factor) and as regroupings of the Y-type members' pure-Y linear factors (q = 4, 8, 12 and weight 16): the non-fusion members at sheet 3's points and the non-Y-type members at sheet 2's points carry no conjugate-shift structure",
+        "LAB RESULT, pinned not recomputed (lab/classical_symbolic_N_probe.py; sec. 38(a), RESCOPED 2026-09-07 after Codex round 28): with N symbolic in the vacuum recipe and the kernel densities fixed at their points, the fusion products at q = 4 (weight 6) and q = 6 (weight 10) and the Y-type eigenvalues at q = 4 (weight 6) and q = 8 (weight 12, sheet 2) are IRREDUCIBLE polynomials in (P^2, Q^2, N) of N-degree 3, 5, 3, 6: at generic N there is no factorization, and at the point's N = c_{1,q} the full orbit or Kac factorization appears.  The specializations can be reducible at finitely many other N: for the q = 4 Y-type density the complete reducible-specialization locus is {-25/2, -2070/49} (Res_Y of the two X-coefficients = (2N+25)^2 (49N+2070)/const; at N = -2070/49 a single linear factor 49Y - 183 splits off, not the Kac factorization), for the q = 4 fusion density it is {-25/2} (the review's linear-factor elimination); for the q = 8 Y-type density the resultant is (4N+143)^5 times a degree-10 polynomial in N with no rational root, so the point is its only rational reducible specialization; for the q = 6 fusion density the top-degree condition forces the slope a = -1 and the point N = -24 is the only rational N with a linear factor (a quadratic x cubic splitting at another N is not excluded by a linear-factor search) -- lab/classical_symbolic_N_loci.py, output pinned.  The X-type member at q = 4 factors for every N as P^2 (2P^2 + 1)(N - 3 - 4P^2 + 12Q^2).  The earlier wording 'factoring only at the point's N' was an overstatement",
+        "LAB TOOL, validated (lab/fast_kernel3.py, sha256 3981272caec1251e; lab/fast_kernel3_compare.py; sec. 38(c)): the genuine kernel by the QUOTIENT formulation -- ad commutes with d, so the commutator map descends to V/Im D_c -> T/Im D_t; d is triangular under the descending-letter-multiset order (fail-closed distinctness of leading terms), both quotients have the non-pivot monomials as bases, and the genuine kernel is the plain kernel of the induced matrix built from exact residues of the NON-PIVOT candidates only (8,357 of 25,258 at weight 22), with the d-parts recovered by the triangular sweep; parallel exact build, CRT lifting, exact verification of every witness by the certified engine (identity sum v_b ad(b) + sum S_j d(b'_j) = 0), upper bound by the mod-p nullity.  Reproduces the pinned fast_kernel2 records at weight 14 (sheet 3, t = 9/7), weight 16 (t = 5/3) and weight 18 (sheet 2, t = 13/11): genuine dimension 2 each, the two witnesses' eigenvalue pencils coincide with the pinned ones (rank 2 of the four eigenvalue vectors), exact identities re-verified; run times 3 s / 10 s / 35 s against 44 s / 359 s / 8,084 s (v2: one multi-prime sweep in the pool, per-prime eliminations in parallel)",
+        "LAB RESULT, pinned not recomputed (lab/fast_kernel3.py sha256 5e29e28a8cdb4137, record results/lab/fast_kernel3/w22_t1311_sheet3.json; lab/classical_w22_fusion_test.py; preregistered F-12 2026-09-06 03:45 (commit effe325; the earlier wording 08:49 named a later commit); sec. 38(d)): the weight-22 kernel of sheet 3 at t = 13/11 (q = 12; (N, s) = (-119/2, -143/2)) has genuine dimension 2 -- the coupling rule's filed jump at spin 21 -- computed by the quotient formulation in 1233 s with 5 primes and both witnesses verified by exact identities; the extra charge with top part (x^2 - r^2)^11 (7,908 monomials, levels 0-20 even) has vacuum eigenvalue EXACTLY equal to the filed fusion product -prod_{m=-5}^{5} Lambda(P + i sqrt2 m/sqrt12), Lambda = P^2 - Q^2 + 121/24: the fifth coupling (q = 4, 6, 8, 10, 12) and the third preregistered confirmation.  Pencil searches on the weight-22 record (results/lab/classical/w22_pencil_searches_out.txt): the only member with a linear factor a X + Y + kappa (slope over Q) is the fusion member at lam = 1/66 (factor a = -1, kappa = -121/24, i.e. Lambda itself), and the only conjugate-shift quadratic factors are that member's five orbit pairs; no X + kappa factor; no other structured member",
+        "LAB RESULT, pinned not recomputed (lab/fast_kernel3.py sha256 5e29e28a8cdb4137, record results/lab/fast_kernel3/w24_t1715_sheet2.json; lab/classical_w24_s2_test.py; preregistered S2-16 2026-09-06 03:45 (commit effe325; the earlier wording 08:49 named a later commit); sec. 38(e)): the weight-24 kernel of sheet 2 at t = 17/15 (q = 16; (N, s) = (-667/8, -765/8)) has genuine dimension 2 -- the coupling rule's filed jump at spin 23 -- computed by the quotient formulation in 12,045 s with 6 primes (ten eliminations of 50,307 x 17,494, two at a time) and both witnesses verified by exact identities; the member with top part Y^11 (21X - Y) has vacuum eigenvalue EXACTLY a constant multiple of the filed Kac form prod_{s even, 2..22} Lambda_s(Q) x [Lambda_8(Q) + 21 P^2]: the sheet-2 law holds at q = 4, 8, 12, 16, the last preregistered.  Pencil searches on the weight-24 record (results/lab/classical/w24_pencil_searches_out.txt): the only member with linear factors is the Y-type member at lam = 29/1848 (the eight pure-Y factors of the Kac form and the mixed factor 21X - Y + 161/32); its conjugate-shift quadratic hits are regroupings of those factors; no X + kappa factor; no other structured member",
+        "LAB TOOL, validated (lab/fast_kernel3.py v3 sha256 c38606e5b23be691, lab/fast_kernel3_distributed.sh; sec. 38(f)): the quotient-formulation kernel in three phases -- build and normal forms on the head node, one dense elimination per prime per worker node from a compact file, merge with CRT, rational reconstruction and exact verification on the head; the phases reproduce the single-process path at weights 14 and 16 and the pinned weight-22 record of sheet 3 at t = 13/11 with IDENTICAL witness vectors (build 257 s, eight primes on four nodes at about 285 s each, merge 110 s).  v4 (sha256 0821aa5af03e44a3, 2026-09-07): a prime dividing a residue denominator is skipped instead of aborting the build (review finding; negative control results/lab/fast_kernel3/badprime_control_out.txt: the weight-6 Hamiltonian scaled by the reciprocal of the first prime -- that prime skipped, certified with three others, charge parts identical to the unscaled run).  The comparison helper lab/fast_kernel3_compare.py (v2) now takes the sheet, N and s from the records, always verifies every witness's exact identity with a parallel residue computation, and exits nonzero on any failure; its re-pinned output covers weights 14, 16, 18 (sheet 2) and the distributed weight-22 record, all PASSED -- the earlier output had no identity check at weight 18 and the earlier helper hard-coded sheet 3 (review finding).  The committed v4 re-validated against the pinned fast_kernel2 records at weights 14, 16 and 18 (sheet 2) with the v2 comparison helper: all three PASSED (results/lab/fast_kernel3/v4_validation.txt), closing the review's remark that the capped-solver version had not itself been compared",
+        "LAB RESULT, pinned not recomputed (lab/classical_w6_members_by_Y_content.py; sec. 38(h)): splitting the weight-6 members at t = 5/3 by the number of Y-pairs per monomial and taking each part's vacuum value with N symbolic: the X-type member's pure-X part has value -X(2X+1)(4X+3)/60 and its one-pair part X(2X+1)(N+12Y)/60 -- both carry the X-sector Kac zeros nu_(1,4), nu_(1,2), and their cofactors add to the N-linear mixed factor N - 3 - 4X + 12Y; the Y-type member's parts (pure-X constant 5/3024; one, two, three pairs) and the fusion member's parts do not factor individually -- their Kac and orbit factorizations arise only in the sum, at the point's N",
+        "LAB RESULT, pinned not recomputed (lab/classical_w6_xtype_uniqueness.py; sec. 38(j)): the X-type member's pair part decomposes by pair type -- both derivative pairs (Y.d^2Y), (dY.dY) carry the X-coefficient -(3/5) J^2 (vacuum value (12X+1)/20, no Kac zeros), the zero-mode pair (Y.Y) carries B_0 = -(2/5) J^4 + J d^2J (vacuum value -X(2X+1)/5); the pure-X weight-6 densities modulo total derivatives form a 3-dim space on which the vacuum map is injective, so the pure-X part A = (2/15) J^6 + (1/3) J^3 d^2J - (7/15) J d^4J is the UNIQUE weight-6 pure-X density up to scale with vacuum zeros at nu_(1,4) and nu_(1,2), and B_0 the unique weight-4 one; the Hamiltonian's own pure-X part J^4 - 2(dJ)^2 has no such zeros; the N-linear factor N + 12Y arises only after summing the three pair types",
+        "LAB TOOL + LAB RESULT, pinned not recomputed (lab/excited_states.py, lab/classical_excited_driver.py, lab/classical_excited_shift_test.py; sec. 38(k)): matrix elements of the cylindrical charges between oscillator states of the two-sector Fock space on the Euclidean cylinder (modes a_n, a^i_n with [a_n, a_m] = n delta, zero modes P and Q e), by the Wick expansion of the plane-normal-ordered monomials with the certified cylinder constants C(a, b) for letter-letter pairs and Euclidean mode factors n(-n)^k / n n^k for absorption and creation; the Y-index structure by pair objects (loops N, zero-mode chains Q^2, the direction e, transverse ends).  Validated: level 0 equals the certified vacuum eigenvalues for I_3 and the three weight-6 members at t = 5/3; on the O(N-1)-singlet and transverse-vector blocks at levels 1 and 2 (2, 6 and 1, 3 states) every extra charge's matrix commutes EXACTLY with I_3's (12 distinct extra-charge-versus-I_3 comparisons on the four blocks; the committed count of 24 includes self-commutators and the level-0 blocks).  Result (scope corrected in Codex round 29): on the level-1 TRANSVERSE block and on both level-2 blocks exactly one eigenvalue of each charge is polynomial in (P, Q), and it equals the VACUUM law with Q^2 -> Q^2 - 2L (the Y-sector weight shifted by the level) for the fusion member, the Y-type member, the X-type member and I_3 alike (level-shift law, 12 of 12 cases = 4 charges x 3 blocks); the level-1 SINGLET block has no polynomial eigenvalue (its characteristic polynomial is an irreducible quadratic and the shifted vacuum value is not a root), and the remaining eigenvalues on the other blocks are roots of an irreducible quadratic (level 2 transverse) or quintic (level 2 singlet), the states where the X excitation mixes with the Y excitation along the momentum"
       ],
       "artifacts": [
         {
@@ -2271,12 +2279,186 @@
         },
         {
           "path": "results/lab/classical/pencil_quadratic_search_out.txt",
-          "sha256": "sha256:b70b04333049ddd08e34a6a93e22d194f62a12ada6579eb43d786a351b1ded45"
+          "sha256": "sha256:2ef5938e3d4c69e291380b23c7665524cd9e9f12ba17173e514d14ddfdc46ee8"
+        },
+        {
+          "path": "results/lab/classical/symbolic_N_probe_out.txt",
+          "sha256": "sha256:82fa01b6eb691f2d0995f5b053792d1a0d04e07091e9f85e72bb3e409c9c6cad"
+        },
+        {
+          "path": "results/lab/fast_kernel3/fk3v2_w14.json",
+          "sha256": "sha256:eb1139d19e326ab210a097c165f9df7f93de07d8a02a95ab6f6e642b82ed0fc7"
+        },
+        {
+          "path": "results/lab/fast_kernel3/fk3v2_w16.json",
+          "sha256": "sha256:ef37661352c3166e235ce47da20669b762373be7914f9b2e1a8ca902ebcf917b"
+        },
+        {
+          "path": "results/lab/fast_kernel3/fk3v2_w18s2.json",
+          "sha256": "sha256:74cb2fda798968affb682f681a8cc219250f964664db6a2f06e80aa457c77cb6"
+        },
+        {
+          "path": "results/lab/fast_kernel3/fk3v2_tests.log",
+          "sha256": "sha256:c704f4c74d268e5d09f08ed756eb2008c58c4fa6a46c74236dcf3c6e0a96c6b4"
+        },
+        {
+          "path": "results/lab/fast_kernel3/compare_with_fast_kernel2.txt",
+          "sha256": "sha256:d2be393feb182ddba0a37c39dcc1afa1c8d6c5cdde0b6e440660b456b5b70dbf"
+        },
+        {
+          "path": "results/lab/fast_kernel3/w22_t1311_sheet3.json",
+          "sha256": "sha256:31128b848fca4126a981e1b41e8945e919d4ce933b797d5ee193fbd95239edb7"
+        },
+        {
+          "path": "results/lab/fast_kernel3/w22_t1311_sheet3.log",
+          "sha256": "sha256:416ed2d2b99253ff1dae28404eb93815523f01602806512bfcc346c6bedce2db"
+        },
+        {
+          "path": "results/lab/classical/w22_fusion_test_out.txt",
+          "sha256": "sha256:999688878e702bf636fd93f1a6054dc8d9fb5997d2ed50e9af5cfb2048e99f7c"
+        },
+        {
+          "path": "results/lab/classical/w22_pencil_searches_out.txt",
+          "sha256": "sha256:d8cf8399087d9bce1b82ce7e176bee87a03ef5c0cd6b87eab7eadb219687bfff"
+        },
+        {
+          "path": "results/lab/fast_kernel3/w24_t1715_sheet2.json",
+          "sha256": "sha256:c9ecbf13b7ff99ffb24692e93ceb06cee2d41cc1da6dac3fd6d1e462634f8aa5"
+        },
+        {
+          "path": "results/lab/fast_kernel3/w24_t1715_sheet2.log",
+          "sha256": "sha256:b275140ec7856a096ddcde69856d0d91fb0ca4f53e1d45e3962c8307f6e00035"
+        },
+        {
+          "path": "results/lab/classical/w24_s2_test_out.txt",
+          "sha256": "sha256:9f11b794c6b667ecd023a8d73d096dbc92ec8085044a56456c74216a18b6d686"
+        },
+        {
+          "path": "results/lab/classical/w24_pencil_searches_out.txt",
+          "sha256": "sha256:af0fb359211e5fe099c05f5c81d2c0560b5144a69b6f6fc9577636d0be89cdaf"
+        },
+        {
+          "path": "results/lab/fast_kernel3/w22_t1311_sheet3_distributed.json",
+          "sha256": "sha256:e06a43df71dc89407e2a161fcd4cfce4a2d22c6e69b54df53c8ffbe30b0c1143"
+        },
+        {
+          "path": "results/lab/fast_kernel3/w22_t1311_sheet3_distributed.log",
+          "sha256": "sha256:07a14cd4a1c845b0f87dd2ab72c947b902ec03b333348655d159dcd7d6f75903"
+        },
+        {
+          "path": "results/lab/fast_kernel3/badprime_control_out.txt",
+          "sha256": "sha256:82722162bb4d60d375fec4a98728d1f9239bf09fa7768e25659e43590e2df824"
+        },
+        {
+          "path": "results/lab/classical/symbolic_N_loci_out.txt",
+          "sha256": "sha256:d34ce8f46f7c31b8e02f85db0b5cf933d3b3ec2e00d7afc8f1a1c711be7d7605"
+        },
+        {
+          "path": "results/lab/classical/w6_members_by_Y_content_out.txt",
+          "sha256": "sha256:1580f5b1f3ddfaf7147698579576b75f02cb1d1fd87a94f98f7831a59e315139"
+        },
+        {
+          "path": "results/lab/fast_kernel3/v4_validation.txt",
+          "sha256": "sha256:c1f43d3df487826ada9e038918d72a2dcc544f1b5d0aee8e510367fbd7bf551a"
+        },
+        {
+          "path": "results/lab/classical/w6_xtype_uniqueness_out.txt",
+          "sha256": "sha256:289378257765e7d20aec5d760ba20ff938c5f8abb9727e645253576c87820cad"
+        },
+        {
+          "path": "results/lab/classical/excited_driver_levels012_out.txt",
+          "sha256": "sha256:429aa75dd7f2e91d81b250f569f3ab4acfecb633c13995c0f1f3ea244510a90d"
+        },
+        {
+          "path": "results/lab/classical/excited_shift_test_out.txt",
+          "sha256": "sha256:6c3058b9a8859a5733422d1eda767d9cd9c0dbb37080a2a03d3bfbd42b945752"
         }
       ],
       "required_markers": [
         "CLASSICAL HIERARCHY CERTIFIED"
       ]
+    },
+    {
+      "id": "cyl_pillow_identification",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_pillow_identification.py"
+      ],
+      "description": "The pillow-type cylindrical operator with its exact sub-leading completion (ansatz note sec. 38(ad)) is the pillow-brane vacuum oper of Lukyanov-Zamolodchikov (arXiv:1208.5259, (6.1)-(6.2)) with the third momentum frozen at P_1^2 = 1/6: the paper's ALGEBRAIC vacuum eigenvalues (5.13) with the (A.3) constants, evaluated at the identification alpha^2 = -c0, beta^2 = c_X X/2, gamma^2 = -kappa_s c_X Y/2 - d2, equal the operator's continued-Beta WKB coefficients I_1 and I_3 EXACTLY (all coefficients, constants included) at 17 sample t over the three solutions; the spin-1 law is X + Y + (N+1)/12; and the certified cylindrical spin-3 charge differs from the oper's by the closed-form constant Delta(t) of sec. 38(af) (checked at sample t including hold-outs of its reconstruction). Exact rational arithmetic; fail-closed (negative drills: a wrong P_1^2 or a wrong Delta(t) fail every C2/C3 line and exit 1). ~20 s",
+      "claims": [
+        "the sec.-38(ad) operator is the Lukyanov-Zamolodchikov pillow-brane vacuum oper at P_1^2 = 1/6, with (5.13) = its I_1, I_3 exactly; the cylindrical spin-3 gap is the closed-form constant Delta(t) of sec. 38(af)"
+      ],
+      "required_markers": [
+        "PILLOW IDENTIFICATION CERTIFIED"
+      ],
+      "timeout_s": 600
+    },
+    {
+      "id": "cyl_exact_point",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_exact_point.py"
+      ],
+      "description": "THE EXACT POINT (ansatz note secs. 38(ag)-(ah), batch 23-24): at (N, s) = (28, -9) on Solution 1 and (28, 9) on Solution 2 -- the N = 28 embedding anchor where the two families merge (cyl_n28_tower_embedding) and the Solution 1/2 meeting point of the pillow parameter plane -- the pillow-type cylindrical operator with its exact sub-leading completion (the Lukyanov-Zamolodchikov pillow-brane vacuum oper at P_1^2 = 1/6, cyl_pillow_identification), explicitly psi_zz = [kappa^2 u^(3/2)(1+u)^(-5/2) - X w/2 - (Y/4 + 5/16) w(1-w) + (1-w)/16] psi, reproduces the cylindrical vacuum eigenvalues EXACTLY at spins 3, 5, 7, 9, 11 on both sheets: the genuine kernel of ad_{I_3} at each weight 4..12 is recomputed at the point (dimension 1, checked) and its vacuum polynomial taken by the validated Wick recipe (cyl_vev), independently of the lab's rational-in-t tables; the operator's continued-Beta WKB coefficients are computed by the Riccati machinery; the top-normalized mismatch is identically zero at every spin. Exact rational arithmetic; fail-closed. The controls are a separate entry (cyl_exact_point_control). ~15 min (the weight-12 kernels).",
+      "claims": [
+        "at (N, s) = (28, -9) [Solution 1] and (28, 9) [Solution 2] the sec.-38(ad) operator is the cylindrical oper through spin 11: the certified vacuum eigenvalues equal its continued-Beta coefficients exactly (kernels and VEVs recomputed at the point)"
+      ],
+      "required_markers": [
+        "EXACT POINT CERTIFIED"
+      ],
+      "timeout_s": 2400
+    },
+    {
+      "id": "cyl_exact_point_control",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_exact_point.py",
+        "--control"
+      ],
+      "description": "Negative controls of cyl_exact_point, as a separate entry (Opus 5, 2026-09-11: the verdict and its control must not move together in one internal line): the same pipeline must report NONZERO mismatches (a) at the generic point Solution 1, (N, s) = (-46/3, -77/3) (M_3 = -25/1404), (b) at the exact point with d2 perturbed by 1/100, and (c) on the deck partner of the same sheet, Solution 1 at (28, +9) (t = 1/3; M_3 = -17/1560) -- the exactness belongs to the two MERGING sheets, not to N = 28 alone. Exits 0 only if every control fires. ~5 s",
+      "claims": [
+        "the exact-point pipeline reports nonzero mismatches at a generic point, for a perturbed operator and on the same-sheet deck partner (28, +9) of Solution 1"
+      ],
+      "required_markers": [
+        "EXACT POINT CONTROL FIRED"
+      ],
+      "timeout_s": 600
+    },
+    {
+      "id": "cyl_exact_point_deformation",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_exact_point_deformation.py"
+      ],
+      "description": "FIRST-ORDER DEFORMATION OF THE EXACT OPER (ansatz note sec. 38(ah) addendum 1, batches 25-27): at (N, s) = (28, -9) (Solution 1, t0 = -1/3), where the sec.-38(ad) operator is the cylindrical oper (cyl_exact_point), no first-order change of its potential along the O(N) curve in the classes h W(w), h [X f + Y g], h [W + X f + Y g], h U/(kappa^2 Lambda), (h/kappa^2 Lambda)[X^2 g + XY g + Y^2 g], nor of its SYMBOL, kappa^2 Lambda -> kappa^2 Lambda (1 + h sigma(w)), nor a kappa^0 momentum-quadratic term h [X^2 g + XY g + Y^2 g] (the Kac dictionary at first order), nor an analytic kappa-odd term h kappa Q (its first-order odd-spin response is a total derivative by parity: Codex) -- each function any finite combination of monomials w^i (1-w)^j with any exponents, which absorbs every power of Lambda -- reproduces the certified first-order eigenvalue targets. The certificate (i) recomputes the targets M_s'(t0), s = 3..9, from the certified weight-4..10 tables (d/dt by sympy) and the operator's coefficients by dual-number arithmetic through the Riccati/continued-Beta machinery, checking M_s(t0) = 0 and the exactness of the top and sub-leading layers; (ii) proves, for each class and each kind of shape, a linear relation among the X^k-normalized first-order responses as an identity in SYMBOLIC exponents (every continued Beta integral at spin s is B_s(i, j) times a rational function and B_(s+4)/B_s is rational, so a relation among spins congruent mod 4 reduces to a rational function that must vanish identically); (iii) shows that, with the degree-k and degree-(k-1) responses set to zero, each relation is violated by the targets (values -1/32, 1, 1, 45/77, 1, 1, 1, -1/32). The U-class identity is Codex's (review of 694a78a); the symbol class is implemented by lamlog -> lamlog + h D sigma/2 and the factor (1 - h s sigma/2) in the integrals, with the control that sigma = 1 (a rescaling of kappa) has zero response. Exact arithmetic; fail-closed. Controls in a separate entry. ~1 min",
+      "claims": [
+        "at (N, s) = (28, -9) the first-order deformation of the sec.-38(ad) operator along the O(N) curve is not a scalar potential change in the classes W, X f + Y g, W + X f + Y g (order kappa^0), U/(kappa^2 Lambda), the momentum-quadratic kappa^-2 Lambda^-1 class or the momentum-quadratic kappa^0 class, nor a change of the symbol kappa^2 Lambda (1 + h sigma), nor an analytic kappa-odd term, for any shape in the monomial span with any exponents: eight proved integrand identities, each violated by the exact first-order targets"
+      ],
+      "required_markers": [
+        "EXACT POINT DEFORMATION CERTIFIED"
+      ],
+      "timeout_s": 900
+    },
+    {
+      "id": "cyl_exact_point_deformation_control",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_exact_point_deformation.py",
+        "--control"
+      ],
+      "description": "Controls of cyl_exact_point_deformation, as a separate entry: (a) a wrong coefficient in a relation (-600/224 for -627/224) is rejected by the symbolic prover; (b) the W-class relation applied to the X-shapes is NOT an identity (the prover distinguishes kinds); (c) zero targets satisfy every relation (the certificate can pass); (d) the actual targets violate the W relation; (e) in the symbol class, sigma = 1 (a rescaling of kappa) has identically zero normalized response; (f) the kappa-odd source misplaced into rho_1 breaks the parity identity (Kimi K3, d609d6a: a doubled amplitude cannot, the identity being homogeneous, so the wiring is what is tested); (g) the ACTUAL kappa-odd adapter satisfies the local Riccati balance 2 delta rho_0 = F (Codex f9778db: the first version solved the right equation without reading the adapter, so a doubled or deleted source passed; the repaired control reads the linear part of rho_0 produced by the same code the proofs use, and fails on both mutations). Exits 0 only if all seven fire. ~15 s",
+      "claims": [
+        "the deformation certificate's prover rejects wrong coefficients and wrong kinds, its violation test can pass and can fail, and its kappa-odd source is wiring-sensitive (misplacement breaks the identity; the amplitude is fixed by the local Riccati balance)"
+      ],
+      "required_markers": [
+        "EXACT POINT DEFORMATION CONTROL FIRED"
+      ],
+      "timeout_s": 600
     },
     {
       "id": "public_provenance_lint",
@@ -2303,7 +2485,7 @@
     "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
   ],
   "_public_edition": {
-    "generated_on": "2026-09-06",
+    "generated_on": "2026-09-15",
     "pruned_entry_ids": [
       "certificate_provenance_lint",
       "check_a2_1820_provenance",

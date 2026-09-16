@@ -1,0 +1,8 @@
+  t = 2, spin 7 (degree 2): predicted [1, 10/11, 1]  vs mismatch [1, 10/11, 1]  -> MATCH
+  t = 2, spin 9 (degree 3): predicted [1, 3/5, 3/5, 1]  vs mismatch [1, 3/5, 3/5, 1]  -> MATCH
+  t = 4, spin 7 (degree 2): predicted [1, 22/13, 1]  vs mismatch [1, 20802/19367, 1]  -> DIFFERS
+  t = 4, spin 9 (degree 3): predicted [1, 39/17, 39/17, 1]  vs mismatch [1, 54261/39091, 54261/39091, 1]  -> DIFFERS
+  t = 6, spin 7 (degree 2): predicted [1, 34/15, 1]  vs mismatch [1, 989290/372843, 1]  -> DIFFERS
+  t = 6, spin 9 (degree 3): predicted [1, 69/19, 69/19, 1]  vs mismatch [1, 22071/5009, 22071/5009, 1]  -> DIFFERS
+
+VERDICT: the spin-7 agreement does NOT extend; the match at one ratio was a coincidence

@@ -1,0 +1,16 @@
+corrected formula  W/[Gamma(1+2nx)/(Gamma(1/2+nx+ny)Gamma(1/2+nx-ny))], ratio-of-ratios to the first point (1 = agreement):
+   nu_X = 0.3, nu_Y = 0.1: 1.0
+   nu_X = 0.35, nu_Y = 0.25: 1.0
+   nu_X = 0.45, nu_Y = 0.1: 1.0
+   nu_X = 0.6, nu_Y = 0.35: 1.0
+   nu_X = 0.8, nu_Y = 0.2: 1.0
+   nu_X = 0.7, nu_Y = 0.5: 1.0
+withdrawn imaginary-argument formula (negative control), the same ratio-of-ratios:
+   nu_X = 0.3, nu_Y = 0.1: 1.0
+   nu_X = 0.35, nu_Y = 0.25: 0.805402532035
+   nu_X = 0.45, nu_Y = 0.1: 1.01057041453
+   nu_X = 0.6, nu_Y = 0.35: 0.736476209514
+   nu_X = 0.8, nu_Y = 0.2: 0.956229434058
+   nu_X = 0.7, nu_Y = 0.5: 0.553577211745
+REAL-ARGUMENT FORMULA: CONFIRMED to 8 digits at all six points ; imaginary-argument formula: refuted at every other point
+DONE

@@ -1,0 +1,7 @@
+Solution 1, t = 11/7: primary I_3 (P1^2 = 1/6) normalized - certified e_3 = 25/1404
+     eigenvalue not polynomial in X, Y: -65*X**2/256 - 16641*X**2/(16*(324801576*X**3 + 40223304*X**2*Y - 32031769140*X**2 - 1845828*X*Y**2 - 473463144*X*Y - 73
+     eigenvalue not polynomial in X, Y: ((1 - sqrt(3)*I)*(-336960*X**2 + 155520*X*Y - 2896992*X + 25920*Y**2 + 38304*Y + 2**(2/3)*(1 - sqrt(3)*I)*(5977988490240
+     eigenvalue not polynomial in X, Y: ((1 + sqrt(3)*I)*(-336960*X**2 + 155520*X*Y - 2896992*X + 25920*Y**2 + 38304*Y + 2**(2/3)*(1 + sqrt(3)*I)*(5977988490240
+   diagonal entry 1: normalized - e_3 = -12247/540
+   diagonal entry 2: normalized - e_3 = 24*X/5 - 24*Y/65 - 146611/7020
+   diagonal entry 3: normalized - e_3 = 1152*X/65 - 24*Y/65 + 87749/7020

@@ -1,0 +1,15 @@
+k = 1: vacuum E^-(2k-1) coefficient / F_k = 4
+k = 2: vacuum E^-(2k-1) coefficient / F_k = 64/3
+k = 3: vacuum E^-(2k-1) coefficient / F_k = 4096/15
+k = 4: vacuum E^-(2k-1) coefficient / F_k = 32768/7
+k = 5: vacuum E^-(2k-1) coefficient / F_k = 4194304/45
+delta V = x^(-2): <x^(2m)>_n = 1/beta; responses in F_k units: R_2 = (beta - 1)*(beta + 1)/32; R_3 = (beta - 1)*(beta + 1)*(3*beta**2 - 7)/512; R_4 = (beta - 1)*(beta + 1)*(3*beta**4 - 18*beta**2 + 31)/3072; R_5 = (beta - 1)*(beta + 1)*(5*beta**6 - 55*beta**4 + 239*beta**2 - 381)/32768;  even in beta: True
+delta V = x^(0): <x^(2m)>_n = 1; responses in F_k units: R_2 = beta*(beta - 1)*(beta + 1)/32; R_3 = beta*(beta - 1)*(beta + 1)*(3*beta**2 - 7)/512; R_4 = beta*(beta - 1)*(beta + 1)*(3*beta**4 - 18*beta**2 + 31)/3072; R_5 = beta*(beta - 1)*(beta + 1)*(5*beta**6 - 55*beta**4 + 239*beta**2 - 381)/32768;  even in beta: False
+delta V = x^(2): <x^(2m)>_n = beta + 2*n + 1; responses in F_k units: R_2 = (15*beta**4 - 30*beta**2 + 7)/640; R_3 = 5*(21*beta**6 - 105*beta**4 + 147*beta**2 - 31)/21504; R_4 = 7*(15*beta**8 - 140*beta**6 + 490*beta**4 - 620*beta**2 + 127)/122880; R_5 = 3*(33*beta**10 - 495*beta**8 + 3234*beta**6 - 10230*beta**4 + 12573*beta**2 - 2555)/720896;  even in beta: True
+delta V = x^(4): <x^(2m)>_n = beta**2 + 6*beta*n + 3*beta + 6*n**2 + 6*n + 2; responses in F_k units: R_2 = beta*(beta - 2)*(beta - 1)*(beta + 1)*(beta + 2)/80; R_3 = beta*(beta - 2)*(beta - 1)*(beta + 1)*(beta + 2)*(3*beta**2 - 13)/896; R_4 = beta*(beta - 2)*(beta - 1)*(beta + 1)*(beta + 2)*(5*beta**4 - 50*beta**2 + 157)/7680; R_5 = beta*(beta - 2)*(beta - 1)*(beta + 1)*(beta + 2)*(5*beta**6 - 85*beta**4 + 611*beta**2 - 1731)/45056;  even in beta: False
+delta V = x^(6): <x^(2m)>_n = beta**3 + 12*beta**2*n + 6*beta**2 + 30*beta*n**2 + 30*beta*n + 11*beta + 20*n**3 + 30*n**2 + 22*n + 6; responses in F_k units: R_2 = (105*beta**6 - 1155*beta**4 + 2499*beta**2 - 521)/26880; R_3 = 5*(63*beta**8 - 1092*beta**6 + 5586*beta**4 - 8532*beta**2 + 1799)/172032; R_4 = 7*(165*beta**10 - 4125*beta**8 + 37730*beta**6 - 146410*beta**4 + 199529*beta**2 - 41321)/2703360; R_5 = (21021*beta**12 - 714714*beta**10 + 10153143*beta**8 - 73285212*beta**6 + 254945691*beta**4 - 331394154*beta**2 + 68031025)/262406144;  even in beta: True
+   calibration k = 2: R_2[x^-2] / (F_2'/8) = 1
+   calibration k = 3: R_3[x^-2] / (F_3'/8) = 1
+   calibration k = 4: R_4[x^-2] / (F_4'/8) = 1
+   calibration k = 5: R_5[x^-2] / (F_5'/8) = 1
+CALIBRATION (delta V = x^-2 is Delta -> Delta + h/8): PASS

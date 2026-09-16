@@ -1,0 +1,8 @@
+record: lab record: exact fast-path computation (quotient formulatio ; genuine_dim 1 ; primes 5 ; N = -46/3 s = -77/3
+VEV of the weight-22 charge computed in 9s
+Riccati polynomials through rho_21 (momentum degree <= 11): 936 monomials, 3s
+M_21 = e_21 - I_21 (both normalized on X^11): degrees present [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] (top 11; the two matched layers 11, 10 must be absent)
+[X Y^8] M_21 = -4700619/80446331732   (prediction U-21: 4077535/241338995196)
+PREDICTION U-21: REFUTED -- no U(w)/(kappa^2 Lambda) of any kind produces the gap at this fibre
+degree-9 layer of M_21: 833258965*X**9/8001396 - 10770510905*X**8*Y/95127708 + 430890075*X**7*Y**2/7927309 - 1076093557*X**6*Y**3/71345781 + 7447695563*X**5*Y**4/2806267386 - 12254513733*X**4*Y**5/40223165866 + 12239193197*X**3*Y**6/543012739191 - 199341065*X**2*Y**7/181004246397 - 4700619*X*Y**8/80446331732 - 11664499*Y**9/6516152870292
+DONE

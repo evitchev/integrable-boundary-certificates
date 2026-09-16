@@ -1,0 +1,39 @@
+[09:44] selftest finished; building weight 26 on sheet 2 at t = 5/3
+  sectors: cand 114795 (d-image 78771, non-pivot 36024), target 340127 (d-image 238190, non-pivot 101937); structure 10.1s
+  exact build of 36024 non-pivot columns in 492s (8666856 nonzeros)
+  normal forms of 36024 columns for 8 primes at once in 820s
+  wrote nf_p0.pkl (165745929 nonzeros)
+  wrote nf_p1.pkl (165745929 nonzeros)
+  wrote nf_p2.pkl (165745929 nonzeros)
+  wrote nf_p3.pkl (165745929 nonzeros)
+  wrote nf_p4.pkl (165745929 nonzeros)
+  wrote nf_p5.pkl (165745929 nonzeros)
+  wrote nf_p6.pkl (165745929 nonzeros)
+  wrote nf_p7.pkl (165745929 nonzeros)
+  build phase done in 1628s -> <lab>/phase_w26_t53_s2
+[10:12] sheet-2 build finished; waiting for the q = 14 eliminations
+[02:57] nodes free; launching the sheet-2 eliminations and merge
+[02:57:32] build phase skipped (existing <lab>/phase_w26_t53_s2/meta.json)
+[02:57:32] good primes: 0 1 2 3 4 5 6 7; nodes: worker-1 worker-2 worker-3 worker-4
+[03:08:31] HOLD_NIGHT present: not starting 26 2 -25/2 -45/2 <lab>/phase_w26_t53_s2 8 <lab>/fk3v3_w26_t53_sheet2.json worker-1 worker-2 worker-3 worker-4
+[03:08] sheet-2 R1 run finished
+[07:10] recovery launcher started (head rebooted 06:56; primes 0-3 still solving on the nodes)
+[07:24:35] prime 2 solved on worker-3 (recovered)
+[07:26:33] prime 1 solved on worker-2 (recovered)
+[07:26:37] prime 3 solved on worker-4 (recovered)
+[07:28:31] prime 0 solved on worker-1 (recovered)
+[11:50:44] prime 6 solved on worker-3
+[11:54:25] prime 7 solved on worker-4
+[11:54:31] prime 5 solved on worker-2
+[11:56:58] prime 4 solved on worker-1
+[11:56:58] solved: 8 prime(s); merge phase
+  merge: 8 solved prime(s) of 8 good; structure + load 17s
+  prime 2305843009213693951: rank 36022, nullity U = 2
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  3 prime(s): reconstruction not yet stable
+  4 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 2 with 5 prime(s): 2 vectors verified by exact identities (672s), canonical non-pivot representatives; merge 802s
+sol=2 N=-25/2 s=-45/2 dim=2 kc=78771 primes=5 time=805s (merge; build 1628s)
+record written: <lab>/fk3v3_w26_t53_sheet2.json (tool sha256 c38606e5b23be691)
+[12:10] sheet-2 R1 recovery finished

@@ -1,0 +1,15 @@
+expanding the finite parts in (u, v) and testing each degree for flatness (F families only) vs interior families:
+  N = 1 (2N = 2 powers of p): degree 1: FLAT (2 of 2 monomials present); degree 2: FLAT (3 of 3 monomials present); degree 3: FLAT (4 of 4 monomials present); degree 4: FLAT (5 of 5 monomials present)
+        -> overall FLAT (only full-range families)
+  N = 2 (2N = 4 powers of p): degree 1: FLAT (2 of 2 monomials present); degree 2: FLAT (3 of 3 monomials present); degree 3: FLAT (4 of 4 monomials present); degree 4: FLAT (5 of 5 monomials present)
+        -> overall FLAT (only full-range families)
+  N = 3 (2N = 6 powers of p): degree 1: FLAT (2 of 2 monomials present); degree 2: FLAT (3 of 3 monomials present); degree 3: FLAT (4 of 4 monomials present); degree 4: FLAT (5 of 5 monomials present)
+        -> overall FLAT (only full-range families)
+
+CONSEQUENCE:
+   2N = 2: excluded by flatness (cannot produce the deficit)
+   2N = 4: excluded by flatness (cannot produce the deficit)
+   2N = 6: excluded by flatness (cannot produce the deficit)
+   NOTE, correcting lab/differential_class.py: at 2N = 4 the interior families that appear in the sqrt(ab) structure CANCEL
+   against those in the (a+b) structure, because the finite part carries them with equal weight.  That script showed the two
+   families appear in one structure but did not check the cancellation between structures.  The 2N = 4 case is FLAT.

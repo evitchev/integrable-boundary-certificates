@@ -1,0 +1,12 @@
+Solution 3 spin-3 density at (N, s) = (1, 0): {((), ((1, 1), (1, 1))): Fraction(1, 1), ((), ((2, 2),)): Fraction(-2, 1), ((2, 2), ()): Fraction(-2, 1), ((1, 1), ((1, 1),)): Fraction(6, 1), ((1, 1, 1, 1), ()): Fraction(1, 1)}
+PASS  (1) P_4 at (1, 0), normalized on x_1^4, is x_1^4 + 6 x_1^2 y_1^2 + y_1^4 - 2 x_2^2 - 2 y_2^2
+PASS  (2) in phi_+- = (phi_X +- phi_Y)/sqrt2: P_4 = 2[(d phi_+)^4 - (d^2 phi_+)^2 + (d phi_-)^4 - (d^2 phi_-)^2] (two c = -2 KdV rays)
+PASS  control: a different rotation does NOT split P_4 into two single-boson densities
+PASS  control: the enhanced c = 1 ray (d phi)^4 + (5/2)(d^2 phi)^2 is NOT the summand
+   F_k(h) = {4: h**4 - 2*h**3/3 + h**2/6 - 1/480, 5: h**5 - 5*h**4/4 + 3*h**3/4 - 3*h**2/16 + 5/2112}
+PASS  (3) spin 3: e^_3(t -> infinity) = ((-4)^2/2)[F_2(h_+) + F_2(h_-)], constants included
+PASS  (3) spin 5: e^_5(t -> infinity) = ((-4)^3/2)[F_3(h_+) + F_3(h_-)], constants included
+PASS  (3) spin 7: e^_7(t -> infinity) = ((-4)^4/2)[F_4(h_+) + F_4(h_-)], constants included
+PASS  (3) spin 9: e^_9(t -> infinity) = ((-4)^5/2)[F_5(h_+) + F_5(h_-)], constants included
+PASS  (3) spin 1: e_1 = X + Y + 1/6 at N = 1 equals (-4/2)[F_1(h_+) + F_1(h_-)]
+PAPERCLIP ENDPOINT: Solution 3's t -> infinity density is a 45-degree-rotated pair of c = -2 KdV rays and its vacuum charges through spin 9 are the corresponding sums of radial-oscillator Stirling coefficients, constants included: both ends of Solution 3's curve are c = -2 oscillator pairs.

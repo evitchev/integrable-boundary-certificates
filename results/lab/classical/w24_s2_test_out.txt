@@ -1,0 +1,7 @@
+record: lab record: exact fast-path computation (quotient formulation), pending independent certification by the registered pure-Python certificate genuine_dim 2 ; basis size 54370
+VEV of 2 witnesses in 49s
+members with top part supported on {X Y^11, Y^12}: [{lam: 29/1848}]
+top part of that member: 1073741824*Y**11*(21*X - Y)/717255
+eigenvalue / Kac form = -1073741824/717255
+factorization of the member's eigenvalue over Q: (32*Y - 225)*(32*Y - 221)**2*(32*Y - 209)**2*(32*Y - 189)**2*(32*Y - 161)*(32*Y - 125)*(32*Y - 81)*(32*Y - 29)*(672*X - 32*Y + 161)/770146691973120
+S2-16 PREDICTION AT q = 16: CONFIRMED ; the eigenvalue is a constant multiple of the filed Kac form: True

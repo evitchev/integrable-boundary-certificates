@@ -1,0 +1,5 @@
+level 3: 13 singlet states; Gram det -4478976
+predicted factors from the modules V(D_X) x V(D_Y + n), n in [0, 2, 3], at level 3: 13
+   residual odd powers of beta in the prediction: []
+certified charpoly / prediction: denominator 1
+   remaining factor (new primary content at level 3): 1

@@ -1,0 +1,10 @@
+specialized at (X, Y) = (-1, -2): beta_X^2 = 4, beta_Y^2 = 9
+level 4: 30 singlet states; Gram det -654295038711035754184704
+predicted factors from the modules V(D_X) x V(D_Y + n), n in [0, 2, 3], at level 4: 27
+   residual odd powers of beta in the prediction: []
+certified charpoly / prediction: denominator 1
+   remaining factor (new primary content at level 3): (240*lambda - 24119)**3/13824000
+   eigenvalue 24119/240 (algebraic multiplicity 3): geometric multiplicity 3 -> 3 independent states
+   new eigenvalue: 24119/240
+      = 4[I^(0)(D_X + a) + I^(0)(D_Y + b)] with (a, b) = [{'a': 0, 'b': 4}]
+exit 0

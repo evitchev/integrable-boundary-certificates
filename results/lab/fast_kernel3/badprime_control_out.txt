@@ -1,0 +1,17 @@
+  sectors: cand 20 (d-image 8, non-pivot 12), target 80 (d-image 56, non-pivot 24); structure 0.0s
+  exact build of 12 non-pivot columns in 0s (251 nonzeros)
+  prime 2305843009213693951: divides a denominator, skipped
+  normal forms of 12 columns for 7 primes at once in 0s
+  rref of A-hat (24 x 12) for 6 primes in parallel in 0s
+  prime 2305843009213693921: rank 10, nullity U = 2
+  1 prime(s): lifted vector fails the exact identity (0s), adding primes
+  2 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 2 with 3 prime(s): 2 vectors verified by exact identities (0s), canonical non-pivot representatives; total 0s
+scaled-Hamiltonian control: genuine dim 2 with 3 prime(s) used; the first prime skipped as bad
+  sectors: cand 20 (d-image 8, non-pivot 12), target 80 (d-image 56, non-pivot 24); structure 0.0s
+  exact build of 12 non-pivot columns in 0s (251 nonzeros)
+  normal forms of 12 columns for 4 primes at once in 0s
+  rref of A-hat (24 x 12) for 4 primes in parallel in 0s
+  prime 2305843009213693951: rank 10, nullity U = 2
+  CERTIFIED genuine dim 2 with 1 prime(s): 2 vectors verified by exact identities (0s), canonical non-pivot representatives; total 0s
+charge parts identical to the unscaled run: True

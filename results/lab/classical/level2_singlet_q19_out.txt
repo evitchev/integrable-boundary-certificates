@@ -1,0 +1,182 @@
+q = 4: quintic with 161 terms
+q = 6: quintic with 161 terms
+q = 8: quintic with 161 terms
+q = 10: quintic with 161 terms
+q = 12: quintic with 161 terms
+q = 14: quintic with 161 terms
+q = 16: quintic with 161 terms
+q = 18: quintic with 161 terms
+q = 20: quintic with 161 terms
+q = 22: quintic with 161 terms
+q = 24: quintic with 161 terms
+q = 26: quintic with 161 terms
+q = 28: quintic with 161 terms
+q = 30: quintic with 161 terms
+q = 32: quintic with 161 terms
+q = 34: quintic with 161 terms
+q = 36: quintic with 161 terms
+q = 38: quintic with 161 terms
+q = 40: quintic with 161 terms
+fitting 161 coefficients on q in [4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36], verifying on [38, 40]
+   lambda^5 X^0 Y^0: 1
+   lambda^4 X^2 Y^0: -5
+   lambda^4 X^1 Y^1: 30*(q - 2)/q
+   lambda^4 X^1 Y^0: -5*(3*q**3 - 12*q**2 - 8*q - 6)/q**2
+   lambda^4 X^0 Y^2: -5
+   lambda^4 X^0 Y^1: 5*(q**2 - 2*q + 24)/q
+   lambda^4 X^0 Y^0: -(15*q**4 + 469*q**3 - 3981*q**2 + 10539*q - 5643)/(12*q**2)
+   lambda^3 X^4 Y^0: 10
+   lambda^3 X^3 Y^1: -120*(q - 2)/q
+   lambda^3 X^3 Y^0: 20*(3*q**3 - 12*q**2 - 8*q - 6)/q**2
+   lambda^3 X^2 Y^2: 20*(19*q**2 - 72*q + 72)/q**2
+   lambda^3 X^2 Y^1: -20*(19*q**4 - 110*q**3 + 120*q**2 + 60*q + 72)/q**3
+   lambda^3 X^2 Y^0: (285*q**6 - 1691*q**5 - 4557*q**4 + 22131*q**3 - 2859*q**2 + 2880*q + 1080)/(3*q**4)
+   lambda^3 X^1 Y^3: -120*(q - 2)/q
+   lambda^3 X^1 Y^2: 20*(9*q**3 - 36*q**2 + 160*q - 294)/q**2
+   lambda^3 X^1 Y^1: -2*(45*q**5 + 259*q**4 - 2887*q**3 + 8809*q**2 - 20457*q + 9846)/q**3
+   lambda^3 X^1 Y^0: (45*q**7 + 1227*q**6 - 22875*q**5 + 106651*q**4 - 178299*q**3 + 62586*q**2 - 28458*q + 33858)/(3*q**4)
+   lambda^3 X^0 Y^4: 10
+   lambda^3 X^0 Y^3: -20*(q**2 - 2*q + 24)/q
+   lambda^3 X^0 Y^2: (45*q**4 + 349*q**3 - 5877*q**2 + 14571*q + 8181)/(3*q**2)
+   lambda^3 X^0 Y^1: -(15*q**6 + 439*q**5 + 625*q**4 - 15171*q**3 - 9945*q**2 + 153630*q - 104328)/(3*q**3)
+   lambda^3 X^0 Y^0: (225*q**8 + 14070*q**7 - 397133*q**6 + 2636904*q**5 - 4315923*q**4 - 15508908*q**3 + 59826519*q**2 - 55615410*q + 15233913)/(360*q**4)
+   lambda^2 X^6 Y^0: -10
+   lambda^2 X^5 Y^1: 180*(q - 2)/q
+   lambda^2 X^5 Y^0: -30*(3*q**3 - 12*q**2 - 8*q - 6)/q**2
+   lambda^2 X^4 Y^2: -30*(37*q**2 - 144*q + 144)/q**2
+   lambda^2 X^4 Y^1: 30*(37*q**4 - 218*q**3 + 216*q**2 + 120*q + 144)/q**3
+   lambda^2 X^4 Y^0: -(555*q**6 - 3851*q**5 - 5133*q**4 + 33723*q**3 - 75*q**2 + 5760*q + 2160)/(2*q**4)
+   lambda^2 X^3 Y^3: 360*(q - 2)*(7*q**2 - 24*q + 24)/q**3
+   lambda^2 X^3 Y^2: -60*(63*q**5 - 468*q**4 + 1096*q**3 - 690*q**2 - 144*q - 432)/q**4
+   lambda^2 X^3 Y^1: 6*(315*q**7 - 2441*q**6 + 857*q**5 + 21553*q**4 - 40857*q**3 + 7158*q**2 - 4680*q - 2160)/q**5
+   lambda^2 X^3 Y^0: NO rational fit of degree <= 8/8
+   lambda^2 X^2 Y^4: -30*(37*q**2 - 144*q + 144)/q**2
+   lambda^2 X^2 Y^3: 60*(37*q**4 - 218*q**3 + 768*q**2 - 1812*q + 1800)/q**3
+   lambda^2 X^2 Y^2: -(1665*q**6 - 3089*q**5 - 24687*q**4 + 41049*q**3 - 212721*q**2 + 665136*q - 301536)/q**4
+   lambda^2 X^2 Y^1: (555*q**8 + 4561*q**7 - 120389*q**6 + 652779*q**5 - 1806255*q**4 + 2653950*q**3 - 1102212*q**2 + 321300*q - 380376)/q**5
+   lambda^2 X^2 Y^0: NO rational fit of degree <= 8/8
+   lambda^2 X^1 Y^5: 180*(q - 2)/q
+   lambda^2 X^1 Y^4: -30*(15*q**3 - 60*q**2 + 328*q - 582)/q**2
+   lambda^2 X^1 Y^3: 6*(75*q**5 + 79*q**4 - 4543*q**3 + 16633*q**2 - 14697*q - 17802)/q**3
+   lambda^2 X^1 Y^2: -(225*q**7 + 2961*q**6 - 21969*q**5 - 11543*q**4 + 250275*q**3 - 175158*q**2 - 1471554*q + 1202850)/q**4
+   lambda^2 X^1 Y^1: NO rational fit of degree <= 8/8
+   lambda^2 X^1 Y^0: NO rational fit of degree <= 8/8
+   lambda^2 X^0 Y^6: -10
+   lambda^2 X^0 Y^5: 30*(q**2 - 2*q + 24)/q
+   lambda^2 X^0 Y^4: -(75*q**4 + 229*q**3 - 7773*q**2 + 18603*q + 22005)/(2*q**2)
+   lambda^2 X^0 Y^3: (25*q**6 + 379*q**5 - 1991*q**4 - 4307*q**3 - 90009*q**2 + 291870*q - 49032)/q**3
+   lambda^2 X^0 Y^2: -(1125*q**8 + 38610*q**7 - 183353*q**6 - 3736548*q**5 + 49309209*q**4 - 221972940*q**3 + 368760519*q**2 - 109829682*q - 55185543)/(120*q**4)
+   lambda^2 X^0 Y^1: NO rational fit of degree <= 8/8
+   lambda^2 X^0 Y^0: NO rational fit of degree <= 8/8
+   lambda^1 X^8 Y^0: 5
+   lambda^1 X^7 Y^1: -120*(q - 2)/q
+   lambda^1 X^7 Y^0: 20*(3*q**3 - 12*q**2 - 8*q - 6)/q**2
+   lambda^1 X^6 Y^2: 20*(55*q**2 - 216*q + 216)/q**2
+   lambda^1 X^6 Y^1: -20*(55*q**4 - 326*q**3 + 312*q**2 + 180*q + 216)/q**3
+   lambda^1 X^6 Y^0: (825*q**6 - 6011*q**5 - 5709*q**4 + 45315*q**3 + 2709*q**2 + 8640*q + 3240)/(3*q**4)
+   lambda^1 X^5 Y^3: -360*(q - 2)*(13*q**2 - 48*q + 48)/q**3
+   lambda^1 X^5 Y^2: 60*(117*q**5 - 900*q**4 + 2032*q**3 - 1086*q**2 - 288*q - 864)/q**4
+   lambda^1 X^5 Y^1: -6*(585*q**7 - 5141*q**6 + 4601*q**5 + 34297*q**4 - 61257*q**3 + 4470*q**2 - 9360*q - 4320)/q**5
+   lambda^1 X^5 Y^0: NO rational fit of degree <= 8/8
+   lambda^1 X^4 Y^4: 30*(289*q**4 - 2016*q**3 + 5472*q**2 - 6912*q + 3456)/q**4
+   lambda^1 X^4 Y^3: -60*(289*q**6 - 2594*q**5 + 8712*q**4 - 12696*q**3 + 6192*q**2 - 576*q + 3456)/q**5
+   lambda^1 X^4 Y^2: (13005*q**8 - 123167*q**7 + 285687*q**6 + 256743*q**5 - 2085591*q**4 + 2702304*q**3 - 578016*q**2 + 259200*q + 155520)/q**6
+   lambda^1 X^4 Y^1: NO rational fit of degree <= 8/8
+   lambda^1 X^4 Y^0: NO rational fit of degree <= 8/8
+   lambda^1 X^3 Y^5: -360*(q - 2)*(13*q**2 - 48*q + 48)/q**3
+   lambda^1 X^3 Y^4: 60*(195*q**5 - 1500*q**4 + 5656*q**3 - 14046*q**2 + 21600*q - 14688)/q**4
+   lambda^1 X^3 Y^3: -12*(975*q**7 - 5747*q**6 + 11207*q**5 - 64745*q**4 + 199377*q**3 - 42198*q**2 - 362160*q + 165024)/q**5
+   lambda^1 X^3 Y^2: NO rational fit of degree <= 8/8
+   lambda^1 X^3 Y^1: NO rational fit of degree <= 8/8
+   lambda^1 X^3 Y^0: NO rational fit of degree <= 8/8
+   lambda^1 X^2 Y^6: 20*(55*q**2 - 216*q + 216)/q**2
+   lambda^1 X^2 Y^5: -60*(55*q**4 - 326*q**3 + 1416*q**2 - 3684*q + 3528)/q**3
+   lambda^1 X^2 Y^4: (4125*q**6 - 13127*q**5 - 91473*q**4 + 460863*q**3 - 778551*q**2 - 82656*q + 1386504)/q**4
+   lambda^1 X^2 Y^3: -2*(1375*q**8 + 5923*q**7 - 119099*q**6 + 230077*q**5 + 1145151*q**4 - 6166230*q**3 + 6802740*q**2 + 6079428*q - 6896664)/q**5
+   lambda^1 X^2 Y^2: NO rational fit of degree <= 8/8
+   lambda^1 X^2 Y^1: NO rational fit of degree <= 8/8
+   lambda^1 X^2 Y^0: NO rational fit of degree <= 8/8
+   lambda^1 X^1 Y^7: -120*(q - 2)/q
+   lambda^1 X^1 Y^6: 20*(21*q**3 - 84*q**2 + 496*q - 870)/q**2
+   lambda^1 X^1 Y^5: -6*(105*q**5 - 101*q**4 - 6199*q**3 + 24457*q**2 - 8937*q - 45450)/q**3
+   lambda^1 X^1 Y^4: (525*q**7 + 3735*q**6 - 51015*q**5 + 63415*q**4 - 542655*q**3 + 3167514*q**2 - 5568858*q + 1044738)/q**4
+   lambda^1 X^1 Y^3: NO rational fit of degree <= 8/8
+   lambda^1 X^1 Y^2: NO rational fit of degree <= 8/8
+   lambda^1 X^1 Y^1: NO rational fit of degree <= 8/8
+   lambda^1 X^1 Y^0: NO rational fit of degree <= 8/8
+   lambda^1 X^0 Y^8: 5
+   lambda^1 X^0 Y^7: -20*(q**2 - 2*q + 24)/q
+   lambda^1 X^0 Y^6: (105*q**4 + 109*q**3 - 9669*q**2 + 22635*q + 35829)/(3*q**2)
+   lambda^1 X^0 Y^5: -(35*q**6 + 319*q**5 - 4607*q**4 + 6557*q**3 - 170073*q**2 + 430110*q + 6264)/q**3
+   lambda^1 X^0 Y^4: (2625*q**8 + 58350*q**7 - 312293*q**6 - 7986480*q**5 + 120223941*q**4 - 511841772*q**3 + 617974839*q**2 + 127918926*q - 125604999)/(120*q**4)
+   lambda^1 X^0 Y^3: NO rational fit of degree <= 8/8
+   lambda^1 X^0 Y^2: NO rational fit of degree <= 8/8
+   lambda^1 X^0 Y^1: NO rational fit of degree <= 8/8
+   lambda^1 X^0 Y^0: NO rational fit of degree <= 8/8
+   lambda^0 X^10 Y^0: -1
+   lambda^0 X^9 Y^1: 30*(q - 2)/q
+   lambda^0 X^9 Y^0: -5*(3*q**3 - 12*q**2 - 8*q - 6)/q**2
+   lambda^0 X^8 Y^2: -5*(73*q**2 - 288*q + 288)/q**2
+   lambda^0 X^8 Y^1: 5*(73*q**4 - 434*q**3 + 408*q**2 + 240*q + 288)/q**3
+   lambda^0 X^8 Y^0: -(1095*q**6 - 8171*q**5 - 6285*q**4 + 56907*q**3 + 5493*q**2 + 11520*q + 4320)/(12*q**4)
+   lambda^0 X^7 Y^3: 120*(q - 2)*(19*q**2 - 72*q + 72)/q**3
+   lambda^0 X^7 Y^2: -20*(171*q**5 - 1332*q**4 + 2968*q**3 - 1482*q**2 - 432*q - 1296)/q**4
+   lambda^0 X^7 Y^1: 2*(855*q**7 - 7841*q**6 + 8345*q**5 + 47041*q**4 - 81657*q**3 + 1782*q**2 - 14040*q - 6480)/q**5
+   lambda^0 X^7 Y^0: NO rational fit of degree <= 8/8
+   lambda^0 X^6 Y^4: -10*(757*q**4 - 5616*q**3 + 15984*q**2 - 20736*q + 10368)/q**4
+   lambda^0 X^6 Y^3: 20*(757*q**6 - 7130*q**5 + 23856*q**4 - 32652*q**3 + 13176*q**2 - 1728*q + 10368)/q**5
+   lambda^0 X^6 Y^2: -(34065*q**8 - 359885*q**7 + 925245*q**6 + 661653*q**5 - 5610429*q**4 + 6111504*q**3 - 829440*q**2 + 777600*q + 466560)/(3*q**6)
+   lambda^0 X^6 Y^1: NO rational fit of degree <= 8/8
+   lambda^0 X^6 Y^0: NO rational fit of degree <= 8/8
+   lambda^0 X^5 Y^5: 36*(q - 2)*(341*q**4 - 2208*q**3 + 5664*q**2 - 6912*q + 3456)/q**5
+   lambda^0 X^5 Y^4: -30*(1023*q**7 - 10716*q**6 + 45544*q**5 - 97926*q**4 + 105408*q**3 - 46656*q**2 + 13824*q - 20736)/q**6
+   lambda^0 X^5 Y^3: NO rational fit of degree <= 8/8
+   lambda^0 X^5 Y^2: NO rational fit of degree <= 8/8
+   lambda^0 X^5 Y^1: NO rational fit of degree <= 8/8
+   lambda^0 X^5 Y^0: NO rational fit of degree <= 8/8
+   lambda^0 X^4 Y^6: -10*(757*q**4 - 5616*q**3 + 15984*q**2 - 20736*q + 10368)/q**4
+   lambda^0 X^4 Y^5: 30*(757*q**6 - 7130*q**5 + 31032*q**4 - 84264*q**3 + 153936*q**2 - 173952*q + 89856)/q**5
+   lambda^0 X^4 Y^4: -(56775*q**8 - 495419*q**7 + 1890435*q**6 - 8216613*q**5 + 29826645*q**4 - 52147008*q**3 + 26367120*q**2 + 17718912*q - 9237888)/(2*q**6)
+   lambda^0 X^4 Y^3: NO rational fit of degree <= 8/8
+   lambda^0 X^4 Y^2: NO rational fit of degree <= 8/8
+   lambda^0 X^4 Y^1: NO rational fit of degree <= 8/8
+   lambda^0 X^4 Y^0: NO rational fit of degree <= 8/8
+   lambda^0 X^3 Y^7: 120*(q - 2)*(19*q**2 - 72*q + 72)/q**3
+   lambda^0 X^3 Y^6: -20*(399*q**5 - 3108*q**4 + 13672*q**3 - 40074*q**2 + 65232*q - 42768)/q**4
+   lambda^0 X^3 Y^5: 6*(1995*q**7 - 12653*q**6 + 11765*q**5 + 13693*q**4 + 53691*q**3 - 324258*q**2 + 883944*q - 994896)/q**5
+   lambda^0 X^3 Y^4: NO rational fit of degree <= 8/8
+   lambda^0 X^3 Y^3: NO rational fit of degree <= 8/8
+   lambda^0 X^3 Y^2: NO rational fit of degree <= 8/8
+   lambda^0 X^3 Y^1: NO rational fit of degree <= 8/8
+   lambda^0 X^3 Y^0: NO rational fit of degree <= 8/8
+   lambda^0 X^2 Y^8: -5*(73*q**2 - 288*q + 288)/q**2
+   lambda^0 X^2 Y^7: 20*(73*q**4 - 434*q**3 + 2064*q**2 - 5556*q + 5256)/q**3
+   lambda^0 X^2 Y^6: -(7665*q**6 - 31805*q**5 - 204915*q**4 + 1281573*q**3 - 1700349*q**2 - 2240496*q + 5065200)/(3*q**4)
+   lambda^0 X^2 Y^5: (2555*q**8 + 3685*q**7 - 201905*q**6 + 566543*q**5 - 726867*q**4 + 3083862*q**3 - 14737428*q**2 + 23781492*q - 5450328)/q**5
+   lambda^0 X^2 Y^4: NO rational fit of degree <= 8/8
+   lambda^0 X^2 Y^3: NO rational fit of degree <= 8/8
+   lambda^0 X^2 Y^2: NO rational fit of degree <= 8/8
+   lambda^0 X^2 Y^1: NO rational fit of degree <= 8/8
+   lambda^0 X^2 Y^0: NO rational fit of degree <= 8/8
+   lambda^0 X^1 Y^9: 30*(q - 2)/q
+   lambda^0 X^1 Y^8: -5*(27*q**3 - 108*q**2 + 664*q - 1158)/q**2
+   lambda^0 X^1 Y^7: 2*(135*q**5 - 281*q**4 - 7855*q**3 + 32281*q**2 - 3177*q - 73098)/q**3
+   lambda^0 X^1 Y^6: -(945*q**7 + 3549*q**6 - 110013*q**5 + 331525*q**4 - 2557089*q**3 + 10090602*q**2 - 12320370*q - 440478)/(3*q**4)
+   lambda^0 X^1 Y^5: NO rational fit of degree <= 8/8
+   lambda^0 X^1 Y^4: NO rational fit of degree <= 8/8
+   lambda^0 X^1 Y^3: NO rational fit of degree <= 8/8
+   lambda^0 X^1 Y^2: NO rational fit of degree <= 8/8
+   lambda^0 X^1 Y^1: NO rational fit of degree <= 8/8
+   lambda^0 X^1 Y^0: NO rational fit of degree <= 8/8
+   lambda^0 X^0 Y^10: -1
+   lambda^0 X^0 Y^9: 5*(q**2 - 2*q + 24)/q
+   lambda^0 X^0 Y^8: -(135*q**4 - 11*q**3 - 11565*q**2 + 26667*q + 49653)/(12*q**2)
+   lambda^0 X^0 Y^7: (45*q**6 + 259*q**5 - 7223*q**4 + 17421*q**3 - 250137*q**2 + 568350*q + 61560)/(3*q**3)
+   lambda^0 X^0 Y^6: -(4725*q**8 + 73290*q**7 - 783953*q**6 - 10112892*q**5 + 208428273*q**4 - 885115404*q**3 + 807469479*q**2 + 657630414*q - 196024455)/(360*q**4)
+   lambda^0 X^0 Y^5: NO rational fit of degree <= 8/8
+   lambda^0 X^0 Y^4: NO rational fit of degree <= 8/8
+   lambda^0 X^0 Y^3: NO rational fit of degree <= 8/8
+   lambda^0 X^0 Y^2: NO rational fit of degree <= 8/8
+   lambda^0 X^0 Y^1: NO rational fit of degree <= 8/8
+   lambda^0 X^0 Y^0: NO rational fit of degree <= 8/8
+DONE

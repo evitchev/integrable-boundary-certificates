@@ -1,0 +1,5 @@
+Riccati to spin 7 with symbolic exponents: 650 terms (1s)
+   spin 3: responses assembled (1s)
+   spin 7: responses assembled (2s)
+the relation, in units of the reference B_s, is the rational function with numerator of degree 0 (2s)
+EXACT IDENTITY for the W-shapes: the relation holds for every monomial w^i (1-w)^j, hence for the whole class

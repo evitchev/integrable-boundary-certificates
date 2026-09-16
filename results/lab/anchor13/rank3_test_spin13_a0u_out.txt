@@ -1,0 +1,97 @@
+119 data coordinates (spins 1-13)
+a0u, pole order <= 1: scalar rank 33; scalar + 54 rank-3 columns: rank 64
+Solution 3: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 3: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 3, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 3, scalar + rank-3, spins 1-13: rank 77, augmented 78 -> INCONSISTENT
+   [control] Solution 3, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 3, scalar + rank-3, spins 1-11: rank 71, augmented 72 -> inconsistent
+Solution 1: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 1: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 1, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 1, scalar + rank-3, spins 1-13: rank 77, augmented 78 -> INCONSISTENT
+   [control] Solution 1, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 1, scalar + rank-3, spins 1-11: rank 71, augmented 72 -> inconsistent
+Solution 2: first-order data unavailable (cylindrical table at t = infinity is not a multiple of the paperclip at spin 3)
+DONE
+119 data coordinates (spins 1-13)
+a0u, pole order <= 2: scalar rank 33; scalar + 126 rank-3 columns: rank 72
+Solution 3: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 3: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 3, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 3, scalar + rank-3, spins 1-13: rank 85, augmented 86 -> INCONSISTENT
+   [control] Solution 3, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 3, scalar + rank-3, spins 1-11: rank 79, augmented 80 -> inconsistent
+Solution 1: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 1: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 1, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 1, scalar + rank-3, spins 1-13: rank 85, augmented 86 -> INCONSISTENT
+   [control] Solution 1, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 1, scalar + rank-3, spins 1-11: rank 79, augmented 80 -> inconsistent
+Solution 2: first-order data unavailable (cylindrical table at t = infinity is not a multiple of the paperclip at spin 3)
+DONE
+119 data coordinates (spins 1-13)
+a0u, pole order <= 3: scalar rank 33; scalar + 216 rank-3 columns: rank 80
+Solution 3: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 3: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 3, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 3, scalar + rank-3, spins 1-13: rank 93, augmented 94 -> INCONSISTENT
+   [control] Solution 3, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 3, scalar + rank-3, spins 1-11: rank 83, augmented 83 -> CONSISTENT
+Solution 1: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 1: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 1, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 1, scalar + rank-3, spins 1-13: rank 93, augmented 94 -> INCONSISTENT
+   [control] Solution 1, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 1, scalar + rank-3, spins 1-11: rank 83, augmented 83 -> CONSISTENT
+Solution 2: first-order data unavailable (cylindrical table at t = infinity is not a multiple of the paperclip at spin 3)
+DONE
+119 data coordinates (spins 1-13)
+a0u, pole order <= 4: scalar rank 33; scalar + 324 rank-3 columns: rank 88
+Solution 3: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 3: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 3, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 3, scalar + rank-3, spins 1-13: rank 101, augmented 102 -> INCONSISTENT
+   [control] Solution 3, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 3, scalar + rank-3, spins 1-11: rank 83, augmented 83 -> CONSISTENT
+Solution 1: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 1: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 1, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 1, scalar + rank-3, spins 1-13: rank 101, augmented 102 -> INCONSISTENT
+   [control] Solution 1, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 1, scalar + rank-3, spins 1-11: rank 83, augmented 83 -> CONSISTENT
+Solution 2: first-order data unavailable (cylindrical table at t = infinity is not a multiple of the paperclip at spin 3)
+DONE
+119 data coordinates (spins 1-13)
+a0u, pole order <= 5: scalar rank 33; scalar + 450 rank-3 columns: rank 96
+Solution 3: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 3: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 3, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 3, scalar + rank-3, spins 1-13: rank 109, augmented 110 -> INCONSISTENT
+   [control] Solution 3, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 3, scalar + rank-3, spins 1-11: rank 83, augmented 83 -> CONSISTENT
+Solution 1: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 1: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 1, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 1, scalar + rank-3, spins 1-13: rank 109, augmented 110 -> INCONSISTENT
+   [control] Solution 1, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 1, scalar + rank-3, spins 1-11: rank 83, augmented 83 -> CONSISTENT
+Solution 2: first-order data unavailable (cylindrical table at t = infinity is not a multiple of the paperclip at spin 3)
+DONE
+119 data coordinates (spins 1-13)
+a0u, pole order <= 6: scalar rank 33; scalar + 594 rank-3 columns: rank 104
+Solution 3: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 3: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 3, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 3, scalar + rank-3, spins 1-13: rank 117, augmented 118 -> INCONSISTENT
+   [control] Solution 3, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 3, scalar + rank-3, spins 1-11: rank 83, augmented 83 -> CONSISTENT
+Solution 1: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 1: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 1, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 1, scalar + rank-3, spins 1-13: rank 117, augmented 118 -> INCONSISTENT
+   [control] Solution 1, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 1, scalar + rank-3, spins 1-11: rank 83, augmented 83 -> CONSISTENT
+Solution 2: first-order data unavailable (cylindrical table at t = infinity is not a multiple of the paperclip at spin 3)
+DONE
+A0UDONE

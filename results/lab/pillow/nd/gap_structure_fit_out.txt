@@ -1,0 +1,18 @@
+Delta: basis 'polynomials deg<=2, 1/(a+1), 1/(a+2), a/(a+1), a/(a+2)': 10 functions (rank 8), 123 samples: residual/|Delta| = 0.45389  -> no combination
+Delta: basis 'structure constants E_j, H_j, E_mj, 1, a, a E_1, a H_1': 13 functions (rank 9), 126 samples: residual/|Delta| = 0.011954  -> no combination
+Delta: basis 'third-sector weighted {E_1, H_1, E_12, E_13, 1} x {1, a, 1/(a+1), 1/(a+2)}': 20 functions (rank 15), 123 samples: residual/|Delta| = 0.00050001  -> no combination
+Delta: basis 'with the central charge: {1, c_pillow, c_pillow^2} x {1, a, E_1, H_1}': 12 functions (rank 12), 123 samples: residual/|Delta| = 0.018408  -> no combination
+Delta: exact ranks, basis 'polynomials deg<=2, 1/(a+1), 1/(a+2), a/(a+1), a/(a+2)': rank 8 -> with the gap column 9
+Delta: exact ranks, basis 'structure constants E_j, H_j, E_mj, 1, a, a E_1, a H_1': rank 9 -> with the gap column 10
+Delta: exact ranks, basis 'third-sector weighted {E_1, H_1, E_12, E_13, 1} x {1, a, 1/(a+1), 1/(a+2)}': rank 15 -> with the gap column 16
+Delta: exact ranks, basis 'with the central charge: {1, c_pillow, c_pillow^2} x {1, a, E_1, H_1}': rank 12 -> with the gap column 13
+EXACT: the gap column raises every basis rank by one (inconsistency certificates over Q): True
+Codex's expression of Delta through (a, H_2 - H_3) reproduces all three restricted gap functions: True  (so 'not expressible in the pillow data' is NOT a valid exclusion; only the four spans are)
+positive control (E_1/7 - 3 H_1 + 1/5): basis 'polynomials deg<=2, 1/(a+1), 1/(a+2), a/(a+1), a/(a+2)': 10 functions (rank 8), 123 samples: residual/|Delta| = 0.4241  -> no combination
+positive control (E_1/7 - 3 H_1 + 1/5): basis 'structure constants E_j, H_j, E_mj, 1, a, a E_1, a H_1': 13 functions (rank 9), 129 samples: residual/|Delta| = 1.7084e-50  -> a combination EXISTS: ['-0.001779330735', '0.4729079199', '-0.6932471668', '-0.6932471668', '-1.393853935', '-0.591784321', '-0.591784321', '-0.1016094536', '-0.1016094536', '0.5553667593', '-0.3026689961', '-2.228351572e-49', '1.342820438e-49']
+positive control (E_1/7 - 3 H_1 + 1/5): basis 'third-sector weighted {E_1, H_1, E_12, E_13, 1} x {1, a, 1/(a+1), 1/(a+2)}': 20 functions (rank 15), 123 samples: residual/|Delta| = 9.3926e-51  -> a combination EXISTS: ['-0.6337843942', '0.2852029774', '0.02039724007', '0.1696909548', '-1.938155486', '-0.2852029774', '-0.8797129558', '-0.3642631172', '-0.3539481715', '0.09506765913', '0.2830390319', '0.1276413409', '-0.3539481715', '0.09506765913', '0.2830390319', '0.1276413409', '0.170634825', '-0.02386990892', '-0.02039724007', '0.09952483009']
+positive control (E_1/7 - 3 H_1 + 1/5): basis 'with the central charge: {1, c_pillow, c_pillow^2} x {1, a, E_1, H_1}': 12 functions (rank 12), 126 samples: residual/|Delta| = 1.5168e-50  -> a combination EXISTS: ['0.2', '-4.957863528e-49', '0.1428571429', '-3.0', '7.335362942e-49', '-9.655621154e-50', '-9.466206066e-51', '-1.361425502e-51', '6.493168153e-51', '1.108992375e-50', '1.122027864e-50', '-3.888089479e-51']
+positive control: exact ranks, basis 'polynomials deg<=2, 1/(a+1), 1/(a+2), a/(a+1), a/(a+2)': rank 8 -> with the gap column 9
+positive control: exact ranks, basis 'structure constants E_j, H_j, E_mj, 1, a, a E_1, a H_1': rank 9 -> with the gap column 9
+positive control: exact ranks, basis 'third-sector weighted {E_1, H_1, E_12, E_13, 1} x {1, a, 1/(a+1), 1/(a+2)}': rank 15 -> with the gap column 15
+positive control: exact ranks, basis 'with the central charge: {1, c_pillow, c_pillow^2} x {1, a, E_1, H_1}': rank 12 -> with the gap column 12

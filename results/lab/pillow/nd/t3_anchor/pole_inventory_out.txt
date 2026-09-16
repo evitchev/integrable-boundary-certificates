@@ -1,0 +1,23 @@
+  spin 3 (i,j)=(1,1): reduced form agrees: True; genuine poles mu = [-1] (predicted [-1]): True; t = ['-1']; regular at t=5 with limit C(k,i): True
+  spin 5 (i,j)=(2,1): reduced form agrees: True; genuine poles mu = [-2] (predicted [-2]): True; t = ['-5']; regular at t=5 with limit C(k,i): True
+  spin 5 (i,j)=(1,2): reduced form agrees: True; genuine poles mu = [-2] (predicted [-2]): True; t = ['-5']; regular at t=5 with limit C(k,i): True
+  spin 7 (i,j)=(3,1): reduced form agrees: True; genuine poles mu = [-3] (predicted [-3]): True; t = ['-9']; regular at t=5 with limit C(k,i): True
+  spin 7 (i,j)=(2,2): reduced form agrees: True; genuine poles mu = [-3, -2] (predicted [-2, -3]): True; t = ['-9', '1/3']; regular at t=5 with limit C(k,i): True
+  spin 7 (i,j)=(1,3): reduced form agrees: True; genuine poles mu = [-3] (predicted [-3]): True; t = ['-9']; regular at t=5 with limit C(k,i): True
+  spin 9 (i,j)=(4,1): reduced form agrees: True; genuine poles mu = [-4] (predicted [-4]): True; t = ['-13']; regular at t=5 with limit C(k,i): True
+  spin 9 (i,j)=(3,2): reduced form agrees: True; genuine poles mu = [-4, -3] (predicted [-3, -4]): True; t = ['-13', '-1']; regular at t=5 with limit C(k,i): True
+  spin 9 (i,j)=(2,3): reduced form agrees: True; genuine poles mu = [-4, -3] (predicted [-3, -4]): True; t = ['-13', '-1']; regular at t=5 with limit C(k,i): True
+  spin 9 (i,j)=(1,4): reduced form agrees: True; genuine poles mu = [-4] (predicted [-4]): True; t = ['-13']; regular at t=5 with limit C(k,i): True
+  spin 11 (i,j)=(5,1): reduced form agrees: True; genuine poles mu = [-5] (predicted [-5]): True; t = ['-17']; regular at t=5 with limit C(k,i): True
+  spin 11 (i,j)=(4,2): reduced form agrees: True; genuine poles mu = [-5, -4] (predicted [-4, -5]): True; t = ['-17', '-7/3']; regular at t=5 with limit C(k,i): True
+  spin 11 (i,j)=(3,3): reduced form agrees: True; genuine poles mu = [-5, -4, -3] (predicted [-3, -4, -5]): True; t = ['-17', '-7/3', '3/5']; regular at t=5 with limit C(k,i): True
+  spin 11 (i,j)=(2,4): reduced form agrees: True; genuine poles mu = [-5, -4] (predicted [-4, -5]): True; t = ['-17', '-7/3']; regular at t=5 with limit C(k,i): True
+  spin 11 (i,j)=(1,5): reduced form agrees: True; genuine poles mu = [-5] (predicted [-5]): True; t = ['-17']; regular at t=5 with limit C(k,i): True
+  spin 13 (i,j)=(6,1): reduced form agrees: True; genuine poles mu = [-6] (predicted [-6]): True; t = ['-21']; regular at t=5 with limit C(k,i): True
+  spin 13 (i,j)=(5,2): reduced form agrees: True; genuine poles mu = [-6, -5] (predicted [-5, -6]): True; t = ['-21', '-11/3']; regular at t=5 with limit C(k,i): True
+  spin 13 (i,j)=(4,3): reduced form agrees: True; genuine poles mu = [-6, -5, -4] (predicted [-4, -5, -6]): True; t = ['-21', '-11/3', '-1/5']; regular at t=5 with limit C(k,i): True
+  spin 13 (i,j)=(3,4): reduced form agrees: True; genuine poles mu = [-6, -5, -4] (predicted [-4, -5, -6]): True; t = ['-21', '-11/3', '-1/5']; regular at t=5 with limit C(k,i): True
+  spin 13 (i,j)=(2,5): reduced form agrees: True; genuine poles mu = [-6, -5] (predicted [-5, -6]): True; t = ['-21', '-11/3']; regular at t=5 with limit C(k,i): True
+  spin 13 (i,j)=(1,6): reduced form agrees: True; genuine poles mu = [-6] (predicted [-6]): True; t = ['-21']; regular at t=5 with limit C(k,i): True
+all surviving top-layer poles have t < 1: True (34 poles, max = 3/5)
+RESULT: pole inventory corrected and verified

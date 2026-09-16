@@ -1,0 +1,11 @@
+{
+  "kind": "RANK1_SEPARABLE_T3_SECOND",
+  "terms": [["70", 3, 1, 1], ["-56", 5, 2, 1], ["-56", 5, 1, 2], ["60", 7, 2, 2]],
+  "context": {
+    "t": "3",
+    "observable": "coefficient of (t-3)^2 in X^k-normalized cylindrical vacuum charge; half the second derivative",
+    "source_class": "log(1+g(t) 2E U_X(E,X,t) U_Y(E,Y,t)), g(3)=0, g'(3)=1, U_S(3)=B_S (subtracted beta-even oscillator tail), arbitrary sector-local first derivatives and scalar g''(3), natural momentum grading, monic two-sector diagonal charges",
+    "adapter": "rank1_separable_proof.py; dedicated formal determinant adapter, not an existing WKB kind",
+    "scope": "A projected formal series class. Does not exclude hidden even-E anchor terms, cross-momentum vectors, or every rank-one operator."
+  }
+}

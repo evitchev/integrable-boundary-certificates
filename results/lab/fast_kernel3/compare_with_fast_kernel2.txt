@@ -1,0 +1,32 @@
+=== fk3v2_w14.json vs w14_t97_sheet3.json
+PASS  same point: weight 14, solution 3, N = -143/4, s = -189/4
+PASS  genuine dim 2 == pinned 2
+PASS  the four eigenvalue vectors (new + pinned) span a space of rank 2 (2 = same pencil)
+PASS  witness 0: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 3
+PASS  witness 1: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 3
+COMPARISON PASSED
+exit 0
+=== fk3v2_w16.json vs w16_t53_sheet3.json
+PASS  same point: weight 16, solution 3, N = -25/2, s = -45/2
+PASS  genuine dim 2 == pinned 2
+PASS  the four eigenvalue vectors (new + pinned) span a space of rank 2 (2 = same pencil)
+PASS  witness 0: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 3
+PASS  witness 1: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 3
+COMPARISON PASSED
+exit 0
+=== fk3v2_w18s2.json vs w18_P2_sheet2_t5.json
+PASS  same point: weight 18, solution 2, N = -119/2, s = -143/2
+PASS  genuine dim 2 == pinned 2
+PASS  the four eigenvalue vectors (new + pinned) span a space of rank 2 (2 = same pencil)
+PASS  witness 0: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 2
+PASS  witness 1: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 2
+COMPARISON PASSED
+exit 0
+=== fk3v3_w22_dist.json vs w22_t1311_sheet3.json
+PASS  same point: weight 22, solution 3, N = -119/2, s = -143/2
+PASS  genuine dim 2 == pinned 2
+PASS  the four eigenvalue vectors (new + pinned) span a space of rank 2 (2 = same pencil)
+PASS  witness 0: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 3
+PASS  witness 1: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 3
+COMPARISON PASSED
+exit 0

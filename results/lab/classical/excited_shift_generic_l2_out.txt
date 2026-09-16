@@ -1,0 +1,8 @@
+=== fusion member, q = 6 (weight 10, t = 7/5): level 2
+level 2 transverse block (3 states) in 152s:
+   polynomial eigenvalue (x1) = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 2)]
+   irreducible factor of degree 2 (x1)
+level 2 singlet block (6 states) in 1194s:
+   polynomial eigenvalue (x1) = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 2)]
+   irreducible factor of degree 5 (x1)
+DONE

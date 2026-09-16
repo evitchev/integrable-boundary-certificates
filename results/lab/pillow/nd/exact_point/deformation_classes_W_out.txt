@@ -1,0 +1,6 @@
+class ['W'] (Lambda power for kappa^-2 kinds: p = -1): 33 shapes; spins 3..13 (242s)
+conditions: 110 (54 homogeneous at degrees k, k-1; 56 targets at degrees <= k-2); rank 28, augmented rank 29 on 33 shapes
+   homogeneous conditions alone: rank 17 -> kernel dimension 16 (0 means the class is dead by the exact layers alone on this shape space)
+   INCONSISTENT on this shape space: no first-order deformation in this class reproduces the targets
+   violated relation (5 terms): (343360/1842477) r(13, 4, 1) + (11030440/1842477) r(13, 4, 2) + (-858400/1842477) r(13, 5, 0) + (-22103800/1842477) r(13, 5, 1) + (2360600/141729) r(13, 6, 0) = 0 for every member of the class; the targets give 1
+done (247s)

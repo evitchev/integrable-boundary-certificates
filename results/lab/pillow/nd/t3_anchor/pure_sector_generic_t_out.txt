@@ -1,0 +1,24 @@
+== t = 2
+   gauge g fitted from spin 3 monomial (0, 0): g = 2
+   spin 3 pure/const exact by layer: deg 2: 2/2; deg 1: 2/2; deg 0: 1/1
+   spin 5 pure/const exact by layer: deg 3: 2/2; deg 2: 2/2; deg 1: 0/2; deg 0: 0/1
+   spin 7 pure/const exact by layer: deg 4: 2/2; deg 3: 2/2; deg 2: 0/2; deg 1: 0/2; deg 0: 0/1
+   spin 9 pure/const exact by layer: deg 5: 2/2; deg 4: 2/2; deg 3: 0/2; deg 2: 0/2; deg 1: 0/2; deg 0: 0/1
+   spin 11 pure/const exact by layer: deg 6: 2/2; deg 5: 2/2; deg 4: 0/2; deg 3: 0/2; deg 2: 0/2; deg 1: 0/2; deg 0: 0/1
+   spin 13 pure/const exact by layer: deg 7: 2/2; deg 6: 2/2; deg 5: 0/2; deg 4: 0/2; deg 3: 0/2; deg 2: 0/2; deg 1: 0/2; deg 0: 0/1
+== t = 4
+   gauge g fitted from spin 3 monomial (0, 0): g = 6/25
+   spin 3 pure/const exact by layer: deg 2: 2/2; deg 1: 2/2; deg 0: 1/1
+   spin 5 pure/const exact by layer: deg 3: 2/2; deg 2: 2/2; deg 1: 0/2; deg 0: 0/1
+   spin 7 pure/const exact by layer: deg 4: 2/2; deg 3: 2/2; deg 2: 0/2; deg 1: 0/2; deg 0: 0/1
+   spin 9 pure/const exact by layer: deg 5: 2/2; deg 4: 2/2; deg 3: 0/2; deg 2: 0/2; deg 1: 0/2; deg 0: 0/1
+   spin 11 pure/const exact by layer: deg 6: 2/2; deg 5: 2/2; deg 4: 0/2; deg 3: 0/2; deg 2: 0/2; deg 1: 0/2; deg 0: 0/1
+   spin 13 pure/const exact by layer: deg 7: 2/2; deg 6: 2/2; deg 5: 0/2; deg 4: 0/2; deg 3: 0/2; deg 2: 0/2; deg 1: 0/2; deg 0: 0/1
+== t = -2
+   gauge g fitted from spin 3 monomial (0, 0): g = -150
+   spin 3 pure/const exact by layer: deg 2: 2/2; deg 1: 2/2; deg 0: 1/1
+   spin 5 pure/const exact by layer: deg 3: 2/2; deg 2: 2/2; deg 1: 0/2; deg 0: 0/1
+   spin 7 pure/const exact by layer: deg 4: 2/2; deg 3: 2/2; deg 2: 0/2; deg 1: 0/2; deg 0: 0/1
+   spin 9 pure/const exact by layer: deg 5: 2/2; deg 4: 2/2; deg 3: 0/2; deg 2: 0/2; deg 1: 0/2; deg 0: 0/1
+   spin 11 pure/const exact by layer: deg 6: 2/2; deg 5: 2/2; deg 4: 0/2; deg 3: 0/2; deg 2: 0/2; deg 1: 0/2; deg 0: 0/1
+   spin 13 pure/const exact by layer: deg 7: 2/2; deg 6: 2/2; deg 5: 0/2; deg 4: 0/2; deg 3: 0/2; deg 2: 0/2; deg 1: 0/2; deg 0: 0/1

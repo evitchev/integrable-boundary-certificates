@@ -1,0 +1,40 @@
+log: 36 shapes
+log2_1_1 done 4s
+log2_1_2 done 6s
+log2_1_3 done 9s
+log2_1_4 done 12s
+log2_1_5 done 14s
+log2_1_6 done 17s
+log2_2_1 done 19s
+log2_2_2 done 21s
+log2_2_3 done 23s
+log2_2_4 done 25s
+log2_2_5 done 27s
+log2_2_6 done 29s
+log2_3_1 done 31s
+log2_3_2 done 33s
+log2_3_3 done 34s
+log2_3_4 done 36s
+log2_3_5 done 38s
+log2_3_6 done 40s
+log3_1_1 done 43s
+log3_1_2 done 46s
+log3_1_3 done 49s
+log3_1_4 done 52s
+log3_1_5 done 55s
+log3_1_6 done 58s
+log3_2_1 done 60s
+log3_2_2 done 63s
+log3_2_3 done 65s
+log3_2_4 done 69s
+log3_2_5 done 72s
+log3_2_6 done 75s
+log3_3_1 done 79s
+log3_3_2 done 82s
+log3_3_3 done 86s
+log3_3_4 done 90s
+log3_3_5 done 92s
+log3_3_6 done 95s
+log: finite columns 108, divergent 0
+DONE
+LOGDONE

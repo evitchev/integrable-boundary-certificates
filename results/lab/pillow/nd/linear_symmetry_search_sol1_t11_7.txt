@@ -1,0 +1,1 @@
+Solution 1, t = 11/7: 12 equations from the U <-> V symmetry of e_3 and e_5; Groebner basis with det A != 0: [1] -- NO nondegenerate affine map exists (certificate)

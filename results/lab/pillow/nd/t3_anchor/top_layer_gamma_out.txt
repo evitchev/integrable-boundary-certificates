@@ -1,0 +1,20 @@
+(1) the Gamma-ratio closed form against the certified tables, as a rational identity in t:
+   spin 3: 1/1 top mixed coefficients EXACT in t
+   spin 5: 2/2 top mixed coefficients EXACT in t
+   spin 7: 3/3 top mixed coefficients EXACT in t
+   spin 9: 4/4 top mixed coefficients EXACT in t
+   spin 11: 5/5 top mixed coefficients EXACT in t
+   spin 13: 6/6 top mixed coefficients EXACT in t
+(2) the pole family from the twist: Gamma(i + mu) has poles at mu = -p, i.e. t = 3 - 4p/(2k-2p-1)
+   k = 2, mu = -1: t = -1  (pole family predicts -1: MATCH)
+   k = 2, mu = -2: t = 11  (pole family predicts 11: MATCH)
+   k = 3, mu = -1: t = 5/3  (pole family predicts 5/3: MATCH)
+   k = 3, mu = -2: t = -5  (pole family predicts -5: MATCH)
+   k = 4, mu = -1: t = 11/5  (pole family predicts 11/5: MATCH)
+   k = 4, mu = -2: t = 1/3  (pole family predicts 1/3: MATCH)
+   k = 5, mu = -1: t = 17/7  (pole family predicts 17/7: MATCH)
+   k = 5, mu = -2: t = 7/5  (pole family predicts 7/5: MATCH)
+(3) the eps-expansion: first order tau_ij and second order tau_ij q_ij with harmonic numbers
+   first and second order match tau_ij and tau_ij q_ij at every spin 3..13 and every (i, j): True
+(4) twist: mu = (2k-1)(t-3)/(2(5-t)) -- zero at t = 3, pole at t = 5 (the end of Solution 3's curve)
+RESULT: the all-orders top layer IS the Gamma-ratio kernel

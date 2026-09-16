@@ -1,0 +1,13 @@
+  sectors: cand 54370 (d-image 36876, non-pivot 17494), target 165102 (d-image 114795, non-pivot 50307); structure 4.2s
+  exact build of 17494 non-pivot columns in 185s (3635375 nonzeros)
+  normal forms of 17494 columns for 10 primes at once in 242s
+  rref of A-hat (50307 x 17494) for 10 primes in parallel in 11337s
+  prime 2305843009213693951: rank 17492, nullity U = 2
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  3 prime(s): reconstruction not yet stable
+  4 prime(s): reconstruction not yet stable
+  5 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 2 with 6 prime(s): 2 vectors verified by exact identities (220s), canonical non-pivot representatives; total 12044s
+sol=2 N=-667/8 s=-765/8 dim=2 kc=36876 primes=6 time=12045s
+record written: fk3v2_w24_t1715_sheet2.json (tool sha256 5e29e28a8cdb4137)

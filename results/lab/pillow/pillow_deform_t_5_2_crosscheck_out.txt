@@ -1,0 +1,13 @@
+Solution 3, t = 11/7: Riccati to order 5 in 43s
+   spin 3: 2 equations (44s)
+   spin 5: 3 equations (69s)
+Solution 3, t = 11/7: 5 equations, 3 unknowns (cX + 2 shapes u/(1+u)^q); rank 3, augmented 4 -> INCONSISTENT
+Solution 1, t = 11/7: Riccati to order 5 in 44s
+   spin 3: 2 equations (45s)
+   spin 5: 3 equations (70s)
+Solution 1, t = 11/7: 5 equations, 3 unknowns (cX + 2 shapes u/(1+u)^q); rank 3, augmented 4 -> INCONSISTENT
+Solution 2, t = 11/7: Riccati to order 5 in 46s
+   spin 3: 2 equations (47s)
+   spin 5: 3 equations (73s)
+Solution 2, t = 11/7: 5 equations, 3 unknowns (cX + 2 shapes u/(1+u)^q); rank 3, augmented 4 -> INCONSISTENT
+DONE

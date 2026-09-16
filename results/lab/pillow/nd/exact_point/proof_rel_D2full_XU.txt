@@ -1,0 +1,6 @@
+Riccati to spin 13 with symbolic exponents: 4823 terms (34s)
+   spin 5: responses assembled (34s)
+   spin 9: responses assembled (34s)
+   spin 13: responses assembled (35s)
+the relation, in units of the reference B_s, is the rational function with numerator of degree 0 (37s)
+EXACT IDENTITY for the XU-shapes: the relation holds for every monomial w^i (1-w)^j, hence for the whole class

@@ -1,0 +1,30 @@
+== 1 11 7
+   pillow I_1 (5.13) = -X/2 - Y/2 + 43/72  ->  normalized on X: X + Y - 43/36
+   (5.13) - operator: 0
+   (5.13) - certified: 25/1404
+   operator - certified (the degree-(k-2) mismatch): 25/1404
+== 1 13 1
+   pillow I_1 (5.13) = -X/2 - Y/2 - 13/168  ->  normalized on X: X + Y + 13/84
+   (5.13) - operator: 0
+   (5.13) - certified: -5/252
+   operator - certified (the degree-(k-2) mismatch): -5/252
+== 3 13 6
+   pillow I_1 (5.13) = -X/2 - Y/2 + 299/1596  ->  normalized on X: X + Y - 299/798
+   (5.13) - operator: 0
+   (5.13) - certified: -1709/60648
+   operator - certified (the degree-(k-2) mismatch): -1709/60648
+== 3 9 5
+   pillow I_1 (5.13) = -X/2 - Y/2 + 61/168  ->  normalized on X: X + Y - 61/84
+   (5.13) - operator: 0
+   (5.13) - certified: -37/26460
+   operator - certified (the degree-(k-2) mismatch): -37/26460
+== 2 7 5
+   pillow I_1 (5.13) = -X/2 - Y/2 + 23/24  ->  normalized on X: X + Y - 23/12
+   (5.13) - operator: 0
+   (5.13) - certified: 1/180
+   operator - certified (the degree-(k-2) mismatch): 1/180
+== 2 1 2
+   pillow I_1 (5.13) = -X/2 - Y/2 - 17/12  ->  normalized on X: X + Y + 17/6
+   (5.13) - operator: 0
+   (5.13) - certified: 1/450
+   operator - certified (the degree-(k-2) mismatch): 1/450

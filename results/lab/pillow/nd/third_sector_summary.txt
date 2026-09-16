@@ -1,0 +1,40 @@
+Solution 1: Delta(t) = e_3 - I_3(primary) = (t - 23)*(t - 3)*(3*t + 1)/(720*(t + 1)*(t + 3)**2)   (absolute pillow units; full-function identity in t)
+   in a = alpha_1^2 = n nu: Delta = (2*a + 3)*(3*a + 2)*(13*a + 2)/(1440*(a + 2))
+Solution 1, t = 11/7 (by the limit t -> 11/7): alpha_1^2 = -7/8, E_1 = -91/64, H_1 = -71/64; Delta = 125/27648 = 0.00452112
+   q' (third-sector quartic zero mode needed, h' = 0) = -523/78624 = -0.00665191;  q'/q = 523/273;  Delta/E_1 = -125/39312;  Delta/H_1 = -125/30672
+Solution 1: Delta(t) = e_3 - I_3(primary) = (t - 23)*(t - 3)*(3*t + 1)/(720*(t + 1)*(t + 3)**2)   (absolute pillow units; full-function identity in t)
+   in a = alpha_1^2 = n nu: Delta = (2*a + 3)*(3*a + 2)*(13*a + 2)/(1440*(a + 2))
+Solution 1, t = 5 (by the limit t -> 5): alpha_1^2 = -1/2, E_1 = -1/4, H_1 = 1/4; Delta = -1/480 = -0.00208333
+   q' (third-sector quartic zero mode needed, h' = 0) = 7/1440 = 0.00486111;  q'/q = -7/5;  Delta/E_1 = 1/120;  Delta/H_1 = -1/120
+Solution 1: Delta(t) = e_3 - I_3(primary) = (t - 23)*(t - 3)*(3*t + 1)/(720*(t + 1)*(t + 3)**2)   (absolute pillow units; full-function identity in t)
+   in a = alpha_1^2 = n nu: Delta = (2*a + 3)*(3*a + 2)*(13*a + 2)/(1440*(a + 2))
+Solution 1, t = 13 (by the limit t -> 13): alpha_1^2 = -1/4, E_1 = 1/16, H_1 = 1/16; Delta = -25/16128 = -0.0015501
+   q' (third-sector quartic zero mode needed, h' = 0) = -19/672 = -0.0282738;  q'/q = 57/7;  Delta/E_1 = -25/1008;  Delta/H_1 = -25/1008
+Solution 3: Delta(t) = e_3 - I_3(primary) = (3*t**4 - 22*t**3 + 380*t**2 - 1082*t + 817)/(720*(t - 5)**3*(t - 1))   (absolute pillow units; full-function identity in t)
+   in a = alpha_1^2 = n nu: Delta = (126*a**4 + 321*a**3 + 250*a**2 + 76*a + 24)/(5760*(a + 1))
+Solution 3, t = 13/6 (by the limit t -> 13/6): alpha_1^2 = -24/17, E_1 = 8664/4913, H_1 = -2033/4913; Delta = -8545/1650768 = -0.00517638
+   q' (third-sector quartic zero mode needed, h' = 0) = -18653/2911104 = -0.00640753;  q'/q = 18653/10108;  Delta/E_1 = -8545/2911104;  Delta/H_1 = 8545/683088
+Solution 3: Delta(t) = e_3 - I_3(primary) = (3*t**4 - 22*t**3 + 380*t**2 - 1082*t + 817)/(720*(t - 5)**3*(t - 1))   (absolute pillow units; full-function identity in t)
+   in a = alpha_1^2 = n nu: Delta = (126*a**4 + 321*a**3 + 250*a**2 + 76*a + 24)/(5760*(a + 1))
+Solution 3, t = -3 (by the limit t -> -3): alpha_1^2 = -1/2, E_1 = 1/32, H_1 = 5/32; Delta = 13/2304 = 0.00564236
+   q' (third-sector quartic zero mode needed, h' = 0) = 17/96 = 0.177083;  q'/q = -51;  Delta/E_1 = 13/72;  Delta/H_1 = 13/360
+Solution 3: Delta(t) = e_3 - I_3(primary) = (3*t**4 - 22*t**3 + 380*t**2 - 1082*t + 817)/(720*(t - 5)**3*(t - 1))   (absolute pillow units; full-function identity in t)
+   in a = alpha_1^2 = n nu: Delta = (126*a**4 + 321*a**3 + 250*a**2 + 76*a + 24)/(5760*(a + 1))
+Solution 3, t = 21 (by the limit t -> 21): alpha_1^2 = 1/4, E_1 = -121/256, H_1 = -803/256; Delta = 8209/921600 = 0.00890734
+   q' (third-sector quartic zero mode needed, h' = 0) = -6481/290400 = -0.0223175;  q'/q = 19443/3025;  Delta/E_1 = -8209/435600;  Delta/H_1 = -8209/2890800
+Solution 3: Delta(t) = e_3 - I_3(primary) = (3*t**4 - 22*t**3 + 380*t**2 - 1082*t + 817)/(720*(t - 5)**3*(t - 1))   (absolute pillow units; full-function identity in t)
+   in a = alpha_1^2 = n nu: Delta = (126*a**4 + 321*a**3 + 250*a**2 + 76*a + 24)/(5760*(a + 1))
+Solution 3, t = 7 (by the limit t -> 7): alpha_1^2 = 2, E_1 = -32, H_1 = -80; Delta = 1/3 = 0.333333
+   q' (third-sector quartic zero mode needed, h' = 0) = -1/72 = -0.0138889;  q'/q = 4;  Delta/E_1 = -1/96;  Delta/H_1 = -1/240
+Solution 2: Delta(t) = e_3 - I_3(primary) = -(t - 7)*(t - 2)*(3*t - 1)*(5*t - 11)/(45*(t + 1)*(t + 5)**3)   (absolute pillow units; full-function identity in t)
+   in a = alpha_1^2 = n nu: Delta = -(2*a + 3)*(3*a + 2)*(7*a + 8)*(9*a + 10)/(720*(a + 2))
+Solution 2, t = 7/5 (by the limit t -> 7/5): alpha_1^2 = -5/4, E_1 = 25/32, H_1 = -25/32; Delta = 7/4608 = 0.0015191
+   q' (third-sector quartic zero mode needed, h' = 0) = -11/7200 = -0.00152778;  q'/q = 11/25;  Delta/E_1 = 7/3600;  Delta/H_1 = -7/3600
+Solution 2: Delta(t) = e_3 - I_3(primary) = -(t - 7)*(t - 2)*(3*t - 1)*(5*t - 11)/(45*(t + 1)*(t + 5)**3)   (absolute pillow units; full-function identity in t)
+   in a = alpha_1^2 = n nu: Delta = -(2*a + 3)*(3*a + 2)*(7*a + 8)*(9*a + 10)/(720*(a + 2))
+Solution 2, t = 1/2 (by the limit t -> 1/2): alpha_1^2 = -16/11, E_1 = -4352/1331, H_1 = -7312/1331; Delta = 221/59895 = 0.00368979
+   q' (third-sector quartic zero mode needed, h' = 0) = -53/11520 = -0.00460069;  q'/q = 53/40;  Delta/E_1 = -13/11520;  Delta/H_1 = -221/329040
+Solution 2: Delta(t) = e_3 - I_3(primary) = -(t - 7)*(t - 2)*(3*t - 1)*(5*t - 11)/(45*(t + 1)*(t + 5)**3)   (absolute pillow units; full-function identity in t)
+   in a = alpha_1^2 = n nu: Delta = -(2*a + 3)*(3*a + 2)*(7*a + 8)*(9*a + 10)/(720*(a + 2))
+Solution 2, t = 3 (by the limit t -> 3): alpha_1^2 = -1, E_1 = -2, H_1 = -2; Delta = 1/720 = 0.00138889
+   q' (third-sector quartic zero mode needed, h' = 0) = -1/240 = -0.00416667;  q'/q = 6/5;  Delta/E_1 = -1/1440;  Delta/H_1 = -1/1440

@@ -1,0 +1,4 @@
+gauge solved exactly at 19 fibres; samples: g(2) = 2, g(4) = 6/25, g(-2) = -150, g(6) = 162/245
+g(t) = 18*(t - 3)**2/((t - 1)*(t + 1)**2)    [degree <= 3, verified on 5 hold-out fibres]
+   g(3) = 0;  expansion at t = 3: 9*epsilon**2/16
+   poles: [-1, 1]

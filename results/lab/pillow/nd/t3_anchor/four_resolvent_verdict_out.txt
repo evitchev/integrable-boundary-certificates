@@ -1,0 +1,10 @@
+[SUPERSEDED -- this is the FIXED-GAUGE test; its refutation is withdrawn, see lab/joint_gauge_fit.py]
+the predicted relation at the DISCRIMINATING layers (three distinct values, two parameters):
+   degree 4 (spin 11): class predicts (p3-1)/(p2-1) = 4/3;  data give 125/47 = 2.65957  -> MISMATCH
+   degree 5 (spin 13): class predicts (p3-1)/(p2-1) = 3/2;  data give 1909/380 = 5.02368  -> MISMATCH
+   degree 2 (spin 7): two distinct values only -- a fit always exists, no information
+   degree 3 (spin 9): two distinct values only -- a fit always exists, no information
+
+VERDICT: the fixed-gauge relation fails (SUPERSEDED -- with the gauge fitted jointly the class WORKS): it passes the flatness and symmetry filters but its layer pattern is fixed, and the fixed
+         relation fails at both discriminating layers.  Since the pattern is N-independent, derivative insertions do not help, and since
+         flat families only shift the two free coefficients, no second-order off-diagonal coupling of this form can produce the deficit.

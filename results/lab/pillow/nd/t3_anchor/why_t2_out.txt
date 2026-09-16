@@ -1,0 +1,43 @@
+fibres pinned under results/lab/pillow/nd/t3_anchor/pfa: 17
+
+spin 7 (k = 4), degree-2 layer: 17 fibres
+   ratio [X^1 Y^1]/[X^0 Y^2]: reconstructed at degree <= 5 (12 fitted, EXACT on 5 hold-outs)
+      its closed-form prediction (reconstructed the same way, as a cross-check): reconstructed at degree <= 1 (4 fitted, EXACT on 13 hold-outs)
+      data      2*(9*t**5 + 1083*t**4 - 5110*t**3 + 598*t**2 + 20557*t - 20017)/(3*t**5 + 389*t**4 - 714*t**3 - 350*t**2 + 2727*t - 4167)
+      predicted 2*(3*t - 1)/(t + 9)
+      difference numerator   2048*(t - 5)*(t - 2)*(t + 2)*(7*t - 9)
+      difference denominator (t + 9)*(3*t**5 + 389*t**4 - 714*t**3 - 350*t**2 + 2727*t - 4167)
+      zeros [-2, 9/7, 2, 5];  value at t = 2: 0
+
+spin 9 (k = 5), degree-3 layer: 17 fibres
+   ratio [X^1 Y^2]/[X^0 Y^3]: reconstructed at degree <= 5 (12 fitted, EXACT on 5 hold-outs)
+      its closed-form prediction (reconstructed the same way, as a cross-check): reconstructed at degree <= 1 (4 fitted, EXACT on 13 hold-outs)
+      data      3*(15*t**5 + 3709*t**4 - 27898*t**3 + 71034*t**2 - 70517*t + 20393)/(3*t**5 + 785*t**4 - 2210*t**3 + 6162*t**2 - 12481*t + 6013)
+      predicted 3*(5*t - 7)/(t + 13)
+      difference numerator   18432*(t - 5)*(t - 2)*(2*t - 1)*(3*t - 5)
+      difference denominator (t + 13)*(3*t**5 + 785*t**4 - 2210*t**3 + 6162*t**2 - 12481*t + 6013)
+      zeros [1/2, 5/3, 2, 5];  value at t = 2: 0
+
+spin 11 (k = 6), degree-4 layer: 17 fibres
+   ratio [X^1 Y^3]/[X^0 Y^4]: reconstructed at degree <= 6 (14 fitted, EXACT on 3 hold-outs)
+      its closed-form prediction (reconstructed the same way, as a cross-check): reconstructed at degree <= 1 (4 fitted, EXACT on 13 hold-outs)
+      data      4*(63*t**6 + 26448*t**5 - 190145*t**4 + 460264*t**3 - 400467*t**2 - 22648*t + 157589)/(9*t**6 + 3948*t**5 - 3875*t**4 + 38704*t**3 - 104685*t**2 + 8996*t + 37319)
+      predicted 4*(7*t - 13)/(t + 17)
+      difference numerator   12288*(t - 5)*(t - 2)*(2*t + 1)*(55*t**2 - 146*t + 103)
+      difference denominator (t + 17)*(9*t**6 + 3948*t**5 - 3875*t**4 + 38704*t**3 - 104685*t**2 + 8996*t + 37319)
+      zeros [-1/2, 2, 5, 73/55 - 4*sqrt(21)*I/55, 73/55 + 4*sqrt(21)*I/55];  value at t = 2: 0
+   ratio [X^2 Y^2]/[X^0 Y^4]: reconstructed at degree <= 6 (14 fitted, EXACT on 3 hold-outs)
+      its closed-form prediction (reconstructed the same way, as a cross-check): reconstructed at degree <= 2 (6 fitted, EXACT on 11 hold-outs)
+      data      6*(105*t**6 + 43772*t**5 - 377907*t**4 + 1114384*t**3 - 1186029*t**2 + 2484*t + 463479)/(9*t**6 + 3948*t**5 - 3875*t**4 + 38704*t**3 - 104685*t**2 + 8996*t + 37319)
+      predicted 6*(5*t - 3)*(7*t - 13)/((t + 17)*(3*t + 7))
+      difference numerator   24576*(t - 5)*(t - 2)*(2*t + 1)*(231*t**3 - 355*t**2 - 971*t + 1311)
+      difference denominator (t + 17)*(3*t + 7)*(9*t**6 + 3948*t**5 - 3875*t**4 + 38704*t**3 - 104685*t**2 + 8996*t + 37319)
+      zeros [-1/2, 2, 5, 355/693 - 798928/(160083*(-1/2 - sqrt(3)*I/2)*(541349936/12326391 + 16*sqrt(14579319)*I/1617)**(1/3)) - (-1/2 - sqrt(3)*I/2)*(541349936/12326391 + 16*sqrt(14579319)*I/1617)**(1/3)/3, 355/693 - (-1/2 + sqrt(3)*I/2)*(541349936/12326391 + 16*sqrt(14579319)*I/1617)**(1/3)/3 - 798928/(160083*(-1/2 + sqrt(3)*I/2)*(541349936/12326391 + 16*sqrt(14579319)*I/1617)**(1/3)), 355/693 - (541349936/12326391 + 16*sqrt(14579319)*I/1617)**(1/3)/3 - 798928/(160083*(541349936/12326391 + 16*sqrt(14579319)*I/1617)**(1/3))];  value at t = 2: 0
+
+======================================================================================================================
+ratios tested: 4;  vanishing at t = 2: 4
+other zeros, by ratio: [['-2', '5', '9/7'], ['1/2', '5', '5/3'], ['-1/2', '5', '73/55 + 4*sqrt(21)*I/55', '73/55 - 4*sqrt(21)*I/55'], ['-1/2', '355/693 - (-1/2 + sqrt(3)*I/2)*(541349936/12326391 + 16*sqrt(14579319)*I/1617)**(1/3)/3 - 798928/(160083*(-1/2 + sqrt(3)*I/2)*(541349936/12326391 + 16*sqrt(14579319)*I/1617)**(1/3))', '355/693 - (541349936/12326391 + 16*sqrt(14579319)*I/1617)**(1/3)/3 - 798928/(160083*(541349936/12326391 + 16*sqrt(14579319)*I/1617)**(1/3))', '355/693 - 798928/(160083*(-1/2 - sqrt(3)*I/2)*(541349936/12326391 + 16*sqrt(14579319)*I/1617)**(1/3)) - (-1/2 - sqrt(3)*I/2)*(541349936/12326391 + 16*sqrt(14579319)*I/1617)**(1/3)/3', '5']]
+zeros shared by every ratio besides t = 2: ['5']
+READING: (t - 2) divides EVERY reconstructed difference while the remaining roots differ from ratio to ratio -- so the
+         agreement at t = 2 is a common structural factor of the exact rational functions, not four simultaneous accidental
+         crossings, and it is the other roots that are fibre-by-fibre accidents.

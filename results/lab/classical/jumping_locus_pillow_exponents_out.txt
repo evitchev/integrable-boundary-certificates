@@ -1,0 +1,6 @@
+Solution 1: lattice point t = (6*j + s)/(-2*j + s); b2 = -2j/s: True; c-condition index j' = [s/2], a2 = -2j'/s: [True]; beta^2 = 4*j/(2*j + s); lifting beta^2 = 1/(2k) <=> s = [2*j*(4*k - 1)]
+Solution 2: lattice point t = (5*j + 2*s)/(-j + 2*s); b2 = -2j/s: True; c-condition index j' = [(-2*j + s)/3], a2 = -2j'/s: [True]; beta^2 = 3*j/(2*(j + s)); lifting beta^2 = 1/(2k) <=> s = [j*(3*k - 1)]
+Solution 3: lattice point t = (-10*j + 3*s)/(-2*j + s); b2 = -2j/s: True; c-condition index j' = [j], a2 = -2j'/s: [True]; beta^2 = (-4*j + s)/(2*(-3*j + s)); lifting beta^2 = 1/(2k) <=> s = [j*(4*k - 3)/(k - 1)]
+sheet 3: s = 4j+1, k = j+1 = q/2  ->  W = s+1 = 2*q - 2 ; sheet 2: s = (3k-1) j, j = 1, k = q/2  ->  W = 3*q/2
+sheet 1: s = 2j(4k-1) is EVEN for every (j, k): no odd-spin solution -> no classical jump of sheet 1 lifts, no extra charge on sheet 1 at any beta^2 = 1/(2k)
+ALL LATTICE IDENTITIES HOLD

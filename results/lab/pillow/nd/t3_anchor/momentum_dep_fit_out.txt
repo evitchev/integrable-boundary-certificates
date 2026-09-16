@@ -1,0 +1,43 @@
+########## jp_max = 2  (usage: momentum_dep_fit.py 2 2)
+t = 2: fitting the momentum-dependent two-resolvent structures to the degree-(k-2) deficit layer
+   spin 7: 4 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY']), 3 layer coefficients
+   spin 9: 4 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY']), 4 layer coefficients
+   spin 11: 4 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY']), 5 layer coefficients
+   spin 13: 4 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY']), 6 layer coefficients
+
+4 spin-independent amplitudes; 12 fit equations (spins 7, 9, 11), 6 hold-out (spin 13)
+FIT: NO SOLUTION;  Groebner: [1] -- the class is EXCLUDED at this fibre
+   [exit 0]
+########## jp_max = 3  (usage: momentum_dep_fit.py 2 3)
+t = 2: fitting the momentum-dependent two-resolvent structures to the degree-(k-2) deficit layer
+   spin 7: 4 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY']), 3 layer coefficients
+   spin 9: 6 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY', 'jp=3:X^3+Y^3', 'jp=3:X^2Y+XY^2']), 4 layer coefficients
+   spin 11: 6 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY', 'jp=3:X^3+Y^3', 'jp=3:X^2Y+XY^2']), 5 layer coefficients
+   spin 13: 6 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY', 'jp=3:X^3+Y^3', 'jp=3:X^2Y+XY^2']), 6 layer coefficients
+
+6 spin-independent amplitudes; 12 fit equations (spins 7, 9, 11), 6 hold-out (spin 13)
+FIT: NO SOLUTION;  Groebner: [1] -- the class is EXCLUDED at this fibre
+   [exit 0]
+########## jp_max = 4  (usage: momentum_dep_fit.py 2 4)
+t = 2: fitting the momentum-dependent two-resolvent structures to the degree-(k-2) deficit layer
+   spin 7: 4 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY']), 3 layer coefficients
+   spin 9: 6 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY', 'jp=3:X^3+Y^3', 'jp=3:X^2Y+XY^2']), 4 layer coefficients
+   spin 11: 9 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY', 'jp=3:X^3+Y^3', 'jp=3:X^2Y+XY^2', 'jp=4:X^4+Y^4', 'jp=4:X^3Y+XY^3', 'jp=4:X^2Y^2']), 5 layer coefficients
+   spin 13: 9 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY', 'jp=3:X^3+Y^3', 'jp=3:X^2Y+XY^2', 'jp=4:X^4+Y^4', 'jp=4:X^3Y+XY^3', 'jp=4:X^2Y^2']), 6 layer coefficients
+
+9 spin-independent amplitudes; 12 fit equations (spins 7, 9, 11), 6 hold-out (spin 13)
+FIT: solution {'a_jp01': -7*a_jp4X3YpXY3/6327 - 11*a_jp4X4pY4/703 + 289984/31635, 'a_jp1XpY': -31*a_jp4X3YpXY3/4218 - 81*a_jp4X4pY4/703 + 19377304/369075, 'a_jp2X2pY2': -11*a_jp4X3YpXY3/1406 - 165*a_jp4X4pY4/703 - 44272/1295, 'a_jp2XY': -187*a_jp4X3YpXY3/2109 - 1056*a_jp4X4pY4/703 + 46224352/73815, 'a_jp3X2YpXY2': -4145*a_jp4X3YpXY3/12654 - 5120*a_jp4X4pY4/703 + 40382344/221445, 'a_jp3X3pY3': 595*a_jp4X3YpXY3/12654 + 10*a_jp4X4pY4/37 - 19172872/31635, 'a_jp4X2Y2': -164*a_jp4X3YpXY3/37 - 3440*a_jp4X4pY4/37 - 12851456/555} (free: [a_jp4X3YpXY3, a_jp4X4pY4])
+HOLD-OUT spin 13: 6 residuals carrying the free amplitudes [a_jp4X3YpXY3, a_jp4X4pY4]; solvable: NO -- the class is EXCLUDED even with the remaining freedom
+   Groebner on the hold-out: [1]
+   [exit 0]
+########## jp_max = 5  (usage: momentum_dep_fit.py 2 5)
+t = 2: fitting the momentum-dependent two-resolvent structures to the degree-(k-2) deficit layer
+   spin 7: 4 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY']), 3 layer coefficients
+   spin 9: 6 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY', 'jp=3:X^3+Y^3', 'jp=3:X^2Y+XY^2']), 4 layer coefficients
+   spin 11: 9 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY', 'jp=3:X^3+Y^3', 'jp=3:X^2Y+XY^2', 'jp=4:X^4+Y^4', 'jp=4:X^3Y+XY^3', 'jp=4:X^2Y^2']), 5 layer coefficients
+   spin 13: 12 structures available (['jp=0:1', 'jp=1:X+Y', 'jp=2:X^2+Y^2', 'jp=2:XY', 'jp=3:X^3+Y^3', 'jp=3:X^2Y+XY^2', 'jp=4:X^4+Y^4', 'jp=4:X^3Y+XY^3', 'jp=4:X^2Y^2', 'jp=5:X^5+Y^5', 'jp=5:X^4Y+XY^4', 'jp=5:X^3Y^2+X^2Y^3']), 6 layer coefficients
+
+12 spin-independent amplitudes; 12 fit equations (spins 7, 9, 11), 6 hold-out (spin 13)
+FIT: solution {'a_jp01': -7*a_jp4X3YpXY3/6327 - 11*a_jp4X4pY4/703 + 289984/31635, 'a_jp1XpY': -31*a_jp4X3YpXY3/4218 - 81*a_jp4X4pY4/703 + 19377304/369075, 'a_jp2X2pY2': -11*a_jp4X3YpXY3/1406 - 165*a_jp4X4pY4/703 - 44272/1295, 'a_jp2XY': -187*a_jp4X3YpXY3/2109 - 1056*a_jp4X4pY4/703 + 46224352/73815, 'a_jp3X2YpXY2': -4145*a_jp4X3YpXY3/12654 - 5120*a_jp4X4pY4/703 + 40382344/221445, 'a_jp3X3pY3': 595*a_jp4X3YpXY3/12654 + 10*a_jp4X4pY4/37 - 19172872/31635, 'a_jp4X2Y2': -164*a_jp4X3YpXY3/37 - 3440*a_jp4X4pY4/37 - 12851456/555} (free: [a_jp4X3YpXY3, a_jp4X4pY4, a_jp5X3Y2pX2Y3, a_jp5X4YpXY4, a_jp5X5pY5])
+HOLD-OUT spin 13: 6 residuals carrying the free amplitudes [a_jp4X3YpXY3, a_jp4X4pY4, a_jp5X3Y2pX2Y3, a_jp5X4YpXY4, a_jp5X5pY5]; solvable: YES [{'a_jp4X3YpXY3': -331398*a_jp5X4YpXY4/1499945 - 3506184*a_jp5X5pY5/1499945 - 4249527507408/412484875, 'a_jp4X4pY4': 66101*a_jp5X4YpXY4/2999890 + 20121*a_jp5X5pY5/130430 + 9962079570352/3712363875, 'a_jp5X3Y2pX2Y3': -408448*a_jp5X4YpXY4/65215 - 2264104*a_jp5X5pY5/65215 - 9936116200128/17934125}]
+   [exit 0]

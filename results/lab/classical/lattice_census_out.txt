@@ -1,0 +1,127 @@
+--- q = 4, w6 e_5 fusion member (q = 4): total degree 6
+   Q-factor (x1) deg 2: LINE 8*X - 8*Y + 9  [aX + bY + c with c/(-a) = -9/8, c/(-b) = 9/8]
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = -1, b/(i sqrt2 beta) = 0, c = 9/8 (c - 2nu11^2 = 0)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = 1, b/(i sqrt2 beta) = 0, c = 9/8 (c - 2nu11^2 = 0)
+--- q = 4, w6 Y-type member (q = 4): total degree 6
+   Q-factor (x1) deg 2: LINE 8*Y - 9  [aX + bY + c with c/(-a) = None, c/(-b) = 9/8]
+   Q-factor (x1) deg 2: LINE 8*Y - 5  [aX + bY + c with c/(-a) = None, c/(-b) = 5/8]
+   Q-factor (x1) deg 2: LINE 24*X - 8*Y + 5  [aX + bY + c with c/(-a) = -5/24, c/(-b) = 5/8]
+--- q = 4, w6 X-type member (q = 4): total degree 6
+   Q-factor (x2) deg 1: LINE (split) X = 0  [P-linear factor P]
+   Q-factor (x1) deg 2: LINE 2*X + 1  [aX + bY + c with c/(-a) = -1/2, c/(-b) = None]
+   Q-factor (x1) deg 2: LINE 8*X - 24*Y + 31  [aX + bY + c with c/(-a) = -31/8, c/(-b) = 31/24]
+--- q = 4, w16 e_15 = e_5 R_10 (q = 4): total degree 16
+   Q-factor (x1) deg 2: LINE 8*X - 8*Y + 9  [aX + bY + c with c/(-a) = -9/8, c/(-b) = 9/8]
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = -1, b/(i sqrt2 beta) = 0, c = 9/8 (c - 2nu11^2 = 0)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = 1, b/(i sqrt2 beta) = 0, c = 9/8 (c - 2nu11^2 = 0)
+   Q-factor (x1) deg 10: over K_q -> 1 factor(s) (1s)
+      (x1) OTHER degree 10 in (P, Q), degree 5 in (X, Y)
+--- q = 4, w16 e_Y (Y-type) = pure6 Q_5 (q = 4): total degree 16
+   Q-factor (x1) deg 2: LINE 8*Y - 9  [aX + bY + c with c/(-a) = None, c/(-b) = 9/8]
+   Q-factor (x2) deg 2: LINE 8*Y - 5  [aX + bY + c with c/(-a) = None, c/(-b) = 5/8]
+   Q-factor (x1) deg 10: over K_q -> 1 factor(s) (1s)
+      (x1) OTHER degree 10 in (P, Q), degree 5 in (X, Y)
+--- q = 4, w16 pencil gcd (q = 4): total degree 0
+=== q = 6, w10 sheet 3: pencil gcd degree 0
+--- q = 6, w10 sheet 3: pencil gcd (q = 6): total degree 0
+--- q = 6, w10 sheet 3: law member / gcd (q = 6): total degree 10
+   Q-factor (x1) deg 2: LINE 12*X - 12*Y + 25  [aX + bY + c with c/(-a) = -25/12, c/(-b) = 25/12]
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = -1, b/(i sqrt2 beta) = 0, c = 25/12 (c - 2nu11^2 = 0)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = 1, b/(i sqrt2 beta) = 0, c = 25/12 (c - 2nu11^2 = 0)
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = -2, b/(i sqrt2 beta) = 0, c = 25/12 (c - 2nu11^2 = 0)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = 2, b/(i sqrt2 beta) = 0, c = 25/12 (c - 2nu11^2 = 0)
+--- q = 6, w10 sheet 3: the other witness e_1 (q = 6): total degree 10
+   Q-factor (x1) deg 10: over K_q -> 1 factor(s) (2s)
+      (x1) OTHER degree 10 in (P, Q), degree 5 in (X, Y)
+=== q = 8, w12 sheet 2: pencil gcd degree 0
+--- q = 8, w12 sheet 2: pencil gcd (q = 8): total degree 0
+--- q = 8, w12 sheet 2: law member / gcd (q = 8): total degree 12
+   Q-factor (x1) deg 1: LINE (split) Y = 49/16  [Q-linear factor 4*Q - 7]
+   Q-factor (x1) deg 1: LINE (split) Y = 49/16  [Q-linear factor 4*Q + 7]
+   Q-factor (x1) deg 2: LINE 16*Y - 33  [aX + bY + c with c/(-a) = None, c/(-b) = 33/16]
+   Q-factor (x1) deg 2: LINE 16*Y - 13  [aX + bY + c with c/(-a) = None, c/(-b) = 13/16]
+   Q-factor (x2) deg 2: LINE 16*Y - 45  [aX + bY + c with c/(-a) = None, c/(-b) = 45/16]
+   Q-factor (x1) deg 2: LINE 144*X - 16*Y + 33  [aX + bY + c with c/(-a) = -11/48, c/(-b) = 33/16]
+--- q = 8, w12 sheet 2: the other witness e_1 (q = 8): total degree 12
+   Q-factor (x1) deg 12: over K_q -> 1 factor(s) (1s)
+      (x1) OTHER degree 12 in (P, Q), degree 6 in (X, Y)
+=== q = 8, w14 sheet 3: pencil gcd degree 0
+   law member: lambda = 3203/192, mu = -1, identity with the closed-form law: True
+--- q = 8, w14 sheet 3: pencil gcd (q = 8): total degree 0
+--- q = 8, w14 sheet 3: law member / gcd (q = 8): total degree 14
+   Q-factor (x1) deg 2: LINE 16*X - 16*Y + 49  [aX + bY + c with c/(-a) = -49/16, c/(-b) = 49/16]
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = -1, b/(i sqrt2 beta) = 0, c = 49/16 (c - 2nu11^2 = 0)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = 1, b/(i sqrt2 beta) = 0, c = 49/16 (c - 2nu11^2 = 0)
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = -2, b/(i sqrt2 beta) = 0, c = 49/16 (c - 2nu11^2 = 0)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = 2, b/(i sqrt2 beta) = 0, c = 49/16 (c - 2nu11^2 = 0)
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = -3, b/(i sqrt2 beta) = 0, c = 49/16 (c - 2nu11^2 = 0)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = 3, b/(i sqrt2 beta) = 0, c = 49/16 (c - 2nu11^2 = 0)
+--- q = 8, w14 sheet 3: the other witness e_1 (q = 8): total degree 14
+   Q-factor (x1) deg 14: OTHER degree 14 in (P, Q), degree 7 in (X, Y)  [extension factorization not attempted]
+--- D_4 level-1 branch locus (q = 4): total degree 4
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) OTHER degree 2 in (P, Q) (odd in P or Q)
+      (x1) OTHER degree 2 in (P, Q) (odd in P or Q)
+--- D_6 level-1 branch locus (q = 6): total degree 4
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) OTHER degree 2 in (P, Q) (odd in P or Q)
+      (x1) OTHER degree 2 in (P, Q) (odd in P or Q)
+--- D_8 level-1 branch locus (q = 8): total degree 4
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) OTHER degree 2 in (P, Q) (odd in P or Q)
+      (x1) OTHER degree 2 in (P, Q) (odd in P or Q)
+=== q = 12, w18 sheet 2: pencil gcd degree 0
+   law member: lambda = 7/240, mu = -11664/1615, identity with the closed-form law: True
+--- q = 12, w18 sheet 2: pencil gcd (q = 12): total degree 0
+--- q = 12, w18 sheet 2: law member / gcd (q = 12): total degree 18
+   Q-factor (x1) deg 2: LINE 8*Y - 19  [aX + bY + c with c/(-a) = None, c/(-b) = 19/8]
+   Q-factor (x1) deg 2: LINE 8*Y - 7  [aX + bY + c with c/(-a) = None, c/(-b) = 7/8]
+   Q-factor (x1) deg 2: LINE 24*Y - 121  [aX + bY + c with c/(-a) = None, c/(-b) = 121/24]
+   Q-factor (x1) deg 2: LINE 24*Y - 85  [aX + bY + c with c/(-a) = None, c/(-b) = 85/24]
+   Q-factor (x2) deg 2: LINE 8*Y - 39  [aX + bY + c with c/(-a) = None, c/(-b) = 39/8]
+   Q-factor (x2) deg 2: LINE 8*Y - 35  [aX + bY + c with c/(-a) = None, c/(-b) = 35/8]
+   Q-factor (x1) deg 2: LINE 360*X - 24*Y + 85  [aX + bY + c with c/(-a) = -17/72, c/(-b) = 85/24]
+=== q = 12, w22 sheet 3: pencil gcd degree 0
+   law member: lambda = 1/66, mu = 10077696/11, identity with the closed-form law: True
+--- q = 12, w22 sheet 3: pencil gcd (q = 12): total degree 0
+--- q = 12, w22 sheet 3: law member / gcd (q = 12): total degree 22
+   Q-factor (x1) deg 2: LINE 24*X - 24*Y + 121  [aX + bY + c with c/(-a) = -121/24, c/(-b) = 121/24]
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = -1, b/(i sqrt2 beta) = 0, c = 121/24 (c - 2nu11^2 = 0)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = 1, b/(i sqrt2 beta) = 0, c = 121/24 (c - 2nu11^2 = 0)
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = -2, b/(i sqrt2 beta) = 0, c = 121/24 (c - 2nu11^2 = 0)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = 2, b/(i sqrt2 beta) = 0, c = 121/24 (c - 2nu11^2 = 0)
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (1s)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = -4, b/(i sqrt2 beta) = 0, c = 121/24 (c - 2nu11^2 = 0)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = 4, b/(i sqrt2 beta) = 0, c = 121/24 (c - 2nu11^2 = 0)
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = -5, b/(i sqrt2 beta) = 0, c = 121/24 (c - 2nu11^2 = 0)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = 5, b/(i sqrt2 beta) = 0, c = 121/24 (c - 2nu11^2 = 0)
+   Q-factor (x1) deg 4: over K_q -> 2 factor(s) (0s)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = -3, b/(i sqrt2 beta) = 0, c = 121/24 (c - 2nu11^2 = 0)
+      (x1) LAMBDA (P + a)^2 - (Q + b)^2 + c with a/(i sqrt2 beta) = 3, b/(i sqrt2 beta) = 0, c = 121/24 (c - 2nu11^2 = 0)
+--- q = 12, w22 sheet 3: the other witness e_1 (q = 12): total degree 22
+   Q-factor (x1) deg 22: OTHER degree 22 in (P, Q), degree 11 in (X, Y)  [extension factorization not attempted]
+=== q = 16, w24 sheet 2: pencil gcd degree 0
+--- q = 16, w24 sheet 2: pencil gcd (q = 16): total degree 0
+--- q = 16, w24 sheet 2: law member / gcd (q = 16): total degree 24
+   Q-factor (x1) deg 2: LINE 32*Y - 225  [aX + bY + c with c/(-a) = None, c/(-b) = 225/32]
+   Q-factor (x1) deg 2: LINE 32*Y - 161  [aX + bY + c with c/(-a) = None, c/(-b) = 161/32]
+   Q-factor (x1) deg 2: LINE 32*Y - 125  [aX + bY + c with c/(-a) = None, c/(-b) = 125/32]
+   Q-factor (x1) deg 2: LINE 32*Y - 81  [aX + bY + c with c/(-a) = None, c/(-b) = 81/32]
+   Q-factor (x1) deg 2: LINE 32*Y - 29  [aX + bY + c with c/(-a) = None, c/(-b) = 29/32]
+   Q-factor (x2) deg 2: LINE 32*Y - 221  [aX + bY + c with c/(-a) = None, c/(-b) = 221/32]
+   Q-factor (x2) deg 2: LINE 32*Y - 209  [aX + bY + c with c/(-a) = None, c/(-b) = 209/32]
+   Q-factor (x2) deg 2: LINE 32*Y - 189  [aX + bY + c with c/(-a) = None, c/(-b) = 189/32]
+   Q-factor (x1) deg 2: LINE 672*X - 32*Y + 161  [aX + bY + c with c/(-a) = -23/96, c/(-b) = 161/32]
+--- q = 16, w24 sheet 2: the other witness e_1 (q = 16): total degree 24
+   Q-factor (x1) deg 24: OTHER degree 24 in (P, Q), degree 12 in (X, Y)  [extension factorization not attempted]
+DONE in 82s

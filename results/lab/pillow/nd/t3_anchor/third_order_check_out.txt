@@ -1,0 +1,36 @@
+======================================================================================================================
+CHECK 0: at ZERO GAUGE, is the h^2 layer exactly A_k F_(k-2) + B_k G_(k-2), with NO adjustment?
+   spin 7 [X^0 Y^2]:  data 7/288   A_k + (a+1)(b+1) B_k = 7/288   MATCH
+   spin 7 [X^1 Y^1]:  data 77/480   A_k + (a+1)(b+1) B_k = 77/480   MATCH
+   spin 9 [X^0 Y^3]:  data 3/64   A_k + (a+1)(b+1) B_k = 3/64   MATCH
+   spin 9 [X^1 Y^2]:  data 39/64   A_k + (a+1)(b+1) B_k = 39/64   MATCH
+   spin 11 [X^0 Y^4]:  data 77/960   A_k + (a+1)(b+1) B_k = 77/960   MATCH
+   spin 11 [X^1 Y^3]:  data 1529/960   A_k + (a+1)(b+1) B_k = 1529/960   MATCH
+   spin 11 [X^2 Y^2]:  data 671/320   A_k + (a+1)(b+1) B_k = 671/320   MATCH
+   spin 13 [X^0 Y^5]:  data 91/720   A_k + (a+1)(b+1) B_k = 91/720   MATCH
+   spin 13 [X^1 Y^4]:  data 273/80   A_k + (a+1)(b+1) B_k = 273/80   MATCH
+   spin 13 [X^2 Y^3]:  data 91/18   A_k + (a+1)(b+1) B_k = 91/18   MATCH
+   -> the second-order law is EXACT at g = 0 at every coefficient of every spin, with no free parameter
+======================================================================================================================
+h^2 and h^3 coefficients of the pinned degree-(k-2) layer IN THE OLD GAUGE (exact rational arithmetic)
+   spin 11 [X^0 Y^4]:  h^2 -11/1920     h^3 2123/51200
+   spin 11 [X^1 Y^3]:  h^2 1529/960     h^3 -25751/76800
+   spin 11 [X^2 Y^2]:  h^2 671/320     h^3 46673/76800
+   spin 13 [X^0 Y^5]:  h^2 -91/5760     h^3 53963/691200
+   spin 13 [X^1 Y^4]:  h^2 273/80     h^3 -265447/460800
+   spin 13 [X^2 Y^3]:  h^2 91/18     h^3 96005/27648
+======================================================================================================================
+q_6 = 11/72, q_7 = 91/360;  91 q_6 = 1001/72, 55 q_7 = 1001/72  -> the combination kills any common gauge: YES
+   at h^2:  R_11 = -11/128   R_13 = -91/640   91 R_11 - 55 R_13 = 0
+      (the model holds at h^2, so this combination must VANISH there: VANISHES -- consistent)
+   at h^3:  R_11 = 98483/30720   R_13 = 1344161/153600   91 R_11 - 55 R_13 = -2911909/15360
+      Codex's value -2863861/15360;  difference -1001/320   -> DIFFERS (expected: this set carries the old gauge)
+======================================================================================================================
+THE SAME COMBINATIONS AT ZERO GAUGE -- the comparison that is meaningful
+   at h^2:  R_11 = 0   R_13 = 0   91 R_11 - 55 R_13 = 0
+      must vanish (the law holds at h^2): VANISHES
+   at h^3:  R_11 = 2783/1024   R_13 = 1183/150   91 R_11 - 55 R_13 = -2863861/15360
+      Codex's value -2863861/15360;  difference 0   -> MATCH
+======================================================================================================================
+VERDICT: our pinned closed forms give exactly Codex's gauge-independent third-order combination, so the failure of the
+         two-pattern model at h^3 is confirmed from OUR data and is not an artefact of its OPE route.

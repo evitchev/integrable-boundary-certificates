@@ -1,0 +1,1 @@
+Solution 3, t = 13/6: positive control -- the shift map (1, 0, 0, 1, -36/133, 36/133) satisfies all 12 symmetry equations of e_3, e_5: True; and the symmetry of e_7..e_13: True

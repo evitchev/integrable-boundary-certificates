@@ -1,0 +1,4 @@
+Riccati to spin 3 with symbolic exponents: 63 terms (0s)
+   spin 3: responses assembled (0s)
+the relation, in units of the reference B_s, is the rational function with numerator of degree 0 (0s)
+EXACT IDENTITY for the XX0-shapes: the relation holds for every monomial w^i (1-w)^j, hence for the whole class

@@ -1,0 +1,9 @@
+A (pure-X part): {((1, 1, 1, 1, 1, 1), ()): Fraction(2, 15), ((1, 1, 1, 3), ()): Fraction(1, 3), ((1, 5), ()): Fraction(-7, 15)} ; vacuum value -X*(2*X + 1)*(4*X + 3)/60
+pair (1, 1): X-coefficient density {((1, 1, 1, 1), ()): Fraction(-2, 5), ((1, 3), ()): Fraction(1, 1)}; vacuum value -X*(2*X + 1)/5
+pair (1, 3): X-coefficient density {((1, 1), ()): Fraction(-3, 5)}; vacuum value (12*X + 1)/20
+pair (2, 2): X-coefficient density {((1, 1), ()): Fraction(-3, 5)}; vacuum value (12*X + 1)/20
+Hamiltonian's pure-X part: {((2, 2), ()): Fraction(-2, 1), ((1, 1, 1, 1), ()): Fraction(1, 1)} ; vacuum value (80*X**2 + 40*X + 3)/80
+weight 4: pure-X quotient dimension 2; vacuum map injective on it: True; combinations with zeros at nu_(1,4), nu_(1,2): 1-dimensional (unique up to scale: True)
+weight 6: pure-X quotient dimension 3; vacuum map injective on it: True; combinations with zeros at nu_(1,4), nu_(1,2): 1-dimensional (unique up to scale: True)
+UNIQUENESS HOLDS -- A and B_0 are determined up to scale by their two Kac zeros
+DONE

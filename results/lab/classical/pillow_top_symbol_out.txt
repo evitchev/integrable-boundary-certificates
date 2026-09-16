@@ -1,0 +1,19 @@
+--- Solution 3
+   spin 3 (k = 2): 2 ratio equations; (a2, b2) = [{a2: -(t - 3)/(t - 5), b2: -(t - 3)/(t - 5)}]
+   spin 5 (k = 3): 3 ratio equations; (a2, b2) = [{a2: -(t - 3)/(t - 5), b2: -(t - 3)/(t - 5)}]
+   spin 7 (k = 4): 4 ratio equations; (a2, b2) = [{a2: -(t - 3)/(t - 5), b2: -(t - 3)/(t - 5)}]
+   spin 9 (k = 5): 5 ratio equations; (a2, b2) = [{a2: -(t - 3)/(t - 5), b2: -(t - 3)/(t - 5)}]
+   => exponents a2 (X point), b2 (Y point) = [{a2: -(t - 3)/(t - 5), b2: -(t - 3)/(t - 5)}]; third exponent by the pillow sum rule -2 - a2 - b2 = [4/(t - 5)]; pillow (n, nu): n = [-(t - 7)/(t - 5)], nu = [-4/(t - 7)]
+--- Solution 1
+   spin 3 (k = 2): 2 ratio equations; (a2, b2) = [{a2: -1, b2: -(t - 1)/(t + 3)}]
+   spin 5 (k = 3): 3 ratio equations; (a2, b2) = [{a2: -1, b2: -(t - 1)/(t + 3)}]
+   spin 7 (k = 4): 4 ratio equations; (a2, b2) = [{a2: -1, b2: -(t - 1)/(t + 3)}]
+   spin 9 (k = 5): 5 ratio equations; (a2, b2) = [{a2: -1, b2: -(t - 1)/(t + 3)}]
+   => exponents a2 (X point), b2 (Y point) = [{a2: -1, b2: -(t - 1)/(t + 3)}]; third exponent by the pillow sum rule -2 - a2 - b2 = [-4/(t + 3)]; pillow (n, nu): n = [-(t + 7)/(t + 3)], nu = [4/(t + 7)]
+--- Solution 2
+   spin 3 (k = 2): 2 ratio equations; (a2, b2) = [{a2: 2*(t - 3)/(t + 5), b2: -4*(t - 1)/(t + 5)}]
+   spin 5 (k = 3): 3 ratio equations; (a2, b2) = [{a2: 2*(t - 3)/(t + 5), b2: -4*(t - 1)/(t + 5)}]
+   spin 7 (k = 4): 4 ratio equations; (a2, b2) = [{a2: 2*(t - 3)/(t + 5), b2: -4*(t - 1)/(t + 5)}]
+   spin 9 (k = 5): 5 ratio equations; (a2, b2) = [{a2: 2*(t - 3)/(t + 5), b2: -4*(t - 1)/(t + 5)}]
+   => exponents a2 (X point), b2 (Y point) = [{a2: 2*(t - 3)/(t + 5), b2: -4*(t - 1)/(t + 5)}]; third exponent by the pillow sum rule -2 - a2 - b2 = [-8/(t + 5)]; pillow (n, nu): n = [2*(t - 7)/(t + 5)], nu = [-4/(t - 7)]
+PILLOW TOP-SYMBOL TEST PASSED (one (a2, b2) per solution at all four spins)

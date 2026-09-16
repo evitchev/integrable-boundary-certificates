@@ -1,0 +1,33 @@
+=== I_3, level 3 transverse block (9 states) in 1s:
+   polynomial eigenvalue (x2) = vacuum with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 3)]
+   irreducible factor of degree 2 (x1)
+   irreducible factor of degree 5 (x1)
+=== I_3, level 3 singlet block (13 states) in 4s:
+   polynomial eigenvalue (x1) = vacuum with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 3)]
+   irreducible factor of degree 2 (x1)
+   irreducible factor of degree 10 (x1)
+=== e5 fusion, level 3 transverse block (9 states) in 12s:
+   polynomial eigenvalue (x2) = vacuum with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 3)]
+   irreducible factor of degree 2 (x1)
+   irreducible factor of degree 5 (x1)
+=== e5 fusion, level 3 singlet block (13 states) in 33s:
+   polynomial eigenvalue (x1) = vacuum with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 3)]
+   irreducible factor of degree 2 (x1)
+   irreducible factor of degree 10 (x1)
+=== Y-type, level 3 transverse block (9 states) in 10s:
+   polynomial eigenvalue (x2) = vacuum with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 3)]
+   irreducible factor of degree 2 (x1)
+   irreducible factor of degree 5 (x1)
+=== Y-type, level 3 singlet block (13 states) in 24s:
+   polynomial eigenvalue (x1) = vacuum with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 3)]
+   irreducible factor of degree 2 (x1)
+   irreducible factor of degree 10 (x1)
+=== X-type, level 3 transverse block (9 states) in 3s:
+   polynomial eigenvalue (x2) = vacuum with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 3)]
+   irreducible factor of degree 2 (x1)
+   irreducible factor of degree 5 (x1)
+=== X-type, level 3 singlet block (13 states) in 10s:
+   polynomial eigenvalue (x1) = vacuum with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 3)]
+   irreducible factor of degree 2 (x1)
+   irreducible factor of degree 10 (x1)
+DONE

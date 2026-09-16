@@ -1,0 +1,19 @@
+scalar class: numeric rank 26 (exact record: 33 incl. normalizations; here without them)
+Solution 3: scalar + normalizations rank 33, residual of the data direction 8.0405e-5
+Solution 1: scalar + normalizations rank 33, residual of the data direction 0.0010107
+=== columns_beta.txt: 63 shapes, 189 columns; directions added over scalar: 0
+   Solution 3: whole family -> residual 8.0405e-5 
+   Solution 3: single shapes making the data consistent: none
+   Solution 1: whole family -> residual 0.0010107 
+   Solution 1: single shapes making the data consistent: none
+=== columns_morse.txt: 20 shapes, 60 columns; directions added over scalar: 0
+   Solution 3: whole family -> residual 8.0405e-5 
+   Solution 3: single shapes making the data consistent: none
+   Solution 1: whole family -> residual 0.0010107 
+   Solution 1: single shapes making the data consistent: none
+=== columns_polylog.txt: 15 shapes, 45 columns; directions added over scalar: 0
+   Solution 3: whole family -> residual 8.0405e-5 
+   Solution 3: single shapes making the data consistent: none
+   Solution 1: whole family -> residual 0.0010107 
+   Solution 1: single shapes making the data consistent: none
+DONE

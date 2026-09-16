@@ -1,0 +1,65 @@
+== t = 2
+   spin 3: no degree-(k-2) mixed monomial -- nothing to fit, and nothing left over
+   spin 5: no degree-(k-2) mixed monomial -- nothing to fit, and nothing left over
+   spin 7: 1 eigenvalue(s) fitted from the degree-2 layer; 0/0 deeper coefficients PREDICTED
+       W_ij = {(1, 1): 13312/2475}
+   spin 9: 2 eigenvalue(s) fitted from the degree-3 layer; 0/1 deeper coefficients PREDICTED;  residual [((1, 1), -1/315)]
+       W_ij = {(1, 2): 48128/2025, (2, 1): 48128/2025}
+   spin 11: 3 eigenvalue(s) fitted from the degree-4 layer; 0/3 deeper coefficients PREDICTED;  residual [((1, 2), 5742/12103), ((2, 1), 5742/12103), ((1, 1), -13519/75411)]
+       W_ij = {(1, 3): 140288/2223, (2, 2): 391168/15561, (3, 1): 140288/2223}
+   spin 13: 4 eigenvalue(s) fitted from the degree-5 layer; 0/6 deeper coefficients PREDICTED;  residual [((3, 1), 881465/348381), ((2, 2), 39845/77418), ((1, 3), 881465/348381), ((1, 2), -5500183/5574096), ((2, 1), 11219/3312), ((1, 1), 116517505/183945168)]
+       W_ij = {(1, 4): 461824/3519, (2, 3): -66560/1173, (3, 2): -66560/1173, (4, 1): 461824/3519}
+   t = 2: deeper-layer predictions 0/10
+== t = 4
+   spin 3: no degree-(k-2) mixed monomial -- nothing to fit, and nothing left over
+   spin 5: no degree-(k-2) mixed monomial -- nothing to fit, and nothing left over
+   spin 7: 1 eigenvalue(s) fitted from the degree-2 layer; 0/0 deeper coefficients PREDICTED
+       W_ij = {(1, 1): 137216/32175}
+   spin 9: 2 eigenvalue(s) fitted from the degree-3 layer; 0/1 deeper coefficients PREDICTED;  residual [((1, 1), 7747/26775)]
+       W_ij = {(1, 2): 1291264/57375, (2, 1): 1291264/57375}
+   spin 11: 3 eigenvalue(s) fitted from the degree-4 layer; 0/3 deeper coefficients PREDICTED;  residual [((1, 2), 649594/377055), ((2, 1), 649594/377055), ((1, 1), 291313858/126511875)]
+       W_ij = {(1, 3): 381952/5985, (2, 2): 2975744/20349, (3, 1): 381952/5985}
+   spin 13: 4 eigenvalue(s) fitted from the degree-5 layer; 0/6 deeper coefficients PREDICTED;  residual [((3, 1), 52440973/8150625), ((2, 2), 58914323/5433750), ((1, 3), 52440973/8150625), ((1, 2), 8932465139/465750000), ((2, 1), 61491519973/3260250000), ((1, 1), 8897885825153/537941250000)]
+       W_ij = {(1, 4): 3550208/25875, (2, 3): 29262848/60375, (3, 2): 29262848/60375, (4, 1): 3550208/25875}
+   t = 4: deeper-layer predictions 0/10
+== t = -2
+   spin 3: no degree-(k-2) mixed monomial -- nothing to fit, and nothing left over
+   spin 5: no degree-(k-2) mixed monomial -- nothing to fit, and nothing left over
+   spin 7: 1 eigenvalue(s) fitted from the degree-2 layer; 0/0 deeper coefficients PREDICTED
+       W_ij = {(1, 1): 5120/9}
+   spin 9: 2 eigenvalue(s) fitted from the degree-3 layer; 0/1 deeper coefficients PREDICTED;  residual [((1, 1), -23125/231)]
+       W_ij = {(1, 2): 1285120/297, (2, 1): 1285120/297}
+   spin 11: 3 eigenvalue(s) fitted from the degree-4 layer; 0/3 deeper coefficients PREDICTED;  residual [((1, 2), 6378350/7371), ((2, 1), 6378350/7371), ((1, 1), -42398675/22113)]
+       W_ij = {(1, 3): -56320/3, (2, 2): -1771520/13, (3, 1): -56320/3}
+   spin 13: 4 eigenvalue(s) fitted from the degree-5 layer; 0/6 deeper coefficients PREDICTED;  residual [((3, 1), 1263925/4617), ((2, 2), 1406275/3078), ((1, 3), 1263925/4617), ((1, 2), -14722825/24624), ((2, 1), -16241225/24624), ((1, 1), 5324256925/2437776)]
+       W_ij = {(1, 4): -189440/171, (2, 3): -947200/9, (3, 2): -947200/9, (4, 1): -189440/171}
+   t = -2: deeper-layer predictions 0/10
+== t = 9
+   spin 3: no degree-(k-2) mixed monomial -- nothing to fit, and nothing left over
+   spin 5: no degree-(k-2) mixed monomial -- nothing to fit, and nothing left over
+   spin 7: 1 eigenvalue(s) fitted from the degree-2 layer; 0/0 deeper coefficients PREDICTED
+       W_ij = {(1, 1): 14912/325}
+   spin 9: 2 eigenvalue(s) fitted from the degree-3 layer; 0/1 deeper coefficients PREDICTED;  residual [((1, 1), 67869/15400)]
+       W_ij = {(1, 2): 432384/1375, (2, 1): 432384/1375}
+   spin 11: 3 eigenvalue(s) fitted from the degree-4 layer; 0/3 deeper coefficients PREDICTED;  residual [((1, 2), 14673219/433160), ((2, 1), 14673219/433160), ((1, 1), 2767070559/50960000)]
+       W_ij = {(1, 3): 1170048/1105, (2, 2): 4965120/1547, (3, 1): 1170048/1105}
+   spin 13: 4 eigenvalue(s) fitted from the degree-5 layer; 0/6 deeper coefficients PREDICTED;  residual [((3, 1), 3435653/23000), ((2, 2), 293413081/874000), ((1, 3), 3435653/23000), ((1, 2), 199698492097/349600000), ((2, 1), 197746874897/349600000), ((1, 1), 44250128017043/76912000000)]
+       W_ij = {(1, 4): 1221888/475, (2, 3): 160870656/10925, (3, 2): 160870656/10925, (4, 1): 1221888/475}
+   t = 9: deeper-layer predictions 0/10
+second-layer eigenvalues across sample t (for recognizing the closed form):
+   k = 4 (spin 7), t = -2: {(1, 1): 5120/9}
+   k = 4 (spin 7), t = 2: {(1, 1): 13312/2475}
+   k = 4 (spin 7), t = 4: {(1, 1): 137216/32175}
+   k = 4 (spin 7), t = 9: {(1, 1): 14912/325}
+   k = 5 (spin 9), t = -2: {(1, 2): 1285120/297, (2, 1): 1285120/297}
+   k = 5 (spin 9), t = 2: {(1, 2): 48128/2025, (2, 1): 48128/2025}
+   k = 5 (spin 9), t = 4: {(1, 2): 1291264/57375, (2, 1): 1291264/57375}
+   k = 5 (spin 9), t = 9: {(1, 2): 432384/1375, (2, 1): 432384/1375}
+   k = 6 (spin 11), t = -2: {(1, 3): -56320/3, (2, 2): -1771520/13, (3, 1): -56320/3}
+   k = 6 (spin 11), t = 2: {(1, 3): 140288/2223, (2, 2): 391168/15561, (3, 1): 140288/2223}
+   k = 6 (spin 11), t = 4: {(1, 3): 381952/5985, (2, 2): 2975744/20349, (3, 1): 381952/5985}
+   k = 6 (spin 11), t = 9: {(1, 3): 1170048/1105, (2, 2): 4965120/1547, (3, 1): 1170048/1105}
+   k = 7 (spin 13), t = -2: {(1, 4): -189440/171, (2, 3): -947200/9, (3, 2): -947200/9, (4, 1): -189440/171}
+   k = 7 (spin 13), t = 2: {(1, 4): 461824/3519, (2, 3): -66560/1173, (3, 2): -66560/1173, (4, 1): 461824/3519}
+   k = 7 (spin 13), t = 4: {(1, 4): 3550208/25875, (2, 3): 29262848/60375, (3, 2): 29262848/60375, (4, 1): 3550208/25875}
+   k = 7 (spin 13), t = 9: {(1, 4): 1221888/475, (2, 3): 160870656/10925, (3, 2): 160870656/10925, (4, 1): 1221888/475}

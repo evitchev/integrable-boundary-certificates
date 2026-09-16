@@ -1,0 +1,17 @@
+=== D=3 Solution 3 (least squares)
+27 equations in 6 unknowns; scaling fixed by f1 = -1/2 -> 5 unknowns
+   solution of ALL 27 equations: {'f2': '7.27113239101e-33', 'f3': '-5.76725963451e-33', 'g1': '0.5', 'g2': '-0.5', 'g3': '6.67727172555e-33'}
+   solution of ALL 27 equations: {'f2': '0.5', 'f3': '-1.81319824728e-31', 'g1': '0.5', 'g2': '-1.30339483508e-31', 'g3': '-6.19825777068e-32'}
+least-squares search: 2 distinct solutions of the full system (700 converged starts of 3000) in 514s (pillow: ['0', '0', '1/2', '-1/2', '0'])
+DONE
+=== D=3 Solution 1 (least squares)
+20 equations in 6 unknowns; scaling fixed by f1 = -1/2 -> 5 unknowns
+   solution of ALL 20 equations: {'f2': '2.56014719443e-33', 'f3': '-5.20214551708e-34', 'g1': '0.0625', 'g2': '-0.0625', 'g3': '7.89314182908e-34'}
+least-squares search: 1 distinct solutions of the full system (44 converged starts of 3000) in 133s (pillow: ['0', '0', '1/16', '-1/16', '0'])
+DONE
+=== D=3 Solution 2 (least squares)
+20 equations in 6 unknowns; scaling fixed by f1 = -1/2 -> 5 unknowns
+   solution of ALL 20 equations: {'f2': '-8.09593981951e-33', 'f3': '6.89602211523e-34', 'g1': '0.4', 'g2': '-0.4', 'g3': '1.10914125437e-32'}
+least-squares search: 1 distinct solutions of the full system (1316 converged starts of 3000) in 69s (pillow: ['0', '0', '2/5', '-2/5', '0'])
+DONE
+=== D=4 Solution 3 (least squares)

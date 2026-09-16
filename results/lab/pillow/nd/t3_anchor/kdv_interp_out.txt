@@ -1,0 +1,23 @@
+14 sample central charges: ['-1/3', '1/4', '2/3', '-22/3', '-11/16', '13/16', '13/25', '11/27', '-23/25', '23/27', '1/49', '-59/16', '37/49', '-59/49']
+  I_3(Delta, c) fitted (deg k-j in c), hold-out on 11+ samples per coefficient: OK
+  I_5(Delta, c) fitted (deg k-j in c), hold-out on 10+ samples per coefficient: OK
+  I_7(Delta, c) fitted (deg k-j in c), hold-out on 9+ samples per coefficient: OK
+  I_9(Delta, c) fitted (deg k-j in c), hold-out on 8+ samples per coefficient: OK
+  I_11(Delta, c) fitted (deg k-j in c), hold-out on 7+ samples per coefficient: OK
+  I_13(Delta, c) fitted (deg k-j in c), hold-out on 6+ samples per coefficient: OK
+(1) BLZ I_3 (eq. (40)) vs in-house, SYMBOLIC in c: IDENTICAL
+(1) BLZ I_5 (eq. (40)) vs in-house, SYMBOLIC in c: IDENTICAL
+(1) BLZ I_7 (eq. (40)) vs in-house, SYMBOLIC in c: IDENTICAL
+(2) c = -2: I_3 == F_2 = 2^-2 B_4((1+sqrt(1+8 Delta))/2): True
+(2) c = -2: I_5 == F_3 = 2^-3 B_6((1+sqrt(1+8 Delta))/2): True
+(2) c = -2: I_7 == F_4 = 2^-4 B_8((1+sqrt(1+8 Delta))/2): True
+(2) c = -2: I_9 == F_5 = 2^-5 B_10((1+sqrt(1+8 Delta))/2): True
+(2) c = -2: I_11 == F_6 = 2^-6 B_12((1+sqrt(1+8 Delta))/2): True
+(2) c = -2: I_13 == F_7 = 2^-7 B_14((1+sqrt(1+8 Delta))/2): True
+(3) Delta^(k-1) coefficient at k = 2: -(cc + 2)/12  == -k(c+2k-2)/24: True
+(3) Delta^(k-1) coefficient at k = 3: -(cc + 4)/8  == -k(c+2k-2)/24: True
+(3) Delta^(k-1) coefficient at k = 4: -(cc + 6)/6  == -k(c+2k-2)/24: True
+(3) Delta^(k-1) coefficient at k = 5: -5*(cc + 8)/24  == -k(c+2k-2)/24: True
+(3) Delta^(k-1) coefficient at k = 6: -(cc + 10)/4  == -k(c+2k-2)/24: True
+(3) Delta^(k-1) coefficient at k = 7: -7*(cc + 12)/24  == -k(c+2k-2)/24: True
+RESULT: ALL CHECKS PASS -- general-c I_(2k-1) available for k = 2..7

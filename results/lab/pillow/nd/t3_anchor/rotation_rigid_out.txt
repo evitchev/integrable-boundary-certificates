@@ -1,0 +1,32 @@
+CONVENTION: symmetric offsets (-1/8, -1/8): the ORIGINAL, superseded convention
+  k = 2: odd-in-Q part of F_k(h_1) + F_k(h_2) = P*Q*(P - Q)*(P + Q)*sin(4*theta)/4
+        TOP-degree (degree 4) odd term, offset-independent: P*Q*(P - Q)*(P + Q)*sin(4*theta)/4
+        the top-degree obstruction vanishes at theta = {0, pi/4, pi/2}
+        at theta = 0 (t = 3): FULL odd part ZERO -> polynomial in (X, Y)
+        at theta = pi/4 (paperclip end): FULL odd part ZERO -> polynomial in (X, Y)
+        at theta = pi/6 (a generic angle): FULL odd part NONZERO -> not a cylindrical charge
+  k = 3: odd-in-Q part of F_k(h_1) + F_k(h_2) = -P*Q*(P - Q)*(P + Q)*(6*P**2 + 6*Q**2 + 5)*sin(4*theta)/32
+        TOP-degree (degree 6) odd term, offset-independent: -3*P*Q*(P - Q)*(P + Q)*(P**2 + Q**2)*sin(4*theta)/16
+        the top-degree obstruction vanishes at theta = {0, pi/4, pi/2}
+        at theta = 0 (t = 3): FULL odd part ZERO -> polynomial in (X, Y)
+        at theta = pi/4 (paperclip end): FULL odd part ZERO -> polynomial in (X, Y)
+        at theta = pi/6 (a generic angle): FULL odd part NONZERO -> not a cylindrical charge
+CONVENTION: t = 3 dictionary offsets (-1/8, 0): Delta_X = -X/2 - 1/8, Delta_Y = -Y/2
+  k = 2: odd-in-Q part of F_k(h_1) + F_k(h_2) = -P*Q*(8*P**2*sin(theta)**2 - 4*P**2 - 8*Q**2*sin(theta)**2 + 4*Q**2 - 1)*sin(theta)*cos(theta)/4
+        TOP-degree (degree 4) odd term, offset-independent: P*Q*(P - Q)*(P + Q)*sin(4*theta)/4
+        the top-degree obstruction vanishes at theta = {0, pi/4, pi/2}
+        at theta = 0 (t = 3): FULL odd part ZERO -> polynomial in (X, Y)
+        at theta = pi/4 (paperclip end): FULL odd part NONZERO -> not a cylindrical charge
+        at theta = pi/6 (a generic angle): FULL odd part NONZERO -> not a cylindrical charge
+  k = 3: odd-in-Q part of F_k(h_1) + F_k(h_2) = P*Q*(12*P**2 + 12*Q**2 + 7)*(8*P**2*sin(theta)**2 - 4*P**2 - 8*Q**2*sin(theta)**2 + 4*Q**2 - 1)*sin(theta)*cos(theta)/64
+        TOP-degree (degree 6) odd term, offset-independent: -3*P*Q*(P - Q)*(P + Q)*(P**2 + Q**2)*sin(4*theta)/16
+        the top-degree obstruction vanishes at theta = {0, pi/4, pi/2}
+        at theta = 0 (t = 3): FULL odd part ZERO -> polynomial in (X, Y)
+        at theta = pi/4 (paperclip end): FULL odd part NONZERO -> not a cylindrical charge
+        at theta = pi/6 (a generic angle): FULL odd part NONZERO -> not a cylindrical charge
+VERDICT (SCOPED 2026-09-13, sec. 38(ap) item 4): the TOP-degree odd part carries a factor sin(4 theta) under BOTH offset
+         conventions, so it vanishes only at theta = 0, pi/4, pi/2 and a continuous rigid rotation of two decoupled c = -2
+         towers cannot keep the charges polynomial in (X, Y) at intermediate angles AT THAT DEGREE.  WITHDRAWN: the stronger
+         reading that the two ends are the only polynomial points and hence that every intermediate point is genuinely
+         coupled -- with the correct asymmetric t = 3 offsets the FULL odd part does not vanish at theta = pi/4 either, which
+         says only that the paperclip end has its own dictionary and is not reached by rotating the t = 3 one.

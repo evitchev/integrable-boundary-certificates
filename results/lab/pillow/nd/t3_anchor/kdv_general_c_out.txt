@@ -1,0 +1,16 @@
+Q = 1/3, c = 1 - 12Q^2 = -1/3: VEV(int T) = p2/2 - 1/24; Delta = VEV + c/24 = p2/2 - 1/18  [expected (p^2 - Q^2)/2 = p2/2 - 1/18]
+  spin 4: basis 5, kernel 4, trivial 3, genuine (mod d) 1
+  spin 4 (I_3) at c = -1/3: (1) Delta^2 + (-5/36) Delta^1 + (-61/25920) Delta^0
+  spin 6: basis 11, kernel 8, trivial 7, genuine (mod d) 1
+  spin 6 (I_5) at c = -1/3: (1) Delta^3 + (-11/24) Delta^2 + (95/1728) Delta^1 + (2561/2612736) Delta^0
+  spin 8: basis 22, kernel 16, trivial 15, genuine (mod d) 1
+  spin 8 (I_7) at c = -1/3: (1) Delta^4 + (-17/18) Delta^3 + (101/288) Delta^2 + (-145/3456) Delta^1 + (-11347/14929920) Delta^0
+  spin 10: basis 42, kernel 31, trivial 30, genuine (mod d) 1
+  spin 10 (I_9) at c = -1/3: (1) Delta^5 + (-115/72) Delta^4 + (3059/2592) Delta^3 + (-555679/1306368) Delta^2 + (9739715/188116992) Delta^1 + (140606525/148988657664) Delta^0
+  spin 12: basis 77, kernel 57, trivial 56, genuine (mod d) 1
+  spin 12 (I_11) at c = -1/3: (1) Delta^6 + (-29/12) Delta^5 + (5107/1728) Delta^4 + (-1363685/653184) Delta^3 + (47470627/62705664) Delta^2 + (-634862825/6772211712) Delta^1 + (-2281514143627/1331145934110720) Delta^0
+  spin 14: basis 135, kernel 102, trivial 101, genuine (mod d) 1
+  spin 14 (I_13) at c = -1/3: (1) Delta^7 + (-245/72) Delta^6 + (5957/960) Delta^5 + (-893857/124416) Delta^4 + (227209429/44789760) Delta^3 + (-198165948481/106420469760) Delta^2 + (7526928106735/32181550055424) Delta^1 + (9925415661457/2317071603990528) Delta^0
+  BLZ I_3 at c = -1/3: MATCHES the in-house charge
+  BLZ I_5 at c = -1/3: MATCHES the in-house charge
+  BLZ I_7 at c = -1/3: MATCHES the in-house charge

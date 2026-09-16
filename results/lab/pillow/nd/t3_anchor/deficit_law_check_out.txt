@@ -1,0 +1,30 @@
+======================================================================================================================
+the law against our pinned closed forms, as exact functions of t
+   spin 3 [X^0 Y^0]: IDENTICAL in t
+   spin 5 [X^0 Y^1]: IDENTICAL in t
+   spin 7 [X^0 Y^2]: IDENTICAL in t
+   spin 7 [X^1 Y^1]: IDENTICAL in t
+   spin 9 [X^0 Y^3]: IDENTICAL in t
+   spin 9 [X^1 Y^2]: IDENTICAL in t
+   spin 11 [X^0 Y^4]: IDENTICAL in t
+   spin 11 [X^1 Y^3]: IDENTICAL in t
+   spin 11 [X^2 Y^2]: IDENTICAL in t
+   spin 13 [X^0 Y^5]: IDENTICAL in t
+   spin 13 [X^1 Y^4]: IDENTICAL in t
+   spin 13 [X^2 Y^3]: IDENTICAL in t
+======================================================================================================================
+the mu -> 0 limit must give A_k F + B_k G with A_k = -k(2k-1)(8k^2-13k+3)/5760, B_k = k(2k-1)^2/1440
+   spin 3 [X^0 Y^0]: h^0 = 0, h^1 = 0, h^2 = 1/320   vs A_k+(a+1)(b+1)B_k = 1/320   MATCH
+   spin 5 [X^0 Y^1]: h^0 = 0, h^1 = 0, h^2 = 1/96   vs A_k+(a+1)(b+1)B_k = 1/96   MATCH
+   spin 7 [X^0 Y^2]: h^0 = 0, h^1 = 0, h^2 = 7/288   vs A_k+(a+1)(b+1)B_k = 7/288   MATCH
+   spin 7 [X^1 Y^1]: h^0 = 0, h^1 = 0, h^2 = 77/480   vs A_k+(a+1)(b+1)B_k = 77/480   MATCH
+   spin 9 [X^0 Y^3]: h^0 = 0, h^1 = 0, h^2 = 3/64   vs A_k+(a+1)(b+1)B_k = 3/64   MATCH
+   spin 9 [X^1 Y^2]: h^0 = 0, h^1 = 0, h^2 = 39/64   vs A_k+(a+1)(b+1)B_k = 39/64   MATCH
+   spin 11 [X^0 Y^4]: h^0 = 0, h^1 = 0, h^2 = 77/960   vs A_k+(a+1)(b+1)B_k = 77/960   MATCH
+   spin 11 [X^1 Y^3]: h^0 = 0, h^1 = 0, h^2 = 1529/960   vs A_k+(a+1)(b+1)B_k = 1529/960   MATCH
+   spin 11 [X^2 Y^2]: h^0 = 0, h^1 = 0, h^2 = 671/320   vs A_k+(a+1)(b+1)B_k = 671/320   MATCH
+   spin 13 [X^0 Y^5]: h^0 = 0, h^1 = 0, h^2 = 91/720   vs A_k+(a+1)(b+1)B_k = 91/720   MATCH
+   spin 13 [X^1 Y^4]: h^0 = 0, h^1 = 0, h^2 = 273/80   vs A_k+(a+1)(b+1)B_k = 273/80   MATCH
+   spin 13 [X^2 Y^3]: h^0 = 0, h^1 = 0, h^2 = 91/18   vs A_k+(a+1)(b+1)B_k = 91/18   MATCH
+======================================================================================================================
+VERDICT: the law reproduces our twelve functions identically in t and its h^2 limit is exactly the second-order law.

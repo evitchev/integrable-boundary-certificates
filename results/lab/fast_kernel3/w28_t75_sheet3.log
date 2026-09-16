@@ -1,0 +1,108 @@
+[13:31] weight-28 build (sheet 3, t = 7/5) launched on worker-2
+[13:33] launcher STOPPED before any elimination: the weight-28 matrix is 203,439 x 73,088 (dense nmod_mat rref = 119 GB per copy, two copies) -- twice a node's memory; the build continues on worker-1 for the sparse/streaming path
+[14:11] weight-28 build on worker-1 OOM-killed (main process 86 GB RSS + 14 workers of 15-20 GB each = beyond 125 GB) at the normal-forms phase; its orphaned pool workers (parent 1, 96% CPU, 14-20 GB each) terminated -- my own crashed job's workers, not a research process of the operator
+[16:06] weight-28 v4 build launched on worker-1 (4 workers, streamed triplets); chain: sketch solves on the four nodes, merge on the head
+[17:03] launcher replaced by w28_v4_launcher2.sh: five nodes (head included), round 1 primes 0-4 then merge, round 2 only if the reconstruction is not stable
+[18:13:09] build done on worker-1:   build phase done in 7287s -> <worker>/ib-fk3/phase_w28_t75_s3_v4
+[18:13:10] good primes: 0 1 2 3 4 5 6 7
+bash: line 1: 61286 Killed                  PYTHONDONTWRITEBYTECODE=1 nohup <home>/python312-lab/bin/python3 fk3_sketch_solve.py --dir=<worker>/ib-fk3/phase_w28_t75_s3_v4 --prime-index=0 > <worker>/ib-fk3/phase_w28_t75_s3_v4/solve_p0.log 2>&1 < /dev/null
+  sketch 73152 x 73088 assembled (219456 row picks) in 23s
+  nmod_mat filled in 132s; rref ...
+scp: <worker>/ib-fk3/phase_w28_t75_s3_v4/sol_p0.pkl: No such file or directory
+[18:19:38] prime 0 FAILED on worker-2 (see <worker>/ib-fk3/phase_w28_t75_s3_v4/solve_p0.log there)
+bash: line 1: 55222 Killed                  PYTHONDONTWRITEBYTECODE=1 nohup <home>/python312-lab/bin/python3 fk3_sketch_solve.py --dir=<worker>/ib-fk3/phase_w28_t75_s3_v4 --prime-index=1 > <worker>/ib-fk3/phase_w28_t75_s3_v4/solve_p1.log 2>&1 < /dev/null
+  sketch 73152 x 73088 assembled (219456 row picks) in 14s
+  nmod_mat filled in 130s; rref ...
+scp: <worker>/ib-fk3/phase_w28_t75_s3_v4/sol_p1.pkl: No such file or directory
+[18:21:54] prime 1 FAILED on worker-3 (see <worker>/ib-fk3/phase_w28_t75_s3_v4/solve_p1.log there)
+bash: line 1: 55044 Killed                  PYTHONDONTWRITEBYTECODE=1 nohup <home>/python312-lab/bin/python3 fk3_sketch_solve.py --dir=<worker>/ib-fk3/phase_w28_t75_s3_v4 --prime-index=2 > <worker>/ib-fk3/phase_w28_t75_s3_v4/solve_p2.log 2>&1 < /dev/null
+  sketch 73152 x 73088 assembled (219456 row picks) in 13s
+  nmod_mat filled in 134s; rref ...
+scp: <worker>/ib-fk3/phase_w28_t75_s3_v4/sol_p2.pkl: No such file or directory
+[18:22:08] prime 2 FAILED on worker-4 (see <worker>/ib-fk3/phase_w28_t75_s3_v4/solve_p2.log there)
+[22:15] launcher3: primes 0-2 rerun with the memory-lean solver (triplets freed during the rref, reloaded for the verification); primes 3 (worker-5, 107 GB) and 4 (head, 116 GB) left running
+[22:37:08] prime 0 FAILED on worker-2 (see <worker>/ib-fk3/phase_w28_t75_s3_v4/solve_p0.log there)
+[22:37:08] prime 1 FAILED on worker-3 (see <worker>/ib-fk3/phase_w28_t75_s3_v4/solve_p1.log there)
+[22:37:08] prime 2 FAILED on worker-4 (see <worker>/ib-fk3/phase_w28_t75_s3_v4/solve_p2.log there)
+scp: <worker>/ib-fk3/phase_w28_t75_s3_v4/sol_p3.pkl: No such file or directory
+[22:37:09] prime 3 FAILED on worker-5 (see <worker>/ib-fk3/phase_w28_t75_s3_v4/solve_p3.log there)
+Terminated
+[22:37:11] prime 4 FAILED on the head (see <lab>/phase_w28_t75_s3_v4/solve_p4.log)
+[22:37] all five round-1 solves STOPPED (111-124 GB each with 1 GB swap; worker-5 swapping 38 GB; head 116 GB): a numpy row view kept the 43 GB sketch array alive through the rref; solver fixed and deployed; launcher4 restarts primes 0-4
+[22:40:19] prime 4: MISSING
+  verification of 2 vector(s) on the full A-hat: ALL ZERO (29s)
+  prime index 0: rank 73086, nullity 2 (sketched, verified); total 32370s -> sol_p0.pkl
+[07:37:19] prime 0 solved on worker-2
+  verification of 2 vector(s) on the full A-hat: ALL ZERO (30s)
+  prime index 1: rank 73086, nullity 2 (sketched, verified); total 32260s -> sol_p1.pkl
+[07:39:58] prime 1 solved on worker-3
+  verification of 2 vector(s) on the full A-hat: ALL ZERO (30s)
+  prime index 2: rank 73086, nullity 2 (sketched, verified); total 32591s -> sol_p2.pkl
+[07:45:36] prime 2 solved on worker-4
+  verification of 2 vector(s) on the full A-hat: ALL ZERO (31s)
+  prime index 3: rank 73086, nullity 2 (sketched, verified); total 32801s -> sol_p3.pkl
+[07:49:18] prime 3 solved on worker-5
+[07:50:29] prime 3: present
+[08:08:03] prime 4 solved on the head
+[08:08:04] round 1 (clean restart): 5 prime(s); merge (6 workers)
+  record 0: legacy record without input provenance (accepted; upper bound asserted)
+  record 0: matrix files absent; modular rank not re-verified (asserted by the solve record)
+  record 1: legacy record without input provenance (accepted; upper bound asserted)
+  record 1: matrix files absent; modular rank not re-verified (asserted by the solve record)
+  record 2: legacy record without input provenance (accepted; upper bound asserted)
+  record 2: matrix files absent; modular rank not re-verified (asserted by the solve record)
+  record 3: legacy record without input provenance (accepted; upper bound asserted)
+  record 3: matrix files absent; modular rank not re-verified (asserted by the solve record)
+  record 4: legacy record without input provenance (accepted; upper bound asserted)
+  record 4: matrix files absent; modular rank not re-verified (asserted by the solve record)
+  merge: 5 solved prime(s) of 8 good, every record validated (schema, prime binding, nullity = columns - rank, canonical free-coordinate basis); structure + load 38s
+  modular rank independently re-verified for 0 of 5 record(s); input provenance re-verified for 0 of 5 (a record without an independently verified rank contributes an ASSERTED upper bound only)
+  prime 2305843009213693951: rank 73086, nullity U = 2
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  3 prime(s): reconstruction not yet stable
+  4 prime(s): reconstruction not yet stable
+  5 prime(s): reconstruction not yet stable
+FAIL  could not certify with the 5 solved prime(s); solve more primes and merge again
+[08:11:06] not sufficient; round 2 = primes 5-7 (+ any missing of 0-4)
+   missing:  5 6 7
+[08:11] 12-prime v4 build launched on worker-5 (insurance for the reconstruction: primes 8-11)
+  verification of 2 vector(s) on the full A-hat: ALL ZERO (31s)
+  prime index 6: rank 73086, nullity 2 (sketched, verified); total 32525s -> sol_p6.pkl
+[17:16:31] prime 6 solved on worker-3
+  verification of 2 vector(s) on the full A-hat: ALL ZERO (29s)
+  prime index 5: rank 73086, nullity 2 (sketched, verified); total 32820s -> sol_p5.pkl
+[17:18:08] prime 5 solved on worker-2
+  verification of 2 vector(s) on the full A-hat: ALL ZERO (30s)
+  prime index 7: rank 73086, nullity 2 (sketched, verified); total 32835s -> sol_p7.pkl
+[17:21:23] prime 7 solved on worker-4
+[17:21:24] round 2: 8 prime(s); merge
+  record 0: legacy record without input provenance (accepted; upper bound asserted)
+  record 0: matrix files absent; modular rank not re-verified (asserted by the solve record)
+  record 1: legacy record without input provenance (accepted; upper bound asserted)
+  record 1: matrix files absent; modular rank not re-verified (asserted by the solve record)
+  record 2: legacy record without input provenance (accepted; upper bound asserted)
+  record 2: matrix files absent; modular rank not re-verified (asserted by the solve record)
+  record 3: legacy record without input provenance (accepted; upper bound asserted)
+  record 3: matrix files absent; modular rank not re-verified (asserted by the solve record)
+  record 4: legacy record without input provenance (accepted; upper bound asserted)
+  record 4: matrix files absent; modular rank not re-verified (asserted by the solve record)
+  record 5: input files not present in the build directory; provenance not re-verified
+  record 5: matrix files absent; modular rank not re-verified (asserted by the solve record)
+  record 6: input files not present in the build directory; provenance not re-verified
+  record 6: matrix files absent; modular rank not re-verified (asserted by the solve record)
+  record 7: input files not present in the build directory; provenance not re-verified
+  record 7: matrix files absent; modular rank not re-verified (asserted by the solve record)
+  merge: 8 solved prime(s) of 8 good, every record validated (schema, prime binding, nullity = columns - rank, canonical free-coordinate basis); structure + load 35s
+  modular rank independently re-verified for 0 of 8 record(s); input provenance re-verified for 0 of 8 (a record without an independently verified rank contributes an ASSERTED upper bound only)
+  prime 2305843009213693951: rank 73086 (ASSERTED), nullity U = 2 -- reference structure
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  3 prime(s): reconstruction not yet stable
+  4 prime(s): reconstruction not yet stable
+  5 prime(s): reconstruction not yet stable
+  dimension 2: lower bound 2 by exact independent witnesses (independent); upper bound 2 by the modular nullity -- modular rank ASSERTED by the solve records, not independently verified
+  CERTIFIED genuine dim 2 with 6 prime(s): 2 vectors verified by exact identities (1610s), canonical non-pivot representatives; merge 1891s
+sol=3 N=-24 s=-35 dim=2 kc=165102 primes=6 time=1898s (merge; build 7287s)
+record written: <lab>/fk3v3_w28_t75_sheet3.json (tool sha256 65b29813dc399da5)
+[17:53] weight-28 run finished

@@ -1,0 +1,20 @@
+spin 3: residual X-part: 0;  Y-part (with the constant): 3*Y/8 + 1/80
+spin 5: residual X-part: X/32;  Y-part (with the constant): 9*Y**2/16 + 7*Y/32 + 59/8064
+spin 7: residual X-part: 7*X**2/80 + 143*X/1440;  Y-part (with the constant): 3*Y**3/4 + 67*Y**2/80 + 11*Y/36 + 1321/172800
+spin 9: residual X-part: 3*X**3/16 + 225*X**2/448 + 639*X/1792;  Y-part (with the constant): 15*Y**4/16 + 33*Y**3/16 + 459*Y**2/224 + 45*Y/64 + 1025/78848
+spin 11: residual X-part: 11*X**4/32 + 3377*X**3/2016 + 230527*X**2/80640 + 37711*X/23040;  Y-part (with the constant): 9*Y**5/8 + 131*Y**4/32 + 971*Y**3/126 + 148303*Y**2/20160 + 19*Y/8 + 119087237/3522355200
+spin 13: residual X-part: 91*X**5/160 + 5057*X**4/1152 + 473837*X**3/34560 + 5802433*X**2/304128 + 117165743*X/12165120;  Y-part (with the constant): 21*Y**6/16 + 1141*Y**5/160 + 12451*Y**4/576 + 338483*Y**3/8640 + 6893401*Y**2/190080 + 15893*Y/1440 + 6165937/48660480
+TRANSCRIPTION CHECK at c = -2 (must equal the certified t = 3 vacuum, normalized on X^k):
+   spin 3: BLZ(c=-2) == certified e0 (constants excluded as in the fit): True; constant diff 0
+   spin 5: BLZ(c=-2) == certified e0 (constants excluded as in the fit): True; constant diff 0
+   spin 7: BLZ(c=-2) == certified e0 (constants excluded as in the fit): True; constant diff 0
+spin 3 [fit range]: target 3*Y/8 + 1/80
+          model  3*Y/8 + 1/80
+          -> EXACT MATCH (all monomials of degree >= 1)
+spin 5 [fit range]: target X/32 + 9*Y**2/16 + 7*Y/32 + 59/8064
+          model  X/32 + 9*Y**2/16 + 7*Y/32 + 59/8064
+          -> EXACT MATCH (all monomials of degree >= 1)
+spin 7 [HOLD-OUT (parameter-free prediction)]: target 7*X**2/80 + 143*X/1440 + 3*Y**3/4 + 67*Y**2/80 + 11*Y/36 + 1321/172800
+          model  7*X**2/80 + 143*X/1440 + 3*Y**3/4 + 67*Y**2/80 + 11*Y/36 + 1321/172800
+          -> EXACT MATCH (all monomials of degree >= 1)
+DONE

@@ -1,0 +1,10 @@
+class ['W', 'X', 'Y', 'L', 'XX0', 'XY0', 'YY0'] (Lambda power for kappa^-2 kinds: p = -1): 343 shapes; spins 3..9 (323s)
+   response matrix saved to <scratch>/dc_Q0WXYL_s9.json
+   spins 3..5: 23 conditions, rank 23, augmented 23 -> consistent
+   spins 3..7: 43 conditions, rank 43, augmented 43 -> consistent
+   spins 3..9: 70 conditions, rank 70, augmented 70 -> consistent
+   hold-out: spins < 9: 43 conditions, rank 43, augmented 43; spin 9: 27 conditions, of which 0 are PREDICTED by the lower spins (in their row space) and 27 are accommodated by new freedom; full augmented consistency holds
+conditions: 70 (50 homogeneous at degrees k, k-1; 20 targets at degrees <= k-2); rank 70, augmented rank 70 on 343 shapes
+   homogeneous conditions alone: rank 50 -> kernel dimension 293 (0 means the class is dead by the exact layers alone on this shape space)
+   CONSISTENT on this shape space: a first-order deformation exists in this class on these shapes; solution space dimension 273
+done (933s)

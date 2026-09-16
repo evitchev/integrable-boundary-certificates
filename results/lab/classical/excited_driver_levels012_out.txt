@@ -1,0 +1,109 @@
+=== level 0, singlet block: 1 states [((), (), ())]
+   I_3: block computed in 0s
+   e5: block computed in 0s
+   Y-type: block computed in 0s
+   X-type: block computed in 0s
+   [I_3, I_3] = 0: True
+   I_3: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): -960*P**4 + 2880*P**2*Q**2 - 3480*P**2 - 960*Q**4 + 1920*Q**2 + 960*lambda - 961
+   [e5, I_3] = 0: True
+   e5: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): -512*P**6 + 1536*P**4*Q**2 - 2240*P**4 - 1536*P**2*Q**4 + 3456*P**2*Q**2 - 2072*P**2 + 512*Q**6 - 1216*Q**4 + 920*Q**2 + 768*lambda - 225
+   [Y-type, I_3] = 0: True
+   Y-type: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): -1536*P**2*Q**4 + 2688*P**2*Q**2 - 1080*P**2 + 512*Q**6 - 1216*Q**4 + 920*Q**2 + 4608*lambda - 225
+   [X-type, I_3] = 0: True
+   X-type: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): 16*P**6 - 48*P**4*Q**2 + 70*P**4 - 24*P**2*Q**2 + 31*P**2 + 120*lambda
+=== level 0, transverse block: 0 states []
+   I_3: block computed in 0s
+   e5: block computed in 0s
+   Y-type: block computed in 0s
+   X-type: block computed in 0s
+   [I_3, I_3] = 0: True
+   I_3: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+   [e5, I_3] = 0: True
+   e5: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+   [Y-type, I_3] = 0: True
+   Y-type: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+   [X-type, I_3] = 0: True
+   X-type: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+DONE
+=== level 1, singlet block: 2 states [((), (), (1,)), ((1,), (), ())]
+   I_3: block computed in 0s
+   e5: block computed in 0s
+   Y-type: block computed in 0s
+   X-type: block computed in 0s
+   [I_3, I_3] = 0: True
+   I_3: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 2 (x1): 921600*P**8 - 5529600*P**6*Q**2 + 1152000*P**6 + 10137600*P**4*Q**4 - 12672000*P**4*Q**2 - 1843200*P**4*lambda - 68066880*P**4 - 5529600*P**2*Q**6 + 28800000*P*
+   [e5, I_3] = 0: True
+   e5: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 2 (x1): 262144*P**12 - 1572864*P**10*Q**2 - 3997696*P**10 + 3932160*P**8*Q**4 + 8454144*P**8*Q**2 - 70717440*P**8 - 5242880*P**6*Q**6 + 6160384*P**6*Q**4 + 206848000*P*
+   [Y-type, I_3] = 0: True
+   Y-type: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 2 (x1): 2359296*P**4*Q**8 - 36569088*P**4*Q**6 + 77783040*P**4*Q**4 - 56678400*P**4*Q**2 + 13608000*P**4 - 1572864*P**2*Q**10 + 34799616*P**2*Q**8 - 213368832*P**2*Q**6
+   [X-type, I_3] = 0: True
+   X-type: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 2 (x1): 256*P**12 - 1536*P**10*Q**2 - 3904*P**10 + 2304*P**8*Q**4 + 20160*P**8*Q**2 - 75900*P**8 - 25344*P**6*Q**4 - 17856*P**6*Q**2 + 3840*P**6*lambda - 129724*P**6 - 
+=== level 1, transverse block: 1 states [((), (), (), (1,))]
+   I_3: block computed in 0s
+   e5: block computed in 0s
+   Y-type: block computed in 0s
+   X-type: block computed in 0s
+   [I_3, I_3] = 0: True
+   I_3: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): -960*P**4 + 2880*P**2*Q**2 - 9240*P**2 - 960*Q**4 + 5760*Q**2 + 960*lambda - 8641
+   [e5, I_3] = 0: True
+   e5: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): -512*P**6 + 1536*P**4*Q**2 - 5312*P**4 - 1536*P**2*Q**4 + 9600*P**2*Q**2 - 15128*P**2 + 512*Q**6 - 4288*Q**4 + 11928*Q**2 + 768*lambda - 11025
+   [Y-type, I_3] = 0: True
+   Y-type: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): -1536*P**2*Q**4 + 8832*P**2*Q**2 - 12600*P**2 + 512*Q**6 - 4288*Q**4 + 11928*Q**2 + 4608*lambda - 11025
+   [X-type, I_3] = 0: True
+   X-type: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): 16*P**6 - 48*P**4*Q**2 + 166*P**4 - 24*P**2*Q**2 + 79*P**2 + 120*lambda
+DONE
+=== level 2, singlet block: 6 states [((), ((1, 1),), ()), ((), (), (2,)), ((), (), (1, 1)), ((1,), (), (1,)), ((2,), (), ()), ((1, 1), (), ())]
+   I_3: block computed in 0s
+   e5: block computed in 5s
+   Y-type: block computed in 4s
+   X-type: block computed in 1s
+   [I_3, I_3] = 0: True
+   I_3: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): -960*P**4 + 2880*P**2*Q**2 - 15000*P**2 - 960*Q**4 + 9600*Q**2 + 960*lambda - 24001
+      degree 5 (x1): -815372697600000*P**20 + 12230590464000000*P**18*Q**2 + 9682550784000000*P**18 - 77460406272000000*P**16*Q**4 - 83575701504000000*P**16*Q**2 + 4076863488000000*
+   [e5, I_3] = 0: True
+   e5: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): -512*P**6 + 1536*P**4*Q**2 - 8384*P**4 - 1536*P**2*Q**4 + 15744*P**2*Q**2 - 40472*P**2 + 512*Q**6 - 7360*Q**4 + 35224*Q**2 + 768*lambda - 56129
+      degree 5 (x1): -35184372088832*P**30 + 527765581332480*P**28*Q**2 + 3452466511216640*P**28 - 3694359069327360*P**26*Q**4 - 40242125576601600*P**26*Q**2 - 47978839145447424*P**
+   [Y-type, I_3] = 0: True
+   Y-type: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): -1536*P**2*Q**4 + 14976*P**2*Q**2 - 36408*P**2 + 512*Q**6 - 7360*Q**4 + 35224*Q**2 + 4608*lambda - 56129
+      degree 5 (x1): -8549802417586176*P**10*Q**20 + 587798916209049600*P**10*Q**18 - 13898906145751302144*P**10*Q**16 + 125356802274660188160*P**10*Q**14 - 350052694288660168704*P*
+   [X-type, I_3] = 0: True
+   X-type: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): 16*P**6 - 48*P**4*Q**2 + 262*P**4 - 24*P**2*Q**2 + 127*P**2 + 120*lambda
+      degree 5 (x1): 1048576*P**30 - 15728640*P**28*Q**2 - 102891520*P**28 + 94371840*P**26*Q**4 + 1415577600*P**26*Q**2 + 1357479936*P**26 - 283115520*P**24*Q**6 - 7726694400*P**24
+=== level 2, transverse block: 3 states [((), (), (1,), (1,)), ((1,), (), (), (1,)), ((), (), (), (2,))]
+   I_3: block computed in 0s
+   e5: block computed in 1s
+   Y-type: block computed in 1s
+   X-type: block computed in 0s
+   [I_3, I_3] = 0: True
+   I_3: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): -960*P**4 + 2880*P**2*Q**2 - 15000*P**2 - 960*Q**4 + 9600*Q**2 + 960*lambda - 24001
+      degree 2 (x1): 921600*P**8 - 5529600*P**6*Q**2 + 12211200*P**6 + 10137600*P**4*Q**4 - 53222400*P**4*Q**2 - 1843200*P**4*lambda - 2172480*P**4 - 5529600*P**2*Q**6 + 61977600*P*
+   [e5, I_3] = 0: True
+   e5: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): -512*P**6 + 1536*P**4*Q**2 - 8384*P**4 - 1536*P**2*Q**4 + 15744*P**2*Q**2 - 40472*P**2 + 512*Q**6 - 7360*Q**4 + 35224*Q**2 + 768*lambda - 56129
+      degree 2 (x1): 262144*P**12 - 1572864*P**10*Q**2 - 851968*P**10 + 3932160*P**8*Q**4 - 7274496*P**8*Q**2 - 71897088*P**8 - 5242880*P**6*Q**6 + 37617664*P**6*Q**4 + 119291904*P*
+   [Y-type, I_3] = 0: True
+   Y-type: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): -1536*P**2*Q**4 + 14976*P**2*Q**2 - 36408*P**2 + 512*Q**6 - 7360*Q**4 + 35224*Q**2 + 4608*lambda - 56129
+      degree 2 (x1): 2359296*P**4*Q**8 - 55443456*P**4*Q**6 + 353820672*P**4*Q**4 - 882137088*P**4*Q**2 + 768398400*P**4 - 1572864*P**2*Q**10 + 50528256*P**2*Q**8 - 554680320*P**2*Q
+   [X-type, I_3] = 0: True
+   X-type: characteristic polynomial factors (degree in lambda; polynomial eigenvalue if 1):
+      degree 1 (x1): 16*P**6 - 48*P**4*Q**2 + 262*P**4 - 24*P**2*Q**2 + 127*P**2 + 120*lambda
+      degree 2 (x1): 256*P**12 - 1536*P**10*Q**2 - 832*P**10 + 2304*P**8*Q**4 + 10944*P**8*Q**2 - 107004*P**8 - 25344*P**6*Q**4 + 83520*P**6*Q**2 + 3840*P**6*lambda - 195388*P**6 - 
+DONE

@@ -1,0 +1,4 @@
+Riccati to spin 5 with symbolic exponents: 333 terms (1s)
+   spin 5: responses assembled (1s)
+the relation, in units of the reference B_s, is the rational function with numerator of degree 0 (1s)
+EXACT IDENTITY for the L-shapes: the relation holds for every monomial w^i (1-w)^j, hence for the whole class

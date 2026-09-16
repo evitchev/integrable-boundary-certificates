@@ -1,0 +1,11 @@
+spin 3: residual X-part: 0;  Y-part (with the constant): 3*Y/8 + 1/80
+spin 5: residual X-part: X/32;  Y-part (with the constant): 9*Y**2/16 + 7*Y/32 + 59/8064
+spin 7: residual X-part: 7*X**2/80 + 143*X/1440;  Y-part (with the constant): 3*Y**3/4 + 67*Y**2/80 + 11*Y/36 + 1321/172800
+spin 9: residual X-part: 3*X**3/16 + 225*X**2/448 + 639*X/1792;  Y-part (with the constant): 15*Y**4/16 + 33*Y**3/16 + 459*Y**2/224 + 45*Y/64 + 1025/78848
+spin 11: residual X-part: 11*X**4/32 + 3377*X**3/2016 + 230527*X**2/80640 + 37711*X/23040;  Y-part (with the constant): 9*Y**5/8 + 131*Y**4/32 + 971*Y**3/126 + 148303*Y**2/20160 + 19*Y/8 + 119087237/3522355200
+spin 13: residual X-part: 91*X**5/160 + 5057*X**4/1152 + 473837*X**3/34560 + 5802433*X**2/304128 + 117165743*X/12165120;  Y-part (with the constant): 21*Y**6/16 + 1141*Y**5/160 + 12451*Y**4/576 + 338483*Y**3/8640 + 6893401*Y**2/190080 + 15893*Y/1440 + 6165937/48660480
+spin 3: 2 equations; residual target X: 0 | Y: 3*Y/8 + 1/80
+spin 5: 4 equations; residual target X: X/32 | Y: 9*Y**2/16 + 7*Y/32 + 59/8064
+H-c on spins 3, 5: [{aX: 9/4, aY: 9/4, bX: 3/32, bY: 0}]
+   a_X - a_Y = 0 | b_S - a_S/24 (the fixed-I_1 check): 0 -3/32
+DONE

@@ -1,0 +1,31 @@
+83 data coordinates (spins 1-11)
+a00, pole order <= 2: scalar rank 32; scalar + 126 rank-3 columns: rank 69
+Solution 3: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+   Solution 3, scalar, spins 1-11: rank 41, augmented 42 -> INCONSISTENT
+   Solution 3, scalar + rank-3, spins 1-11: rank 78, augmented 79 -> INCONSISTENT
+   [control] Solution 3, scalar, spins 1-9: rank 33, augmented 34 -> inconsistent
+   [control] Solution 3, scalar + rank-3, spins 1-9: rank 55, augmented 55 -> CONSISTENT
+Solution 1: weight-12 profile incomplete
+Solution 2: first-order data unavailable (cylindrical table at t = infinity is not a multiple of the paperclip at spin 3)
+DONE
+83 data coordinates (spins 1-11)
+a00, pole order <= 3: scalar rank 32; scalar + 216 rank-3 columns: rank 77
+Solution 3: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+   Solution 3, scalar, spins 1-11: rank 41, augmented 42 -> INCONSISTENT
+   Solution 3, scalar + rank-3, spins 1-11: rank 83, augmented 83 -> CONSISTENT
+   [control] Solution 3, scalar, spins 1-9: rank 33, augmented 34 -> inconsistent
+   [control] Solution 3, scalar + rank-3, spins 1-9: rank 55, augmented 55 -> CONSISTENT
+Solution 1: weight-12 profile incomplete
+Solution 2: first-order data unavailable (cylindrical table at t = infinity is not a multiple of the paperclip at spin 3)
+DONE
+83 data coordinates (spins 1-11)
+a00, pole order <= 4: scalar rank 32; scalar + 324 rank-3 columns: rank 83
+Solution 3: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+   Solution 3, scalar, spins 1-11: rank 41, augmented 42 -> INCONSISTENT
+   Solution 3, scalar + rank-3, spins 1-11: rank 83, augmented 83 -> CONSISTENT
+   [control] Solution 3, scalar, spins 1-9: rank 33, augmented 34 -> inconsistent
+   [control] Solution 3, scalar + rank-3, spins 1-9: rank 55, augmented 55 -> CONSISTENT
+Solution 1: weight-12 profile incomplete
+Solution 2: first-order data unavailable (cylindrical table at t = infinity is not a multiple of the paperclip at spin 3)
+DONE
+ALLQDONE

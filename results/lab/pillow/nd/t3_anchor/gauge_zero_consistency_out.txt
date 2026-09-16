@@ -1,0 +1,19 @@
+======================================================================================================================
+deviation of the model from the certified data, by momentum degree, at g = 0 and (for comparison) at the old g(t)
+    spin 3, g = 0    : first degree with a nonzero deviation = 0   (top degree is 2)
+    spin 3, old g(t) : first degree with a nonzero deviation = none (exact at every degree)   (top degree is 2)
+    spin 5, g = 0    : first degree with a nonzero deviation = 1   (top degree is 3)
+    spin 5, old g(t) : first degree with a nonzero deviation = 1   (top degree is 3)
+    spin 7, g = 0    : first degree with a nonzero deviation = 2   (top degree is 4)
+    spin 7, old g(t) : first degree with a nonzero deviation = 2   (top degree is 4)
+    spin 9, g = 0    : first degree with a nonzero deviation = 3   (top degree is 5)
+    spin 9, old g(t) : first degree with a nonzero deviation = 3   (top degree is 5)
+    spin 11, g = 0    : first degree with a nonzero deviation = 4   (top degree is 6)
+    spin 11, old g(t) : first degree with a nonzero deviation = 4   (top degree is 6)
+    spin 13, g = 0    : first degree with a nonzero deviation = 5   (top degree is 7)
+    spin 13, old g(t) : first degree with a nonzero deviation = 5   (top degree is 7)
+======================================================================================================================
+g = 0: layers above degree k-2 exact at every spin: YES
+old g: layers above degree k-2 exact at every spin: YES
+READING: if the first nonzero degree is k-2 in BOTH columns, the gauge was never needed for the top and sub-top layers, and
+         g == 0 is consistent with sec. 38(am); if g = 0 breaks a higher layer, the zero-gauge reading is wrong.

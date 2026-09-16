@@ -1,0 +1,20 @@
+=== Y-type, q = 4 (weight 6): the review's locus, reproduced
+   VEV with symbolic N in 1s
+Y-type q=4: Res_Y(A, B) = (2*N + 25)**2*(49*N + 2070)/4999796928000
+   N = -2070/49: other; factors: [49*Y - 183, 172872*X*Y - 513912*X - 57624*Y**2 + 350154*Y - 522161]
+   N = -25/2: point; factors: [8*Y - 9, 8*Y - 5, 24*X - 8*Y + 5]
+=== Y-type, q = 8 (weight 12, sheet 2)
+   VEV with symbolic N in 133s
+Y-type q=8: Res_Y(A, B) = (4*N + 143)**5*(9759513853460547382542336*N**10 + 8006784834879877648534732800*N**9 + 2328778854653707060610604318720*N**8 + 357321612369854689675796263505920*N**7 + 32755781404297266941398817381159680*N**6 + 1892393649275024311436699695800674176*N**5 + 70319745311851796444098638647644846340*N**4 + 1671833631052443668050613714759192566505*N**3 + 24516206155478999838353782667568765467675*N**2 + 201647738246227418501542380834947165391975*N + 711026264372417413143636187202570890322625)/48116812959277182303969585909748303512207360000000000
+   N = -143/4: point; factors: [16*Y - 49, 16*Y - 33, 16*Y - 13, 16*Y - 45, 144*X - 16*Y + 33]
+=== fusion, q = 4 (weight 6): the review's locus, reproduced
+   VEV with symbolic N in 1s
+fusion q=4: top-degree condition in (a, N) factors as 2*(a + 1)**3/3
+fusion q=4: rational N with a linear factor (a X + Y + kappa, a in Q, or X + kappa): [-25/2]
+   N = -25/2: point; factors: [8*X - 8*Y + 9, 64*X**2 - 128*X*Y + 208*X + 64*Y**2 - 80*Y + 25]
+=== fusion, q = 6 (weight 10)
+   VEV with symbolic N in 40s
+fusion q=6: top-degree condition in (a, N) factors as 27*(a + 1)**5/5
+fusion q=6: rational N with a linear factor (a X + Y + kappa, a in Q, or X + kappa): [-24]
+   N = -24: point; factors: [12*X - 12*Y + 25, 48*X**2 - 96*X*Y + 232*X + 48*Y**2 - 168*Y + 147, 48*X**2 - 96*X*Y + 328*X + 48*Y**2 - 72*Y + 27]
+DONE

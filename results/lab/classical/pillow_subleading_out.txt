@@ -1,0 +1,40 @@
+Riccati to order 5 in 5s
+spin 3: 5 ratios computed in 1s
+   Solution 3, spin 3, X^0Y^2 (top): MATCH
+   Solution 3, spin 3, X^1Y^1 (top): MATCH
+   Solution 3, spin 3, X^0Y^1: cX solutions [t*(t - 1)/((t - 5)*(t + 1))]
+   Solution 3, spin 3, X^1Y^0: MISMATCH (per cX branch [False]); residual [8*(t - 5)/((t - 1)*(t + 1)**2)]
+   Solution 1, spin 3, X^0Y^2 (top): MATCH
+   Solution 1, spin 3, X^1Y^1 (top): MATCH
+   Solution 1, spin 3, X^0Y^1: cX solutions [(t - 4)*(t - 1)*(t + 1)/((t - 3)*(t**2 - 5))]
+   Solution 1, spin 3, X^1Y^0: MISMATCH (per cX branch [False]); residual [4*(3*t**2 - 6*t - 13)/((t - 9)*(t - 4)*(t - 1)*(t + 1))]
+   Solution 2, spin 3, X^0Y^2 (top): MATCH
+   Solution 2, spin 3, X^1Y^1 (top): MATCH
+   Solution 2, spin 3, X^0Y^1: cX solutions [-2*(t + 1)*(5*t**2 - 58*t + 65)/((t - 7)*(t + 5)*(5*t + 13))]
+   Solution 2, spin 3, X^1Y^0: MISMATCH (per cX branch [False]); residual [2*(t + 5)**2*(3*t - 13)/((t + 1)*(5*t - 11)*(5*t**2 - 58*t + 65))]
+spin 5: 9 ratios computed in 7s
+   Solution 3, spin 5, X^0Y^3 (top): MATCH
+   Solution 3, spin 5, X^1Y^2 (top): MATCH
+   Solution 3, spin 5, X^2Y^1 (top): MATCH
+   Solution 3, spin 5, X^0Y^2: MISMATCH (per cX branch [False]); residual [-(5*t**4 + 6*t**3 + 170*t + 75)/(4*t**2*(t - 1)*(t + 1)*(t + 5))]
+   Solution 3, spin 5, X^1Y^1: MISMATCH (per cX branch [False]); residual [-5*(t - 3)*(3*t**3 - t**2 + 25*t + 5)/(2*t**2*(t - 1)*(t + 1)*(t + 5))]
+   Solution 3, spin 5, X^2Y^0: MISMATCH (per cX branch [False]); residual [-5*(t**4 - 18*t**3 + 96*t**2 + 34*t + 15)/(4*t**2*(t - 1)*(t + 1)*(t + 5))]
+   Solution 3, spin 5, X^0Y^1: MISMATCH (per cX branch [False]); residual [-(t - 3)*(17*t**6 - 9*t**5 - 42*t**4 + 94*t**3 + 477*t**2 + 379*t + 108)/(8*t**3*(t - 1)**2*(t + 1)**2*(t + 5))]
+   Solution 3, spin 5, X^1Y^0: MISMATCH (per cX branch [False]); residual [-(17*t**7 - 220*t**6 + 785*t**5 + 764*t**4 - 2525*t**3 - 1052*t**2 - 1029*t - 324)/(8*t**3*(t - 1)**2*(t + 1)**2*(t + 5))]
+   Solution 1, spin 5, X^0Y^3 (top): MATCH
+   Solution 1, spin 5, X^1Y^2 (top): MATCH
+   Solution 1, spin 5, X^2Y^1 (top): MATCH
+   Solution 1, spin 5, X^0Y^2: MISMATCH (per cX branch [False]); residual [3*(t - 1)*(5*t**3 - 21*t**2 + 71*t - 103)/(4*(t - 17)*(t - 4)*(t - 2)*(t + 1)*(3*t - 11))]
+   Solution 1, spin 5, X^1Y^1: MISMATCH (per cX branch [False]); residual [15*(3*t**4 - 6*t**3 + 12*t**2 - 162*t + 281)/(2*(t - 17)*(t - 4)*(t - 2)*(t + 1)*(3*t - 11))]
+   Solution 1, spin 5, X^2Y^0: MISMATCH (per cX branch [False]); residual [5*(t + 3)*(t**3 + 11*t**2 - 101*t + 153)/(4*(t - 17)*(t - 4)*(t - 2)*(t - 1)*(t + 1))]
+   Solution 1, spin 5, X^0Y^1: MISMATCH (per cX branch [False]); residual [(27*t**8 - 341*t**7 + 1749*t**6 - 8033*t**5 + 32687*t**4 - 45839*t**3 - 120121*t**2 + 412101*t - 318310)/(8*(t - 17)*(t - 7)*(t - 4)**2*(t - 2)*(t - 1)*(t + 1)**2*(3*t - 11))]
+   Solution 1, spin 5, X^1Y^0: MISMATCH (per cX branch [False]); residual [(27*t**9 + 168*t**8 - 8518*t**7 + 58154*t**6 - 77568*t**5 - 452302*t**4 + 1334726*t**3 + 594718*t**2 - 5260699*t + 4499422)/(8*(t - 17)*(t - 7)*(t - 4)**2*(t - 2)*(t - 1)**2*(t + 1)**2*(3*t - 11))]
+   Solution 2, spin 5, X^0Y^3 (top): MATCH
+   Solution 2, spin 5, X^1Y^2 (top): MATCH
+   Solution 2, spin 5, X^2Y^1 (top): MATCH
+   Solution 2, spin 5, X^0Y^2: MISMATCH (per cX branch [False]); residual [(t - 1)*(145*t**5 - 865*t**4 + 3418*t**3 - 13090*t**2 + 17365*t - 8125)/(3*(t - 5)*(t - 3)**2*(t + 1)*(2*t - 5)*(5*t**2 - 58*t + 65))]
+   Solution 2, spin 5, X^1Y^1: MISMATCH (per cX branch [False]); residual [5*(t - 1)*(13*t**3 - 33*t**2 + 135*t - 715)/((t - 5)*(t + 1)*(2*t - 5)*(5*t**2 - 58*t + 65))]
+   Solution 2, spin 5, X^2Y^0: MISMATCH (per cX branch [False]); residual [5*(10*t**4 - 55*t**3 + 135*t**2 - 853*t + 2275)/(2*(t - 5)*(t + 1)*(2*t - 5)*(5*t**2 - 58*t + 65))]
+   Solution 2, spin 5, X^0Y^1: MISMATCH (per cX branch [False]); residual [(2005*t**9 - 41505*t**8 + 276292*t**7 - 1005172*t**6 + 7508710*t**5 - 26364814*t**4 - 24729516*t**3 + 212576828*t**2 - 297243219*t + 129794535)/(12*(t - 15)*(t - 5)*(t - 3)*(t + 1)**2*(2*t - 5)*(5*t**2 - 58*t + 65)**2)]
+   Solution 2, spin 5, X^1Y^0: MISMATCH (per cX branch [False]); residual [(1455*t**9 - 36170*t**8 + 291612*t**7 - 874472*t**6 + 3779378*t**5 - 32591420*t**4 + 83802764*t**3 + 152227224*t**2 - 826931209*t + 790580310)/(12*(t - 15)*(t - 5)*(t - 3)*(t + 1)**2*(2*t - 5)*(5*t**2 - 58*t + 65)**2)]
+DONE

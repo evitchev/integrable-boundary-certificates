@@ -1,0 +1,21 @@
+=== Solution 2 I_3 at t = 5/3 (q = 4)
+   A - B = 9*(8*P**2 - 8*Q**2 + 5)/4
+   off-diagonal = 12*P*Q
+   (A-B)/(2 off) = 3*(8*P**2 - 8*Q**2 + 5)/(32*P*Q)
+   sheet-3 direction (q-1)(X-Y+kappa)/(2(q-2)PQ) = 3*(8*P**2 - 8*Q**2 + 5)/(32*P*Q) ; same: True
+=== Solution 2 I_3 at t = 9/7 (q = 8)
+   A - B = 3*(432*P**2 - 80*Q**2 + 165)/8
+   off-diagonal = 36*P*Q
+   (A-B)/(2 off) = (432*P**2 - 80*Q**2 + 165)/(192*P*Q)
+   sheet-3 direction (q-1)(X-Y+kappa)/(2(q-2)PQ) = 7*(16*P**2 - 16*Q**2 + 13)/(192*P*Q) ; same: False
+=== Solution 1 I_3 at t = 5/3
+   A - B = -144*P**2
+   off-diagonal = -24*P*Q
+   (A-B)/(2 off) = 3*P/Q
+   sheet-3 direction (q-1)(X-Y+kappa)/(2(q-2)PQ) = 3*(8*P**2 - 8*Q**2 + 5)/(32*P*Q) ; same: False
+=== sheet-2 Y-type member q = 8 (w12)
+   A - B = 15*(4*Q - 7)*(4*Q + 7)*(16*Q**2 - 45)*(16*Q**2 - 33)*(16*Q**2 - 13)*(432*P**2 - 80*Q**2 + 165)/524288
+   off-diagonal = 45*P*Q*(4*Q - 7)*(4*Q + 7)*(16*Q**2 - 45)*(16*Q**2 - 33)*(16*Q**2 - 13)/16384
+   (A-B)/(2 off) = (432*P**2 - 80*Q**2 + 165)/(192*P*Q)
+   sheet-3 direction (q-1)(X-Y+kappa)/(2(q-2)PQ) = 7*(16*P**2 - 16*Q**2 + 13)/(192*P*Q) ; same: False
+DONE

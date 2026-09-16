@@ -1,0 +1,15 @@
+spin 13, degree-4 layer of the h^2 deficit:
+   (4, 0): 247/864   sym 5473/8640   antisym -1001/2880
+   (3, 1): 119561/8640   sym 115739/8640   antisym 637/1440
+   (2, 2): 9295/576   sym 9295/576   antisym 0
+   (1, 3): 111917/8640   sym 115739/8640   antisym -637/1440
+   (0, 4): 2119/2160   sym 5473/8640   antisym 1001/2880
+
+antisymmetric part is nonzero: True -- so F and G alone cannot span the layer
+fit of the SYMMETRIC part on two monomials: [{'A_': -534911/25920, 'B_': 55133/12960}]
+   remaining 3 constraint(s): VIOLATED by [4901/3240]
+   fitted A = -534911/25920, B = 55133/12960;  the degree-(k-2) values were A_7 = -1729/360, B_7 = 1183/1440
+   ratio of fitted B to A_7/B_7 pattern: B_fit/A_fit = -8482/41147, B_7/A_7 = -13/76
+
+READING: the hold-out is available but NARROW -- one constraint at one spin, and only on the symmetric part; the antisymmetric part
+         needs the asymmetric sources (dictionary offset, gauge) modelled explicitly, which is the operator-side work Codex names.

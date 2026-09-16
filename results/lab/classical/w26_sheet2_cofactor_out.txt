@@ -1,0 +1,10 @@
+weight 16 member: -(8*Y - 9)*(8*Y - 5)**2*(1376256*X**3*Y**2 + 688128*X**3*Y + 580608*X**3 - 1376256*X**2*Y**3 + 172032*X**2*Y**2 - 150528*X**2*Y + 362880*X**2 + 589824*X*Y**4 + 540672*X*Y**3 + 2052096*X*Y**2 + 1607424*X*Y + 625968*X - 98304*Y**5 - 282624*Y**4 - 1154048*Y**3 - 2066048*Y**2 - 1907192*Y - 615825)/50331648
+weight-16 cofactor degree 5 irreducible over Q: True
+weight-26 Kac member lam = 68467073388125/611377384945062 ; cofactor degree 10 ; terms 51
+cofactor factors over Q: [(10, 1)]
+Q_5 divides the weight-26 cofactor: False
+weight-26 cofactor divisible by any Kac line of either sector (Lambda_s(Y), s <= 12; X + c_s):
+over Q(i sqrt2): irreducible
+the OTHER member (lam = 0, e1) factors: [(13, 1)]
+e2 factors: [(13, 1)]
+DONE

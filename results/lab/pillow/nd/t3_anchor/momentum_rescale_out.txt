@@ -1,0 +1,10 @@
+== t = 2: matched layers still exact for all (h, g)? False (36 coefficients)
+   the MATCHED layers themselves force: [{'h': 0}]
+   fit (h, g) from spins 7 and 9 leading deficits: [{'g': -395/377, 'h': -1 + 20*sqrt(377)/377}, {'g': -395/377, 'h': -20*sqrt(377)/377 - 1}]
+      predictions below the matched layers: 0/18 exact;  first misses [((5, (1, 2)), 23/50), ((5, (1, 1)), -79/42 + 236683*sqrt(377)/3016000), ((6, (3, 1)), -18744/43225)]
+      predictions below the matched layers: 0/18 exact;  first misses [((5, (1, 2)), 23/50), ((5, (1, 1)), -79/42 - 236683*sqrt(377)/3016000), ((6, (3, 1)), -18744/43225)]
+== t = 4: matched layers still exact for all (h, g)? False (36 coefficients)
+   the MATCHED layers themselves force: [{'h': 0}]
+   fit (h, g) from spins 7 and 9 leading deficits: [{'g': 8211/49375, 'h': -1 - 2*sqrt(330141)/1185}, {'g': 8211/49375, 'h': -1 + 2*sqrt(330141)/1185}]
+      predictions below the matched layers: 0/18 exact;  first misses [((5, (1, 2)), 21886/592025), ((5, (1, 1)), 420898666757*sqrt(330141)/65150575175000 + 356389/89250), ((6, (3, 1)), -2745556/14462325)]
+      predictions below the matched layers: 0/18 exact;  first misses [((5, (1, 2)), 21886/592025), ((5, (1, 1)), 356389/89250 - 420898666757*sqrt(330141)/65150575175000), ((6, (3, 1)), -2745556/14462325)]

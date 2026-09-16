@@ -1,0 +1,16 @@
+scalar class: numeric rank 26 (exact record: 33 incl. normalizations; here without them)
+Solution 3: scalar + normalizations rank 33, residual of the data direction 8.0405e-5
+Solution 1: scalar + normalizations rank 33, residual of the data direction 0.0010107
+   (gauss: 15 finite columns of 168; divergent ones dropped, so single-shape labels are by column index)
+=== columns_gauss.txt: 15 shapes, 15 columns; directions added over scalar: 0
+   Solution 3: whole family -> residual 8.0405e-5 
+   Solution 3: single shapes making the data consistent: none
+   Solution 1: whole family -> residual 0.0010107 
+   Solution 1: single shapes making the data consistent: none
+   (bessel: 126 finite columns of 135; divergent ones dropped, so single-shape labels are by column index)
+=== columns_bessel.txt: 126 shapes, 126 columns; directions added over scalar: 0
+   Solution 3: whole family -> residual 8.0405e-5 
+   Solution 3: single shapes making the data consistent: none
+   Solution 1: whole family -> residual 0.0010107 
+   Solution 1: single shapes making the data consistent: none
+DONE

@@ -1,0 +1,11 @@
+class ['XX0', 'XY0', 'YY0'] (Lambda power for kappa^-2 kinds: p = -1): 147 shapes; spins 3..9 (131s)
+   response matrix saved to <scratch>/dc_Q0_s9.json
+   spins 3..5: 23 conditions, rank 19, augmented 20 -> inconsistent
+   spins 3..7: 43 conditions, rank 36, augmented 37 -> inconsistent
+   spins 3..9: 70 conditions, rank 54, augmented 55 -> inconsistent
+   hold-out: spins < 9: 43 conditions, rank 36, augmented 37; spin 9: 27 conditions, of which 0 are PREDICTED by the lower spins (in their row space) and 27 are accommodated by new freedom; full augmented consistency FAILS
+conditions: 70 (50 homogeneous at degrees k, k-1; 20 targets at degrees <= k-2); rank 54, augmented rank 55 on 147 shapes
+   homogeneous conditions alone: rank 45 -> kernel dimension 102 (0 means the class is dead by the exact layers alone on this shape space)
+   INCONSISTENT on this shape space: no first-order deformation in this class reproduces the targets
+   violated relation (2 terms): (7896297769360/808184019771) r(9, 0, 1) + (-692055329680/808184019771) r(9, 1, 0) = 0 for every member of the class; the targets give 1
+done (265s)

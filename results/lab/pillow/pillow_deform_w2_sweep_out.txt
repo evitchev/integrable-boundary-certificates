@@ -1,0 +1,61 @@
+== t=11/7 Q=6 spins 3-13 (Sol 3) gauge
+   top system alone: 27 equations, 19 deformation unknowns, rank 13 -> null space dim 6
+Solution 3, t = 11/7: 54 equations (27 top, 27 subleading), 20 unknowns (cX; d, x, y at 6 pole orders; dn, de, dk); rank 20, augmented 21 -> INCONSISTENT
+== t=11/7 Q=9 spins 3-13 (Sol 3) gauge
+   top system alone: 27 equations, 28 deformation unknowns, rank 19 -> null space dim 9
+Solution 3, t = 11/7: 54 equations (27 top, 27 subleading), 29 unknowns (cX; d, x, y at 9 pole orders; dn, de, dk); rank 29, augmented 30 -> INCONSISTENT
+== t=11/7 Q=12 spins 3-13 (Sol 3) gauge
+   top system alone: 27 equations, 37 deformation unknowns, rank 25 -> null space dim 12
+Solution 3, t = 11/7: 54 equations (27 top, 27 subleading), 38 unknowns (cX; d, x, y at 12 pole orders; dn, de, dk); rank 38, augmented 39 -> INCONSISTENT
+== t=11/7 Q=15 spins 3-13 (Sol 3) gauge
+   top system alone: 27 equations, 46 deformation unknowns, rank 27 -> null space dim 19
+Solution 3, t = 11/7: 54 equations (27 top, 27 subleading), 47 unknowns (cX; d, x, y at 15 pole orders; dn, de, dk); rank 47, augmented 48 -> INCONSISTENT
+== t=11/7 Q=18 spins 3-13 (Sol 3) gauge
+   top system alone: 27 equations, 55 deformation unknowns, rank 27 -> null space dim 28
+Solution 3, t = 11/7: 54 equations (27 top, 27 subleading), 56 unknowns (cX; d, x, y at 18 pole orders; dn, de, dk); rank 54, augmented 54 -> CONSISTENT
+== t=11/7 Q=6 spins 3-11 (Sol 1, 2) gauge
+   top system alone: 20 equations, 19 deformation unknowns, rank 13 -> null space dim 6
+Solution 1, t = 11/7: 40 equations (20 top, 20 subleading), 20 unknowns (cX; d, x, y at 6 pole orders; dn, de, dk); rank 20, augmented 21 -> INCONSISTENT
+   top system alone: 20 equations, 19 deformation unknowns, rank 13 -> null space dim 6
+Solution 2, t = 11/7: 40 equations (20 top, 20 subleading), 20 unknowns (cX; d, x, y at 6 pole orders; dn, de, dk); rank 20, augmented 21 -> INCONSISTENT
+== t=11/7 Q=9 spins 3-11 (Sol 1, 2) gauge
+   top system alone: 20 equations, 28 deformation unknowns, rank 19 -> null space dim 9
+Solution 1, t = 11/7: 40 equations (20 top, 20 subleading), 29 unknowns (cX; d, x, y at 9 pole orders; dn, de, dk); rank 29, augmented 30 -> INCONSISTENT
+   top system alone: 20 equations, 28 deformation unknowns, rank 19 -> null space dim 9
+Solution 2, t = 11/7: 40 equations (20 top, 20 subleading), 29 unknowns (cX; d, x, y at 9 pole orders; dn, de, dk); rank 29, augmented 30 -> INCONSISTENT
+== t=11/7 Q=12 spins 3-11 (Sol 1, 2) gauge
+   top system alone: 20 equations, 37 deformation unknowns, rank 20 -> null space dim 17
+Solution 1, t = 11/7: 40 equations (20 top, 20 subleading), 38 unknowns (cX; d, x, y at 12 pole orders; dn, de, dk); rank 38, augmented 39 -> INCONSISTENT
+   top system alone: 20 equations, 37 deformation unknowns, rank 20 -> null space dim 17
+Solution 2, t = 11/7: 40 equations (20 top, 20 subleading), 38 unknowns (cX; d, x, y at 12 pole orders; dn, de, dk); rank 38, augmented 39 -> INCONSISTENT
+== t=13/6 Q=6 spins 3-13 (Sol 3) gauge
+   top system alone: 27 equations, 19 deformation unknowns, rank 13 -> null space dim 6
+Solution 3, t = 13/6: 54 equations (27 top, 27 subleading), 20 unknowns (cX; d, x, y at 6 pole orders; dn, de, dk); rank 20, augmented 21 -> INCONSISTENT
+== t=13/6 Q=9 spins 3-13 (Sol 3) gauge
+   top system alone: 27 equations, 28 deformation unknowns, rank 19 -> null space dim 9
+Solution 3, t = 13/6: 54 equations (27 top, 27 subleading), 29 unknowns (cX; d, x, y at 9 pole orders; dn, de, dk); rank 29, augmented 30 -> INCONSISTENT
+== t=13/6 Q=12 spins 3-13 (Sol 3) gauge
+   top system alone: 27 equations, 37 deformation unknowns, rank 25 -> null space dim 12
+Solution 3, t = 13/6: 54 equations (27 top, 27 subleading), 38 unknowns (cX; d, x, y at 12 pole orders; dn, de, dk); rank 38, augmented 39 -> INCONSISTENT
+== t=13/6 Q=15 spins 3-13 (Sol 3) gauge
+   top system alone: 27 equations, 46 deformation unknowns, rank 27 -> null space dim 19
+Solution 3, t = 13/6: 54 equations (27 top, 27 subleading), 47 unknowns (cX; d, x, y at 15 pole orders; dn, de, dk); rank 47, augmented 48 -> INCONSISTENT
+== t=13/6 Q=18 spins 3-13 (Sol 3) gauge
+   top system alone: 27 equations, 55 deformation unknowns, rank 27 -> null space dim 28
+Solution 3, t = 13/6: 54 equations (27 top, 27 subleading), 56 unknowns (cX; d, x, y at 18 pole orders; dn, de, dk); rank 54, augmented 54 -> CONSISTENT
+== t=13/6 Q=6 spins 3-11 (Sol 1, 2) gauge
+   top system alone: 20 equations, 19 deformation unknowns, rank 13 -> null space dim 6
+Solution 1, t = 13/6: 40 equations (20 top, 20 subleading), 20 unknowns (cX; d, x, y at 6 pole orders; dn, de, dk); rank 20, augmented 21 -> INCONSISTENT
+   top system alone: 20 equations, 19 deformation unknowns, rank 13 -> null space dim 6
+Solution 2, t = 13/6: 40 equations (20 top, 20 subleading), 20 unknowns (cX; d, x, y at 6 pole orders; dn, de, dk); rank 20, augmented 21 -> INCONSISTENT
+== t=13/6 Q=9 spins 3-11 (Sol 1, 2) gauge
+   top system alone: 20 equations, 28 deformation unknowns, rank 19 -> null space dim 9
+Solution 1, t = 13/6: 40 equations (20 top, 20 subleading), 29 unknowns (cX; d, x, y at 9 pole orders; dn, de, dk); rank 29, augmented 30 -> INCONSISTENT
+   top system alone: 20 equations, 28 deformation unknowns, rank 19 -> null space dim 9
+Solution 2, t = 13/6: 40 equations (20 top, 20 subleading), 29 unknowns (cX; d, x, y at 9 pole orders; dn, de, dk); rank 29, augmented 30 -> INCONSISTENT
+== t=13/6 Q=12 spins 3-11 (Sol 1, 2) gauge
+   top system alone: 20 equations, 37 deformation unknowns, rank 20 -> null space dim 17
+Solution 1, t = 13/6: 40 equations (20 top, 20 subleading), 38 unknowns (cX; d, x, y at 12 pole orders; dn, de, dk); rank 38, augmented 39 -> INCONSISTENT
+   top system alone: 20 equations, 37 deformation unknowns, rank 20 -> null space dim 17
+Solution 2, t = 13/6: 40 equations (20 top, 20 subleading), 38 unknowns (cX; d, x, y at 12 pole orders; dn, de, dk); rank 38, augmented 39 -> INCONSISTENT
+SWEEP2DONE

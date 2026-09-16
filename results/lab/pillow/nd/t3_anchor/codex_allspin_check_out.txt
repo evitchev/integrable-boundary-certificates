@@ -1,0 +1,37 @@
+======================================================================================================================
+(1) THE LEADING-SYMBOL RECURRENCE
+    mu_Codex = -(2*k - 1)*(t - 3)/(2*t - 10)
+    mu_ours  = -(2*k - 1)*(t - 3)/(2*t - 10)
+    difference as a rational function of t: 0   -> IDENTICAL
+    the Gamma-ratio coefficients satisfy Codex's recurrence identically in mu, for every (k, i) with k <= 8: YES
+    C_(0,k) = 1 normalization: 1 (k = 5 sample)
+======================================================================================================================
+(2) THE SINGLE-SECTOR THIRD LAYER AT ARBITRARY SPIN, against our in-house general-c eigenvalues
+    eigenvalue table: [local-path]
+    keys (k) present: [2, 3, 4, 5, 6, 7] -- these are I_(2k-1)(Delta, c), monic in Delta
+    k = 2 (spin 3):  leading normalization 1/4
+        [z^(k-1)]: ours 1/3   Codex 1/3   diff 0   MATCH
+        [z^(k-2)]: ours cc/360
+                   Codex cc/360   diff 0   MATCH
+    k = 3 (spin 5):  leading normalization -1/8
+        [z^(k-1)]: ours 1   Codex 1   diff 0   MATCH
+        [z^(k-2)]: ours (cc + 20)/72
+                   Codex (cc + 20)/72   diff 0   MATCH
+    k = 4 (spin 7):  leading normalization 1/16
+        [z^(k-1)]: ours 2   Codex 2   diff 0   MATCH
+        [z^(k-2)]: ours (7*cc + 284)/180
+                   Codex (7*cc + 284)/180   diff 0   MATCH
+    k = 5 (spin 9):  leading normalization -1/32
+        [z^(k-1)]: ours 10/3   Codex 10/3   diff 0   MATCH
+        [z^(k-2)]: ours (3*cc + 184)/36
+                   Codex (3*cc + 184)/36   diff 0   MATCH
+    k = 6 (spin 11):  leading normalization 1/64
+        [z^(k-1)]: ours 5   Codex 5   diff 0   MATCH
+        [z^(k-2)]: ours (11*cc + 904)/72
+                   Codex (11*cc + 904)/72   diff 0   MATCH
+    k = 7 (spin 13):  leading normalization -1/128
+        [z^(k-1)]: ours 7   Codex 7   diff 0   MATCH
+        [z^(k-2)]: ours 7*(13*cc + 1340)/360
+                   Codex 7*(13*cc + 1340)/360   diff 0   MATCH
+======================================================================================================================
+OVERALL: BOTH all-spin claims reproduce our independent data/closed forms

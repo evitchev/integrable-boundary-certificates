@@ -1,0 +1,4 @@
+Solution 3 at t = 13/6 : e_3 symmetric in the involution coordinates: True
+16 equations in the 8 unknowns (a, b, e, g, d, c, lambda_3, lambda_5)
+solutions: 0
+Groebner basis with lambda_3 lambda_5 != 0: [1] -- NO solution (certificate)

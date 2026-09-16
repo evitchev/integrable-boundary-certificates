@@ -1,0 +1,48 @@
+[07:30:05] build phase
+  sectors: cand 25258 (d-image 16901, non-pivot 8357), target 78771 (d-image 54370, non-pivot 24401); structure 3.5s
+  exact build of 8357 non-pivot columns in 120s (1481527 nonzeros)
+  normal forms of 8357 columns for 8 primes at once in 82s
+  wrote nf_p0.pkl (13800240 nonzeros)
+  wrote nf_p1.pkl (13800240 nonzeros)
+  wrote nf_p2.pkl (13800240 nonzeros)
+  wrote nf_p3.pkl (13800240 nonzeros)
+  wrote nf_p4.pkl (13800240 nonzeros)
+  wrote nf_p5.pkl (13800240 nonzeros)
+  wrote nf_p6.pkl (13800240 nonzeros)
+  wrote nf_p7.pkl (13800240 nonzeros)
+  build phase done in 257s -> phase_w22_dist
+[07:34:25] good primes: 0 1 2 3 4 5 6 7; nodes: worker-1 worker-2 worker-3 worker-4
+  prime index 0 (2305843009213693951): matrix 24401 x 8357 filled (13800240 nonzeros) in 3s; rref ...
+  prime index 0: rank 8355, nullity 2; rref 278s; total 281s -> sol_p0.pkl
+[07:39:09] prime 0 solved on worker-1
+  prime index 2 (2305843009213693907): matrix 24401 x 8357 filled (13800240 nonzeros) in 3s; rref ...
+  prime index 2: rank 8355, nullity 2; rref 280s; total 283s -> sol_p2.pkl
+[07:39:15] prime 2 solved on worker-3
+  prime index 4 (2305843009213693693): matrix 24401 x 8357 filled (13800240 nonzeros) in 3s; rref ...
+  prime index 4: rank 8355, nullity 2; rref 278s; total 281s -> sol_p4.pkl
+[07:39:17] prime 4 solved on worker-1
+  prime index 1 (2305843009213693921): matrix 24401 x 8357 filled (13800240 nonzeros) in 3s; rref ...
+  prime index 1: rank 8355, nullity 2; rref 284s; total 287s -> sol_p1.pkl
+[07:39:17] prime 1 solved on worker-2
+  prime index 3 (2305843009213693723): matrix 24401 x 8357 filled (13800240 nonzeros) in 3s; rref ...
+  prime index 3: rank 8355, nullity 2; rref 284s; total 288s -> sol_p3.pkl
+[07:39:22] prime 3 solved on worker-4
+  prime index 6 (2305843009213693613): matrix 24401 x 8357 filled (13800240 nonzeros) in 3s; rref ...
+  prime index 6: rank 8355, nullity 2; rref 280s; total 283s -> sol_p6.pkl
+[07:39:22] prime 6 solved on worker-3
+  prime index 5 (2305843009213693669): matrix 24401 x 8357 filled (13800240 nonzeros) in 3s; rref ...
+  prime index 5: rank 8355, nullity 2; rref 283s; total 287s -> sol_p5.pkl
+[07:39:24] prime 5 solved on worker-2
+  prime index 7 (2305843009213693561): matrix 24401 x 8357 filled (13800240 nonzeros) in 3s; rref ...
+  prime index 7: rank 8355, nullity 2; rref 283s; total 287s -> sol_p7.pkl
+[07:39:28] prime 7 solved on worker-4
+[07:39:28] solved: 8 prime(s); merge phase
+  merge: 8 solved prime(s) of 8 good; structure + load 3s
+  prime 2305843009213693951: rank 8355, nullity U = 2
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  3 prime(s): reconstruction not yet stable
+  4 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 2 with 5 prime(s): 2 vectors verified by exact identities (88s), canonical non-pivot representatives; merge 109s
+sol=3 N=-119/2 s=-143/2 dim=2 kc=16901 primes=5 time=110s (merge; build 257s)
+record written: fk3v3_w22_dist.json (tool sha256 c38606e5b23be691)

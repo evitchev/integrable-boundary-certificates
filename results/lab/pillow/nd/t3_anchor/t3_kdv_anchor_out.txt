@@ -1,0 +1,21 @@
+PASS  (1) spin 3: no mixed X-Y terms in Solution 3's e_3 at t = 3
+PASS  (2) spin 3: X-part and Y-part are one function of Delta (Delta_X = -X/2 - 1/8, Delta_Y = -Y/2): difference -1/16 is constant
+PASS  (1) spin 5: no mixed X-Y terms in Solution 3's e_5 at t = 3
+PASS  (2) spin 5: X-part and Y-part are one function of Delta (Delta_X = -X/2 - 1/8, Delta_Y = -Y/2): difference 3/64 is constant
+PASS  (1) spin 7: no mixed X-Y terms in Solution 3's e_7 at t = 3
+PASS  (2) spin 7: X-part and Y-part are one function of Delta (Delta_X = -X/2 - 1/8, Delta_Y = -Y/2): difference -17/256 is constant
+PASS  (1) spin 9: no mixed X-Y terms in Solution 3's e_9 at t = 3
+PASS  (2) spin 9: X-part and Y-part are one function of Delta (Delta_X = -X/2 - 1/8, Delta_Y = -Y/2): difference 155/1024 is constant
+PASS  (3) spin 3: the X-part is BLZ's I_3 at c = -2 with Delta_X = -X/2 - 1/8 (all non-constant coefficients)
+PASS  (3) spin 3: the Y-part is BLZ's I_3 at c = -2 with Delta_Y = -Y/2 (all non-constant coefficients)
+PASS  (3) spin 3: the constants of the two BLZ sectors sum to the certified constant (-1/240 = -1/240)
+PASS  (3) spin 5: the X-part is BLZ's I_5 at c = -2 with Delta_X = -X/2 - 1/8 (all non-constant coefficients)
+PASS  (3) spin 5: the Y-part is BLZ's I_5 at c = -2 with Delta_Y = -Y/2 (all non-constant coefficients)
+PASS  (3) spin 5: the constants of the two BLZ sectors sum to the certified constant (-1/1344 = -1/1344)
+PASS  (4) spin 3: e^_3 = (-2)^2 [F_2(Delta_X) + F_2(Delta_Y)] with the radial-oscillator Stirling coefficients F_2, constants included
+PASS  (4) spin 5: e^_5 = (-2)^3 [F_3(Delta_X) + F_3(Delta_Y)] with the radial-oscillator Stirling coefficients F_3, constants included
+PASS  (4) spin 7: e^_7 = (-2)^4 [F_4(Delta_X) + F_4(Delta_Y)] with the radial-oscillator Stirling coefficients F_4, constants included
+PASS  (4) spin 9: e^_9 = (-2)^5 [F_5(Delta_X) + F_5(Delta_Y)] with the radial-oscillator Stirling coefficients F_5, constants included
+PASS  control: at t = 13/6 the mixed X-Y terms of e_3 do NOT vanish
+PASS  control: the wrong X shift Delta_X = -X/2 fails the spin-7 oscillator match
+T3 KDV VACUUM ANCHOR: at t = 3 Solution 3's certified VACUUM charges are two decoupled quantum-KdV vacuum towers at c = -2 (BLZ eigenvalues exact at spins 3, 5 with Delta_X = -X/2 - 1/8, Delta_Y = -Y/2; one function of Delta in both sectors through spin 9).  Reading, not established here: the vacuum oper there is a product of two radial-oscillator determinants (Masoero-Ruzza 2605.24563v3); the excited states need a module decomposition first.

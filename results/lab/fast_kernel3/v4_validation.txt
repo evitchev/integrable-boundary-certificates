@@ -1,0 +1,30 @@
+=== fk3v4_w14 (committed lab/fast_kernel3.py, sha 0821aa5af03e44a3)
+  CERTIFIED genuine dim 2 with 3 prime(s): 2 vectors verified by exact identities (1s), canonical non-pivot representatives; total 3s
+record written: fk3v4_w14.json (tool sha256 0821aa5af03e44a3)
+PASS  same point: weight 14, solution 3, N = -143/4, s = -189/4
+PASS  genuine dim 2 == pinned 2
+PASS  the four eigenvalue vectors (new + pinned) span a space of rank 2 (2 = same pencil)
+PASS  witness 0: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 3
+PASS  witness 1: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 3
+COMPARISON PASSED
+exit 0
+=== fk3v4_w16 (committed lab/fast_kernel3.py, sha 0821aa5af03e44a3)
+  CERTIFIED genuine dim 2 with 2 prime(s): 2 vectors verified by exact identities (4s), canonical non-pivot representatives; total 10s
+record written: fk3v4_w16.json (tool sha256 0821aa5af03e44a3)
+PASS  same point: weight 16, solution 3, N = -25/2, s = -45/2
+PASS  genuine dim 2 == pinned 2
+PASS  the four eigenvalue vectors (new + pinned) span a space of rank 2 (2 = same pencil)
+PASS  witness 0: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 3
+PASS  witness 1: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 3
+COMPARISON PASSED
+exit 0
+=== fk3v4_w18s2 (committed lab/fast_kernel3.py, sha 0821aa5af03e44a3)
+  CERTIFIED genuine dim 2 with 3 prime(s): 2 vectors verified by exact identities (13s), canonical non-pivot representatives; total 34s
+record written: fk3v4_w18s2.json (tool sha256 0821aa5af03e44a3)
+PASS  same point: weight 18, solution 2, N = -119/2, s = -143/2
+PASS  genuine dim 2 == pinned 2
+PASS  the four eigenvalue vectors (new + pinned) span a space of rank 2 (2 = same pencil)
+PASS  witness 0: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 2
+PASS  witness 1: exact identity sum v_b ad(b) + sum S_j d(b_j) = 0 at solution 2
+COMPARISON PASSED
+exit 0

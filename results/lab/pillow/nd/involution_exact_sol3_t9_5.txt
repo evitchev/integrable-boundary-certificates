@@ -1,0 +1,4 @@
+Solution 3, t = 9/5: kappa_s = 1, eps - 2(n+1) = 0
+   Q~_0(v) - Q_0(v)|_(X -> Y + 2 delta, Y -> X - 2 delta) = 3*(56*delta + 25)*(v + 2)/(448*v*(v + 1)**2)
+   invariant for delta = {delta: -25/56}   (the charges' shift is -1/(t^2-1) = -25/56)
+   symbol: log|Q~_2| - log|Q_2| at v = 3/7: 0  (0 = invariant up to the phase e^(-i pi eps))

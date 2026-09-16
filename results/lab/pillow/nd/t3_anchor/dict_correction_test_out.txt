@@ -1,0 +1,9 @@
+t = 2: top + sub-top layers alone (36 equations) force: [{d_X: g_c/24, d_Y: g_c/24}]
+        all 56 mixed coefficients: NO SOLUTION -- the deficit is NOT a dictionary artefact
+        with the forced values, the degree <= k-2 residual survives at 20 of 20 coefficients
+t = 4: top + sub-top layers alone (36 equations) force: [{d_X: g_c/24, d_Y: g_c/24}]
+        all 56 mixed coefficients: NO SOLUTION -- the deficit is NOT a dictionary artefact
+        with the forced values, the degree <= k-2 residual survives at 20 of 20 coefficients
+t = -2: top + sub-top layers alone (36 equations) force: [{d_X: g_c/24, d_Y: g_c/24}]
+        all 56 mixed coefficients: NO SOLUTION -- the deficit is NOT a dictionary artefact
+        with the forced values, the degree <= k-2 residual survives at 20 of 20 coefficients

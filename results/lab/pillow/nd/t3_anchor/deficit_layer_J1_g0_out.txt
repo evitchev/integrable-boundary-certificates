@@ -1,0 +1,31 @@
+spin 7 [X^0 Y^1] = (t - 3)**2*(390*t**4 + 1157*t**3 - 3501*t**2 - 6833*t + 9675)/(135*(t - 1)**2*(t + 1)**2*(t + 9)*(3*t - 1))    [deg <= 6, 5 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: 427/17280
+      CHECK vs Codex's 77/480: differs
+spin 7 [X^1 Y^0] = (t - 3)**2*(390*t**4 + 1157*t**3 - 6525*t**2 - 13385*t + 33363)/(135*(t - 1)**2*(t + 1)**2*(t + 9)*(3*t - 1))    [deg <= 6, 5 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: -7/2160
+      CHECK vs Codex's 77/480: differs
+spin 9 [X^0 Y^2] = (t - 3)**2*(1987*t**4 + 4414*t**3 - 13204*t**2 - 19990*t + 24441)/(252*(t - 1)**2*(t + 1)**3*(t + 13))    [deg <= 6, 5 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: 655/5376
+spin 9 [X^1 Y^1] = (t - 3)**2*(2555*t**4 + 4730*t**3 - 25088*t**2 - 25154*t + 68925)/(42*(t - 1)**2*(t + 1)**3*(t + 13))    [deg <= 6, 5 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: 533/896
+spin 9 [X^2 Y^0] = (t - 3)**2*(1987*t**4 + 4414*t**3 - 30340*t**2 - 40150*t + 118185)/(252*(t - 1)**2*(t + 1)**3*(t + 13))    [deg <= 6, 5 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: 25/5376
+spin 11 [X^0 Y^3] = 11*(t - 3)**2*(1857*t**4 + 4067*t**3 - 10337*t**2 - 15743*t + 16916)/(189*(t - 1)**2*(t + 1)**2*(t + 17)*(3*t + 7))    [deg <= 6, 5 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: 18821/48384
+spin 11 [X^1 Y^2] = 11*(t - 3)**2*(61245*t**5 + 5368*t**4 - 563406*t**3 + 211256*t**2 + 1273161*t - 960120)/(63*(t - 1)**2*(t + 1)**2*(t + 17)*(3*t + 7)*(5*t - 3))    [deg <= 7, 5 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: 121/35
+spin 11 [X^2 Y^1] = 11*(t - 3)**2*(61245*t**5 + 5368*t**4 - 631446*t**3 + 365480*t**2 + 1806897*t - 1906632)/(63*(t - 1)**2*(t + 1)**2*(t + 17)*(3*t + 7)*(5*t - 3))    [deg <= 7, 5 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: 6457/1792
+spin 11 [X^3 Y^0] = 11*(t - 3)**2*(1857*t**4 + 4067*t**3 - 26969*t**2 - 26327*t + 86468)/(189*(t - 1)**2*(t + 1)**2*(t + 17)*(3*t + 7))    [deg <= 6, 5 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: 8591/120960
+   t = -11/3 skipped (genuine pole at t = -11/3)
+spin 13 [X^0 Y^4] = 13*(t - 3)**2*(5961*t**4 + 14458*t**3 - 30396*t**2 - 49138*t + 48507)/(216*(t - 1)**2*(t + 1)**2*(t + 21)*(3*t + 11))    [deg <= 6, 4 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: 2119/2160
+spin 13 [X^1 Y^3] = 13*(t - 3)**2*(277035*t**5 + 785*t**4 - 2048990*t**3 + 607822*t**2 + 3650147*t - 2034351)/(54*(t - 1)**2*(t + 1)**2*(t + 21)*(3*t + 11)*(5*t + 1))    [deg <= 7, 4 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: 111917/8640
+spin 13 [X^2 Y^2] = 13*(t - 3)**2*(158895*t**5 - 160663*t**4 - 1438166*t**3 + 1674270*t**2 + 3188279*t - 4078967)/(12*(t - 1)**2*(t + 1)**2*(t + 21)*(3*t + 11)*(5*t + 1))    [deg <= 7, 4 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: 9295/576
+spin 13 [X^3 Y^1] = 13*(t - 3)**2*(277035*t**5 + 785*t**4 - 2481422*t**3 + 1780126*t**2 + 6380819*t - 7295103)/(54*(t - 1)**2*(t + 1)**2*(t + 21)*(3*t + 11)*(5*t + 1))    [deg <= 7, 4 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: 119561/8640
+spin 13 [X^4 Y^0] = 13*(t - 3)**2*(5961*t**4 + 14458*t**3 - 84828*t**2 - 65266*t + 231963)/(216*(t - 1)**2*(t + 1)**2*(t + 21)*(3*t + 11))    [deg <= 6, 4 hold-outs]
+      vanishing order at t = 3: 2;  (t-3)^2 coefficient: 247/864

@@ -1,0 +1,7 @@
+record: lab record: exact fast-path computation (quotient formulation, distributed phases), pending independent certification by the registered pure-Python certificate genuine_dim 2 ; basis size 114795
+combination with top part (x^2 - r^2)^13: found
+extra invariant: nonzero monomials 34690 ; levels [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24]
+VEV computed in 70s
+eigenvalue (article momenta): -(28*P**2 - 28*Q**2 + 169)*(112*P**4 - 224*P**2*Q**2 + 1640*P**2 + 112*Q**4 - 1064*Q**2 + 2527)*(112*P**4 - 224*P**2*Q**2 + 1864*P**2 + 112*Q**4 - 840*Q**2 + 1575)*(784*P**4 - 1568*P**2*Q**2 + 9688*P**2 + 784*Q**4 - 9240*Q**2 + 27225)*(784*P**4 - 1568*P**2*Q**2 + 10360*P**2 + 784*Q**4 - 8568*Q**2 + 23409)*(784*P**4 - 1568*P**2*Q**2 + 15064*P**2 + 784*Q**4 - 3864*Q**2 + 4761)*(784*P**4 - 1568*P**2*Q**2 + 17528*P**2 + 784*Q**4 - 1400*Q**2 + 625)/132696151479549952
+prediction: -(28*P**2 - 28*Q**2 + 169)*(112*P**4 - 224*P**2*Q**2 + 1640*P**2 + 112*Q**4 - 1064*Q**2 + 2527)*(112*P**4 - 224*P**2*Q**2 + 1864*P**2 + 112*Q**4 - 840*Q**2 + 1575)*(784*P**4 - 1568*P**2*Q**2 + 9688*P**2 + 784*Q**4 - 9240*Q**2 + 27225)*(784*P**4 - 1568*P**2*Q**2 + 10360*P**2 + 784*Q**4 - 8568*Q**2 + 23409)*(784*P**4 - 1568*P**2*Q**2 + 15064*P**2 + 784*Q**4 - 3864*Q**2 + 4761)*(784*P**4 - 1568*P**2*Q**2 + 17528*P**2 + 784*Q**4 - 1400*Q**2 + 625)/132696151479549952
+FUSION PREDICTION AT q = 14: CONFIRMED ; difference: 0

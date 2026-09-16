@@ -1,0 +1,19 @@
+Solution 3, q = 4 (t = 5/3): D = X - Y + 5/8  [X-slope 1, constant 5/8];  H = 4*P*Q/3
+Solution 3, q = 6 (t = 7/5): D = X - Y + 3/4  [X-slope 1, constant 3/4];  H = 8*P*Q/5
+Solution 3, q = 8 (t = 9/7): D = X - Y + 13/16  [X-slope 1, constant 13/16];  H = 12*P*Q/7
+Solution 3, q = 10 (t = 11/9): D = X - Y + 17/20  [X-slope 1, constant 17/20];  H = 16*P*Q/9
+Solution 3, q = 12 (t = 13/11): D = X - Y + 7/8  [X-slope 1, constant 7/8];  H = 20*P*Q/11
+Solution 3, q = 16 (t = 17/15): D = X - Y + 29/32  [X-slope 1, constant 29/32];  H = 28*P*Q/15
+Solution 2, q = 4 (t = 5/3): D = X - Y + 5/8  [X-slope 1, constant 5/8];  H = 4*P*Q/3
+Solution 2, q = 6 (t = 7/5): D = 3*X - Y + 4/3  [X-slope 3, constant 4/3];  H = 2*P*Q
+Solution 2, q = 8 (t = 9/7): D = 27*X/5 - Y + 33/16  [X-slope 27/5, constant 33/16];  H = 12*P*Q/5
+Solution 2, q = 10 (t = 11/9): D = 8*X - Y + 14/5  [X-slope 8, constant 14/5];  H = 8*P*Q/3
+Solution 2, q = 12 (t = 13/11): D = 75*X/7 - Y + 85/24  [X-slope 75/7, constant 85/24];  H = 20*P*Q/7
+Solution 2, q = 16 (t = 17/15): D = 49*X/3 - Y + 161/32  [X-slope 49/3, constant 161/32];  H = 28*P*Q/9
+Solution 1, q = 4: D = -72*X, H = -24*P*Q (no Y term)
+Solution 1, q = 6: D = -120*X, H = -24*P*Q (no Y term)
+Solution 1, q = 8: D = -168*X, H = -24*P*Q (no Y term)
+Solution 1, q = 10: D = -216*X, H = -24*P*Q (no Y term)
+Solution 1, q = 12: D = -264*X, H = -24*P*Q (no Y term)
+Solution 1, q = 16: D = -360*X, H = -24*P*Q (no Y term)
+DONE

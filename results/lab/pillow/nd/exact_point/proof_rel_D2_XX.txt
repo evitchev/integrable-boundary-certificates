@@ -1,0 +1,5 @@
+Riccati to spin 11 with symbolic exponents: 2540 terms (12s)
+   spin 7: responses assembled (12s)
+   spin 11: responses assembled (13s)
+the relation, in units of the reference B_s, is the rational function with numerator of degree 0 (17s)
+EXACT IDENTITY for the XX-shapes: the relation holds for every monomial w^i (1-w)^j, hence for the whole class

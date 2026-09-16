@@ -1,0 +1,9 @@
+expanding the certified charges at t -> infinity (u = 1/t) and rotating to (p_+, p_-)
+  spin 3: zeroth order == ((-4)^k/2)[F_k(h_+) + F_k(h_-)]: True
+  spin 5: zeroth order == ((-4)^k/2)[F_k(h_+) + F_k(h_-)]: True
+  spin 7: zeroth order == ((-4)^k/2)[F_k(h_+) + F_k(h_-)]: True
+  spin 9: zeroth order == ((-4)^k/2)[F_k(h_+) + F_k(h_-)]: True
+  spin 11: zeroth order == ((-4)^k/2)[F_k(h_+) + F_k(h_-)]: True
+  spin 13: zeroth order == ((-4)^k/2)[F_k(h_+) + F_k(h_-)]: True
+  spin 3 first-order pure part: {(4, 0): -6, (2, 0): -2, (0, 4): -6, (0, 2): -2, (0, 0): -1/15}
+fit on spins 3, 5 (pure-sector equations only): NONE

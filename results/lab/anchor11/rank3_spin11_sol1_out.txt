@@ -1,0 +1,164 @@
+83 data coordinates (spins 1-11)
+a00, pole order <= 1: scalar rank 32; scalar + 54 rank-3 columns: rank 61
+Solution 3: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+   Solution 3, scalar, spins 1-11: rank 41, augmented 42 -> INCONSISTENT
+   Solution 3, scalar + rank-3, spins 1-11: rank 70, augmented 71 -> INCONSISTENT
+   [control] Solution 3, scalar, spins 1-9: rank 33, augmented 34 -> inconsistent
+   [control] Solution 3, scalar + rank-3, spins 1-9: rank 55, augmented 55 -> CONSISTENT
+Solution 1: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+   Solution 1, scalar, spins 1-11: rank 41, augmented 42 -> INCONSISTENT
+   Solution 1, scalar + rank-3, spins 1-11: rank 70, augmented 71 -> INCONSISTENT
+   [control] Solution 1, scalar, spins 1-9: rank 33, augmented 34 -> inconsistent
+   [control] Solution 1, scalar + rank-3, spins 1-9: rank 55, augmented 55 -> CONSISTENT
+Solution 2: first-order data unavailable (cylindrical table at t = infinity is not a multiple of the paperclip at spin 3)
+DONE
+83 data coordinates (spins 1-11)
+a00, pole order <= 2: scalar rank 32; scalar + 126 rank-3 columns: rank 69
+Solution 3: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+   Solution 3, scalar, spins 1-11: rank 41, augmented 42 -> INCONSISTENT
+   Solution 3, scalar + rank-3, spins 1-11: rank 78, augmented 79 -> INCONSISTENT
+   [control] Solution 3, scalar, spins 1-9: rank 33, augmented 34 -> inconsistent
+   [control] Solution 3, scalar + rank-3, spins 1-9: rank 55, augmented 55 -> CONSISTENT
+Solution 1: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+   Solution 1, scalar, spins 1-11: rank 41, augmented 42 -> INCONSISTENT
+   Solution 1, scalar + rank-3, spins 1-11: rank 78, augmented 79 -> INCONSISTENT
+   [control] Solution 1, scalar, spins 1-9: rank 33, augmented 34 -> inconsistent
+   [control] Solution 1, scalar + rank-3, spins 1-9: rank 55, augmented 55 -> CONSISTENT
+Solution 2: first-order data unavailable (cylindrical table at t = infinity is not a multiple of the paperclip at spin 3)
+DONE
+Solution 3, spins 1-11: scalar + normalizations rank 41, augmented 42
+function classes: ['F00', 'F02', 'F03', 'F10', 'F12', 'F20']
+--- pole order <= 1
+   F00 alone: 9 columns, rank 49 (+8), inconsistent
+   F02 alone: 9 columns, rank 49 (+8), inconsistent
+   F03 alone: 9 columns, rank 41 (+0), inconsistent
+   F10 alone: 9 columns, rank 50 (+9), inconsistent
+   F12 alone: 9 columns, rank 50 (+9), inconsistent
+   F20 alone: 9 columns, rank 50 (+9), inconsistent
+   F00 + F02: 18 columns, rank 56 (+15), inconsistent
+   F00 + F03: 18 columns, rank 49 (+8), inconsistent
+   F00 + F10: 18 columns, rank 52 (+11), inconsistent
+   F00 + F12: 18 columns, rank 58 (+17), inconsistent
+   F00 + F20: 18 columns, rank 52 (+11), inconsistent
+   F02 + F03: 18 columns, rank 49 (+8), inconsistent
+   F02 + F10: 18 columns, rank 57 (+16), inconsistent
+   F02 + F12: 18 columns, rank 58 (+17), inconsistent
+   F02 + F20: 18 columns, rank 57 (+16), inconsistent
+   F03 + F10: 18 columns, rank 50 (+9), inconsistent
+   F03 + F12: 18 columns, rank 50 (+9), inconsistent
+   F03 + F20: 18 columns, rank 50 (+9), inconsistent
+   F10 + F12: 18 columns, rank 59 (+18), inconsistent
+   F10 + F20: 18 columns, rank 53 (+12), inconsistent
+   F12 + F20: 18 columns, rank 59 (+18), inconsistent
+--- pole order <= 2
+   F00 alone: 21 columns, rank 52 (+11), inconsistent
+   F02 alone: 21 columns, rank 52 (+11), inconsistent
+   F03 alone: 21 columns, rank 41 (+0), inconsistent
+   F10 alone: 21 columns, rank 53 (+12), inconsistent
+   F12 alone: 21 columns, rank 53 (+12), inconsistent
+   F20 alone: 21 columns, rank 53 (+12), inconsistent
+   F00 + F02: 42 columns, rank 61 (+20), inconsistent
+   F00 + F03: 42 columns, rank 52 (+11), inconsistent
+   F00 + F10: 42 columns, rank 55 (+14), inconsistent
+   F00 + F12: 42 columns, rank 64 (+23), inconsistent
+   F00 + F20: 42 columns, rank 58 (+17), inconsistent
+   F02 + F03: 42 columns, rank 52 (+11), inconsistent
+   F02 + F10: 42 columns, rank 62 (+21), inconsistent
+   F02 + F12: 42 columns, rank 64 (+23), inconsistent
+   F02 + F20: 42 columns, rank 63 (+22), inconsistent
+   F03 + F10: 42 columns, rank 53 (+12), inconsistent
+   F03 + F12: 42 columns, rank 53 (+12), inconsistent
+   F03 + F20: 42 columns, rank 53 (+12), inconsistent
+   F10 + F12: 42 columns, rank 65 (+24), inconsistent
+   F10 + F20: 42 columns, rank 56 (+15), inconsistent
+   F12 + F20: 42 columns, rank 65 (+24), inconsistent
+--- pole order <= 3
+   F00 alone: 36 columns, rank 55 (+14), inconsistent
+   F02 alone: 36 columns, rank 55 (+14), inconsistent
+   F03 alone: 36 columns, rank 41 (+0), inconsistent
+   F10 alone: 36 columns, rank 56 (+15), inconsistent
+   F12 alone: 36 columns, rank 56 (+15), inconsistent
+   F20 alone: 36 columns, rank 56 (+15), inconsistent
+   F00 + F02: 72 columns, rank 66 (+25), inconsistent
+   F00 + F03: 72 columns, rank 55 (+14), inconsistent
+   F00 + F10: 72 columns, rank 58 (+17), inconsistent
+   F00 + F12: 72 columns, rank 70 (+29), inconsistent
+   F00 + F20: 72 columns, rank 61 (+20), inconsistent
+   F02 + F03: 72 columns, rank 55 (+14), inconsistent
+   F02 + F10: 72 columns, rank 67 (+26), inconsistent
+   F02 + F12: 72 columns, rank 70 (+29), inconsistent
+   F02 + F20: 72 columns, rank 69 (+28), inconsistent
+   F03 + F10: 72 columns, rank 56 (+15), inconsistent
+   F03 + F12: 72 columns, rank 56 (+15), inconsistent
+   F03 + F20: 72 columns, rank 56 (+15), inconsistent
+   F10 + F12: 72 columns, rank 71 (+30), inconsistent
+   F10 + F20: 72 columns, rank 59 (+18), inconsistent
+   F12 + F20: 72 columns, rank 71 (+30), inconsistent
+--- pole order <= 4
+   F00 alone: 54 columns, rank 58 (+17), inconsistent
+   F02 alone: 54 columns, rank 58 (+17), inconsistent
+   F03 alone: 54 columns, rank 41 (+0), inconsistent
+   F10 alone: 54 columns, rank 59 (+18), inconsistent
+   F12 alone: 54 columns, rank 59 (+18), inconsistent
+   F20 alone: 54 columns, rank 59 (+18), inconsistent
+   F00 + F02: 108 columns, rank 71 (+30), inconsistent
+   F00 + F03: 108 columns, rank 58 (+17), inconsistent
+   F00 + F10: 108 columns, rank 61 (+20), inconsistent
+   F00 + F12: 108 columns, rank 76 (+35), inconsistent
+   F00 + F20: 108 columns, rank 64 (+23), inconsistent
+   F02 + F03: 108 columns, rank 58 (+17), inconsistent
+   F02 + F10: 108 columns, rank 72 (+31), inconsistent
+   F02 + F12: 108 columns, rank 76 (+35), inconsistent
+   F02 + F20: 108 columns, rank 74 (+33), inconsistent
+   F03 + F10: 108 columns, rank 59 (+18), inconsistent
+   F03 + F12: 108 columns, rank 59 (+18), inconsistent
+   F03 + F20: 108 columns, rank 59 (+18), inconsistent
+   F10 + F12: 108 columns, rank 77 (+36), inconsistent
+   F10 + F20: 108 columns, rank 62 (+21), inconsistent
+   F12 + F20: 108 columns, rank 77 (+36), inconsistent
+--- pole order <= 5
+   F00 alone: 75 columns, rank 61 (+20), inconsistent
+   F02 alone: 75 columns, rank 61 (+20), inconsistent
+   F03 alone: 75 columns, rank 41 (+0), inconsistent
+   F10 alone: 75 columns, rank 62 (+21), inconsistent
+   F12 alone: 75 columns, rank 62 (+21), inconsistent
+   F20 alone: 75 columns, rank 62 (+21), inconsistent
+   F00 + F02: 150 columns, rank 76 (+35), inconsistent
+   F00 + F03: 150 columns, rank 61 (+20), inconsistent
+   F00 + F10: 150 columns, rank 64 (+23), inconsistent
+   F00 + F12: 150 columns, rank 82 (+41), inconsistent
+   F00 + F20: 150 columns, rank 66 (+25), inconsistent
+   F02 + F03: 150 columns, rank 61 (+20), inconsistent
+   F02 + F10: 150 columns, rank 77 (+36), inconsistent
+   F02 + F12: 150 columns, rank 82 (+41), inconsistent
+   F02 + F20: 150 columns, rank 79 (+38), inconsistent
+   F03 + F10: 150 columns, rank 62 (+21), inconsistent
+   F03 + F12: 150 columns, rank 62 (+21), inconsistent
+   F03 + F20: 150 columns, rank 62 (+21), inconsistent
+   F10 + F12: 150 columns, rank 83 (+42), CONSISTENT [saturated]
+   F10 + F20: 150 columns, rank 65 (+24), inconsistent
+   F12 + F20: 150 columns, rank 83 (+42), CONSISTENT [saturated]
+--- pole order <= 6
+   F00 alone: 99 columns, rank 64 (+23), inconsistent
+   F02 alone: 99 columns, rank 64 (+23), inconsistent
+   F03 alone: 99 columns, rank 41 (+0), inconsistent
+   F10 alone: 99 columns, rank 65 (+24), inconsistent
+   F12 alone: 99 columns, rank 65 (+24), inconsistent
+   F20 alone: 99 columns, rank 65 (+24), inconsistent
+   F00 + F02: 198 columns, rank 81 (+40), inconsistent
+   F00 + F03: 198 columns, rank 64 (+23), inconsistent
+   F00 + F10: 198 columns, rank 66 (+25), inconsistent
+   F00 + F12: 198 columns, rank 83 (+42), CONSISTENT [saturated]
+   F00 + F20: 198 columns, rank 66 (+25), inconsistent
+   F02 + F03: 198 columns, rank 64 (+23), inconsistent
+   F02 + F10: 198 columns, rank 81 (+40), inconsistent
+   F02 + F12: 198 columns, rank 83 (+42), CONSISTENT [saturated]
+   F02 + F20: 198 columns, rank 81 (+40), inconsistent
+   F03 + F10: 198 columns, rank 65 (+24), inconsistent
+   F03 + F12: 198 columns, rank 65 (+24), inconsistent
+   F03 + F20: 198 columns, rank 65 (+24), inconsistent
+   F10 + F12: 198 columns, rank 83 (+42), CONSISTENT [saturated]
+   F10 + F20: 198 columns, rank 66 (+25), inconsistent
+   F12 + F20: 198 columns, rank 83 (+42), CONSISTENT [saturated]
+DONE
+SOL1DONE

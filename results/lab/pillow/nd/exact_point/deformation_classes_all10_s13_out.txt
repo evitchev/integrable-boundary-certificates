@@ -1,0 +1,7 @@
+class ['W', 'X', 'Y', 'U', 'XU', 'YU', 'XX', 'XY', 'YY', 'U4'] (Lambda power for kappa^-2 kinds: p = -1): 490 shapes; spins 3..13 (2932s)
+   response matrix saved to <scratch>/dc_all10_s13.json
+   spins 3..5: 14 conditions, rank 14, augmented 14 -> consistent
+   spins 3..7: 28 conditions, rank 28, augmented 28 -> consistent
+   spins 3..9: 48 conditions, rank 48, augmented 48 -> consistent
+   spins 3..11: 75 conditions, rank 75, augmented 75 -> consistent
+   spins 3..13: 110 conditions, rank 110, augmented 110 -> consistent

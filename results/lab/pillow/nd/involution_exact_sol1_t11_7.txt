@@ -1,0 +1,4 @@
+Solution 1, t = 11/7: kappa_s = 1/8, eps - 2(n+1) = 7/8
+   Q~_0(v) - Q_0(v)|_(X -> Y + 2 delta, Y -> X - 2 delta) = (252*X + 252*Y*v + 252*Y + 576*delta*v + 648*delta + 49*v + 98)/(576*v*(v + 1)**2)
+   invariant for delta = []   (the charges' shift is -1/(t^2-1) = -49/72)
+   symbol: log|Q~_2| - log|Q_2| at v = 3/7: -7*log(7)/8 + 7*log(10)/8  (0 = invariant up to the phase e^(-i pi eps))

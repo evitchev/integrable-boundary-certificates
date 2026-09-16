@@ -1,0 +1,17 @@
+bilinear law subtracted; single-sector residuals reproduced (mixed part zero at every spin 3-13)
+in-house general-c eigenvalues loaded for k = [2, 3, 4, 5, 6, 7]
+   spin 3: two-tower vacuum at c = -2 == certified e^(t=3): True
+   spin 5: two-tower vacuum at c = -2 == certified e^(t=3): True
+   spin 7: two-tower vacuum at c = -2 == certified e^(t=3): True
+   spin 9: two-tower vacuum at c = -2 == certified e^(t=3): True
+   spin 11: two-tower vacuum at c = -2 == certified e^(t=3): True
+   spin 13: two-tower vacuum at c = -2 == certified e^(t=3): True
+
+H-c model with a = dN/dt|_3 = 9/4, b_X = a/24, b_Y = 0 (no free parameters):
+   spin 3 [fit range (spins 3, 5)]: EXACT (every monomial, constant included)
+   spin 5 [fit range (spins 3, 5)]: EXACT (every monomial, constant included)
+   spin 7 [hold-out, BLZ-printed I_7]: EXACT (every monomial, constant included)
+   spin 9 [HOLD-OUT, in-house I_9, PARAMETER-FREE]: EXACT (every monomial, constant included)
+   spin 11 [HOLD-OUT, in-house I_11, PARAMETER-FREE]: EXACT (every monomial, constant included)
+   spin 13 [HOLD-OUT, in-house I_13, PARAMETER-FREE]: EXACT (every monomial, constant included)
+RESULT: H-c CONFIRMED through spin 13 with zero free parameters

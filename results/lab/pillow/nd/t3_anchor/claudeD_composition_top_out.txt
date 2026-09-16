@@ -1,0 +1,10 @@
+responses R_k[x^(2m)] built and calibrated (even in beta) for m in [-1, 1, 3, 5, 7, 9]
+spin 3: target has 4 coefficients; model built
+spin 5: target has 8 coefficients; model built
+spin 7: target has 13 coefficients; model built
+spin 9: target has 19 coefficients; model built
+94 equations in 36 unknowns
+solutions: NONE
+Groebner basis: [1] -- the composition class is EXCLUDED at first order (certificate)
+   through spin 5: 16 elements (consistent)
+   through spin 7: 26 elements (consistent)

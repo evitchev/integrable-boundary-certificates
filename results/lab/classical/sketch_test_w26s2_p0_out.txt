@@ -1,0 +1,6 @@
+  prime index 0 (2305843009213693951): A-hat 101937 x 36024, 165745929 nonzeros loaded in 36s
+  sketch 36088 x 36024 assembled (108264 row picks) in 4s
+  nmod_mat filled in 74s; rref ...
+  sketch rref: rank 36022, nullity 2; rref 4572s
+  verification of 2 vector(s) on the full A-hat: ALL ZERO (8s)
+  prime index 0: rank 36022, nullity 2 (sketched, verified); total 4711s -> sol_p0.pkl

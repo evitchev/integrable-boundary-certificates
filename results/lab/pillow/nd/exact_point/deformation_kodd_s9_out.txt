@@ -1,0 +1,7 @@
+base: even-spin integrals vanish (spins 2..9), odd spins as before (1s)
+kappa-odd class h kappa Q(w): 25 shapes; spins 2..9 (32s)
+   spins on the continuation lattice for the q = -1 source (excluded from the test): [3, 5, 7, 9]
+conditions: 34 (34 homogeneous: even spins and the exact layers; 0 targets at spins [] degree <= k-2)
+   rank 18, augmented rank 18 on 25 shapes; homogeneous alone: rank 18 -> kernel 7
+   consistent on this shape space
+done (32s)

@@ -1,0 +1,15 @@
+identity r[5,1,0] = (85/18)(r[9,1,2] - 6 r[9,0,3]) on monomials U = w^i (responses of the lab machinery, 50 digits):
+   w^0: r5 = (-74.1818181818 + 0.0j), (85/18)(r92 - 6 r03) = (-74.1818181818 + 0.0j), relative difference 4.61e-51
+   w^1: r5 = (-38.8571428571 + 0.0j), (85/18)(r92 - 6 r03) = (-38.8571428571 + 0.0j), relative difference 8.8e-51
+   w^2: r5 = (-16.0 + 0.0j), (85/18)(r92 - 6 r03) = (-16.0 + 0.0j), relative difference 1.07e-50
+   w^3: r5 = (-3.69230769231 + 0.0j), (85/18)(r92 - 6 r03) = (-3.69230769231 + 0.0j), relative difference 1.59e-50
+   w^4: r5 = (0.410256410256 - 2.60768211599e-51j), (85/18)(r92 - 6 r03) = (0.410256410256 + 0.0j), relative difference 2.52e-50
+   w^5: r5 = (-0.410256410256 + 5.21536423198e-51j), (85/18)(r92 - 6 r03) = (-0.410256410256 - 1.7783933057e-51j), relative difference 2.59e-50
+   w^6: r5 = (3.69230769231 - 3.09327383365e-50j), (85/18)(r92 - 6 r03) = (3.69230769231 - 3.07752387088e-51j), relative difference 9.51e-51
+   w^7: r5 = (16.0 - 1.34041866125e-49j), (85/18)(r92 - 6 r03) = (16.0 - 5.5811402645e-50j), relative difference 1.18e-50
+   w^8: r5 = (38.8571428571 - 3.25530246303e-49j), (85/18)(r92 - 6 r03) = (38.8571428571 - 1.80245099841e-49j), relative difference 4.34e-51
+   w^9: r5 = (74.1818181818 - 6.21466833851e-49j), (85/18)(r92 - 6 r03) = (74.1818181818 - 3.96935243864e-49j), relative difference 3.81e-51
+   w^10: r5 = (123.636363636 - 1.03577805642e-48j), (85/18)(r92 - 6 r03) = (123.636363636 - 7.21433830436e-49j), relative difference 1.14e-50
+   worst relative difference 2.59e-50  ->  IDENTITY HOLDS
+targets: [X] M_5' = -513/2464, (85/18)([X Y^2] M_9' - 6 [Y^3] M_9') = -279/352, discrepancy 45/77
+OBSTRUCTION CONFIRMED: no first-order h U(w)/(kappa^2 Lambda) about the exact operator reproduces M_5' and M_9' (discrepancy 45/77)

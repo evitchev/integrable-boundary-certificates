@@ -1,0 +1,4 @@
+prime index/p equal: True
+pivots equal: True ( 36022 vs 36022 )
+nullity: 2 vs 2
+kernel vectors identical: True

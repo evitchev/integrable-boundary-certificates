@@ -1,0 +1,14 @@
+our classical leading-layer constant for A B = x^-4 (m = -1), in charge units, vs Codex's exact -k/16:
+   k = 4: ours = 1/8   Codex = -1/4   ratio = -1/2
+   k = 5: ours = 5/32   Codex = -5/16   ratio = -1/2
+   k = 6: ours = 3/16   Codex = -3/8   ratio = -1/2
+   k = 7: ours = 7/32   Codex = -7/16   ratio = -1/2
+ratio k-independent: True  (common value -1/2 -- an insertion-normalization convention)
+
+CONCLUSION:
+  the leading layer of the two-insertion class with multiplication operators is FLAT at all orders (depth forces A B = x^-4;
+  the leading momentum degree is classical; the classical divided difference is flat), and the deficit's leading layer is NOT
+  flat -- so the ENTIRE class is excluded, not just the one-parameter family previously closed.
+  REMAINING inside non-diagonal mixing: off-diagonal DIFFERENTIAL operators, which change the depth counting and can give a
+  non-flat leading layer.  That is the next class, and the filters for it are: symmetry in X <-> Y, non-flat leading layer, and
+  the pure anchor coefficients k(2k-1)(5-k)/11520.

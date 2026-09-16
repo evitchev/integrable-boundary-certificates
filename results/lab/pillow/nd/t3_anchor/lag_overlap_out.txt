@@ -1,0 +1,11 @@
+orthonormality at b1 = b2 (4 x 4): True
+<x^2>_0 at b1 = b2 = b: b + 1  (expected b + 1)
+O_0(n, k; b1, b2), n, k <= 2:
+   [gamma(b1/2 + b2/2 + 1)/(sqrt(gamma(b1 + 1))*sqrt(gamma(b2 + 1))), -(b1 - b2)*gamma(b1/2 + b2/2 + 1)/(2*sqrt(b2 + 1)*sqrt(gamma(b1 + 1))*sqrt(gamma(b2 + 1))), sqrt(2)*(b1 - b2)*(b1 - b2 - 2)*gamma(b1/2 + b2/2 + 1)/(8*sqrt(b2**2 + 3*b2 + 2)*sqrt(gamma(b1 + 1))*sqrt(gamma(b2 + 1)))]
+   [(b1 - b2)*gamma(b1/2 + b2/2 + 1)/(2*sqrt(b1 + 1)*sqrt(gamma(b1 + 1))*sqrt(gamma(b2 + 1))), (-b1**2 + 2*b1*b2 + 2*b1 - b2**2 + 2*b2 + 4)*gamma(b1/2 + b2/2 + 1)/(4*sqrt(b1 + 1)*sqrt(b2 + 1)*sqrt(gamma(b1 + 1))*sqrt(gamma(b2 + 1))), sqrt(2)*(b1 - b2)*(b1**2 - 2*b1*b2 - 6*b1 + b2**2 - 2*b2 - 8)*gamma(b1/2 + b2/2 + 1)/(16*sqrt(b1 + 1)*sqrt(b2 + 1)*sqrt(b2 + 2)*sqrt(gamma(b1 + 1))*sqrt(gamma(b2 + 1)))]
+   [sqrt(2)*(b1 - b2)*(b1 - b2 + 2)*gamma(b1/2 + b2/2 + 1)/(8*sqrt(b1**2 + 3*b1 + 2)*sqrt(gamma(b1 + 1))*sqrt(gamma(b2 + 1))), sqrt(2)*(b1 - b2)*(-b1**2 + 2*b1*b2 + 2*b1 - b2**2 + 6*b2 + 8)*gamma(b1/2 + b2/2 + 1)/(16*sqrt(b1 + 1)*sqrt(b1 + 2)*sqrt(b2 + 1)*sqrt(gamma(b1 + 1))*sqrt(gamma(b2 + 1))), (b1**4 - 4*b1**3*b2 - 8*b1**3 + 6*b1**2*b2**2 + 8*b1**2*b2 - 12*b1**2 - 4*b1*b2**3 + 8*b1*b2**2 + 56*b1*b2 + 48*b1 + b2**4 - 8*b2**3 - 12*b2**2 + 48*b2 + 64)*gamma(b1/2 + b2/2 + 1)/(32*sqrt(b1 + 1)*sqrt(b1 + 2)*sqrt(b2 + 1)*sqrt(b2 + 2)*sqrt(gamma(b1 + 1))*sqrt(gamma(b2 + 1)))]
+at (b1, b2) = (2, 3): [[5*sqrt(3)*sqrt(pi)/16, 5*sqrt(3)*sqrt(pi)/64, 3*sqrt(30)*sqrt(pi)/256], [-5*sqrt(pi)/32, 65*sqrt(pi)/128, 25*sqrt(10)*sqrt(pi)/512], [-5*sqrt(2)*sqrt(pi)/256, -145*sqrt(2)*sqrt(pi)/1024, 445*sqrt(5)*sqrt(pi)/2048]]
+   quadrature O_0(0,0; 2,3) = 0.9593687886998329579496  vs closed form 0.9593687886998329579496
+   quadrature O_0(1,0; 2,3) = -0.2769459142039868792653  vs closed form -0.2769459142039868792653
+   quadrature O_0(2,1; 2,3) = -0.3549424802944287820804  vs closed form -0.3549424802944287820804
+generating function of the unnormalized overlaps = Gamma(c+1)(1-s)^(c-b1)(1-t)^(c-b2)(1-st)^(-(c+1)), n, k <= 2: PASS

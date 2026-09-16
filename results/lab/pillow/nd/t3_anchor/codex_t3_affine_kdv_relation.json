@@ -1,0 +1,29 @@
+{
+  "kind": "KDV_AFFINE_T3",
+  "terms": [
+    [
+      "-3",
+      3,
+      1,
+      1
+    ],
+    [
+      "2",
+      5,
+      2,
+      1
+    ],
+    [
+      "2",
+      5,
+      1,
+      2
+    ]
+  ],
+  "context": {
+    "t": "3",
+    "observable": "d/dt of X^k-normalized cylindrical vacuum charges",
+    "source_class": "arbitrary affine shifts of each highest weight, independent first-order central-charge shifts and independent normalization changes for each sector at spins 3 and 5",
+    "adapter": "evidence/meanfield_relation.py; dedicated KdV response adapter, not an existing WKB kind"
+  }
+}

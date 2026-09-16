@@ -1,0 +1,24 @@
+======================================================================================================================
+S_k / o^2, with o = -1/(t^2-1): is the squared curve factor exactly o^2?
+   spin 5  [1]        quotient -(t - 3)**2*(8*t**2 - 45*t + 97)/378
+                      denominator 1   regular at t = +-1: YES
+   spin 7  [X]        quotient -2*(t - 3)**2*(120*t**4 + 41*t**3 - 507*t**2 + 2167*t - 3021)/(135*(t + 9)*(3*t - 1))
+                      denominator 135*(t + 9)*(3*t - 1)   regular at t = +-1: YES
+   spin 9  [X^2]      quotient -(t - 3)**2*(275*t**4 - t**3 - 731*t**2 + 2761*t - 3984)/(63*(t + 1)*(t + 13))
+                      denominator 63*(t + 1)*(t + 13)   regular at t = +-1: NO
+   spin 9  [XY]       quotient -2*(t - 3)**2*(35*t**4 - 325*t**3 + 805*t**2 + 3373*t - 6432)/(21*(t + 1)*(t + 13))
+                      denominator 21*(t + 1)*(t + 13)   regular at t = +-1: NO
+   spin 11 [X^3]      quotient -22*(t - 3)**2*(489*t**4 - 301*t**3 - 911*t**2 + 3997*t - 5434)/(189*(t + 17)*(3*t + 7))
+                      denominator 189*(t + 17)*(3*t + 7)   regular at t = +-1: YES
+   spin 11 [X^2 Y]    quotient 22*(t - 3)**2*(855*t**5 + 13772*t**4 - 55092*t**3 - 44942*t**2 + 293325*t - 228942)/(63*(t + 17)*(3*t + 7)*(5*t - 3))
+                      denominator 63*(t + 17)*(3*t + 7)*(5*t - 3)   regular at t = +-1: YES
+   spin 13 [X^4]      quotient -13*(t - 3)**2*(762*t**4 - 979*t**3 - 927*t**2 + 5995*t - 7491)/(54*(t + 21)*(3*t + 11))
+                      denominator 54*(t + 21)*(3*t + 11)   regular at t = +-1: YES
+   spin 13 [X^2 Y^2]  quotient 13*(t - 3)**2*(4554*t**5 + 6519*t**4 - 88918*t**3 + 44904*t**2 + 321628*t - 349455)/(3*(t + 21)*(3*t + 11)*(5*t + 1))
+                      denominator 3*(t + 21)*(3*t + 11)*(5*t + 1)   regular at t = +-1: YES
+   spin 13 [X^3 Y]    quotient 26*(t - 3)**2*(4290*t**5 + 30347*t**4 - 105026*t**3 - 72860*t**2 + 424880*t - 306111)/(27*(t + 21)*(3*t + 11)*(5*t + 1))
+                      denominator 27*(t + 21)*(3*t + 11)*(5*t + 1)   regular at t = +-1: YES
+======================================================================================================================
+VERDICT: NOT a clean o^2 factor everywhere
+
+SEAL sha256 of the nine quotients: 047986a23f829b8748e766c70ea1fc43eca5df7d14c789cadbd4a86ed5c23e35

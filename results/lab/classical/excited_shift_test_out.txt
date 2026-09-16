@@ -1,0 +1,46 @@
+=== e5 (fusion): vacuum = (8*P**2 - 8*Q**2 + 9)*(64*P**4 - 128*P**2*Q**2 + 208*P**2 + 64*Q**4 - 80*Q**2 + 25)/768
+   level 1 singlet (2 states): 0 polynomial eigenvalue(s); other factors (degree, mult): [(2, 1)]
+   level 1 transverse (1 states): 1 polynomial eigenvalue(s); other factors (degree, mult): []
+      (8*P**2 - 8*Q**2 + 25)*(64*P**4 - 128*P**2*Q**2 + 464*P**2 + 64*Q**4 - 336*Q**2 + 441)/768
+      = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 1)]
+   level 2 singlet (6 states): 1 polynomial eigenvalue(s); other factors (degree, mult): [(5, 1)]
+      (8*P**2 - 8*Q**2 + 41)*(64*P**4 - 128*P**2*Q**2 + 720*P**2 + 64*Q**4 - 592*Q**2 + 1369)/768
+      = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 2)]
+   level 2 transverse (3 states): 1 polynomial eigenvalue(s); other factors (degree, mult): [(2, 1)]
+      (8*P**2 - 8*Q**2 + 41)*(64*P**4 - 128*P**2*Q**2 + 720*P**2 + 64*Q**4 - 592*Q**2 + 1369)/768
+      = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 2)]
+=== Y-type: vacuum = (8*Q**2 - 9)*(8*Q**2 - 5)*(24*P**2 - 8*Q**2 + 5)/4608
+   level 1 singlet (2 states): 0 polynomial eigenvalue(s); other factors (degree, mult): [(2, 1)]
+   level 1 transverse (1 states): 1 polynomial eigenvalue(s); other factors (degree, mult): []
+      (8*Q**2 - 25)*(8*Q**2 - 21)*(24*P**2 - 8*Q**2 + 21)/4608
+      = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 1)]
+   level 2 singlet (6 states): 1 polynomial eigenvalue(s); other factors (degree, mult): [(5, 1)]
+      (8*Q**2 - 41)*(8*Q**2 - 37)*(24*P**2 - 8*Q**2 + 37)/4608
+      = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 2)]
+   level 2 transverse (3 states): 1 polynomial eigenvalue(s); other factors (degree, mult): [(2, 1)]
+      (8*Q**2 - 41)*(8*Q**2 - 37)*(24*P**2 - 8*Q**2 + 37)/4608
+      = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 2)]
+=== X-type: vacuum = -P**2*(2*P**2 + 1)*(8*P**2 - 24*Q**2 + 31)/120
+   level 1 singlet (2 states): 0 polynomial eigenvalue(s); other factors (degree, mult): [(2, 1)]
+   level 1 transverse (1 states): 1 polynomial eigenvalue(s); other factors (degree, mult): []
+      -P**2*(2*P**2 + 1)*(8*P**2 - 24*Q**2 + 79)/120
+      = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 1)]
+   level 2 singlet (6 states): 1 polynomial eigenvalue(s); other factors (degree, mult): [(5, 1)]
+      -P**2*(2*P**2 + 1)*(8*P**2 - 24*Q**2 + 127)/120
+      = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 2)]
+   level 2 transverse (3 states): 1 polynomial eigenvalue(s); other factors (degree, mult): [(2, 1)]
+      -P**2*(2*P**2 + 1)*(8*P**2 - 24*Q**2 + 127)/120
+      = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 2)]
+=== I_3: vacuum = (960*P**4 - 2880*P**2*Q**2 + 3480*P**2 + 960*Q**4 - 1920*Q**2 + 961)/960
+   level 1 singlet (2 states): 0 polynomial eigenvalue(s); other factors (degree, mult): [(2, 1)]
+   level 1 transverse (1 states): 1 polynomial eigenvalue(s); other factors (degree, mult): []
+      (960*P**4 - 2880*P**2*Q**2 + 9240*P**2 + 960*Q**4 - 5760*Q**2 + 8641)/960
+      = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 1)]
+   level 2 singlet (6 states): 1 polynomial eigenvalue(s); other factors (degree, mult): [(5, 1)]
+      (960*P**4 - 2880*P**2*Q**2 + 15000*P**2 + 960*Q**4 - 9600*Q**2 + 24001)/960
+      = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 2)]
+   level 2 transverse (3 states): 1 polynomial eigenvalue(s); other factors (degree, mult): [(2, 1)]
+      (960*P**4 - 2880*P**2*Q**2 + 15000*P**2 + 960*Q**4 - 9600*Q**2 + 24001)/960
+      = vacuum law with (X, Y) -> (X - 2a, Y - 2b) for (a, b) in [(0, 2)]
+LEVEL-SHIFT LAW (Y -> Y - 2L on the polynomial eigenvalue of the level-1 transverse and both level-2 blocks, none on the level-1 singlet block; four charges): HOLDS
+DONE

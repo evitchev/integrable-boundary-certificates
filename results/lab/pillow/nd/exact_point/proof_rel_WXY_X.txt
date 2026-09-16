@@ -1,0 +1,5 @@
+Riccati to spin 9 with symbolic exponents: 1516 terms (5s)
+   spin 5: responses assembled (5s)
+   spin 9: responses assembled (6s)
+the relation, in units of the reference B_s, is the rational function with numerator of degree 0 (8s)
+EXACT IDENTITY for the X-shapes: the relation holds for every monomial w^i (1-w)^j, hence for the whole class

@@ -1,0 +1,14 @@
+states: [((), (), (1,), (1,)), ((1,), (), (), (1,)), ((), (), (), (2,))]
+Solution 3, q = 4: level-2 transverse quadratic discriminant = 477757440000*(576*X**2 - 128*X*Y + 976*X + 576*Y**2 - 3024*Y + 3969)
+Solution 3, q = 6: level-2 transverse quadratic discriminant = 40960000*(400*X**2 + 224*X*Y + 152*X + 400*Y**2 - 2200*Y + 3025)
+Solution 3, q = 8: level-2 transverse quadratic discriminant = 12230590464*(12544*X**2 + 11776*X*Y - 3168*X + 12544*Y**2 - 70560*Y + 99225)
+Solution 3, q = 10: level-2 transverse quadratic discriminant = 18662400000000*(32400*X**2 + 37600*X*Y - 20120*X + 32400*Y**2 - 184680*Y + 263169)
+Solution 3, q = 12: level-2 transverse quadratic discriminant = 53084160000*(7744*X**2 + 10112*X*Y - 6672*X + 7744*Y**2 - 44528*Y + 64009)
+Solution 3, q = 16: level-2 transverse quadratic discriminant = 122305904640000*(230400*X**2 + 342016*X*Y - 266432*X + 230400*Y**2 - 1339200*Y + 1946025)
+Solution 2, q = 4: level-2 transverse quadratic discriminant = 477757440000*(576*X**2 - 128*X*Y + 976*X + 576*Y**2 - 3024*Y + 3969)
+Solution 2, q = 6: level-2 transverse quadratic discriminant = 27518828544*(81*X**2 - 18*X*Y + 108*X + 9*Y**2 - 60*Y + 100)
+Solution 2, q = 8: level-2 transverse quadratic discriminant = 48922361856*(186624*X**2 - 32256*X*Y + 207072*X + 6400*Y**2 - 52000*Y + 105625)
+Solution 2, q = 10: level-2 transverse quadratic discriminant = 746496000000*(14400*X**2 - 2000*X*Y + 14080*X + 225*Y**2 - 2160*Y + 5184)
+Solution 2, q = 12: level-2 transverse quadratic discriminant = 53084160000*(3240000*X**2 - 374400*X*Y + 2890800*X + 28224*Y**2 - 312816*Y + 866761)
+Solution 2, q = 16: level-2 transverse quadratic discriminant = 3131031158784*(22127616*X**2 - 1906688*X*Y + 17445568*X + 82944*Y**2 - 1166400*Y + 4100625)
+DONE

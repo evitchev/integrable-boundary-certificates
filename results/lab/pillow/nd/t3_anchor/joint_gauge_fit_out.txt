@@ -1,0 +1,25 @@
+G_d normalized (must equal the four-resolvent patterns of lab/four_resolvent.py):
+   d = 2: [1, 4/3, 1]
+   d = 3: [1, 3/2, 3/2, 1]
+   d = 4: [1, 8/5, 9/5, 8/5, 1]
+   d = 5: [1, 5/3, 2, 2, 5/3, 1]
+
+the layer after the joint gauge adjustment, against my pinned h^2 coefficients:
+  spin 7 (k = 4): A_k = -553/1440, B_k = 49/360, q_k = 7/180
+      (2,0): pinned 7/2880, adjusted 7/288, predicted A+3B = 7/288 -> MATCH
+      (1,1): pinned 77/480, adjusted 77/480, predicted A+4B = 77/480 -> MATCH
+  spin 9 (k = 5): A_k = -69/64, B_k = 9/32, q_k = 1/12
+      (3,0): pinned 0, adjusted 3/64, predicted A+4B = 3/64 -> MATCH
+      (2,1): pinned 39/64, adjusted 39/64, predicted A+6B = 39/64 -> MATCH
+  spin 11 (k = 6): A_k = -781/320, B_k = 121/240, q_k = 11/72
+      (4,0): pinned -11/1920, adjusted 77/960, predicted A+5B = 77/960 -> MATCH
+      (3,1): pinned 1529/960, adjusted 1529/960, predicted A+8B = 1529/960 -> MATCH
+      (2,2): pinned 671/320, adjusted 671/320, predicted A+9B = 671/320 -> MATCH
+  spin 13 (k = 7): A_k = -1729/360, B_k = 1183/1440, q_k = 91/360
+      (5,0): pinned -91/5760, adjusted 91/720, predicted A+6B = 91/720 -> MATCH
+      (4,1): pinned 273/80, adjusted 273/80, predicted A+10B = 273/80 -> MATCH
+      (3,2): pinned 91/18, adjusted 91/18, predicted A+12B = 91/18 -> MATCH
+
+VERDICT: CONFIRMED -- the second-order deficit layer is flat + four-resolvent at every spin 7..13 (and the pure coefficients only
+         after the single gauge adjustment delta_g2 = -9/16).  My four-resolvent refutation is WITHDRAWN: it held the gauge fixed,
+         which is not legitimate when both enter at the same order.

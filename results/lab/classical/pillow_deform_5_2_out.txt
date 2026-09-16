@@ -1,0 +1,12 @@
+  order 2 (0s)
+  order 3 (5s)
+  order 4 (70s)
+  order 5 (1442s)
+spin 3: integrated (8s)
+spin 3: 2 equations per solution added
+spin 5: integrated (1046s)
+spin 5: 3 equations per solution added
+Solution 3: 5 equations, 4 unknowns (cX + 3 shapes, pole order <= 2); rank 3, augmented 4 -> INCONSISTENT
+Solution 1: 5 equations, 4 unknowns (cX + 3 shapes, pole order <= 2); rank 3, augmented 4 -> INCONSISTENT
+Solution 2: 5 equations, 4 unknowns (cX + 3 shapes, pole order <= 2); rank 3, augmented 4 -> INCONSISTENT
+DONE

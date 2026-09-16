@@ -1,0 +1,6 @@
+self-comparison: exit 0: COMPARISON PASSED
+witnesses = []: exit 1: COMPARISON FAILED; first failure: FAIL  new record: 0 witnesses for genuine dim 2
+two empty witnesses: exit 1: COMPARISON FAILED; first failure: FAIL  new record: every witness has a non-empty charge vector
+one witness only: exit 1: COMPARISON FAILED; first failure: FAIL  new record: 1 witnesses for genuine dim 2
+duplicated witness: exit 1: COMPARISON FAILED; first failure: FAIL  the NEW eigenvalue pencil has rank 1 on its own (2 required)
+ALL TAMPERED RECORDS REJECTED

@@ -1,0 +1,8 @@
+Solution 3 at t = 3 ((N, s) = (-2, -9)): raw e_vac = (240*X**2 + 120*X + 240*Y**2 - 1)/240 ; top coefficient 1
+level 1: 2 singlet states; Gram det 1
+PASS  level 1: the singlet characteristic polynomial of e_3 at t = 3 equals the two-sector c = -2 KdV prediction
+level 2: 6 singlet states; Gram det -96
+PASS  level 2: the singlet characteristic polynomial of e_3 at t = 3 equals the two-sector c = -2 KdV prediction (with the extra Y primary V(D_X) x V(D_Y + 2))
+PASS  level 2 control: without the extra primary the five-state prediction leaves the linear factor of the sixth eigenvalue
+   sixth eigenvalue: (240*X**2 + 120*X + 240*Y**2 - 1920*Y + 3839)/240  = 4[I^(0)(D_X) + I^(0)(D_Y + 2)] = (240*X**2 + 120*X + 240*Y**2 - 1920*Y + 3839)/240
+T3 EXCITED STATES: Solution 3's level-1 and level-2 singlet spectra of I_3 at t = 3 are the two-sector quantum-KdV eigenvalues at c = -2 of Masoero-Ruzza's Theorem 7.6 (with the extra Y primary at level 2) -- the first excited-state test against a theorem in this programme.

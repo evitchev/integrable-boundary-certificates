@@ -1,0 +1,51 @@
+##### v3_build.log
+  sectors: cand 25258 (d-image 16901, non-pivot 8357), target 78771 (d-image 54370, non-pivot 24401); structure 1.9s
+  exact build of 8357 non-pivot columns in 84s (1480799 nonzeros)
+  normal forms of 8357 columns for 8 primes at once in 68s
+  wrote nf_p0.pkl (13794954 nonzeros)
+  wrote nf_p1.pkl (13794954 nonzeros)
+  wrote nf_p2.pkl (13794954 nonzeros)
+  wrote nf_p3.pkl (13794954 nonzeros)
+  wrote nf_p4.pkl (13794954 nonzeros)
+  wrote nf_p5.pkl (13794954 nonzeros)
+  wrote nf_p6.pkl (13794954 nonzeros)
+  wrote nf_p7.pkl (13794954 nonzeros)
+  build phase done in 178s -> <lab>/v4test/v3_w22
+##### v4_build.log
+  sectors: cand 25258 (d-image 16901, non-pivot 8357), target 78771 (d-image 54370, non-pivot 24401); structure 1.9s
+  exact build of 8357 non-pivot columns in 123s (1480799 nonzeros)
+  chunk 2: 523 columns, 838732 nonzeros (prime 0); 523/8357 columns in 25s
+  chunk 3: 523 columns, 859432 nonzeros (prime 0); 1046/8357 columns in 25s
+  chunk 0: 523 columns, 856366 nonzeros (prime 0); 1569/8357 columns in 25s
+  chunk 1: 523 columns, 860318 nonzeros (prime 0); 2092/8357 columns in 26s
+  chunk 5: 522 columns, 857151 nonzeros (prime 0); 2614/8357 columns in 50s
+  chunk 4: 523 columns, 880865 nonzeros (prime 0); 3137/8357 columns in 51s
+  chunk 6: 522 columns, 878230 nonzeros (prime 0); 3659/8357 columns in 51s
+  chunk 7: 522 columns, 890487 nonzeros (prime 0); 4181/8357 columns in 52s
+  chunk 8: 522 columns, 862384 nonzeros (prime 0); 4703/8357 columns in 76s
+  chunk 10: 522 columns, 864465 nonzeros (prime 0); 5225/8357 columns in 77s
+  chunk 11: 522 columns, 859817 nonzeros (prime 0); 5747/8357 columns in 77s
+  chunk 9: 522 columns, 891375 nonzeros (prime 0); 6269/8357 columns in 77s
+  chunk 12: 522 columns, 857468 nonzeros (prime 0); 6791/8357 columns in 101s
+  chunk 13: 522 columns, 834411 nonzeros (prime 0); 7313/8357 columns in 101s
+  chunk 15: 522 columns, 841002 nonzeros (prime 0); 7835/8357 columns in 101s
+  chunk 14: 522 columns, 862451 nonzeros (prime 0); 8357/8357 columns in 102s
+  normal forms streamed for 8 primes in 102s; nonzeros per prime [13794954, 13794954, 13794954, 13794954, 13794954, 13794954, 13794954, 13794954]
+  build phase done in 229s -> <lab>/v4test/v4_w22
+BUILDSDONE
+##### v3_solve_p0.log
+  prime index 0 (2305843009213693951): matrix 24401 x 8357 filled (13794954 nonzeros) in 3s; rref ...
+  prime index 0: rank 8356, nullity 1; rref 282s; total 285s -> sol_p0.pkl
+##### v4_sketch_p0.log
+  prime index 0 (2305843009213693951): A-hat 24401 x 8357, 13794954 nonzeros loaded in 0s
+  sketch 8421 x 8357 assembled (25263 row picks) in 0s
+  nmod_mat filled in 19s; rref ...
+  sketch rref: rank 8356, nullity 1; rref 74s
+  verification of 1 vector(s) on the full A-hat: ALL ZERO (0s)
+  prime index 0: rank 8356, nullity 1 (sketched, verified); total 95s -> sol_p0.pkl
+##### compare_p0.log
+prime index/p equal: True
+pivots equal: True ( 8356 vs 8356 )
+nullity: 1 vs 1
+kernel vectors identical: True
+SOLVESDONE

@@ -1,0 +1,32 @@
+=== fk3v2_w14
+  sectors: cand 929 (d-image 564, non-pivot 365), target 3293 (d-image 2211, non-pivot 1082); structure 0.1s
+  exact build of 365 non-pivot columns in 1s (28751 nonzeros)
+  normal forms of 365 columns for 3 primes at once in 0s
+  rref of A-hat (1082 x 365) for 3 primes in parallel in 0s
+  prime 2305843009213693951: rank 363, nullity U = 2
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 2 with 3 prime(s): 2 vectors verified by exact identities (2s), canonical non-pivot representatives; total 3s
+sol=3 N=-143/4 s=-189/4 dim=2 kc=564 primes=3 time=3s
+record written: fk3v2_w14.json (tool sha256 3981272caec1251e)
+=== fk3v2_w16
+  sectors: cand 2211 (d-image 1390, non-pivot 821), target 7563 (d-image 5106, non-pivot 2457); structure 0.1s
+  exact build of 821 non-pivot columns in 4s (81706 nonzeros)
+  normal forms of 821 columns for 3 primes at once in 1s
+  rref of A-hat (2457 x 821) for 3 primes in parallel in 1s
+  prime 2305843009213693951: rank 819, nullity U = 2
+  1 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 2 with 2 prime(s): 2 vectors verified by exact identities (4s), canonical non-pivot representatives; total 10s
+sol=3 N=-25/2 s=-45/2 dim=2 kc=1390 primes=2 time=10s
+record written: fk3v2_w16.json (tool sha256 3981272caec1251e)
+=== fk3v2_w18s2
+  sectors: cand 5106 (d-image 3293, non-pivot 1813), target 16901 (d-image 11491, non-pivot 5410); structure 0.3s
+  exact build of 1813 non-pivot columns in 14s (223431 nonzeros)
+  normal forms of 1813 columns for 3 primes at once in 2s
+  rref of A-hat (5410 x 1813) for 3 primes in parallel in 4s
+  prime 2305843009213693951: rank 1811, nullity U = 2
+  1 prime(s): reconstruction not yet stable
+  2 prime(s): reconstruction not yet stable
+  CERTIFIED genuine dim 2 with 3 prime(s): 2 vectors verified by exact identities (13s), canonical non-pivot representatives; total 35s
+sol=2 N=-119/2 s=-143/2 dim=2 kc=3293 primes=3 time=35s
+record written: fk3v2_w18s2.json (tool sha256 3981272caec1251e)

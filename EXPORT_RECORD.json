@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "kind": "public_export_record",
-  "private_freeze_commit": "1e47eff2d69f701374e5dcbd93338240c836acce",
+  "private_freeze_commit": "99a553bbb18f0a0132e14de56e755c75ad59ec56",
   "private_worktree_dirty_at_export": true,
-  "exported_at_utc": "2026-09-06T15:48:45+00:00",
-  "exporter_sha256": "sha256:92355d38fd8338559603c73c53d765a3145605674a4cb278f0dae0bb0db6481c",
-  "source_file_count": 397,
+  "exported_at_utc": "2026-09-16T02:34:44+00:00",
+  "exporter_sha256": "sha256:ee81d20a5720a6cd90c83a9f114e6560bf786cc4124e2af9bcc2ebcf87f6b653",
+  "source_file_count": 871,
   "transformation_log": {
     "results/c1_spin15_l10_exit_run.json": {
       "public_sha256": "sha256:42f9a70b3c8c2ee39825f4df2145d2de3544deec4333fbfdc55074f769c21091",
@@ -162,6 +162,15 @@
         {
           "rule": "[untracked-workspace-file]",
           "count": 18
+        }
+      ]
+    },
+    "results/lab/pillow/nd/t3_anchor/codex_allspin_check_out.txt": {
+      "public_sha256": "sha256:f4bde489faa19e41dfea188ba2fe74c3977c893f1ab90213ccadc1249f11a295",
+      "redactions": [
+        {
+          "rule": "[local-path]",
+          "count": 1
         }
       ]
     },

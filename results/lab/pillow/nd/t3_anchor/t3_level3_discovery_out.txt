@@ -1,0 +1,7 @@
+level 3: 13 singlet states; Gram det -4478976
+predicted factors from the modules V(D_X) x V(D_Y + n), n in [0, 2], at level 3: 12
+   residual odd powers of beta in the prediction: []
+certified charpoly / prediction: denominator 1
+   remaining factor (new primary content at level 3): -(240*X**2 + 120*X + 240*Y**2 - 2880*Y - 240*lambda + 8639)/240
+   new eigenvalue: (240*X**2 + 120*X + 240*Y**2 - 2880*Y + 8639)/240
+      = 4[I^(0)(D_X + a) + I^(0)(D_Y + b)] with (a, b) = [{a: 0, b: 3}]

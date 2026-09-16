@@ -167,3 +167,219 @@ PREDICTION F-12: sheet 3 at t = 13/11 (q = 12), weight 22: the pure-power member
 -prod_{m=-5}^{5} Lambda(P + i sqrt2 m/sqrt12), Lambda = P^2 - Q^2 + 121/24 (the fusion law of sec. 31, confirmed at q = 8, 10).
 Anything else refutes the respective law.  Retrodiction recorded, not a prediction: the sheet-2 law at q = 4 (weight 6,
 certified kernel) holds exactly, the form having been fixed on q = 8 and 12.
+
+## Outcome of F-12 (2026-09-07, 01:44)
+
+CONFIRMED, exactly: the weight-22 kernel of sheet 3 at t = 13/11 has genuine dimension 2 (lab/fast_kernel3.py, quotient
+formulation, 5 primes, exact identities verified; record results/lab/fast_kernel3/w22_t1311_sheet3.json), and the
+pure-power member's eigenvalue is IDENTICAL to the filed product -prod_{m=-5}^{5} Lambda(P + i sqrt2 m/sqrt12),
+Lambda = P^2 - Q^2 + 121/24 (difference 0; results/lab/classical/w22_fusion_test_out.txt).  This also confirms the
+coupling rule's filed spin-21 jump (sheet 3 at t = 13/11).  S2-16 (weight 24) remains open.
+
+## Outcome of S2-16 (2026-09-07, 07:01)
+
+CONFIRMED, exactly: the weight-24 kernel of sheet 2 at t = 17/15 has genuine dimension 2 (lab/fast_kernel3.py, quotient
+formulation, 6 primes, exact identities verified; record results/lab/fast_kernel3/w24_t1715_sheet2.json), and the
+member with top part Y^11 (21X - Y) has eigenvalue proportional to the filed Kac form
+(225/32 - Y)(221/32 - Y)^2(209/32 - Y)^2(189/32 - Y)^2(161/32 - Y)(125/32 - Y)(81/32 - Y)(29/32 - Y)(161/32 - Y + 21X)
+(results/lab/classical/w24_s2_test_out.txt).  This also confirms the coupling rule's filed spin-23 jump (sheet 2 at
+t = 17/15).  Both predictions filed on 2026-09-06 are now confirmed.
+
+## Weight-26 predictions filed before any weight-26 eigenvalue exists (2026-09-07, 09:46)
+
+The weight-26 kernels are being computed (sheet 3 at t = 5/3 since 08:41, one prime per node; sheet 3 at t = 15/13 built,
+eliminations queued; sheet 2 at t = 5/3 queued after them).  No witness has been reconstructed and no eigenvalue computed
+at weight 26 at the time of filing.
+PREDICTION F-14 (the fusion law of sec. 31 at q = 14): the pure-power member of the weight-26 kernel of sheet 3 at
+t = 15/13 ((N, s) = (-500/7, -585/7)) has vacuum eigenvalue -prod_{m=-6}^{6} Lambda(P + i sqrt2 m/sqrt14),
+Lambda = P^2 - Q^2 + 169/28.
+PREDICTION R1-E (the closing element as an exact factor of the recurrences, sec. 35): the fusion-type member of the
+weight-26 kernel of sheet 3 at t = 5/3 (the member carrying the linear factor 8X - 8Y + 9) has eigenvalue exactly
+divisible by e_5 = -(8X - 8Y + 9)[(8X - 8Y + 5)^2 + 128X]/768.  No prediction is made on whether the cofactor is
+divisible by the weight-16 cofactor R_10 (the open tower question); that is recorded as an outcome either way.
+The kernel dimensions themselves (2 on sheet 3 at both points, 2 on sheet 2 at t = 5/3) are the coupling rule's
+predictions already filed above (spin 25: sheet 3 at 15/13 AND 5/3; sheet 2 at 5/3).  Anything else refutes the
+respective law.
+OUTCOME R1-E (2026-09-07, 18:04; lab record fk3v3_w26_t53_sheet3.json, tool sha256 c38606e5b23be691; test
+lab/classical_w26_recurrence_test.py, results/lab/classical/w26_recurrence_test_out.txt): CONFIRMED.  The weight-26
+kernel of sheet 3 at t = 5/3 has genuine dimension 2 (the coupling rule's spin-25 prediction for this point holds);
+exactly one member carries the linear factor 8X - 8Y + 9, and its eigenvalue is exactly divisible by e_5.  The open tower
+question is answered: the degree-10 cofactor is NOT divisible by R_10 (irreducible over Q and over Q(i sqrt2), coprime
+to e_15) -- the recurrence tower is e_5 x (a new irreducible cofactor) at each rung, not a multiplicative tower.
+Spin 25 at t = 15/13 (F-14) and sheet 2 at t = 5/3: eliminations running.
+
+## Lattice-pole predictions (added 2026-09-07, 19:35, ansatz note sec. 38(w); before any weight-28+ data)
+
+The classical jumping locus is the Beta-function pole lattice of the two momentum-carrying exponents of the pillow-type
+leading symbol, and the coupling rule in lattice form gives the complete spin table of extra charges: sheet 3 at
+beta^2 = 1/(2k) has extra charges at s = j(4k-3)/(k-1) (odd integers), sheet 2 at s = j(3k-1), sheet 1 never.
+PREDICTIONS beyond the table of 2026-09-05: sheet 3 at t = 9/7 (q = 8): spin 39 (weight 40) and nothing between spin 13
+and 39; sheet 2 at t = 9/7: spin 33 (weight 34) and nothing between 11 and 33; sheet 3 at t = 7/5 (q = 6): spin 45 after
+27; sheet 3 at t = 5/3: spin 35 after 25; sheet 2 at t = 5/3: spin 35 after 25.  A rank drop at any other (sheet, t, spin)
+with beta^2 = 1/(2k), or the absence of a listed one, refutes the lattice form.
+
+OUTCOME F-14 (2026-09-08, 03:14; lab record fk3v3_w26_t1513_sheet3.json, tool sha256 c38606e5b23be691, pinned as
+results/lab/fast_kernel3/w26_t1513_sheet3.json; test lab/classical_w26_fusion_test.py, results/lab/classical/
+w26_fusion_test_out.txt): CONFIRMED exactly.  The weight-26 kernel of sheet 3 at t = 15/13 (q = 14, (N, s) =
+(-500/7, -585/7)) has genuine dimension 2 (seven primes, two witnesses verified by exact identities); the member with top
+part (x^2 - r^2)^13 (34,690 monomials, even levels 0-24) has vacuum eigenvalue -prod_{m=-6}^{6} Lambda(P + i sqrt2 m/sqrt14, Q),
+Lambda = P^2 - Q^2 + 169/28, difference 0.  The fusion law now holds at q = 4, 6, 8, 10, 12, 14, the last four
+preregistered.
+OUTCOME SHEET-2 R1 (2026-09-08, 12:14; lab record fk3v3_w26_t53_sheet2.json, tool sha256 c38606e5b23be691, pinned as
+results/lab/fast_kernel3/w26_t53_sheet2.json; tests lab/classical_w26_sheet2_test.py, lab/classical_w26_sheet2_cofactor.py,
+results/lab/classical/w26_sheet2_test_out.txt, w26_sheet2_cofactor_out.txt): CONFIRMED.  The weight-26 kernel of sheet 2 at
+t = 5/3 (q = 4, (N, s) = (-25/2, -45/2), Solution 2) has genuine dimension 2 (five primes, two witnesses verified by exact
+identities; the eliminations ran on the four nodes from 02:57, survived the head-node reboot of 06:56, and were collected by a
+recovery launcher) -- the coupling rule's spin-25 prediction for sheet 2 at this point holds, the third of the three filed
+weight-26 dimensions.  Recorded as an outcome, not a prediction: exactly one member of the pencil is divisible by a Kac line,
+and it is divisible by Lambda_2 Lambda_4 Lambda_6 = (8Y - 9)(8Y - 5)^2/512 -- the SAME three lines as the weight-16 Y-type
+member -- times a degree-10 cofactor irreducible over Q and over Q(i sqrt2), not divisible by the weight-16 quintic Q_5 and by no
+further Kac line of either sector; the other members are irreducible of degree 13.  The sheet-2 tower at q = 4 is therefore
+Lambda_2 Lambda_4 Lambda_6 x (a new irreducible cofactor) at both rungs 16 and 26, the exact analogue of sheet 3's e_5 x (new
+cofactor) (R1-E): a fixed closing element and a non-multiplicative tower, and the Kac-factor count does not grow with the rung.
+
+## Weight-28 predictions filed before any weight-28 computation exists (2026-09-08, 13:40)
+
+The weight-28 kernel of sheet 3 at t = 7/5 (q = 6, (N, s) = (-24, -35), Solution 3) is being built on worker-1 from 13:45
+(fast_kernel3_v3.py, quotient formulation, eight primes); no elimination has run and no eigenvalue exists at weight 28 at the
+time of filing.  This is the coupling rule's spin-27 prediction (filed above on 2026-09-06: "spin 27 (weight 28): sheet 3 at
+7/5; sheet 2 nothing"), the second rung of the q = 6 tower 9, 27, 45 (sec. 38(w)), now made precise:
+PREDICTION T-6 (the tower): the kernel has genuine dimension 2 (one extra invariant beyond the ordinary charge).
+PREDICTION R1-E6 (the closing element at q = 6, the analogue of R1-E at q = 4 and of the sheet-2 structure at weight 26):
+exactly one member of the pencil is divisible by the weight-10 fusion product e_9 = -prod_{m=-2}^{2} Lambda(P + i sqrt2 m/sqrt6, Q),
+Lambda = P^2 - Q^2 + 25/12 (the q = 6 closing element, degree 5 in (X, Y)), with a degree-9 cofactor.  No prediction is made on
+the cofactor's irreducibility or its relation to lower rungs (there is no lower cofactor at q = 6: weight 10 is the first rung);
+that is recorded as an outcome either way.  A dimension other than 2, or no member divisible by e_9, refutes the respective law.
+Negative clause (already filed, restated): sheet 2 has no jump at spin 27 at any t, and Solution 2 none at t = 11/5; these are
+not being tested by this computation.
+
+OUTCOME T-6 and R1-E6 (2026-09-09, 17:53 record / 21:50 test; lab record fk3v3_w28_t75_sheet3.json, tool sha256 65b29813dc399da5, pinned as
+results/lab/fast_kernel3/w28_t75_sheet3.json; test lab/classical_w28_r1e6_test.py, output w28_t75_sheet3_r1e6_out.txt): weight 28, sheet 3 at
+t = 7/5 (N = -24, s = -35, q = 6), eight sketched eliminations (primes 0-7, every one rank 73,086 and nullity 2, every kernel vector verified on
+the full A-hat mod p), rational reconstruction stable at six primes, two exact independent witnesses verified by the exact identities in the
+merge (upper bound asserted by the solve records: the 203,439 x 73,086 pivot submatrix is above the replay budget).
+T-6: genuine dimension 2 -- CONFIRMED, with the scope stated plainly (Kimi K3's verification of ce0885e, C10-F7, adopted 2026-09-11):
+dimension >= 2 is VERIFIED (two exact independent witnesses, replayed by the reviewer from the record alone); dimension <= 2 is
+ASSERTED by the eight solve records (nullity 2 at eight primes, identical pivot structures; the rank replay was skipped for budget,
+rank_verified_records: 0).  A dimension above 2 would have refuted T-6 as filed; a dimension above 2 is what the asserted bound
+excludes, so T-6's confirmation rests on the solve records for its upper half.
+R1-E6: exactly one member of the pencil, E_0 + (67845/1281787) E_1, is divisible by e_9 = -prod_{m=-2}^{2} Lambda(P + i sqrt2 m/sqrt6, Q),
+Lambda = P^2 - Q^2 + 25/12, with a cofactor of degree 9 -- CONFIRMED; the other member's remainder is nonzero.  Recorded outcome on the
+unpredicted question: the degree-9 cofactor is IRREDUCIBLE over Q.
+
+PREDICTION U-21 (filed 2026-09-10, 14:27, before any result (the computation was launched at 14:25); derived by OpenAI Codex in its review of 6263777, adopted by
+the operator's agent): IF the degree-(k-2) gap of the sec.-38(ad) operator at Solution 1, t = 11/7 (N = -46/3, s = -77/3) is
+produced by a term U(w)/(kappa^2 Lambda) with ANY admissible U (rational or not; the responses are moments J[s, b](U) with weights
+w^(s eps/2 + (s-3)/2 - 1)(1-w)^(s(n-eps)/2 + b - 1), and J[21, 8] = J[5, 0] - J[5, 1] identically), THEN the spin-21 gap has
+    [X Y^8] M_21 = 4077535/241338995196,
+where M_s = (certified e_s normalized to X^k coefficient 1) - (the operator's I_s so normalized), k = (s+1)/2.  A different value
+refutes the whole class at this fibre.  Test: the weight-22 kernel of Solution 1 at t = 11/7 (fast_kernel3 v3; launched
+2026-09-10 14:25 on worker 2), its vacuum eigenvalue by the exact generating-function recipe, and the operator's I_21 by the
+continued-Beta machinery.  No prediction is made on the other spin-21 coefficients.
+
+OUTCOME U-21 (2026-09-10, 14:38 record / 14:42 test; lab record fk3v3_w22_sol1_t117.json, tool sha256 65b29813dc399da5, pinned as
+results/lab/fast_kernel3/w22_sol1_t117.json; test lab/classical_u21_test.py, output w22_sol1_t117_u21_out.txt): the weight-22 kernel
+of Solution 1 at t = 11/7 (N = -46/3, s = -77/3) has genuine dimension 1 (five primes, one exact witness verified by the exact
+identities); its vacuum eigenvalue e_21 and the operator's I_21 (Riccati polynomials through rho_21, momentum degree <= 11, exact)
+agree at the two matched layers (degrees 11 and 10 absent from M_21 -- the first check of the sec.-38(ad) completion at spin 21)
+and the degree-(k-2) coefficient is
+    [X Y^8] M_21 = -4700619/80446331732,
+against the predicted 4077535/241338995196.  REFUTED: no term U(w)/(kappa^2 Lambda), rational or not, bounded or not, produces
+the degree-(k-2) gap of Solution 1 at t = 11/7 -- the integrand identity J[21,8] = J[5,0] - J[5,1] holds for every admissible U, so
+the spin-5 gaps fix that spin-21 coefficient for the whole class, and the certified value differs.  This closes the kappa^-2
+Lambda^-1 class as a completion at this fibre, class-wide, by a single finite test -- the standard Codex's review asked for.
+
+Route 15 (iv), level 2 (15:20-15:40, level2_det_test.py): with the corrected current, the 9 x 9 level-2 matrix of I_3 on the
+three-boson Fock space (a^j_-2|P>, a^j_-1 a^k_-1|P>), P_1^2 = 1/6 - 8 (the level keeps e_1) and the cylindrical P_2^2(X),
+P_3^2(Y): det(M_2 - e_3 1) at three momentum points is of order 1e9-1e12 (60-digit evaluation) for each solution at its
+sample t -- no level-2 Fock state has I_3 = e_3 at the tested fibres and momenta.  Together with level 1: the cylindrical state
+is not a low descendant of the pillow primary in the free-boson Fock module; the third sector is not a free boson in an excited
+state, and the remaining readings are a sector of a different kind (twisted, or not a boson at all) with the vanishing
+spin-1 contribution built in.
+
+## First-order deformation classes at the exact point: oracle spec filed before the computations (2026-09-11, 14:00)
+
+Setting (ansatz note secs. 38(ag)-(ah), batches 23-25): at (N, s) = (28, -9) (Solution 1, t = -1/3) the sec.-38(ad) operator is the
+cylindrical oper through spin 11 (registered) / 13 (lab).  Along the curve, t = -1/3 + h, the exact first-order targets are the
+polynomials M_s'(t0), s = 3..13 (results/lab/pillow/nd/deformation_first_order2_sol1.json), with ZERO parts at momentum degrees
+k and k-1.  A first-order change of the operator in a class C (linear in its shape functions) is TESTED by lab/deformation_classes.py:
+its X^k-normalized responses must vanish at degrees k and k-1 at every spin and equal M_s' at degrees <= k-2.
+Standard, fixed in advance for every class below: (1) the shape space is w^i (i = -12..24) and (1-w)^-j (j = 1..12) per kind,
+and the rank of the response functionals must SATURATE (rank < number of shapes) before any verdict; (2) INCONSISTENT with
+saturated rank -> the violated relation is extracted (lab/extract_relation.py) within the smallest inconsistent spin range and
+must be PROVED for symbolic exponents kind by kind (lab/identity_proof_v2.py; spins congruent mod 4) -- only then is the class
+EXCLUDED class-wide; an unproved relation excludes the shape space only; (3) CONSISTENT with saturated rank -> the solution
+affine space is the candidate; it must pass the HOLD-OUT (fit on spins <= 11 determines the spin-13 responses, which must then
+match M_13'), and a member must be verified end to end by the numerical determinant at three momentum points (nd_mp2.py +
+nd_refit.py) before "found" is written anywhere; (4) a class whose functionals do not saturate on the standard shape space is
+reported as UNDECIDED, not as consistent.
+Classes, in order, with the outcome that refutes each:
+  D-1  kappa^-2 momentum-quadratic scalar terms (h/kappa^2) Lambda^p [X^2 g_XX + X Y g_XY + Y^2 g_YY], p = -1 first (rational
+       responses), then p = 0, -2 (per-spin transcendental factors: the analysis over the field they generate, or numerically
+       at 60 digits with exact rational verification of any extracted relation).  Refuted by a proved identity as in (2).
+  D-2  the union of D-1 with the excluded kappa^0 class (W + X f + Y g) and with U/(kappa^2 Lambda): the full scalar class of
+       spectral orders kappa^0 and kappa^-2 with momentum degree <= 2.  Same standard.
+  D-3  kappa-odd momentum-independent terms h kappa Q(w) (grading 1; they also produce even-spin WKB terms, which must be total
+       derivatives -- an additional set of conditions, filed here).  Same standard.
+  D-4  kappa^-4 Lambda^p momentum-independent terms.  Same standard.
+PREDICTION (the author's expectation, recorded so that it can be wrong): D-1 and D-2 are excluded by proved identities of the
+spin-(s, s+4) type, because the top and sub-leading layers force too many moments to vanish; if D-1/D-2 are CONSISTENT the
+scalar-oper hypothesis survives at first order and the candidate goes to the numerical determinant; if all of D-1..D-4 are
+excluded, the first-order change is not a scalar Fuchsian potential term of these gradings, and the search moves to non-scalar
+(2 x 2) operators and to KLS-type series at u -> 0 (register route 15 (iii)).
+
+OUTCOMES (2026-09-11, 14:00-16:00; lab/deformation_classes.py, extract_relation.py, identity_proof_v2.py; results/lab/pillow/nd/exact_point/):
+D-1 (p = -1): INCONSISTENT within spins 3..5 on 147 shapes (rank 10, augmented 11); relation 32 r(3,0,0) = (212/15) r(3,1,0), PROVED
+for the XX-, XY-, YY-shapes -- EXCLUDED.
+D-2 (p = -1, with U): consistent through spin 9 (rank 47 of 48, as the spec anticipated for a flexible class); INCONSISTENT within
+spins 3..11 (rank 73, augmented 74) on 196 shapes; a 34-term spin-7/11 relation, PROVED for U, XX, XY, YY -- EXCLUDED.
+GRAND UNION (D-2 with the kappa^0 class W + X f + Y g; seven functions, 343 shapes): FULL rank through spin 11 (no test
+possible: rule (4)); INCONSISTENT through spin 13 (rank 108, augmented 109); a 44-term spin-5/9/13 relation, PROVED for all
+seven kinds -- EXCLUDED, with the scope that the spin-13 target rests on the lab-level profile.
+The author's prediction held for D-1 and D-2 (excluded by spin-(s, s+4) identities); the grand union was not predicted either
+way and is excluded only at spin 13.  D-3, D-4 and p != -1: not run.
+D-3 (kappa-odd h kappa Q(w); 2026-09-11, 17:10; lab/deformation_kodd.py): UNDECIDED at the exact point, for a structural reason: the
+source enters rho_0 as Q Lambda^(-1/2)/2, and at the point n - eps = -1, so the continued integrals of its terms at EVERY odd spin
+carry the (1-w) exponent b_1 = -(s+1)/2, a nonpositive integer -- the continuation lattice -- i.e. the odd-spin responses of the
+class are infinite or zero under the prescription, never a finite nonzero polynomial; the even-spin conditions (the deformed
+operator's even-spin data must vanish: 34 homogeneous conditions through spin 9 on 25 shapes, rank 18) are consistent.  The
+class can be tested at a generic (lattice-free) t only.  D-4 (kappa^-4 Lambda^-2 U, entering rho_5; 17:25; lab/deformation_classes.py
+kind U4): EXCLUDED trivially -- the class has no response at the degree-(k-2) monomials of the targets (r(9,3,0) = 0 for every
+member, target nonzero; rank 9 on 49 shapes through spin 9); its union with the nine-function class is being run.  The scalar first-order programme at the exact
+point therefore ends with: seven classes excluded by proved identities (kappa^0 degree <= 1, kappa^-2 Lambda^-1 degree <= 2,
+all Lambda powers absorbed), one class (kappa-odd) not testable here.
+SYMBOL class (kappa^2 Lambda -> kappa^2 Lambda(1 + h sigma), not in the D-1..D-4 list; 18:30; same standard): EXCLUDED by a proved
+single-spin identity at spin 5 (2 r(5,0,1) = r(5,1,0) modulo vanishing responses; targets 741/101); control sigma = 1 has zero
+response; its response space lies inside the span of the kappa^0 potential classes (rank 44 = 44 through spin 9).
+KAC-DICTIONARY class (kappa^0 momentum-quadratic, not in the D-1..D-4 list; 2026-09-11, 20:00): EXCLUDED by the spin-3 identity
+32 r(3,0,0) = (212/15) r(3,1,0), proved for XX0, XY0, YY0 (inconsistent within spins 3..5, rank 19 augmented 20 on 147 shapes).
+UNIONS (rule 4): the ten-kind union with kappa^-4 terms -- rank 110 = augmented 110 on 110 conditions through spin 13 (490
+shapes): UNDECIDED; the seven-kind kappa^0 union with the symbol and quadratic terms -- rank 70 = 70 through spin 9, but INCONSISTENT
+within spins 3..11 (rank 103, augmented 104) and through spin 13 (136, 137): excluded on the shape space; the proved
+class-wide relation is batch 29's.  The first-order finite test is exhausted at spin 13 for the full scalar union.
+D-3 CORRECTED (Codex, review of the queued batch 27): EXCLUDED at first order for the analytic class h kappa Q -- by parity the
+odd-spin first-order response is a total derivative, r(3,0,0) = 0 identically (codex_kodd_s3.json, proved in the lab prover),
+against M_3' = -1/32; the earlier UNDECIDED verdict came from filtering continuation poles term by term; sqrt(h) kappa Q
+deformations (quadratic response at order h) remain outside the test.
+
+## Level-5 prediction at the c = -2 anchor, filed before any level-5 computation (2026-09-12, 08:10)
+
+Setting: Solution 3 at t = 3 ((N, s) = (-2, -9)); the O(N-1)-singlet block of I_3 decomposes into c = -2 Virasoro modules
+V(Delta_X) x V(Delta_Y + n) (batch 30, sec. 38(ai); levels 1-4 verified).  The character identity of lab/t3_character.py gives the
+multiplicities sum_n m_n q^n = prod_{s >= 2} (1 - q^s)^(-floor(s/2)) = 1 + q^2 + q^3 + 3 q^4 + 3 q^5 + 7 q^6 + ...
+PREDICTION L5: at level 5 the singlet block has 60 states; the modules with Y primaries at Delta_Y + n, n in {0, 2, 3, 4} (with m_4 = 3)
+account for 57, and the remaining THREE eigenvalues all equal 4[I^(0)(Delta_X) + I^(0)(Delta_Y + 5)] with geometric multiplicity 3;
+no other new primary appears.  PREDICTION L6: 123 states, 7 new at Delta_Y + 6.  A different count of new states, a new eigenvalue
+not of the form 4[I^(0)(Delta_X + a) + I^(0)(Delta_Y + b)], or a primary with a != 0 refutes the identity.
+
+## Batch 32 hold-out record: the bilinear first-order law at the c = -2 anchor (2026-09-12, 15:30-16:10)
+
+Setting: Solution 3 at t = 3.  (a) The top-layer closed form tau_{k,i} = k(2k-1)/(4i(k-i)) was read off the first-order data at
+k = 2..5 (spins 3-9) and then tested at k = 6, 7 (spins 11, 13; the hold-out-verified vev profiles of results/lab/anchor11, anchor13):
+9 coefficients, all CONFIRMED.  (b) The bilinear law -- every mixed coefficient of d/dt e^_(2k-1)|_3 equals the E^(1-2k) coefficient of
+2E [d/dE log D_X]_ev [d/dE log D_Y]_ev in charge units, normalized on X^k -- was derived from (a) alone (its generating function) and
+then tested on all 56 mixed coefficients of spins 3-13: 46 outside the derivation (all sub-top mixed layers at spins 5-9 and all 36
+mixed coefficients of spins 11, 13) CONFIRMED with zero free parameters; controls (coefficient 1; E^3; beta-odd parts kept) fire.
+(c) Negative, pinned: Claude's local tau(w) class fits spins 3-9 at top degree with 12 free parameters and FAILS spins 11, 13.
+Not preregistered in advance (the derivation and the test happened in one session); the record is the script lab/t3_bilinear.py,
+whose fit range and hold-out range are hard-coded and labelled.

@@ -1,0 +1,8 @@
+two-index Gamma kernel on the full sector series: top layer fixes V_ij, sub-top layers are PREDICTIONS (no free parameters)
+  t = 2: 36/56 mixed coefficients EXACT;  first miss: spin 7 monomial (1, 1) by 364/2475
+  t = 7/5: 36/56 mixed coefficients EXACT;  first miss: spin 7 monomial (1, 1) by -203/117
+  t = 4: 36/56 mixed coefficients EXACT;  first miss: spin 7 monomial (1, 1) by 3752/32175
+  t = -2: 36/56 mixed coefficients EXACT;  first miss: spin 7 monomial (1, 1) by 140/9
+  t = 9: 36/56 mixed coefficients EXACT;  first miss: spin 7 monomial (1, 1) by 1631/1300
+  t = 6: 36/56 mixed coefficients EXACT;  first miss: spin 7 monomial (1, 1) by 252/425
+RESULT: the two-index Gamma kernel is exact on the TOP and SUB-TOP mixed layers at every sample t (36/56) and fails from degree k-2

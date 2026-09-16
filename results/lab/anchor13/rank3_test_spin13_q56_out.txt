@@ -1,0 +1,35 @@
+119 data coordinates (spins 1-13)
+a00, pole order <= 5: scalar rank 33; scalar + 450 rank-3 columns: rank 95
+Solution 3: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 3: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 3, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 3, scalar + rank-3, spins 1-13: rank 108, augmented 109 -> INCONSISTENT
+   [control] Solution 3, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 3, scalar + rank-3, spins 1-11: rank 83, augmented 83 -> CONSISTENT
+Solution 1: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Traceback (most recent call last):
+  File "<anchor>/rank3_test_spin13.py", line 62, in <module>
+    Ik = wtable(sol, W)
+         ^^^^^^^^^^^^^^
+  File "<anchor>/rank3_test_spin13.py", line 44, in wtable
+    d = json.load(open(f'{A}/vev_profile_sol{sol}_w{W}.json'))['vev']; expr = 0
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '<anchor>/vev_profile_sol1_w14.json'
+119 data coordinates (spins 1-13)
+a00, pole order <= 6: scalar rank 33; scalar + 594 rank-3 columns: rank 103
+Solution 3: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Solution 3: spin-13 correspondence holds over 35 monomials, alpha_13^0 = -1/11648
+   Solution 3, scalar, spins 1-13: rank 47, augmented 48 -> INCONSISTENT
+   Solution 3, scalar + rank-3, spins 1-13: rank 116, augmented 117 -> INCONSISTENT
+   [control] Solution 3, scalar, spins 1-11: rank 41, augmented 42 -> inconsistent
+   [control] Solution 3, scalar + rank-3, spins 1-11: rank 83, augmented 83 -> CONSISTENT
+Solution 1: spin-11 correspondence holds over 27 monomials, alpha_11^0 = -1/4224
+Traceback (most recent call last):
+  File "<anchor>/rank3_test_spin13.py", line 62, in <module>
+    Ik = wtable(sol, W)
+         ^^^^^^^^^^^^^^
+  File "<anchor>/rank3_test_spin13.py", line 44, in wtable
+    d = json.load(open(f'{A}/vev_profile_sol{sol}_w{W}.json'))['vev']; expr = 0
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '<anchor>/vev_profile_sol1_w14.json'
+Q56DONE

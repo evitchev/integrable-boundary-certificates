@@ -1,0 +1,8 @@
+Solution 3, t = 13/6: top of e_3 = X^2 + (-30/19) X Y + (1) Y^2  -> X<->Y symmetric: True
+   alpha, beta from the top of e_3: [{alpha: 1/2 - sqrt(34)/4, beta: 1/2 + sqrt(34)/4}, {alpha: 1/2 + sqrt(34)/4, beta: 1/2 - sqrt(34)/4}]
+   spin 3: top(e_3) / p_2(Delta) = 4/19  PROPORTIONAL (two-tower form)
+   spin 5: top(e_5) / p_3(Delta) = 8*(43*X**2 - 118*X*Y + 43*Y**2)/(43*(53*X**2 - 98*X*Y + 53*Y**2))  NOT proportional
+   spin 7: top(e_7) / p_4(Delta) = 32*(737*X**4 - 1540*X**3*Y + 70*X**2*Y**2 - 1540*X*Y**3 + 737*Y**4)/(737*(497*X**4 - 1140*X**3*Y + 1350*X**2*Y**2 - 1140*X*Y**3 + 497*Y**4))  NOT proportional
+   spin 9: top(e_9) / p_5(Delta) = 64*(1729*X**4 - 6004*X**3*Y + 7654*X**2*Y**2 - 6004*X*Y**3 + 1729*Y**4)/(1729*(1789*X**4 - 5764*X**3*Y + 8014*X**2*Y**2 - 5764*X*Y**3 + 1789*Y**4))  NOT proportional
+   spin 11: top(e_11) / p_6(Delta) = 256*(29187*X**6 - 83754*X**5*Y + 54285*X**4*Y**2 + 20020*X**3*Y**3 + 54285*X**2*Y**4 - 83754*X*Y**5 + 29187*Y**6)/(29187*(14611*X**6 - 44730*X**5*Y + 64125*X**4*Y**2 - 67500*X**3*Y**3 + 64125*X**2*Y**4 - 44730*X*Y**5 + 14611*Y**6))  NOT proportional
+   spin 13: top(e_13) / p_7(Delta) = 512*(9869*X**6 - 42174*X**5*Y + 70787*X**4*Y**2 - 68772*X**3*Y**3 + 70787*X**2*Y**4 - 42174*X*Y**5 + 9869*Y**6)/(9869*(56057*X**6 - 243902*X**5*Y + 494327*X**4*Y**2 - 612452*X**3*Y**3 + 494327*X**2*Y**4 - 243902*X*Y**5 + 56057*Y**6))  NOT proportional

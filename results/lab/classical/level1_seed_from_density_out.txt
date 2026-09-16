@@ -1,0 +1,14 @@
+weight-4 basis: [((), ((1, 1), (1, 1))), ((), ((1, 3),)), ((), ((2, 2),)), ((1, 1), ((1, 1),)), ((1, 1, 1, 1), ()), ((1, 3), ()), ((2, 2), ())]
+  monomial ((), ((1, 1), (1, 1))): D-part = -(N + 36*Q**2 + 2)/6 ; H-part = 0
+  monomial ((), ((1, 3),)): D-part = 1 ; H-part = 0
+  monomial ((), ((2, 2),)): D-part = -1 ; H-part = 0
+  monomial ((1, 1), ((1, 1),)): D-part = (N - 12*P**2 + 12*Q**2 - 1)/12 ; H-part = -4*P*Q
+  monomial ((1, 1, 1, 1), ()): D-part = (12*P**2 + 1)/2 ; H-part = 0
+  monomial ((1, 3), ()): D-part = -1 ; H-part = 0
+  monomial ((2, 2), ()): D-part = 1 ; H-part = 0
+D = (A-B)/2 = -N*c0/6 + N*c3/12 + P**2*(-c3 + 6*c4) + Q**2*(-6*c0 + c3) - c0/3 + c1 - c2 - c3/12 + c4/2 - c5 + c6
+H = off-diagonal = -4*P*Q*c3
+Solution 3 at q = 6: D = P**2 - Q**2 + 3/4, H = 8*P*Q/5
+Solution 2 at q = 6: D = 3*P**2 - Q**2 + 4/3, H = 2*P*Q
+Solution 1 at q = 6: D = -120*P**2, H = -24*P*Q
+DONE

@@ -1,0 +1,47 @@
+======================================================================================================================
+the three patterns, as the n-th power expansion C(a+n-1,n-1) C(b+n-1,n-1):
+   degree 2, F (n=1): [1, 1, 1]
+   degree 2, G (n=2): [3, 4, 3]
+   degree 2, H (n=3): [6, 9, 6]
+   degree 3, F (n=1): [1, 1, 1, 1]
+   degree 3, G (n=2): [4, 6, 6, 4]
+   degree 3, H (n=3): [10, 18, 18, 10]
+   degree 4, F (n=1): [1, 1, 1, 1, 1]
+   degree 4, G (n=2): [5, 8, 9, 8, 5]
+   degree 4, H (n=3): [15, 30, 36, 30, 15]
+   degree 5, F (n=1): [1, 1, 1, 1, 1, 1]
+   degree 5, G (n=2): [6, 10, 12, 12, 10, 6]
+   degree 5, H (n=3): [21, 45, 60, 60, 45, 21]
+   degree 6, F (n=1): [1, 1, 1, 1, 1, 1, 1]
+   degree 6, G (n=2): [7, 12, 15, 16, 15, 12, 7]
+   degree 6, H (n=3): [28, 63, 90, 100, 90, 63, 28]
+======================================================================================================================
+FIT of the h^3 layer to A' F + B' G + C H, spin by spin
+   spin 7 (ours): 2 values, 3 unknowns -> {'Ap': (103680*Cp + 2723)/34560, 'Bp': (-20736*Cp - 217)/6912}   [underdetermined (free: [Cp])]
+   spin 9 (ours): 2 values, 3 unknowns -> {'Ap': (6144*Cp + 125)/1024, 'Bp': (-2048*Cp - 19)/512}   [underdetermined (free: [Cp])]
+   spin 11 (ours): 3 values, 3 unknowns -> {'Ap': 708587/76800, 'Bp': -87769/19200, 'Cp': 2783/3072}   [SQUARE -- no test]
+   spin 13 (ours): 3 values, 3 unknowns -> {'Ap': 3441893/172800, 'Bp': -1370369/172800, 'Cp': 1183/900}   [SQUARE -- no test]
+   spin 15 (Codex's independent OPE): 4 values, 3 unknowns -> NO SOLUTION  <== THE CONSTRAINT FAILS
+======================================================================================================================
+THE AMPLITUDES, and whether they look like the h^2 ones (A_k = -k(2k-1)(8k^2-13k+3)/5760, B_k = k(2k-1)^2/1440)
+   k = 6: A' = 708587/76800 = 708587/76800,  B' = -87769/19200 = -87769/19200,  C = 2783/3072 = 2783/3072
+   k = 7: A' = 3441893/172800 = 3441893/172800,  B' = -1370369/172800 = -1370369/172800,  C = 1183/900 = 1183/900
+======================================================================================================================
+VERDICT: H does NOT satisfy the spin-15 constraint: the third order is not a plain sixth power of the resolvents, and the
+         extra structure (moving resolvents, momentum-dependent insertions, or a cubic trace with different weights) is required.
+
+======================================================================================================================
+SECOND TEST: fit each amplitude as a degree-1 polynomial in k on k = 6, 7 and PREDICT the spin-15 layer (hold-out)
+   Ap_k = (7390289*k - 37964451)/691200   (k = 6: 708587/76800, k = 7: 3441893/172800)
+   Bp_k = -11*(52768*k - 244797)/172800   (k = 6: -87769/19200, k = 7: -1370369/172800)
+   C_k = (94123*k - 356013)/230400   (k = 6: 2783/3072, k = 7: 1183/900)
+   extrapolated to k = 8: A' = 21157861/691200, B' = -1950817/172800, C = 396971/230400
+      spin 15 [X^0 Y^6]: predicted -39817/230400   Codex's value -19/224   differs
+      spin 15 [X^1 Y^5]: predicted 636541/172800   Codex's value -793/2688   differs
+      spin 15 [X^2 Y^4]: predicted 11291011/691200   Codex's value 14365/1344   differs
+      spin 15 [X^3 Y^3]: predicted 5132291/230400   Codex's value 27793/1792   differs
+   -> fails at 4 of 4 monomials
+======================================================================================================================
+READING: at h^3 the per-spin fitting is EXHAUSTED -- three patterns make spins 11 and 13 square and still fail spin 15,
+         and a fourth pattern would make spin 15 square too.  The layer can therefore only be tested through the
+         AMPLITUDE LAW, i.e. from an operator with spin-independent parameters.  That is the remaining step.

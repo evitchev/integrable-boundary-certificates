@@ -1,0 +1,31 @@
+independent genuine_kernel_mixed dimension: 2
+MERGE CASE original: exit 0; sol=3 N=-25/2 s=-45/2 dim=2 kc=8 primes=1 time=0s (merge; build 0s)
+MERGE CASE claim full rank (every column a pivot, empty kernel list): exit 1; REJECTED: FAIL  solve record sol_p0.pkl rejected: its pivot columns are NOT independent modulo its prime (the claimed rank is false)
+MERGE CASE omit a kernel direction (a free column promoted to pivot): exit 1; REJECTED: FAIL  solve record sol_p0.pkl rejected: its pivot columns are NOT independent modulo its prime (the claimed rank is false)
+MERGE CASE duplicate vector: exit 1; REJECTED: FAIL  solve record sol_p0.pkl rejected: vector count 3 != columns 12 - rank 10 (modular nullity)
+MERGE CASE empty vector list: exit 1; REJECTED: FAIL  solve record sol_p0.pkl rejected: vector count 0 != columns 12 - rank 10 (modular nullity)
+MERGE CASE wrong prime index: exit 1; REJECTED: FAIL  solve record sol_p0.pkl rejected: prime index 1 is not the record's index 0
+MERGE CASE non-canonical vector (entry at a second free column): exit 1; REJECTED: FAIL  solve record sol_p0.pkl rejected: vector 0 has an entry at another free column 11: not the canonical basis
+MERGE CASE residue out of range: exit 1; REJECTED: FAIL  solve record sol_p0.pkl rejected: vector 0: residue 2305843009213693951 at column 0 is not in [0, 2305843009213693951)
+MERGE CASE input provenance mismatch (the record claims another matrix): exit 1; REJECTED: FAIL  solve record 0: input provenance MISMATCH (the record was not computed from these matrix files)
+MERGE CASE provenance names another prime's matrix file (correct hash of the wrong file): exit 1; REJECTED
+ALL TAMPERED RECORDS REJECTED
+MERGE CASE lone forged record (rank over-claimed by one), rank replay off, no second record: exit 0; dim 1; status: dimension >= 1 VERIFIED by exact witnesses; dimension = 1 ASSERTED (the upper bound is the solve records' claim, not independently re-verified)
+MERGE CASE the same record with the rank replay on: exit 1; REJECTED
+LONE-FORGED-RECORD DRILL PASSED (hole labelled, closed by the replay)
+MERGE CASE honest two primes, ranks verified: exit 0; dim 2; upper bound: modular rank independently re-verified (reference record); refuted []
+      dimension 2: lower bound 2 by exact independent witnesses (independent); upper bound 2 by the modular nullity -- modular rank independently re-verified (reference record)
+      dimension 2 VERIFIED (lower bound by exact witnesses, upper bound by an independently re-verified modular rank)
+MERGE CASE honest two primes, verification off: exit 0; dim 2; upper bound: modular rank ASSERTED by the solve records, not independently verified; refuted []
+      dimension 2: lower bound 2 by exact independent witnesses (independent); upper bound 2 by the modular nullity -- modular rank ASSERTED by the solve records, not independe
+      dimension >= 2 VERIFIED by exact witnesses; dimension = 2 ASSERTED (the upper bound is the solve records' claim, not independently re-verified)
+MERGE CASE prime 0 forged to dimension 1 with its matrix absent, prime 1 honest and verified (Codex's case): exit 3; dim 2; upper bound: modular rank independently re-verified (reference record); refuted [2305843009213693951]
+      dimension 2: lower bound 2 by exact independent witnesses (independent); upper bound 2 by the modular nullity -- modular rank independently re-verified (reference record)
+      WARNING  skipped record(s) [2305843009213693951] claim rank(s) [11] above the certified rank 10: REFUTED by the exact witnesses (a corrupt or forged solve record); the re
+      dimension 2 VERIFIED (lower bound by exact witnesses, upper bound by an independently re-verified modular rank)
+MERGE CASE prime 0 forged to dimension 1, no rank verification at all: exit 1; dim None; upper bound: None; refuted []
+      FAIL  conflicting solve records: the reference prime 2305843009213693951 claims rank 11 (not independently verified) and prime(s) [2305843009213693921] claim rank(s) [10]
+MERGE CASE prime 0 forged, nothing verified, FK3_ALLOW_CONFLICT=1: exit 0; dim 1; upper bound: modular rank ASSERTED by the solve records, not independently verified; CONFLICTING skipped record(s) [2305843009213693921] with claimed rank(s) [10]; refuted []
+      dimension 1: lower bound 1 by exact independent witnesses (independent); upper bound 1 by the modular nullity -- modular rank ASSERTED by the solve records, not independe
+      dimension >= 1 VERIFIED by exact witnesses; dimension = 1 ASSERTED (the upper bound is the solve records' claim, not independently re-verified)
+AGGREGATION DRILLS PASSED

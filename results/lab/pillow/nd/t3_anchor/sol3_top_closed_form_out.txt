@@ -1,0 +1,10 @@
+k = 2 (spin 3): all 3 top coefficients match the closed form
+k = 3 (spin 5): all 4 top coefficients match the closed form
+k = 4 (spin 7): all 5 top coefficients match the closed form
+k = 5 (spin 9): all 6 top coefficients match the closed form
+k = 6 (spin 11): all 7 top coefficients match the closed form
+k = 7 (spin 13): all 8 top coefficients match the closed form
+f-binomial form C(k,j) prod_{m=k-j+1}^k f_m / prod_{m=1}^j f_m, f_m = (2m-1)(t-3) + 4(k-m), equals the factorized form (and is 1 at j = 0, k): PASS
+symmetry j <-> k-j of the closed form as an identity in t, k = 2..7: PASS
+first derivative at t = 3 equals k(2k-1)/(4j(k-j)): PASS
+RESULT: PASS
