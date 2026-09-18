@@ -1,6 +1,6 @@
 # Secondary Opus 5 session: the degree-(k-3) symmetric remainder S_k, and the sealed-prediction record (2026-09-14)
 
-Pinned here because the producing workspace (~/opus5-work) is untracked lab space outside the repository, while the content below is the
+Pinned here because the producing workspace ([agent-workspace-path]) is untracked lab space outside the repository, while the content below is the
 durable scientific residue of that session.  Its engines are listed in the handover kept alongside this file; the only implementation of the
 canonical end split is that session's end_split.py.  Nothing here was committed by that session; the lead pins it.
 

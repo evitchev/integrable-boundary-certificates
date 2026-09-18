@@ -1,0 +1,280 @@
+{
+ "_meta": {
+  "object": "R_(2k-1)(h) = I_(2k-1)(t) - N_k(t) e^_(2k-1)(t), t = 3 + h",
+  "charge": "e^ = cyl(3,2k)/[X^k]cyl(3,2k) for 2k <= 10; weight 12 from the hold-out-verified results/lab/anchor11/vev_profile_sol3_w12.json (the accessor lab/t3_bilinear.py uses). TOP-NORMALIZED.",
+  "N_k": "N_k(t) = [X^k] I_(2k-1)(t); series in h below.  CLOSED FORM, EXACT FOR ALL t: N_k(t) = binomial(1/2, k) (-c_X/2)^k B(k + s eps/2, s(n - eps)/2), s = 2k - 1 -- the X^k monomial of rho_(2k-1) is that of the derivative-free square root sqrt(kappa^2 Lambda - sigma) (every derivative insertion lowers the momentum degree available to the k source insertions), and it integrates directly to this Beta; on Solution 3 N_k = binomial(1/2, k) (A/2)^k B(1 - k - (2k-1)A, (2k-1)A/2), A = h/(2-h).  Its leading term is N_k h^(k-1) with N_k = (-1)^(k+1) Catalan(k-1)/(4 16^(k-1)(2k-1)) = (-1)^(k+1) B(k-1/2,1/2)/(pi 4^k k (2k-1)); N_1..N_6 = 1/4, -1/192, 1/2560, -5/114688, 7/1179648, -21/23068672.  STATUS: DERIVED at symbolic k (38(br) item 5: insertion counting, the Beta pole with its factor 1/2, the binomial series of the square root at w = 1); the full Beta form (from the review of 57767c3) reproduces all 30 N_k coefficients below EXACTLY, asserted when this file was written; the leading coefficient confirmed at k = 1..6 (k = 6 against a falsifier sealed before spin 11 was computed).",
+  "controls": "R vanishes IDENTICALLY at momentum layers k and k-1 for every spin and order listed (asserted at write time); spins 1-9 regression-checked bit-identical to the SMAX=9 run; the t = 3 anchor form of every charge asserted.",
+  "variables": "e_1 = X + Y - 1/12; delta = X - Y + 1/4 = eX_1 - eY_1 = -(beta_X^2 - beta_Y^2)/4",
+  "note": "R carries layers <= k-2 only; layers k and k-1 are identically zero",
+  "source": "merge_exact.py (exact symbolic h = t-3), SMAX = 11, ORD = 6",
+  "orders": "h^0 .. h^5",
+  "spins": [
+   3,
+   5,
+   7,
+   9,
+   11
+  ],
+  "agent": "Opus 5",
+  "date": "2026-09-16",
+  "supersedes": "remainder_anchor.json sha256 a4cc8a419ca1db26016f725eccfbce676931359f2d041df53861326faf26f2ea (spins 3,5,7,9 at h^0..h^4 plus the even_order block) -- ALL of those entries are unchanged here; this version ADDS spin 11 and the h^5 order. Earlier: c9b23a2f4022500... ; and remainder_anchor.json sha256 5763460527cb5febe06c5270b146dbae13eb213209265fca0b62f2fb058630f4 -- ALL R and N_k entries are carried through BYTE-IDENTICALLY from that version (verified by comparison below, not recomputed); this change touches ONLY the even_order block, whose finite_part becomes the exact -sqrt(3)/864. ; and remainder_anchor.json sha256 30c6752a0d5000ab709c245aec34b05d0874ac51c98f7fd8d8c7d1951b202815 -- ALL R and N_k entries and every other even_order field carried through BYTE-IDENTICALLY (asserted below); this change touches ONLY even_order.finite_part_status, which becomes DERIVED. ; and remainder_anchor.json sha256 abe41a24516632b397c1e6a751531b631ce62fdd3f917b2e95c239313dec732a -- ALL R and N_k entries and every previous even_order field carried through BYTE-IDENTICALLY (asserted); this change only ADDS even_order.h_series. ; and remainder_anchor.json sha256 84554bd6ce2a304ee07b82c3a259cef3024a3efe8abd4c3c3b8a0fd4d0f17115 -- ALL R and N_k entries and every even_order field except h_series carried through BYTE-IDENTICALLY (asserted); this change corrects the _meta.N_k status (DERIVED, with the full Beta normalization verified against all 30 N_k entries) and replaces even_order.h_series (exact coefficients where derived; the remaining three numerical entries re-extracted at higher precision).",
+  "even_order": "the kappa^-2 anchor entry of the superseded version is retained below unchanged",
+  "updated": "2026-09-17 (batch 69)"
+ },
+ "N_k": {
+  "spin_3": {
+   "h^0": "0",
+   "h^1": "-1/192",
+   "h^2": "1/768",
+   "h^3": "-pi**2/1024 - 5/1536",
+   "h^4": "-3*pi**2/4096 - 9*zeta(3)/2048 + 7/3072",
+   "h^5": "-27*pi**4/163840 - 9*pi**2/8192 - 45*zeta(3)/8192 - 17/6144"
+  },
+  "spin_5": {
+   "h^0": "0",
+   "h^1": "0",
+   "h^2": "1/2560",
+   "h^3": "-7/20480",
+   "h^4": "21/20480 + 5*pi**2/24576",
+   "h^5": "-149/81920 + 5*pi**2/196608 + 25*zeta(3)/16384"
+  },
+  "spin_7": {
+   "h^0": "0",
+   "h^1": "0",
+   "h^2": "0",
+   "h^3": "-5/114688",
+   "h^4": "205/2752512",
+   "h^5": "-35*pi**2/786432 - 9335/33030144"
+  },
+  "spin_9": {
+   "h^0": "0",
+   "h^1": "0",
+   "h^2": "0",
+   "h^3": "0",
+   "h^4": "7/1179648",
+   "h^5": "-301/18874368"
+  },
+  "spin_11": {
+   "h^0": "0",
+   "h^1": "0",
+   "h^2": "0",
+   "h^3": "0",
+   "h^4": "0",
+   "h^5": "-21/23068672"
+  }
+ },
+ "R": {
+  "spin_3|h^0": "-1/3456",
+  "spin_3|h^1": "-1/17280",
+  "spin_3|h^2": "-pi**2/18432 - 23/276480",
+  "spin_3|h^3": "-pi**2/15360 - zeta(3)/4096 + 1/138240",
+  "spin_3|h^4": "-3*pi**4/327680 - 11*pi**2/163840 - 17*zeta(3)/40960 - 103/2211840",
+  "spin_3|h^5": "-33*pi**4/1638400 - 167*zeta(3)/327680 - 3*pi**2*zeta(3)/65536 - 73*pi**2/1474560 - 27*zeta(5)/65536 + 253/8847360",
+  "spin_5|h^0": "1/51840",
+  "spin_5|h^1": "e_1/18432 + 1/77760",
+  "spin_5|h^2": "-7*e_1/552960 + 7421/167215104 + 5*pi**2/497664",
+  "spin_5|h^3": "1379*e_1/13271040 + 25*pi**2*e_1/884736 - 322597/10032906240 + 25*zeta(3)/331776 + 25*pi**2/1492992",
+  "spin_5|h^4": "-12343*e_1/79626240 + 115*pi**2*e_1/5308416 + 125*e_1*zeta(3)/589824 + 6104027/60197437440 + 325*zeta(3)/1990656 + 299765*pi**2/8026324992 + 25*pi**4/5308416",
+  "spin_5|h^5": "475*e_1*zeta(3)/1769472 + 329713*e_1/955514880 + 8755*pi**2*e_1/127401984 + 125*pi**4*e_1/9437184 - 64606387/361184624640 + 1580995*pi**2/96315899904 + 625*zeta(5)/1769472 + 1935625*zeta(3)/5350883328 + 625*pi**2*zeta(3)/15925248 + 25*pi**4/1990656",
+  "spin_7|h^0": "-11/3096576",
+  "spin_7|h^1": "-e_1/165888 - 907/371589120",
+  "spin_7|h^2": "-29*delta**2/2949120 - 5*e_1**2/589824 - 443*e_1/39813120 - 77*pi**2/21233664 - 180583/11147673600",
+  "spin_7|h^3": "1669*delta**2/88473600 + 29*delta/7864320 + 5*e_1**2/884736 - 49*pi**2*e_1/7962624 - 985357*e_1/66886041600 - 15589*pi**2/2548039680 - 539*zeta(3)/14155776 + 12080521/668860416000",
+  "spin_7|h^4": "-1421*pi**2*delta**2/141557760 - 664331*delta**2/10616832000 - 1451*delta/157286400 - 245*pi**2*e_1**2/28311552 - 3515*e_1**2/84934656 - 33467*pi**2*e_1/1911029760 - 343*e_1*zeta(3)/5308416 - 26533841*e_1/4013162496000 - 3773*pi**4/1132462080 - 1662451*pi**2/76441190400 - 141463*zeta(3)/1698693120 - 6697958129/80263249920000",
+  "spin_7|h^5": "-9947*delta**2*zeta(3)/94371840 + 39151*pi**2*delta**2/4246732800 + 58149361*delta**2/318504960000 + 135631*delta/4718592000 + 1421*pi**2*delta/377487360 - 1715*e_1**2*zeta(3)/18874368 - 245*pi**2*e_1**2/84934656 + 26173*e_1**2/254803968 - 2401*pi**4*e_1/424673280 - 14223979*pi**2*e_1/458647142400 - 275429*e_1*zeta(3)/1274019840 - 739431551*e_1/30098718720000 - 1216621*pi**4/135895449600 - 26411*pi**2*zeta(3)/679477248 - 26411*zeta(5)/75497472 - 6879551*zeta(3)/25480396800 - 8168363*pi**2/4586471424000 + 136530316381/601974374400000",
+  "spin_9|h^0": "7/5598720",
+  "spin_9|h^1": "11*e_1/7077888 + 20381/25082265600",
+  "spin_9|h^2": "61*delta**2/37158912 + 7*e_1**2/5308416 + 45149*e_1/17836277760 + 541101149/56184274944000 + 7*pi**2/3317760",
+  "spin_9|h^3": "203*delta**2*e_1/47185920 + 29137*delta**2/10404495360 - 61*delta/99090432 + 35*e_1**3/28311552 + 847*e_1**2/212336640 + 4230617*e_1/312134860800 + 11*pi**2*e_1/4194304 - 291712874563/15731596984320000 + 7*zeta(3)/245760 + 5749*pi**2/1651507200",
+  "spin_9|h^4": "-1393*delta**2*e_1/117964800 + 3310273*delta**2/3884344934400 + 61*pi**2*delta**2/22020096 - 203*delta*e_1/125829120 - 57521*delta/83235962880 - 77*e_1**3/56623104 + 27299*e_1**2/11324620800 + 7*pi**2*e_1**2/3145728 - 111713479*e_1/6473908224000 + 297*e_1*zeta(3)/8388608 + 72869*pi**2*e_1/10569646080 + 67421*zeta(3)/1101004800 + 2396365344730183/24226659355852800000 + 71048821*pi**2/3699376128000 + 21*pi**4/6553600",
+  "spin_9|h^5": "329959*delta**2*e_1/6291456000 + 609*pi**2*delta**2*e_1/83886080 + 12280319411*delta**2/1631424872448000 + 549*delta**2*zeta(3)/14680064 + 46217*pi**2*delta**2/6165626880 + 40537*delta*e_1/7549747200 - 61*pi**2*delta/58720256 + 9382063*delta/93224278425600 + 1715*e_1**3/150994944 + 35*pi**2*e_1**3/16777216 + 10865849*e_1**2/679477248000 + 63*e_1**2*zeta(3)/2097152 + 1127*pi**2*e_1**2/125829120 + 5480000623621*e_1/48942746173440000 + 260187*e_1*zeta(3)/2348810240 + 10769099*pi**2*e_1/369937612800 + 2673*pi**4*e_1/671088640 - 1256214113561499623/3391732309819392000000 - 120782834443*pi**2/9322427842560000 + 714950909*zeta(3)/2466250752000 + 567*zeta(5)/1310720 + 63*pi**2*zeta(3)/1310720 + 249303*pi**4/29360128000",
+  "spin_11|h^0": "-8971/12612796416",
+  "spin_11|h^1": "-7*e_1/9953280 - 2560073/5778953994240",
+  "spin_11|h^2": "-631*delta**2/1132462080 - 11*e_1**2/25165824 - 1658399*e_1/1605264998400 - 98681*pi**2/55037657088 - 1322180708309/160192604720332800",
+  "spin_11|h^3": "-61*delta**2*e_1/66060288 - 2835443*delta**2/2853804441600 + 631*delta/3019898880 - 7*e_1**3/28311552 - 71251*e_1**2/63417876480 - 847*pi**2*e_1/477757440 - 72293462999*e_1/8090535591936000 - 1085491*zeta(3)/36691771392 - 807121073*pi**2/277389791723520 + 2240378190992027/100921340973809664000",
+  "spin_11|h^4": "-69*delta**4/335544320 - 203*delta**2*e_1**2/167772160 - 50711*delta**2*e_1/22196256768 - 76351*pi**2*delta**2/54358179840 - 5865638123*delta**2/898948399104000 + 61*delta*e_1/176160768 + 1907873*delta/7610145177600 - 35*e_1**4/201326592 - 7063*e_1**3/6794772480 - 1331*pi**2*e_1**2/1207959552 - 84462659*e_1**2/13317754060800 - 337270439*pi**2*e_1/77052719923200 - 9317*e_1*zeta(3)/318504960 + 309183825292613*e_1/20388149691678720000 - 11940401*pi**4/2935341711360 - 16264600984159*pi**2/699022275143270400 - 17555075694045931537/127160889627000176640000 - 11613769123*zeta(3)/184926527815680",
+  "spin_11|h^5": "11309*delta**4/11744051200 + 207*delta**3/1342177280 + 21749*delta**2*e_1**2/5033164800 - 7381*pi**2*delta**2*e_1/3170893824 + 75593173*delta**2*e_1/37289711370240 - 535493123*pi**2*delta**2/136982613196800 - 839861*delta**2*zeta(3)/36238786560 + 38097726808601*delta**2/2265349965742080000 + 609*delta*e_1**2/1342177280 + 38755*delta*e_1/59190018048 + 22004611637*delta/9588782923776000 + 76351*pi**2*delta/144955146240 + 161*e_1**4/603979776 - 847*pi**2*e_1**3/1358954496 - 182773*e_1**3/1630745395200 - 11975491*pi**2*e_1**2/3044058071040 - 14641*e_1**2*zeta(3)/805306368 + 55278449143*e_1**2/5593456705536000 - 102487*pi**4*e_1/25480396800 - 10275230793839*pi**2*e_1/388345708412928000 - 33817027586800456583*e_1/282579754726667059200000 - 4461297709*e_1*zeta(3)/51368479948800 - 157841270873*pi**4/14794122225254400 - 131344411*pi**2*zeta(3)/1761205026816 - 131344411*zeta(5)/195689447424 - 193543959920729*zeta(3)/466014850095513600 + 14717807834765827*pi**2/440384033340260352000 + 5477505807323537233385669/8331581488361051573452800000"
+ },
+ "even_order": {
+  "_note": "A1 even-order (spin-2) entry: the kappa^-2 content of log W at the anchor from the LEFT end, i.e. the q -> 1 limit of the kappa^(-2q) (i = 2) left-end column. Distinct in kind from the R entries, which are odd-order charge deficits; kept here so it travels with them.",
+  "log_kappa_coefficient": "0",
+  "log_kappa_coefficient_status": "EXACT. The resonances cancel: residues C_1(s1=1,s2=3) = +1/16, C_1(s1=3,s2=1) = -1/16 (equal weight A_0 A_1, arguments swapped) and C_3(s1=3,s2=3) = 0, so r = 0 and the coefficient is -2r = 0. The residues are nu-INDEPENDENT (+1/16, -1/16, 0), so r = 0 is structural, not an accident of nu_L.",
+  "finite_part": "-sqrt(3)/864",
+  "finite_part_status": "DERIVED (batch 67). Codex s second-endpoint formula via the trace recurrence [H,B_s] = s{H,A_s} - 2(s+1)A_(s+2) + (s^3/2 - 2 s nu^2)A_s, which eliminates every shifted double moment in favour of the single K(q,q) = N(q,q). At the anchor (q=1, n=-2, v_1=1/6) the double-moment coefficient a + nR(1) = nu^2 - 1/12 VANISHES at nu_L = 1/sqrt(12), where a = q^2 v_1 and R(q) = q(q^2/4 - nu^2)/(q+1); K(q,q) is the only carrier of the trigamma/5F4 structure, so it drops and the remaining four terms are elementary, summing symbolically to C = -nu_L/144 = -sqrt(3)/864. Opus 5 s resonant finite-part machinery CONFIRMS: non-resonant agreement 7.0e-12 (inside that route s own 5.9e-10 spread), closed-form match 4.3e-19, M1-independence to 19 digits, four fibres (t = 2.99, 2.999, 2.9999, 2.99999) and two momenta whose deviations fall linearly in h to the same limit (momentum-freedom). ATTRIBUTION: the derivation is Codex s; the resonant machinery, the value and the numerical support are Opus 5 s; the vanishing-coefficient observation is Codex s via Fable. Supersedes the earlier status recognition-not-derivation.",
+  "residual_vs_certified_determinant": {
+   "_note": "target = (1/16) sum_S beta_S (beta_S^2 - 1)/3 (beta-ODD), which the left end cannot supply; the residual is the reflection-sector gap, B1 s open half.",
+   "nu_0.3_0.1": {
+    "target_exact": "-7*sqrt(2)/2000 + sqrt(3)/1000",
+    "target": "-0.00321769666",
+    "residual": "-0.00121301"
+   },
+   "nu_0.6_0.35": {
+    "target_exact": "49*sqrt(22)/8000 + 47*sqrt(2)/1000",
+    "target": "+0.09519683396",
+    "residual": "+0.09720152"
+   }
+  },
+  "right_end_index": {
+   "_note": "corrected: nu_R DIVERGES at the anchor (PREDICTION_anchor_B1_amend.txt, 937c66ab...)",
+   "exact": "nu_R = 2 nu_X sqrt(h+2)/sqrt(h) = (beta_X/sqrt(h)) sqrt(1 + h/2),  h = 3 - t > 0",
+   "limit": "nu_R sqrt(h) -> beta_X = 2 sqrt(2) nu_X",
+   "checks": "nu_R = 1.989975 at t=2.8 and 2.749545 at t=2.9 for nu_X=0.3, matching the nd3b fits 1.99 and 2.75"
+  },
+  "finite_part_decimal": "-0.002004688434686200571",
+  "h_series": {
+   "_note": "C_(2q)(3+h) through h^4, coefficients of 1, e_1, delta, delta^2 (no other monomial occurs).  STRUCTURE: only v_1 and v_2 carry momentum, C = S_0 + S_1 v_1 + S_2 v_1^2 + S_v v_2 with four momentum-free scalars (alpha, beta, gamma, delta_f in batch 68).  In the second-endpoint form (38(bs) item 5) the momentum enters through a = q^2 v_1 and v_2 only, and the double moment K(q,q) only through (a + nR(q))^2, which gives three EXACT ALL-t statements (see all_t).  DERIVED ABSENCES: delta is absent at h^1 and h^2 because [delta]C = -(t^2-9)/(2(t^2-1)) [delta^2]C with the ratio O(h) and [delta^2]C = O(h^2); at the anchor the h^1 absence is the scalar identity 6 S_1 + 2 S_2 - 9 S_v = (1 - 12 nu^2) K(1,1) [at q = 1 the trace recurrence gives S_1 = 2T(1,3) = (1/2 - 2 nu^2) K(1,1) - 3nu/4, S_2 = -K(1,1), S_v = J(2) = -nu/2], which vanishes at nu_L^2 = 1/12 -- the SAME vanishing as a + nR(1) = nu^2 - 1/12 that makes -sqrt(3)/864 elementary.  (Batch 68 called the h^1 absence unpredicted; it is derived.)  L = psi(sqrt 3/6) + log 2 is the only way psi(sqrt 3/6) and log 2 enter; Euler's gamma cancels.  Whether the h^3 onset of delta here and in the odd-order remainder R share a mechanism is NOT asserted.",
+   "method": "Exact entries: the second-endpoint formula expanded in h by truncated power series with exact coefficients (polygamma values at sqrt(3)/6 and at integers, K(q,q) kept as K0 + K1 h + ..., K0 = psi_1(1/2 + sqrt(3)/6)/8), every expression then reduced over Q(sqrt 3) and re-evaluated against the unreduced form to 1e-50 at write time.  Independent check, asserted at write time: the four momentum-free scalars by the FOUR-N route (Hurwitz continuation) at 15 fibres h = -k/750, k = 1..15, 80 digits, cutoff plateau 3e-66, momentum coefficients assembled exactly, Taylor coefficients by degree-14 interpolation with the degree-13 least-squares spread as the error; every exact entry agrees with it inside that spread (observed 6e-34 at h^0 to 4e-22 at h^4).  Numerical entries (h^3 delta^2, h^4 delta, h^4 delta^2) take the extraction's value; the batch-68 fit values are kept alongside.  Seal: PREDICTION_batch69_closed_forms.txt sha256 57c3b5c4... (structure and thresholds, before any expansion).",
+   "symbols": {
+    "L": "polygamma(0, sqrt(3)/6) + log(2)",
+    "psi1": "polygamma(1, sqrt(3)/6)",
+    "psi2": "polygamma(2, sqrt(3)/6)",
+    "psi3": "polygamma(3, sqrt(3)/6)",
+    "Psi1h": "polygamma(1, 1/2 + sqrt(3)/6)",
+    "zeta3": "zeta(3)"
+   },
+   "all_t": {
+    "e_1": "[e_1] C_(2q) = -(c_X/4) q^(2-2q) J(2q, sqrt(q/12))  (e_1 enters only through v_2); agrees with the four-N route to 1e-75 at three fibres",
+    "delta^2": "[delta^2] C_(2q) = -(q^2 c_X/2)^2 q^(-2q) K(q,q; sqrt(q/12)),  K(q,q) = N(q,q)",
+    "delta": "[delta] C_(2q) = -(t^2-9)/(2(t^2-1)) [delta^2] C_(2q)  (the elementary delta terms cancel identically because q + 1 + qn = 0 on Solution 3, and 2(a + nR)|_(delta^0) / a_delta = -(t^2-9)/(2(t^2-1)) exactly, both checked symbolically in t); holds for the four-N scalars to 1e-69 at t = 449/150, 149/50 and to 1e-21 at t = 23/8, 14/5 (derivation: review of 57767c3)"
+   },
+   "h^0": {
+    "const": {
+     "exact": "-sqrt(3)/864",
+     "decimal": "-0.002004688434686200571212",
+     "status": "DERIVED (batch 67; 38(bs) item 5)"
+    },
+    "e_1": {
+     "exact": "0",
+     "status": "DERIVED: e_1 carries c_X = O(h)",
+     "check": "four-N extraction 5.02e-33 (spread 5.2e-31)"
+    },
+    "delta": {
+     "exact": "0",
+     "status": "DERIVED: the delta coefficient is -(t^2-9)/(2(t^2-1)) times the delta^2 coefficient for ALL t (below), and delta^2 starts at h^2",
+     "check": "four-N extraction -4.99e-34 (spread 4.8e-32)"
+    },
+    "delta^2": {
+     "exact": "0",
+     "status": "DERIVED: delta^2 carries (q^2 c_X/2)^2 = O(h^2)",
+     "check": "four-N extraction -5.99e-34 (spread 5.8e-32)"
+    }
+   },
+   "h^1": {
+    "const": {
+     "exact": "sqrt(3)*L/864 - 5*sqrt(3)/5184 + 1/288",
+     "decimal": "-0.00411833279972338220571592676697",
+     "status": "DERIVED post hoc from the trace recurrence (the 38(bs) item 5 formula expanded in h with K(q,q) as an unknown series); checked against the four-N extraction, not yet verified by the lead",
+     "check": "four-N extraction agrees to 1.5e-30 (extraction spread 1.4e-28)",
+     "vs_fit_38bt": "fit -0.0041183328(2e-10): |exact - fit centre| = 2.8e-13"
+    },
+    "e_1": {
+     "exact": "-sqrt(3)/96",
+     "decimal": "-0.0180421959121758051409108993907",
+     "status": "DERIVED post hoc from the trace recurrence (the 38(bs) item 5 formula expanded in h with K(q,q) as an unknown series); verified by the lead",
+     "check": "four-N extraction agrees to 1.2e-29 (extraction spread 1.2e-27)",
+     "vs_fit_38bt": "fit -0.018042196(3e-13): |exact - fit centre| = 8.8e-11 -- OUTSIDE the quoted uncertainty (the printed centre was rounded)"
+    },
+    "delta": {
+     "exact": "0",
+     "status": "DERIVED: the delta coefficient is -(t^2-9)/(2(t^2-1)) times the delta^2 coefficient for ALL t (below), and delta^2 starts at h^2",
+     "check": "four-N extraction -1.24e-30 (spread 1.1e-28)"
+    },
+    "delta^2": {
+     "exact": "0",
+     "status": "DERIVED: delta^2 carries (q^2 c_X/2)^2 = O(h^2)",
+     "check": "four-N extraction -1.49e-30 (spread 1.4e-28)"
+    }
+   },
+   "h^2": {
+    "const": {
+     "exact": "-sqrt(3)*L**2/1728 - L/288 + 5*sqrt(3)*L/5184 - sqrt(3)*pi**2/10368 - psi1/6912 - 467*sqrt(3)/248832 + 13/3456",
+     "decimal": "-0.00646073359060929472875389782354",
+     "status": "DERIVED post hoc from the trace recurrence (the 38(bs) item 5 formula expanded in h with K(q,q) as an unknown series); checked against the four-N extraction, not yet verified by the lead",
+     "check": "four-N extraction agrees to 1.6e-27 (extraction spread 1.4e-25)",
+     "vs_fit_38bt": "fit -0.0064607331(4e-8): |exact - fit centre| = 4.9e-10"
+    },
+    "e_1": {
+     "exact": "sqrt(3)*L/96 - 5*sqrt(3)/384 + 1/32",
+     "decimal": "-0.0445825768275836919934895489822",
+     "status": "DERIVED post hoc from the trace recurrence (the 38(bs) item 5 formula expanded in h with K(q,q) as an unknown series); checked against the four-N extraction, not yet verified by the lead",
+     "check": "four-N extraction agrees to 1.3e-26 (extraction spread 1.3e-24)",
+     "vs_fit_38bt": "fit -0.044582577(4e-10): |exact - fit centre| = 1.7e-10"
+    },
+    "delta": {
+     "exact": "0",
+     "status": "DERIVED: the delta coefficient is -(t^2-9)/(2(t^2-1)) times the delta^2 coefficient for ALL t (below), and delta^2 starts at h^2",
+     "check": "four-N extraction -1.32e-27 (spread 1.2e-25)"
+    },
+    "delta^2": {
+     "exact": "-Psi1h/128",
+     "decimal": "-0.0183644428463003953577895563717",
+     "status": "DERIVED post hoc from the trace recurrence (the 38(bs) item 5 formula expanded in h with K(q,q) as an unknown series); verified by the lead",
+     "check": "four-N extraction agrees to 1.6e-27 (extraction spread 1.4e-25)",
+     "vs_fit_38bt": "fit -0.018364443(3e-13): |exact - fit centre| = 1.5e-10 -- OUTSIDE the quoted uncertainty (the printed centre was rounded)"
+    }
+   },
+   "h^3": {
+    "const": {
+     "exact": "sqrt(3)*L**3/5184 - 5*sqrt(3)*L**2/10368 + L**2/576 + sqrt(3)*L*pi**2/10368 + L*psi1/6912 - 13*L/3456 + 467*sqrt(3)*L/248832 - 5*sqrt(3)*pi**2/62208 + pi**2/3456 - 23*psi1/165888 + sqrt(3)*psi1/6912 + 17*sqrt(3)*psi2/331776 + sqrt(3)*zeta3/3456 - 683*sqrt(3)/746496 + 277/41472",
+     "decimal": "-0.00856291696994085932638167522565",
+     "status": "DERIVED post hoc from the trace recurrence (the 38(bs) item 5 formula expanded in h with K(q,q) as an unknown series); checked against the four-N extraction, not yet verified by the lead",
+     "check": "four-N extraction agrees to 1.0e-24 (extraction spread 8.1e-23)",
+     "vs_fit_38bt": "fit -0.0085628543(3e-6): |exact - fit centre| = 6.3e-8"
+    },
+    "e_1": {
+     "exact": "-sqrt(3)*L**2/192 - L/32 + 5*sqrt(3)*L/384 - sqrt(3)*pi**2/1152 - psi1/768 - 9*sqrt(3)/1024 + 3/64",
+     "decimal": "-0.0532928799132485550466950439735",
+     "status": "DERIVED post hoc from the trace recurrence (the 38(bs) item 5 formula expanded in h with K(q,q) as an unknown series); checked against the four-N extraction, not yet verified by the lead",
+     "check": "four-N extraction agrees to 8.2e-24 (extraction spread 7.3e-22)",
+     "vs_fit_38bt": "fit -0.053292879(7e-8): |exact - fit centre| = 9.1e-10"
+    },
+    "delta": {
+     "exact": "3*Psi1h/1024",
+     "decimal": "0.00688666606736264825917108363938",
+     "status": "DERIVED post hoc from the trace recurrence (the 38(bs) item 5 formula expanded in h with K(q,q) as an unknown series); verified by the lead",
+     "check": "four-N extraction agrees to 8.1e-25 (extraction spread 6.7e-23)",
+     "vs_fit_38bt": "fit +0.0068866659(1e-8): |exact - fit centre| = 1.7e-10"
+    },
+    "delta^2": {
+     "value": "-0.005756903321969872877948914",
+     "uncertainty": "8.0e-22",
+     "status": "NUMERICAL: needs the q-derivative of K(q,q) at fixed nu, for which no closed form is claimed; one-sided polynomial extraction from the four-N route (15 fibres h = -k/750, 80 digits, cutoff plateau 3e-66), uncertainty = 10 x the degree-14 vs degree-13 spread",
+     "fit_38bt": "-0.0057569033(3e-10)",
+     "vs_fit_38bt": "|extraction - fit centre| = 2.2e-11 against the fit's quoted 3.0e-10"
+    }
+   },
+   "h^4": {
+    "const": {
+     "exact": "-sqrt(3)*L**4/20736 - L**3/1728 + 5*sqrt(3)*L**3/31104 - sqrt(3)*L**2*pi**2/20736 - L**2*psi1/13824 - 467*sqrt(3)*L**2/497664 + 13*L**2/6912 - L*pi**2/3456 + 5*sqrt(3)*L*pi**2/62208 - sqrt(3)*L*psi1/6912 + 23*L*psi1/165888 - 17*sqrt(3)*L*psi2/331776 - sqrt(3)*L*zeta3/3456 - 277*L/41472 + 683*sqrt(3)*L/746496 - 9*Psi1h/32768 - sqrt(3)*pi**4/138240 - pi**2*psi1/82944 - 467*sqrt(3)*pi**2/2985984 + 13*pi**2/41472 - sqrt(3)*psi1**2/331776 - 253*psi1/995328 + 29*sqrt(3)*psi1/165888 - 17*psi2/110592 + 173*sqrt(3)*psi2/3981312 - 49*psi3/7962624 - zeta3/1152 + 5*sqrt(3)*zeta3/20736 - 96011*sqrt(3)/143327232 + 2269/497664",
+     "decimal": "-0.00756953069510358095023383565927",
+     "status": "DERIVED post hoc from the trace recurrence (the 38(bs) item 5 formula expanded in h with K(q,q) as an unknown series); checked against the four-N extraction, not yet verified by the lead",
+     "check": "four-N extraction agrees to 4.0e-22 (extraction spread 3.0e-20)",
+     "vs_fit_38bt": "fit -0.0075659361(7e-5): |exact - fit centre| = 3.6e-6"
+    },
+    "e_1": {
+     "exact": "sqrt(3)*L**3/576 - 5*sqrt(3)*L**2/768 + L**2/64 + sqrt(3)*L*pi**2/1152 + L*psi1/768 - 3*L/64 + 9*sqrt(3)*L/1024 - 5*sqrt(3)*pi**2/4608 + pi**2/384 - 11*psi1/6144 + sqrt(3)*psi1/768 + 17*sqrt(3)*psi2/36864 + sqrt(3)*zeta3/384 - 27*sqrt(3)/4096 + 5/128",
+     "decimal": "-0.0614752795045716573728999873734",
+     "status": "DERIVED post hoc from the trace recurrence (the 38(bs) item 5 formula expanded in h with K(q,q) as an unknown series); checked against the four-N extraction, not yet verified by the lead",
+     "check": "four-N extraction agrees to 3.3e-21 (extraction spread 2.7e-19)",
+     "vs_fit_38bt": "fit -0.061475211(5e-6): |exact - fit centre| = 6.9e-8"
+    },
+    "delta": {
+     "value": "-0.001858383126889509155611988",
+     "uncertainty": "2.0e-19",
+     "status": "NUMERICAL: needs the q-derivative of K(q,q) at fixed nu, for which no closed form is claimed; one-sided polynomial extraction from the four-N route (15 fibres h = -k/750, 80 digits, cutoff plateau 3e-66), uncertainty = 10 x the degree-14 vs degree-13 spread",
+     "fit_38bt": "-0.0018584024(9e-7)",
+     "relation": "EXACT: [h^4 delta] = -(3/8)[h^3 delta^2] + (7/32)[h^2 delta^2], from the all-t ratio -(t^2-9)/(2(t^2-1)) = -3h/8 + 7h^2/32 + ...; holds for the extracted values to 3.3e-22",
+     "vs_fit_38bt": "|extraction - fit centre| = 1.9e-8 against the fit's quoted 9.0e-7"
+    },
+    "delta^2": {
+     "value": "-0.01132872167615674429459459",
+     "uncertainty": "3.0e-19",
+     "status": "NUMERICAL: needs the q-derivative of K(q,q) at fixed nu, for which no closed form is claimed; one-sided polynomial extraction from the four-N route (15 fibres h = -k/750, 80 digits, cutoff plateau 3e-66), uncertainty = 10 x the degree-14 vs degree-13 spread",
+     "fit_38bt": "-0.011328721(6e-8)",
+     "vs_fit_38bt": "|extraction - fit centre| = 6.8e-10 against the fit's quoted 6.0e-8"
+    }
+   },
+   "anchor_scalars": "alpha_0 = -0.034222924249274, beta_0 = -0.11856265576584, gamma_0 = -0.29383108554079 (= -N(1,1), the S = 2 convergent one), delta_f0 = -0.1443375672974; identity 6 beta + 2 gamma - 9 delta_f = 0."
+  }
+ }
+}

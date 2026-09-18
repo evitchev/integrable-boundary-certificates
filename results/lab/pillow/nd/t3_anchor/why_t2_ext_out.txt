@@ -1,4 +1,4 @@
-fibres pinned under ../../ib-lab/opus-lead/out/pfa13: 57
+fibres pinned under [lab-workspace-path]: 57
 
 spin 7 (k = 4), degree-2 layer: 57 fibres
    ratio [X^1 Y^1]/[X^0 Y^2]: reconstructed at degree <= 5 (12 fitted, EXACT on 45 hold-outs)

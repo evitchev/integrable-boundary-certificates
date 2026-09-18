@@ -1333,7 +1333,7 @@
         "M-O2 (outcome form): the gauge-invariant all-first-order profiles a_j (coefficients of (dX)^{W-2j}(dY.dY)^j, normalized to a_0 = 1) of the one-dimensional ad_{I_3} kernels of the three cylindrical solutions at weights 4, 6, 8 and 10 are the pinned exact rational functions of t (26 curve points per table, 25 where a certified jumping point is excluded, exact equality; in addition EVERY denominator root of every pinned profile -- 21 occurrences, 20 distinct values, in all, excluding t = +-1 and Solution 2's certified jump t = 3 -- is visited and the unnormalized (dX)^W coefficient vanishes there exactly; the formulas are certified on these fibers, not proven globally). Consequences pinned: Solution 3 is palindromic at all four weights with coupling u_W = C(W,2)(t-3)/(t+2W-7) (zero at the c_{1,2} decoupling point, pole at the unitary minimal model c_{s-3,s-2} on the partner branch); Solution 1 obeys the single closed form a_j = C(W,2j)(2j-1)!!(t-1)^j / prod_{i<=j}[(2i-1)t-(4W-1-6i)], whose i-th denominator vanishes at the Kac collision nu_{2s+2-4i,2s+1-2i} = 0 (s = W-1); Solution 2 has t = 3 as a pole of order j-1 for j >= 2. The weight-10 profiles of Solutions 1 and 3 were preregistered from the weight-6/8 forms (notes, 5ebfca2) and matched exactly.",
         "Weight 4 (added 2026-09-04): the profiles [1, 6(t-1)/(t-9), (t-1)/(t-9)] (Solution 1, the closed form's W = 4 instance), [1, 12(t-1)/(5t-11), 8(t-1)^2/((t-3)(5t-11))] (Solution 2) and [1, 6(t-3)/(t+1), 1] (Solution 3, the coupling u_4 = 6(t-3)/(t+1) used by the oper-program exclusions) are reproduced exactly at 26 curve points each, with the pinned poles t = 9 and t = 11/5 verified as zeros of the (dX)^4 coefficient."
       ],
-      "description": "Cylindrical oper program, M-O2 complete at weights 4, 6, 8, 10 (weight 4 added 2026-09-04 after a referee noted the u_4 input of the exclusions was not itself certified). Lab ~/ib-lab/mo2_profiles.py (nullspace rational interpolation, 4 hold-outs). Negative drill on a tampered pole location proven (6 FAIL lines). Runtime ~7 min (377 s measured with weight 4).",
+      "description": "Cylindrical oper program, M-O2 complete at weights 4, 6, 8, 10 (weight 4 added 2026-09-04 after a referee noted the u_4 input of the exclusions was not itself certified). Lab mo2_profiles.py (private lab workspace) (nullspace rational interpolation, 4 hold-outs). Negative drill on a tampered pole location proven (6 FAIL lines). Runtime ~7 min (377 s measured with weight 4).",
       "mode": "run",
       "command": [
         "PYTHON",
@@ -1381,7 +1381,7 @@
       "claims": [
         "The nine cylindrical VEV tables results/lab/vev/vev_sol{1,2,3}_w{6,8,10}.json -- <I_s>(P, Q^2; t) for spins 5, 7, 9 of Solutions 1-3 as rational functions of t (article momenta; plane-density (dX)^W coefficient normalized to 1), obtained in the lab by rational interpolation on 32 fit points with 4 hold-outs -- are verified on EIGHT exact fibres each: at every visited t the ad_{I_3} kernel is recomputed and the cylinder eigenvalue's coefficients, reconstructed exactly on a full-rank evaluation set, equal the stored functions coefficient by coefficient. The tables are certified on those fibres, not proven as global identities in t. Executable structural predicate on the stored tables: every irreducible denominator factor of a lower-degree coefficient divides the product of the top-degree (profile) denominators and (t-1)(t+1) -- no lower-degree poles beyond the profile lattice and the curve's poles. The files are hash-pinned."
       ],
-      "description": "VEV side of the cylindrical oper program through spin 9 (lab ~/ib-lab/cyl_vev_weights.py: 32 fit points + 4 hold-outs per table). Negative drill on a tampered table coefficient proven (1 FAIL line). Runtime ~3 min.",
+      "description": "VEV side of the cylindrical oper program through spin 9 (lab cyl_vev_weights.py (private lab workspace): 32 fit points + 4 hold-outs per table). Negative drill on a tampered table coefficient proven (1 FAIL line). Runtime ~3 min.",
       "mode": "run",
       "command": [
         "PYTHON",
@@ -2485,7 +2485,7 @@
     "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
   ],
   "_public_edition": {
-    "generated_on": "2026-09-15",
+    "generated_on": "2026-09-18",
     "pruned_entry_ids": [
       "certificate_provenance_lint",
       "check_a2_1820_provenance",

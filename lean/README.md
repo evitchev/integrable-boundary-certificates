@@ -57,7 +57,7 @@ delivered the ℚ(t)-section and specialization lemmas).
 ## Toolchain
 
 The checker (`code/lean_check.py`) uses the machine-local pinned
-wrapper `~/projects/lean-benchmarks/lean-mathlib` (Lean 4.24, Mathlib
+wrapper `lean-benchmarks/lean-mathlib` (a sibling workspace) (Lean 4.24, Mathlib
 with baked search path) and includes a negative control: a
 deliberately false proof must be rejected on every run, so a broken
 toolchain cannot report green. On machines without the toolchain the

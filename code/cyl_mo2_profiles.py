@@ -11,7 +11,7 @@ monomials (dX)^{W-2j} (dY.dY)^j, j = 0..W/2, are class invariants (every
 total derivative carries a letter of derivative order >= 2), normalized
 here to a_0 = 1.  The pins were obtained by nullspace rational
 interpolation on 18-22 points and verified on 4 hold-outs (lab
-~/ib-lab/mo2_profiles.py); the weight-10 profiles of Solutions 1 and 3
+mo2_profiles.py (private lab workspace)); the weight-10 profiles of Solutions 1 and 3
 were PREREGISTERED from the weight-6/8 closed forms before being
 computed (preregistration commit 5ebfca2) and matched exactly.
 
