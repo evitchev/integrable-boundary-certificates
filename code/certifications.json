@@ -2485,7 +2485,7 @@
     "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
   ],
   "_public_edition": {
-    "generated_on": "2026-09-18",
+    "generated_on": "2026-09-20",
     "pruned_entry_ids": [
       "certificate_provenance_lint",
       "check_a2_1820_provenance",

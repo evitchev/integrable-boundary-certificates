@@ -88,3 +88,37 @@ of this repository does not depend on it.
   non-degeneracy hypotheses xX, xY, (xY)_k, xY+k nonzero. Field
   identities over Q; the kernel and the shifts are the inputs (the lab
   had checked k = 2..9 symbolically). Rung: PROVED.
+
+`AnchorTQ.lean` (2026-09-18, contributed by the cognitive agent) —
+
+- `IntegrableBoundary.AnchorTQ.tq_three_term`, with `tq_core`,
+  `x_shift_up`, `x_shift_down`: **specification item A3** — both sector
+  Q-functions satisfy the three-term relation Q(E+4) + a_S(E) Q(E-4) =
+  T(E) Q(E) with T(E) = -(E/2) and a_S(E) = [(1-E/2)^2 - beta_S^2]/4
+  (ansatz note sec. 38(bh), batch 56, where it was checked numerically to
+  1e-38). Kernel-checked here as the algebraic identity that remains after
+  the Gamma recurrence reduces the two ratios to x-1 and 1/x.
+  The file header states what it does NOT cover: no Gamma function, no
+  spectral-determinant claim, no dictionary to the certified charges, and
+  no bearing on the anchor's deformation (in particular not on the
+  Y-shift reading, which sec. 38(bw) refutes). Two negative controls are
+  in the file: a perturbed T fails at an exhibited witness, and a
+  perturbed a fails everywhere. Rung: PROVED.
+
+`SecondOrderSpan.lean` (2026-09-19, contributed by the cognitive agent) —
+
+- `R11_span`, `R13_span`, `record_combination`, with the four pattern
+  lemmas and four negative controls: the two relations used to test
+  membership of the second-order two-pattern span (the constant pattern
+  and the product of shifted indices) annihilate both patterns, hence the
+  whole span, hence every linear combination of the two relations — the
+  record's 91 R11 − 55 R13 included. Negative controls prove neither
+  relation is the zero functional and that a pattern outside the span is
+  NOT annihilated (values 12 and 24), so the annihilation is not vacuous
+  and the relations genuinely detect departure. `Acoeff_Bcoeff_at_two`
+  and `_at_three` check the record's explicit second-order coefficients
+  against two values it derives independently.
+  The header states the scope negatively: this certifies that the TEST is
+  a valid test and proves no physics — that the layer lies in the span is
+  a statement about the certified charge tables, untouched here. Rung:
+  PROVED.

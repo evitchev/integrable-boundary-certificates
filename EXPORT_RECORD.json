@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "kind": "public_export_record",
-  "private_freeze_commit": "5c79b77bf4897645359465fa4dd04bef4b4abacf",
+  "private_freeze_commit": "df6764233e65b85f4d0054e635272783aab6e460",
   "private_worktree_dirty_at_export": true,
-  "exported_at_utc": "2026-09-18T08:49:25+00:00",
-  "exporter_sha256": "sha256:dfa99df2ad7a207fae896d460b54cda10c327b20567b8ef683819243b86ca9f7",
-  "source_file_count": 883,
+  "exported_at_utc": "2026-09-21T03:52:25+00:00",
+  "exporter_sha256": "sha256:aa88b8a5620bf3a5b7a1b39798c68fba285b2277df6184c55dc55920870a3327",
+  "source_file_count": 893,
   "transformation_log": {
     "results/c1_spin15_l10_exit_run.json": {
       "public_sha256": "sha256:42f9a70b3c8c2ee39825f4df2145d2de3544deec4333fbfdc55074f769c21091",
@@ -324,7 +324,7 @@
     "code/certifications.json": {
       "repinned_post_redaction": true,
       "private_sha256": "sha256:7cfb0bf8c10aa8c4a362f3ec9ccc9be9cf9042a6df5da591e54a8a17bcccaa14",
-      "public_sha256": "sha256:401ca2ce06ed8a0c21c4728c4e630476fa9331a3896078d4d958fd446828ce65"
+      "public_sha256": "sha256:ca1be0fcb78ba71fe4e8456a60bbb51af4d9087b9548f2483ae492907463f606"
     }
   },
   "privacy_screen": {

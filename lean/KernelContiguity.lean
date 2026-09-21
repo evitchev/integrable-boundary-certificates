@@ -1,6 +1,6 @@
 /-
   The three-term contiguity relation among the shifted top-layer kernels
-  (client ansatz note sec. 38(az) item 2; lab/kernel_contiguity.py checked it
+  (the ansatz note, the contiguity entry of batch 48; the lab script there checked it
   symbolically for k = 2..9).  Statement-first formalization, then the proof:
   with the rising factorial (x)_n and the shifted kernel
 
