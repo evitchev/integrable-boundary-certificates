@@ -1,0 +1,6 @@
+certified regularised spin 3: 72*P_X**2*pi**2/5 - 6*P_X**2/5 - 72*pi**4/5 + 6*pi**2 - 2/5
+WKB family k = 3 spin 3 (raw): 432*P_X**2*pi**2 - 36*P_X**2 - 432*pi**4 + 180*pi**2 - 12
+P_X^4 coefficient: certified 0, WKB 0
+PROPORTIONAL (projectively equal, 5 monomials): True
+dual M' = -1/4: PROPORTIONAL: True
+scoring tamper (+pi^2/1000) proportional: False (must be False)

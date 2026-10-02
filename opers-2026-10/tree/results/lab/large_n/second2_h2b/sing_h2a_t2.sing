@@ -1,0 +1,17 @@
+ring r = 0, (sX,sY,cX,cY), dp;
+ideal I = 15*sX - 140*sY,
+6*cX - 40*cY - 5*sX - 290,
+-280*cX*sY + 3360*cY*sY - 5*sX^2 + 4200*sY,
+12*cX^2 - 160*cX*cY - 1160*cX + 960*cY^2 + 2400*cY - 3*sX^2 + 22748;
+LIB "primdec.lib"; LIB "elim.lib";
+ideal G = std(I); "RAW dim:"; dim(G);
+list pr = minAssGTZ(I); int i; "RAW minimal primes:"; size(pr);
+poly h = (sX);
+for (i=1;i<=size(pr);i++) { "  raw prime", i, "dim", dim(std(pr[i])), "inside h=0 (excluded):", reduce(h, std(pr[i]))==0, " sX=0 on it:", reduce(sX, std(pr[i]))==0; }
+def SS = sat(I, h); "typeof sat:"; typeof(SS); ideal J = SS; ideal GJ = std(J); "SAT dim:"; dim(GJ); "SAT vdim (solutions with mult.):"; vdim(GJ);
+ideal Jr = radical(J); "radical vdim:"; vdim(std(Jr));
+list pd = minAssGTZ(J); "SAT minimal primes:"; size(pd);
+ring s = 0, (sX,sY,cX,cY), lp; option(redSB); list pd = imap(r, pd); int j;
+for (j=1;j<=size(pd);j++) { ideal L = std(pd[j]); "--- SAT prime", j, " vdim", vdim(L); L; write(":w comp_h2a_t2_" + string(j) + ".txt", L); kill L; }
+write(":w ncomp_h2a_t2.txt", size(pd));
+quit;

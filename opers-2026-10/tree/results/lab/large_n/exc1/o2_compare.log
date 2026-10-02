@@ -1,0 +1,12 @@
+(0) M = 5: x0^3 x d/dx[regular part] at a root of x^6 = z  ==  2M z^2 + alpha(M-1) z - 2 lam^2 + (M-1)^2/2: True
+t = 2 (M = 5): one apparent singularity: I_1 = PX^2 + pi^2 - 1/6 + 2 x (1)  -> level 1
+   I_3 level-1 block: characteristic polynomial (data) == Res_z(trivial monodromy, e - Lambda_3(z)) (oper): True
+      data trace  = -(180*PI**4 + 1080*PI**2*PX**2 + 1980*PI**2 - 1260*PX**4 - 5940*PX**2 - 623)/630
+      oper trace  = -(180*PI**4 + 1080*PI**2*PX**2 + 1980*PI**2 - 1260*PX**4 - 5940*PX**2 - 623)/630
+      discriminant (data) = 768*PX**2*(3*PI**2 + 12*PX**2 - 2)/49
+t = 9/4 (M = 21/5): one apparent singularity: I_1 = PX^2 + pi^2 - 1/6 + 2 x (1)  -> level 1
+   I_3 level-1 block: characteristic polynomial (data) == Res_z(trivial monodromy, e - Lambda_3(z)) (oper): True
+      data trace  = -(1300*PI**4 + 7800*PI**2*PX**2 + 14300*PI**2 - 7020*PX**4 - 31460*PX**2 - 2619)/3510
+      oper trace  = -(1300*PI**4 + 7800*PI**2*PX**2 + 14300*PI**2 - 7020*PX**4 - 31460*PX**2 - 2619)/3510
+      discriminant (data) = 256*PX**2*(325*PI**2 + 832*PX**2 - 160)/1053
+EXC1 one-point level-1 test: PASS

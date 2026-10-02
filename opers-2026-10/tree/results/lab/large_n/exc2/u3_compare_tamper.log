@@ -1,0 +1,3 @@
+t = 2    [tamper] data vacuum P^6 coefficient -3/2; trace: 10 coefficients, 1 differ; det: 28 coefficients, 10 differ; pointwise char. polynomials: 36 compared, 36 differ
+t = 9/4  [tamper] data vacuum P^6 coefficient 4225/412; trace: 10 coefficients, 1 differ; det: 28 coefficients, 10 differ; pointwise char. polynomials: 36 compared, 36 differ
+U3 hold-out [tamper]: FAIL

@@ -1,0 +1,4 @@
+common denominator of the relation: 1
+  x^(0 a + 0 b):  D**4 - 2*D**3*u_m - 2*D**3*u_p - 2*D**2*lam_m - 2*D**2*lam_p + D**2*u_m**2 + 3*D**2*u_m*u_p + D**2*u_p**2 + 2*D*lam_m*u_m + 2*D*lam_m*u_p + 2*D*lam_p*u_m + 2*D*lam_p*u_p - D*u_m**2*u_p - D*u_m*u_p**2 + lam_m**2 - 2*lam_m*lam_p - lam_m*u_m*u_p - lam_m*u_p**2 + lam_p**2 - lam_p*u_m**2 - lam_p*u_m*u_p
+  x^(0 a + 1 b):  E*(2*D + b - u_m - u_p)*(2*D + 2*b - u_m - u_p)
+  x^(1 a + 0 b):  -(2*D + a - u_m - u_p)*(2*D + 2*a - u_m - u_p)

@@ -1,0 +1,18 @@
+ring r = 0, (sX,sY,cX,cY,pi_rot), dp;
+ideal I = 45*cX*pi_rot*sX - 70*cX*sY - 300*cY*pi_rot*sX + 840*cY*sY + 75*pi_rot^3*sX^2 - 210*pi_rot^2*sX*sY - 2175*pi_rot*sX + 1050*sY,
+3*cX^2 - 40*cX*cY + 18*cX*pi_rot^2*sX - 30*cX*pi_rot*sX - 290*cX + 240*cY^2 - 120*cY*pi_rot^2*sX + 200*cY*pi_rot*sX + 600*cY + 15*pi_rot^4*sX^2 - 50*pi_rot^3*sX^2 - 870*pi_rot^2*sX + 1450*pi_rot*sX + 5687,
+-15*cX*sX - 140*cX*sY + 100*cY*sX + 1680*cY*sY - 25*pi_rot^2*sX^2 - 140*pi_rot^2*sX*sY + 725*sX + 2100*sY,
+6*cX^2 - 80*cX*cY + 12*cX*pi_rot^2*sX - 9*cX*sX - 580*cX + 480*cY^2 - 80*cY*pi_rot^2*sX + 60*cY*sX + 1200*cY + 6*pi_rot^4*sX^2 - 15*pi_rot^2*sX^2 - 580*pi_rot^2*sX + 435*sX + 11374,
+25116*cX^2 - 305760*cX*cY + 251160*cX*pi_rot^2*sX - 480480*cX*pi_rot*sY - 3439800*cX + 1176000*cY^2 - 1528800*cY*pi_rot^2*sX + 3696000*cY*pi_rot*sY + 12348000*cY + 293020*pi_rot^4*sX^2 - 800800*pi_rot^3*sX*sY - 17199000*pi_rot^2*sX + 19404000*pi_rot*sY + 115517500;
+LIB "primdec.lib"; LIB "elim.lib";
+ideal G = std(I); "RAW dim:"; dim(G);
+list pr = minAssGTZ(I); int i; "RAW minimal primes:"; size(pr);
+poly h = (pi_rot)*(sX)*(3*cX - 20*cY + 5*pi_rot^2*sX - 145)*(897*cX^2 - 10920*cX*cY + 8970*cX*pi_rot^2*sX - 122850*cX + 42000*cY^2 - 54600*cY*pi_rot^2*sX + 441000*cY + 10465*pi_rot^4*sX^2 - 614250*pi_rot^2*sX + 4125625);
+for (i=1;i<=size(pr);i++) { "  raw prime", i, "dim", dim(std(pr[i])), "inside h=0 (excluded):", reduce(h, std(pr[i]))==0, " sX=0 on it:", reduce(sX, std(pr[i]))==0; }
+def SS = sat(I, h); "typeof sat:"; typeof(SS); ideal J = SS; ideal GJ = std(J); "SAT dim:"; dim(GJ); "SAT vdim (solutions with mult.):"; vdim(GJ);
+ideal Jr = radical(J); "radical vdim:"; vdim(std(Jr));
+list pd = minAssGTZ(J); "SAT minimal primes:"; size(pd);
+ring s = 0, (sX,sY,cX,cY,pi_rot), lp; option(redSB); list pd = imap(r, pd); int j;
+for (j=1;j<=size(pd);j++) { ideal L = std(pd[j]); "--- SAT prime", j, " vdim", vdim(L); L; write(":w comp_h2b_t2_" + string(j) + ".txt", L); kill L; }
+write(":w ncomp_h2b_t2.txt", size(pd));
+quit;

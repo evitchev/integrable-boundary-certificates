@@ -1,0 +1,8 @@
+indicial polynomial: z*(e**2*z - e*z + r02)
+exponents {-1, 2}  => [{r02: -2*z}]
+   no-log condition at exponent 2, monomial E^1: 4*(b + r01) = 0
+   no-log condition at exponent 2, monomial E^0: -4*lam**2*r01 + r01**3 + 2*r01**2 - 8*r01*x0*z - 4*r01*z**2 + r01 - 8*x0*z - 8*z**2 = 0
+solution for r01: [{r01: -b}]
+remaining condition(s) with r01 = -b: [-b**3 + 2*b**2 + 4*b*lam**2 + 8*b*x0*z + 4*b*z**2 - b - 8*x0*z - 8*z**2]
+proportional to (2-b) z^2 + 2 x0 (1-b) z - b lam^2 + b(1-b)^2/4 (EXC1 quadratic): True
+T0 PASS

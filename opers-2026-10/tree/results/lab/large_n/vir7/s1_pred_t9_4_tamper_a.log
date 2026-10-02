@@ -1,0 +1,10 @@
+t = 9/4 order 2 (spin 1) done  (1s)
+t = 9/4 order 3 (spin 2) done  (1s)
+t = 9/4 order 4 (spin 3) done  (1s)
+t = 9/4 order 5 (spin 4) done  (2s)
+t = 9/4 order 6 (spin 5) done  (3s)
+t = 9/4 order 7 (spin 6) done  (5s)
+t = 9/4 order 8 (spin 7) done  (8s)
+t = 9/4 order 9 (spin 8) done  (15s)
+t = 9/4 order 10 (spin 9) done  (28s)
+written s1_pred_t9_4_tamper_a.json 7eba3c09eb3f66e080d499019b04df695fe641878bdd94642366d93451aabbba

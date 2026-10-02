@@ -1,0 +1,7 @@
+(a) LVZ W4sym at n = -18/25: conserved mod d by all four hairpin exponentials: True; TAMPER (+1/7): False (must be False)
+(a) LVZ W4sym at n = -32/25: conserved mod d by all four hairpin exponentials: True; TAMPER (+1/7): False (must be False)
+(a) LVZ W4sym at n = -50/169: conserved mod d by all four hairpin exponentials: True; TAMPER (+1/7): False (must be False)
+(b) N = 1, weight 4: commutant mod d of pair: 3; pair + mirror (four): 2; pair + Virasoro: 1; all five: 1
+(b) N = 1, weight 6: commutant mod d of pair: 10; pair + mirror (four): 3; pair + Virasoro: 2; all five: 2
+DIRECT CHECKS PASS
+exit 0

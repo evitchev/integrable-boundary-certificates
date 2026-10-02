@@ -1,0 +1,5 @@
+kit integrity: OK (SHA256SUMS, INPUTS.SHA256)
+PASS  sol3_vir5a_compare            5s  [registered predictions vs certified tables (all VIR5a cells); paper 6 (table)]
+PASS  second2_h2b_t9o4              1s  [exact exclusion at the solver output; paper 5 (second order)]
+PASS  num1_shoot                  281s  [numerical (zeros of D vs shooting); paper 6.1]
+ALL PASS  (3 checks, 287s)

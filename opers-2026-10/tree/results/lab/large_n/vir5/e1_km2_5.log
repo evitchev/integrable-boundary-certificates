@@ -1,0 +1,8 @@
+k = -2/5 spin 1: leading 27/5  (94s)
+k = -2/5 spin 3: leading -2187/250  (94s)
+k = -2/5 spin 5: leading -505197/6250  (94s)
+k = -2/5 spin 7: leading 57218481/625000  (94s)
+k = -2/5 spin 9: leading 282429536481/78125000  (94s)
+k = -2/5 spin 11: leading 3601159538697/781250000  (94s)
+k = -2/5 spin 13: leading -749308805513433/3906250000  (95s)
+written prediction_km2_5.json 649a14fcdba1b1b8e7938d5cc6487da15d3da3d566f286564a82b0c23efb7058 odd orders vanish: {'3': True, '5': True, '7': True, '9': True, '11': True, '13': True}

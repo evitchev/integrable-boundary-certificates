@@ -1,0 +1,6 @@
+Sol 1 t = 2 I3: level-1 singlet states [((), (), (1,)), ((1,), (), ())]; transverse eigenvalue == vacuum at Q^2 + 2: True; charpoly irreducible over Q: True  (0s)
+written d1_sol1_t2.json
+
+real	0m5.673s
+user	0m5.477s
+sys	0m0.196s

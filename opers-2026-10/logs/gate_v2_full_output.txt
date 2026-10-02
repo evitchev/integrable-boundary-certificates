@@ -1,0 +1,16 @@
+
+===== gate: argv ['strict_gate.py']  exit 0  14s
+VIR7: 6 lines, exit 0
+VIR4D: 11 lines, exit 0
+VIR5A: 29 lines, exit 0
+VIR5C: 9 lines, exit 0
+SOL2F: 8 lines, exit 0
+GATE PASS
+
+===== gate_missing_charge: argv ['strict_gate.py']  exit 0  14s
+VIR7: 6 lines, exit 0
+VIR4D: 11 lines, exit 0
+VIR5A: 29 lines, exit 0
+VIR5C: 9 lines, exit 0
+SOL2F: 8 lines, exit 0
+GATE PASS

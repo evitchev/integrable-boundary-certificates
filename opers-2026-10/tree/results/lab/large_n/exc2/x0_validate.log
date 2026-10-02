@@ -1,0 +1,5 @@
+cG zero at orders 2, 4: True True
+wkb3x : -7*alpha**4/400 + 3*alpha**2*lam**2/10 + 9*alpha**2/2 + 168*alpha*zS + lam**4 + 18*lam**2 + 337/5
+EXC1  : -7*alpha**4/400 + 3*alpha**2*lam**2/10 + 9*alpha**2/2 + 168*alpha*zS + lam**4 + 18*lam**2 + 240*zS**2 + 337/5
+difference (must contain only z^2 and higher): -240*zS**2
+extended-engine validation PASS

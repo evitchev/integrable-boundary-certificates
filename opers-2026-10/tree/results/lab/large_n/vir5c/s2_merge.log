@@ -1,0 +1,11 @@
+k = 10/3  t = 9/4    spins up to 19; spins 1..13 identical to the registered VIR5a prediction: True
+k = 2/3   t = 3/2    spins up to 19; spins 1..13 identical to the registered VIR5a prediction: True
+k = -6    t = 4      spins up to 19; spins 1..13 identical to the registered VIR5a prediction: True
+k = 2     t = 2      spins up to 19; (fibre not in VIR5a)
+k = 5/3   t = 21/11  spins up to 15; spins 1..13 identical to the registered VIR5a prediction: True
+k = -18/5 t = 11/2   spins up to 15; spins 1..13 identical to the registered VIR5a prediction: True
+k = -6/5  t = -2     spins up to 15; spins 1..13 identical to the registered VIR5a prediction: True
+k = -2/5  t = 1/2    spins up to 15; spins 1..13 identical to the registered VIR5a prediction: True
+k = 4     t = 7/3    spins up to 15; spins 1..13 identical to the registered VIR5a prediction: True
+PREDICTION_VIR5c.json sha256 81d4f9def62bfa064a207ff04780ebd1708ba9e9864e02fa18224abffdf4ced3
+engine control PASS

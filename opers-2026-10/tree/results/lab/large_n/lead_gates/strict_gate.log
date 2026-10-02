@@ -1,0 +1,10 @@
+VIR7: 6 lines, exit 0
+VIR4D: 11 lines, exit 0
+VIR5A: 29 lines, exit 0
+VIR5C: 9 lines, exit 0
+SOL2F: 8 lines, exit 0
+GATE PASS
+
+real	0m14.886s
+user	0m14.755s
+sys	0m0.133s

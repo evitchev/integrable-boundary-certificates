@@ -1,0 +1,11 @@
+name = "OpersCertificates"
+defaultTargets = ["OpersCertificates"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.24.0"
+
+[[lean_lib]]
+name = "OpersCertificates"
+roots = ["OperMellin", "WardLossOne", "OperTop"]

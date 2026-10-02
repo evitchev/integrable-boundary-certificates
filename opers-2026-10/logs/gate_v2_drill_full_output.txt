@@ -1,0 +1,18 @@
+
+===== gate [DRILL]: argv ['strict_gate.py', 'VIR7=results/lab/large_n/lead_gates/tamper_vir7.json']  exit 2  14s
+VIR7: 6 lines, exit 0
+VIR4D: 11 lines, exit 0
+VIR5A: 29 lines, exit 0
+VIR5C: 9 lines, exit 0
+SOL2F: 8 lines, exit 0
+FAIL VIR7: spin 11 mismatch 1 :: t=-2 5:0/10(neg 9) 7:0/15(neg 14) 9:0/21(neg 20) 11:1/28(neg 27) 13:0/36(neg 35)
+GATE FAIL
+
+===== gate_missing_charge [DRILL]: argv ['strict_gate.py', 'VIR7=results/lab/large_n/lead_gates/tamper_vir7_missing_spin11.json']  exit 2  13s
+VIR7: 6 lines, exit 0
+VIR4D: 11 lines, exit 0
+VIR5A: 29 lines, exit 0
+VIR5C: 9 lines, exit 0
+SOL2F: 8 lines, exit 0
+FAIL VIR7: output shape (cells, spins, controls, exceptions) differs from the archived log
+GATE FAIL

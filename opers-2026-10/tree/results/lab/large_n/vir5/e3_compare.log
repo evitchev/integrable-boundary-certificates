@@ -1,0 +1,95 @@
+seal and prediction hashes ok
+A k = 10/3 (t = 9/4, n = 22/3): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+A k = 5/3 (t = 21/11, n = 17/3): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+B k = 2/3 (t = 3/2, n = 14/3): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+B k = 1/2 (t = 7/5, n = 9/2): 0 mismatches in 98 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: operator gives NO charge (spin/n = 2, an integer); certified polynomial exists
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+C (regression, cc item 297) k = -6 (t = 4, n = -2): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+C k = -18/5 (t = 11/2, n = 2/5): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+C k = -6/5 (t = -2, n = 14/5): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+D k = -2/5 (t = 1/2, n = 18/5): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+CONTROL k = 4 (t = 7/3, n = 8): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+PASS  k = 4 from the continued formula equals the registered VIR4d prediction at spins 11, 13 (string-identical coefficients)
+TAMPER Gamma ratio -> u^k k = 10/3 (t = 9/4, n = 22/3): 84 mismatches in 119 coefficients
+      spin 1: 1 / 3 mismatches (first: PX^0 pi^0 predicted -19/72, certified -1/6)
+      spin 3: 3 / 6 mismatches (first: PX^0 pi^0 predicted 3287/62400, certified 1867/50700)
+      spin 5: 6 / 10 mismatches (first: PX^0 pi^0 predicted -1518495409/35569497600, certified -80437/2940600)
+      spin 7: 10 / 15 mismatches (first: PX^0 pi^0 predicted 89816904053861/1414544601600000, certified 7470091/194350000)
+      spin 9: 15 / 21 mismatches (first: PX^0 pi^0 predicted -59928996976423579/420354162708480000, certified -8722503789173/104637793260000)
+      spin 11: 21 / 28 mismatches (first: PX^0 pi^0 predicted 113963240196605535329/254241341210787840000, certified 12164468960421/47302728200000)
+      spin 13: 28 / 36 mismatches (first: PX^0 pi^0 predicted -27032467653615933211402515247/14245440173611575312384000000, certified -37044667157603773979/34357390573506000000)
+PASS  TAMPER Gamma ratio -> u^k fails (84 of 119)
+TAMPER M = 1/k + 1/10 k = 10/3 (t = 9/4, n = 22/3): 84 mismatches in 119 coefficients
+      spin 1: 1 / 3 mismatches (first: PX^0 pi^0 predicted -175/936, certified -1/6)
+      spin 3: 3 / 6 mismatches (first: PX^0 pi^0 predicted 279727/7300800, certified 1867/50700)
+      spin 5: 6 / 10 mismatches (first: PX^0 pi^0 predicted -74304614183/2496978731520, certified -80437/2940600)
+      spin 7: 10 / 15 mismatches (first: PX^0 pi^0 predicted 527025799852909/11916123723878400, certified 7470091/194350000)
+      spin 9: 15 / 21 mismatches (first: PX^0 pi^0 predicted -1584840734687926373/15759678065887641600, certified -8722503789173/104637793260000)
+      spin 11: 21 / 28 mismatches (first: PX^0 pi^0 predicted 1925884975399222630496051/5957419427442782208000000, certified 12164468960421/47302728200000)
+      spin 13: 28 / 36 mismatches (first: PX^0 pi^0 predicted -146801481801707217410827135117087/104145971033815893695928729600000, certified -37044667157603773979/34357390573506000000)
+PASS  TAMPER M = 1/k + 1/10 fails (84 of 119)
+
+SUMMARY: {'10/3': '0/119 mismatches', '5/3': '0/119 mismatches', '2/3': '0/119 mismatches', '1/2': '0/98 mismatches', '-6': '0/119 mismatches', '-18/5': '0/119 mismatches', '-6/5': '0/119 mismatches', '-2/5': '0/119 mismatches', '4': '0/119 mismatches'}
+RESULT: cell A PASSES; controls fired

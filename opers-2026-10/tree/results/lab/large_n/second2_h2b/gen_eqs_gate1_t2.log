@@ -1,0 +1,9 @@
+tag gate1_t2 M 5 unknowns [sX, sY, cX, cY]
+eq[0] (total deg 1): 6*sX - 120*sY
+  denom[0]: 7*sX
+eq[1] (total deg 1): 14*cX - 120*cY - 7*sX - 390
+  denom[1]: 7*sX
+eq[2] (total deg 2): -360*cX*sY - 2400*cY*sY - sX**2 + 6600*sY
+  denom[2]: 21*sX**2
+eq[3] (total deg 2): 140*cX**2 - 2400*cX*cY - 7800*cX - 8000*cY**2 + 44000*cY - 7*sX**2 + 48300
+  denom[3]: 140*sX**2

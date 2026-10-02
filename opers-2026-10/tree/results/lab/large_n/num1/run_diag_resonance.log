@@ -1,0 +1,9 @@
+A: WKB at M = 5 exactly 2.415309948396368149455; limit M -> 5 2.39524822000130642106; alpha Mellin(6) -0.2244513031550068587106
+    limit + Mellin = 2.17079691684629956234894506499  vs extracted 2.17079691684629956234894506507: 28.44 digits (E2 fit stability at grade 6 ~ 27-28 digits)
+    closed form check: alpha Mellin(6) == -(4/15) alpha nu (nu^2-1)(nu^2-4): -9.2e-92
+B: WKB at M = 5 exactly 1.056029515848214285714; limit M -> 5 1.747492015848214285714; alpha Mellin(6) -0.540672
+    limit + Mellin = 1.20682001584821428571428571429  vs extracted 1.20682001584821428571428571662: 26.71 digits (E2 fit stability at grade 6 ~ 27-28 digits)
+    closed form check: alpha Mellin(6) == -(4/15) alpha nu (nu^2-1)(nu^2-4): -3.68e-91
+C: WKB at M = 5 exactly 3.00443417679142987785; limit M -> 5 3.00443417679142987785; alpha Mellin(6) 0.0
+    limit + Mellin = 3.00443417679142987784963093605  vs extracted 3.00443417679142987784963093797: 27.2 digits (E2 fit stability at grade 6 ~ 27-28 digits)
+    closed form check: alpha Mellin(6) == -(4/15) alpha nu (nu^2-1)(nu^2-4): 0.0

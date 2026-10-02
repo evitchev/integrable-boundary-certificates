@@ -1,0 +1,2 @@
+    PID COMMAND
+3549891 <home>/python312-lab/bin/python3 -B s2_symbolic_k.py

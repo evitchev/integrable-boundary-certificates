@@ -1,0 +1,7 @@
+VIR7: 6 lines, exit 0
+VIR4D: 11 lines, exit 0
+VIR5A: 29 lines, exit 0
+VIR5C: 9 lines, exit 0
+SOL2F: 8 lines, exit 0
+FAIL VIR5C: mismatch 1 :: k=-18/5 t = 11/2 spin 15: mismatches 1 / 45 | NEG (t+1/100): 43
+GATE FAIL

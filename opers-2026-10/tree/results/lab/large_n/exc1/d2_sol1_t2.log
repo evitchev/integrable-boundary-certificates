@@ -1,0 +1,9 @@
+level-2 singlet states: [((), ((1, 1),), ()), ((), (), (2,)), ((), (), (1, 1)), ((1,), (), (1,)), ((2,), (), ()), ((1, 1), (), ())]
+matrices done (0s)
+characteristic polynomial factors (degree): [(1, 1), (5, 1)]
+linear roots: [-8431/1680] ; level-shift value (Q^2 -> Q^2 + 4): -8431/1680
+done (1s)
+
+real	0m6.039s
+user	0m5.835s
+sys	0m0.204s

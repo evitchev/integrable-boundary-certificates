@@ -161,7 +161,11 @@ def check_privacy(failures: list[str]) -> int:
     # Root-RELATIVE exemptions (v1.1.2 audit fix: a basename match let a
     # manifested evil/EXPORT_RECORD.json carry private paths past the
     # screen on the live v1.1.1 tag -- a verifier defect, no leak).
+    # TIMESTAMP-2026-10-02.md (v1.2.2): a published hash commitment whose
+    # purpose is to NAME the private files it commits to; exempt by exact
+    # root-relative path only, like EXPORT_RECORD.json.
     skip = {"EXPORT_RECORD.json",
+            "TIMESTAMP-2026-10-02.md",
             "results/certification_manifest.json",
             "results/certification_manifest.partial.json"}
     for path in sorted(ROOT.rglob("*")):

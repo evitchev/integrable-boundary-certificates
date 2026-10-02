@@ -1,0 +1,8 @@
+k = -6 spin 1: leading 5/3  (86s)
+k = -6 spin 3: leading 125/18  (86s)
+k = -6 spin 5: leading 875/18  (86s)
+k = -6 spin 7: leading 89375/216  (86s)
+k = -6 spin 9: leading 7596875/1944  (86s)
+k = -6 spin 11: leading 459265625/11664  (86s)
+k = -6 spin 13: leading 14509765625/34992  (86s)
+written prediction_km6.json 4eb36825a82af7198b687e21bf878f2e07d707fb8a23afd9e5bdd144b7545405 odd orders vanish: {'3': False, '5': False, '7': False, '9': False, '11': False, '13': False}

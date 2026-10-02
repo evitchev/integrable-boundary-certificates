@@ -1,0 +1,5 @@
+t = 2, xi-exponents (67/100, 1/5): PX^2 = 13467/20000, pi^2 = 3/50
+two-point system: zero-dimensional, 28 ordered solutions (14 unordered); I_1 = Delta + 1 on all (r21 = s21 = -b)
+I_3 eliminant: degree 8; factor degrees [2, 6]
+data level-1 characteristic polynomial: e**2 - 8734533601*e/1800000000 - 89535373883401972799/12960000000000000000
+data polynomial divides the eliminant: True

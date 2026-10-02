@@ -1,0 +1,5 @@
+NUM1 post-hoc conjecture, written BEFORE diag_generic_M.py printed any fit (its data loop was still running):
+log D(-e) contains, beyond the WKB family, the term  +alpha * Mellin(M+1) * e^(-(M+1)/2),  Mellin(s) = int_0^inf t^(s-1) I_nu(t) K_nu(t) dt
+  = Gamma(s/2) Gamma(s/2 + nu) Gamma(1/2 - s/2) / (4 sqrt(pi) Gamma(1 + nu - s/2)),  nu = l + 1/2  (first order in alpha, small-x Bessel region).
+At M = 51/10, point A (alpha = 1, l = 1/3): predicted coefficient of e^(-(M+1)/2) = -0.309472078437814431662503681189
+(At M = 5 this is -(4/15) alpha nu (nu^2 - 1)(nu^2 - 4); it accounts for the grade-6 residual at A and B after the M -> 5 limit of the WKB coefficient.)

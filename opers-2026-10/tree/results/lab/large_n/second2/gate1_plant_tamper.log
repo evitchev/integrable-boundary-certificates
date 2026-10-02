@@ -1,0 +1,53 @@
+
+============================================================
+GATE 1 PLANT: M = 5, t = 2
+============================================================
+Spin 3 fit equations:
+  6*sX - 120*sY
+  14*cX - 120*cY - 7*sX - 390
+  -360*cX*sY - 2400*cY*sY - sX**2 + 6600*sY
+  140*cX**2 - 2400*cX*cY - 7800*cX - 8000*cY**2 + 44000*cY - 7*sX**2 + 48300
+  Solutions: 2
+
+  Solution [0]: {cX: 0, cY: 15/4, sX: -120, sY: -6}
+    spin 5: MATCH
+    spin 7: MATCH
+    spin 9: MATCH
+    => MATCH ALL
+    Dictionary: sX=-120, sY=-6, cX=0, cY=15/4
+    (SUPER3b expects: sX=-4M(M+1)=-120, sY=-(M+1)=-6, cX=0, cY=(M-1)^2/4=4)
+
+  Solution [1]: {cX: 45, cY: -5, sX: 120, sY: 6}
+    spin 5: 6 MISMATCH
+    spin 7: 10 MISMATCH
+    spin 9: 15 MISMATCH
+    => FAILS
+
+  RESULT: PASS
+
+============================================================
+GATE 1 TAMPER: M = 51/10, t = 2
+============================================================
+Spin 3 fit equations:
+  6*sX - 119*sY
+  1200*cX - 10200*cY - 600*sX - 34697
+  -8925*cX*sY - 60690*cY*sY - 25*sX**2 + 169932*sY
+  75000*cX**2 - 1275000*cX*cY - 4337125*cX - 4335000*cY**2 + 24276000*cY - 3750*sX**2 + 27997164
+  Solutions: 2
+
+  Solution [0]: {cX: 63257/2700 - 527*sqrt(595462114)/561600, cY: -697/1080 + sqrt(595462114)/5616, sX: -51*sqrt(595462114)/10400, sY: -9*sqrt(595462114)/36400}
+    spin 5: 9 MISMATCH
+    spin 7: 14 MISMATCH
+    spin 9: 20 MISMATCH
+    => FAILS
+
+  Solution [1]: {cX: 527*sqrt(595462114)/561600 + 63257/2700, cY: -sqrt(595462114)/5616 - 697/1080, sX: 51*sqrt(595462114)/10400, sY: 9*sqrt(595462114)/36400}
+    spin 5: 9 MISMATCH
+    spin 7: 14 MISMATCH
+    spin 9: 20 MISMATCH
+    => FAILS
+
+  RESULT: FAIL
+
+============================================================
+GATE 1: PASS (plant recovered, tamper fails as expected)

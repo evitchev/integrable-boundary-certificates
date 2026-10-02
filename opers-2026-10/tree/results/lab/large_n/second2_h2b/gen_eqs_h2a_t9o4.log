@@ -1,0 +1,9 @@
+tag h2a_t9o4 M 21/5 unknowns [sX, sY, cX, cY]
+eq[0] (total deg 1): 2655*sX - 36540*sY
+  denom[0]: 1711*sX
+eq[1] (total deg 1): 23010*cX - 163800*cY - 14455*sX - 807534
+  denom[1]: 7670*sX
+eq[2] (total deg 2): -80753400*cX*sY + 1197050400*cY*sY + 45135*sX**2 + 506751336*sY
+  denom[2]: 1890655*sX**2
+eq[3] (total deg 2): 1271302500*cX**2 - 18099900000*cX*cY - 89232507000*cX + 134152200000*cY**2 + 113582196000*cY - 296261125*sX**2 + 1263708059796
+  denom[3]: 423767500*sX**2

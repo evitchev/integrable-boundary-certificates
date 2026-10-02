@@ -1,0 +1,8 @@
+k = 10/3 spin 1: leading -143/15  (60s)
+k = 10/3 spin 3: leading -265837/1350  (60s)
+k = 10/3 spin 5: leading -593614021/182250  (60s)
+k = 10/3 spin 7: leading -9617716823/729000  (60s)
+k = 10/3 spin 9: leading 806124825660583/492075000  (60s)
+k = 10/3 spin 11: leading 9640014576571472093/132860250000  (60s)
+k = 10/3 spin 13: leading 320272217085613826033/221433750000  (60s)
+written prediction_k10_3_tamper_M.json 3a8c63b20844d8bf82c085f77b40bc240def6580cd89dcd756196ed6474349b0 odd orders vanish: {'3': True, '5': True, '7': True, '9': True, '11': True, '13': True}

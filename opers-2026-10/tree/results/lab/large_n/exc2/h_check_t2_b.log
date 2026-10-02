@@ -1,0 +1,5 @@
+t = 2, xi-exponents (2/3, 1/5): PX^2 = 2/3, pi^2 = 3/50
+two-point system: zero-dimensional, 26 ordered solutions (13 unordered); I_1 = Delta + 1 on all (r21 = s21 = -b)
+I_3 eliminant: degree 7; factor degrees [1, 6]
+data level-1 characteristic polynomial: e**2 - 2992*e/625 - 2601984/390625
+data polynomial divides the eliminant: False

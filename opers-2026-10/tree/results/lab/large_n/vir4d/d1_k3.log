@@ -1,0 +1,5 @@
+seal hash ok ab1bd1d98fed6f7df04134ed26acccd8bbe07f5bcb631b9d02f83325f7025dc4
+k = 3 (t = 11/5, order 7) solved to order 14  (157s)
+   spin 11: leading coefficient 32768540672/729; 28 monomials; symmetric: True  (160s)
+   spin 13: leading coefficient 1229784055808/2187; 36 monomials; symmetric: True  (162s)
+written prediction_partial_3.json a142b59cf1ceca453b313ab3e3e9d038cba7a489d0d49562998a7a80d084ebfd

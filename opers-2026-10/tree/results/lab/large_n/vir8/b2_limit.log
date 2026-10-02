@@ -1,0 +1,7 @@
+b1: Sol-3 ODE, k0 = 3 (t0 = 11/5), spin 7 vs certified Sol-3: max|monic - certified| = 4.2857e-09 (h=1e-8), 4.2857e-17 (h=1e-16); un-normalised lead 1.190e-10, 1.190e-18  -> converges O(h)  (7s)
+b2: Sol-3 ODE, k0 = 1 (t0 = 5/3), spin 5 vs certified Sol-3: max|monic - certified| = 1.2000e-08 (h=1e-8), 1.2000e-16 (h=1e-16); un-normalised lead 3.333e-10, 3.333e-18  -> converges O(h)  (9s)
+b3: Sol-2 ODE, k0 = 1 (t0 = 5/3), spin 5 vs certified Sol-2: max|monic - certified| = 4.4000e-08 (h=1e-8), 4.4000e-16 (h=1e-16); un-normalised lead 1.000e-09, 1.000e-17  -> converges O(h)  (10s)
+b4: Sol-3 ODE, k0 = 1/2 (t0 = 7/5), spin 9 vs certified Sol-3: max|monic - certified| = 3.6745e-07 (h=1e-8), 3.6745e-15 (h=1e-16); un-normalised lead 7.407e-11, 7.407e-19  -> converges O(h)  (37s)
+x1 (cross-check: Sol-2 ODE limit vs the SOL-3 table): Sol-2 ODE, k0 = 1 (t0 = 5/3), spin 5 vs certified Sol-3: max|monic - certified| = 5.0000e+00 (h=1e-8), 5.0000e+00 (h=1e-16); un-normalised lead 1.000e-09, 1.000e-17  -> does NOT converge to this charge  (38s)
+x2 (cross-check: Sol-3 ODE limit vs the SOL-2 table): Sol-3 ODE, k0 = 1 (t0 = 5/3), spin 5 vs certified Sol-2: max|monic - certified| = 5.0000e+00 (h=1e-8), 5.0000e+00 (h=1e-16); un-normalised lead 3.333e-10, 3.333e-18  -> does NOT converge to this charge  (40s)
+directional limits PASS

@@ -1,0 +1,14 @@
+t = 2 (b = 2/3), exponents [-1, 0, 3, 4], momenta (1/2, 1/3)
+indicial conditions fix: [{r04: 0, r13: 12*z**2, r22: -6*z}]
+no-log conditions: 9 polynomial equations in 7 unknowns  (1s)
+   at exponent 0, monomial [1]: degree 4, 4 terms
+   at exponent 3, monomial [E^1]: degree 6, 1 terms
+   at exponent 3, monomial [kap1^1]: degree 8, 13 terms
+   at exponent 3, monomial [1]: degree 8, 47 terms
+   at exponent 4, monomial [E^1 kap1^1]: degree 7, 1 terms
+   at exponent 4, monomial [E^1]: degree 6, 1 terms
+   at exponent 4, monomial [kap1^1]: degree 8, 25 terms
+   at exponent 4, monomial [kap4^1]: degree 11, 4 terms
+   at exponent 4, monomial [1]: degree 8, 56 terms
+Groebner basis computed: 1 elements  (1s)
+exit 124

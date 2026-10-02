@@ -1,0 +1,6 @@
+order 2: cG zero True; cB equal to the unshifted engine: True   (3s)
+order 3 (odd): cB = -A3 ; cG zero True
+order 4: cG zero True; cB equal to the unshifted engine: True   (3s)
+order 5 (odd): cB = A2*A3/3 + 15*A3/2 - B2/7 ; cG zero True
+order 6: cG zero True; cB equal to the unshifted engine: False   (3s)
+V2 translation covariance (d = 1/3) TAMPER: FAIL

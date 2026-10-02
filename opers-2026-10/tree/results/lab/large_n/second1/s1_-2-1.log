@@ -1,0 +1,12 @@
+k = -2, assign 1, control "": n = 2, sigma = -1, c = 1, s = 1/2; cocycle numerator degree 8 in nu, 9 coefficient equations
+solutions (exponents may depend on l0, l1): [{q1: 1/2 - l0, q2: 1/2 - l1, r1: l0 + l1}, {q1: 1/2 - l0, q2: l1 + 1/2, r1: l0 - l1}, {q1: 1/2 - l1, q2: 1/2 - l0, r1: l0 + l1}, {q1: 1/2 - l1, q2: l0 + 1/2, r1: -l0 + l1}, {q1: l0 + 1/2, q2: 1/2 - l1, r1: -l0 + l1}, {q1: l0 + 1/2, q2: l1 + 1/2, r1: -l0 - l1}, {q1: l1 + 1/2, q2: 1/2 - l0, r1: l0 - l1}, {q1: l1 + 1/2, q2: l0 + 1/2, r1: -l0 - l1}]
+  check F == 1 identically: True  exponents e_ij = [l1 + 1/2, l0 + 1/2, 1/2 - l0, 1/2 - l1]
+  check F == 1 identically: True  exponents e_ij = [1/2 - l1, l0 + 1/2, 1/2 - l0, l1 + 1/2]
+  check F == 1 identically: True  exponents e_ij = [l0 + 1/2, l1 + 1/2, 1/2 - l1, 1/2 - l0]
+  check F == 1 identically: True  exponents e_ij = [1/2 - l0, l1 + 1/2, 1/2 - l1, l0 + 1/2]
+  check F == 1 identically: True  exponents e_ij = [l1 + 1/2, 1/2 - l0, l0 + 1/2, 1/2 - l1]
+  check F == 1 identically: True  exponents e_ij = [1/2 - l1, 1/2 - l0, l0 + 1/2, l1 + 1/2]
+  check F == 1 identically: True  exponents e_ij = [l0 + 1/2, 1/2 - l1, l1 + 1/2, 1/2 - l0]
+  check F == 1 identically: True  exponents e_ij = [1/2 - l0, 1/2 - l1, l1 + 1/2, l0 + 1/2]
+RESULT: CLOSES
+exit 0

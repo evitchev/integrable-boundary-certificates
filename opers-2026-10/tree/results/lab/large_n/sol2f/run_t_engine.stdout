@@ -1,0 +1,6 @@
+(1) BLZ calibration ratios [-1, -1] (0.1s)
+    (|ratio| = 1; the overall sign is the branch S = -Sigma): True
+(2) Sol 3 k = 2: gwkb monic charges == thwkb, spins 1..9: {1: True, 3: True, 5: True, 7: True, 9: True} (gwkb 4.9s)
+(2) Sol 3 k = -6: gwkb monic charges == thwkb, spins 1..9: {1: True, 3: True, 5: True, 7: True, 9: True} (gwkb 5.5s)
+ENGINE CONTROLS PASS
+exit 0

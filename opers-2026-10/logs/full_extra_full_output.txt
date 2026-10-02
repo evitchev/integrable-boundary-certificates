@@ -1,0 +1,122 @@
+
+===== sol3_vir5a_compare: argv ['e3_compare.py']  exit 0  5s
+seal and prediction hashes ok
+A k = 10/3 (t = 9/4, n = 22/3): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+A k = 5/3 (t = 21/11, n = 17/3): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+B k = 2/3 (t = 3/2, n = 14/3): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+B k = 1/2 (t = 7/5, n = 9/2): 0 mismatches in 98 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: operator gives NO charge (spin/n = 2, an integer); certified polynomial exists
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+C (regression, cc item 297) k = -6 (t = 4, n = -2): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+C k = -18/5 (t = 11/2, n = 2/5): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+C k = -6/5 (t = -2, n = 14/5): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+D k = -2/5 (t = 1/2, n = 18/5): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+CONTROL k = 4 (t = 7/3, n = 8): 0 mismatches in 119 coefficients
+      spin 1: 0 / 3 mismatches
+      spin 3: 0 / 6 mismatches
+      spin 5: 0 / 10 mismatches
+      spin 7: 0 / 15 mismatches
+      spin 9: 0 / 21 mismatches
+      spin 11: 0 / 28 mismatches
+      spin 13: 0 / 36 mismatches
+PASS  k = 4 from the continued formula equals the registered VIR4d prediction at spins 11, 13 (string-identical coefficients)
+TAMPER Gamma ratio -> u^k k = 10/3 (t = 9/4, n = 22/3): 84 mismatches in 119 coefficients
+      spin 1: 1 / 3 mismatches (first: PX^0 pi^0 predicted -19/72, certified -1/6)
+      spin 3: 3 / 6 mismatches (first: PX^0 pi^0 predicted 3287/62400, certified 1867/50700)
+      spin 5: 6 / 10 mismatches (first: PX^0 pi^0 predicted -1518495409/35569497600, certified -80437/2940600)
+      spin 7: 10 / 15 mismatches (first: PX^0 pi^0 predicted 89816904053861/1414544601600000, certified 7470091/194350000)
+      spin 9: 15 / 21 mismatches (first: PX^0 pi^0 predicted -59928996976423579/420354162708480000, certified -8722503789173/104637793260000)
+      spin 11: 21 / 28 mismatches (first: PX^0 pi^0 predicted 113963240196605535329/254241341210787840000, certified 12164468960421/47302728200000)
+      spin 13: 28 / 36 mismatches (first: PX^0 pi^0 predicted -27032467653615933211402515247/14245440173611575312384000000, certified -37044667157603773979/34357390573506000000)
+PASS  TAMPER Gamma ratio -> u^k fails (84 of 119)
+TAMPER M = 1/k + 1/10 k = 10/3 (t = 9/4, n = 22/3): 84 mismatches in 119 coefficients
+      spin 1: 1 / 3 mismatches (first: PX^0 pi^0 predicted -175/936, certified -1/6)
+      spin 3: 3 / 6 mismatches (first: PX^0 pi^0 predicted 279727/7300800, certified 1867/50700)
+      spin 5: 6 / 10 mismatches (first: PX^0 pi^0 predicted -74304614183/2496978731520, certified -80437/2940600)
+      spin 7: 10 / 15 mismatches (first: PX^0 pi^0 predicted 527025799852909/11916123723878400, certified 7470091/194350000)
+      spin 9: 15 / 21 mismatches (first: PX^0 pi^0 predicted -1584840734687926373/15759678065887641600, certified -8722503789173/104637793260000)
+      spin 11: 21 / 28 mismatches (first: PX^0 pi^0 predicted 1925884975399222630496051/5957419427442782208000000, certified 12164468960421/47302728200000)
+      spin 13: 28 / 36 mismatches (first: PX^0 pi^0 predicted -146801481801707217410827135117087/104145971033815893695928729600000, certified -37044667157603773979/34357390573506000000)
+PASS  TAMPER M = 1/k + 1/10 fails (84 of 119)
+
+SUMMARY: {'10/3': '0/119 mismatches', '5/3': '0/119 mismatches', '2/3': '0/119 mismatches', '1/2': '0/98 mismatches', '-6': '0/119 mismatches', '-18/5': '0/119 mismatches', '-6/5': '0/119 mismatches', '-2/5': '0/119 mismatches', '4': '0/119 mismatches'}
+RESULT: cell A PASSES; controls fired
+
+===== second2_h2b_t9o4: argv ['check.py', 'h2b', '9/4']  exit 0  1s
+=== CHECK h2b_t9o4: M = 21/5, rotated = True, saturated minimal primes = 1
+
+--- prime 1: degree 12 in pi_rot (irreducible over Q: True); real roots: 6
+  spin 5: 16 monomials compared, EXACT nonzero residuals: 11 (outside cert support, tot.deg>k: 6 [(6, 0), (5, 0), (4, 1), (4, 0)]; inside, tot.deg<=k: 5 [(1, 2), (0, 3), (0, 2), (0, 1), (0, 0)])
+     first in-support failing monomial X^1Y^2: |monic-cert| over the 12 roots: min 1.408e+00 max 2.346e+01
+     first out-of-support monomial X^6Y^0: |monic coeff| over roots: min 9.729e-01 max 1.242e+14
+  spin 7: 25 monomials compared, EXACT nonzero residuals: 23 (outside cert support, tot.deg>k: 10 [(8, 0), (7, 0), (6, 1), (6, 0)]; inside, tot.deg<=k: 13 [(2, 2), (1, 3), (0, 4), (3, 0), (2, 1), (1, 2)])
+     first in-support failing monomial X^2Y^2: |monic-cert| over the 12 roots: min 1.216e-01 max 1.873e+01
+     first out-of-support monomial X^8Y^0: |monic coeff| over roots: min 2.230e-01 max 1.928e+16
+  spin 9: 36 monomials compared, EXACT nonzero residuals: 35 (outside cert support, tot.deg>k: 15 [(10, 0), (9, 0), (8, 1), (8, 0)]; inside, tot.deg<=k: 20 [(4, 1), (3, 2), (2, 3), (1, 4), (0, 5), (4, 0)])
+     first in-support failing monomial X^4Y^1: |monic-cert| over the 12 roots: min 2.149e+00 max 2.530e+00
+     first out-of-support monomial X^10Y^0: |monic coeff| over roots: min 8.407e-02 max 1.402e+14
+  => prime 1 (12 solutions): FAILS
+
+RESULT h2b_t9o4: FAIL (no solution matches)
+
+===== num1_shoot: argv ['n2_shoot.py']  exit 0  281s
+shooting scan E in [0, 60] step 1/4 (98s)
+brackets: [(7.0, 7.25), (23.0, 23.25), (45.5, 45.75)]
+eigenvalue: shooting 7.22787494445730508594992003  zero of D 7.22787494445730508594992003  |diff| 0.0
+eigenvalue: shooting 23.04108840264275887428250043  zero of D 23.04108840264275887428250043  |diff| 0.0
+eigenvalue: shooting 45.56839039043296518791372547  zero of D 45.56839039043296518791372547  |diff| 0.0
+N2: lowest 3 levels agree to 99 digits (sealed >= 10): True

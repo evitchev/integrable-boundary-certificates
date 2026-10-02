@@ -1,0 +1,63 @@
+t = 2, xi-exponents (1/2, 1/3): self-adjoint (z2 = -z) two-point solutions: vdim 4 (ordered)
+  I_3 eliminant on them : e**2 - 89*e/32 + 20209/4096
+  data level-1 polynomial: e**2 - 89*e/32 + 20209/4096
+  Jz[1]=3779136*z^4-33048*z^2+343
+  rho - sig reduced: 624/19*z2+784/1539*qq
+  self-adjoint eliminant == data polynomial: True
+exit 0
+t = 2, xi-exponents (3/7, 2/9): self-adjoint (z2 = -z) two-point solutions: vdim 4 (ordered)
+  I_3 eliminant on them : e**2 - 2392688*e/1750329 + 6875350266880/3063651608241
+  data level-1 polynomial: e**2 - 2392688*e/1750329 + 6875350266880/3063651608241
+  Jz[1]=239338060927275176307*z^4-1759193914418648064*z^2+6698059169792000
+  rho - sig reduced: 7156107/113822*z2+1241190400/2032917831*qq
+  self-adjoint eliminant == data polynomial: True
+exit 0
+t = 2, xi-exponents (2/5, 3/11): self-adjoint (z2 = -z) two-point solutions: vdim 4 (ordered)
+  I_3 eliminant on them : e**2 - 109812368*e/82355625 + 23043529604601856/6782448969140625
+  data level-1 polynomial: e**2 - 109812368*e/82355625 + 23043529604601856/6782448969140625
+  Jz[1]=3634508724797471748046875*z^4-49998833937803013120000*z^2+238112531091986317312
+  rho - sig reduced: 168168825/2329024*z2+9680408192/8916704775*qq
+  self-adjoint eliminant == data polynomial: True
+exit 0
+t = 2, xi-exponents (5/4, 3/7): self-adjoint (z2 = -z) two-point solutions: vdim 4 (ordered)
+  I_3 eliminant on them : e**2 - 293028961*e/11063808 - 41924967187043135/489631389843456
+  data level-1 polynomial: e**2 - 293028961*e/11063808 - 41924967187043135/489631389843456
+  Jz[1]=37947320169761931264*z^4+25233993803996514432*z^2-15256930030867629845
+  rho - sig reduced: -180266688/178721761*z2+803537976020/101335238487*qq
+  self-adjoint eliminant == data polynomial: True
+exit 0
+t = 2, xi-exponents (67/100, 1/5): self-adjoint (z2 = -z) two-point solutions: vdim 4 (ordered)
+  I_3 eliminant on them : e**2 - 8734533601*e/1800000000 - 89535373883401972799/12960000000000000000
+  data level-1 polynomial: e**2 - 8734533601*e/1800000000 - 89535373883401972799/12960000000000000000
+  Jz[1]=2242016718750000000000000000*z^4+184795613505426588750000000*z^2-12035211297197126911691
+  rho - sig reduced: 92878920000/7570984801*z2+83826191176364/9582027638765625*qq
+  self-adjoint eliminant == data polynomial: True
+exit 0
+t = 9/4, xi-exponents (1/2, 1/3): self-adjoint (z2 = -z) two-point solutions: vdim 4 (ordered)
+  I_3 eliminant on them : e**2 - 8270237*e/2190240 + 69653071280713/19188605030400
+  data level-1 polynomial: e**2 - 8270237*e/2190240 + 69653071280713/19188605030400
+  Jz[1]=39063355827134155463232*z^4+250292869215469385760*z^2+539408414687759375
+  rho - sig reduced: 1194727248/43503989*z2+570939437200/3727552289487*qq
+  self-adjoint eliminant == data polynomial: True
+exit 0
+t = 2, xi-exponents (2/3, 1/5): self-adjoint (z2 = -z) two-point solutions: vdim 2 (ordered)
+  I_3 eliminant on them : e + 704/625
+  data level-1 polynomial: e**2 - 2992*e/625 - 2601984/390625
+  Jz[1]=140625*z^2+11264
+  rho - sig reduced: 11264/5625*qq
+  self-adjoint eliminant == data polynomial: False
+exit 2
+t = 2, xi-exponents (2/3, 3/7): self-adjoint (z2 = -z) two-point solutions: vdim 2 (ordered)
+  I_3 eliminant on them : e - 2816/2401
+  data level-1 polynomial: e**2 - 14256*e/2401 + 32215040/5764801
+  Jz[1]=9529569*z^2+281600
+  rho - sig reduced: 56320/64827*qq
+  self-adjoint eliminant == data polynomial: False
+exit 2
+t = 2, xi-exponents (3/7, 2/3): self-adjoint (z2 = -z) two-point solutions: vdim 2 (ordered)
+  I_3 eliminant on them : e - 2816/2401
+  data level-1 polynomial: e**2 - 14256*e/2401 + 32215040/5764801
+  Jz[1]=9529569*z^2+281600
+  rho - sig reduced: 56320/64827*qq
+  self-adjoint eliminant == data polynomial: False
+exit 2

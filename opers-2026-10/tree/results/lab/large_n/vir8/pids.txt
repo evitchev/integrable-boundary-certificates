@@ -1,0 +1,6 @@
+3458291 a_equiv 3 2 8
+3458295 a_equiv 3 10/3 8
+3458299 a_equiv 2 2 8
+3458303 a_equiv 2 10/3 8
+3458307 a_equiv 3 2 6 tamper
+3458311 a_equiv 2 2 6 tamper

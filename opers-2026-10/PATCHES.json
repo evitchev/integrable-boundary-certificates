@@ -1,0 +1,206 @@
+[
+ {
+  "path": "results/lab/large_n/vir4d/d3_compare.py",
+  "kind": "functional: absolute repo path -> relative to __file__",
+  "sha256_archived": "67d963e832f659b0bd4f9ffedd5202b2e5d848bcc5498ae2f9b22ba92166cf22",
+  "sha256_kit": "61bb1e86fd91fbeed70a479bb822ed434ad6a259f889eae58dad4800a804b65c"
+ },
+ {
+  "path": "results/lab/large_n/vir5/e3_compare.py",
+  "kind": "functional: absolute repo path -> relative to __file__",
+  "sha256_archived": "54f6b6da0da1efd9d35219095f0846c2ea4daf995a1387e7c577d2a27a6ae320",
+  "sha256_kit": "b6c947060e311c3ad14101835031ce19d914b0651d394aacb3703f6c25cedf3e"
+ },
+ {
+  "path": "results/lab/large_n/vir5c/s3_f1_vs_ward.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "01b84af999f27e416b04e59ab4489eb3e5d28ff50c5342f8bbe07ae78a147847",
+  "sha256_kit": "a6a432fa9705ca859cac30712fedc07b3a15a48259c273712fc4fcc5155d41eb"
+ },
+ {
+  "path": "results/lab/large_n/vir5c/s2_merge.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "59b79d22235a8812fdb9888150a7201da4cc86cb14f770505ac68e9ef9d65087",
+  "sha256_kit": "ac19bc2346d5c385a513282a56b7547634c9d148f8d351256328c6aaa246a180"
+ },
+ {
+  "path": "results/lab/large_n/vir5c/s1_f1_vs_engine.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "f91f583170661eb6e389eaf3da6048b53a2882c58fb8f9a263f0a6209a856c77",
+  "sha256_kit": "cc9a29ea237d0b9efbd61c0b79b62c7039e26864cb331f15a622d351e3cfad78"
+ },
+ {
+  "path": "results/lab/large_n/vir5c/s6_stripped.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "cb3852ad9847ad61e0333d984aec7f998b9473fffdf291f5fc6df8e449110ce4",
+  "sha256_kit": "ccb3eb8e5cd9803895f0d494f68b734e87dc914ed757af141de41e89d8b7442f"
+ },
+ {
+  "path": "results/lab/large_n/vir5c/s5_blind_spin15.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "3ae2f5dd6f1021b5760eafab1ad51e22c02b92adaefbcf928ddde74280fff964",
+  "sha256_kit": "11fa91bb275e584aab1e260d36069bc811ef3a8dbde1d229195b3d3f1188073d"
+ },
+ {
+  "path": "results/lab/large_n/vir5c/s4_layers_vs_ward.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "6ebfa535e59b38434c8556b51ce983d02608ece0dc587f676abfe677404df178",
+  "sha256_kit": "570f4380ddb84d39c71604efdac9904747ec7feaacd21819b13aaa25186ece7c"
+ },
+ {
+  "path": "results/lab/large_n/exc2/f_sing.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "fb7e29298546230c24c40aa0427aae4a76bc46b67e228a0cf7703c1b88493c18",
+  "sha256_kit": "1accd6c2267237c2b902026b019852520eeecf3ffcc9a467166c1740f5f398e4"
+ },
+ {
+  "path": "results/lab/large_n/exc2/u3_interp_t9_4_v0_sympify_locals.log",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "62e525209656d0f9282654c20945c14c863a913d61e2fc51e01a47c9deeeda96",
+  "sha256_kit": "cd2c4dbf352b7201057cfdf748af2ca61f1658dd53c092b8e9d95115dae75e98"
+ },
+ {
+  "path": "results/lab/large_n/exc2/w_selfadj.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "ff03ac2eded014e25f10d84e898cf57a2f9218d09e5cd62b3882daf9c9e4f05b",
+  "sha256_kit": "f2419b08fd62f11ffe4dd940278baddf6e4cdbb1d50564fe8ca282d797024652"
+ },
+ {
+  "path": "results/lab/large_n/exc2/u3_point.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "5e5fbeb2582be30cdd73b71085fbac27f1f31bda527724c87560e733ffa3a790",
+  "sha256_kit": "2683399c8fbf8e50947852e1d11a21f136fc813d7eda6300999add1c35dc2394"
+ },
+ {
+  "path": "results/lab/large_n/exc2/s_sym_v0_linear_logic.log",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "836d14b00e29fd040c547eca495cff34b38fd1c3d98933e079de0ccf49a64b2b",
+  "sha256_kit": "0b2ef6b48e97e82d735f3169476aa9e38c7e7bcf59f3b2190c7a4ec975c132e7"
+ },
+ {
+  "path": "results/lab/large_n/exc2/d1_data.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "707c18f29b023bd5f1d6e6429140af69141c191fd120f5c75e24fa21b0281758",
+  "sha256_kit": "cd553df3e132d6f1ea99830f39d8a7aef525e12eb109649d265c619d44625751"
+ },
+ {
+  "path": "results/lab/large_n/exc2/u3_interp_t2_v0_sympify_locals.log",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "aaecf2da2b51092062b10d9435f1e7e4269978c5c886e0aa15d8a77df593265c",
+  "sha256_kit": "a3ca23982206ab2fb4bd152c15af3ae26016ed873174d591bf249392722d32e2"
+ },
+ {
+  "path": "results/lab/large_n/exc2/d1_data_exc2.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "4148b0db71c48260f786da16a0702d49c7704597d96413c4fe3e94155f3795af",
+  "sha256_kit": "9544ab3e53a7898d6c93bad3a264752006c3e68d3479cfde3d701b4e65cf5731"
+ },
+ {
+  "path": "results/lab/large_n/exc2/u3_one.sh",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "21a89417f414cb61803add6ab44d8b9ee37fdfd14fcacc9eaf38ad09aa55801a",
+  "sha256_kit": "6f8372f239bddab809115e22ab0f0e36aece191a1e988dafc856b8f4eadb0335"
+ },
+ {
+  "path": "results/lab/large_n/exc2/h_run.sh",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit); then: privacy: private path in a file the kit does not execute -> redacted (lead, pre-release)",
+  "sha256_archived": "a3e3c54aea8b19179892041178871adf593582ed5240efd0602be9af7500b587",
+  "sha256_kit": "69fd7cbf8496ffb3762a067d6c5ea9176f697adadf25526731f19410098a034d"
+ },
+ {
+  "path": "results/lab/large_n/exc2/u3_predict.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "6fa41b36063fc1ae7ba1b55a71c35718b5e5340bbd15124691a8ef0da3be446e",
+  "sha256_kit": "096d83c89a0b45e06080ce7bf77a196745c163b8e9c56d60c14fd323ff7a4c7f"
+ },
+ {
+  "path": "results/lab/large_n/exc2/tamper_mid/h_run.sh",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit); then: privacy: private path in a file the kit does not execute -> redacted (lead, pre-release)",
+  "sha256_archived": "a3e3c54aea8b19179892041178871adf593582ed5240efd0602be9af7500b587",
+  "sha256_kit": "69fd7cbf8496ffb3762a067d6c5ea9176f697adadf25526731f19410098a034d"
+ },
+ {
+  "path": "results/lab/large_n/second1/s2_pid.txt",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "7162e199f0b071ef05cd15b4a3f10ac240bfacb3a13736b58e700b142a597325",
+  "sha256_kit": "40763aca49b753a82c567417a796a243fda7682cabf9be1f02fa54cdbc442046"
+ },
+ {
+  "path": "results/lab/large_n/vir7/h1_scan_v0_Scontrol_scale.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "954a0c6a539c14429916d727c919428f7971b0b64de9f794a2805a5dc3096e5f",
+  "sha256_kit": "085ef9e804f90805df17481ab3e03eedb92446eea3fa04536f7837c9ae922528"
+ },
+ {
+  "path": "results/lab/large_n/vir7/h1_core.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "a7ef4aa5a0befb3ef693016a356a2e5b67ee595de0abda6b4a2cfc3734c0bb82",
+  "sha256_kit": "438228dc24c8f43710ed6ea30e6de6965403fe9b6f7ac46129af95311021f3ec"
+ },
+ {
+  "path": "results/lab/large_n/vir7/s2_compare.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "fb8da47d4ce0970ca83ec27e35ae6c9f171ecf4c609783df48e192c357b57cbf",
+  "sha256_kit": "0c53ada94b08ec7d77c566316235ecad489f8b5827cee4a17dbfb3dc62265999"
+ },
+ {
+  "path": "results/lab/large_n/vir7/h1_scan.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "b9671652b9772f49fa87dc2143d3ce680b3df12c2554a049c5190a3013191681",
+  "sha256_kit": "8f1b3d6ef18df86bbed430dbb0bd393b99f3d18288f0178e5e140613c83b9835"
+ },
+ {
+  "path": "results/lab/large_n/vir7/g0_validate.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "6441cbfbfc01d1ac0fe270a588b34b206c6577680f7d4f6ee52982deaf201458",
+  "sha256_kit": "9d05be5e136d4fccbdde246f554acb559acd83f876f0a5cc19e544646a73e4e4"
+ },
+ {
+  "path": "results/lab/large_n/vir7/s1_pred_t7_3_v0_zero_poly_assert.log",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "4f9e7834bad1695fef13fac6c52e15de00aac578cdd869413dff4393e031bbaf",
+  "sha256_kit": "b827ea3a3841d3842a7fe7acd45c1ed07688fd5fa35e659bea78aee04f7e6ab2"
+ },
+ {
+  "path": "results/lab/large_n/vir7/s3_blind.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "03a4cb858fa1c7066d2e6c120d5a31fe681dc2d6695595fac511c06ae74e0ccb",
+  "sha256_kit": "9e14dcde038506a8d8fbc132ade611643ec74c817666c0ffdf5357c9668e1447"
+ },
+ {
+  "path": "results/lab/large_n/vir8/b_core.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "83dd34eba0ec529924599694eb9389ee8da70d83b734e3962ce9bc23ebf4c1d7",
+  "sha256_kit": "437543f76eaec99562da0a8b753fde4c4b73726ef9816be14b7f8fa836329a2a"
+ },
+ {
+  "path": "results/lab/large_n/vir8/b_nz.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "84b096d6f3b078a5f0352f6f1403fcc0544a1089571a46ebcfe684b71cc62636",
+  "sha256_kit": "d042056835f9ad1734a85efccf3f0b33a3361c25aa9126225c96b9a4fbdd6393"
+ },
+ {
+  "path": "results/lab/large_n/exc1/d2_level2.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "9ea00fce8d5c00a535f5d29edf4534e1b4e41f654a94813183dd5ec5f2d6ce99",
+  "sha256_kit": "d142b9f2bc576676ab9a6f07dff1116f8ba0dd646576ecd956d1716256f37518"
+ },
+ {
+  "path": "results/lab/large_n/exc1/d1_data.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "707c18f29b023bd5f1d6e6429140af69141c191fd120f5c75e24fa21b0281758",
+  "sha256_kit": "cd553df3e132d6f1ea99830f39d8a7aef525e12eb109649d265c619d44625751"
+ },
+ {
+  "path": "results/lab/large_n/second2_h2b/NOTE.md",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "b3def035040efe0fb3ca8f4515524aca2879d0632e71a3b8a66903781abc9521",
+  "sha256_kit": "a3add47cd0bba7297722365bb829070d1e6d46d48f4f6be87455f5a6e364f7af"
+ },
+ {
+  "path": "results/lab/large_n/super3/NOTE.md",
+  "kind": "privacy: private path in a file the kit does not execute -> redacted (lead, pre-release)",
+  "sha256_archived": "c8580b5c6d2d53130448ce443848a4ce8d6f8046ee2bae246828e6626d735ed6",
+  "sha256_kit": "8b227c67a5109340fdf41362815e72c28d1a9b393225cb021514154789d11964"
+ }
+]

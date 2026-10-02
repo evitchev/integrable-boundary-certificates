@@ -1,0 +1,18 @@
+data M = 51/10 point A: 40 points (2999s)
+F1 WKB family only: lsq residual 4.42e-28
+   grade 2: fit 0.122837573105655  WKB 0.122837573105655  agree 16.6 (stability 15.99)
+   grade 3: fit -0.128384360263069  WKB -0.128384360263099  agree 12.62 (stability 12.2)
+   grade 4: fit -0.430234265945873  WKB -0.430234265645548  agree 9.156 (stability 8.984)
+   grade 5: fit 0.470657066690611  WKB 0.470654068022619  agree 5.196 (stability 5.39)
+   grade 6: fit 2.54305397655119  WKB 2.67743562840141  agree 1.299 (stability 2.601)
+   grade 7: fit -56.3359142402767  WKB -8.66670192539264  agree -0.7404 (stability 0.5306)
+   grade 8: fit 56966.542380235  WKB -70.9599711898778  agree -2.905 (stability 0.2185)
+F2 + e^(-(M+1)/2): lsq residual 4.3e-42
+   grade 2: fit 0.122837573105655  WKB 0.122837573105655  agree 30.06 (stability 28.24)
+   grade 3: fit -0.128384360263099  WKB -0.128384360263099  agree 26.02 (stability 24.35)
+   grade 4: fit -0.430234265645548  WKB -0.430234265645548  agree 22.48 (stability 20.97)
+   grade 5: fit 0.470654068022619  WKB 0.470654068022619  agree 18.44 (stability 17.11)
+   grade 6: fit 2.6774356284014  WKB 2.67743562840141  agree 14.44 (stability 13.32)
+   grade 7: fit -8.6667019253971  WKB -8.66670192539264  agree 12.29 (stability 11.39)
+   grade 8: fit -70.959971182486  WKB -70.9599711898778  agree 9.982 (stability 9.332)
+   extra term e^(-(M+1)/2) coefficient: -0.3094720784377916350824342 (stability 12.03)

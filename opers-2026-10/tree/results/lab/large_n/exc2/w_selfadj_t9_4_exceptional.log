@@ -1,0 +1,21 @@
+t = 9/4, xi-exponents (8/13, 1/3): self-adjoint (z2 = -z) two-point solutions: vdim 2 (ordered)
+  I_3 eliminant on them : e - 219538/342225
+  data level-1 polynomial: e**2 - 1847396*e/342225 + 357376689604/117117950625
+  Jz[1]=4683447945891*z^2+220741120000
+  rho - sig reduced: 383897600/279926361*qq
+  self-adjoint eliminant == data polynomial: False
+exit 2
+t = 9/4, xi-exponents (10/13, 1/3): self-adjoint (z2 = -z) two-point solutions: vdim 4 (ordered)
+  I_3 eliminant on them : e**2 - 114020*e/13689 - 3343203356/4684718025
+  data level-1 polynomial: e**2 - 114020*e/13689 - 3343203356/4684718025
+  Jz[1]=7123524325700211*z^4+1049996387381760*z^2-15417081856000
+  rho - sig reduced: 191763/36434*z2+35425280/40022749*qq
+  self-adjoint eliminant == data polynomial: True
+exit 0
+t = 9/4, xi-exponents (1/3, 8/13): self-adjoint (z2 = -z) two-point solutions: vdim 2 (ordered)
+  I_3 eliminant on them : e - 219538/342225
+  data level-1 polynomial: e**2 - 1847396*e/342225 + 357376689604/117117950625
+  Jz[1]=4683447945891*z^2+220741120000
+  rho - sig reduced: 383897600/279926361*qq
+  self-adjoint eliminant == data polynomial: False
+exit 2

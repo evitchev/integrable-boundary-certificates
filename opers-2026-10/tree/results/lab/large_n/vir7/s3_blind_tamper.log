@@ -1,0 +1,15 @@
+spin 11 table sha256 921dd19b24f517bc0b49382beabe838c1a077c11cbcb9edd1a39cd4e8ccb5d92
+spin 13 table sha256 f6f46489394c64b72bd69a43c08729d41d30d5466003e2deec72722569ebbbd0
+t = -2   spin 11: 1 / 28 mismatches  first: X^2 Y^1 predicted 13891185/1696006 certified 6946440503/848003000
+t = -2   spin 13: 1 / 36 mismatches  first: X^2 Y^1 predicted 81461237/2748560 certified 2036599639/68714000
+t = 1/2  spin 11: 1 / 28 mismatches  first: X^2 Y^1 predicted 690044465/67305654 certified 345055885327/33652827000
+t = 1/2  spin 13: 1 / 36 mismatches  first: X^2 Y^1 predicted 207230178701/5466306960 certified 5180891125199/136657674000
+t = 3/2  spin 11: 1 / 28 mismatches  first: X^2 Y^1 predicted -290548489/51804250 certified -1161986739/207217000
+t = 3/2  spin 13: 1 / 36 mismatches  first: X^2 Y^1 predicted -600545800127/31713090000 certified -600514087037/31713090000
+t = 4    spin 11: 1 / 28 mismatches  first: X^2 Y^1 predicted -2358543/42550 certified -47170009/851000
+t = 4    spin 13: 1 / 36 mismatches  first: X^2 Y^1 predicted 6305741897/15810000 certified 6305757707/15810000
+t = 7/3  spin 11: 1 / 28 mismatches  first: X^2 Y^1 predicted -1506681/150800 certified -7532651/754000
+t = 7/3  spin 13: 1 / 36 mismatches  first: X^2 Y^1 predicted -294541351/9120000 certified -294532231/9120000
+t = 9/4  spin 11: 1 / 28 mismatches  first: X^2 Y^1 predicted -307313912125/31692502738 certified -153641109811131/15846251369000
+t = 9/4  spin 13: 1 / 36 mismatches  first: X^2 Y^1 predicted -196410663075025/6206387309616 certified -24550557085964423/775798413702000
+T2b mode tamper: 12 mismatches / 384 coefficients

@@ -1,0 +1,26 @@
+point A: conditions generated (1s)
+point B: conditions generated (1s)
+14 equations in 14 unknowns (+ q); total degrees [8, 6, 10, 6, 13, 12, 15, 8, 6, 10, 6, 13, 12, 15]  (3s)
+written h_two_v2_t2_1-3_5-4.sing; vacuum monic I_1 = 75/32  (3s)
+linear eliminations done (1s)
+eq  4 -> degree 9, 16 terms  (1s)
+eq  5 -> degree 2, 3 terms  (1s)
+eq  6 -> degree 18, 70 terms  (1s)
+eq 11 -> degree 9, 16 terms  (1s)
+eq 12 -> degree 2, 3 terms  (1s)
+eq 13 -> degree 18, 70 terms  (2s)
+e-relation: degree 12
+written h_red_t2_1-3_5-4.sing / .ms  (2s)
+r11 = rho/3 - 14/9 ; s11 = sig/3 - 14/9
+eq 0 -> degree 6, 14 terms
+eq 2 -> degree 10, 59 terms
+eq 3 -> degree 6, 14 terms
+eq 5 -> degree 10, 59 terms
+eq 8 -> degree 6, 23 terms
+--- eq 0 : qq**3*(2304*z**2*z2 - 2304*z*z2**2) + qq**2*(-576*rho*z*z2 - 288*sig*z*z2 + 192*z**2 + 1536*z*z2) + qq*(-96*rho*z - 96*sig*z + 704*z) + 18*rho**3 - 252*rho**2 + 943*rho - 288*z - 742
+--- eq 2 : qq**5*(552960*z**4*z2 - 1105920*z**3*z2**2 + 442368*z**2*z2**3) + qq**4*(-96768*rho*z**3*z2 + 82944*rho*z**2*z2**2 - 69120*sig*z**3*z2 + 41472*sig*z**2*z2**2 + 18432*z**4 - 221184*z**3*z2 + 331776*z**2*z2**2 - 36864*z*z2**3) + qq**3*(13824*rho**2*z**2*z2 - 6912*rho**2*z*z2**2 + 6912*rho*sig*z**2*z2 - 4608*rho*z**3 - 36864*rho*z**2*z2 + 36864*rho*z*z2**2 + 6912*sig**2*z**2*z2 - 4608*sig*z**3 - 32256*sig*z**2*z2 - 4608*sig*z*z2**2 + 12288*z**3 + 85632*z**2*z2 - 67584*z*z2**2) + qq**2*(-1728*rho**3*z*z2 - 864*rho**2*sig*z*z2 + 1152*rho**2*z**2 + 14976*rho**2*z*z2 + 1152*rho*sig*z**2 + 4608*rho*sig*z*z2 - 9216*rho*z**2 - 41472*rho*z*z2 + 864*sig**3*z**2 - 10368*sig**2*z**2 - 1152*sig**2*z*z2 + 2
+--- eq 3 : qq**3*(2304*z**2*z2 - 2304*z*z2**2) + qq**2*(-288*rho*z*z2 - 576*sig*z*z2 + 1536*z*z2 + 192*z2**2) + qq*(96*rho*z2 + 96*sig*z2 - 704*z2) + 18*sig**3 - 252*sig**2 + 943*sig - 288*z2 - 742
+--- eq 5 : qq**5*(442368*z**3*z2**2 - 1105920*z**2*z2**3 + 552960*z*z2**4) + qq**4*(-41472*rho*z**2*z2**2 + 69120*rho*z*z2**3 - 82944*sig*z**2*z2**2 + 96768*sig*z*z2**3 + 36864*z**3*z2 - 331776*z**2*z2**2 + 221184*z*z2**3 - 18432*z2**4) + qq**3*(6912*rho**2*z*z2**2 + 6912*rho*sig*z*z2**2 - 4608*rho*z**2*z2 - 32256*rho*z*z2**2 - 4608*rho*z2**3 - 6912*sig**2*z**2*z2 + 13824*sig**2*z*z2**2 + 36864*sig*z**2*z2 - 36864*sig*z*z2**2 - 4608*sig*z2**3 - 67584*z**2*z2 + 85632*z*z2**2 + 12288*z2**3) + qq**2*(-864*rho**3*z2**2 + 1152*rho**2*z*z2 + 10368*rho**2*z2**2 + 864*rho*sig**2*z*z2 - 4608*rho*sig*z*z2 - 1152*rho*sig*z2**2 - 1536*rho*z*z2 - 29136*rho*z2**2 + 1728*sig**3*z*z2 - 14976*sig**2*z*z2 - 1152*sig**2*
+--- eq 8 : -1024*ee + qq**3*(221184*z**2*z2 - 221184*z*z2**2) + qq**2*(-27648*rho*z*z2 - 27648*sig*z*z2 + 12288*z**2 - 24576*z*z2 + 12288*z2**2) + qq*(-3072*rho*z + 3072*rho*z2 - 3072*sig*z + 3072*sig*z2 + 12288*z - 12288*z2) + 576*rho**3 - 6912*rho**2 + 19424*rho + 576*sig**3 - 6912*sig**2 + 19424*sig - 9216*z - 9216*z2 + 185
+written (1s)
+t2_1-3_5-4: vdim 4; I_3: ee**2 - 13625*ee/512 - 104356175/1048576 ; I_5: ff**2 - 2704883*ff/16384 - 8523989859239/52613349376 ; q3 = r11 + s11: gg   (0s)

@@ -1,0 +1,13 @@
+r11 = -b*(b - rho + 4)/2
+z as a function of u = rho - (b+4): u**3/16 + u*(-A/2 - B/2 + b**2/4 - b/2 + 1/2)
+degrees in u of the two remaining equations: [4, 4]
+gcd degree in u: 4
+F(u) monic, even in u: True; F = -16*b*(-4*A + b**2 - 4*b + 4)*(-4*B + b**2 - 4*b + 4)/(3*b - 4) + u**4 - 8*u**2*(b - 2)*(2*A + 2*B + b**2 - 2)/(3*b - 4)
+z odd in u (so the relabelling u -> -u is z -> -z): True
+cofactors of the two equations: [1, -1]
+closed form against the numeric two-point batch (z-eliminant, 2 fibres): 72 points, 0 mismatches
+s_closed PASS
+
+real	0m1.282s
+user	0m1.230s
+sys	0m0.052s

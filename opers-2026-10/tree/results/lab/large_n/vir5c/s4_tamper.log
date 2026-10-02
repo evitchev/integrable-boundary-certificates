@@ -1,0 +1,77 @@
+loss 1 input sha256 9fbca1cd4223d876fd880069af1f9a92ee67f4c37a369a3b030a19cfa483a053
+loss 2 input sha256 c58d9512aacc2b7794b8e9da7fcb2f2404240f248e01ff18b3b89e8974e65ccd
+loss 3 input sha256 e053feb7cabe9a69c16aab86eebd4d13791087992fb945d1385a0a37ccaa2c9b
+loss 4 input sha256 f07c1eea88b9080f2f48071f50c8550c139b03f35f723820f6347e21a6a87f05
+t = 11/2   k = -18/5  spin  3  mismatches  loss 1: 0/2;  loss 2: 1/1
+t = 11/2   k = -18/5  spin  5  mismatches  loss 1: 0/3;  loss 2: 2/2;  loss 3: 0/1
+t = 11/2   k = -18/5  spin  7  mismatches  loss 1: 0/4;  loss 2: 3/3;  loss 3: 0/2;  loss 4: 0/1
+t = 11/2   k = -18/5  spin  9  mismatches  loss 1: 0/5;  loss 2: 4/4;  loss 3: 0/3;  loss 4: 0/2
+t = 11/2   k = -18/5  spin 11  mismatches  loss 1: 0/6;  loss 2: 5/5;  loss 3: 0/4;  loss 4: 0/3
+t = 11/2   k = -18/5  spin 13  mismatches  loss 1: 0/7;  loss 2: 6/6;  loss 3: 0/5;  loss 4: 0/4
+t = 11/2   k = -18/5  spin 15  mismatches  loss 1: 0/8;  loss 2: 7/7;  loss 3: 0/6;  loss 4: 0/5
+t = 1/2    k = -2/5   spin  3  mismatches  loss 1: 0/2;  loss 2: 1/1
+t = 1/2    k = -2/5   spin  5  mismatches  loss 1: 0/3;  loss 2: 2/2;  loss 3: 0/1
+t = 1/2    k = -2/5   spin  7  mismatches  loss 1: 0/4;  loss 2: 3/3;  loss 3: 0/2;  loss 4: 0/1
+t = 1/2    k = -2/5   spin  9  mismatches  loss 1: 0/5;  loss 2: 4/4;  loss 3: 0/3;  loss 4: 0/2
+t = 1/2    k = -2/5   spin 11  mismatches  loss 1: 0/6;  loss 2: 5/5;  loss 3: 0/4;  loss 4: 0/3
+t = 1/2    k = -2/5   spin 13  mismatches  loss 1: 0/7;  loss 2: 6/6;  loss 3: 0/5;  loss 4: 0/4
+t = 1/2    k = -2/5   spin 15  mismatches  loss 1: 0/8;  loss 2: 7/7;  loss 3: 0/6;  loss 4: 0/5
+t = 4      k = -6     spin  3  mismatches  loss 1: 0/2;  loss 2: 1/1
+t = 4      k = -6     spin  5  mismatches  loss 1: 0/3;  loss 2: 2/2;  loss 3: 0/1
+t = 4      k = -6     spin  7  mismatches  loss 1: 0/4;  loss 2: 3/3;  loss 3: 0/2;  loss 4: 0/1
+t = 4      k = -6     spin  9  mismatches  loss 1: 0/5;  loss 2: 4/4;  loss 3: 0/3;  loss 4: 0/2
+t = 4      k = -6     spin 11  mismatches  loss 1: 0/6;  loss 2: 5/5;  loss 3: 0/4;  loss 4: 0/3
+t = 4      k = -6     spin 13  mismatches  loss 1: 0/7;  loss 2: 6/6;  loss 3: 0/5;  loss 4: 0/4
+t = 4      k = -6     spin 15  mismatches  loss 1: 0/8;  loss 2: 7/7;  loss 3: 0/6;  loss 4: 0/5
+t = 4      k = -6     spin 17  mismatches  loss 1: 0/9;  loss 2: 8/8;  loss 3: 0/7;  loss 4: 0/6
+t = 4      k = -6     spin 19  mismatches  loss 1: 0/10;  loss 2: 9/9;  loss 3: 0/8;  loss 4: 0/7
+t = -2     k = -6/5   spin  3  mismatches  loss 1: 0/2;  loss 2: 1/1
+t = -2     k = -6/5   spin  5  mismatches  loss 1: 0/3;  loss 2: 2/2;  loss 3: 0/1
+t = -2     k = -6/5   spin  7  mismatches  loss 1: 0/4;  loss 2: 3/3;  loss 3: 0/2;  loss 4: 0/1
+t = -2     k = -6/5   spin  9  mismatches  loss 1: 0/5;  loss 2: 4/4;  loss 3: 0/3;  loss 4: 0/2
+t = -2     k = -6/5   spin 11  mismatches  loss 1: 0/6;  loss 2: 5/5;  loss 3: 0/4;  loss 4: 0/3
+t = -2     k = -6/5   spin 13  mismatches  loss 1: 0/7;  loss 2: 6/6;  loss 3: 0/5;  loss 4: 0/4
+t = -2     k = -6/5   spin 15  mismatches  loss 1: 0/8;  loss 2: 7/7;  loss 3: 0/6;  loss 4: 0/5
+t = 9/4    k = 10/3   spin  3  mismatches  loss 1: 0/2;  loss 2: 1/1
+t = 9/4    k = 10/3   spin  5  mismatches  loss 1: 0/3;  loss 2: 2/2;  loss 3: 0/1
+t = 9/4    k = 10/3   spin  7  mismatches  loss 1: 0/4;  loss 2: 3/3;  loss 3: 0/2;  loss 4: 0/1
+t = 9/4    k = 10/3   spin  9  mismatches  loss 1: 0/5;  loss 2: 4/4;  loss 3: 0/3;  loss 4: 0/2
+t = 9/4    k = 10/3   spin 11  mismatches  loss 1: 0/6;  loss 2: 5/5;  loss 3: 0/4;  loss 4: 0/3
+t = 9/4    k = 10/3   spin 13  mismatches  loss 1: 0/7;  loss 2: 6/6;  loss 3: 0/5;  loss 4: 0/4
+t = 9/4    k = 10/3   spin 15  mismatches  loss 1: 0/8;  loss 2: 7/7;  loss 3: 0/6;  loss 4: 0/5
+t = 9/4    k = 10/3   spin 17  mismatches  loss 1: 0/9;  loss 2: 8/8;  loss 3: 0/7;  loss 4: 0/6
+t = 9/4    k = 10/3   spin 19  mismatches  loss 1: 0/10;  loss 2: 9/9;  loss 3: 0/8;  loss 4: 0/7
+t = 2      k = 2      spin  3  mismatches  loss 1: 0/2;  loss 2: 1/1
+t = 2      k = 2      spin  5  mismatches  loss 1: 0/3;  loss 2: 2/2;  loss 3: 0/1
+t = 2      k = 2      spin  7  mismatches  loss 1: 0/4;  loss 2: 3/3;  loss 3: 0/2;  loss 4: 0/1
+t = 2      k = 2      spin  9  mismatches  loss 1: 0/5;  loss 2: 4/4;  loss 3: 0/3;  loss 4: 0/2
+t = 2      k = 2      spin 11  mismatches  loss 1: 0/6;  loss 2: 5/5;  loss 3: 0/4;  loss 4: 0/3
+t = 2      k = 2      spin 13  mismatches  loss 1: 0/7;  loss 2: 6/6;  loss 3: 0/5;  loss 4: 0/4
+t = 2      k = 2      spin 15  mismatches  loss 1: 0/8;  loss 2: 7/7;  loss 3: 0/6;  loss 4: 0/5
+t = 2      k = 2      spin 17  mismatches  loss 1: 0/9;  loss 2: 8/8;  loss 3: 0/7;  loss 4: 0/6
+t = 2      k = 2      spin 19  mismatches  loss 1: 0/10;  loss 2: 9/9;  loss 3: 0/8;  loss 4: 0/7
+t = 3/2    k = 2/3    spin  3  mismatches  loss 1: 0/2;  loss 2: 1/1
+t = 3/2    k = 2/3    spin  5  mismatches  loss 1: 0/3;  loss 2: 2/2;  loss 3: 0/1
+t = 3/2    k = 2/3    spin  7  mismatches  loss 1: 0/4;  loss 2: 3/3;  loss 3: 0/2;  loss 4: 0/1
+t = 3/2    k = 2/3    spin  9  mismatches  loss 1: 0/5;  loss 2: 4/4;  loss 3: 0/3;  loss 4: 0/2
+t = 3/2    k = 2/3    spin 11  mismatches  loss 1: 0/6;  loss 2: 5/5;  loss 3: 0/4;  loss 4: 0/3
+t = 3/2    k = 2/3    spin 13  mismatches  loss 1: 0/7;  loss 2: 6/6;  loss 3: 0/5;  loss 4: 0/4
+t = 3/2    k = 2/3    spin 15  mismatches  loss 1: 0/8;  loss 2: 7/7;  loss 3: 0/6;  loss 4: 0/5
+t = 3/2    k = 2/3    spin 17  mismatches  loss 1: 0/9;  loss 2: 8/8;  loss 3: 0/7;  loss 4: 0/6
+t = 3/2    k = 2/3    spin 19  mismatches  loss 1: 0/10;  loss 2: 9/9;  loss 3: 0/8;  loss 4: 0/7
+t = 7/3    k = 4      spin  3  mismatches  loss 1: 0/2;  loss 2: 1/1
+t = 7/3    k = 4      spin  5  mismatches  loss 1: 0/3;  loss 2: 2/2;  loss 3: 0/1
+t = 7/3    k = 4      spin  7  mismatches  loss 1: 0/4;  loss 2: 3/3;  loss 3: 0/2;  loss 4: 0/1
+t = 7/3    k = 4      spin  9  mismatches  loss 1: 0/5;  loss 2: 4/4;  loss 3: 0/3;  loss 4: 0/2
+t = 7/3    k = 4      spin 11  mismatches  loss 1: 0/6;  loss 2: 5/5;  loss 3: 0/4;  loss 4: 0/3
+t = 7/3    k = 4      spin 13  mismatches  loss 1: 0/7;  loss 2: 6/6;  loss 3: 0/5;  loss 4: 0/4
+t = 7/3    k = 4      spin 15  mismatches  loss 1: 0/8;  loss 2: 7/7;  loss 3: 0/6;  loss 4: 0/5
+t = 21/11  k = 5/3    spin  3  mismatches  loss 1: 0/2;  loss 2: 1/1
+t = 21/11  k = 5/3    spin  5  mismatches  loss 1: 0/3;  loss 2: 2/2;  loss 3: 0/1
+t = 21/11  k = 5/3    spin  7  mismatches  loss 1: 0/4;  loss 2: 3/3;  loss 3: 0/2;  loss 4: 0/1
+t = 21/11  k = 5/3    spin  9  mismatches  loss 1: 0/5;  loss 2: 4/4;  loss 3: 0/3;  loss 4: 0/2
+t = 21/11  k = 5/3    spin 11  mismatches  loss 1: 0/6;  loss 2: 5/5;  loss 3: 0/4;  loss 4: 0/3
+t = 21/11  k = 5/3    spin 13  mismatches  loss 1: 0/7;  loss 2: 6/6;  loss 3: 0/5;  loss 4: 0/4
+t = 21/11  k = 5/3    spin 15  mismatches  loss 1: 0/8;  loss 2: 7/7;  loss 3: 0/6;  loss 4: 0/5
+skipped: []
+S4 mode tamper: 320 mismatches / 1147 coefficients in all; at spins >= 15: 131 / 490

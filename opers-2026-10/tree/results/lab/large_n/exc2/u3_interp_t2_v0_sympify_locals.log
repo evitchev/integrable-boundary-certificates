@@ -1,0 +1,21 @@
+ValueError: Error from parse_expr with transformed code: 'ff **Integer (2 )-Integer (411349 )*ff /Integer (3024 )+Integer (34216510201 )/Integer (36578304 )'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<home>/fable-work/exc2/u3_interp.py", line 21, in <module>
+    p3 = sp.Poly(sp.sympify(d['I3_poly']), sp.Symbol('ee')); p5 = sp.Poly(sp.sympify(d['I5_poly']), sp.Symbol('ff'))
+                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/python312-lab/lib/python3.12/site-packages/sympy/core/sympify.py", line 507, in sympify
+    expr = parse_expr(a, local_dict=locals, transformations=transformations, evaluate=evaluate)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/python312-lab/lib/python3.12/site-packages/sympy/parsing/sympy_parser.py", line 1090, in parse_expr
+    raise e from ValueError(f"Error from parse_expr with transformed code: {code!r}")
+  File "<home>/python312-lab/lib/python3.12/site-packages/sympy/parsing/sympy_parser.py", line 1081, in parse_expr
+    rv = eval_expr(code, local_dict, global_dict)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/python312-lab/lib/python3.12/site-packages/sympy/parsing/sympy_parser.py", line 905, in eval_expr
+    expr = eval(
+           ^^^^^
+  File "<string>", line 1, in <module>
+TypeError: unsupported operand type(s) for ** or pow(): 'FunctionClass' and 'Integer'

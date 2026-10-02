@@ -1,0 +1,8 @@
+k = 5/3 spin 1: leading -136/15  (99s)
+k = 5/3 spin 3: leading -73984/675  (99s)
+k = 5/3 spin 5: leading -47793664/91125  (99s)
+k = 5/3 spin 7: leading 4447326208/273375  (99s)
+k = 5/3 spin 9: leading 26705851777024/61509375  (99s)
+k = 5/3 spin 11: leading 4606433750417408/2767921875  (99s)
+k = 5/3 spin 13: leading -6313800826986954752/41518828125  (99s)
+written prediction_k5_3.json 5741c29870ed984111af3194448ca9f897e609584a44aaa85d91acc151150689 odd orders vanish: {'3': True, '5': True, '7': True, '9': True, '11': True, '13': True}

@@ -1,0 +1,8 @@
+k = -18/5 spin 1: leading -13/45  (90s)
+k = -18/5 spin 3: leading 2197/20250  (90s)
+k = -18/5 spin 5: leading -353717/4556250  (90s)
+k = -18/5 spin 7: leading 282439729/4100625000  (90s)
+k = -18/5 spin 9: leading -314857577879/4613203125000  (90s)
+k = -18/5 spin 11: leading 10015643155427/138396093750000  (90s)
+k = -18/5 spin 13: leading -2501540096789591/31139121093750000  (90s)
+written prediction_km18_5.json 91492721c8f1e9816ed1de7d2620381934886baa21b70d0ecad9156043259253 odd orders vanish: {'3': True, '5': True, '7': True, '9': True, '11': True, '13': True}

@@ -1,0 +1,25 @@
+Gamma-ratio coefficients c_j(k): k = 2: [1, -1/4, 0, 0]  [exact product: (u - 1/2)(u + 1/2) = u^2 - 1/4]
+                                 k = 4: [1, -5/2, 9/16, 0]  [(u^2 - 1/4)(u^2 - 9/4) = u^4 - (5/2) u^2 + 9/16]
+k = 2: Mellin-WKB solved to order 10 (6s); odd orders vanish: {3: True, 5: True, 7: True, 9: True}
+   spin 1: monic polynomials identical: True (3 monomials)
+   spin 3: monic polynomials identical: True (6 monomials)
+   spin 5: monic polynomials identical: True (10 monomials)
+   spin 7: monic polynomials identical: True (15 monomials)
+   spin 9: monic polynomials identical: True (21 monomials)
+k = 4: Mellin-WKB solved to order 10 (22s); odd orders vanish: {3: True, 5: True, 7: True, 9: True}
+   spin 1: monic polynomials identical: True (3 monomials)
+   spin 3: monic polynomials identical: True (6 monomials)
+   spin 5: monic polynomials identical: True (10 monomials)
+   spin 7: monic polynomials identical: True (15 monomials)
+   spin 9: monic polynomials identical: True (21 monomials)
+k = 3: Mellin-WKB solved to order 10 (43s); odd orders vanish: {3: True, 5: True, 7: True, 9: True}
+   spin 1: monic polynomials identical: True (3 monomials)
+   spin 3: monic polynomials identical: True (6 monomials)
+   spin 5: monic polynomials identical: True (10 monomials)
+   spin 7: chain engine has no charge; Mellin engine: none either
+   spin 9: monic polynomials identical: True (21 monomials)
+VALIDATION OK: the Mellin-WKB engine reproduces the chain engine at integer k
+
+real	0m56.577s
+user	0m56.518s
+sys	0m0.056s

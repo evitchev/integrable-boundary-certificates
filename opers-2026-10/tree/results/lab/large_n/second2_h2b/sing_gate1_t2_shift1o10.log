@@ -1,0 +1,41 @@
+// ** redefining blowup0 (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining blowup0 (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining elimRing (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining elimRing (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining elim (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining elim (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining elim2 (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining elim2 (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining elim1 (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining elim1 (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining nselect (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining nselect (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining sat (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining sat (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining sat_with_exp (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining sat_with_exp (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining select (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining select (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining select1 (;return();) sing_gate1_t2_shift1o10.sing:6
+// ** redefining select1 (;return();) sing_gate1_t2_shift1o10.sing:6
+RAW dim:
+0
+RAW minimal primes:
+2
+  raw prime 1 dim 0 inside h=0 (excluded): 1  sX=0 on it: 1
+  raw prime 2 dim 0 inside h=0 (excluded): 0  sX=0 on it: 0
+typeof sat:
+ideal
+SAT dim:
+0
+SAT vdim (solutions with mult.):
+2
+radical vdim:
+2
+SAT minimal primes:
+1
+--- SAT prime 1  vdim 2
+L[1]=3369600*cY^2+4349280*cY-62214299
+L[2]=12000*cX+63240*cY-240329
+L[3]=7000*sY+9720*cY+6273
+L[4]=2000*sX+55080*cY+35547

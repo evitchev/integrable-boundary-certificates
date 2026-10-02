@@ -1,0 +1,15 @@
+k=4,t=7/3 M=1/4: WKB spin 11 = 0 (sealed: identically 0 at n = 11); certified spin 11 regular with 28 coefficients -> MISSING SPIN
+k=4,t=7/3 M=-1/5: WKB spin 11 = 0 (sealed: identically 0 at n = 11); certified spin 11 regular with 28 coefficients -> MISSING SPIN
+k=3,t=11/5 M=1/3: spin 11 mismatches 0 / 28
+   negative control t + 1/100: 27 mismatches (must be > 0)
+   scoring tamper: 1 mismatch (must be 1)
+k=3,t=11/5 M=-1/4: spin 11 mismatches 0 / 28
+k=10/3,t=9/4 M=3/10: spin 11 mismatches 0 / 28
+   negative control t + 1/100: 27 mismatches (must be > 0)
+   scoring tamper: 1 mismatch (must be 1)
+k=10/3,t=9/4 M=-3/13: spin 11 mismatches 0 / 28
+k=1,t=5/3 M=1: spin 11 mismatches 0 / 28
+   negative control t + 1/100: 27 mismatches (must be > 0)
+   scoring tamper: 1 mismatch (must be 1)
+k=1,t=5/3 M=-1/2: spin 11 mismatches 0 / 28
+HOLD-OUT (scored fibres): PASS

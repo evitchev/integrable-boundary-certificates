@@ -1,0 +1,11 @@
+k=3,spin=11 t = 11/5 coeffs 28 mismatches 0
+k=3,spin=13 t = 11/5 coeffs 36 mismatches 0
+k=4,spin=11 t = 7/3 coeffs 28 mismatches 0
+k=4,spin=13 t = 7/3 coeffs 36 mismatches 0
+k=6,spin=11 t = 5/2 coeffs 28 mismatches 0
+k=6,spin=13 t = 5/2 coeffs 36 mismatches 0
+k=8,spin=11 t = 13/5 coeffs 28 mismatches 0
+k=8,spin=13 t = 13/5 coeffs 36 mismatches 0
+NEG CONTROL k=4,spin=11 vs table at t = 5/2 : mismatches 26
+NEG CONTROL k=6,spin=11 vs table at t = 7/3 : mismatches 26
+NEG CONTROL k=4,spin=11 vs table at t = 703/300 : mismatches 26

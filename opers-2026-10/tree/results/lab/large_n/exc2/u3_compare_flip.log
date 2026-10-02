@@ -1,0 +1,2 @@
+t = 2    [flip] data vacuum P^6 coefficient -3/2; trace: 10 coefficients, 6 differ; det: 28 coefficients, 21 differ; pointwise char. polynomials: 0 compared, 0 differ
+U3 hold-out [flip]: FAIL

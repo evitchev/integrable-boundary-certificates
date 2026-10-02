@@ -1,0 +1,41 @@
+// ** redefining blowup0 (;return();) sing_h2a_t2.sing:6
+// ** redefining blowup0 (;return();) sing_h2a_t2.sing:6
+// ** redefining elimRing (;return();) sing_h2a_t2.sing:6
+// ** redefining elimRing (;return();) sing_h2a_t2.sing:6
+// ** redefining elim (;return();) sing_h2a_t2.sing:6
+// ** redefining elim (;return();) sing_h2a_t2.sing:6
+// ** redefining elim2 (;return();) sing_h2a_t2.sing:6
+// ** redefining elim2 (;return();) sing_h2a_t2.sing:6
+// ** redefining elim1 (;return();) sing_h2a_t2.sing:6
+// ** redefining elim1 (;return();) sing_h2a_t2.sing:6
+// ** redefining nselect (;return();) sing_h2a_t2.sing:6
+// ** redefining nselect (;return();) sing_h2a_t2.sing:6
+// ** redefining sat (;return();) sing_h2a_t2.sing:6
+// ** redefining sat (;return();) sing_h2a_t2.sing:6
+// ** redefining sat_with_exp (;return();) sing_h2a_t2.sing:6
+// ** redefining sat_with_exp (;return();) sing_h2a_t2.sing:6
+// ** redefining select (;return();) sing_h2a_t2.sing:6
+// ** redefining select (;return();) sing_h2a_t2.sing:6
+// ** redefining select1 (;return();) sing_h2a_t2.sing:6
+// ** redefining select1 (;return();) sing_h2a_t2.sing:6
+RAW dim:
+0
+RAW minimal primes:
+2
+  raw prime 1 dim 0 inside h=0 (excluded): 1  sX=0 on it: 1
+  raw prime 2 dim 0 inside h=0 (excluded): 0  sX=0 on it: 0
+typeof sat:
+ideal
+SAT dim:
+0
+SAT vdim (solutions with mult.):
+2
+radical vdim:
+2
+SAT minimal primes:
+1
+--- SAT prime 1  vdim 2
+L[1]=976*cY^2-12200*cY+1081
+L[2]=9*cX-100*cY-185
+L[3]=7*sY-4*cY+25
+L[4]=3*sX-16*cY+100

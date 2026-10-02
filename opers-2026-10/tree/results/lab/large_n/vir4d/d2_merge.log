@@ -1,0 +1,9 @@
+k=4,spin=11 t = 7/3 order 8 monomials 28 leading 164937500
+k=4,spin=13 t = 7/3 order 8 monomials 36 leading 5878125000
+k=6,spin=11 t = 5/2 order 10 monomials 28 leading 2633499334375/3888
+k=6,spin=13 t = 5/2 order 10 monomials 36 leading 380412526703125/3888
+k=8,spin=11 t = 13/5 order 12 monomials 28 leading -5072840836245/1024
+k=8,spin=13 t = 13/5 order 12 monomials 36 leading 815406615141723/2048
+k=3,spin=11 t = 11/5 order 7 monomials 28 leading 32768540672/729
+k=3,spin=13 t = 11/5 order 7 monomials 36 leading 1229784055808/2187
+PREDICTION_VIR4d.json sha256 b8446a9f28bc875c97ea80d1c6f6d5e51282b0b00b86ba5120cb2b5b9918d67c

@@ -1,0 +1,36 @@
+point A: 5 conditions (1s)
+   res 1 (0, 0, 0, 0): free symbols ['A', 'B', 'b', 'r02', 'r11', 'rho', 'z'], length 83
+   res 2 (0, 0, 0, 0): free symbols ['A', 'B', 'b', 'r01', 'r02', 'r11', 'rho', 'z'], length 119
+   res 4 (0, 1, 0, 0): free symbols ['A', 'B', 'b', 'r01', 'r02', 'r11', 'rho', 'z'], length 153
+   res 4 (0, 0, 1, 0): free symbols ['A', 'B', 'b', 'r02', 'r11', 'rho', 'z'], length 101
+   res 4 (0, 0, 0, 0): free symbols ['A', 'B', 'b', 'r01', 'r02', 'r11', 'rho', 's01', 's02', 'z'], length 396
+point B: 5 conditions (2s)
+   res 1 (0, 0, 0, 0): free symbols ['A', 'B', 'b', 'r11', 'rho', 's02', 'z'], length 97
+   res 2 (0, 0, 0, 0): free symbols ['A', 'B', 'b', 'r11', 'rho', 's01', 's02', 'z'], length 131
+   res 4 (0, 1, 0, 0): free symbols ['A', 'B', 'b', 'r11', 'rho', 's01', 's02', 'z'], length 145
+   res 4 (0, 0, 1, 0): free symbols ['A', 'B', 'b', 'r11', 'rho', 's02', 'z'], length 88
+   res 4 (0, 0, 0, 0): free symbols ['A', 'B', 'b', 'r01', 'r02', 'r11', 'rho', 's01', 's02', 'z'], length 359
+A0: -z*(8*A*z + 8*B*z - b*rho*z + 12*b*z - 4*r02 + 4*r11*z - rho**2*z + 6*rho*z - 24*z)
+A1: -12*A*z - 12*B*z - b*r02 + b*rho*z - 18*b*z + 4*r01*z - r02*rho + 10*r02 - 6*r11*z + rho**2*z - 7*rho*z - 4*z**2 + 36*z
+A2: 4*z**2*(-4*A*z - 4*B*z + 3*b**2*z - 3*b*r02 - 3*b*r11*z - 4*b*rho*z + 6*b*z + 4*r01*z + r02*rho - 2*r02 + r11*rho*z + rho**2*z - 5*rho*z + 4*z**2 + 12*z)
+A3: 4*z**3*(-8*A*z - 8*B*z + 6*b**2*z - 5*b*rho*z + 12*b*z + 4*r02 + 8*r11*z + rho**2*z - 6*rho*z + 24*z)
+A4: -16*A*B*b*z + 12*A*b*z - 4*A*rho*z + 24*A*z + 12*B*b*z - 4*B*rho*z + 24*B*z + 3*b**2*r01*z + 3*b**2*r02 + 22*b**2*z + 2*b*r01*rho*z - 28*b*r01*z + 2*b*r02*rho - 12*b*r02 + 3*b*r11*z - 5*b*rho*z - 8*b*s01*z - 4*b*s02 + 16*b*z**2 + 16*b*z - r01*rho**2*z + 12*r01*rho*z - 36*r01*z - r02*rho**2 + 12*r02*rho - 36*r02 - r11*rho*z + 8*r11*z - rho**2*z - 8*rho*z**2 + 18*rho*z + 4*s01*z + 40*z**2 - 72*z
+B0: z*(-8*A*z - 8*B*z + 6*b**2*z - 5*b*rho*z + 16*b*z + 4*r11*z + rho**2*z - 10*rho*z - 4*s02 + 40*z)
+B1: 12*A*z + 12*B*z - 6*b**2*z + 5*b*rho*z - 3*b*s02 - 8*b*z - 6*r11*z - rho**2*z + rho*s02 + 9*rho*z - 4*s01*z + 2*s02 - 4*z**2 - 44*z
+B2: 4*z**2*(4*A*z + 4*B*z + b**2*z - b*r11*z - b*s02 + 4*b*z - r11*rho*z + 8*r11*z - rho**2*z - rho*s02 + 11*rho*z - 4*s01*z + 6*s02 + 4*z**2 - 36*z)
+B3: -4*z**3*(8*A*z + 8*B*z - b*rho*z + 8*b*z + 8*r11*z - rho**2*z + 10*rho*z + 4*s02 - 40*z)
+B4: 16*A*B*b*z - 4*A*b*z - 4*A*rho*z + 8*A*z - 4*B*b*z - 4*B*rho*z + 8*B*z - 3*b**2*s01*z + 3*b**2*s02 - 8*b**2*z + 8*b*r01*z - 4*b*r02 + b*r11*z - 2*b*rho*s01*z + 2*b*rho*s02 - 9*b*rho*z + 20*b*s01*z - 4*b*s02 + 20*b*z - 4*r01*z + r11*rho*z + rho**2*s01*z - rho**2*s02 + rho**2*z - 4*rho*s01*z + 4*rho*s02 + 8*rho*z**2 + 2*rho*z + 4*s01*z - 4*s02 - 24*z**2 - 8*z
+r02 = z*(8*A + 8*B - b*rho + 12*b + 4*r11 - rho**2 + 6*rho - 24)/4
+s02 = z*(-8*A - 8*B + 6*b**2 - 5*b*rho + 16*b + 4*r11 + rho**2 - 10*rho + 40)/4
+r01 = (8*A*b + 8*A*rho - 32*A + 8*B*b + 8*B*rho - 32*B - b**2*rho + 12*b**2 + 4*b*r11 - 2*b*rho**2 + 24*b*rho - 72*b + 4*r11*rho - 16*r11 - rho**3 + 12*rho**2 - 56*rho + 16*z + 96)/16
+s01 = -(-24*A*b + 8*A*rho - 32*A - 24*B*b + 8*B*rho - 32*B + 18*b**3 - 21*b**2*rho + 60*b**2 + 12*b*r11 + 8*b*rho**2 - 56*b*rho + 120*b - 4*r11*rho + 16*r11 - rho**3 + 12*rho**2 - 56*rho + 16*z + 96)/16
+remaining distinct equations in (r11, rho, z): 5 (9s)
+   degrees (r11, rho, z) = (1, 3, 1); 17 terms: -8*A*b - 32*A - 8*B*b - 32*B - 6*b**2 + r11*(-10*b + 6*rho - 12) - rho**3 + 12*rho**2 + rho*(8*A + 8*B + b**2 + 2*b - 56) + 16*z + 96
+   degrees (r11, rho, z) = (1, 1, 0); 4 terms: b**2 - b*rho + 4*b + 2*r11
+   degrees (r11, rho, z) = (1, 5, 1); 55 terms: -256*A*B*b + 24*A*b**3 - 416*A*b**2 + 384*A*b + 512*A + 24*B*b**3 - 416*B*b**2 + 384*B*b + 512*B + 180*b**4 - 96*b**3 + 1824*b**2 - 768*b + r11*(12*b**3 + 20*b**2*rho - 16*b**2 + 4*b*rho**2 - 96*b*rho + 176*b - 4*rho**3 + 48*rho**2 - 144*rho + 64) + rho**5 - 20*rho**4 + rho**3*(-8*A - 8*B - 6*b**2 - 8*b + 168) + rho**2*(8*A*b + 96*A + 8*B*b + 96*B - 8*b**3 + 160*b**2 + 32*b - 16*z - 736) + rho*(40*A*b**2 - 64*A*b - 384*A + 40*B*b**2 - 64*B*b - 384*B - 3*b**4 - 56*b**3 - 872*b**2 + 32*b*z + 128*b + 64*z + 1664) + z*(48*b**2 - 64*b) - 1536
+   degrees (r11, rho, z) = (1, 3, 1); 20 terms: -8*A*b - 32*A - 8*B*b - 32*B + 6*b**3 + 42*b**2 + 96*b + r11*(2*b - 6*rho + 36) - rho**3 + rho**2*(6*b + 12) + rho*(8*A + 8*B - 11*b**2 - 46*b - 56) + 16*z + 96
+   degrees (r11, rho, z) = (1, 5, 1); 58 terms: 256*A*B*b - 72*A*b**3 + 352*A*b**2 + 384*A*b + 512*A - 72*B*b**3 + 352*B*b**2 + 384*B*b + 512*B + 54*b**5 - 108*b**4 - 720*b**3 - 3168*b**2 - 1536*b + r11*(36*b**3 + 12*b**2*rho - 112*b**2 - 20*b*rho**2 + 224*b*rho - 624*b + 4*rho**3 - 48*rho**2 + 144*rho - 64) + rho**5 + rho**4*(-10*b - 20) + rho**3*(-8*A - 8*B + 34*b**2 + 152*b + 168) + rho**2*(40*A*b + 96*A + 40*B*b + 96*B - 36*b**3 - 448*b**2 - 848*b - 16*z - 736) + rho*(-24*A*b**2 - 320*A*b - 384*A - 24*B*b**2 - 320*B*b - 384*B - 27*b**4 + 424*b**3 + 1912*b**2 + 32*b*z + 2048*b + 192*z + 1664) + z*(48*b**2 - 192*b - 512) - 1536
+
+real	0m9.711s
+user	0m9.686s
+sys	0m0.024s

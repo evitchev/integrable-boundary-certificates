@@ -1,0 +1,10 @@
+I3_trace: degree <= 2 in (P^2, Q^2); fitted on 12 points (exact fit True); held-back points 24, mismatches 0
+    2*P**4 - 4*P**2*Q**2 + 14*P**2/3 + 2*Q**4 + 10*Q**2 + 9/2
+I3_det: degree <= 4 in (P^2, Q^2); fitted on 24 points (exact fit True); held-back points 12, mismatches 0
+    P**8 - 4*P**6*Q**2 + 14*P**6/3 + 6*P**4*Q**4 + 2*P**4*Q**2/3 - 973*P**4/18 - 4*P**2*Q**6 - 46*P**2*Q**4/3 + 235*P**2*Q**2/3 + 149*P**2/2 + Q**8 + 10*Q**6 - 69*Q**4/2 - 83*Q**2/2 - 175/16
+I5_trace: degree <= 3 in (P^2, Q^2); fitted on 18 points (exact fit True); held-back points 18, mismatches 0
+    2*P**6 - 30*P**4*Q**2/7 + 145*P**4/7 - 30*P**2*Q**4/7 - 370*P**2*Q**2/7 - 37*P**2/2 + 2*Q**6 + 193*Q**4/7 + 685*Q**2/14 + 435/28
+I5_det: degree <= 6 in (P^2, Q^2); fitted on 30 points (exact fit True); held-back points 6, mismatches 0
+    P**12 - 30*P**10*Q**2/7 + 145*P**10/7 + 15*P**8*Q**4/49 - 4765*P**8*Q**2/49 - 5743*P**8/28 + 548*P**6*Q**6/49 + 4726*P**6*Q**4/49 - 36885*P**6*Q**2/49 - 2465*P**6/14 + 15*P**4*Q**8/49 + 3670*P**4*Q**6/49 + 90045*P**4*Q**4/98 + 123115*P**4*Q**2/98 + 308431*P**4/784 - 30*P**2*Q**10/7 - 5485*P**2*Q**8/49 - 56149*P**2*Q**6/49 - 183781*P**2*Q**4/98 - 367165*P**2*Q**2/392 - 16095*P**2/112 + Q**12 + 193*Q**10/7 - 10761*Q**8/196 + 10025*Q**6/98 + 291535*Q**4/784 + 182775*Q**2/784 + 131625/3136
+I_3 level-1 block (data) : trace identical True, determinant identical True
+u3_interp t = 2: PASS

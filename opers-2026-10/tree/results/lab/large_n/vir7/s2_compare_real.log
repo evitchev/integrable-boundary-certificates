@@ -1,0 +1,43 @@
+== t = 1/2 (a = -1/4, n = 7/4, M = -4) real
+   spin 1  vs Ward amplitudes: -  spin 1 == X + Y + 1/6 - rho^2: True
+   spin 3  vs Ward amplitudes: loss 1: 0/2; loss 2: 0/1
+   spin 5  vs Ward amplitudes: loss 1: 0/3; loss 2: 0/2; loss 3: 0/1 | full table: 0/10 mismatches
+   spin 7  vs Ward amplitudes: loss 1: 0/4; loss 2: 0/3; loss 3: 0/2; loss 4: 0/1 | full table: 0/15 mismatches
+   spin 9  vs Ward amplitudes: loss 1: 0/5; loss 2: 0/4; loss 3: 0/3; loss 4: 0/2 | full table: 0/21 mismatches
+   even spins (identically zero?, #monomials of R/PX): {'2': (False, 3), '4': (False, 6), '6': (False, 10), '8': (False, 15), '10': (False, 21), '12': (False, 28)}
+== t = 3/2 (a = 1/4, n = 9/4, M = 4) real
+   spin 1  vs Ward amplitudes: -  spin 1 == X + Y + 1/6 - rho^2: True
+   spin 3  vs Ward amplitudes: loss 1: 0/2; loss 2: 0/1
+   spin 5  vs Ward amplitudes: loss 1: 0/3; loss 2: 0/2; loss 3: 0/1 | full table: 0/10 mismatches
+   spin 7  vs Ward amplitudes: loss 1: 0/4; loss 2: 0/3; loss 3: 0/2; loss 4: 0/1 | full table: 0/15 mismatches
+   spin 9: operator gives no charge (nu = 4)
+   even spins (identically zero?, #monomials of R/PX): {'2': (False, 3), '4': (False, 6), '6': (False, 10), '8': (False, 15), '10': (False, 21), '12': (False, 28)}
+== t = 4 (a = 3/2, n = 7/2, M = 2/3) real
+   spin 1  vs Ward amplitudes: -  spin 1 == X + Y + 1/6 - rho^2: True
+   spin 3  vs Ward amplitudes: loss 1: 0/2; loss 2: 0/1
+   spin 5  vs Ward amplitudes: loss 1: 0/3; loss 2: 0/2; loss 3: 0/1 | full table: 0/10 mismatches
+   spin 7: operator gives no charge (nu = 2)
+   spin 9  vs Ward amplitudes: loss 1: 0/5; loss 2: 0/4; loss 3: 0/3; loss 4: 0/2 | full table: 0/21 mismatches
+   even spins (identically zero?, #monomials of R/PX): {'2': (False, 3), '4': (False, 6), '6': (False, 10), '8': (False, 15), '10': (False, 21), '12': (False, 28)}
+== t = 7/3 (a = 2/3, n = 8/3, M = 3/2) real
+   spin 1  vs Ward amplitudes: -  spin 1 == X + Y + 1/6 - rho^2: True
+   spin 3  vs Ward amplitudes: loss 1: 0/2; loss 2: 0/1
+   spin 5  vs Ward amplitudes: loss 1: 0/3; loss 2: 0/2; loss 3: 0/1 | full table: 0/10 mismatches
+   spin 7  vs Ward amplitudes: loss 1: 0/4; loss 2: 0/3; loss 3: 0/2; loss 4: 0/1 | full table: 0/15 mismatches
+   spin 9  vs Ward amplitudes: loss 1: 0/5; loss 2: 0/4; loss 3: 0/3; loss 4: 0/2 | full table: 0/21 mismatches
+   even spins (identically zero?, #monomials of R/PX): {'2': (False, 3), '4': (False, None), '6': (False, 10), '8': (True, None), '10': (False, 21), '12': (False, None)}
+== t = 9/4 (a = 5/8, n = 21/8, M = 8/5) real
+   spin 1  vs Ward amplitudes: -  spin 1 == X + Y + 1/6 - rho^2: True
+   spin 3  vs Ward amplitudes: loss 1: 0/2; loss 2: 0/1
+   spin 5  vs Ward amplitudes: loss 1: 0/3; loss 2: 0/2; loss 3: 0/1 | full table: 0/10 mismatches
+   spin 7  vs Ward amplitudes: loss 1: 0/4; loss 2: 0/3; loss 3: 0/2; loss 4: 0/1 | full table: 0/15 mismatches
+   spin 9  vs Ward amplitudes: loss 1: 0/5; loss 2: 0/4; loss 3: 0/3; loss 4: 0/2 | full table: 0/21 mismatches
+   even spins (identically zero?, #monomials of R/PX): {'2': (False, 3), '4': (False, 6), '6': (False, 10), '8': (False, 15), '10': (False, 21), '12': (False, 28)}
+== t = -2 (a = -3/2, n = 1/2, M = -2/3) real
+   spin 1  vs Ward amplitudes: -  spin 1 == X + Y + 1/6 - rho^2: True
+   spin 3  vs Ward amplitudes: loss 1: 0/2; loss 2: 0/1
+   spin 5  vs Ward amplitudes: loss 1: 0/3; loss 2: 0/2; loss 3: 0/1 | full table: 0/10 mismatches
+   spin 7  vs Ward amplitudes: loss 1: 0/4; loss 2: 0/3; loss 3: 0/2; loss 4: 0/1 | full table: 0/15 mismatches
+   spin 9  vs Ward amplitudes: loss 1: 0/5; loss 2: 0/4; loss 3: 0/3; loss 4: 0/2 | full table: 0/21 mismatches
+   even spins (identically zero?, #monomials of R/PX): {'2': (False, 3), '4': (False, 6), '6': (False, 10), '8': (False, 15), '10': (False, 21), '12': (False, 28)}
+T2a mode real: 0 mismatches / 420 coefficients

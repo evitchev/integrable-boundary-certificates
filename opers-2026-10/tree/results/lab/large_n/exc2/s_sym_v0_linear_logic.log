@@ -1,0 +1,21 @@
+point A: 5 conditions (1s)
+   res 1 (0, 0, 0, 0): free symbols ['A', 'B', 'b', 'r02', 'r11', 'rho', 'z'], length 83
+   res 2 (0, 0, 0, 0): free symbols ['A', 'B', 'b', 'r01', 'r02', 'r11', 'rho', 'z'], length 119
+   res 4 (0, 1, 0, 0): free symbols ['A', 'B', 'b', 'r01', 'r02', 'r11', 'rho', 'z'], length 153
+   res 4 (0, 0, 1, 0): free symbols ['A', 'B', 'b', 'r02', 'r11', 'rho', 'z'], length 101
+   res 4 (0, 0, 0, 0): free symbols ['A', 'B', 'b', 'r01', 'r02', 'r11', 'rho', 's01', 's02', 'z'], length 396
+point B: 5 conditions (2s)
+   res 1 (0, 0, 0, 0): free symbols ['A', 'B', 'b', 'r11', 'rho', 's02', 'z'], length 97
+   res 2 (0, 0, 0, 0): free symbols ['A', 'B', 'b', 'r11', 'rho', 's01', 's02', 'z'], length 131
+   res 4 (0, 1, 0, 0): free symbols ['A', 'B', 'b', 'r11', 'rho', 's01', 's02', 'z'], length 145
+   res 4 (0, 0, 1, 0): free symbols ['A', 'B', 'b', 'r11', 'rho', 's02', 'z'], length 88
+   res 4 (0, 0, 0, 0): free symbols ['A', 'B', 'b', 'r01', 'r02', 'r11', 'rho', 's01', 's02', 'z'], length 359
+Traceback (most recent call last):
+  File "<home>/fable-work/exc2/s_sym.py", line 96, in <module>
+    assert v is not None, sym_
+           ^^^^^^^^^^^^^
+AssertionError: r02
+
+real	0m2.483s
+user	0m2.451s
+sys	0m0.032s

@@ -1,0 +1,15 @@
+spin 11 table sha256 921dd19b24f517bc0b49382beabe838c1a077c11cbcb9edd1a39cd4e8ccb5d92
+spin 13 table sha256 f6f46489394c64b72bd69a43c08729d41d30d5466003e2deec72722569ebbbd0
+t = -2   spin 11: 0 / 28 mismatches
+t = -2   spin 13: 0 / 36 mismatches
+t = 1/2  spin 11: 0 / 28 mismatches
+t = 1/2  spin 13: 0 / 36 mismatches
+t = 3/2  spin 11: 0 / 28 mismatches
+t = 3/2  spin 13: 0 / 36 mismatches
+t = 4    spin 11: 0 / 28 mismatches
+t = 4    spin 13: 0 / 36 mismatches
+t = 7/3  spin 11: 0 / 28 mismatches
+t = 7/3  spin 13: 0 / 36 mismatches
+t = 9/4  spin 11: 0 / 28 mismatches
+t = 9/4  spin 13: 0 / 36 mismatches
+T2b mode real: 0 mismatches / 384 coefficients

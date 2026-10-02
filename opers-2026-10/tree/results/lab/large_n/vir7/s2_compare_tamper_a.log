@@ -1,0 +1,8 @@
+== t = 9/4 (a = 5/8, n = 21/8, M = 8/5) tamper_a
+   spin 1  vs Ward amplitudes: -  spin 1 == X + Y + 1/6 - rho^2: False
+   spin 3  vs Ward amplitudes: loss 1: 2/2; loss 2: 1/1
+   spin 5  vs Ward amplitudes: loss 1: 3/3; loss 2: 2/2; loss 3: 1/1 | full table: 9/10 mismatches (first, highest degree: X^1 Y^2 predicted 4500/2431 certified 1125/1003)
+   spin 7  vs Ward amplitudes: loss 1: 4/4; loss 2: 3/3; loss 3: 2/2; loss 4: 1/1 | full table: 14/15 mismatches (first, highest degree: X^0 Y^4 predicted -18310546875/57539107843 certified -1875/31213)
+   spin 9  vs Ward amplitudes: loss 1: 5/5; loss 2: 4/4; loss 3: 3/3; loss 4: 2/2 | full table: 20/21 mismatches (first, highest degree: X^0 Y^5 predicted -21362304687500/634363280805969 certified -21875/388557)
+   even spins (identically zero?, #monomials of R/PX): {'2': (False, 3), '4': (False, 6), '6': (False, 10), '8': (False, 15)}
+T2a mode file:s1_pred_t9_4_tamper_a.json: 77 mismatches / 80 coefficients

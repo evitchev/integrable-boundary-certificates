@@ -1,0 +1,9 @@
+linear eliminations done (1s)
+eq  4 -> degree 9, 16 terms  (1s)
+eq  5 -> degree 2, 3 terms  (1s)
+eq  6 -> degree 18, 70 terms  (1s)
+eq 11 -> degree 9, 16 terms  (1s)
+eq 12 -> degree 2, 3 terms  (1s)
+eq 13 -> degree 18, 70 terms  (2s)
+e-relation: degree 12
+written h_red_t2.sing / .ms  (2s)

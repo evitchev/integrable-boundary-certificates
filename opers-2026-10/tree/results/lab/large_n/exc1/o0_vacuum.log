@@ -1,0 +1,9 @@
+t = 9/4 (M = 21/5) spin 1: Schrodinger engine with alpha term == Gamma-form S1 prediction: True
+t = 9/4 (M = 21/5) spin 3: Schrodinger engine with alpha term == Gamma-form S1 prediction: True
+t = 9/4 (M = 21/5) spin 5: Schrodinger engine with alpha term == Gamma-form S1 prediction: True
+t = 9/4 (M = 21/5) spin 7: Schrodinger engine with alpha term == Gamma-form S1 prediction: True
+t = 7/3 (M = 4) spin 1: Schrodinger engine with alpha term == Gamma-form S1 prediction: True
+t = 7/3 (M = 4) spin 3: Schrodinger engine with alpha term == Gamma-form S1 prediction: True
+t = 7/3 (M = 4) spin 5: Schrodinger engine with alpha term == Gamma-form S1 prediction: True
+t = 7/3 (M = 4) spin 7: Schrodinger engine with alpha term == Gamma-form S1 prediction: True
+vacuum control PASS

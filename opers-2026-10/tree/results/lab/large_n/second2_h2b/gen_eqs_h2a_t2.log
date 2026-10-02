@@ -1,0 +1,9 @@
+tag h2a_t2 M 5 unknowns [sX, sY, cX, cY]
+eq[0] (total deg 1): 15*sX - 140*sY
+  denom[0]: 7*sX
+eq[1] (total deg 1): 6*cX - 40*cY - 5*sX - 290
+  denom[1]: 2*sX
+eq[2] (total deg 2): -280*cX*sY + 3360*cY*sY - 5*sX**2 + 4200*sY
+  denom[2]: 7*sX**2
+eq[3] (total deg 2): 12*cX**2 - 160*cX*cY - 1160*cX + 960*cY**2 + 2400*cY - 3*sX**2 + 22748
+  denom[3]: 4*sX**2

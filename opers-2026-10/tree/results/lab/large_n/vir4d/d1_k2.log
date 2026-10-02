@@ -1,0 +1,5 @@
+seal hash ok ab1bd1d98fed6f7df04134ed26acccd8bbe07f5bcb631b9d02f83325f7025dc4
+k = 2 (t = 2, order 6) solved to order 14  (79s)
+   spin 11: leading coefficient 102095721/16; 28 monomials; symmetric: True  (82s)
+   spin 13: leading coefficient -2285727741/16; 36 monomials; symmetric: True  (84s)
+written prediction_partial_2.json 6be100edbd0cdfcc4ecd4e3f8a5e0f95b3b7d22f7628367d58616efdf7f721a6

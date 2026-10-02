@@ -1,0 +1,3 @@
+t = 2    [real] data vacuum P^6 coefficient -3/2; trace: 10 coefficients, 0 differ; det: 28 coefficients, 0 differ; pointwise char. polynomials: 36 compared, 0 differ
+t = 9/4  [real] data vacuum P^6 coefficient 4225/412; trace: 10 coefficients, 0 differ; det: 28 coefficients, 0 differ; pointwise char. polynomials: 36 compared, 0 differ
+U3 hold-out [real]: PASS

@@ -1,0 +1,5 @@
+kit integrity: OK (SHA256SUMS, INPUTS.SHA256)
+PASS  drill sol3_vir5a_compare            5s  tamper detected: exit 1 (expected 0)
+PASS  drill second2_h2b_t9o4              1s  tamper detected: output differs from archived check_h2b_t9o4.log at line 3 (13 vs 13 lines)
+PASS  drill num1_shoot                  284s  tamper detected: output differs from archived run_n2.stdout at line 3 (6 vs 6 lines)
+ALL PASS  (3 drills, 290s)

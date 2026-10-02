@@ -1,0 +1,4 @@
+t = 9/4 M = 21/5 npts = 1 order 2: 3 monomials  (2s)
+t = 9/4 M = 21/5 npts = 1 order 4: 8 monomials  (2s)
+t = 9/4 M = 21/5 npts = 1 order 6: 18 monomials  (2s)
+written o1_t9_4_n1.json

@@ -1,0 +1,6 @@
+shooting scan E in [0, 60] step 1/4 (141s)
+brackets: [(7.0, 7.25), (23.0, 23.25), (45.5, 45.75)]
+eigenvalue: shooting 7.22787494445730508594992003  zero of D 7.22787494445730508594992003  |diff| 0.0
+eigenvalue: shooting 23.04108840264275887428250043  zero of D 23.04108840264275887428250043  |diff| 0.0
+eigenvalue: shooting 45.56839039043296518791372547  zero of D 45.56839039043296518791372547  |diff| 0.0
+N2: lowest 3 levels agree to 99 digits (sealed >= 10): True

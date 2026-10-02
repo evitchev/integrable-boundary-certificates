@@ -1,0 +1,6 @@
+order 2: cG zero True; cB equal to the unshifted engine: True   (3s)
+order 3 (odd): cB = -A3 ; cG zero True
+order 4: cG zero True; cB equal to the unshifted engine: True   (3s)
+order 5 (odd): cB = 5*A2*A3/11 + 143*A3/10 - 5*B2/31 ; cG zero True
+order 6: cG zero True; cB equal to the unshifted engine: True   (3s)
+V2 translation covariance (d = 2/7): PASS

@@ -1,0 +1,62 @@
+info: OpersCertificates: no previous manifest, creating one from scratch
+info: toolchain not updated; already up-to-date
+info: plausible: cloning https://github.com/leanprover-community/plausible
+info: plausible: checking out revision 'dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805'
+info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+info: LeanSearchClient: checking out revision '99657ad92e23804e279f77ea6dbdeebaa1317b98'
+info: importGraph: cloning https://github.com/leanprover-community/import-graph
+info: importGraph: checking out revision 'd768126816be17600904726ca7976b185786e6b9'
+info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+info: proofwidgets: checking out revision '556caed0eadb7901e068131d1be208dd907d07a2'
+info: aesop: cloning https://github.com/leanprover-community/aesop
+info: aesop: checking out revision '725ac8cd67acd70a7beaf47c3725e23484c1ef50'
+info: Qq: cloning https://github.com/leanprover-community/quote4
+info: Qq: checking out revision 'dea6a3361fa36d5a13f87333dc506ada582e025c'
+info: batteries: cloning https://github.com/leanprover-community/batteries
+info: batteries: checking out revision '8da40b72fece29b7d3fe3d768bac4c8910ce9bee'
+info: Cli: cloning https://github.com/leanprover/lean4-cli
+info: Cli: checking out revision '91c18fa62838ad0ab7384c03c9684d99d306e1da'
+info: mathlib: running post-update hooks
+✔ [17/20] Built Batteries.Data.Array.Match:c.o (2.7s)
+✔ [18/20] Built Batteries.Data.String.Basic:c.o (2.7s)
+✔ [19/20] Built Batteries.Data.String.Matcher:c.o (2.7s)
+Fetching ProofWidgets cloud release... done!
+Current branch: HEAD
+Using cache (Azure) from origin: leanprover-community/mathlib4
+No files to download
+Decompressing 7335 file(s)
+Unpacked in 28937 ms
+Completed successfully!
+✔ [3173/3176] Built OperMellin (3.4s)
+✔ [3174/3176] Built OperTop (7.1s)
+⚠ [3175/3176] Built WardLossOne (39s)
+warning: WardLossOne.lean:313:48: This simp argument is unused:
+  Nat.cast_ofNat
+
+Hint: Omit it from the simp argument list.
+  simp only [ff_zero, ff_one, ff_two, ff_three, Nat.cast_o̵f̵N̵a̵t̵,̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵mul, Nat.cast_sub (show a ≤ K by omega)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: WardLossOne.lean:313:64: This simp argument is unused:
+  Nat.cast_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [ff_zero, ff_one, ff_two, ff_three, Nat.cast_ofNat, Nat.cast_m̵u̵l̵,̵ ̵N̵a̵t̵.̵c̵a̵st̵_̵s̵ub (show a ≤ K by omega)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: WardLossOne.lean:394:48: This simp argument is unused:
+  Nat.cast_ofNat
+
+Hint: Omit it from the simp argument list.
+  simp only [ff_zero, ff_one, ff_two, ff_three, Nat.cast_o̵f̵N̵a̵t̵,̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵mul, Nat.cast_sub (show a ≤ K by omega)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: WardLossOne.lean:394:64: This simp argument is unused:
+  Nat.cast_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [ff_zero, ff_one, ff_two, ff_three, Nat.cast_ofNat, Nat.cast_m̵u̵l̵,̵ ̵N̵a̵t̵.̵c̵a̵st̵_̵s̵ub (show a ≤ K by omega)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (3176 jobs).
+exit 0

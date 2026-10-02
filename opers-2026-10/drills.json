@@ -1,0 +1,34 @@
+{
+ "results/lab/large_n/proof1/p1_equivalence.py": [
+  "gam = {r: (s - r) / sig + (1 - a) / 2 for r in roots}",
+  "gam = {r: (s - r) / sig + (1 - a) / 3 for r in roots}"
+ ],
+ "results/lab/large_n/br2/br2_commutant.py": [
+  "beta = {1: -p / 2, 2: -p, 3: 1 / p}[sol]",
+  "beta = {1: -p / 3, 2: -p, 3: 1 / p}[sol]"
+ ],
+ "results/lab/large_n/br2/br2_dims.py": [
+  "Delta = sp.simplify(a2 / 2 + beta**2 / 2 - beta * rho)",
+  "Delta = sp.simplify(a2 / 2 + beta**2 / 2 + beta * rho)"
+ ],
+ "results/lab/large_n/second1/s2_leading.py": [
+  "Gratio = lambda T: (T / sig + (kk + 1) / 2)",
+  "Gratio = lambda T: (T / sig + (kk + 1) / 3)"
+ ],
+ "results/lab/large_n/num1/n2_shoot.py": [
+  "Ed = bisect(lambda E: D_lin(M, al, l, E)",
+  "Ed = bisect(lambda E: D_lin(M, al, l * (1 + mp.mpf(10)**-7), E)"
+ ],
+ "results/lab/large_n/vir4d/d1_predict.py": [
+  "sp.Rational(2 * j - (k - 1), 2)",
+  "sp.Rational(2 * j - (k - 1) + 1, 2)"
+ ],
+ "results/lab/large_n/second2_h2b/plantcert.py": [
+  "cX: sp.Integer(7),",
+  "cX: sp.Integer(7) + sp.Rational(1, 1000),"
+ ],
+ "results/lab/large_n/sol2_ext_fable/ext_fibres.py": [
+  "n = g['D']; Cv = 2 * n * (1 + F(M))",
+  "n = g['D']; Cv = 2 * n * (1 + F(M)) * F(1001, 1000)"
+ ]
+}

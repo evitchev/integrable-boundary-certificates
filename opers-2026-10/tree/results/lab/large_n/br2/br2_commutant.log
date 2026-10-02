@@ -1,0 +1,8 @@
+Sol 1, p = 6/5, a = 4/5, beta = -3/5: triple mod d at w = 4, 6, 8: [1, 1, 1] (expect [1,1,1]); pair alone w = 4: 2; TAMPER a + 1/7 (w = 4): 0 (expect 0)  OK
+Sol 1, p = 8/5, a = 3/5, beta = -4/5: triple mod d at w = 4, 6, 8: [1, 1, 1] (expect [1,1,1]); pair alone w = 4: 2; TAMPER a + 1/7 (w = 4): 0 (expect 0)  OK
+Sol 2, p = 3/5, a = 4/5, beta = -3/5: triple mod d at w = 4, 6, 8: [1, 1, 1] (expect [1,1,1]); pair alone w = 4: 2; TAMPER a + 1/7 (w = 4): 0 (expect 0)  OK
+Sol 2, p = 5/13, a = 12/13, beta = -5/13: triple mod d at w = 4, 6, 8: [1, 1, 1] (expect [1,1,1]); pair alone w = 4: 2; TAMPER a + 1/7 (w = 4): 0 (expect 0)  OK
+Sol 3, p = 3/2, a = 2/3, beta = 2/3: triple mod d at w = 4, 6, 8: [1, 1, 1] (expect [1,1,1]); pair alone w = 4: 3; TAMPER a + 1/7 (w = 4): 0 (expect 0)  OK
+Sol 3, p = 2/3, a = 3/2, beta = 3/2: triple mod d at w = 4, 6, 8: [1, 1, 1] (expect [1,1,1]); pair alone w = 4: 3; TAMPER a + 1/7 (w = 4): 0 (expect 0)  OK
+REPLICATION PASS
+exit 0

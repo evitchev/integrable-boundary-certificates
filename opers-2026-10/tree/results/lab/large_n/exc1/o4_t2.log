@@ -1,0 +1,7 @@
+(0) system (v) at M = 5 from the potential: True
+(1) two points: I_1 = Delta-part + 2 x (2)  [level]
+(2) t = 2, alpha = 3, lam = 2: elimination polynomial for e = Lambda_3: degree 5; factor degrees [2, 3]  (4s)
+
+real	0m4.693s
+user	0m4.665s
+sys	0m0.028s

@@ -1,0 +1,11 @@
+tag h2b_t2 M 5 unknowns [sX, sY, cX, cY, pi_rot]
+eq[0] (total deg 5): 45*cX*pi_rot*sX - 70*cX*sY - 300*cY*pi_rot*sX + 840*cY*sY + 75*pi_rot**3*sX**2 - 210*pi_rot**2*sX*sY - 2175*pi_rot*sX + 1050*sY
+  denom[0]: 7*pi_rot*sX*(3*cX - 20*cY + 5*pi_rot**2*sX - 145)
+eq[1] (total deg 6): 3*cX**2 - 40*cX*cY + 18*cX*pi_rot**2*sX - 30*cX*pi_rot*sX - 290*cX + 240*cY**2 - 120*cY*pi_rot**2*sX + 200*cY*pi_rot*sX + 600*cY + 15*pi_rot**4*sX**2 - 50*pi_rot**3*sX**2 - 870*pi_rot**2*sX + 1450*pi_rot*sX + 5687
+  denom[1]: 4*pi_rot*sX*(3*cX - 20*cY + 5*pi_rot**2*sX - 145)
+eq[2] (total deg 4): -15*cX*sX - 140*cX*sY + 100*cY*sX + 1680*cY*sY - 25*pi_rot**2*sX**2 - 140*pi_rot**2*sX*sY + 725*sX + 2100*sY
+  denom[2]: 7*sX*(3*cX - 20*cY + 5*pi_rot**2*sX - 145)
+eq[3] (total deg 6): 6*cX**2 - 80*cX*cY + 12*cX*pi_rot**2*sX - 9*cX*sX - 580*cX + 480*cY**2 - 80*cY*pi_rot**2*sX + 60*cY*sX + 1200*cY + 6*pi_rot**4*sX**2 - 15*pi_rot**2*sX**2 - 580*pi_rot**2*sX + 435*sX + 11374
+  denom[3]: 4*sX*(3*cX - 20*cY + 5*pi_rot**2*sX - 145)
+eq[4] (total deg 6): 25116*cX**2 - 305760*cX*cY + 251160*cX*pi_rot**2*sX - 480480*cX*pi_rot*sY - 3439800*cX + 1176000*cY**2 - 1528800*cY*pi_rot**2*sX + 3696000*cY*pi_rot*sY + 12348000*cY + 293020*pi_rot**4*sX**2 - 800800*pi_rot**3*sX*sY - 17199000*pi_rot**2*sX + 19404000*pi_rot*sY + 115517500
+  denom[4]: 11*(897*cX**2 - 10920*cX*cY + 8970*cX*pi_rot**2*sX - 122850*cX + 42000*cY**2 - 54600*cY*pi_rot**2*sX + 441000*cY + 10465*pi_rot**4*sX**2 - 614250*pi_rot**2*sX + 4125625)

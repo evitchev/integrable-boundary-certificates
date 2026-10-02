@@ -1,0 +1,5 @@
+seal hash ok ab1bd1d98fed6f7df04134ed26acccd8bbe07f5bcb631b9d02f83325f7025dc4
+k = 4 (t = 7/3, order 8) solved to order 14  (109s)
+   spin 11: leading coefficient 164937500; 28 monomials; symmetric: True  (112s)
+   spin 13: leading coefficient 5878125000; 36 monomials; symmetric: True  (114s)
+written prediction_tamper_k4.json 41aec9bcf1faec6e874b5c19dfe54a7eb77293823f99547665613c803a823ea8

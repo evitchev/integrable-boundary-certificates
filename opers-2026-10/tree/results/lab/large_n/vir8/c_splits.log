@@ -1,0 +1,4 @@
+Sol 3:  P = (T^2-l0^2)(T^2-l1^2), L = T       limit = al S + be E_1 with al = 1.0000000000, be = 0.0000000000 (h = 1e-16); residual 1.20e-08 (h=1e-8), 1.20e-16 (h=1e-16)  (2s)
+Sol 2:  P = T(T^2-l1^2), L = T^2-l0^2         limit = al S + be E_1 with al = 0.1666666667, be = 0.8333333333 (h = 1e-16); residual 3.60e-08 (h=1e-8), 3.60e-16 (h=1e-16)  (3s)
+swap:   P = T(T^2-l0^2), L = T^2-l1^2         limit = al S + be E_1 with al = -0.2500000000, be = 1.2500000000 (h = 1e-16); residual 2.40e-08 (h=1e-8), 2.40e-16 (h=1e-16)  (5s)
+both:   P = T, L = (T^2-l0^2)(T^2-l1^2)       not in the class (deg P must exceed deg L)

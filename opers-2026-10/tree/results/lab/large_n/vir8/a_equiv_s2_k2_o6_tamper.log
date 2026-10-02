@@ -1,0 +1,6 @@
+Sol 2 k = 2 TAMPER order 2 (spin 1): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (1s)
+Sol 2 k = 2 TAMPER order 3 (spin 2): Gamma-form R zero: True; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (1s)
+Sol 2 k = 2 TAMPER order 4 (spin 3): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (1s)
+Sol 2 k = 2 TAMPER order 5 (spin 4): Gamma-form R zero: True; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (1s)
+Sol 2 k = 2 TAMPER order 6 (spin 5): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (1s)
+(a) Sol 2 k = 2 TAMPER: DISAGREE

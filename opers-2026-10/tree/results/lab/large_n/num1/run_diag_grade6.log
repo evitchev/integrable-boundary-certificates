@@ -1,0 +1,16 @@
+point A: extracted grade 6 = 2.170796916846299562348945;  WKB at M = 5 exactly = 2.415309948396368149454569
+   M = 5 + 1e-6: WKB grade 6 = 2.395250934628087698334518;  |minus extracted| = 0.224
+   M = 5 + 1e-10: WKB grade 6 = 2.395248220272768994121669;  |minus extracted| = 0.224
+   M = 5 + 1e-14: WKB grade 6 = 2.395248220001333567316813;  |minus extracted| = 0.224
+   M = 5 + 1e-20: WKB grade 6 = 2.395248220001306421086654;  |minus extracted| = 0.224
+point B: extracted grade 6 = 1.206820015848214285714286;  WKB at M = 5 exactly = 1.056029515848214285714286
+   M = 5 + 1e-6: WKB grade 6 = 1.747494519841416627357587;  |minus extracted| = 0.541
+   M = 5 + 1e-10: WKB grade 6 = 1.747492016098613504480985;  |minus extracted| = 0.541
+   M = 5 + 1e-14: WKB grade 6 = 1.747492015848239325636161;  |minus extracted| = 0.541
+   M = 5 + 1e-20: WKB grade 6 = 1.747492015848214285739326;  |minus extracted| = 0.541
+point C: extracted grade 6 = 3.004434176791429877849631;  WKB at M = 5 exactly = 3.004434176791429877849631
+   M = 5 + 1e-6: WKB grade 6 = 3.004437210041428561877599;  |minus extracted| = 3.03e-6
+   M = 5 + 1e-10: WKB grade 6 = 3.004434177094754767042169;  |minus extracted| = 3.03e-10
+   M = 5 + 1e-14: WKB grade 6 = 3.004434176791460210338549;  |minus extracted| = 3.03e-14
+   M = 5 + 1e-20: WKB grade 6 = 3.004434176791429877879963;  |minus extracted| = 3.03e-20
+   (terms whose coefficient vanishes identically at M = 5 do not appear in the M = 5 expression; their limit is the residue contribution)

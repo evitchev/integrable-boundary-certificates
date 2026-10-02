@@ -1,0 +1,12 @@
+closed form (u = rho - b - 4):
+   r01 = -b*(-16*A - 16*B + 4*b**2 - 16*b + 3*u**2 + 16)/16
+   r02 = -u*(-8*A - 8*B + 4*b**2 - 8*b + u**2 + 8)*(-8*A - 8*B + 2*b**2 + b*u - 6*b + u**2 + 2*u + 16)/64
+   s01 = -b*(-16*A - 16*B + 4*b**2 - 16*b + 3*u**2 + 16)/16
+   s02 = u*(-8*A - 8*B + 4*b**2 - 8*b + u**2 + 8)*(-8*A - 8*B + 2*b**2 - b*u - 6*b + u**2 - 2*u + 16)/64
+   r01 + s01 = -b*(-16*A - 16*B + 4*b**2 - 16*b + 3*u**2 + 16)/8  [even in u: True]
+   q11 = sum(r11 z + r12) = u**2*(b + 2)*(-8*A - 8*B + 4*b**2 - 8*b + u**2 + 8)/16
+t = 2    I3: degree in U 1; closed-form trace == data: True; closed-form det == data: False
+t = 2    I5: degree in U 2; closed-form trace == data: False; closed-form det == data: False
+t = 9/4  I3: degree in U 1; closed-form trace == data: True; closed-form det == data: False
+t = 9/4  I5: degree in U 2; closed-form trace == data: False; closed-form det == data: False
+s_closed2 [tamper]: FAIL

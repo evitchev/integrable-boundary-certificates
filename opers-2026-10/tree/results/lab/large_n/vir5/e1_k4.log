@@ -1,0 +1,8 @@
+k = 4 spin 1: leading -10  (47s)
+k = 4 spin 3: leading -250  (47s)
+k = 4 spin 5: leading -5500  (47s)
+k = 4 spin 7: leading -63750  (47s)
+k = 4 spin 9: leading 2012500  (47s)
+k = 4 spin 11: leading 164937500  (47s)
+k = 4 spin 13: leading 5878125000  (47s)
+written prediction_k4.json a44af9df4dc0045ec17b4136e4ce8879311078afa3e8172951df5b561e521022 odd orders vanish: {'3': True, '5': True, '7': True, '9': True, '11': True, '13': True}

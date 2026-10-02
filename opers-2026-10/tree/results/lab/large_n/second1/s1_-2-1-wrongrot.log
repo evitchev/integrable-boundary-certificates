@@ -1,0 +1,4 @@
+k = -2, assign 1, control "wrongrot": n = 2, sigma = -1, c = 1, s = 1/2; cocycle numerator degree 8 in nu, 9 coefficient equations
+solutions (exponents may depend on l0, l1): []
+RESULT: NONE
+exit 0

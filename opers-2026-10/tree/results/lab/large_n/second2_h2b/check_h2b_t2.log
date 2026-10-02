@@ -1,0 +1,15 @@
+=== CHECK h2b_t2: M = 5, rotated = True, saturated minimal primes = 1
+
+--- prime 1: degree 12 in pi_rot (irreducible over Q: True); real roots: 6
+  spin 5: 16 monomials compared, EXACT nonzero residuals: 11 (outside cert support, tot.deg>k: 6 [(6, 0), (5, 0), (4, 1), (4, 0)]; inside, tot.deg<=k: 5 [(1, 2), (0, 3), (0, 2), (0, 1), (0, 0)])
+     first in-support failing monomial X^1Y^2: |monic-cert| over the 12 roots: min 1.513e+00 max 1.174e+02
+     first out-of-support monomial X^6Y^0: |monic coeff| over roots: min 1.258e+01 max 2.751e+15
+  spin 7: 25 monomials compared, EXACT nonzero residuals: 23 (outside cert support, tot.deg>k: 10 [(8, 0), (7, 0), (6, 1), (6, 0)]; inside, tot.deg<=k: 13 [(2, 2), (1, 3), (0, 4), (3, 0), (2, 1), (1, 2)])
+     first in-support failing monomial X^2Y^2: |monic-cert| over the 12 roots: min 6.741e-01 max 4.027e+01
+     first out-of-support monomial X^8Y^0: |monic coeff| over roots: min 7.233e+05 max 2.033e+16
+  spin 9: 36 monomials compared, EXACT nonzero residuals: 35 (outside cert support, tot.deg>k: 15 [(10, 0), (9, 0), (8, 1), (8, 0)]; inside, tot.deg<=k: 20 [(4, 1), (3, 2), (2, 3), (1, 4), (0, 5), (4, 0)])
+     first in-support failing monomial X^4Y^1: |monic-cert| over the 12 roots: min 1.358e+00 max 1.891e+01
+     first out-of-support monomial X^10Y^0: |monic coeff| over roots: min 3.124e+09 max 2.695e+16
+  => prime 1 (12 solutions): FAILS
+
+RESULT h2b_t2: FAIL (no solution matches)

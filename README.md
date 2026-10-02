@@ -8,6 +8,8 @@ Exact-arithmetic engines and machine certificates for the results of
 - *The enhanced odd-spin tower at c = 1 is quantum KdV at
   c_{1,4} = -25/2: identification, mechanism, and the Virasoro
   vacuum algebra at the self-dual point* (E. Vitchev, 2026).
+- *Opers for the cylindrical integrals of motion* (E. Vitchev, 2026);
+  its verification kit is `opers-2026-10/` (see below).
 
 arXiv identifiers will be added upon announcement.
 
@@ -24,6 +26,19 @@ Pure Python; the only dependency is `sympy` (see `requirements.txt`).
 The Lean certificates (`lean/`) additionally require a local
 Lean 4.24 + Mathlib toolchain; their check fails loudly, not
 silently, where the toolchain is absent.
+
+## Verification kit for the opers paper (`opers-2026-10/`)
+
+Self-contained: the archived stage directories behind each claim of the
+paper, the certified input tables they compare against (with hashes),
+the registered predictions, and the three Lean proofs with a Lake project.
+
+    cd opers-2026-10
+    python3 run_all.py --quick     # about 17 min; exits non-zero on any failure
+    python3 run_all.py --drill     # every check re-run with a tamper that must fail
+
+See `opers-2026-10/README.md` for what each check establishes and what
+the kit does not establish. Requires `sympy` and `mpmath`.
 
 ## Independent verification engine
 

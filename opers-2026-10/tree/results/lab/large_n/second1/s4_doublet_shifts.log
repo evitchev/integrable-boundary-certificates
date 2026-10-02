@@ -1,0 +1,4 @@
+nullspace dimension: 1
+denominator of the relation (non-polynomial coefficients if nontrivial): 8*Ap*alpha - 4*lam_m + 4*lam_p - u_m**2 + u_p**2
+x-monomials present (i a + j ap + l b): [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (0, 2, 0), (0, 3, 0), (1, 0, 0), (1, 1, 0)]
+exit 0

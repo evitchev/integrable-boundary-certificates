@@ -1,0 +1,9 @@
+exponents [-1, 1, 2, 4]: indicial {r04: -8*z**3, r13: 8*z**2, r22: -4*z}
+   resonance at exponent 4, coefficient of [E^1]:  -48*z**3*(3*r03 + 3*r12*z + 12*r21*z**2 + 20*z**2) = 0
+exponents [-1, 0, 3, 4]: indicial {r04: 0, r13: 12*z**2, r22: -6*z}
+   resonance at exponent 3, coefficient of [E^1]:  -2592*z**6 = 0
+   resonance at exponent 4, coefficient of [E^1 kap1^1]:  -46656*z**7 = 0
+   resonance at exponent 4, coefficient of [E^1]:  -31104*z**6 = 0
+exponents [-1, 0, 2, 5]: indicial {r04: 0, r13: 8*z**2, r22: -8*z}
+   resonance at exponent 5, coefficient of [E^1 kap1^1]:  -13824*z**7*(-3*r03 + 3*r12*z + 9*r21*z**2 + 8*z**2) = 0
+   resonance at exponent 5, coefficient of [E^1]:  -144*z**4*(-240*r02*z**3 + 3*r03**2 + 21*r03*r12*z + 54*r03*r21*z**2 - 492*r03*z**2 + 720*r11*z**4 + 36*r12**2*z**2 + 180*r12*r21*z**3 + 480*r12*z**3 + 216*r21**2*z**4 - 2016*r21*z**4 - 2816*z**4) = 0

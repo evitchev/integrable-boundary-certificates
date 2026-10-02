@@ -1,0 +1,57 @@
+N1 M = 1 E = -10.0: |num - exact| = 3.23e-57
+N1 M = 1 E = -100.0: |num - exact| = 2.87e-57
+N1 M = 1 E = -1000.0: |num - exact| = 4.4e-54
+N1 M = 1 E = -10000.0: |num - exact| = 5.48e-53
+N1 M = 1 E = 2.5 (linear): rel diff 1.53e-56
+N1 M = 1 E = 7.25 (linear): rel diff 1.45e-57
+N1 M = 1 E = -3.5 (linear): rel diff 1.3e-56
+N1 worst: 5.48e-53 -> digits 52 (sealed >= 25): True
+data A: 36 points e in [1e3, 1e7] (161s)
+data B: 36 points e in [1e3, 1e7] (154s)
+data C: 36 points e in [1e3, 1e7] (146s)
+
+== point A: alpha = 1.0, l = 0.333333 (X = -0.00833333, Y = 0.55092593)
+   E1 G = 4: residual at e = 1e7: 2.831e-9; log-slope 0.130516 (expected -mu (G+1-1) = -2.4; if grade G+1 vanishes, -mu (G+1))
+   E1 G = 6: residual at e = 1e7: -3.213e-11; log-slope 0.138552 (expected -mu (G+1-1) = -3.6; if grade G+1 vanishes, -mu (G+1))
+   E1 G = 8: residual at e = 1e7: -2.11e-11; log-slope 0.136932 (expected -mu (G+1-1) = -4.8; if grade G+1 vanishes, -mu (G+1))
+   E1 G = 24: grade-1 fit: log e coeff -0.46666666665936416322, const 0.35996809031852371789; max |residual| 1.98e-10
+   E2 grade 0 (e^0.6): extracted 0.992149851350309138  WKB 0.992149851350309138  agree 52.59 digits (fit stability 51.91)
+   E2 grade 2 (e^-0.6): extracted 0.114724981485618692  WKB 0.114724981485618692  agree 42.36 digits (fit stability 41.81)
+   E2 grade 3 (e^-1.2): extracted -0.127419471725893471  WKB -0.127419471725893471  agree 38.48 digits (fit stability 37.99)
+   E2 grade 4 (e^-1.8): extracted -0.408894041726165402  WKB -0.408894041726165402  agree 35.12 digits (fit stability 34.7)
+   E2 grade 5 (e^-2.4): extracted 0.428712213338200306  WKB 0.428712213338200306  agree 31.38 digits (fit stability 31.02)
+   E2 grade 6 (e^-3.0): extracted 2.17079691684629956  WKB 2.41530994839636815  agree 0.9947 digits (fit stability 28.14)
+   E2 grade 7 (e^-3.6): extracted -7.92099693061890565  WKB -7.92099693061890565  agree 25.45 digits (fit stability 25.21)
+   E2 grade 8 (e^-4.2): extracted -62.3694142263375855  WKB -62.3694142263375855  agree 22.9 digits (fit stability 22.71)
+
+== point B: alpha = -1.5, l = 0.7 (X = -0.01875, Y = 0.42666667)
+   E1 G = 4: residual at e = 1e7: -3.575e-9; log-slope 0.129871 (expected -mu (G+1-1) = -2.4; if grade G+1 vanishes, -mu (G+1))
+   E1 G = 6: residual at e = 1e7: 2.687e-11; log-slope 0.139104 (expected -mu (G+1-1) = -3.6; if grade G+1 vanishes, -mu (G+1))
+   E1 G = 8: residual at e = 1e7: 1.296e-11; log-slope 0.136897 (expected -mu (G+1-1) = -4.8; if grade G+1 vanishes, -mu (G+1))
+   E1 G = 24: grade-1 fit: log e coeff -0.52500000000450343631, const 0.59896065379337440619; max |residual| 1.22e-10
+   E2 grade 0 (e^0.6): extracted 0.992149851350309138  WKB 0.992149851350309138  agree 51.08 digits (fit stability 50.89)
+   E2 grade 2 (e^-0.6): extracted -0.248030421929234325  WKB -0.248030421929234325  agree 41.21 digits (fit stability 41.07)
+   E2 grade 3 (e^-1.2): extracted 0.270518856484272313  WKB 0.270518856484272313  agree 37.33 digits (fit stability 37.21)
+   E2 grade 4 (e^-1.8): extracted -0.46939692407486092  WKB -0.46939692407486092  agree 33.71 digits (fit stability 33.61)
+   E2 grade 5 (e^-2.4): extracted -0.59668891651182827  WKB -0.59668891651182827  agree 30.05 digits (fit stability 29.98)
+   E2 grade 6 (e^-3.0): extracted 1.20682001584821429  WKB 1.05602951584821429  agree 0.8453 digits (fit stability 26.65)
+   E2 grade 7 (e^-3.6): extracted 11.8599623500789065  WKB 11.8599623500789065  agree 24.16 digits (fit stability 24.12)
+   E2 grade 8 (e^-4.2): extracted -48.6073125111570255  WKB -48.6073125111570255  agree 21.34 digits (fit stability 21.3)
+
+== point C: alpha = 0.0, l = 0.333333 (X = 0.0, Y = 0.55092593)
+   E1 G = 4: residual at e = 1e7: 2.589e-10; log-slope 0.136931 (expected -mu (G+1-1) = -2.4; if grade G+1 vanishes, -mu (G+1))
+   E1 G = 6: residual at e = 1e7: -1.395e-12; log-slope 0.144368 (expected -mu (G+1-1) = -3.6; if grade G+1 vanishes, -mu (G+1))
+   E1 G = 8: residual at e = 1e7: 1.215e-14; log-slope 0.148177 (expected -mu (G+1-1) = -4.8; if grade G+1 vanishes, -mu (G+1))
+   E1 G = 24: grade-1 fit: log e coeff -0.41666666666666666299, const 0.29065337235904400721; max |residual| 1.5e-16
+   E2 grade 0 (e^0.6): extracted 0.992149851350309138  WKB 0.992149851350309138  agree 51.27 digits (fit stability 51.09)
+   E2 grade 2 (e^-0.6): extracted 0.137171173515413654  WKB 0.137171173515413654  agree 41.13 digits (fit stability 40.99)
+   E2 grade 3 (e^-1.2): extracted -8.82182341306687973e-39  WKB 1.24460305557222834e-60  agree -21.85 digits (fit stability -0.6392)
+   E2 grade 4 (e^-1.8): extracted -0.470898667407190423  WKB -0.470898667407190423  agree 33.85 digits (fit stability 33.76)
+   E2 grade 5 (e^-2.4): extracted -4.04327536057249977e-31  WKB 1.99136488891556535e-58  agree -27.31 digits (fit stability -0.8307)
+   E2 grade 6 (e^-3.0): extracted 3.00443417679142988  WKB 3.00443417679142988  agree 27.2 digits (fit stability 27.14)
+   E2 grade 7 (e^-3.6): extracted -7.15494912410581997e-24  WKB -1.1215367054372464e-55  agree -31.8 digits (fit stability -1.086)
+   E2 grade 8 (e^-4.2): extracted -76.7446798896551776  WKB -76.7446798896551776  agree 21.56 digits (fit stability 21.53)
+TAMPER M = 5.1, point A grade 2: WKB(5.1) 0.122837573106 vs extracted 0.114724981486: agree 1.18 digits (must be << sealed)
+TAMPER M = 5.1, point A grade 4: WKB(5.1) -0.430234265646 vs extracted -0.408894041726: agree 1.3 digits (must be << sealed)
+TAMPER M = 5.1, point A grade 6: WKB(5.1) 2.6774356284 vs extracted 2.17079691685: agree 0.723 digits (must be << sealed)
+done (502s)

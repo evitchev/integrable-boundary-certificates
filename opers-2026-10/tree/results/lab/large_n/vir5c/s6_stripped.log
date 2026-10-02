@@ -1,0 +1,11 @@
+fibre t = 9/4 (k = 10/3, n = 22/3); spins up to 19
+K =  2 (spin  3): (a) mismatches 0/2;  dA = -7/52        (-0.1346)   A_(1,0..2) = ['-0.191', '0.197', '1.061'];   max|stripped - true|/max|true| at losses 1,2,3: ['0.1262', '0.9141', '-']
+K =  3 (spin  5): (a) mismatches 0/3;  dA = -35/232      (-0.1509)   A_(1,0..2) = ['-0.274', '-0.159', '2.318'];   max|stripped - true|/max|true| at losses 1,2,3: ['0.3431', '0.5643', '0.6169']
+K =  4 (spin  7): (a) mismatches 0/4;  dA = -49/270      (-0.1815)   A_(1,0..2) = ['-0.145', '-0.819', '4.061'];   max|stripped - true|/max|true| at losses 1,2,3: ['0.1605', '0.1479', '0.2387']
+K =  5 (spin  9): (a) mismatches 0/5;  dA = -105/488     (-0.2152)   A_(1,0..2) = ['0.148', '-1.781', '6.288'];   max|stripped - true|/max|true| at losses 1,2,3: ['0.1096', '0.0912', '0.0992']
+K =  6 (spin 11): (a) mismatches 0/6;  dA = -1/4         (-0.2500)   A_(1,0..2) = ['0.598', '-3.046', '9.000'];   max|stripped - true|/max|true| at losses 1,2,3: ['0.0731', '0.0973', '0.0737']
+K =  7 (spin 13): (a) mismatches 0/7;  dA = -637/2232    (-0.2854)   A_(1,0..2) = ['1.201', '-4.614', '12.197'];   max|stripped - true|/max|true| at losses 1,2,3: ['0.0548', '0.0823', '0.0592']
+K =  8 (spin 15): (a) mismatches 0/8;  dA = -35/109      (-0.3211)   A_(1,0..2) = ['1.958', '-6.486', '15.879'];   max|stripped - true|/max|true| at losses 1,2,3: ['0.0465', '0.0652', '0.0678']
+K =  9 (spin 17): (a) mismatches 0/9;  dA = -357/1000    (-0.3570)   A_(1,0..2) = ['2.866', '-8.660', '20.045'];   max|stripped - true|/max|true| at losses 1,2,3: ['0.0458', '0.0540', '0.0574']
+K = 10 (spin 19): (a) mismatches 0/10;  dA = -665/1692    (-0.3930)   A_(1,0..2) = ['3.927', '-11.138', '24.697'];   max|stripped - true|/max|true| at losses 1,2,3: ['0.0452', '0.0460', '0.0495']
+S6(a) PASS 0

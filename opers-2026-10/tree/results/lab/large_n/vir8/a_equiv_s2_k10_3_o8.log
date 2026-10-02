@@ -1,0 +1,8 @@
+Sol 2 k = 10/3 order 2 (spin 1): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 10/3 order 3 (spin 2): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 10/3 order 4 (spin 3): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 10/3 order 5 (spin 4): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 10/3 order 6 (spin 5): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 10/3 order 7 (spin 6): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 10/3 order 8 (spin 7): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+(a) Sol 2 k = 10/3: AGREE

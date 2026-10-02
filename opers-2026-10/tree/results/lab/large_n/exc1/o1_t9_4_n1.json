@@ -1,0 +1,11 @@
+{
+ "t": "9/4",
+ "M": "21/5",
+ "npts": 1,
+ "tamper": false,
+ "R": {
+  "2": "Add(Mul(Integer(-1), Rational(5, 168), Pow(Symbol('l0'), Integer(2))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('l1'), Integer(2))), Rational(-143, 30))",
+  "4": "Add(Mul(Integer(-1), Rational(15, 6272), Pow(Symbol('l0'), Integer(4))), Mul(Rational(5, 112), Pow(Symbol('l0'), Integer(2)), Pow(Symbol('l1'), Integer(2))), Mul(Rational(923, 1680), Pow(Symbol('l0'), Integer(2))), Mul(Rational(403, 25), Symbol('l0'), Symbol('z1')), Mul(Rational(1, 8), Pow(Symbol('l1'), Integer(4))), Mul(Rational(39, 20), Pow(Symbol('l1'), Integer(2))), Mul(Rational(546, 25), Pow(Symbol('z1'), Integer(2))), Rational(32513, 5000))",
+  "6": "Add(Mul(Integer(-1), Rational(5015, 28449792), Pow(Symbol('l0'), Integer(6))), Mul(Rational(425, 112896), Pow(Symbol('l0'), Integer(4)), Pow(Symbol('l1'), Integer(2))), Mul(Rational(6409, 112896), Pow(Symbol('l0'), Integer(4))), Mul(Integer(-1), Rational(403, 168), Pow(Symbol('l0'), Integer(3)), Symbol('z1')), Mul(Integer(-1), Rational(25, 448), Pow(Symbol('l0'), Integer(2)), Pow(Symbol('l1'), Integer(4))), Mul(Integer(-1), Rational(793, 672), Pow(Symbol('l0'), Integer(2)), Pow(Symbol('l1'), Integer(2))), Mul(Integer(-1), Rational(2223, 100), Pow(Symbol('l0'), Integer(2)), Pow(Symbol('z1'), Integer(2))), Mul(Integer(-1), Rational(3404141, 504000), Pow(Symbol('l0'), Integer(2))), Mul(Integer(-1), Rational(1209, 50), Symbol('l0'), Pow(Symbol('l1'), Integer(2)), Symbol('z1')), Mul(Integer(-1), Rational(67977, 1675), Symbol('l0'), Pow(Symbol('z1'), Integer(3))), Mul(Integer(-1), Rational(47151, 1250), Symbol('l0'), Symbol('z1')), Mul(Integer(-1), Rational(1, 16), Pow(Symbol('l1'), Integer(6))), Mul(Integer(-1), Rational(91, 80), Pow(Symbol('l1'), Integer(4))), Mul(Integer(-1), Rational(46683, 1675), Pow(Symbol('l1'), Integer(2)), Pow(Symbol('z1'), Integer(2))), Mul(Integer(-1), Rational(28249, 6000), Pow(Symbol('l1'), Integer(2))), Mul(Integer(-1), Rational(34398, 1675), Pow(Symbol('z1'), Integer(4))), Mul(Integer(-1), Rational(6505317, 41875), Pow(Symbol('z1'), Integer(2))), Rational(56232527, 9450000))"
+ }
+}

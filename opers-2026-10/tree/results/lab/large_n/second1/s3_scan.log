@@ -1,0 +1,72 @@
+k = -6, assign 1, control "": n = -2, sigma = 1/3, c = -5/3, s = -3/2; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = -6, assign 2, control "": n = -2, sigma = 1/3, c = -5/3, s = -3/2; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = -4, assign 1, control "": n = 0, sigma = 0, c = 0, s = -1/2; cocycle numerator degree 1 in nu, 2 coefficient equations
+RESULT: NONE
+k = -4, assign 2, control "": n = 0, sigma = 0, c = 0, s = -1/2; cocycle numerator degree 1 in nu, 2 coefficient equations
+RESULT: NONE
+k = -3, assign 1, control "": n = 1, sigma = -1/3, c = 2/3, s = 0; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = -3, assign 2, control "": n = 1, sigma = -1/3, c = 2/3, s = 0; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = -2, assign 1, control "": n = 2, sigma = -1, c = 1, s = 1/2; cocycle numerator degree 8 in nu, 9 coefficient equations
+RESULT: CLOSES
+k = -2, assign 2, control "": n = 2, sigma = -1, c = 1, s = 1/2; cocycle numerator degree 10 in nu, 11 coefficient equations
+RESULT: CLOSES
+k = -3/2, assign 1, control "": n = 5/2, sigma = -5/3, c = 5/6, s = 3/4; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = -3/2, assign 2, control "": n = 5/2, sigma = -5/3, c = 5/6, s = 3/4; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = -6/5, assign 1, control "": n = 14/5, sigma = -7/3, c = 7/15, s = 9/10; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = -6/5, assign 2, control "": n = 14/5, sigma = -7/3, c = 7/15, s = 9/10; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = -1/2, assign 1, control "": n = 7/2, sigma = -7, c = -7/2, s = 5/4; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = -1/2, assign 2, control "": n = 7/2, sigma = -7, c = -7/2, s = 5/4; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = -2/5, assign 1, control "": n = 18/5, sigma = -9, c = -27/5, s = 13/10; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = -2/5, assign 2, control "": n = 18/5, sigma = -9, c = -27/5, s = 13/10; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 1/2, assign 1, control "": n = 9/2, sigma = 9, c = 27/2, s = 7/4; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 1/2, assign 2, control "": n = 9/2, sigma = 9, c = 27/2, s = 7/4; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 2/3, assign 1, control "": n = 14/3, sigma = 7, c = 35/3, s = 11/6; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 2/3, assign 2, control "": n = 14/3, sigma = 7, c = 35/3, s = 11/6; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 1, assign 1, control "": n = 5, sigma = 5, c = 10, s = 2; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 1, assign 2, control "": n = 5, sigma = 5, c = 10, s = 2; cocycle numerator degree 9 in nu, 10 coefficient equations
+RESULT: NONE
+k = 3/2, assign 1, control "": n = 11/2, sigma = 11/3, c = 55/6, s = 9/4; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 3/2, assign 2, control "": n = 11/2, sigma = 11/3, c = 55/6, s = 9/4; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 5/3, assign 1, control "": n = 17/3, sigma = 17/5, c = 136/15, s = 7/3; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 5/3, assign 2, control "": n = 17/3, sigma = 17/5, c = 136/15, s = 7/3; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 2, assign 1, control "": n = 6, sigma = 3, c = 9, s = 5/2; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 2, assign 2, control "": n = 6, sigma = 3, c = 9, s = 5/2; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 3, assign 1, control "": n = 7, sigma = 7/3, c = 28/3, s = 3; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 3, assign 2, control "": n = 7, sigma = 7/3, c = 28/3, s = 3; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 10/3, assign 1, control "": n = 22/3, sigma = 11/5, c = 143/15, s = 19/6; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 10/3, assign 2, control "": n = 22/3, sigma = 11/5, c = 143/15, s = 19/6; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 4, assign 1, control "": n = 8, sigma = 2, c = 10, s = 7/2; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = 4, assign 2, control "": n = 8, sigma = 2, c = 10, s = 7/2; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = -18/5, assign 1, control "": n = 2/5, sigma = -1/9, c = 13/45, s = -3/10; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE
+k = -18/5, assign 2, control "": n = 2/5, sigma = -1/9, c = 13/45, s = -3/10; cocycle numerator degree 11 in nu, 12 coefficient equations
+RESULT: NONE

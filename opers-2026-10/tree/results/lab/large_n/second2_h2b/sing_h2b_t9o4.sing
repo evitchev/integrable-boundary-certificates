@@ -1,0 +1,18 @@
+ring r = 0, (sX,sY,cX,cY,pi_rot), dp;
+ideal I = 677025*cX*pi_rot*sX - 1552950*cX*sY - 4819500*cY*pi_rot*sX + 23020200*cY*sY + 1128375*pi_rot^3*sX^2 - 4658850*pi_rot^2*sX*sY - 23760135*pi_rot*sX + 9745218*sY,
+24448125*cX^2 - 348075000*cX*cY + 146688750*cX*pi_rot^2*sX - 184301250*cX*pi_rot*sX - 1716009750*cX + 2579850000*cY^2 - 1044225000*cY*pi_rot^2*sX + 1311975000*cY*pi_rot*sX + 2184273000*cY + 122240625*pi_rot^4*sX^2 - 307168750*pi_rot^3*sX^2 - 5148029250*pi_rot^2*sX + 6468036750*pi_rot*sX + 24302078073,
+135405*cX*sX - 40376700*cX*sY - 963900*cY*sX + 598525200*cY*sY + 225675*pi_rot^2*sX^2 - 40376700*pi_rot^2*sX*sY - 4752027*sX + 253375668*sY,
+635651250*cX^2 - 9049950000*cX*cY + 1271302500*cX*pi_rot^2*sX - 888783375*cX*sX - 44616253500*cX + 67076100000*cY^2 - 9049950000*cY*pi_rot^2*sX + 6326932500*cY*sX + 56791098000*cY + 635651250*pi_rot^4*sX^2 - 1481305625*pi_rot^2*sX^2 - 44616253500*pi_rot^2*sX + 31191777225*sX + 631854029898,
+682500*cX^2 - 8820000*cX*cY + 6825000*cX*pi_rot^2*sX - 18900000*cX*pi_rot*sY - 67943400*cX + 37800000*cY^2 - 44100000*cY*pi_rot^2*sX + 162000000*cY*pi_rot*sY + 241668000*cY + 7962500*pi_rot^4*sX^2 - 31500000*pi_rot^3*sX*sY - 339717000*pi_rot^2*sX + 517860000*pi_rot*sY + 1650819492;
+LIB "primdec.lib"; LIB "elim.lib";
+ideal G = std(I); "RAW dim:"; dim(G);
+poly h = (pi_rot)*(sX)*(885*cX - 6300*cY + 1475*pi_rot^2*sX - 31059)*(24375*cX^2 - 315000*cX*cY + 243750*cX*pi_rot^2*sX - 2426550*cX + 1350000*cY^2 - 1575000*cY*pi_rot^2*sX + 8631000*cY + 284375*pi_rot^4*sX^2 - 12132750*pi_rot^2*sX + 58957839);
+def SS = sat(I, h); "typeof sat:"; typeof(SS); ideal J = SS; ideal GJ = std(J); "SAT dim:"; dim(GJ); "SAT vdim (solutions with mult.):"; vdim(GJ);
+ideal Jr = radical(J); "radical vdim:"; vdim(std(Jr));
+list pd = minAssGTZ(J); "SAT minimal primes:"; size(pd);
+ring s = 0, (sX,sY,cX,cY,pi_rot), lp; option(redSB); list pd = imap(r, pd); int j;
+for (j=1;j<=size(pd);j++) { ideal L = std(pd[j]); "--- SAT prime", j, " vdim", vdim(L); L; write(":w comp_h2b_t9o4_" + string(j) + ".txt", L); kill L; }
+write(":w ncomp_h2b_t9o4.txt", size(pd));
+setring r; "RAW (unsaturated) decomposition, informational:"; list pr = minAssGTZ(I); int i; "RAW minimal primes:"; size(pr);
+for (i=1;i<=size(pr);i++) { "  raw prime", i, "dim", dim(std(pr[i])), "inside h=0 (excluded):", reduce(h, std(pr[i]))==0, " sX=0 on it:", reduce(sX, std(pr[i]))==0; }
+quit;

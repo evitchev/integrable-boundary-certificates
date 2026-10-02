@@ -1,0 +1,5 @@
+seal hash ok ab1bd1d98fed6f7df04134ed26acccd8bbe07f5bcb631b9d02f83325f7025dc4
+k = 8 (t = 13/5, order 12) solved to order 14  (237s)
+   spin 11: leading coefficient -5072840836245/1024; 28 monomials; symmetric: True  (240s)
+   spin 13: leading coefficient 815406615141723/2048; 36 monomials; symmetric: True  (241s)
+written prediction_partial_8.json 3f8a7407b2fdb57b0d1a76a340858231391bdd1fafca08c758df70b05266119d

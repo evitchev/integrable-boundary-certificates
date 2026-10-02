@@ -1,0 +1,22 @@
+seal and prediction hashes ok
+BLIND k=3,spin=11 (t = 11/5): certified table symmetric under PX <-> pi: True ; monomials 28 (independent 16) ; mismatches: 0 of 16 independent, 0 of 28 in all
+      e.g. constant term: predicted 35819747143/149239480320 = certified 35819747143/149239480320
+BLIND k=3,spin=13 (t = 11/5): certified table symmetric under PX <-> pi: True ; monomials 36 (independent 20) ; mismatches: 0 of 20 independent, 0 of 36 in all
+      e.g. constant term: predicted -13268678195/13335404544 = certified -13268678195/13335404544
+BLIND k=4,spin=11 (t = 7/3): certified table symmetric under PX <-> pi: True ; monomials 28 (independent 16) ; mismatches: 0 of 16 independent, 0 of 28 in all
+      e.g. constant term: predicted 6029497493/21112000000 = certified 6029497493/21112000000
+BLIND k=4,spin=13 (t = 7/3): certified table symmetric under PX <-> pi: True ; monomials 36 (independent 20) ; mismatches: 0 of 20 independent, 0 of 36 in all
+      e.g. constant term: predicted -1850993793/1520000000 = certified -1850993793/1520000000
+BLIND k=6,spin=11 (t = 5/2): certified table symmetric under PX <-> pi: True ; monomials 28 (independent 16) ; mismatches: 0 of 16 independent, 0 of 28 in all
+      e.g. constant term: predicted 1007242078664033/2948845078670400 = certified 1007242078664033/2948845078670400
+BLIND k=6,spin=13 (t = 5/2): certified table symmetric under PX <-> pi: True ; monomials 36 (independent 20) ; mismatches: 0 of 20 independent, 0 of 36 in all
+      e.g. constant term: predicted -57877359086245369/38658976121404800 = certified -57877359086245369/38658976121404800
+BLIND k=8,spin=11 (t = 13/5): certified table symmetric under PX <-> pi: True ; monomials 28 (independent 16) ; mismatches: 0 of 16 independent, 0 of 28 in all
+      e.g. constant term: predicted 74732103238321/199517822300160 = certified 74732103238321/199517822300160
+BLIND k=8,spin=13 (t = 13/5): certified table symmetric under PX <-> pi: True ; monomials 36 (independent 20) ; mismatches: 0 of 20 independent, 0 of 36 in all
+      e.g. constant term: predicted -28642132380247/17214397820928 = certified -28642132380247/17214397820928
+
+BLIND CELLS: 8 pass, 0 fail, 0 unscreened
+TAMPER (M = 1/4 + 1/10): file prediction_tamper_k4.json not present yet
+NON-BLIND k = 2: file prediction_partial_2.json not present yet
+RESULT: all blind cells PASS

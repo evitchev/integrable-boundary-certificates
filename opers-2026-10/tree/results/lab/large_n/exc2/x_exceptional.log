@@ -1,0 +1,5 @@
+t = 2    I3: vacuum at exponent 1 + b/2 is an eigenvalue of the level-1 block at 1 - b/2:  X side True, Y side True   (control, shifted exponent + 1/10: False)
+t = 2    I5: vacuum at exponent 1 + b/2 is an eigenvalue of the level-1 block at 1 - b/2:  X side True, Y side True   (control, shifted exponent + 1/10: False)
+t = 9/4  I3: vacuum at exponent 1 + b/2 is an eigenvalue of the level-1 block at 1 - b/2:  X side True, Y side True   (control, shifted exponent + 1/10: False)
+t = 9/4  I5: vacuum at exponent 1 + b/2 is an eigenvalue of the level-1 block at 1 - b/2:  X side True, Y side True   (control, shifted exponent + 1/10: False)
+x_exceptional: PASS

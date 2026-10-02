@@ -1,0 +1,10 @@
+t = 2, xi-exponents (1/2, 1/3) [PX^2 = 3/8, pi^2 = 1/6]
+number of solutions (degree of the eliminant in z): 4;  eliminant: (18*z - 1)*(18*z + 1)*(5832*z**2 - 49)
+I_1 (monic) over the solutions: [11/8];  vacuum value 3/8;  level = [1/2]
+I_3: minimal polynomial over the solutions: degree 2: e**2 - 73*e/32 + 4305/4096
+data: level-1 characteristic polynomial at this point: e**2 - 89*e/32 + 20209/4096
+I_1 = Delta + 1 on every solution: False;   I_3 polynomial == data characteristic polynomial: False;  data polynomial divides it: False  (0s)
+
+real	0m0.381s
+user	0m0.345s
+sys	0m0.036s

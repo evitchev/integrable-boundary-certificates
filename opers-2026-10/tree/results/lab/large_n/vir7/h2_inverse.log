@@ -1,0 +1,42 @@
+== (1) control S, repaired scale
+   t = 2, l0^2 scale = 1 x (pi-scale/a_Y): top vanishes at K = 3
+   t = 2, l0^2 scale = -1 x (pi-scale/a_Y): top mismatch at K = 1
+   t = 9/4, l0^2 scale = 1 x (pi-scale/a_Y): top law reproduced for K = 2, 3
+   t = 9/4, l0^2 scale = -1 x (pi-scale/a_Y): top mismatch at K = 1
+== (2) inverse problem, even bases
+   t = 2, gamma = 1 (n = 2): ok
+      beta_0 / c2 = 1/8 Xh^0 Yh^0
+      beta_1 / c2 = 1/40 Xh^1 Yh^0
+      beta_2 / c2 = 1/192 Xh^2 Yh^0
+      beta_3 / c2 = 7/7680 Xh^3 Yh^0
+      beta_4 / c2 = 3/20480 Xh^4 Yh^0
+   t = 2, gamma = 1/2 (n = 1): ok
+      beta_0 / c2 = 1/6 Xh^0 Yh^0
+      beta_1 / c2 = 9/80 Xh^1 Yh^0 ; 1/16 Xh^0 Yh^1
+      beta_2 / c2 = 3/32 Xh^2 Yh^0 ; 5/96 Xh^0 Yh^2
+      beta_3 / c2 = 21/320 Xh^3 Yh^0 ; 7/192 Xh^0 Yh^3
+      beta_4 / c2 = 27/640 Xh^4 Yh^0 ; 3/128 Xh^0 Yh^4
+   t = 2, gamma = 2 (n = 4): ok
+      beta_0 / c2 = 1/24 Xh^0 Yh^0
+      beta_1 / c2 = 3/640 Xh^1 Yh^0 ; -1/128 Xh^0 Yh^1
+      beta_2 / c2 = 1/4096 Xh^2 Yh^0 ; -5/12288 Xh^0 Yh^2
+      beta_3 / c2 = 7/655360 Xh^3 Yh^0 ; -7/393216 Xh^0 Yh^3
+      beta_4 / c2 = 9/20971520 Xh^4 Yh^0 ; -3/4194304 Xh^0 Yh^4
+   t = 9/4, gamma = 1 (n = 2): ok
+      beta_0 / c2 = 1/8 Xh^0 Yh^0
+      beta_1 / c2 = 1/42 Xh^1 Yh^0
+      beta_2 / c2 = 5/1008 Xh^2 Yh^0
+      beta_3 / c2 = 1/1152 Xh^3 Yh^0
+      beta_4 / c2 = 1/7168 Xh^4 Yh^0
+   t = 9/4, gamma = 1/2 (n = 1): ok
+      beta_0 / c2 = 1/6 Xh^0 Yh^0
+      beta_1 / c2 = 37/336 Xh^1 Yh^0 ; 1/16 Xh^0 Yh^1
+      beta_2 / c2 = 185/2016 Xh^2 Yh^0 ; 5/96 Xh^0 Yh^2
+      beta_3 / c2 = 37/576 Xh^3 Yh^0 ; 7/192 Xh^0 Yh^3
+      beta_4 / c2 = 37/896 Xh^4 Yh^0 ; 3/128 Xh^0 Yh^4
+   t = 9/4, gamma = 2 (n = 4): ok
+      beta_0 / c2 = 1/24 Xh^0 Yh^0
+      beta_1 / c2 = 11/2688 Xh^1 Yh^0 ; -1/128 Xh^0 Yh^1
+      beta_2 / c2 = 55/258048 Xh^2 Yh^0 ; -5/12288 Xh^0 Yh^2
+      beta_3 / c2 = 11/1179648 Xh^3 Yh^0 ; -7/393216 Xh^0 Yh^3
+      beta_4 / c2 = 11/29360128 Xh^4 Yh^0 ; -3/4194304 Xh^0 Yh^4

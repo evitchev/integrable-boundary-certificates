@@ -1,0 +1,15 @@
+(i) Sol-3 operator k = 2: general engine == even engine at orders 2..10: True
+(i) Sol-3 operator k = 10/3: general engine == even engine at orders 2..10: True
+(ii) a = 1/2 (n = 5/2, M = 2) vs Schrodinger M_S = 5, spin 1: monic polynomials equal: True
+(ii) a = 1/2 (n = 5/2, M = 2) vs Schrodinger M_S = 5, spin 3: monic polynomials equal: True
+     a = 1/2 order 6: dual zero: True, Schrodinger zero: False
+(ii) a = 1/2 (n = 5/2, M = 2) vs Schrodinger M_S = 5, spin 7: monic polynomials equal: True
+(ii) a = 5/8 (n = 21/8, M = 8/5) vs Schrodinger M_S = 21/5, spin 1: monic polynomials equal: True
+(ii) a = 5/8 (n = 21/8, M = 8/5) vs Schrodinger M_S = 21/5, spin 3: monic polynomials equal: True
+(ii) a = 5/8 (n = 21/8, M = 8/5) vs Schrodinger M_S = 21/5, spin 5: monic polynomials equal: True
+(ii) a = 5/8 (n = 21/8, M = 8/5) vs Schrodinger M_S = 21/5, spin 7: monic polynomials equal: True
+(ii) a = 2 (n = 4, M = 1/2) vs Schrodinger M_S = 2, spin 1: monic polynomials equal: True
+(ii) a = 2 (n = 4, M = 1/2) vs Schrodinger M_S = 2, spin 3: monic polynomials equal: True
+(ii) a = 2 (n = 4, M = 1/2) vs Schrodinger M_S = 2, spin 5: monic polynomials equal: True
+(ii) a = 2 (n = 4, M = 1/2) vs Schrodinger M_S = 2, spin 7: monic polynomials equal: True
+engine validation PASS

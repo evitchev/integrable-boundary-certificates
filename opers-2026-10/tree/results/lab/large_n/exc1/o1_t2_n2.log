@@ -1,0 +1,4 @@
+t = 2 M = 5 npts = 2 order 2: 3 monomials  (2s)
+t = 2 M = 5 npts = 2 order 4: 10 monomials  (2s)
+t = 2 M = 5 npts = 2 order 6: 27 monomials  (2s)
+written o1_t2_n2.json

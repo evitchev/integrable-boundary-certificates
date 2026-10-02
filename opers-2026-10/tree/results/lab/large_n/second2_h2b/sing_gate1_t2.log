@@ -1,0 +1,47 @@
+// ** redefining blowup0 (;return();) sing_gate1_t2.sing:6
+// ** redefining blowup0 (;return();) sing_gate1_t2.sing:6
+// ** redefining elimRing (;return();) sing_gate1_t2.sing:6
+// ** redefining elimRing (;return();) sing_gate1_t2.sing:6
+// ** redefining elim (;return();) sing_gate1_t2.sing:6
+// ** redefining elim (;return();) sing_gate1_t2.sing:6
+// ** redefining elim2 (;return();) sing_gate1_t2.sing:6
+// ** redefining elim2 (;return();) sing_gate1_t2.sing:6
+// ** redefining elim1 (;return();) sing_gate1_t2.sing:6
+// ** redefining elim1 (;return();) sing_gate1_t2.sing:6
+// ** redefining nselect (;return();) sing_gate1_t2.sing:6
+// ** redefining nselect (;return();) sing_gate1_t2.sing:6
+// ** redefining sat (;return();) sing_gate1_t2.sing:6
+// ** redefining sat (;return();) sing_gate1_t2.sing:6
+// ** redefining sat_with_exp (;return();) sing_gate1_t2.sing:6
+// ** redefining sat_with_exp (;return();) sing_gate1_t2.sing:6
+// ** redefining select (;return();) sing_gate1_t2.sing:6
+// ** redefining select (;return();) sing_gate1_t2.sing:6
+// ** redefining select1 (;return();) sing_gate1_t2.sing:6
+// ** redefining select1 (;return();) sing_gate1_t2.sing:6
+RAW dim:
+0
+RAW minimal primes:
+3
+  raw prime 1 dim 0 inside h=0 (excluded): 0  sX=0 on it: 0
+  raw prime 2 dim 0 inside h=0 (excluded): 0  sX=0 on it: 0
+  raw prime 3 dim 0 inside h=0 (excluded): 1  sX=0 on it: 1
+typeof sat:
+ideal
+SAT dim:
+0
+SAT vdim (solutions with mult.):
+2
+radical vdim:
+2
+SAT minimal primes:
+2
+--- SAT prime 1  vdim 1
+L[1]=cY+5
+L[2]=cX-45
+L[3]=sY-6
+L[4]=sX-120
+--- SAT prime 2  vdim 1
+L[1]=4*cY-15
+L[2]=cX
+L[3]=sY+6
+L[4]=sX+120

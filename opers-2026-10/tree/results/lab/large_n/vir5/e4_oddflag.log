@@ -1,0 +1,4 @@
+k = -6 (n = -2): odd-order terms exact derivatives: {3: (True, ''), 5: (True, ''), 7: (True, ''), 9: (True, '')}
+k = 10/3 (n = 22/3): odd-order terms exact derivatives: {3: (True, ''), 5: (True, ''), 7: (True, ''), 9: (True, '')}
+k = 1/2 (n = 9/2): odd-order terms exact derivatives: {3: (True, ''), 5: (True, ''), 7: (True, ''), 9: (True, '')}
+ODD ORDERS all exact derivatives: no even-spin charge at any of these fibres

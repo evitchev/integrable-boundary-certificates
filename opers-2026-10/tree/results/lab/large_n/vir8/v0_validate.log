@@ -1,0 +1,11 @@
+a = 5/8 order 2 (spin 1): cG zero: True; monic(cB) == monic(Gamma form): True; monic(cG) == monic(Gamma form) or cG = 0: True   (2s)
+a = 5/8 order 3 (spin 2): cG zero: True; monic(cB) == monic(Gamma form): True; monic(cG) == monic(Gamma form) or cG = 0: True   (2s)
+a = 5/8 order 4 (spin 3): cG zero: True; monic(cB) == monic(Gamma form): True; monic(cG) == monic(Gamma form) or cG = 0: True   (2s)
+a = 5/8 order 5 (spin 4): cG zero: True; monic(cB) == monic(Gamma form): True; monic(cG) == monic(Gamma form) or cG = 0: True   (2s)
+a = 5/8 order 6 (spin 5): cG zero: True; monic(cB) == monic(Gamma form): True; monic(cG) == monic(Gamma form) or cG = 0: True   (2s)
+a = 2/3 order 2 (spin 1): cG zero: True; monic(cB) == monic(Gamma form): True; monic(cG) == monic(Gamma form) or cG = 0: True   (3s)
+a = 2/3 order 3 (spin 2): cG zero: True; monic(cB) == monic(Gamma form): True; monic(cG) == monic(Gamma form) or cG = 0: True   (3s)
+a = 2/3 order 4 (spin 3): cG zero: True; monic(cB) == monic(Gamma form): True; monic(cG) == monic(Gamma form) or cG = 0: True   (3s)
+a = 2/3 order 5 (spin 4): cG zero: True; monic(cB) == monic(Gamma form): True; monic(cG) == monic(Gamma form) or cG = 0: True   (3s)
+a = 2/3 order 6 (spin 5): cG zero: True; monic(cB) == monic(Gamma form): True; monic(cG) == monic(Gamma form) or cG = 0: True   (3s)
+three-term engine validation PASS
