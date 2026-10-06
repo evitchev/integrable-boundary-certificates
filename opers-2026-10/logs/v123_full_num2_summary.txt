@@ -1,0 +1,9 @@
+kit integrity: OK (SHA256SUMS, INPUTS.SHA256)
+PASS  num2_fit_2_B_60               2s  [fit of archived high-precision Q data vs WKB and the registered log E terms; paper: Numerical spectral check (fourth-order operators)]
+PASS  num2_fit_2_C_60               2s  [fit of archived high-precision Q data vs WKB and the registered log E terms; paper: Numerical spectral check (fourth-order operators)]
+PASS  num2_fit_t10o3_B_60           2s  [fit of archived high-precision Q data vs WKB and the registered log E terms; paper: Numerical spectral check (fourth-order operators)]
+PASS  num2_fit_2_A_120              2s  [fit of archived high-precision Q data vs WKB and the registered log E terms; paper: Numerical spectral check (fourth-order operators)]
+PASS  num2_wrong_ordering           2s  [negative control: the wrong operator ordering must fail (reproduces its archived failing output); paper: Numerical spectral check (fourth-order operators)]
+PASS  num2_x0_control             178s  [numerical control: generic solver vs the NUM1 determinant; paper: Numerical spectral check (fourth-order operators)]
+PASS  num2_t1_zeros              2052s  [numerical: zeros of the projected Q vs the outward-Wronskian determinant; paper: Numerical spectral check (spectral Theorem 1 test)]
+ALL PASS  (7 checks, 2239s)

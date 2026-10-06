@@ -1,0 +1,10 @@
+point A K = 4 (E^-1.5): C_K(2+-eps) = 1.51212386831e+25, -1.51212386831e+25; residue R = 1.512123868312757201646091; symmetric finite part 1.37599964822; PREDICTED coefficient of E^(-1.5) log E: -0.7560619341563786008230453
+point A K = 7 (E^-3.0): C_K(2+-eps) = 0.0, 0.0; residue R = 0.0; symmetric finite part 0.0; PREDICTED coefficient of E^(-3.0) log E: 0.0
+point A K = 10 (E^-4.5): C_K(2+-eps) = 2.27831183514e+29, -2.27831183514e+29; residue R = 22783.11835144929479307204; symmetric finite part 38258.1937998; PREDICTED coefficient of E^(-4.5) log E: -34174.67752717394218960807
+point B K = 4 (E^-1.5): C_K(2+-eps) = 1.38110208333e+25, -1.38110208333e+25; residue R = 1.381102083333333333333333; symmetric finite part 1.30173004547; PREDICTED coefficient of E^(-1.5) log E: -0.6905510416666666666666667
+point B K = 7 (E^-3.0): C_K(2+-eps) = 0.0, 0.0; residue R = 0.0; symmetric finite part 0.0; PREDICTED coefficient of E^(-3.0) log E: 0.0
+point B K = 10 (E^-4.5): C_K(2+-eps) = 2.0524395597e+29, -2.0524395597e+29; residue R = 20524.39559699971930609809; symmetric finite part 35196.9306387; PREDICTED coefficient of E^(-4.5) log E: -30786.59339549957895914714
+point C K = 4 (E^-1.5): C_K(2+-eps) = 1.57104492188e+25, -1.57104492187e+25; residue R = 1.571044921875; symmetric finite part 1.40754088972; PREDICTED coefficient of E^(-1.5) log E: -0.7855224609375
+point C K = 7 (E^-3.0): C_K(2+-eps) = 0.0, 0.0; residue R = 0.0; symmetric finite part 0.0; PREDICTED coefficient of E^(-3.0) log E: 0.0
+point C K = 10 (E^-4.5): C_K(2+-eps) = 2.38080854216e+29, -2.38080854216e+29; residue R = 23808.08542160899378359318; symmetric finite part 39622.0668301; PREDICTED coefficient of E^(-4.5) log E: -35712.12813241349067538977
+exit 0

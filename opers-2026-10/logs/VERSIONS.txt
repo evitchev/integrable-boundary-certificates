@@ -5,3 +5,9 @@ Runs made when the kit was assembled (2026-10-02), from a fresh copy of the kit 
 Python 3.12.8 | sympy 1.14.0 | mpmath 1.3.0 | Linux x86_64
 Also passing (second2_h2b_* only, byte-identical): Python 3.8.10, sympy 1.13.3
 Lean: leanprover/lean4:v4.24.0, Mathlib v4.24.0 (f897ebcf72cd16f89ab4577d0c826cd14afaafc7); see ../lean/BUILD_LOG_local_path_mathlib.txt
+
+v1.2.3 (2026-10-06): fresh copy outside the author's workspace, Python 3.12.8 / sympy 1.14.0 / mpmath 1.3.0:
+  --quick 28 checks ALL PASS (1096 s); --drill 28 drills ALL PASS (1285 s).
+  New full-mode NUM2 checks (7) ALL PASS (2239 s; num2_t1_zeros 2052 s); their drills: 6 detected, num2_x0_control drill first mis-aimed
+  (perturbed a grid point x0 does not read; summary kept), retargeted to index 17 and detected (v123_x0_drill_retargeted_full_output.txt).
+  Python 3.8.10 / sympy 1.13.3: num2 quick checks, num2_t1_zeros, exc3 checks ALL PASS (v123_python38_summary.txt).

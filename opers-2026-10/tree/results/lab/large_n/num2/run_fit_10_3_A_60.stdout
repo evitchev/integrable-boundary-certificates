@@ -1,0 +1,25 @@
+
+=== 10_3_A_60: F1 (WKB lattice only)
+  Q_j theta = 2.83333333333333333333333333333333333333333333333333333333333: lsq residual 8.58e-16; K0: 14.49 digits [stab 14.2]; K2: 5.264 digits [stab 5.47]; K3: fit -0.0979 vs 0 [stab-abs 0.0087]; K4: -1.491 digits [stab 0.343]; K5: fit 1.86e+5 vs 0 [stab-abs 1.1e+5]; K6: -6.585 digits [stab -0.467]; K7: fit 5.2e+11 vs 0 [stab-abs 4.4e+11]; K8: -11.78 digits [stab -1.05]
+  Q_j theta = 3.5: lsq residual 1.37e-15; K0: 14.29 digits [stab 14.0]; K2: 5.061 digits [stab 5.27]; K3: fit -0.156 vs 0 [stab-abs 0.014]; K4: -1.694 digits [stab 0.351]; K5: fit 2.96e+5 vs 0 [stab-abs 1.7e+5]; K6: -6.788 digits [stab -0.467]; K7: fit 8.3e+11 vs 0 [stab-abs 7.1e+11]; K8: -11.98 digits [stab -1.05]
+  Q_j theta = 2.56666666666666666666666666666666666666666666666666666666667: lsq residual 7.26e-16; K0: 14.57 digits [stab 14.2]; K2: 5.336 digits [stab 5.54]; K3: fit -0.0829 vs 0 [stab-abs 0.0074]; K4: -1.418 digits [stab 0.339]; K5: fit 1.57e+5 vs 0 [stab-abs 9.0e+4]; K6: -6.512 digits [stab -0.467]; K7: fit 4.4e+11 vs 0 [stab-abs 3.8e+11]; K8: -11.71 digits [stab -1.05]
+  Q_j theta = 3.76666666666666666666666666666666666666666666666666666666667: lsq residual 1.62e-15; K0: 14.22 digits [stab 13.9]; K2: 4.988 digits [stab 5.19]; K3: fit -0.185 vs 0 [stab-abs 0.016]; K4: -1.766 digits [stab 0.353]; K5: fit 3.5e+5 vs 0 [stab-abs 2.0e+5]; K6: -6.86 digits [stab -0.467]; K7: fit 9.81e+11 vs 0 [stab-abs 8.4e+11]; K8: -12.06 digits [stab -1.05]
+  Weyl l0 pair (sum/2 vs WKB): K0: 14.38 d; K2: 5.151 d; K3: |fit| 0.25; K4: -1.604 d; K5: |fit| 4.8e+5; K6: -6.698 d; K7: |fit| 1.4e+12; K8: -11.89 d
+  Weyl l1 pair (sum/2 vs WKB): K0: 14.36 d; K2: 5.128 d; K3: |fit| 0.27; K4: -1.626 d; K5: |fit| 5.1e+5; K6: -6.72 d; K7: |fit| 1.4e+12; K8: -11.92 d
+
+=== 10_3_A_60: F2 (+ E^(-13/10))
+  Q_j theta = 2.83333333333333333333333333333333333333333333333333333333333: lsq residual 4.8e-23; K0: 21.11 digits [stab 20.2]; K2: 11.66 digits [stab 11.1]; K3: fit 5.66e-8 vs 0 [stab-abs 1.1e-7]; K4: 4.499 digits [stab 4.52]; K5: fit -0.692 vs 0 [stab-abs 0.15]; K6: -0.9996 digits [stab 0.377]; K7: fit 5.33e+5 vs 0 [stab-abs 3.0e+5]; K8: -5.604 digits [stab -0.496]
+     extra X1310: -0.5787807022199923988995 [stab 5.95]
+  Q_j theta = 3.5: lsq residual 5.43e-23; K0: 21.05 digits [stab 20.2]; K2: 11.61 digits [stab 11.1]; K3: fit 6.41e-8 vs 0 [stab-abs 1.3e-7]; K4: 4.445 digits [stab 4.46]; K5: fit -0.785 vs 0 [stab-abs 0.17]; K6: -1.054 digits [stab 0.385]; K7: fit 6.04e+5 vs 0 [stab-abs 3.5e+5]; K8: -5.658 digits [stab -0.496]
+     extra X1310: -0.9236714669914773013407 [stab 6.1]
+  Q_j theta = 2.56666666666666666666666666666666666666666666666666666666667: lsq residual 4.95e-23; K0: 21.09 digits [stab 20.2]; K2: 11.65 digits [stab 11.1]; K3: fit 5.84e-8 vs 0 [stab-abs 1.2e-7]; K4: 4.486 digits [stab 4.5]; K5: fit -0.714 vs 0 [stab-abs 0.16]; K6: -1.013 digits [stab 0.379]; K7: fit 5.5e+5 vs 0 [stab-abs 3.1e+5]; K8: -5.617 digits [stab -0.496]
+     extra X1310: -0.489708335843417575602 [stab 5.86]
+  Q_j theta = 3.76666666666666666666666666666666666666666666666666666666667: lsq residual 6.04e-23; K0: 21.01 digits [stab 20.1]; K2: 11.56 digits [stab 11.0]; K3: fit 7.13e-8 vs 0 [stab-abs 1.4e-7]; K4: 4.399 digits [stab 4.42]; K5: fit -0.871 vs 0 [stab-abs 0.19]; K6: -1.099 digits [stab 0.391]; K7: fit 6.71e+5 vs 0 [stab-abs 3.8e+5]; K8: -5.703 digits [stab -0.496]
+     extra X1310: -1.091676904250515967318 [stab 6.12]
+  Weyl l0 pair (sum/2 vs WKB): K0: 21.08 d; K2: 11.64 d; K3: |fit| 1.2e-7; K4: 4.471 d; K5: |fit| 1.5; K6: -1.028 d; K7: |fit| 1.1e+6; K8: -5.632 d
+     l0 pair sum: extra X1310 = -1.5024521692114697 [stab 6.03]
+  Weyl l1 pair (sum/2 vs WKB): K0: 21.05 d; K2: 11.61 d; K3: |fit| 1.3e-7; K4: 4.44 d; K5: |fit| 1.6; K6: -1.058 d; K7: |fit| 1.2e+6; K8: -5.662 d
+     l1 pair sum: extra X1310 = -1.58138524009393354 [stab 6.02]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 2.16 digits; K6: -1.0 digits; K8: -5.61 digits (must be << sealed)
+exit 0

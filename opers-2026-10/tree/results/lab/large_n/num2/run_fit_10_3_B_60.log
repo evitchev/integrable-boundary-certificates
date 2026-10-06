@@ -1,0 +1,24 @@
+
+=== 10_3_B_60: F1 (WKB lattice only)
+  Q_j theta = 2.26666666666666666666666666666666666666666666666666666666667: lsq residual 5.27e-16; K0: 14.71 digits [stab 14.4]; K2: 5.46 digits [stab 5.67]; K3: fit -0.0602 vs 0 [stab-abs 0.0054]; K4: -1.305 digits [stab 0.332]; K5: fit 1.14e+5 vs 0 [stab-abs 6.5e+4]; K6: -6.401 digits [stab -0.467]; K7: fit 3.2e+11 vs 0 [stab-abs 2.7e+11]; K8: -11.6 digits [stab -1.05]
+  Q_j theta = 4.06666666666666666666666666666666666666666666666666666666667: lsq residual 1.81e-15; K0: 14.17 digits [stab 13.8]; K2: 4.924 digits [stab 5.13]; K3: fit -0.207 vs 0 [stab-abs 0.018]; K4: -1.841 digits [stab 0.355]; K5: fit 3.92e+5 vs 0 [stab-abs 2.2e+5]; K6: -6.937 digits [stab -0.467]; K7: fit 1.1e+12 vs 0 [stab-abs 9.4e+11]; K8: -12.14 digits [stab -1.05]
+  Q_j theta = 2.96666666666666666666666666666666666666666666666666666666667: lsq residual 8.33e-16; K0: 14.51 digits [stab 14.2]; K2: 5.262 digits [stab 5.47]; K3: fit -0.0951 vs 0 [stab-abs 0.0085]; K4: -1.504 digits [stab 0.344]; K5: fit 1.8e+5 vs 0 [stab-abs 1.0e+5]; K6: -6.6 digits [stab -0.467]; K7: fit 5.05e+11 vs 0 [stab-abs 4.3e+11]; K8: -11.8 digits [stab -1.05]
+  Q_j theta = 3.36666666666666666666666666666666666666666666666666666666667: lsq residual 1.15e-15; K0: 14.37 digits [stab 14.0]; K2: 5.122 digits [stab 5.33]; K3: fit -0.131 vs 0 [stab-abs 0.012]; K4: -1.643 digits [stab 0.349]; K5: fit 2.48e+5 vs 0 [stab-abs 1.4e+5]; K6: -6.739 digits [stab -0.467]; K7: fit 6.96e+11 vs 0 [stab-abs 5.9e+11]; K8: -11.94 digits [stab -1.05]
+  Weyl l0 pair (sum/2 vs WKB): K0: 14.36 d; K2: 5.114 d; K3: |fit| 0.27; K4: -1.651 d; K5: |fit| 5.1e+5; K6: -6.747 d; K7: |fit| 1.4e+12; K8: -11.95 d
+  Weyl l1 pair (sum/2 vs WKB): K0: 14.43 d; K2: 5.186 d; K3: |fit| 0.23; K4: -1.579 d; K5: |fit| 4.3e+5; K6: -6.675 d; K7: |fit| 1.2e+12; K8: -11.87 d
+
+=== 10_3_B_60: F2 (+ E^(-13/10))
+  Q_j theta = 2.26666666666666666666666666666666666666666666666666666666667: lsq residual 4.78e-23; K0: 21.11 digits [stab 20.2]; K2: 11.65 digits [stab 11.1]; K3: fit 5.65e-8 vs 0 [stab-abs 1.1e-7]; K4: 4.474 digits [stab 4.49]; K5: fit -0.691 vs 0 [stab-abs 0.15]; K6: -1.026 digits [stab 0.381]; K7: fit 5.32e+5 vs 0 [stab-abs 3.0e+5]; K8: -5.632 digits [stab -0.496]
+     extra X1310: -0.3558632408579579849143 [stab 5.74]
+  Q_j theta = 4.06666666666666666666666666666666666666666666666666666666667: lsq residual 6.33e-23; K0: 20.99 digits [stab 20.1]; K2: 11.53 digits [stab 11.0]; K3: fit 7.47e-8 vs 0 [stab-abs 1.5e-7]; K4: 4.353 digits [stab 4.37]; K5: fit -0.914 vs 0 [stab-abs 0.2]; K6: -1.148 digits [stab 0.397]; K7: fit 7.03e+5 vs 0 [stab-abs 4.0e+5]; K8: -5.753 digits [stab -0.496]
+     extra X1310: -1.22284125724102073467 [stab 6.15]
+  Q_j theta = 2.96666666666666666666666666666666666666666666666666666666667: lsq residual 4.21e-23; K0: 21.16 digits [stab 20.3]; K2: 11.71 digits [stab 11.2]; K3: fit 4.97e-8 vs 0 [stab-abs 1.0e-7]; K4: 4.53 digits [stab 4.55]; K5: fit -0.607 vs 0 [stab-abs 0.13]; K6: -0.9705 digits [stab 0.373]; K7: fit 4.67e+5 vs 0 [stab-abs 2.7e+5]; K8: -5.576 digits [stab -0.496]
+     extra X1310: -0.5620785311174563978832 [stab 5.99]
+  Q_j theta = 3.36666666666666666666666666666666666666666666666666666666667: lsq residual 4.61e-23; K0: 21.12 digits [stab 20.3]; K2: 11.67 digits [stab 11.1]; K3: fit 5.44e-8 vs 0 [stab-abs 1.1e-7]; K4: 4.49 digits [stab 4.51]; K5: fit -0.666 vs 0 [stab-abs 0.15]; K6: -1.01 digits [stab 0.379]; K7: fit 5.12e+5 vs 0 [stab-abs 2.9e+5]; K8: -5.616 digits [stab -0.496]
+     extra X1310: -0.774205126620832269772 [stab 6.09]
+  Weyl l0 pair (sum/2 vs WKB): K0: 21.04 d; K2: 11.58 d; K3: |fit| 1.3e-7; K4: 4.409 d; K5: |fit| 1.6; K6: -1.091 d; K7: |fit| 1.2e+6; K8: -5.697 d
+     l0 pair sum: extra X1310 = -1.57870449809897872 [stab 6.02]
+  Weyl l1 pair (sum/2 vs WKB): K0: 21.14 d; K2: 11.69 d; K3: |fit| 1.0e-7; K4: 4.51 d; K5: |fit| 1.3; K6: -0.9909 d; K7: |fit| 9.8e+5; K8: -5.596 d
+     l1 pair sum: extra X1310 = -1.33628365773828867 [stab 6.05]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.75 digits; K6: -1.04 digits; K8: -5.65 digits (must be << sealed)

@@ -1,0 +1,208 @@
+
+===== num2_fit_2_B_60 [DRILL]: argv ['num2_fit.py', '2_B_60']  exit 0  2s
+
+=== 2_B_60: S (sealed basis, no log E terms)
+  Q_j theta = 1.6: lsq residual 2.27e-17; K0: 14.48 digits [stab 12.3]; K2: 6.37 digits [stab 4.69]; K3: fit -0.000882 vs 0 [stab-abs 0.016]; K4 (pole in WKB): fit -7.16653696743 [stab 0.146]; K5: fit 1.72e+3 vs 0 [stab-abs 1.6e+4]; K6: -4.807 digits [stab 0.0345]; K7 (pole in WKB): fit 438208275.32 [stab 0.0357]; K8: -8.583 digits [stab 0.043]
+  Q_j theta = 3.4: lsq residual 3.0e-17; K0: 14.45 digits [stab 14.0]; K2: 6.353 digits [stab 6.34]; K3: fit -0.000901 vs 0 [stab-abs 0.00041]; K4 (pole in WKB): fit -9.37684673865 [stab 1.21]; K5: fit 1.68e+3 vs 0 [stab-abs 5.6e+2]; K6: -4.784 digits [stab -0.122]; K7 (pole in WKB): fit 404108240.24 [stab -0.431]; K8: -8.533 digits [stab -0.703]
+  Q_j theta = 2.3: lsq residual 3.0e-17; K0: 14.45 digits [stab 14.0]; K2: 6.353 digits [stab 6.34]; K3: fit -0.000901 vs 0 [stab-abs 0.00041]; K4 (pole in WKB): fit -7.96800237216 [stab 1.14]; K5: fit 1.68e+3 vs 0 [stab-abs 5.6e+2]; K6: -4.784 digits [stab -0.122]; K7 (pole in WKB): fit 404108376.149 [stab -0.431]; K8: -8.533 digits [stab -0.703]
+  Q_j theta = 2.7: lsq residual 3.0e-17; K0: 14.45 digits [stab 14.0]; K2: 6.353 digits [stab 6.34]; K3: fit -0.000901 vs 0 [stab-abs 0.00041]; K4 (pole in WKB): fit -8.54408055464 [stab 1.17]; K5: fit 1.68e+3 vs 0 [stab-abs 5.6e+2]; K6: -4.784 digits [stab -0.122]; K7 (pole in WKB): fit 404108319.703 [stab -0.431]; K8: -8.533 digits [stab -0.703]
+  Weyl l0 pair (sum/2 vs WKB): K0: 14.46 d; K2: 6.362 d; K3: |fit| 0.0018; K4: fit/2 -8.2716918530433; K5: |fit| 3.4e+3; K6: -4.796 d; K7: fit/2 421158257.78003; K8: -8.559 d
+  Weyl l1 pair (sum/2 vs WKB): K0: 14.45 d; K2: 6.353 d; K3: |fit| 0.0018; K4: fit/2 -8.2560414634004; K5: |fit| 3.4e+3; K6: -4.784 d; K7: fit/2 404108347.92577; K8: -8.533 d
+
+=== 2_B_60: R (registered refinement, + E^p log E at p = -3/2, -3, -9/2)
+  Q_j theta = 1.6: lsq residual 1.41e-19; K0: 15.18 digits [stab 11.9]; K2: 6.767 digits [stab 3.77]; K3: fit -0.000556 vs 0 [stab-abs 0.4]; K4 (pole in WKB): fit -9.00178183398 [stab 0.000694]; K5: fit 3.81e+3 vs 0 [stab-abs 1.3e+6]; K6: -5.605 digits [stab 0.00194]; K7 (pole in WKB): fit -28134146067.0 [stab 0.00326]; K8: -9.804 digits [stab 0.00487]
+     extra logE_-3/2: 0.06282734491057289570063 [stab 7.26e-5]  vs PREDICTED -0.6905510416666666666667: -0.03782 digits
+     extra logE_-3: 2105701946.25158496195 [stab 0.00303]  vs PREDICTED 0.0: pred 0, |fit| 2.11e+9
+     extra logE_-9/2: 203335386736054664.5236 [stab 0.0137]  vs PREDICTED -30786.59339549957895915: -12.82 digits
+  Q_j theta = 3.4: lsq residual 8.58e-36; K0: 31.38 digits [stab 27.6]; K2: 22.96 digits [stab 19.4]; K3: fit -3.57e-20 vs 0 [stab-abs 9.1e-17]; K4 (pole in WKB): fit 0.601128605733 [stab 11.7]; K5: fit 2.47e-13 vs 0 [stab-abs 3.1e-10]; K6: 10.58 digits [stab 7.65]; K7 (pole in WKB): fit -110.708803988 [stab 5.06]; K8: 6.376 digits [stab 3.82]
+     extra logE_-3/2: -0.6905510416666666181068 [stab 12.9]  vs PREDICTED -0.6905510416666666666667: 16.15 digits
+     extra logE_-3: 1.380853821582757313197e-7 [stab -0.000771]  vs PREDICTED 0.0: pred 0, |fit| 1.38e-7
+     extra logE_-9/2: -30772.91512195859495448 [stab 1.23]  vs PREDICTED -30786.59339549957895915: 3.352 digits
+  Q_j theta = 2.3: lsq residual 4.63e-36; K0: 31.63 digits [stab 27.1]; K2: 23.21 digits [stab 19.0]; K3: fit -2.03e-20 vs 0 [stab-abs 2.6e-16]; K4 (pole in WKB): fit 2.00997297223 [stab 11.7]; K5: fit 1.42e-13 vs 0 [stab-abs 8.5e-10]; K6: 10.82 digits [stab 7.22]; K7 (pole in WKB): fit 25.2004104632 [stab 4.0]; K8: 6.61 digits [stab 3.41]
+     extra logE_-3/2: -0.6905510416666666389487 [stab 12.4]  vs PREDICTED -0.6905510416666666666667: 16.4 digits
+     extra logE_-3: 8.014464662902361677797e-8 [stab 0.000171]  vs PREDICTED 0.0: pred 0, |fit| 8.01e-8
+     extra logE_-9/2: -30778.45314972799238504 [stab 0.763]  vs PREDICTED -30786.59339549957895915: 3.578 digits
+  Q_j theta = 2.7: lsq residual 7.21e-36; K0: 31.45 digits [stab 27.4]; K2: 23.03 digits [stab 19.2]; K3: fit -3.07e-20 vs 0 [stab-abs 1.5e-16]; K4 (pole in WKB): fit 1.43389478975 [stab 11.8]; K5: fit 2.14e-13 vs 0 [stab-abs 4.9e-10]; K6: 10.64 digits [stab 7.47]; K7 (pole in WKB): fit -31.2460109972 [stab 4.34]; K8: 6.435 digits [stab 3.67]
+     extra logE_-3/2: -0.6905510416666666247412 [stab 12.7]  vs PREDICTED -0.6905510416666666666667: 16.22 digits
+     extra logE_-3: 1.20191709318941080663e-7 [stab 0.000457]  vs PREDICTED 0.0: pred 0, |fit| 1.2e-7
+     extra logE_-9/2: -30774.53989796059568933 [stab 1.06]  vs PREDICTED -30786.59339549957895915: 3.407 digits
+  Weyl l0 pair (sum/2 vs WKB): K0: 15.48 d; K2: 7.068 d; K3: |fit| 0.00056; K4: fit/2 -4.2003266141216; K5: |fit| 3.8e+3; K6: -5.304 d; K7: fit/2 -14067073088.852; K8: -9.503 d
+     l0 pair sum: extra logE_-3/2 = -0.627723696756093722 [stab -0.000726]
+     l0 pair sum: extra logE_-3 = 2105701946.2515851 [stab 0.00303]
+     l0 pair sum: extra logE_-9/2 = 203335386736023892.0 [stab 0.0137]
+  Weyl l1 pair (sum/2 vs WKB): K0: 31.53 d; K2: 23.11 d; K3: |fit| 5.1e-20; K4: fit/2 1.7219338809878; K5: |fit| 3.6e-13; K6: 10.72 d; K7: fit/2 -3.0228002670061; K8: 6.514 d
+     l1 pair sum: extra logE_-3/2 = -1.38110208333333326 [stab 12.6]
+     l1 pair sum: extra logE_-3 = 2.00336355947964697e-7 [stab 0.000274]
+     l1 pair sum: extra logE_-9/2 = -61552.9930476885881 [stab 0.892]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.62 digits; K6: -5.63 digits; K8: -9.83 digits (must be << sealed)
+
+===== num2_fit_2_C_60 [DRILL]: argv ['num2_fit.py', '2_C_60']  exit 0  2s
+
+=== 2_C_60: S (sealed basis, no log E terms)
+  Q_j theta = 2.0: lsq residual 2.63e-17; K0: 14.42 digits [stab 12.3]; K2: 6.341 digits [stab 4.69]; K3: fit -0.001 vs 0 [stab-abs 0.017]; K4 (pole in WKB): fit -8.74209266437 [stab 0.162]; K5: fit 1.96e+3 vs 0 [stab-abs 1.7e+4]; K6: -4.799 digits [stab 0.0364]; K7 (pole in WKB): fit 496387128.83 [stab 0.0376]; K8: -8.573 digits [stab 0.0452]
+  Q_j theta = 3.0: lsq residual 3.41e-17; K0: 14.39 digits [stab 14.0]; K2: 6.325 digits [stab 6.31]; K3: fit -0.00103 vs 0 [stab-abs 0.00046]; K4 (pole in WKB): fit -10.0554872206 [stab 1.19]; K5: fit 1.91e+3 vs 0 [stab-abs 6.4e+2]; K6: -4.778 digits [stab -0.122]; K7 (pole in WKB): fit 459685265.06 [stab -0.431]; K8: -8.526 digits [stab -0.703]
+  Q_j theta = 2.25: lsq residual 3.41e-17; K0: 14.39 digits [stab 14.0]; K2: 6.325 digits [stab 6.31]; K3: fit -0.00103 vs 0 [stab-abs 0.00046]; K4 (pole in WKB): fit -9.03329447387 [stab 1.14]; K5: fit 1.91e+3 vs 0 [stab-abs 6.4e+2]; K6: -4.778 digits [stab -0.122]; K7 (pole in WKB): fit 459685364.994 [stab -0.431]; K8: -8.526 digits [stab -0.703]
+  Q_j theta = 2.75: lsq residual 3.41e-17; K0: 14.39 digits [stab 14.0]; K2: 6.325 digits [stab 6.31]; K3: fit -0.00103 vs 0 [stab-abs 0.00046]; K4 (pole in WKB): fit -9.73059629391 [stab 1.17]; K5: fit 1.91e+3 vs 0 [stab-abs 6.4e+2]; K6: -4.778 digits [stab -0.122]; K7 (pole in WKB): fit 459685296.601 [stab -0.431]; K8: -8.526 digits [stab -0.703]
+  Weyl l0 pair (sum/2 vs WKB): K0: 14.41 d; K2: 6.333 d; K3: |fit| 0.002; K4: fit/2 -9.3987899424801; K5: |fit| 3.9e+3; K6: -4.789 d; K7: fit/2 478036196.94506; K8: -8.55 d
+  Weyl l1 pair (sum/2 vs WKB): K0: 14.39 d; K2: 6.325 d; K3: |fit| 0.0021; K4: fit/2 -9.3819453838901; K5: |fit| 3.8e+3; K6: -4.778 d; K7: fit/2 459685330.79761; K8: -8.526 d
+
+=== 2_C_60: R (registered refinement, + E^p log E at p = -3/2, -3, -9/2)
+  Q_j theta = 2.0: lsq residual 1.52e-19; K0: 15.15 digits [stab 11.9]; K2: 6.763 digits [stab 3.77]; K3: fit -0.000598 vs 0 [stab-abs 0.43]; K4 (pole in WKB): fit -10.1064496062 [stab 0.000724]; K5: fit 4.1e+3 vs 0 [stab-abs 1.4e+6]; K6: -5.575 digits [stab 0.00194]; K7 (pole in WKB): fit -30280860949.9 [stab 0.00326]; K8: -9.772 digits [stab 0.00487]
+     extra logE_-3/2: 0.02534082506392524560813 [stab 2.72e-5]  vs PREDICTED -0.7855224609375: -0.01379 digits
+     extra logE_-3: 2266372954.013730593013 [stab 0.00303]  vs PREDICTED 0.0: pred 0, |fit| 2.27e+9
+     extra logE_-9/2: 218850451229744761.0565 [stab 0.0137]  vs PREDICTED -35712.12813241349067539: -12.79 digits
+  Q_j theta = 3.0: lsq residual 8.33e-36; K0: 31.39 digits [stab 27.8]; K2: 23.0 digits [stab 19.7]; K3: fit -3.51e-20 vs 0 [stab-abs 4.8e-17]; K4 (pole in WKB): fit 1.29475812663 [stab 12.3]; K5: fit 2.43e-13 vs 0 [stab-abs 1.5e-10]; K6: 10.65 digits [stab 8.05]; K7 (pole in WKB): fit -69.0701700394 [stab 5.22]; K8: 6.444 digits [stab 4.28]
+     extra logE_-3/2: -0.7855224609374999521967 [stab 13.2]  vs PREDICTED -0.7855224609375: 16.22 digits
+     extra logE_-3: 1.365240948748952872471e-7 [stab 0.00176]  vs PREDICTED 0.0: pred 0, |fit| 1.37e-7
+     extra logE_-9/2: -35698.51487698385560015 [stab 1.76]  vs PREDICTED -35712.12813241349067539: 3.419 digits
+  Q_j theta = 2.25: lsq residual 4.22e-36; K0: 31.67 digits [stab 27.1]; K2: 23.27 digits [stab 19.0]; K3: fit -1.86e-20 vs 0 [stab-abs 2.7e-16]; K4 (pole in WKB): fit 2.31695087336 [stab 11.8]; K5: fit 1.3e-13 vs 0 [stab-abs 8.9e-10]; K6: 10.92 digits [stab 7.27]; K7 (pole in WKB): fit 30.8638412989 [stab 4.07]; K8: 6.709 digits [stab 3.46]
+     extra logE_-3/2: -0.7855224609374999745455 [stab 12.5]  vs PREDICTED -0.7855224609375: 16.49 digits
+     extra logE_-3: 7.373396686124253620273e-8 [stab 0.000151]  vs PREDICTED 0.0: pred 0, |fit| 7.37e-8
+     extra logE_-9/2: -35704.61908356555644811 [stab 0.816]  vs PREDICTED -35712.12813241349067539: 3.677 digits
+  Q_j theta = 2.75: lsq residual 7.43e-36; K0: 31.43 digits [stab 27.4]; K2: 23.04 digits [stab 19.3]; K3: fit -3.16e-20 vs 0 [stab-abs 1.3e-16]; K4 (pole in WKB): fit 1.61964905331 [stab 11.9]; K5: fit 2.2e-13 vs 0 [stab-abs 4.3e-10]; K6: 10.69 digits [stab 7.58]; K7 (pole in WKB): fit -37.5290553461 [stab 4.47]; K8: 6.487 digits [stab 3.78]
+     extra logE_-3/2: -0.7855224609374999568796 [stab 12.8]  vs PREDICTED -0.7855224609375: 16.26 digits
+     extra logE_-3: 1.235300187636990042049e-7 [stab 0.00053]  vs PREDICTED 0.0: pred 0, |fit| 1.24e-7
+     extra logE_-9/2: -35699.75307070171753347 [stab 1.19]  vs PREDICTED -35712.12813241349067539: 3.46 digits
+  Weyl l0 pair (sum/2 vs WKB): K0: 15.45 d; K2: 7.064 d; K3: |fit| 0.0006; K4: fit/2 -4.4058457397812; K5: |fit| 4.1e+3; K6: -5.274 d; K7: fit/2 -15140430509.468; K8: -9.471 d
+     l0 pair sum: extra logE_-3/2 = -0.760181635873574707 [stab -0.000817]
+     l0 pair sum: extra logE_-3 = 2266372954.01373073 [stab 0.00303]
+     l0 pair sum: extra logE_-9/2 = 218850451229709063.0 [stab 0.0137]
+  Weyl l1 pair (sum/2 vs WKB): K0: 31.54 d; K2: 23.14 d; K3: |fit| 5.0e-20; K4: fit/2 1.9682999633335; K5: |fit| 3.5e-13; K6: 10.79 d; K7: fit/2 -3.3326070235807; K8: 6.584 d
+     l1 pair sum: extra logE_-3/2 = -1.57104492187499993 [stab 12.6]
+     l1 pair sum: extra logE_-3 = 1.9726398562494154e-7 [stab 0.000274]
+     l1 pair sum: extra logE_-9/2 = -71404.372154267274 [stab 0.971]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.89 digits; K6: -5.59 digits; K8: -9.78 digits (must be << sealed)
+
+===== num2_fit_t10o3_B_60 [DRILL]: argv ['num2_fit.py', '10_3_B_60']  exit 0  2s
+
+=== 10_3_B_60: F1 (WKB lattice only)
+  Q_j theta = 2.26666666666666666666666666666666666666666666666666666666667: lsq residual 5.27e-16; K0: 14.71 digits [stab 14.6]; K2: 5.46 digits [stab 5.8]; K3: fit -0.0602 vs 0 [stab-abs 0.0041]; K4: -1.305 digits [stab 0.465]; K5: fit 1.14e+5 vs 0 [stab-abs 5.5e+4]; K6: -6.401 digits [stab -0.278]; K7: fit 3.2e+11 vs 0 [stab-abs 2.5e+11]; K8: -11.6 digits [stab -0.785]
+  Q_j theta = 4.06666666666666666666666666666666666666666666666666666666667: lsq residual 1.81e-15; K0: 14.17 digits [stab 13.8]; K2: 4.924 digits [stab 5.13]; K3: fit -0.207 vs 0 [stab-abs 0.018]; K4: -1.841 digits [stab 0.355]; K5: fit 3.92e+5 vs 0 [stab-abs 2.2e+5]; K6: -6.937 digits [stab -0.467]; K7: fit 1.1e+12 vs 0 [stab-abs 9.4e+11]; K8: -12.14 digits [stab -1.05]
+  Q_j theta = 2.96666666666666666666666666666666666666666666666666666666667: lsq residual 8.33e-16; K0: 14.51 digits [stab 14.2]; K2: 5.262 digits [stab 5.47]; K3: fit -0.0951 vs 0 [stab-abs 0.0085]; K4: -1.504 digits [stab 0.344]; K5: fit 1.8e+5 vs 0 [stab-abs 1.0e+5]; K6: -6.6 digits [stab -0.467]; K7: fit 5.05e+11 vs 0 [stab-abs 4.3e+11]; K8: -11.8 digits [stab -1.05]
+  Q_j theta = 3.36666666666666666666666666666666666666666666666666666666667: lsq residual 1.15e-15; K0: 14.37 digits [stab 14.0]; K2: 5.122 digits [stab 5.33]; K3: fit -0.131 vs 0 [stab-abs 0.012]; K4: -1.643 digits [stab 0.349]; K5: fit 2.48e+5 vs 0 [stab-abs 1.4e+5]; K6: -6.739 digits [stab -0.467]; K7: fit 6.96e+11 vs 0 [stab-abs 5.9e+11]; K8: -11.94 digits [stab -1.05]
+  Weyl l0 pair (sum/2 vs WKB): K0: 14.36 d; K2: 5.114 d; K3: |fit| 0.27; K4: -1.651 d; K5: |fit| 5.1e+5; K6: -6.747 d; K7: |fit| 1.4e+12; K8: -11.95 d
+  Weyl l1 pair (sum/2 vs WKB): K0: 14.43 d; K2: 5.186 d; K3: |fit| 0.23; K4: -1.579 d; K5: |fit| 4.3e+5; K6: -6.675 d; K7: |fit| 1.2e+12; K8: -11.87 d
+
+=== 10_3_B_60: F2 (+ E^(-13/10))
+  Q_j theta = 2.26666666666666666666666666666666666666666666666666666666667: lsq residual 3.66e-20; K0: 18.63 digits [stab 14.5]; K2: 9.307 digits [stab 5.41]; K3: fit -9.49e-6 vs 0 [stab-abs 0.051]; K4: 2.449 digits [stab -0.0365]; K5: fit 22.2 vs 0 [stab-abs 4.9e+4]; K6: -2.765 digits [stab 0.000343]; K7: fit 8.33e+7 vs 0 [stab-abs 6.2e+10]; K8: -8.071 digits [stab 0.00104]
+     extra X1310: -0.3558055505663434186232 [stab -0.579]
+  Q_j theta = 4.06666666666666666666666666666666666666666666666666666666667: lsq residual 6.33e-23; K0: 20.99 digits [stab 20.1]; K2: 11.53 digits [stab 11.0]; K3: fit 7.47e-8 vs 0 [stab-abs 1.5e-7]; K4: 4.353 digits [stab 4.37]; K5: fit -0.914 vs 0 [stab-abs 0.2]; K6: -1.148 digits [stab 0.397]; K7: fit 7.03e+5 vs 0 [stab-abs 4.0e+5]; K8: -5.753 digits [stab -0.496]
+     extra X1310: -1.22284125724102073467 [stab 6.15]
+  Q_j theta = 2.96666666666666666666666666666666666666666666666666666666667: lsq residual 4.21e-23; K0: 21.16 digits [stab 20.3]; K2: 11.71 digits [stab 11.2]; K3: fit 4.97e-8 vs 0 [stab-abs 1.0e-7]; K4: 4.53 digits [stab 4.55]; K5: fit -0.607 vs 0 [stab-abs 0.13]; K6: -0.9705 digits [stab 0.373]; K7: fit 4.67e+5 vs 0 [stab-abs 2.7e+5]; K8: -5.576 digits [stab -0.496]
+     extra X1310: -0.5620785311174563978832 [stab 5.99]
+  Q_j theta = 3.36666666666666666666666666666666666666666666666666666666667: lsq residual 4.61e-23; K0: 21.12 digits [stab 20.3]; K2: 11.67 digits [stab 11.1]; K3: fit 5.44e-8 vs 0 [stab-abs 1.1e-7]; K4: 4.49 digits [stab 4.51]; K5: fit -0.666 vs 0 [stab-abs 0.15]; K6: -1.01 digits [stab 0.379]; K7: fit 5.12e+5 vs 0 [stab-abs 2.9e+5]; K8: -5.616 digits [stab -0.496]
+     extra X1310: -0.774205126620832269772 [stab 6.09]
+  Weyl l0 pair (sum/2 vs WKB): K0: 18.93 d; K2: 9.611 d; K3: |fit| 9.4e-6; K4: 2.756 d; K5: |fit| 21.0; K6: -2.475 d; K7: |fit| 8.4e+7; K8: -7.772 d
+     l0 pair sum: extra X1310 = -1.57864680780736415 [stab 0.663]
+  Weyl l1 pair (sum/2 vs WKB): K0: 21.14 d; K2: 11.69 d; K3: |fit| 1.0e-7; K4: 4.51 d; K5: |fit| 1.3; K6: -0.9909 d; K7: |fit| 9.8e+5; K8: -5.596 d
+     l1 pair sum: extra X1310 = -1.33628365773828867 [stab 6.05]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.75 digits; K6: -2.78 digits; K8: -8.09 digits (must be << sealed)
+
+===== num2_fit_2_A_120 [DRILL]: argv ['num2_fit.py', '2_A_120']  exit 0  2s
+
+=== 2_A_120: S (sealed basis, no log E terms)
+  Q_j theta = 2.16666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666667: lsq residual 2.5e-17; K0: 14.44 digits [stab 12.3]; K2: 6.351 digits [stab 4.68]; K3: fit -0.000966 vs 0 [stab-abs 0.017]; K4 (pole in WKB): fit -8.6018962558 [stab 0.159]; K5: fit 1.89e+3 vs 0 [stab-abs 1.7e+4]; K6: -4.802 digits [stab 0.0348]; K7 (pole in WKB): fit 479400775.815 [stab 0.036]; K8: -8.577 digits [stab 0.0434]
+  Q_j theta = 2.83333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333: lsq residual 3.28e-17; K0: 14.41 digits [stab 14.0]; K2: 6.333 digits [stab 6.32]; K3: fit -0.000987 vs 0 [stab-abs 0.00045]; K4 (pole in WKB): fit -9.49709285841 [stab 1.18]; K5: fit 1.84e+3 vs 0 [stab-abs 6.1e+2]; K6: -4.78 digits [stab -0.122]; K7 (pole in WKB): fit 442445075.504 [stab -0.431]; K8: -8.528 digits [stab -0.703]
+  Q_j theta = 1.9: lsq residual 3.28e-17; K0: 14.41 digits [stab 14.0]; K2: 6.333 digits [stab 6.32]; K3: fit -0.000987 vs 0 [stab-abs 0.00045]; K4 (pole in WKB): fit -8.23415608277 [stab 1.11]; K5: fit 1.84e+3 vs 0 [stab-abs 6.1e+2]; K6: -4.78 digits [stab -0.122]; K7 (pole in WKB): fit 442445198.673 [stab -0.431]; K8: -8.528 digits [stab -0.703]
+  Q_j theta = 3.1: lsq residual 3.28e-17; K0: 14.41 digits [stab 14.0]; K2: 6.333 digits [stab 6.32]; K3: fit -0.000987 vs 0 [stab-abs 0.00045]; K4 (pole in WKB): fit -9.8309108764 [stab 1.19]; K5: fit 1.84e+3 vs 0 [stab-abs 6.1e+2]; K6: -4.78 digits [stab -0.122]; K7 (pole in WKB): fit 442445043.32 [stab -0.431]; K8: -8.528 digits [stab -0.703]
+  Weyl l0 pair (sum/2 vs WKB): K0: 14.42 d; K2: 6.342 d; K3: |fit| 0.002; K4: fit/2 -9.0494945571021; K5: |fit| 3.7e+3; K6: -4.791 d; K7: fit/2 460922925.65974; K8: -8.553 d
+  Weyl l1 pair (sum/2 vs WKB): K0: 14.41 d; K2: 6.333 d; K3: |fit| 0.002; K4: fit/2 -9.0325334795832; K5: |fit| 3.7e+3; K6: -4.78 d; K7: fit/2 442445120.99634; K8: -8.528 d
+
+=== 2_A_120: R (registered refinement, + E^p log E at p = -3/2, -3, -9/2)
+  Q_j theta = 2.16666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666667: lsq residual 1.53e-19; K0: 15.15 digits [stab 11.9]; K2: 6.752 digits [stab 3.76]; K3: fit -0.000602 vs 0 [stab-abs 0.43]; K4 (pole in WKB): fit -10.4798877908 [stab 0.000745]; K5: fit 4.13e+3 vs 0 [stab-abs 1.4e+6]; K6: -5.597 digits [stab 0.00194]; K7 (pole in WKB): fit -30490322884.7 [stab 0.00326]; K8: -9.794 digits [stab 0.00487]
+     extra logE_-3/2: 0.06041033952636028667141 [stab 6.44e-5]  vs PREDICTED -0.756061934156378600823: -0.03338 digits
+     extra logE_-3: 2282050144.237759407052 [stab 0.00303]  vs PREDICTED 0.0: pred 0, |fit| 2.28e+9
+     extra logE_-9/2: 220364306285449995.8773 [stab 0.0137]  vs PREDICTED -34174.67752717394218961: -12.81 digits
+  Q_j theta = 2.83333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333: lsq residual 7.8e-36; K0: 31.41 digits [stab 27.5]; K2: 23.01 digits [stab 19.4]; K3: fit -3.3e-20 vs 0 [stab-abs 1.1e-16]; K4 (pole in WKB): fit 1.42746866225 [stab 12.0]; K5: fit 2.29e-13 vs 0 [stab-abs 3.4e-10]; K6: 10.66 digits [stab 7.67]; K7 (pole in WKB): fit -48.7398523006 [stab 4.69]; K8: 6.45 digits [stab 3.87]
+     extra logE_-3/2: -0.7560619341563785557624 [stab 12.9]  vs PREDICTED -0.756061934156378600823: 16.22 digits
+     extra logE_-3: 1.289461639586951584134e-7 [stab 0.000707]  vs PREDICTED 0.0: pred 0, |fit| 1.29e-7
+     extra logE_-9/2: -34161.78127765794243302 [stab 1.29]  vs PREDICTED -34174.67752717394218961: 3.423 digits
+  Q_j theta = 1.9: lsq residual 1.24e-36; K0: 32.15 digits [stab 27.0]; K2: 23.74 digits [stab 18.9]; K3: fit -6.28e-21 vs 0 [stab-abs 3.2e-16]; K4 (pole in WKB): fit 2.69040543789 [stab 11.8]; K5: fit 4.48e-14 vs 0 [stab-abs 1.1e-9]; K6: 11.36 digits [stab 7.17]; K7 (pole in WKB): fit 74.428959124 [stab 4.37]; K8: 7.134 digits [stab 3.35]
+     extra logE_-3/2: -0.7560619341563785921501 [stab 12.4]  vs PREDICTED -0.756061934156378600823: 16.94 digits
+     extra logE_-3: 2.610899661064466609552e-8 [stab 4.42e-5]  vs PREDICTED 0.0: pred 0, |fit| 2.61e-8
+     extra logE_-9/2: -34171.87166284943974635 [stab 0.689]  vs PREDICTED -34174.67752717394218961: 4.086 digits
+  Q_j theta = 3.1: lsq residual 8.53e-36; K0: 31.38 digits [stab 28.3]; K2: 22.98 digits [stab 20.2]; K3: fit -3.58e-20 vs 0 [stab-abs 1.3e-17]; K4 (pole in WKB): fit 1.09365064426 [stab 12.8]; K5: fit 2.48e-13 vs 0 [stab-abs 3.5e-11]; K6: 10.62 digits [stab 8.72]; K7 (pole in WKB): fit -80.9239417136 [stab 6.09]; K8: 6.417 digits [stab 5.2]
+     extra logE_-3/2: -0.7560619341563785520172 [stab 13.8]  vs PREDICTED -0.756061934156378600823: 16.19 digits
+     extra logE_-3: 1.392335705964184799278e-7 [stab 0.0108]  vs PREDICTED 0.0: pred 0, |fit| 1.39e-7
+     extra logE_-9/2: -34160.81734576046579203 [stab 3.07]  vs PREDICTED -34174.67752717394218961: 3.392 digits
+  Weyl l0 pair (sum/2 vs WKB): K0: 15.45 d; K2: 7.053 d; K3: |fit| 0.0006; K4: fit/2 -4.5262095642679; K5: |fit| 4.1e+3; K6: -5.296 d; K7: fit/2 -15245161466.703; K8: -9.493 d
+     l0 pair sum: extra logE_-3/2 = -0.695651594630018269 [stab -0.000742]
+     l0 pair sum: extra logE_-3 = 2282050144.23775954 [stab 0.00303]
+     l0 pair sum: extra logE_-9/2 = 220364306285415834.0 [stab 0.0137]
+  Weyl l1 pair (sum/2 vs WKB): K0: 31.61 d; K2: 23.21 d; K3: |fit| 4.2e-20; K4: fit/2 1.8920280410761; K5: |fit| 2.9e-13; K6: 10.85 d; K7: fit/2 -3.2474912948269; K8: 6.642 d
+     l1 pair sum: extra logE_-3/2 = -1.51212386831275714 [stab 12.7]
+     l1 pair sum: extra logE_-3 = 1.65342567207063146e-7 [stab 0.000274]
+     l1 pair sum: extra logE_-9/2 = -68332.6890086099055 [stab 1.03]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 2.04 digits; K6: -5.61 digits; K8: -9.8 digits (must be << sealed)
+
+===== num2_wrong_ordering [DRILL]: argv ['num2_fit.py', '2_A_60_wrong']  exit 0  2s
+
+=== 2_A_60_wrong: S (sealed basis, no log E terms)
+  Q_j theta = 2.16666666666666666666666666666666666666666666666666666666667: lsq residual 2.55e-17; K0: 14.44 digits [stab 12.3]; K2: -0.1994 digits [stab 4.47]; K3: fit 2.13 vs 0 [stab-abs 0.016]; K4 (pole in WKB): fit -12.404112649 [stab 0.226]; K5: fit 1.89e+3 vs 0 [stab-abs 1.6e+4]; K6: -4.801 digits [stab 0.0372]; K7 (pole in WKB): fit 476904753.186 [stab 0.0385]; K8: -8.574 digits [stab 0.0463]
+  Q_j theta = 2.83333333333333333333333333333333333333333333333333333333333: lsq residual 3.28e-17; K0: 14.41 digits [stab 14.0]; K2: -0.1994 digits [stab 6.08]; K3: fit 2.13 vs 0 [stab-abs 0.00045]; K4 (pole in WKB): fit -12.9412666672 [stab 1.32]; K5: fit 1.85e+3 vs 0 [stab-abs 6.1e+2]; K6: -4.78 digits [stab -0.122]; K7 (pole in WKB): fit 442445183.011 [stab -0.431]; K8: -8.528 digits [stab -0.703]
+  Q_j theta = 1.9: lsq residual 3.28e-17; K0: 14.41 digits [stab 14.0]; K2: -0.1994 digits [stab 6.08]; K3: fit 2.13 vs 0 [stab-abs 0.00045]; K4 (pole in WKB): fit -12.5183151785 [stab 1.31]; K5: fit 1.85e+3 vs 0 [stab-abs 6.1e+2]; K6: -4.78 digits [stab -0.122]; K7 (pole in WKB): fit 442445185.265 [stab -0.431]; K8: -8.528 digits [stab -0.703]
+  Q_j theta = 3.1: lsq residual 3.28e-17; K0: 14.41 digits [stab 14.0]; K2: -0.1994 digits [stab 6.08]; K3: fit 2.13 vs 0 [stab-abs 0.00045]; K4 (pole in WKB): fit -13.3957864301 [stab 1.34]; K5: fit 1.85e+3 vs 0 [stab-abs 6.1e+2]; K6: -4.78 digits [stab -0.122]; K7 (pole in WKB): fit 442445147.091 [stab -0.431]; K8: -8.528 digits [stab -0.703]
+  Weyl l0 pair (sum/2 vs WKB): K0: 14.42 d; K2: -0.1994 d; K3: |fit| 4.3; K4: fit/2 -12.672689658096; K5: |fit| 3.7e+3; K6: -4.791 d; K7: fit/2 459674968.09835; K8: -8.552 d
+  Weyl l1 pair (sum/2 vs WKB): K0: 14.41 d; K2: -0.1994 d; K3: |fit| 4.3; K4: fit/2 -12.957050804304; K5: |fit| 3.7e+3; K6: -4.78 d; K7: fit/2 442445166.17784; K8: -8.528 d
+
+=== 2_A_60_wrong: R (registered refinement, + E^p log E at p = -3/2, -3, -9/2)
+  Q_j theta = 2.16666666666666666666666666666666666666666666666666666666667: lsq residual 1.43e-19; K0: 15.18 digits [stab 11.9]; K2: -0.1994 digits [stab 3.55]; K3: fit 2.13 vs 0 [stab-abs 0.4]; K4 (pole in WKB): fit -13.4173929419 [stab 0.00102]; K5: fit 3.86e+3 vs 0 [stab-abs 1.3e+6]; K6: -5.566 digits [stab 0.00194]; K7 (pole in WKB): fit -28430942590.5 [stab 0.00326]; K8: -9.763 digits [stab 0.00487]
+     extra logE_-3/2: 0.005264092458655231906252 [stab 6.02e-6]  vs PREDICTED -0.756061934156378600823: -0.003013 digits
+     extra logE_-3: 2127915698.85434115037 [stab 0.00303]  vs PREDICTED 0.0: pred 0, |fit| 2.13e+9
+     extra logE_-9/2: 205480439593343347.522 [stab 0.0137]  vs PREDICTED -34174.67752717394218961: -12.78 digits
+  Q_j theta = 2.83333333333333333333333333333333333333333333333333333333333: lsq residual 3.78e-36; K0: 31.76 digits [stab 27.0]; K2: -0.1994 digits [stab 18.6]; K3: fit 2.13 vs 0 [stab-abs 3.4e-16]; K4 (pole in WKB): fit -2.01670514655 [stab 11.6]; K5: fit 9.06 vs 0 [stab-abs 1.1e-9]; K6: 0.1593 digits [stab 6.63]; K7 (pole in WKB): fit 58.766720552 [stab 4.24]; K8: 0.04098 digits [stab 2.28]
+     extra logE_-3/2: -0.7560619341563786207446 [stab 12.4]  vs PREDICTED -0.756061934156378600823: 16.58 digits
+     extra logE_-3: -5.536975950489954603966e-8 [stab -8.81e-5]  vs PREDICTED 0.0: pred 0, |fit| 5.54e-8
+     extra logE_-9/2: -327.1414070748920220382 [stab -0.0232]  vs PREDICTED -34174.67752717394218961: 0.004177 digits
+  Q_j theta = 1.9: lsq residual 8.99e-36; K0: 31.36 digits [stab 27.5]; K2: -0.1994 digits [stab 19.1]; K3: fit 2.13 vs 0 [stab-abs 1.0e-16]; K4 (pole in WKB): fit -1.59375365784 [stab 12.0]; K5: fit 9.06 vs 0 [stab-abs 3.6e-10]; K6: 0.1593 digits [stab 7.12]; K7 (pole in WKB): fit 61.0210136505 [stab 4.74]; K8: 0.04098 digits [stab 2.76]
+     extra logE_-3/2: -0.7560619341563786516433 [stab 12.9]  vs PREDICTED -0.756061934156378600823: 16.17 digits
+     extra logE_-3: -1.444913248828702054044e-7 [stab -0.00071]  vs PREDICTED 0.0: pred 0, |fit| 1.44e-7
+     extra logE_-9/2: -336.1609362417471213969 [stab -0.0729]  vs PREDICTED -34174.67752717394218961: 0.004293 digits
+  Q_j theta = 3.1: lsq residual 1.35e-36; K0: 32.26 digits [stab 27.0]; K2: -0.1994 digits [stab 18.6]; K3: fit 2.13 vs 0 [stab-abs 3.6e-16]; K4 (pole in WKB): fit -2.47122490945 [stab 11.7]; K5: fit 9.06 vs 0 [stab-abs 1.2e-9]; K6: 0.1593 digits [stab 6.61]; K7 (pole in WKB): fit 22.846611571 [stab 3.81]; K8: 0.04098 digits [stab 2.27]
+     extra logE_-3/2: -0.7560619341563786067789 [stab 12.3]  vs PREDICTED -0.756061934156378600823: 17.1 digits
+     extra logE_-3: -1.547578461034581285904e-8 [stab -2.37e-5]  vs PREDICTED 0.0: pred 0, |fit| 1.55e-8
+     extra logE_-9/2: -323.1620134655091541427 [stab -0.0222]  vs PREDICTED -34174.67752717394218961: 0.004126 digits
+  Weyl l0 pair (sum/2 vs WKB): K0: 15.48 d; K2: -0.1994 d; K3: |fit| 4.3; K4: fit/2 -7.7170490442194; K5: |fit| 3.9e+3; K6: -5.265 d; K7: fit/2 -14215471265.844; K8: -9.462 d
+     l0 pair sum: extra logE_-3/2 = -0.750797841697723389 [stab -0.000859]
+     l0 pair sum: extra logE_-3 = 2127915698.8543411 [stab 0.00303]
+     l0 pair sum: extra logE_-9/2 = 205480439593343020.0 [stab 0.0137]
+  Weyl l1 pair (sum/2 vs WKB): K0: 31.61 d; K2: -0.1994 d; K3: |fit| 4.3; K4: fit/2 -2.0324892836446; K5: |fit| 18.0; K6: 0.1593 d; K7: fit/2 41.933812610732; K8: 0.04098 d
+     l1 pair sum: extra logE_-3/2 = -1.51212386831275726 [stab 12.5]
+     l1 pair sum: extra logE_-3 = -1.59967109493216018e-7 [stab -0.000187]
+     l1 pair sum: extra logE_-9/2 = -659.322949707256276 [stab -0.0344]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: -0.201 digits; K6: -5.58 digits; K8: -9.77 digits (must be << sealed)
+
+===== num2_x0_control [DRILL]: argv ['x0_control.py']  exit 0  173s
+(a) M = 1 E = -10.0: Q_-l num 0.3719269159754121693061677 exact 0.3719269159754121693061677 rel diff 1.18e-58 (1.4s)
+(a) M = 1 E = -100.0: Q_-l num 9.530619672977387363496627e-26 exact 9.530619672977387363496627e-26 rel diff 1.76e-57 (2.4s)
+(a) M = 1 E = -1000.0: Q_-l num 5.532485226170405421261338e-493 exact 5.532485226170405421261338e-493 rel diff 7.84e-56 (10.7s)
+(a) M = 1 E = 3.0: Q_-l num 0.2027888875779086283574258 exact 0.2027888875779086283574258 rel diff 2.87e-59 (1.3s)
+(a) M = 1 E = 7.5: Q_-l num -0.04610569224974277281157476 exact -0.04610569224974277281157476 rel diff 1.54e-58 (1.4s)
+(a) worst 7.84e-56 -> 55 digits (sealed >= 40): True
+(b) M = 5 alpha = 1 e = 1000.0: log D generic 59.7385571770059566074059407991 NUM1 59.7385571770059566074059407991 diff 1.78e-56 (1.8s)
+(b) M = 5 alpha = 1 e = 87671.2: log D generic 911.884583912503907134587534326 NUM1 911.884583912503907134587534326 diff 2.01e-54 (10.8s)
+(b) M = 5 alpha = 1 e = 1.0e+7: log D generic 15717.353650422223773703423375 NUM1 15717.353650422223773703423375 diff 8.2e-53 (142.9s)
+(b) worst 8.2e-53 (sealed <= 1e-40): True
+
+===== num2_t1_zeros [DRILL]: argv ['t1_zeros.py']  exit 0  2037s
+T1 point A E = -20.0: |Q3_j/Q6_j / C_j - 1| = ['3.71e-26', '3.41e-26', '8.97e-26', '8.98e-26']; frozen Q6 (theta = 1, 4) = 0.593770822308, 0.200415399612 (8s)
+T1 point A E = -5.0: |Q3_j/Q6_j / C_j - 1| = ['3.71e-26', '3.41e-26', '8.97e-26', '8.98e-26']; frozen Q6 (theta = 1, 4) = 2.24399482672, -0.00305248155159 (8s)
+T1 point A E = 2.0: |Q3_j/Q6_j / C_j - 1| = ['3.71e-26', '3.41e-26', '8.97e-26', '8.98e-26']; frozen Q6 (theta = 1, 4) = 3.29696525772, -0.179347822969 (8s)
+T1 point A E = 50.0: |Q3_j/Q6_j / C_j - 1| = ['3.71e-26', '3.41e-26', '8.97e-26', '8.98e-26']; frozen Q6 (theta = 1, 4) = 17.9663611064, -3.96548199812 (9s)
+T1 point A E = 500.0: |Q3_j/Q6_j / C_j - 1| = ['3.71e-26', '3.41e-26', '8.97e-26', '8.98e-26']; frozen Q6 (theta = 1, 4) = 12081.4687154, -8504.35505295 (9s)
+T1 point B E = -20.0: |Q3_j/Q6_j / C_j - 1| = ['8.93e-26', '2.79e-25', '2.07e-25', '2.07e-25']; frozen Q6 (theta = 1, 4) = 0.750125717315, 0.261953275887 (9s)
+T1 point B E = -5.0: |Q3_j/Q6_j / C_j - 1| = ['8.93e-26', '2.79e-25', '2.07e-25', '2.07e-25']; frozen Q6 (theta = 1, 4) = 2.86523909536, -0.00200452592059 (9s)
+T1 point B E = 2.0: |Q3_j/Q6_j / C_j - 1| = ['8.93e-26', '2.79e-25', '2.07e-25', '2.07e-25']; frozen Q6 (theta = 1, 4) = 4.21537345672, -0.231083682186 (8s)
+T1 point B E = 50.0: |Q3_j/Q6_j / C_j - 1| = ['8.93e-26', '2.79e-25', '2.07e-25', '2.07e-25']; frozen Q6 (theta = 1, 4) = 23.037093812, -5.15872754475 (9s)
+T1 point B E = 500.0: |Q3_j/Q6_j / C_j - 1| = ['8.93e-26', '2.79e-25', '2.07e-25', '2.07e-25']; frozen Q6 (theta = 1, 4) = 15524.2912805, -11089.9254217 (9s)
+T1 (sealed >= 25 digits, ratio E-independent and equal to the exact E = 0 ratio): worst deviation 2.79e-25 -> False
+zeros scan Q_(s-l1) on E in [-300, 0] step 5 (269s): signs ++++--------------------+++++++++++++++++++++++++++++++++++++
+brackets: [(-20.0, -15.0), (-120.0, -115.0)]
+zero: projected Q -18.66690548257671487396581451  outward-Wronskian det -18.66690548257671487396581451  |diff| 0.0
+zero: projected Q -118.2933592323041735887523191  outward-Wronskian det -118.2933592323041735887523191  |diff| 0.0
+zeros (sealed >= 10 digits): True

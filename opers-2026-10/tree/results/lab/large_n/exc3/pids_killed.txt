@@ -1,0 +1,3 @@
+509980 s_closed_sol2.py v2 symbolic resultant (superseded by s_closed_pts.py), killed 04:42:54Z
+killing 518176 (s_closed_sol2.py v2, superseded) 04:45:18Z
+NOTE 04:45:38Z: the line above (518176) was the shell running the kill command itself (pgrep -f matched its own command line); the s_closed_sol2.py python process (509980) had already stopped at the first kill. No computation was affected.

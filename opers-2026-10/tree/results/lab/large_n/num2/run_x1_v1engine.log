@@ -1,0 +1,7 @@
+three-term k = 2 point A: beta -2.0 vs c theta_G -2.0 (diff 0.0); Q_j rel diffs ['5.29e-57', '5.19e-57', '5.32e-57', '5.14e-57'] (30s)
+three-term k = 2 point B: beta -2.0 vs c theta_G -2.0 (diff 0.0); Q_j rel diffs ['5.25e-57', '4.86e-57', '5.15e-57', '5.07e-57'] (30s)
+three-term k = 10/3 point A: beta -1.6 vs c theta_G -1.6 (diff 1.56e-61); Q_j rel diffs ['5.0e-56', '4.97e-56', '5.01e-56', '4.94e-56'] (169s)
+three-term k = 10/3 point B: beta -1.6 vs c theta_G -1.6 (diff 1.56e-61); Q_j rel diffs ['5.11e-56', '5.05e-56', '5.1e-56', '5.09e-56'] (173s)
+sixth-order point A: beta -1.25 vs 9 theta_G -1.25; Q_j rel diffs ['4.83e-57', '2.2e-55', '1.6e-56', '4.09e-56', '1.14e-56', '6.04e-56'] (42s)
+sixth-order point B: beta -1.25 vs 9 theta_G -1.25; Q_j rel diffs ['4.72e-57', '2.1e-55', '7.81e-57', '8.94e-56', '1.84e-56', '3.22e-56'] (41s)
+X1 / X1' (sealed: >= 30 digits, beta exact): True

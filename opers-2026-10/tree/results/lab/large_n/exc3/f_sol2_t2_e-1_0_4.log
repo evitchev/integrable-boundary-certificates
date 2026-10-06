@@ -1,0 +1,13 @@
+t = 2 (b = 2/3), exponents [-1, 0, 4], (a0, a1) = (1/2, 1/3)
+indicial polynomial / z^3: (e**3*z**2 - 3*e**2*z**2 + e*r12*z + 2*e*z**2 + r03)/z**2  -> indicial conditions fix: [{r03: 0, r12: -6*z}]
+no-log conditions: 5 polynomial equations in 4 unknowns  (1s)
+   at exponent 0, [1]: degree 2, 3 terms: r02 - r11*z + 2*z**2
+   at exponent 4, [E^1 kap1^1]: degree 2, 4 terms: 3*r02 + 3*r11*z + 6*z**2 + 8*z
+   at exponent 4, [E^1]: degree 4, 11 terms: 36*r01*z**2 + r02**2 + 5*r02*r11*z + 8*r02*z**2 + 26*r02*z + 6*r11**2*z**2 + 18*r11*z**3 - 30*r11*z**2 + 12*z**4 + 156*z**3 - 16*z**2
+   at exponent 4, [kap1^1]: degree 7, 28 terms
+   at exponent 4, [1]: degree 8, 56 terms
+Groebner basis (lex): 1 elements  (2s)
+RESULT: NO solution with z != 0 for exponents [-1, 0, 4]
+   subsystem [E^0 equations only] (3 equations): consistent
+   subsystem [first resonance only] (1 equations): consistent
+exit 3

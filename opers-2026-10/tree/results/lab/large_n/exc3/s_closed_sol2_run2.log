@@ -1,0 +1,18 @@
+quadratic in U = z^2:  c7 U^2 + c5 U + c3 = 0 with
+   c7 = -16*(b - 3)*(b - 1)*(-4*A + b**2 + 2*b + 1)
+   c5 = -432*A**2*b**2 + 864*A**2*b - 432*A**2 + 288*A*B*b**2 - 576*A*B*b + 288*A*B + 576*A*b**3 - 1224*A*b**2 + 720*A*b - 72*A + 16*B**2*b**2 - 32*B**2*b - 48*B**2 - 96*B*b**4 + 96*B*b**3 + 88*B*b**2 - 80*B*b + 24*B + 32*b**6 - 128*b**5 + 88*b**4 + 104*b**3 - 119*b**2 + 22*b - 3
+   c3 = -b**2*(-4*B + b**2 - 4*b + 4)*(-4*B + 4*b**2 - 4*b + 1)**2
+   r02 = z*(1296*A**2*b**2*z - 2592*A**2*b*z + 1296*A**2*z + 144*A*B*b**3 - 864*A*B*b**2*z + 288*A*B*b**2 + 1728*A*B*b*z - 432*A*B*b - 864*A*B*z - 144*A*b**5 - 144*A*b**4 - 1728*A*b**3*z + 684*A*b**3 - 192*A*b**2*z**3 + 3672*A*b**2*z - 504*A*b**2 + 768*A*b*z**3 - 2160*A*b*z + 108*A*b - 576*A*z**3 + 216*A*z - 16*B**2*b**3 + 16*B**2*b**2*z - 96*B**2*b*z + 144*B**2*b + 144*B**2*z - 16*B*b**5 + 208*B*b**4*z - 176*B*b**4 + 80*B*b**3*z - 232*B*b**3 - 728*B*b**2*z + 432*B*b**2 + 480*B*b*z - 72*B*b - 72*B*z + 32*b**7 - 80*b**6*z + 128*b**6 + 256*b**5*z - 60*b**5 + 48*b**4*z**3 + 108*b**4*z - 340*b**4 - 96*b**3*z**3 - 788*b**3*z + 347*b**3 - 192*b**2*z**3 + 613*b**2*z - 108*b**2 + 96*b*z**3 - 114*b*z + 9*b + 144*z**3 + 9*z)/(2*b*(-4*B + 4*b**2 - 4*b + 1)*(-36*A*b + 36*A + 4*B*b - 12*B + 8*b**3 + 16*b**2 - 25*b + 3))
+   s02 =  z*(1296*A**2*b**2*z - 2592*A**2*b*z + 1296*A**2*z - 144*A*B*b**3 - 864*A*B*b**2*z - 288*A*B*b**2 + 1728*A*B*b*z + 432*A*B*b - 864*A*B*z + 144*A*b**5 + 144*A*b**4 - 1728*A*b**3*z - 684*A*b**3 - 192*A*b**2*z**3 + 3672*A*b**2*z + 504*A*b**2 + 768*A*b*z**3 - 2160*A*b*z - 108*A*b - 576*A*z**3 + 216*A*z + 16*B**2*b**3 + 16*B**2*b**2*z - 96*B**2*b*z - 144*B**2*b + 144*B**2*z + 16*B*b**5 + 208*B*b**4*z + 176*B*b**4 + 80*B*b**3*z + 232*B*b**3 - 728*B*b**2*z - 432*B*b**2 + 480*B*b*z + 72*B*b - 72*B*z - 32*b**7 - 80*b**6*z - 128*b**6 + 256*b**5*z + 60*b**5 + 48*b**4*z**3 + 108*b**4*z + 340*b**4 - 96*b**3*z**3 - 788*b**3*z - 347*b**3 - 192*b**2*z**3 + 613*b**2*z + 108*b**2 + 96*b*z**3 - 114*b*z - 9*b + 144*z**3 + 9*z)/(2*b*(-4*B + 4*b**2 - 4*b + 1)*(-36*A*b + 36*A + 4*B*b - 12*B + 8*b**3 + 16*b**2 - 25*b + 3))
+   r01 = (-b**2*z + 2*b*r02 + b*z**2 - 3*b*z - 3*z**2)/(3*z)
+   s01 = -(b**2*z + 2*b*s02 + b*z**2 + 3*b*z - 3*z**2)/(3*z)
+   s02(z) == -r02(-z): False ;  s01(z) == r01(-z): False
+all six equations vanish modulo the quadratic (symbolic in A, B, b): True
+(i) quadratic vs numeric z-eliminants: 70 points, 0 mismatches
+(ii) t = 2 I3: closed-form trace == interpolated: False; det == interpolated: False;  == data block: trace False det False
+Traceback (most recent call last):
+  File "<home>/fable-work/exc3/s_closed_sol2.py", line 88, in <module>
+    assert all(m[0] % 2 == 0 for m, _ in numr.terms()) and all(m[0] % 2 == 0 for m, _ in denr.terms()), 'odd powers of z survive'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: odd powers of z survive
+exit 1

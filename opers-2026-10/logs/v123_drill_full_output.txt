@@ -1,0 +1,413 @@
+
+===== gate [DRILL]: argv ['strict_gate.py', 'VIR7=results/lab/large_n/lead_gates/tamper_vir7.json']  exit 2  13s
+VIR7: 6 lines, exit 0
+VIR4D: 11 lines, exit 0
+VIR5A: 29 lines, exit 0
+VIR5C: 9 lines, exit 0
+SOL2F: 8 lines, exit 0
+FAIL VIR7: spin 11 mismatch 1 :: t=-2 5:0/10(neg 9) 7:0/15(neg 14) 9:0/21(neg 20) 11:1/28(neg 27) 13:0/36(neg 35)
+GATE FAIL
+
+===== gate_missing_charge [DRILL]: argv ['strict_gate.py', 'VIR7=results/lab/large_n/lead_gates/tamper_vir7_missing_spin11.json']  exit 2  13s
+VIR7: 6 lines, exit 0
+VIR4D: 11 lines, exit 0
+VIR5A: 29 lines, exit 0
+VIR5C: 9 lines, exit 0
+SOL2F: 8 lines, exit 0
+FAIL VIR7: output shape (cells, spins, controls, exceptions) differs from the archived log
+GATE FAIL
+
+===== sol3_operator_t2 [DRILL]: argv ['d1_predict.py', '2']  exit 0  77s
+seal hash ok ab1bd1d98fed6f7df04134ed26acccd8bbe07f5bcb631b9d02f83325f7025dc4
+k = 2 (t = 2, order 6) solved to order 14  (73s)
+   spin 11: leading coefficient 102095721/16; 28 monomials; symmetric: True  (75s)
+   spin 13: leading coefficient -2285727741/16; 36 monomials; symmetric: True  (77s)
+written prediction_partial_2.json e840f0e69765dd03602e8cf457930b88c8322804e8d1ca2406a9e230954b9c88
+
+===== sol3_vir4d_compare [DRILL]: argv ['d3_compare.py']  exit 1  2s
+seal and prediction hashes ok
+BLIND k=3,spin=11 (t = 11/5): certified table symmetric under PX <-> pi: False ; monomials 28 (independent 16) ; mismatches: 2 of 16 independent, 2 of 28 in all
+      first mismatch PX^10 pi^0: predicted -253/48, certified -10121/1920
+BLIND k=3,spin=13 (t = 11/5): certified table symmetric under PX <-> pi: True ; monomials 36 (independent 20) ; mismatches: 0 of 20 independent, 0 of 36 in all
+      e.g. constant term: predicted -13268678195/13335404544 = certified -13268678195/13335404544
+BLIND k=4,spin=11 (t = 7/3): certified table symmetric under PX <-> pi: False ; monomials 28 (independent 16) ; mismatches: 2 of 16 independent, 2 of 28 in all
+      first mismatch PX^10 pi^0: predicted -154/29, certified -3080261/580000
+BLIND k=4,spin=13 (t = 7/3): certified table symmetric under PX <-> pi: True ; monomials 36 (independent 20) ; mismatches: 0 of 20 independent, 0 of 36 in all
+      e.g. constant term: predicted -1850993793/1520000000 = certified -1850993793/1520000000
+BLIND k=6,spin=11 (t = 5/2): certified table symmetric under PX <-> pi: False ; monomials 28 (independent 16) ; mismatches: 2 of 16 independent, 2 of 28 in all
+      first mismatch PX^10 pi^0: predicted -209/39, certified -182888/34125
+BLIND k=6,spin=13 (t = 5/2): certified table symmetric under PX <-> pi: True ; monomials 36 (independent 20) ; mismatches: 0 of 20 independent, 0 of 36 in all
+      e.g. constant term: predicted -57877359086245369/38658976121404800 = certified -57877359086245369/38658976121404800
+BLIND k=8,spin=11 (t = 13/5): certified table symmetric under PX <-> pi: False ; monomials 28 (independent 16) ; mismatches: 2 of 16 independent, 2 of 28 in all
+      first mismatch PX^10 pi^0: predicted -264/49, certified -760369/141120
+BLIND k=8,spin=13 (t = 13/5): certified table symmetric under PX <-> pi: True ; monomials 36 (independent 20) ; mismatches: 0 of 20 independent, 0 of 36 in all
+      e.g. constant term: predicted -28642132380247/17214397820928 = certified -28642132380247/17214397820928
+
+BLIND CELLS: 4 pass, 4 fail, 0 unscreened
+TAMPER (M = 1/4 + 1/10) k=4,spin=11 (t = 7/3): certified table symmetric under PX <-> pi: False ; monomials 28 (independent 16) ; mismatches: 13 of 16 independent, 22 of 28 in all
+      first mismatch PX^0 pi^0: predicted 105034712403312897521/288640625000000000000, certified 6029497493/21112000000
+TAMPER (M = 1/4 + 1/10) k=4,spin=13 (t = 7/3): certified table symmetric under PX <-> pi: True ; monomials 36 (independent 20) ; mismatches: 16 of 20 independent, 28 of 36 in all
+      first mismatch PX^0 pi^0: predicted -417362870900234265943/257812500000000000000, certified -1850993793/1520000000
+PASS  TAMPER (M = 1/4 + 1/10): all cells fail
+NON-BLIND k = 2 k=2,spin=11 (t = 2): certified table symmetric under PX <-> pi: False ; monomials 28 (independent 16) ; mismatches: 2 of 16 independent, 2 of 28 in all
+      first mismatch PX^10 pi^0: predicted -99/19, certified -148519/28500
+NON-BLIND k = 2 k=2,spin=13 (t = 2): certified table symmetric under PX <-> pi: True ; monomials 36 (independent 20) ; mismatches: 0 of 20 independent, 0 of 36 in all
+      e.g. constant term: predicted -8893168663/13244052096 = certified -8893168663/13244052096
+CONTROL-FAIL  NON-BLIND k = 2: all cells pass
+RESULT: control failure
+
+===== sol3_ode_equiv [DRILL]: argv ['a_equiv.py', '3', '2', '8', 'tamper']  exit 0  4s
+Sol 3 k = 2 TAMPER order 2 (spin 1): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (4s)
+Sol 3 k = 2 TAMPER order 3 (spin 2): Gamma-form R zero: True; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (4s)
+Sol 3 k = 2 TAMPER order 4 (spin 3): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (4s)
+Sol 3 k = 2 TAMPER order 5 (spin 4): Gamma-form R zero: True; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (4s)
+Sol 3 k = 2 TAMPER order 6 (spin 5): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (4s)
+Sol 3 k = 2 TAMPER order 7 (spin 6): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (4s)
+Sol 3 k = 2 TAMPER order 8 (spin 7): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (4s)
+(a) Sol 3 k = 2 TAMPER: DISAGREE
+
+===== sol2_ode_equiv [DRILL]: argv ['a_equiv.py', '2', '10/3', '8', 'tamper']  exit 0  6s
+Sol 2 k = 10/3 TAMPER order 2 (spin 1): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (6s)
+Sol 2 k = 10/3 TAMPER order 3 (spin 2): Gamma-form R zero: True; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (6s)
+Sol 2 k = 10/3 TAMPER order 4 (spin 3): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (6s)
+Sol 2 k = 10/3 TAMPER order 5 (spin 4): Gamma-form R zero: True; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (6s)
+Sol 2 k = 10/3 TAMPER order 6 (spin 5): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (6s)
+Sol 2 k = 10/3 TAMPER order 7 (spin 6): Gamma-form R zero: True; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (6s)
+Sol 2 k = 10/3 TAMPER order 8 (spin 7): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): False  (6s)
+(a) Sol 2 k = 10/3 TAMPER: DISAGREE
+
+===== sol2_holdout [DRILL]: argv ['holdout.py']  exit 2  2s
+k=4,t=7/3 M=1/4: WKB spin 11 = 0 (sealed: identically 0 at n = 11); certified spin 11 regular with 28 coefficients -> MISSING SPIN
+k=4,t=7/3 M=-1/5: WKB spin 11 = 0 (sealed: identically 0 at n = 11); certified spin 11 regular with 28 coefficients -> MISSING SPIN
+k=3,t=11/5 M=1/3: spin 11 mismatches 2 / 28
+   negative control t + 1/100: 27 mismatches (must be > 0)
+   scoring tamper: 3 mismatch (must be 1)
+k=3,t=11/5 M=-1/4: spin 11 mismatches 2 / 28
+k=10/3,t=9/4 M=3/10: spin 11 mismatches 2 / 28
+   negative control t + 1/100: 27 mismatches (must be > 0)
+   scoring tamper: 3 mismatch (must be 1)
+k=10/3,t=9/4 M=-3/13: spin 11 mismatches 2 / 28
+k=1,t=5/3 M=1: spin 11 mismatches 2 / 28
+   negative control t + 1/100: 27 mismatches (must be > 0)
+   scoring tamper: 3 mismatch (must be 1)
+k=1,t=5/3 M=-1/2: spin 11 mismatches 2 / 28
+HOLD-OUT (scored fibres): FAIL
+
+===== sol1_suzuki [DRILL]: argv ['closed_dict.py']  exit 1  5s
+t = 2, M = 5: {3: 'MATCH', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 4, M = 7/3: {3: 'MATCH', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 6, M = 9/5: {3: 'MATCH', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 7, M = 5/3: {3: 'MATCH', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 8, M = 11/7: {3: 'MATCH', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = -4, M = 1/5: {3: 'MATCH', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 5/2, M = 11/3: {3: '-', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 9/2, M = 15/7: {3: '-', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = -1/3, M = -2: {3: '-', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 13/3, M = 11/5: {3: 'MATCH', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 17/5, M = 8/3: {3: 'MATCH', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 25/3, M = 17/11: {3: 'MATCH', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 12, M = 15/11: {3: 'MATCH', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 14, M = 17/13: {3: 'MATCH', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = -7/5, M = -2/3: {3: 'MATCH', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 23/7, M = 11/4: {3: 'MATCH', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 3/7, M = -6: {3: '-', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = -17/4, M = 5/21: {3: '-', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+t = 1000000, M = 1000003/999999: {3: '-', 5: 'MATCH', 7: '1 MISMATCH', 9: 'MATCH'}
+ZERO-PARAMETER CHECK: 19 spin-rows mismatch; 882 non-normalised coefficients compared
+
+===== thm1_mellin [DRILL]: argv ['p1_equivalence.py']  exit 1  124s
+(I0) T x^(c/2) = x^(c/2)(T - c/2): True
+(I1) deg L = 1: True
+(I2) deg L = 1 (ratio == 1): False
+(I3) deg L = 1: False
+(I4) deg L = 1: ODE recurrence / m(nu - n) == Gamma recurrence: False
+(I1) deg L = 2: True
+(I2) deg L = 2 (ratio == 1): False
+(I3) deg L = 2: False
+(I4) deg L = 2: ODE recurrence / m(nu - n) == Gamma recurrence: False
+(I1) deg L = 3: True
+(I2) deg L = 3 (ratio == 1): False
+(I3) deg L = 3: False
+(I4) deg L = 3: ODE recurrence / m(nu - n) == Gamma recurrence: False
+NEGATIVE CONTROL x^c L(T) ordering: (I3) ratio = 2*(-a*sigma + nu + r1 - s - sigma)/(2*nu + 2*r1 - 2*s - sigma*(a + 1)) (must NOT be 1)
+NEGATIVE CONTROL gamma_r + 1/3: (I2) ratio = gamma(-a/2 - nu/sigma - r1/sigma + s/sigma + 1/2)*gamma(a/2 - nu/sigma - r1/sigma + s/sigma + 5/6)/(gamma(-a/2 - nu/sigma - r1/sigma + s/sigma + 5/6)*gamma(a/2 - nu/sigma - r1/sigma + s/sigma + 1/2)) (must NOT be 1)
+ALL IDENTITIES FAIL
+
+===== thm2_ward [DRILL]: argv ['p3_g1_ward.py']  exit 1  5s
+Sol 1: G1 ratio - Codex ratio = 0   -> IDENTITY IN (a, K, t): True
+Sol 2: G1 ratio - Codex ratio = 0   -> IDENTITY IN (a, K, t): True
+Sol 3: G1 ratio - Codex ratio = -1/(2000*K*t**2 - 2000*K + 1000*i*t**3 - 5000*i*t**2 - 1000*i*t + 5000*i + 500*t**3 - 3500*t**2 - 500*t + 3500)   -> IDENTITY IN (a, K, t): False
+   G1: (-K + i)*(-4*K**2*t**2 + 4*K**2 - 4*K*i*t**3 + 20*K*i*t**2 + 4*K*i*t - 20*K*i - 2*K*t**3 + 12*K*t**2 + 2*K*t + 36*K + 4*i**2*t**3 - 20*i**2*t**2 - 4*i**2*t + 20*i**2 + 4*i*t**3 - 20*i*t**2 + 20*i*t - 100*i + t**3 - 5*t**2 + 11*t - 79)/(6*(t - 1)*(t + 1)*(4*K + 2*i*t - 10*i + t - 7))
+   Codex: (1000*K**3*t**2 - 1000*K**3 + 1000*K**2*i*t**3 - 6000*K**2*i*t**2 - 1000*K**2*i*t + 6000*K**2*i + 500*K**2*t**3 - 3000*K**2*t**2 - 500*K**2*t - 9000*K**2 - 2000*K*i**2*t**3 + 10000*K*i**2*t**2 + 2000*K*i**2*t - 10000*K*i**2 - 1500*K*i*t**3 + 8000*K*i*t**2 - 4500*K*i*t + 34000*K*i - 250*K*t**3 + 1250*K*t**2 - 2750*K*t + 19750*K + 1000*i**3*t**3 - 5000*i**3*t**2 - 1000*i**3*t + 5000*i**3 + 1000*i**2*t**3 - 5000*i**2*t**2 + 5000*i**2*t - 25000*i**2 + 250*i*t**3 - 1250*i*t**2 + 2750*i*t - 19750*i + 3)/(1500*(t - 1)*(t + 1)*(4*K + 2*i*t - 10*i + t - 7))
+
+===== num1_exact_M1 [DRILL]: argv ['n1_check.py']  exit 0  4s
+dps 40 M = 1 E = -10: logD num -0.478232282675959086489209182623  exact -0.478232282675959086479209182623  diff -1.0e-20 (0.2s)
+dps 40 M = 1 E = -100: logD num -57.1018770551295984748837640464  exact -57.1018770551295984748737640464  diff -1.0e-20 (0.2s)
+dps 40 M = 1 E = -1000: logD num -1132.95298809973039751640044932  exact -1132.95298809973039751639044932  diff -1.0e-20 (1.4s)
+dps 40 M = 1 E = +2.5 (linear): D num 0.610517060534346729840348207238  exact 0.610517060534346729840348207238  rel diff -3.7606e-41 (1.2s)
+dps 40 M = 1 E = +7.25 (linear): D num -0.184857675576153711393320655868  exact -0.184857675576153711393320655868  rel diff 1.4593e-39 (1.0s)
+
+===== num1_doublet_average [DRILL]: argv ['avgpm.py']  exit 0  231s
+A: -alpha data (110s)
+   grade 0: +-alpha average extracted 0.99214985135030913777  alpha-even WKB (M = 5 exactly) 0.99214985135030913777  39.15 digits (fit stability 33.85)
+   grade 2: +-alpha average extracted 0.11472498148561869249  alpha-even WKB (M = 5 exactly) 0.11472498148561869249  28.82 digits (fit stability 23.79)
+   grade 3: +-alpha average extracted 1.7056712787163520383e-26  alpha-even WKB (M = 5 exactly) 1.8669045833583425121e-60  -33.96 digits (fit stability -4.871)
+   grade 4: +-alpha average extracted -0.40889404172616540168  alpha-even WKB (M = 5 exactly) -0.40889404172616540168  21.44 digits (fit stability 16.75)
+   grade 5: +-alpha average extracted 1.0331114412585681043e-18  alpha-even WKB (M = 5 exactly) 1.9913648889155653463e-58  -39.71 digits (fit stability -4.498)
+   grade 6: +-alpha average extracted 2.3952482200013007701  alpha-even WKB (M = 5 exactly) 2.3952482200013064211  14.63 digits (fit stability 10.34)
+   grade 7: +-alpha average extracted 2.4421116080426953029e-11  alpha-even WKB (M = 5 exactly) -1.5293682346871541859e-55  -44.2 digits (fit stability -4.067)
+   grade 8: +-alpha average extracted -62.369414310346375406  alpha-even WKB (M = 5 exactly) -62.36941422633758552  8.871 digits (fit stability 5.038)
+   grade-1 log e coefficient: +alpha -0.466666666666667, -alpha -0.366666666666667
+B: -alpha data (111s)
+   grade 0: +-alpha average extracted 0.99214985135030913777  alpha-even WKB (M = 5 exactly) 0.99214985135030913777  51.33 digits (fit stability 51.17)
+   grade 2: +-alpha average extracted -0.2480304219292343254  alpha-even WKB (M = 5 exactly) -0.2480304219292343254  41.45 digits (fit stability 41.33)
+   grade 3: +-alpha average extracted -7.2990616076923601773e-39  alpha-even WKB (M = 5 exactly) 1.2446030555722283414e-60  -21.77 digits (fit stability -0.09869)
+   grade 4: +-alpha average extracted -0.4693969240748609202  alpha-even WKB (M = 5 exactly) -0.4693969240748609202  33.94 digits (fit stability 33.86)
+   grade 5: +-alpha average extracted -3.0734013013431113658e-31  alpha-even WKB (M = 5 exactly) 3.9827297778311306926e-59  -27.89 digits (fit stability -0.06237)
+   grade 6: +-alpha average extracted 1.7474920158482142857  alpha-even WKB (M = 5 exactly) 1.7474920158482142857  27.1 digits (fit stability 27.06)
+   grade 7: +-alpha average extracted -4.8533726753219074825e-24  alpha-even WKB (M = 5 exactly) -1.0195788231247694573e-56  -32.68 digits (fit stability -0.03585)
+   grade 8: +-alpha average extracted -48.607312511157025549  alpha-even WKB (M = 5 exactly) -48.607312511157025549  21.56 digits (fit stability 21.53)
+   grade-1 log e coefficient: +alpha -0.525, -alpha -0.675
+
+===== exc1_level1_I3 [DRILL]: argv ['o2_compare.py', 'tamper']  exit 0  0s
+t = 2 (M = 5): one apparent singularity: I_1 = PX^2 + pi^2 - 1/6 + 2 x (21/20)  -> level 21/20
+   I_3 level-1 block: characteristic polynomial (data) == Res_z(trivial monodromy, e - Lambda_3(z)) (oper): False
+EXC1 one-point level-1 test (tamper): tamper fires
+
+===== exc1_level1_I5 [DRILL]: argv ['o3_compare.py', 'tamper']  exit 0  0s
+t = 2: I_5 level-1 characteristic polynomial, data == registered oper prediction: False  (transverse = level shift: True; [I_3, I_5] = 0: True)
+t = 9/4: I_5 level-1 characteristic polynomial, data == registered oper prediction: False  (transverse = level shift: True; [I_3, I_5] = 0: True)
+O3 (tamper): FAIL
+
+===== exc2_closed_form [DRILL]: argv ['s_closed2.py', 'tamper']  exit 0  1s
+closed form (u = rho - b - 4):
+   r01 = -b*(-16*A - 16*B + 4*b**2 - 16*b + 3*u**2 + 16)/16
+   r02 = -u*(-8*A - 8*B + 4*b**2 - 8*b + u**2 + 8)*(-8*A - 8*B + 2*b**2 + b*u - 6*b + u**2 + 2*u + 16)/64
+   s01 = -b*(-16*A - 16*B + 4*b**2 - 16*b + 3*u**2 + 16)/16
+   s02 = u*(-8*A - 8*B + 4*b**2 - 8*b + u**2 + 8)*(-8*A - 8*B + 2*b**2 - b*u - 6*b + u**2 - 2*u + 16)/64
+   r01 + s01 = -b*(-16*A - 16*B + 4*b**2 - 16*b + 3*u**2 + 16)/8  [even in u: True]
+   q11 = sum(r11 z + r12) = u**2*(b + 2)*(-8*A - 8*B + 4*b**2 - 8*b + u**2 + 8)/16
+t = 2    I3: degree in U 1; closed-form trace == data: True; closed-form det == data: False
+t = 2    I5: degree in U 2; closed-form trace == data: False; closed-form det == data: False
+t = 9/4  I3: degree in U 1; closed-form trace == data: True; closed-form det == data: False
+t = 9/4  I5: degree in U 2; closed-form trace == data: False; closed-form det == data: False
+s_closed2 [tamper]: FAIL
+
+===== exc2_level1_I5 [DRILL]: argv ['u3_compare.py', 'tamper']  exit 0  1s
+t = 2    [tamper] data vacuum P^6 coefficient -3/2; trace: 10 coefficients, 1 differ; det: 28 coefficients, 10 differ; pointwise char. polynomials: 36 compared, 36 differ
+t = 9/4  [tamper] data vacuum P^6 coefficient 4225/412; trace: 10 coefficients, 1 differ; det: 28 coefficients, 10 differ; pointwise char. polynomials: 36 compared, 36 differ
+U3 hold-out [tamper]: FAIL
+
+===== br2_commutant [DRILL]: argv ['br2_commutant.py']  exit 1  304s
+Sol 1, p = 6/5, a = 4/5, beta = -2/5: triple mod d at w = 4, 6, 8: [0, 0, 0] (expect [1,1,1]); pair alone w = 4: 1; TAMPER a + 1/7 (w = 4): 0 (expect 0)  FAIL
+Sol 1, p = 8/5, a = 3/5, beta = -8/15: triple mod d at w = 4, 6, 8: [0, 0, 0] (expect [1,1,1]); pair alone w = 4: 1; TAMPER a + 1/7 (w = 4): 0 (expect 0)  FAIL
+Sol 2, p = 3/5, a = 4/5, beta = -3/5: triple mod d at w = 4, 6, 8: [1, 1, 1] (expect [1,1,1]); pair alone w = 4: 2; TAMPER a + 1/7 (w = 4): 0 (expect 0)  OK
+Sol 2, p = 5/13, a = 12/13, beta = -5/13: triple mod d at w = 4, 6, 8: [1, 1, 1] (expect [1,1,1]); pair alone w = 4: 2; TAMPER a + 1/7 (w = 4): 0 (expect 0)  OK
+Sol 3, p = 3/2, a = 2/3, beta = 2/3: triple mod d at w = 4, 6, 8: [1, 1, 1] (expect [1,1,1]); pair alone w = 4: 3; TAMPER a + 1/7 (w = 4): 0 (expect 0)  OK
+Sol 3, p = 2/3, a = 3/2, beta = 3/2: triple mod d at w = 4, 6, 8: [1, 1, 1] (expect [1,1,1]); pair alone w = 4: 3; TAMPER a + 1/7 (w = 4): 0 (expect 0)  OK
+REPLICATION FAIL (2)
+
+===== br2_dims [DRILL]: argv ['br2_dims.py']  exit 0  0s
+Sol 1: Delta = -(P2 - 4)/4 = (t + 3)/(2*(t + 1));  relevant (0 < Delta < 1) for: ((-1 < t) | (t < -3)) & ((1 < t) | (t < -1));  pair norm 1, LVZ hairpin n = -(v+.v- + 1) = -P2/2
+Sol 2: Delta = -(P2 - 3)/2 = (t + 5)/(2*(t + 1));  relevant (0 < Delta < 1) for: ((-1 < t) | (t < -5)) & ((3 < t) | (t < -1));  pair norm 1, LVZ hairpin n = -(v+.v- + 1) = -2*P2
+Sol 3: Delta = 1/2 = 1/2;  relevant (0 < Delta < 1) for: 1/2;  pair norm 2/P2, LVZ hairpin n = -(v+.v- + 1) = not norm 1 (no LVZ hairpin match)
+Sol 3 dual: Delta = (P2 + 2)/2 = 2*t/(t + 1);  relevant (0 < Delta < 1) for: (-1 < t) & (t < 1) & ((0 < t) | (t < -1));  pair norm 2*P2, LVZ hairpin n = -(v+.v- + 1) = not norm 1 (no LVZ hairpin match)
+Virasoro e^(p phi): Delta = P2 - 1 = (t - 3)/(t + 1);  relevant (0 < Delta < 1) for: (-1 < t) & ((3 < t) | (t < -1));  pair norm P2, LVZ hairpin n = -(v+.v- + 1) = not norm 1 (no LVZ hairpin match)
+
+===== second1_leading [DRILL]: argv ['s2_leading.py']  exit 0  410s
+assign 1: cocycle numerator degree 11; LEADING coefficient = -128*k**7*(k + 4)*(5*k + 11); depends on exponents: False
+   roots in k: [-4, -11/5, 0]
+assign 2: cocycle numerator degree 11; LEADING coefficient = 128*k**7*(k + 4)*(5*k + 11); depends on exponents: False
+   roots in k: [-4, -11/5, 0]
+
+===== second2_gate1 [DRILL]: argv ['gate1.py']  exit 1  4s
+
+============================================================
+GATE 1 PLANT: M = 5, t = 2
+============================================================
+Spin 3 fit equations:
+  6*sX - 120*sY
+  14*cX - 120*cY - 7*sX - 390
+  -360*cX*sY - 2400*cY*sY - sX**2 + 6600*sY
+  140*cX**2 - 2400*cX*cY - 7800*cX - 8000*cY**2 + 44000*cY - 7*sX**2 + 48300
+  Solutions: 2
+
+  Solution [0]: {cX: 0, cY: 15/4, sX: -120, sY: -6}
+    spin 5: 1 MISMATCH
+    spin 7: MATCH
+    spin 9: MATCH
+    => FAILS
+
+  Solution [1]: {cX: 45, cY: -5, sX: 120, sY: 6}
+    spin 5: 7 MISMATCH
+    spin 7: 10 MISMATCH
+    spin 9: 15 MISMATCH
+    => FAILS
+
+  RESULT: FAIL
+
+============================================================
+GATE 1 TAMPER: M = 51/10, t = 2
+============================================================
+Spin 3 fit equations:
+  6*sX - 119*sY
+  1200*cX - 10200*cY - 600*sX - 34697
+  -8925*cX*sY - 60690*cY*sY - 25*sX**2 + 169932*sY
+  75000*cX**2 - 1275000*cX*cY - 4337125*cX - 4335000*cY**2 + 24276000*cY - 3750*sX**2 + 27997164
+  Solutions: 2
+
+  Solution [0]: {cX: 63257/2700 - 527*sqrt(595462114)/561600, cY: -697/1080 + sqrt(595462114)/5616, sX: -51*sqrt(595462114)/10400, sY: -9*sqrt(595462114)/36400}
+    spin 5: 9 MISMATCH
+    spin 7: 14 MISMATCH
+    spin 9: 20 MISMATCH
+    => FAILS
+
+  Solution [1]: {cX: 527*sqrt(595462114)/561600 + 63257/2700, cY: -sqrt(595462114)/5616 - 697/1080, sX: 51*sqrt(595462114)/10400, sY: 9*sqrt(595462114)/36400}
+    spin 5: 9 MISMATCH
+    spin 7: 14 MISMATCH
+    spin 9: 20 MISMATCH
+    => FAILS
+
+  RESULT: FAIL
+
+============================================================
+GATE 1: FAIL (plant=fail, tamper=fail(correct))
+
+===== second2_h2b_t2 [DRILL]: argv ['check.py', 'h2b', '2']  exit 0  1s
+=== CHECK h2b_t2: M = 5, rotated = True, saturated minimal primes = 1
+
+--- prime 1: degree 12 in pi_rot (irreducible over Q: True); real roots: 6
+  spin 5: 16 monomials compared, EXACT nonzero residuals: 12 (outside cert support, tot.deg>k: 6 [(6, 0), (5, 0), (4, 1), (4, 0)]; inside, tot.deg<=k: 6 [(2, 1), (1, 2), (0, 3), (0, 2), (0, 1), (0, 0)])
+     first in-support failing monomial X^2Y^1: |monic-cert| over the 12 roots: min 1.000e-03 max 1.000e-03
+     first out-of-support monomial X^6Y^0: |monic coeff| over roots: min 3.074e+00 max 2.751e+15
+  spin 7: 25 monomials compared, EXACT nonzero residuals: 23 (outside cert support, tot.deg>k: 10 [(8, 0), (7, 0), (6, 1), (6, 0)]; inside, tot.deg<=k: 13 [(2, 2), (1, 3), (0, 4), (3, 0), (2, 1), (1, 2)])
+     first in-support failing monomial X^2Y^2: |monic-cert| over the 12 roots: min 6.741e-01 max 4.027e+01
+     first out-of-support monomial X^8Y^0: |monic coeff| over roots: min 6.028e-01 max 2.033e+16
+  spin 9: 36 monomials compared, EXACT nonzero residuals: 35 (outside cert support, tot.deg>k: 15 [(10, 0), (9, 0), (8, 1), (8, 0)]; inside, tot.deg<=k: 20 [(4, 1), (3, 2), (2, 3), (1, 4), (0, 5), (4, 0)])
+     first in-support failing monomial X^4Y^1: |monic-cert| over the 12 roots: min 2.676e+00 max 1.063e+01
+     first out-of-support monomial X^10Y^0: |monic coeff| over roots: min 3.812e-01 max 3.076e+15
+  => prime 1 (12 solutions): FAILS
+
+RESULT h2b_t2: FAIL (no solution matches)
+
+===== second2_h2b_plant [DRILL]: argv ['check.py', 'h2b', '2']  exit 0  3s
+=== CHECK h2b_t2_plant: M = 5, rotated = True, saturated minimal primes = 2
+
+--- prime 1: degree 1 in pi_rot (irreducible over Q: True); real roots: 1
+    sX = -120   (mod pi_rot - 2)
+    sY = -6   (mod pi_rot - 2)
+    cX = 7   (mod pi_rot - 2)
+    cY = 15/4   (mod pi_rot - 2)
+    pi_rot = pi_rot   (mod pi_rot - 2)
+  spin 5: 16 monomials compared, EXACT nonzero residuals: 15 (outside cert support, tot.deg>k: 6 [(6, 0), (5, 0), (4, 1), (4, 0)]; inside, tot.deg<=k: 9 [(2, 1), (1, 2), (0, 3), (2, 0), (1, 1), (0, 2)])
+     first in-support failing monomial X^2Y^1: |monic-cert| over the 1 roots: min 6.958e-08 max 6.958e-08
+     first out-of-support monomial X^6Y^0: |monic coeff| over roots: min 6.662e-09 max 6.662e-09
+  spin 7: 25 monomials compared, EXACT nonzero residuals: 24 (outside cert support, tot.deg>k: 10 [(8, 0), (7, 0), (6, 1), (6, 0)]; inside, tot.deg<=k: 14 [(3, 1), (2, 2), (1, 3), (0, 4), (3, 0), (2, 1)])
+     first in-support failing monomial X^3Y^1: |monic-cert| over the 1 roots: min 7.216e-08 max 7.216e-08
+     first out-of-support monomial X^8Y^0: |monic coeff| over roots: min 1.242e-09 max 1.242e-09
+  spin 9: 36 monomials compared, EXACT nonzero residuals: 35 (outside cert support, tot.deg>k: 15 [(10, 0), (9, 0), (8, 1), (8, 0)]; inside, tot.deg<=k: 20 [(4, 1), (3, 2), (2, 3), (1, 4), (0, 5), (4, 0)])
+     first in-support failing monomial X^4Y^1: |monic-cert| over the 1 roots: min 7.580e-08 max 7.580e-08
+     first out-of-support monomial X^10Y^0: |monic coeff| over roots: min 2.008e-10 max 2.008e-10
+  => prime 1 (1 solutions): FAILS
+
+--- prime 2: degree 11 in pi_rot (irreducible over Q: True); real roots: 3
+  spin 5: 16 monomials compared, EXACT nonzero residuals: 15 (outside cert support, tot.deg>k: 6 [(6, 0), (5, 0), (4, 1), (4, 0)]; inside, tot.deg<=k: 9 [(2, 1), (1, 2), (0, 3), (2, 0), (1, 1), (0, 2)])
+     first in-support failing monomial X^2Y^1: |monic-cert| over the 11 roots: min 6.958e-08 max 6.958e-08
+     first out-of-support monomial X^6Y^0: |monic coeff| over roots: min 5.817e-03 max 4.970e+09
+  spin 7: 25 monomials compared, EXACT nonzero residuals: 24 (outside cert support, tot.deg>k: 10 [(8, 0), (7, 0), (6, 1), (6, 0)]; inside, tot.deg<=k: 14 [(3, 1), (2, 2), (1, 3), (0, 4), (3, 0), (2, 1)])
+     first in-support failing monomial X^3Y^1: |monic-cert| over the 11 roots: min 7.216e-08 max 7.216e-08
+     first out-of-support monomial X^8Y^0: |monic coeff| over roots: min 7.746e-04 max 8.200e+09
+  spin 9: 36 monomials compared, EXACT nonzero residuals: 35 (outside cert support, tot.deg>k: 15 [(10, 0), (9, 0), (8, 1), (8, 0)]; inside, tot.deg<=k: 20 [(4, 1), (3, 2), (2, 3), (1, 4), (0, 5), (4, 0)])
+     first in-support failing monomial X^4Y^1: |monic-cert| over the 11 roots: min 7.944e-03 max 1.839e-01
+     first out-of-support monomial X^10Y^0: |monic coeff| over roots: min 3.207e-05 max 3.002e+09
+  => prime 2 (11 solutions): FAILS
+
+RESULT h2b_t2_plant: FAIL (no solution matches)
+
+===== sol2_ext_exact_point [DRILL]: argv ['ext_fibres.py', '1/3']  exit 2  9s
+t = 1/3 (k = -1/2, n = 2) M = 1/k, C = -1001/250: {1: 'DIFF (1 of 3 coeffs)', 3: 'DIFF (3 of 6 coeffs)', 5: 'DIFF (6 of 10 coeffs)', 7: 'DIFF (10 of 15 coeffs)', 9: 'DIFF (15 of 21 coeffs)'}  (4s)
+   TAMPER delta + 1/10: {3: 'DIFF (3 of 6 coeffs)', 5: 'DIFF (6 of 10 coeffs)', 7: 'DIFF (10 of 15 coeffs)', 9: 'DIFF (15 of 21 coeffs)'}
+exact-point fibre t = 1/3: NO MATCH / not run
+
+===== num2_fit_2_A_60 [DRILL]: argv ['num2_fit.py', '2_A_60']  exit 0  2s
+
+=== 2_A_60: S (sealed basis, no log E terms)
+  Q_j theta = 2.16666666666666666666666666666666666666666666666666666666667: lsq residual 2.5e-17; K0: 14.44 digits [stab 12.3]; K2: 6.351 digits [stab 4.68]; K3: fit -0.000966 vs 0 [stab-abs 0.017]; K4 (pole in WKB): fit -8.6018962558 [stab 0.159]; K5: fit 1.89e+3 vs 0 [stab-abs 1.7e+4]; K6: -4.802 digits [stab 0.0348]; K7 (pole in WKB): fit 479400775.815 [stab 0.036]; K8: -8.577 digits [stab 0.0434]
+  Q_j theta = 2.83333333333333333333333333333333333333333333333333333333333: lsq residual 3.28e-17; K0: 14.41 digits [stab 14.0]; K2: 6.333 digits [stab 6.32]; K3: fit -0.000987 vs 0 [stab-abs 0.00045]; K4 (pole in WKB): fit -9.49709285841 [stab 1.18]; K5: fit 1.84e+3 vs 0 [stab-abs 6.1e+2]; K6: -4.78 digits [stab -0.122]; K7 (pole in WKB): fit 442445075.504 [stab -0.431]; K8: -8.528 digits [stab -0.703]
+  Q_j theta = 1.9: lsq residual 3.28e-17; K0: 14.41 digits [stab 14.0]; K2: 6.333 digits [stab 6.32]; K3: fit -0.000987 vs 0 [stab-abs 0.00045]; K4 (pole in WKB): fit -8.23415608277 [stab 1.11]; K5: fit 1.84e+3 vs 0 [stab-abs 6.1e+2]; K6: -4.78 digits [stab -0.122]; K7 (pole in WKB): fit 442445198.673 [stab -0.431]; K8: -8.528 digits [stab -0.703]
+  Q_j theta = 3.1: lsq residual 3.28e-17; K0: 14.41 digits [stab 14.0]; K2: 6.333 digits [stab 6.32]; K3: fit -0.000987 vs 0 [stab-abs 0.00045]; K4 (pole in WKB): fit -9.8309108764 [stab 1.19]; K5: fit 1.84e+3 vs 0 [stab-abs 6.1e+2]; K6: -4.78 digits [stab -0.122]; K7 (pole in WKB): fit 442445043.32 [stab -0.431]; K8: -8.528 digits [stab -0.703]
+  Weyl l0 pair (sum/2 vs WKB): K0: 14.42 d; K2: 6.342 d; K3: |fit| 0.002; K4: fit/2 -9.0494945571021; K5: |fit| 3.7e+3; K6: -4.791 d; K7: fit/2 460922925.65974; K8: -8.553 d
+  Weyl l1 pair (sum/2 vs WKB): K0: 14.41 d; K2: 6.333 d; K3: |fit| 0.002; K4: fit/2 -9.0325334795832; K5: |fit| 3.7e+3; K6: -4.78 d; K7: fit/2 442445120.99634; K8: -8.528 d
+
+=== 2_A_60: R (registered refinement, + E^p log E at p = -3/2, -3, -9/2)
+  Q_j theta = 2.16666666666666666666666666666666666666666666666666666666667: lsq residual 1.53e-19; K0: 15.15 digits [stab 11.9]; K2: 6.752 digits [stab 3.76]; K3: fit -0.000602 vs 0 [stab-abs 0.43]; K4 (pole in WKB): fit -10.4798877908 [stab 0.000745]; K5: fit 4.13e+3 vs 0 [stab-abs 1.4e+6]; K6: -5.597 digits [stab 0.00194]; K7 (pole in WKB): fit -30490322884.7 [stab 0.00326]; K8: -9.794 digits [stab 0.00487]
+     extra logE_-3/2: 0.06041033952636028667141 [stab 6.44e-5]  vs PREDICTED -0.756061934156378600823: -0.03338 digits
+     extra logE_-3: 2282050144.237759407052 [stab 0.00303]  vs PREDICTED 0.0: pred 0, |fit| 2.28e+9
+     extra logE_-9/2: 220364306285449995.8773 [stab 0.0137]  vs PREDICTED -34174.67752717394218961: -12.81 digits
+  Q_j theta = 2.83333333333333333333333333333333333333333333333333333333333: lsq residual 7.8e-36; K0: 31.41 digits [stab 27.5]; K2: 23.01 digits [stab 19.4]; K3: fit -3.3e-20 vs 0 [stab-abs 1.1e-16]; K4 (pole in WKB): fit 1.42746866225 [stab 12.0]; K5: fit 2.29e-13 vs 0 [stab-abs 3.4e-10]; K6: 10.66 digits [stab 7.67]; K7 (pole in WKB): fit -48.7398523006 [stab 4.69]; K8: 6.45 digits [stab 3.87]
+     extra logE_-3/2: -0.7560619341563785557624 [stab 12.9]  vs PREDICTED -0.756061934156378600823: 16.22 digits
+     extra logE_-3: 1.289461639586951584135e-7 [stab 0.000707]  vs PREDICTED 0.0: pred 0, |fit| 1.29e-7
+     extra logE_-9/2: -34161.78127765794243302 [stab 1.29]  vs PREDICTED -34174.67752717394218961: 3.423 digits
+  Q_j theta = 1.9: lsq residual 1.24e-36; K0: 32.15 digits [stab 27.0]; K2: 23.74 digits [stab 18.9]; K3: fit -6.28e-21 vs 0 [stab-abs 3.2e-16]; K4 (pole in WKB): fit 2.69040543789 [stab 11.8]; K5: fit 4.48e-14 vs 0 [stab-abs 1.1e-9]; K6: 11.36 digits [stab 7.17]; K7 (pole in WKB): fit 74.428959124 [stab 4.37]; K8: 7.134 digits [stab 3.35]
+     extra logE_-3/2: -0.7560619341563785921501 [stab 12.4]  vs PREDICTED -0.756061934156378600823: 16.94 digits
+     extra logE_-3: 2.610899661064466609567e-8 [stab 4.42e-5]  vs PREDICTED 0.0: pred 0, |fit| 2.61e-8
+     extra logE_-9/2: -34171.87166284943974635 [stab 0.689]  vs PREDICTED -34174.67752717394218961: 4.086 digits
+  Q_j theta = 3.1: lsq residual 8.53e-36; K0: 31.38 digits [stab 28.3]; K2: 22.98 digits [stab 20.2]; K3: fit -3.58e-20 vs 0 [stab-abs 1.3e-17]; K4 (pole in WKB): fit 1.09365064426 [stab 12.8]; K5: fit 2.48e-13 vs 0 [stab-abs 3.5e-11]; K6: 10.62 digits [stab 8.72]; K7 (pole in WKB): fit -80.9239417136 [stab 6.09]; K8: 6.417 digits [stab 5.2]
+     extra logE_-3/2: -0.7560619341563785520172 [stab 13.8]  vs PREDICTED -0.756061934156378600823: 16.19 digits
+     extra logE_-3: 1.392335705964184799279e-7 [stab 0.0108]  vs PREDICTED 0.0: pred 0, |fit| 1.39e-7
+     extra logE_-9/2: -34160.81734576046579203 [stab 3.07]  vs PREDICTED -34174.67752717394218961: 3.392 digits
+  Weyl l0 pair (sum/2 vs WKB): K0: 15.45 d; K2: 7.053 d; K3: |fit| 0.0006; K4: fit/2 -4.5262095642679; K5: |fit| 4.1e+3; K6: -5.296 d; K7: fit/2 -15245161466.703; K8: -9.493 d
+     l0 pair sum: extra logE_-3/2 = -0.695651594630018269 [stab -0.000742]
+     l0 pair sum: extra logE_-3 = 2282050144.23775954 [stab 0.00303]
+     l0 pair sum: extra logE_-9/2 = 220364306285415834.0 [stab 0.0137]
+  Weyl l1 pair (sum/2 vs WKB): K0: 31.61 d; K2: 23.21 d; K3: |fit| 4.2e-20; K4: fit/2 1.8920280410761; K5: |fit| 2.9e-13; K6: 10.85 d; K7: fit/2 -3.2474912948269; K8: 6.642 d
+     l1 pair sum: extra logE_-3/2 = -1.51212386831275714 [stab 12.7]
+     l1 pair sum: extra logE_-3 = 1.65342567207063146e-7 [stab 0.000274]
+     l1 pair sum: extra logE_-9/2 = -68332.6890086099055 [stab 1.03]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 2.04 digits; K6: -5.61 digits; K8: -9.8 digits (must be << sealed)
+
+===== num2_fit_t10o3_A_60 [DRILL]: argv ['num2_fit.py', '10_3_A_60']  exit 0  2s
+
+=== 10_3_A_60: F1 (WKB lattice only)
+  Q_j theta = 2.83333333333333333333333333333333333333333333333333333333333: lsq residual 8.57e-16; K0: 14.49 digits [stab 14.3]; K2: 5.264 digits [stab 5.55]; K3: fit -0.0979 vs 0 [stab-abs 0.0074]; K4: -1.491 digits [stab 0.426]; K5: fit 1.86e+5 vs 0 [stab-abs 9.5e+4]; K6: -6.585 digits [stab -0.342]; K7: fit 5.2e+11 vs 0 [stab-abs 4.2e+11]; K8: -11.78 digits [stab -0.866]
+  Q_j theta = 3.5: lsq residual 1.37e-15; K0: 14.29 digits [stab 14.0]; K2: 5.061 digits [stab 5.27]; K3: fit -0.156 vs 0 [stab-abs 0.014]; K4: -1.694 digits [stab 0.351]; K5: fit 2.96e+5 vs 0 [stab-abs 1.7e+5]; K6: -6.788 digits [stab -0.467]; K7: fit 8.3e+11 vs 0 [stab-abs 7.1e+11]; K8: -11.98 digits [stab -1.05]
+  Q_j theta = 2.56666666666666666666666666666666666666666666666666666666667: lsq residual 7.26e-16; K0: 14.57 digits [stab 14.2]; K2: 5.336 digits [stab 5.54]; K3: fit -0.0829 vs 0 [stab-abs 0.0074]; K4: -1.418 digits [stab 0.339]; K5: fit 1.57e+5 vs 0 [stab-abs 9.0e+4]; K6: -6.512 digits [stab -0.467]; K7: fit 4.4e+11 vs 0 [stab-abs 3.8e+11]; K8: -11.71 digits [stab -1.05]
+  Q_j theta = 3.76666666666666666666666666666666666666666666666666666666667: lsq residual 1.62e-15; K0: 14.22 digits [stab 13.9]; K2: 4.988 digits [stab 5.19]; K3: fit -0.185 vs 0 [stab-abs 0.016]; K4: -1.766 digits [stab 0.353]; K5: fit 3.5e+5 vs 0 [stab-abs 2.0e+5]; K6: -6.86 digits [stab -0.467]; K7: fit 9.81e+11 vs 0 [stab-abs 8.4e+11]; K8: -12.06 digits [stab -1.05]
+  Weyl l0 pair (sum/2 vs WKB): K0: 14.38 d; K2: 5.151 d; K3: |fit| 0.25; K4: -1.604 d; K5: |fit| 4.8e+5; K6: -6.698 d; K7: |fit| 1.4e+12; K8: -11.89 d
+  Weyl l1 pair (sum/2 vs WKB): K0: 14.36 d; K2: 5.128 d; K3: |fit| 0.27; K4: -1.626 d; K5: |fit| 5.1e+5; K6: -6.72 d; K7: |fit| 1.4e+12; K8: -11.92 d
+
+=== 10_3_A_60: F2 (+ E^(-13/10))
+  Q_j theta = 2.83333333333333333333333333333333333333333333333333333333333: lsq residual 3.82e-20; K0: 18.61 digits [stab 14.4]; K2: 9.304 digits [stab 5.41]; K3: fit -9.91e-6 vs 0 [stab-abs 0.053]; K4: 2.457 digits [stab -0.0372]; K5: fit 23.2 vs 0 [stab-abs 5.1e+4]; K6: -2.756 digits [stab 0.000343]; K7: fit 8.69e+7 vs 0 [stab-abs 6.4e+10]; K8: -8.06 digits [stab 0.00104]
+     extra X1310: -0.5787204986859802438354 [stab -0.0136]
+  Q_j theta = 3.5: lsq residual 5.43e-23; K0: 21.05 digits [stab 20.2]; K2: 11.61 digits [stab 11.1]; K3: fit 6.41e-8 vs 0 [stab-abs 1.3e-7]; K4: 4.445 digits [stab 4.46]; K5: fit -0.785 vs 0 [stab-abs 0.17]; K6: -1.054 digits [stab 0.385]; K7: fit 6.04e+5 vs 0 [stab-abs 3.5e+5]; K8: -5.658 digits [stab -0.496]
+     extra X1310: -0.9236714669914773013407 [stab 6.1]
+  Q_j theta = 2.56666666666666666666666666666666666666666666666666666666667: lsq residual 4.95e-23; K0: 21.09 digits [stab 20.2]; K2: 11.65 digits [stab 11.1]; K3: fit 5.84e-8 vs 0 [stab-abs 1.2e-7]; K4: 4.486 digits [stab 4.5]; K5: fit -0.714 vs 0 [stab-abs 0.16]; K6: -1.013 digits [stab 0.379]; K7: fit 5.5e+5 vs 0 [stab-abs 3.1e+5]; K8: -5.617 digits [stab -0.496]
+     extra X1310: -0.489708335843417575602 [stab 5.86]
+  Q_j theta = 3.76666666666666666666666666666666666666666666666666666666667: lsq residual 6.04e-23; K0: 21.01 digits [stab 20.1]; K2: 11.56 digits [stab 11.0]; K3: fit 7.13e-8 vs 0 [stab-abs 1.4e-7]; K4: 4.399 digits [stab 4.42]; K5: fit -0.871 vs 0 [stab-abs 0.19]; K6: -1.099 digits [stab 0.391]; K7: fit 6.71e+5 vs 0 [stab-abs 3.8e+5]; K8: -5.703 digits [stab -0.496]
+     extra X1310: -1.091676904250515967318 [stab 6.12]
+  Weyl l0 pair (sum/2 vs WKB): K0: 18.92 d; K2: 9.607 d; K3: |fit| 9.8e-6; K4: 2.762 d; K5: |fit| 22.0; K6: -2.463 d; K7: |fit| 8.7e+7; K8: -7.761 d
+     l0 pair sum: extra X1310 = -1.50239196567745755 [stab 0.614]
+  Weyl l1 pair (sum/2 vs WKB): K0: 21.05 d; K2: 11.61 d; K3: |fit| 1.3e-7; K4: 4.44 d; K5: |fit| 1.6; K6: -1.058 d; K7: |fit| 1.2e+6; K8: -5.662 d
+     l1 pair sum: extra X1310 = -1.58138524009393354 [stab 6.02]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 2.16 digits; K6: -2.76 digits; K8: -8.07 digits (must be << sealed)
+
+===== num2_exact_E0 [DRILL]: argv ['x1_control.py']  exit 1  57s
+three-term k = 2 point A: beta -2.0 vs c theta_G -2.0 (diff 0.0); Q_j rel diffs ['1.3e-26', '3.31e-26', '8.97e-26', '8.98e-26'] (4s)
+three-term k = 2 point B: beta -2.0 vs c theta_G -2.0 (diff 0.0); Q_j rel diffs ['2.43e-25', '3.68e-25', '2.07e-25', '2.07e-25'] (4s)
+three-term k = 10/3 point A: beta -1.6 vs c theta_G -1.6 (diff 1.56e-61); Q_j rel diffs ['1.23e-26', '3.25e-26', '8.97e-26', '8.97e-26'] (20s)
+three-term k = 10/3 point B: beta -1.6 vs c theta_G -1.6 (diff 1.56e-61); Q_j rel diffs ['2.46e-25', '3.66e-25', '2.08e-25', '2.07e-25'] (19s)
+sixth-order point A: beta -1.25 vs 9 theta_G -1.25; Q_j rel diffs ['4.83e-57', '2.2e-55', '1.6e-56', '4.09e-56', '1.14e-56', '6.04e-56'] (4s)
+sixth-order point B: beta -1.25 vs 9 theta_G -1.25; Q_j rel diffs ['4.73e-57', '2.1e-55', '7.81e-57', '8.95e-56', '1.84e-56', '3.23e-56'] (4s)
+X1 / X1' (sealed: >= 30 digits, beta exact): False
+
+===== exc3_level1_I5 [DRILL]: argv ['u_compare.py', 'tamper']  exit 0  1s
+t = 2    [tamper] vacuum P^6 coefficient -18/223; trace: 10 coefficients, 1 differ; det: 28 coefficients, 10 differ; pointwise: 34 compared, 34 differ
+t = 9/4  [tamper] vacuum P^6 coefficient -6084/567491; trace: 10 coefficients, 1 differ; det: 28 coefficients, 10 differ; pointwise: 36 compared, 36 differ
+U3 hold-out [tamper]: FAIL
+
+===== exc3_lead_blind [DRILL]: argv ['lead_compare_exc3.py', 'tamper']  exit 2  0s
+t = 2: trace mismatches 1/10, det mismatches 10/28
+t = 9/4: trace mismatches 1/10, det mismatches 10/28
+RESULT MISMATCH

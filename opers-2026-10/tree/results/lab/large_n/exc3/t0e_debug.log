@@ -1,0 +1,4 @@
+engine lam^6 coeff: 0  reference lam^6 coeff: -1/16
+engine terms: 0
+reference   : -alpha**6/5120 + alpha**4*lam**2/256 + 19*alpha**4/256 - 21*alpha**3*zS/8 - 3*alpha**2*lam**4/64 - 39*alpha**2*lam**2/32 - 117*alpha**2*zS**2/4 - 2867*alpha**2/320 - 63*alpha*lam**2*zS/2 - 57*alpha*zS**3 - 63*alpha*zS/2 - lam**6/16 - 21*lam**4/16 - 39*lam**2*zS**2 - 91*lam**2/16 - 30*zS**4 - 219*zS**2 + 2103/112
+ratio on monomial (6, 0, 0) = 0 ; engine - ratio*reference = 0

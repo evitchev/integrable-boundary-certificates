@@ -7,9 +7,9 @@ integrals of motion" (2026), and check that the archived results reproduce. Ever
 ## Quick start
 
     python3 run_all.py --list          # the checks, with the paper section each supports
-    python3 run_all.py --quick         # all quick checks (about 17 min on one core)
+    python3 run_all.py --quick         # all quick checks (about 18 min on one core)
     python3 run_all.py --drill         # every check re-run with a deliberate tamper; each tampered run must FAIL
-    python3 run_all.py --full          # quick checks plus three slower ones
+    python3 run_all.py --full          # quick checks plus the slower ones (about 1.5 h; num2_t1_zeros alone about 35 min)
     python3 run_all.py --only gate,thm2_ward --log out.txt
 
 `run_all.py` resolves every path from its own location, so the working directory does not matter. It first checks every
@@ -75,6 +75,12 @@ The checks follow the paper's section titles.
 | `second2_h2b_t2`, `second2_h2b_plant` | The opers (second-order descriptions) | Sol 3 with a momentum-rotated Suzuki dictionary: at each of the 12 solutions of the fit equations (t = 2) the unfitted coefficients fail. A planted rotated dictionary is recovered exactly by the same pipeline, so the exclusion is not vacuous. | exact exclusion |
 | `sol2_ext_exact_point` | The opers (Sol 2); Verification (table) | The Sol 2 operator at the exact point t = 1/3 (k = -1/2, n = 2) reproduces the certified spins 1-9 exactly; the built-in tamper (delta + 1/10) differs. Compared with the archived run (register item 322). | operator vs certified tables |
 | `sol2_ext_all_fibres` (full) | The opers (Sol 2); Verification (table) | The same at all 14 fibres of the archived run (t = 1/3, 2, 3/2, 4, -2, 1/2, -1/3, 13/5, 11/2, 21/11, 7, 401/100, 399/100, 701/100). The check reproduces the archived output, which is not "all match": at t = 2 spin 7 (a multiple of n) the engine gives 0, and at the n < 0 cells t = 4 spin 9 and t = 7 spins 3, 9 the engine evaluates to zero while the certified charge is non-zero. Those cells are reported as engine-zero cells, NOT passes. | operator vs certified tables |
+| `num2_fit_2_A_60`, `num2_fit_t10o3_A_60` (full: `num2_fit_2_B_60`, `num2_fit_2_C_60`, `num2_fit_t10o3_B_60`, `num2_fit_2_A_120`) | Numerical spectral check (the fourth-order paragraph) | Re-fits the archived high-precision Q-function data of the fourth-order (Solution 3) operator against the WKB coefficients. At t = 2 the sealed basis alone is incoherent; with the REGISTERED E^(-3/2) log E terms the grades agree (P1). At t = 9/4 the sealed fits fall short; the extra terms E^(-2.6), E^(-3.9) of the same family are POST HOC. The registered prediction P2 (non-WKB terms odd under l -> -l) is REFUTED at t = 9/4. | fit of archived data |
+| `num2_exact_E0` (full: `num2_x0_control`) | Numerical spectral check | Controls: the solver against the exact E = 0 Q-functions (Meijer G), fourth and sixth order, 55-57 digits; in full mode, the generic solver against the NUM1 determinant. | numerical controls |
+| `num2_wrong_ordering` (full) | Numerical spectral check | Negative control: the wrong operator ordering; the check reproduces its archived FAILING output. | control |
+| `num2_t1_zeros` (full) | Numerical spectral check (the spectral Theorem 1 test) | The REGISTERED test T1: the Q-functions of the three-term fourth-order ODE and of the sixth-order Gamma-form ODE at t = 2 agree up to E-independent constants (to about 56 digits, two points, E = -20..500); zeros of the projected Q agree with the outward-Wronskian determinant. | numerical (registered) |
+| `exc3_level1_I5` | Excited states (Solution 2) | The level-one oper of Solution 2 (two apparent singularities, exponents {-1,1,3}) reproduces the I_5 level-one block, a BLIND registered prediction, at t = 2, 9/4. The I_3 comparison was post hoc. | registered prediction vs data |
+| `exc3_lead_blind` | Excited states (Solution 2) | The same prediction compared with independently computed data blocks (the coordinating session compared first). | registered prediction vs data |
 | `sol3_vir5a_compare` (full) | Verification | All VIR5a cells against the tables, with its own controls. | registered predictions |
 | `second2_h2b_t9o4` (full) | The opers (second-order descriptions) | The same exclusion at t = 9/4. | exact exclusion |
 | `num1_shoot` (full) | Numerical spectral check | Zeros of D(E) equal the eigenvalues found by outward shooting (three levels, 1e-30 tolerance). | numerical |
@@ -85,6 +91,7 @@ The checks follow the paper's section titles.
   numerically only for Sol 1 at one value of t (`num1_*`). Theorem 1 is a formal (Mellin-level) equivalence; its
   spectral version needs hypotheses the paper does not prove.
 - The Sol 2 cells at n < 0 (t = 4 spin 9; t = 7 spins 3, 9) where the engine evaluates to zero are not understood.
+- The high-precision Q-function integrations of NUM2 (`num2/num2_data.py`, `num2_point.py`) are not re-run; their outputs (`data_*.json`) are inputs to the fits, like the NUM1 determinant data. The extra non-WKB terms at t = 9/4 were found post hoc, and their coefficients have no closed form here.
 - The certified tables are inputs. Their certification belongs to the earlier papers and certificates of this
   repository and is not repeated here.
 - `num1_doublet_average` re-analyses archived determinant data. Recomputing those data takes many core-hours
@@ -131,13 +138,14 @@ identities; the paper says which hypotheses enter.
 ## Changes to archived files
 
 `PATCHES.json` lists every file of `tree/` that differs from the archived original:
+- `lead_exc3_check/lead_compare_exc3.py` read the registered prediction from a path outside the archive. It now reads `PREDICTION_EXC3_snapshot.json` next to it, which has the same sha256 (7991f7af8dc89cc9...); the script asserts that hash.
 - Two scripts opened the certified tables through an absolute path on the author's machine:
   `vir4d/d3_compare.py` and `vir5/e3_compare.py`. They now resolve the same files relative to their own location. One
   marked line was added to each; nothing else changed.
-- 31 files that the kit does not execute (logs of superseded runs, helper scripts, process-id files, one NOTE) had
-  private absolute paths in their text. These were replaced by `<repo>/` or `<home>/`.
+- Files that the kit does not execute (logs of superseded runs, helper scripts, process-id files, notes) had private
+  absolute paths in their text (46 redaction entries in `PATCHES.json`). These were replaced by `<repo>/` or `<home>/`.
 
-Because of these edits, the per-stage `SHA256SUMS` from the time of archiving no longer match for those files.
+Because of these edits, the per-stage `SHA256SUMS` (and `SHA256SUMS_subset`) from the time of archiving no longer match for those files.
 `PATCHES.json` gives the archived hash of each one.
 
 ## AI assistance

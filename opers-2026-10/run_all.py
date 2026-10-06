@@ -101,6 +101,32 @@ check('second2_h2b_plant', 'The opers (second-order descriptions)', 'non-vacuity
 check('sol2_ext_exact_point', 'The opers (Sol 2); Verification (table)', 'operator -> charges vs certified tables (exact point t = 1/3)',
       LN + 'sol2_ext_fable', ['ext_fibres.py', '1/3'], 'ext_fibres_run4.log', ref_lines=[0, 1, 28],
       drill=dict(edit=[('replace', LN + 'sol2_ext_fable/ext_fibres.py', None, None)], must=['NO MATCH']))
+# --- NUM2 (register item 325): fourth-order Q-functions; spectral Theorem 1 test at t = 2
+def num2_fit(tag, quick, section='Numerical spectral check (fourth-order operators)'):
+    check(f'num2_fit_{tag.replace("10_3", "t10o3")}', section, 'fit of archived high-precision Q data vs WKB and the registered log E terms',
+          LN + 'num2', ['num2_fit.py', tag], f'run_fit_{tag}.log', out=f'run_fit_{tag}.log', quick=quick,
+          drill=dict(edit=[('bumpat', LN + f'num2/data_{tag}.json', ['logabsQ', 5, 0], '1e-8')], must=[]))
+num2_fit('2_A_60', True); num2_fit('10_3_A_60', True)
+for _t in ('2_B_60', '2_C_60', '10_3_B_60', '2_A_120'): num2_fit(_t, False)
+check('num2_wrong_ordering', 'Numerical spectral check (fourth-order operators)', 'negative control: the wrong operator ordering must fail (reproduces its archived failing output)',
+      LN + 'num2', ['num2_fit.py', '2_A_60_wrong'], 'run_fit_2_A_60_wrong.log', out='run_fit_2_A_60_wrong.log', quick=False,
+      drill=dict(edit=[('bumpat', LN + 'num2/data_2_A_60_wrong.json', ['logabsQ', 5, 0], '1e-8')], must=[]))
+check('num2_exact_E0', 'Numerical spectral check (fourth-order operators)', 'numerical control: exact E = 0 Q-functions (Meijer G) vs the solver',
+      LN + 'num2', ['x1_control.py'], 'run_x1.log', out='run_x1.log',
+      drill=dict(edit=[('replace', LN + 'num2/x1_control.py', None, None)], must=['False']))
+check('num2_x0_control', 'Numerical spectral check (fourth-order operators)', 'numerical control: generic solver vs the NUM1 determinant', LN + 'num2',
+      ['x0_control.py'], 'run_x0.log', out='run_x0.log', quick=False,
+      drill=dict(edit=[('bumpat', LN + 'num2/inputs/num1_dps60.json', ['data', 'A', 17], '1e-30'),
+                       ('rehash', LN + 'num2/inputs/num1_dps60.json', LN + 'num2/inputs/ORIGIN_SHA256')], must=['False']))
+check('num2_t1_zeros', 'Numerical spectral check (spectral Theorem 1 test)', 'numerical: zeros of the projected Q vs the outward-Wronskian determinant', LN + 'num2',
+      ['t1_zeros.py'], 'run_t1_zeros.log', out='run_t1_zeros.log', quick=False,
+      drill=dict(edit=[('replace', LN + 'num2/t1_zeros.py', None, None)], must=[]))
+# --- EXC3 (register item 324): Sol 2 level-one excited states
+check('exc3_level1_I5', 'Excited states (Solution 2)', 'registered prediction (blind) vs data', LN + 'exc3', ['u_compare.py', 'real'], 'u_compare_real.log',
+      drill=dict(argv=['u_compare.py', 'tamper'], must=['FAIL']))
+check('exc3_lead_blind', 'Excited states (Solution 2)', "lead's blind comparison of the registered prediction with its own data blocks", LN + 'lead_exc3_check',
+      ['lead_compare_exc3.py'], 'lead_compare_exc3.log',
+      drill=dict(argv=['lead_compare_exc3.py', 'tamper'], must=['MISMATCH']))
 # --- full mode only
 check('sol3_vir5a_compare', 'Verification (table)', 'registered predictions vs certified tables (all VIR5a cells)', LN + 'vir5', ['e3_compare.py'],
       'e3_compare.log', quick=False, drill=dict(edit=[('bumpat', 'results/lab/vev/vev_sol3_w10.json', ['coefficients', '#1'])], must=[]))
@@ -186,7 +212,7 @@ def bump_json(path):
     if not done: raise RuntimeError(f'bump: no numeric leaf in {path}')
     json.dump(d, open(path, 'w'))
 
-def bump_at(path, keys):
+def bump_at(path, keys, rel=None):
     """perturb one chosen data leaf: rationals +1/1000, decimals +1e-20, expressions +1/1000; keys may use '#i' (i-th key/element)"""
     from decimal import Decimal, getcontext
     getcontext().prec = 80
@@ -197,7 +223,7 @@ def bump_at(path, keys):
         trail.append((o, k)); o = o[k]
     parent, k = trail[-1]; v = parent[k]
     if isinstance(v, str) and re.fullmatch(r'\s*-?\d+(/\d+)?\s*', v): nv = str(Fraction(v.strip()) + Fraction(1, 1000))
-    elif isinstance(v, str) and re.fullmatch(r'\s*-?\d*\.\d+([eE][-+]?\d+)?\s*', v): nv = str(Decimal(v.strip()) + Decimal('1e-20'))
+    elif isinstance(v, str) and re.fullmatch(r'\s*-?\d*\.\d+([eE][-+]?\d+)?\s*', v): nv = str(Decimal(v.strip()) * (1 + Decimal(rel)) if rel else Decimal(v.strip()) + Decimal('1e-20'))
     elif isinstance(v, str): nv = '(' + v + ')+1/1000'
     elif isinstance(v, (int, float)): nv = v + (0.001 if isinstance(v, float) else 0) if isinstance(v, float) else str(Fraction(v) + Fraction(1, 1000))
     else: raise RuntimeError(f'bumpat: unsupported leaf {type(v)} in {path}')
@@ -208,7 +234,7 @@ def bump_at(path, keys):
 def apply_edits(work, edits):
     for e in edits:
         if e[0] == 'bumpat':
-            bump_at(os.path.join(work, e[1]), e[2])
+            bump_at(os.path.join(work, e[1]), e[2], e[3] if len(e) > 3 else None)
         elif e[0] == 'bump':
             bump_json(os.path.join(work, e[1]))
         elif e[0] == 'rehash':

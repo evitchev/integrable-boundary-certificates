@@ -1,0 +1,15 @@
+t = 2 (b = 2/3), exponents [-1, 1, 3], (a0, a1) = (1/2, 1/3) TAMPER
+indicial polynomial / z^3: (e**3*z**2 - 3*e**2*z**2 + e*r12*z + 2*e*z**2 + r03)/z**2  -> indicial conditions fix: [{r03: 3*z**2, r12: -3*z}]
+no-log conditions: 4 polynomial equations in 4 unknowns  (0s)
+   at exponent 1, [1]: degree 3, 8 terms: 9*r01*z**2 - 3*r02**2 + 3*r02*r11*z - 6*r02*z**2 + 9*r02*z - 9*r11*z**2 + 9*z**3 - 8*z**2
+   at exponent 3, [E^1]: degree 1, 2 terms: 3*r11 + 2
+   at exponent 3, [kap2^1]: degree 4, 10 terms: 9*r01*z**2 + 3*r02**2 + 9*r02*r11*z + 6*r02*z**2 - 9*r02*z + 6*r11**2*z**2 + 6*r11*z**3 - 9*r11*z**2 + 9*z**3 + 8*z**2
+   at exponent 3, [1]: degree 6, 24 terms
+Groebner basis (lex): 5 elements  (0s)
+RESULT: solutions exist; zero-dimensional: True; eliminant in z: 1680*z**2 - 7008*z + 539
+    539*w + 1680*z - 7008
+    3*r11 + 2
+    71*r01 + 105*z - 6
+    1065*r02 + 4853*z - 539
+    1680*z**2 - 7008*z + 539
+exit 0

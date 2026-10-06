@@ -1,0 +1,8 @@
+kit integrity: OK (SHA256SUMS, INPUTS.SHA256)
+PASS  num2_fit_2_A_60               2s  [fit of archived high-precision Q data vs WKB and the registered log E terms; paper: Numerical spectral check (fourth-order operators)]
+PASS  num2_fit_t10o3_A_60           2s  [fit of archived high-precision Q data vs WKB and the registered log E terms; paper: Numerical spectral check (fourth-order operators)]
+PASS  num2_exact_E0                68s  [numerical control: exact E = 0 Q-functions (Meijer G) vs the solver; paper: Numerical spectral check (fourth-order operators)]
+PASS  exc3_level1_I5                3s  [registered prediction (blind) vs data; paper: Excited states (Solution 2)]
+PASS  exc3_lead_blind               0s  [lead's blind comparison of the registered prediction with its own data blocks; paper: Excited states (Solution 2)]
+PASS  num2_t1_zeros              2376s  [numerical: zeros of the projected Q vs the outward-Wronskian determinant; paper: Numerical spectral check (spectral Theorem 1 test)]
+ALL PASS  (6 checks, 2452s)

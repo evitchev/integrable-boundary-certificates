@@ -1,0 +1,7 @@
+sigma(L_0) =  {0: -vartheta*(a1 - vartheta)*(a1 + vartheta), 1: -(2*a0 - 2*vartheta - 1)*(2*a0 + 2*vartheta + 1)/4, b: E*s_b}
+T0(b) sigma(L_0) == L_0 with E -> -(-1)^b E: True
+   ordering tamper xi((vartheta+1)^2 - a0^2): sigma-invariant? False (must be False)
+   sigma on xi^-2 r vartheta: {-2: 1.0*r*vartheta - 2.0*r}  (expected: -(xi^-2) r (-(vartheta - 2)) * (-1)^(-2) * (-1) = xi^-2 r (vartheta - 2))
+T0(c) EXC2 one-point regression: eliminant in z degree 4 (expect 4): (18*z - 1)*(18*z + 1)*(5832*z**2 - 49) ; r21 relation: [3*r21 + 2] (expect 3 r21 + 2)
+T0(b)+(c): PASS
+exit 0

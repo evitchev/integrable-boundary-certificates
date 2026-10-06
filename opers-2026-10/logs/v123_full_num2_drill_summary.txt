@@ -1,0 +1,9 @@
+kit integrity: OK (SHA256SUMS, INPUTS.SHA256)
+PASS  drill num2_fit_2_B_60               2s  tamper detected: output differs from archived run_fit_2_B_60.log at line 2 (33 vs 33 lines)
+PASS  drill num2_fit_2_C_60               2s  tamper detected: output differs from archived run_fit_2_C_60.log at line 2 (33 vs 33 lines)
+PASS  drill num2_fit_t10o3_B_60           2s  tamper detected: output differs from archived run_fit_10_3_B_60.log at line 2 (21 vs 21 lines)
+PASS  drill num2_fit_2_A_120              2s  tamper detected: output differs from archived run_fit_2_A_120.log at line 2 (33 vs 33 lines)
+PASS  drill num2_wrong_ordering           2s  tamper detected: output differs from archived run_fit_2_A_60_wrong.log at line 2 (33 vs 33 lines)
+FAIL  drill num2_x0_control             173s  TAMPER NOT DETECTED 
+PASS  drill num2_t1_zeros              2037s  tamper detected: output differs from archived run_t1_zeros.log at line 1 (16 vs 16 lines)
+1 FAILED  (7 drills, 2219s)

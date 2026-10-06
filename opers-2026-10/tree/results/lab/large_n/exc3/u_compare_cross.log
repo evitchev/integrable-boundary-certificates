@@ -1,0 +1,3 @@
+t = 2    [cross vs prediction for t = 9/4] vacuum P^6 coefficient -18/223; trace: 10 coefficients, 9 differ; det: 28 coefficients, 27 differ; pointwise: 0 compared, 0 differ
+t = 9/4  [cross vs prediction for t = 2] vacuum P^6 coefficient -6084/567491; trace: 10 coefficients, 9 differ; det: 28 coefficients, 27 differ; pointwise: 0 compared, 0 differ
+U3 hold-out [cross]: FAIL

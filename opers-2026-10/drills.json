@@ -30,5 +30,13 @@
  "results/lab/large_n/sol2_ext_fable/ext_fibres.py": [
   "n = g['D']; Cv = 2 * n * (1 + F(M))",
   "n = g['D']; Cv = 2 * n * (1 + F(M)) * F(1001, 1000)"
+ ],
+ "results/lab/large_n/num2/x1_control.py": [
+  "ex, beta_ex = exact_three_term_E0(k, l0, l1)",
+  "ex, beta_ex = exact_three_term_E0(k, l0 * (1 + mp.mpf(10)**-25), l1)"
+ ],
+ "results/lab/large_n/num2/t1_zeros.py": [
+  "e6, _ = exact_sixth_E0(l0, l1)",
+  "e6, _ = exact_sixth_E0(l0 * (1 + mp.mpf(10)**-25), l1)"
  ]
 }

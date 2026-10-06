@@ -1,0 +1,14 @@
+t = 2    I3  a0 = (1+b)/2 -> (3-b)/2: vacuum at the shifted exponent is an eigenvalue of the level-one block on the locus: True   (control +1/10: False)
+t = 2    I3  a1 = 1 - b/2 -> 1 + b/2: vacuum at the shifted exponent is an eigenvalue of the level-one block on the locus: True   (control +1/10: False)
+t = 2    I3  a1 = b - 1/2 -> b + 1/2: vacuum at the shifted exponent is an eigenvalue of the level-one block on the locus: True   (control +1/10: False)
+t = 2    I5  a0 = (1+b)/2 -> (3-b)/2: vacuum at the shifted exponent is an eigenvalue of the level-one block on the locus: True   (control +1/10: False)
+t = 2    I5  a1 = 1 - b/2 -> 1 + b/2: vacuum at the shifted exponent is an eigenvalue of the level-one block on the locus: True   (control +1/10: False)
+t = 2    I5  a1 = b - 1/2 -> b + 1/2: vacuum at the shifted exponent is an eigenvalue of the level-one block on the locus: True   (control +1/10: False)
+t = 9/4  I3  a0 = (1+b)/2 -> (3-b)/2: vacuum at the shifted exponent is an eigenvalue of the level-one block on the locus: True   (control +1/10: False)
+t = 9/4  I3  a1 = 1 - b/2 -> 1 + b/2: vacuum at the shifted exponent is an eigenvalue of the level-one block on the locus: True   (control +1/10: False)
+t = 9/4  I3  a1 = b - 1/2 -> b + 1/2: vacuum at the shifted exponent is an eigenvalue of the level-one block on the locus: True   (control +1/10: False)
+t = 9/4  I5  a0 = (1+b)/2 -> (3-b)/2: vacuum at the shifted exponent is an eigenvalue of the level-one block on the locus: True   (control +1/10: False)
+t = 9/4  I5  a1 = 1 - b/2 -> 1 + b/2: vacuum at the shifted exponent is an eigenvalue of the level-one block on the locus: True   (control +1/10: False)
+t = 9/4  I5  a1 = b - 1/2 -> b + 1/2: vacuum at the shifted exponent is an eigenvalue of the level-one block on the locus: True   (control +1/10: False)
+x_exceptional_sol2: PASS
+exit 0

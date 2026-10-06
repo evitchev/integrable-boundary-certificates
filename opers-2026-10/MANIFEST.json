@@ -88,17 +88,22 @@
   "br2",
   "exc1",
   "exc2",
+  "exc3",
+  "lead_exc3_check",
   "lead_gates",
+  "lead_num2_prereg",
   "lead_sol2f_check",
   "lead_vir4d_check",
   "lead_vir5a_check",
   "lead_vir5c_check",
   "lead_vir7_check",
   "num1",
+  "num2",
   "proof1",
   "second1",
   "second2",
   "second2_h2b",
+  "sol2_ext_fable",
   "sol2f",
   "super3",
   "vir4d",
@@ -113,6 +118,8 @@
   "sympy": "1.14.0",
   "mpmath": "1.3.0",
   "lean": "v4.24.0",
-  "mathlib": "v4.24.0 (f897ebcf72cd16f89ab4577d0c826cd14afaafc7)"
- }
+  "mathlib": "v4.24.0 (f897ebcf72cd16f89ab4577d0c826cd14afaafc7)",
+  "python_also_checked": "3.8.10 (sympy 1.13.3): see logs"
+ },
+ "paper_version": "v2 (private commit 5a6485a); kit release v1.2.3"
 }

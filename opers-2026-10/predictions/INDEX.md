@@ -18,4 +18,7 @@ timestamps. The first public commitment covering this record is the hash file of
 | exc2/PREDICTION_EXC2.json (seal exc2/SEAL_EXC2.md cfba205c...) | bc0aafcda4fe1f93b362ea9ee32e83456c9801df6b017373bdd6f6835e40bd60 | 2026-10-02T04:48:57Z | Sol 3, level-1 I_5 block, t = 2, 9/4 | blind: the I_5 block was computed afterwards |
 | num1/PREDICTION_extra_M51.txt (seal num1/SEAL_NUM1.md c1418ec1...) | 0f2896c45b30279f4452df37e3c9440e9d987093d7313c150eddad57362e779a | 2026-10-01T23:58:09Z | coefficient of the extra non-WKB term at M = 51/10 | a post-hoc diagnosis, registered before the fit printed |
 
+| exc3/PREDICTION_EXC3.json (seal exc3/SEAL_EXC3.md 58146a18...; snapshot lead_exc3_check/PREDICTION_EXC3_snapshot.json) | 7991f7af8dc89cc96ff3... (full hash in SHA256SUMS) | 2026-10-05T03:49:57Z | Sol 2, level-1 I_5 block, t = 2, 9/4 | blind: hold-out opened 03:56:03Z |
+| num2/PREDICTION_NUM2_logE.json (seal num2/SEAL_NUM2.md 25ab6266...; snapshots in lead_num2_prereg/) | 01174712... (full hash in SHA256SUMS) | 2026-10-05 (03:50:56Z lead snapshot) | NUM2 E^(-3/2) log E terms at t = 2 | registered before any t = 2 data |
+
 The checks verify these hashes where the archived scripts do (most comparison scripts assert the prediction's hash before comparing).

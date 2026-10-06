@@ -1,0 +1,10 @@
+spin 1: engine monic = P**2 + Q**2 + 127/390
+        certified    = P**2 + Q**2 + 127/390   -> equal: True  (3s)
+odd order 3 (spin 2): vacuum charge = 0
+spin 3: engine monic = P**4 + 60*P**2*Q**2 + 625*P**2/26 - 200*Q**4/3 - 485*Q**2/13 - 506011/121680
+        certified    = P**4 + 60*P**2*Q**2 + 625*P**2/26 - 200*Q**4/3 - 485*Q**2/13 - 506011/121680   -> equal: True  (3s)
+odd order 5 (spin 4): vacuum charge = 0
+spin 5: engine monic = P**6 - 75*P**4*Q**2/4 - 1855*P**4/208 + 125*P**2*Q**4/3 + 3075*P**2*Q**2/104 + 251059*P**2/48672 - 1075*Q**6/27 - 4390*Q**4/351 + 88019*Q**2/32448 + 105679373/227784960
+        certified    = P**6 - 75*P**4*Q**2/4 - 1855*P**4/208 + 125*P**2*Q**4/3 + 3075*P**2*Q**2/104 + 251059*P**2/48672 - 1075*Q**6/27 - 4390*Q**4/351 + 88019*Q**2/32448 + 105679373/227784960   -> equal: True  (4s)
+T0(a) normal form vs certified Sol 2 vacuum at t = 9/4: PASS
+exit 0

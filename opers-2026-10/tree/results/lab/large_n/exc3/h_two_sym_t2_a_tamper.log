@@ -1,0 +1,23 @@
+point A: conditions generated (1s)
+point B: conditions generated (1s)
+8 equations in 7 unknowns; total degrees [3, 1, 4, 6, 3, 1, 4, 6]
+written h_two_sym_t2_1-2_1-3_tamper.sing (1s); running Singular
+dim:
+-1
+vdim:
+0
+eliminant ii:
+Jii[1]=1
+eliminant ee:
+Jee[1]=1
+eliminant ff:
+Jff[1]=1
+eliminant jj:
+Jjj[1]=1
+eliminant kk:
+Jkk[1]=1
+eliminant z:
+Jz[1]=1
+
+done (1s)
+exit 0

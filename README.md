@@ -34,7 +34,7 @@ paper, the certified input tables they compare against (with hashes),
 the registered predictions, and the three Lean proofs with a Lake project.
 
     cd opers-2026-10
-    python3 run_all.py --quick     # about 17 min; exits non-zero on any failure
+    python3 run_all.py --quick     # 28 checks, about 25 min; exits non-zero on any failure
     python3 run_all.py --drill     # every check re-run with a tamper that must fail
 
 See `opers-2026-10/README.md` for what each check establishes and what

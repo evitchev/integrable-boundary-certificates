@@ -1,0 +1,7 @@
+(1/6, 11/9):  I3 resultant == (data charpoly)^2: True  I5 resultant == (data charpoly)^2: True  (0s)
+(1/6, 4/3):  I3 resultant == (data charpoly)^2: True  I5 resultant == (data charpoly)^2: True  (0s)
+(1/5, 2/9):  I3 resultant == (data charpoly)^2: True  I5 resultant == (data charpoly)^2: True  (1s)
+(2/9, 2/3):  I3 resultant == (data charpoly)^2: True  I5 resultant == (data charpoly)^2: True  (1s)
+(1/4, 4/5):  I3 resultant == (data charpoly)^2: True  I5 resultant == (data charpoly)^2: True  (1s)
+s_closed_pts t = 9/4: PASS
+exit 0

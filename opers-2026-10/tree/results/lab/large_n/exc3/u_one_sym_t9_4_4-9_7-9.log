@@ -1,0 +1,23 @@
+point A: conditions generated (1s)
+point B: conditions generated (2s)
+8 equations in 7 unknowns; total degrees [3, 1, 4, 6, 3, 1, 4, 6]
+written h_two_sym_t9_4_4-9_7-9.sing (3s); running Singular
+dim:
+0
+vdim:
+4
+eliminant ii:
+Jii[1]=1215*ii-4223
+eliminant ee:
+Jee[1]=3771306008121600*ee^2+2204772887069007840*ee+163589644700699633329
+eliminant ff:
+Jff[1]=1070504459151181612646400*ff^2+766090031674944579116567040*ff+46428412234838565513558486961
+eliminant jj:
+Jjj[1]=jj
+eliminant kk:
+Jkk[1]=kk
+eliminant z:
+Jz[1]=8355651076511856*z^4+4147082014527387*z^2-1052997374170000
+
+done (3s)
+exit 0

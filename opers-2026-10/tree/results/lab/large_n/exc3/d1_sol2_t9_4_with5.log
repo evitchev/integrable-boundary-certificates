@@ -1,0 +1,4 @@
+Sol 2 t = 9/4 I3: level-1 singlet states [((), (), (1,)), ((1,), (), ())]; transverse eigenvalue == vacuum at Q^2 + 2: True; charpoly irreducible over Q: True  (0s)
+Sol 2 t = 9/4 I5: level-1 singlet states [((), (), (1,)), ((1,), (), ())]; transverse eigenvalue == vacuum at Q^2 + 2: True; charpoly irreducible over Q: True  (1s)
+   [I_3, I_5] = 0 on the singlet block: True
+written d1_sol2_t9_4_with5.json

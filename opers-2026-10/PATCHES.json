@@ -202,5 +202,101 @@
   "kind": "privacy: private path in a file the kit does not execute -> redacted (lead, pre-release)",
   "sha256_archived": "c8580b5c6d2d53130448ce443848a4ce8d6f8046ee2bae246828e6626d735ed6",
   "sha256_kit": "8b227c67a5109340fdf41362815e72c28d1a9b393225cb021514154789d11964"
+ },
+ {
+  "path": "results/lab/large_n/lead_exc3_check/lead_compare_exc3.py",
+  "kind": "functional: prediction path -> the snapshot next to the script (identical sha256 7991f7af8dc89cc96ff3...)",
+  "sha256_archived": "ec2a515b652fe41fc9624fcd971e66ae7dc03d95586fcefde647280a936cc293",
+  "sha256_kit": "f456d3173cb577c702dab5840a607a1b4d4901e5349533bd147cf80302024f88"
+ },
+ {
+  "path": "results/lab/large_n/num2/time_probe.txt",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "01f83ffc4299723fc711bc9eca2c9c7bccd85fb68ebea0010354e9ebeeb265ef",
+  "sha256_kit": "293a7e67dd1d3141f3de31eab0e8b5d27332cd94c12a17e1f5b8ba17d737af7e"
+ },
+ {
+  "path": "results/lab/large_n/num2/run_wkb_pred_v1_crash.stdout",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "9f089b18de1060665e9c1afc9ce1902c41e9a9060bb90f8a176e641b712afcc7",
+  "sha256_kit": "37f389b1978d5ab3f926922d03fabb02218f7f079dc88907610cf197d6609043"
+ },
+ {
+  "path": "results/lab/large_n/exc3/f_sing_sol2.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "4d6e154d10ced4fa5c62bb1bdb730d82ecfa7362e2d2b1f361e42a4332c4b8e5",
+  "sha256_kit": "fc894376eb61eaefd25ea55d40e1e5fc5c852d2d4d5e6abe1b006b1f6a5780fe"
+ },
+ {
+  "path": "results/lab/large_n/exc3/s_closed_sol2_run2.log",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "1cb460a3b2090305cc0bbdedf0bca28370829e88e11fa35302635e4b6ad6d21a",
+  "sha256_kit": "e04c2b27dc73c800464eed6b41cd635bfee6186f647e2ae1533d6f37d635d8c9"
+ },
+ {
+  "path": "results/lab/large_n/exc3/f_sing_ff_sol2.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "9ccf24fb5f2d5a084a5e18309f31b066300120b9c6f0cd5ab15a2f25318c24ec",
+  "sha256_kit": "dea590dd853f5b037d28860ec12c513fb23be41c5eb299aedd320df947d8c642"
+ },
+ {
+  "path": "results/lab/large_n/exc3/h_two_free_t2_a.log",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "2298f7c081f25bd6ffe29ba31af7b8c93f7cbcfbe41aad555030f790511d6265",
+  "sha256_kit": "fa7f9855edf895f64c1e8f6b858a3b0ba6169c5cf02404c02f5a20fe47a4dba5"
+ },
+ {
+  "path": "results/lab/large_n/exc3/d1_data_exc3.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "fc06d51ce184aff2e4227116c5ee885ab0657616c5ed55c14d8c37c86aef0116",
+  "sha256_kit": "0e346786e28c2557c63e972e1d39f0be8e656e760ec056d7db0f78a2170ddac3"
+ },
+ {
+  "path": "results/lab/large_n/exc3/h_two_sol2.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "22425c3456f33b73455875718ec6e47ca6ede8d18acf6848d00666d84c99ffae",
+  "sha256_kit": "56acd09910e7c1bcf9be9dced0a0d358182e01da19e5d279d8570baa36cc2038"
+ },
+ {
+  "path": "results/lab/large_n/exc3/s_closed_sol2_v1_wrong_evenness_test.log",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "c41257b52d0b6202ac0900edf3cec52151721089389b3f850c1fb09c3678d7c7",
+  "sha256_kit": "14d99fc0fb051b3bc2542f555fdef19564cff4c462fc320526e3a880475e9488"
+ },
+ {
+  "path": "results/lab/large_n/exc3/d1_data.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "707c18f29b023bd5f1d6e6429140af69141c191fd120f5c75e24fa21b0281758",
+  "sha256_kit": "cd553df3e132d6f1ea99830f39d8a7aef525e12eb109649d265c619d44625751"
+ },
+ {
+  "path": "results/lab/large_n/exc3/t0e_debug.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "d976585a62f7c6650147c7c3cd9b0ce3343665df211a0586f60c9f2f2f491d61",
+  "sha256_kit": "7abc0073e79c024bf96d830f44eb65e1a0a6b0038a7b6ab4f88bf69bc9b22cb8"
+ },
+ {
+  "path": "results/lab/large_n/exc3/d0_vacuum_exc3.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "087865eb6f50fe948dc682ef77daeac31d9a829161577c205f7710d437f8b2e0",
+  "sha256_kit": "3285fd35b376d02fcd5acd5d75ad02231d4cb98e937370d1dfdb7d9cba7dc822"
+ },
+ {
+  "path": "results/lab/large_n/exc3/u_one.sh",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "cfc799b17377595932bc58deade41579b9d5816327916be8909992fd70149d79",
+  "sha256_kit": "6f6def9b057b3d3efad84fc112838c5e6c6a912df24bfd860a74b666006a7000"
+ },
+ {
+  "path": "results/lab/large_n/exc3/t0e_validate.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "82efeaf3eaad123fdff33530a3bdaed69748bf68a231fe8acc7c5b8af0c0ecfd",
+  "sha256_kit": "243a3b79870061acb7767f3d568e66877187450ed54b3f34154da132cf6e2de7"
+ },
+ {
+  "path": "results/lab/large_n/exc3/t0e_validate_v1_t2_gap.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "8e3473b711cf0a61e9c315fc980d0dccdc847281faeb800094eeb37def7c31de",
+  "sha256_kit": "199d50882c7fee36dc87a268938f2a097c9b697ffd00792c28af7fb34cde3d48"
  }
 ]

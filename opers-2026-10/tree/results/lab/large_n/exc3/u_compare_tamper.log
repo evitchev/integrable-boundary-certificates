@@ -1,0 +1,3 @@
+t = 2    [tamper] vacuum P^6 coefficient -18/223; trace: 10 coefficients, 1 differ; det: 28 coefficients, 10 differ; pointwise: 34 compared, 34 differ
+t = 9/4  [tamper] vacuum P^6 coefficient -6084/567491; trace: 10 coefficients, 1 differ; det: 28 coefficients, 10 differ; pointwise: 36 compared, 36 differ
+U3 hold-out [tamper]: FAIL
