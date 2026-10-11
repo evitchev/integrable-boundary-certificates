@@ -31,10 +31,10 @@ silently, where the toolchain is absent.
 
 Self-contained: the archived stage directories behind each claim of the
 paper, the certified input tables they compare against (with hashes),
-the registered predictions, and the three Lean proofs with a Lake project.
+the registered predictions, and the Lean proofs (five files since v1.2.4) with a Lake project.
 
     cd opers-2026-10
-    python3 run_all.py --quick     # 28 checks, about 25 min; exits non-zero on any failure
+    python3 run_all.py --quick     # 55 checks, about 35 min; exits non-zero on any failure
     python3 run_all.py --drill     # every check re-run with a tamper that must fail
 
 See `opers-2026-10/README.md` for what each check establishes and what

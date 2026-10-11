@@ -8,4 +8,4 @@ rev = "v4.24.0"
 
 [[lean_lib]]
 name = "OpersCertificates"
-roots = ["OperMellin", "WardLossOne", "OperTop"]
+roots = ["OperMellin", "WardLossOne", "OperTop", "Theorem3Intertwining", "Theorem3FrozenLattice"]

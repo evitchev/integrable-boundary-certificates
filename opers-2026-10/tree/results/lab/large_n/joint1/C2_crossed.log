@@ -1,0 +1,8 @@
+C2: Sol 1, t = 9/4, block 2 x 2.  [M_3, M_5] = 0 symbolically: True.  disc(I_3 charpoly) = 256*P**2*(64*P**2 + 25*Q**2)/81
+   SYMBOLIC in (P, Q): marginals tr/det-level (s3, s5) equal: True True; MIXED tr(M3 M5): True; tr(M3^2 M5): True; tr(M3 M5^2): True; data crossed invariant equals operator T11: False; (a1-a2)(b1-b2) = (nonzero polynomial, 5 terms)
+   point (P,Q) = (1/2, 1/3): disc(I_3) = 10816/729; DATA pairs (I_3, I_5): [(-54234361/29568240, 2991211705361/1199458653120), (59658119/29568240, 3377876674961/1199458653120)]
+      OPER pairs : [(-54234361/29568240, 2991211705361/1199458653120), (59658119/29568240, 3377876674961/1199458653120)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+   point (P,Q) = (2/5, 1/4): disc(I_3) = 302144/50625; DATA pairs (I_3, I_5): [(-13797253/81120000 + 4*sqrt(4721)/225, (13611426762545177 - 3806345088000*sqrt(4721))/8884878912000000), (-4*sqrt(4721)/225 - 13797253/81120000, (3806345088000*sqrt(4721) + 13611426762545177)/8884878912000000)]
+      OPER pairs : [(-4*sqrt(4721)/225 - 13797253/81120000, -sqrt(4721)*(-13611426762545177*sqrt(4721) - 17969755160448000)/41945513343552000000), (-13797253/81120000 + 4*sqrt(4721)/225, sqrt(4721)*(-13611426762545177*sqrt(4721) - 17969755160448000)/41945513343552000000 + 13611426762545177/4442439456000000)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+C2 [crossed]: tamper fires  (2s)
+exit 0

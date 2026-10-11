@@ -1,0 +1,6 @@
+(95) with (5n+4)/16: 29/29 fibres exact in all 6 coefficients
+CONTROL (95) literal: 0/29 fibres exact in all 6 coefficients
+CONTROL tamper n + 1/10: 0/29 fibres exact in all 6 coefficients
+FL general top formula at n=-1/3: Q^4/P^4 = -7.00000000000000; (5n+4)/n = -7.00000000000000; literal 16(5n+4)/n = -112.000000000000
+FL general top formula at n=1/2: Q^4/P^4 = 13.0000000000000; (5n+4)/n = 13.0000000000000; literal 16(5n+4)/n = 208.000000000000
+FL general top formula at n=3: Q^4/P^4 = 6.33333333333333; (5n+4)/n = 6.33333333333333; literal 16(5n+4)/n = 101.333333333333

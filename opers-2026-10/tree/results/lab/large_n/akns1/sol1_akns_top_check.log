@@ -1,0 +1,6 @@
+7 | FL P^2 ~ record Y, Q^2 ~ X | distinct scale factors: ['1', 'nan']
+7 | FL P^2 ~ record X, Q^2 ~ Y | distinct scale factors: ['-1/3', '-3', '-3/13', '-63/17', '135/11', '225/49', 'nan']
+11/3 | FL P^2 ~ record Y, Q^2 ~ X | distinct scale factors: ['1', 'nan']
+11/3 | FL P^2 ~ record X, Q^2 ~ Y | distinct scale factors: ['-1/11', '-1/2', '-1/8', '-5/2', '-7/8', '25', 'nan']
+-2 | FL P^2 ~ record Y, Q^2 ~ X | distinct scale factors: ['1']
+-2 | FL P^2 ~ record X, Q^2 ~ Y | distinct scale factors: ['1/9', '225/961', '27/115', '3/11', '3/19', '3/35', '63/319', '81/289']

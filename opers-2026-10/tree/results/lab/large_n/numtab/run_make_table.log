@@ -1,0 +1,10 @@
+167 rows; TENSION 0; undetermined 9; predicted rows 117
+  undetermined: D2 A L-9/2 non-WKB registered before data fit -34171.9 eps 3.26e+5
+  undetermined: D2 B L-9/2 non-WKB registered before data fit -30788.1 eps 1.05e+5
+  undetermined: D2 C L-9/2 non-WKB registered before data fit -35707.9 eps 4.64e+5
+  undetermined: D4 A N-9/2 non-WKB position sealed, coefficient free fit 8.87819e+6 eps 2.08e+8
+  undetermined: D4 A N-15/2 non-WKB position sealed, coefficient free fit -8.87799e+20 eps 9.23e+20
+  undetermined: D4 B N-9/2 non-WKB position sealed, coefficient free fit 1.21184e+7 eps 2.65e+8
+  undetermined: D4 B N-15/2 non-WKB position sealed, coefficient free fit -1.27764e+21 eps 1.32e+21
+  undetermined: D5 A N3 non-WKB position sealed, coefficient free fit 146093.0 eps 3.07e+5
+  undetermined: D5 B N3 non-WKB position sealed, coefficient free fit 68801.3 eps 4.07e+5

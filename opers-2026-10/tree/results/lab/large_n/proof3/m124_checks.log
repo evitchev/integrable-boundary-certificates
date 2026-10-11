@@ -1,0 +1,20 @@
+M1a nu = 0.7: Hankel vs m(nu): rel 2.11e-41
+M1a nu = (2.3 + 0.4j): Hankel vs m(nu): rel 4.14e-42
+M1a nu = -1.2: Hankel vs m(nu): rel 0.0
+M1b symbolic (monomials): True
+M1b numeric, psi = x^0.4 exp(-x^2): K_(g-1) psi vs K_g[(g-1-theta/sigma) psi]: rel 1.29e-41
+M1c intertwining L3 K = x^n K x^-n L6 on monomials (symbolic): True
+M1c tamper (gamma + 1/7): intertwining holds? False (expected False)
+M2 a = 1: frozen exponents + shift lattice are zeros of m (gamma_r - nu/sigma in Z<=0): True
+M2 a = 2: frozen exponents + shift lattice are zeros of m (gamma_r - nu/sigma in Z<=0): True
+M2 a = 3: frozen exponents + shift lattice are zeros of m (gamma_r - nu/sigma in Z<=0): True
+M2 a = 4: frozen exponents + shift lattice are zeros of m (gamma_r - nu/sigma in Z<=0): True
+M2 tamper a = 1 (frozen + sigma/2): zeros of m? False (expected False)
+M2 tamper a = 2 (frozen + sigma/2): zeros of m? False (expected False)
+M2 tamper a = 3 (frozen + sigma/2): zeros of m? False (expected False)
+M2 tamper a = 4 (frozen + sigma/2): zeros of m? False (expected False)
+M4 Laplace kappa = 3^(1/3)/sqrt(3 pi) = 0.4697911752287377642898417; from M3: 0.4697911752287377642898417; closed form 3^(-1/6) pi^(-1/2) = 0.4697911752287377642898417
+M4 E = 0: beta3 = -2.0, beta6 = -1.25, 2 beta6 + 1/2 = -2.0; leading a0: -1.0, -1.0
+M4 E = 37: beta3 = -2.0, beta6 = -1.25, 2 beta6 + 1/2 = -2.0; leading a0: -1.0, -1.0
+M1/M2/M4 PASS
+exit 0

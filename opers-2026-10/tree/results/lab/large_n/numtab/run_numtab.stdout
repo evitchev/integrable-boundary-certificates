@@ -1,0 +1,184 @@
+== D1 NUM1 (Sol 1, M = 5)
+  D1 A K0           WKB predicted                      pred       0.99214985135031 fit       0.99214985135031 d  52.59 e  39.63 [consistent]
+  D1 A K2           WKB predicted                      pred       0.11472498148562 fit       0.11472498148562 d  42.36 e  30.56 [consistent]
+  D1 A K3           WKB predicted                      pred      -0.12741947172589 fit      -0.12741947172589 d  38.48 e  27.24 [consistent]
+  D1 A K4           WKB predicted                      pred      -0.40889404172617 fit      -0.40889404172617 d  35.12 e  24.44 [consistent]
+  D1 A K5           WKB predicted                      pred        0.4287122133382 fit        0.4287122133382 d  31.38 e  21.25 [consistent]
+  D1 A e^-3 (K6)    non-WKB post hoc (lim WKB + a Mellin) pred        2.1707969168463 fit        2.1707969168463 d  28.43 e  18.86 [consistent]
+  D1 A K7           WKB predicted                      pred       -7.9209969306189 fit       -7.9209969306189 d  25.45 e  16.43 [consistent]
+  D1 A K8           WKB predicted                      pred       -62.369414226338 fit       -62.369414226338 d   22.9 e  14.44 [consistent]
+  D1 A log e        fitted free                        pred                      - fit      -0.46666666666667 d      - e  35.28 [no prediction]
+  D1 A const        fitted free                        pred                      - fit       0.35996809041504 d      - e  33.98 [no prediction]
+  D1 A(+-a avg) K0           WKB predicted (alpha-even)         pred       0.99214985135031 fit       0.99214985135031 d  52.92 e  40.22 [consistent]
+  D1 A(+-a avg) K2           WKB predicted (alpha-even)         pred       0.11472498148562 fit       0.11472498148562 d  42.64 e  31.15 [consistent]
+  D1 A(+-a avg) K3           WKB predicted (alpha-even)         pred    1.8669045833583e-60 fit     2.467907224045e-40 d -20.12 e -10.88 [consistent]
+  D1 A(+-a avg) K4           WKB predicted (alpha-even)         pred      -0.40889404172617 fit      -0.40889404172617 d  35.29 e  25.03 [consistent]
+  D1 A(+-a avg) K5           WKB predicted (alpha-even)         pred    1.9913648889156e-58 fit     1.389254461963e-32 d -25.84 e -9.636 [consistent]
+  D1 A(+-a avg) K6           WKB predicted (alpha-even)         pred        2.3952482200013 fit        2.3952482200013 d  28.52 e  19.51 [consistent]
+  D1 A(+-a avg) K7           WKB predicted (alpha-even)         pred   -1.5293682346872e-55 fit    2.9507625596161e-25 d -30.29 e -8.388 [consistent]
+  D1 A(+-a avg) K8           WKB predicted (alpha-even)         pred       -62.369414226338 fit       -62.369414226338 d  22.82 e  15.06 [consistent]
+  D1 B K0           WKB predicted                      pred       0.99214985135031 fit       0.99214985135031 d  51.08 e   39.7 [consistent]
+  D1 B K2           WKB predicted                      pred      -0.24803042192923 fit      -0.24803042192923 d  41.21 e  30.96 [consistent]
+  D1 B K3           WKB predicted                      pred       0.27051885648427 fit       0.27051885648427 d  37.33 e  27.63 [consistent]
+  D1 B K4           WKB predicted                      pred      -0.46939692407486 fit      -0.46939692407486 d  33.71 e  24.56 [consistent]
+  D1 B K5           WKB predicted                      pred      -0.59668891651183 fit      -0.59668891651183 d  30.05 e  21.46 [consistent]
+  D1 B e^-3 (K6)    non-WKB post hoc (lim WKB + a Mellin) pred        1.2068200158482 fit        1.2068200158482 d  26.71 e  18.66 [consistent]
+  D1 B K7           WKB predicted                      pred        11.859962350079 fit        11.859962350079 d  24.16 e  16.66 [consistent]
+  D1 B K8           WKB predicted                      pred       -48.607312511157 fit       -48.607312511157 d  21.34 e  14.38 [consistent]
+  D1 B log e        fitted free                        pred                      - fit                 -0.525 d      - e   35.4 [no prediction]
+  D1 B const        fitted free                        pred                      - fit       0.59896065373385 d      - e  34.27 [no prediction]
+  D1 B(+-a avg) K0           WKB predicted (alpha-even)         pred       0.99214985135031 fit       0.99214985135031 d  51.33 e  40.35 [consistent]
+  D1 B(+-a avg) K2           WKB predicted (alpha-even)         pred      -0.24803042192923 fit      -0.24803042192923 d  41.45 e  31.61 [consistent]
+  D1 B(+-a avg) K3           WKB predicted (alpha-even)         pred    1.2446030555722e-60 fit   -7.2994323267223e-39 d -21.77 e -9.278 [consistent]
+  D1 B(+-a avg) K4           WKB predicted (alpha-even)         pred      -0.46939692407486 fit      -0.46939692407486 d  33.94 e  25.23 [consistent]
+  D1 B(+-a avg) K5           WKB predicted (alpha-even)         pred    3.9827297778311e-59 fit   -3.0735577821293e-31 d -27.89 e -8.159 [consistent]
+  D1 B(+-a avg) K6           WKB predicted (alpha-even)         pred        1.7474920158482 fit        1.7474920158482 d   27.1 e   19.5 [consistent]
+  D1 B(+-a avg) K7           WKB predicted (alpha-even)         pred   -1.0195788231248e-56 fit   -4.8536280937464e-24 d -32.68 e  -7.04 [consistent]
+  D1 B(+-a avg) K8           WKB predicted (alpha-even)         pred       -48.607312511157 fit       -48.607312511157 d  21.56 e  15.08 [consistent]
+  D1 C K0           WKB predicted                      pred       0.99214985135031 fit       0.99214985135031 d  51.27 e  40.12 [consistent]
+  D1 C K2           WKB predicted                      pred       0.13717117351541 fit       0.13717117351541 d  41.13 e  31.13 [consistent]
+  D1 C K3           WKB predicted                      pred    1.2446030555722e-60 fit   -8.8224371075278e-39 d -21.85 e -9.419 [consistent]
+  D1 C K4           WKB predicted                      pred      -0.47089866740719 fit      -0.47089866740719 d  33.85 e   25.0 [consistent]
+  D1 C K5           WKB predicted                      pred    1.9913648889156e-58 fit   -4.0435420923351e-31 d -27.31 e -8.263 [consistent]
+  D1 C K6           WKB predicted                      pred        3.0044341767914 fit        3.0044341767914 d   27.2 e  19.51 [consistent]
+  D1 C K7           WKB predicted                      pred   -1.1215367054372e-55 fit   -7.1554021836258e-24 d  -31.8 e -7.095 [consistent]
+  D1 C K8           WKB predicted                      pred       -76.744679889655 fit       -76.744679889655 d  21.56 e  15.05 [consistent]
+  D1 C log e        fitted free                        pred                      - fit      -0.41666666666667 d      - e  35.73 [no prediction]
+  D1 C const        fitted free                        pred                      - fit       0.29065337235904 d      - e  34.38 [no prediction]
+== D2 NUM2 (Sol 3, t = 2)
+  (D2 A: dominant theta = 1.9; window K2 = 18)
+  D2 A K0           WKB predicted                      pred       0.46739403510848 fit       0.46739403510848 d  32.15 e  21.81 [consistent]
+  D2 A K2           WKB predicted                      pred       0.61292138816814 fit       0.61292138816814 d  23.74 e  14.42 [consistent]
+  D2 A K3           WKB predicted                      pred                    0.0 fit   -6.2771025043987e-21 d      - e -8.809 [consistent] |fit| 6.3e-21
+  D2 A K4           resonant finite part, unresolved   pred                      - fit        2.6904054378917 d      - e  8.072 [no prediction]
+  D2 A K5           WKB predicted                      pred                    0.0 fit    4.4832301856971e-14 d      - e -7.774 [consistent] |fit| 4.5e-14
+  D2 A K6           WKB predicted                      pred        -14.59948683175 fit       -14.599486831814 d  11.36 e  4.108 [consistent]
+  D2 A K7           resonant finite part, unresolved   pred                      - fit        74.428959123983 d      - e  1.697 [no prediction]
+  D2 A K8           WKB predicted                      pred        589.74516361513 fit        589.74520693105 d  7.134 e  0.955 [consistent]
+  D2 A L-3/2        non-WKB registered before data     pred      -0.75606193415638 fit      -0.75606193415638 d  16.94 e  8.647 [consistent]
+  D2 A L-3          non-WKB registered before data     pred                    0.0 fit     2.6108996610645e-8 d      - e -6.718 [consistent] |fit| 2.6e-8
+  D2 A L-9/2        non-WKB registered before data     pred       -34174.677527174 fit       -34171.871662849 d  4.086 e -0.9795 [consistent]
+  D2 A log          fitted free                        pred                      - fit                   -0.1 d      - e  17.55 [no prediction]
+  D2 A const        fitted free                        pred                      - fit        2.2245690693549 d      - e  17.66 [no prediction]
+  (D2 B: dominant theta = 1.6; window K2 = 18)
+  D2 B K0           WKB predicted                      pred       0.46739403510848 fit       0.46739403510848 d  32.21 e  21.84 [consistent]
+  D2 B K2           WKB predicted                      pred       0.58569285854786 fit       0.58569285854786 d  23.81 e  14.48 [consistent]
+  D2 B K3           WKB predicted                      pred                    0.0 fit     5.024414116673e-21 d      - e -8.802 [consistent] |fit| 5.0e-21
+  D2 B K4           resonant finite part, unresolved   pred                      - fit        2.8427391562423 d      - e  8.235 [no prediction]
+  D2 B K5           WKB predicted                      pred                    0.0 fit   -3.3469056863064e-14 d      - e -7.731 [consistent] |fit| 3.3e-14
+  D2 B K6           WKB predicted                      pred       -13.207655015815 fit       -13.207655015769 d  11.46 e  4.276 [consistent]
+  D2 B K7           resonant finite part, unresolved   pred                      - fit        104.66320452461 d      - e  2.117 [no prediction]
+  D2 B K8           WKB predicted                      pred        532.07807198876 fit        532.07804424428 d  7.283 e  1.233 [consistent]
+  D2 B L-3/2        non-WKB registered before data     pred      -0.69055104166667 fit      -0.69055104166667 d  17.01 e  8.741 [consistent]
+  D2 B L-3          non-WKB registered before data     pred                    0.0 fit    -1.7738538750677e-8 d      - e -6.624 [consistent] |fit| 1.8e-8
+  D2 B L-9/2        non-WKB registered before data     pred         -30786.5933955 fit       -30788.141655997 d  4.299 e -0.5315 [consistent]
+  D2 B log          fitted free                        pred                      - fit                  -0.15 d      - e  17.78 [no prediction]
+  D2 B const        fitted free                        pred                      - fit       0.98347176080572 d      - e  17.36 [no prediction]
+  (D2 C: dominant theta = 2.0; window K2 = 18)
+  D2 C K0           WKB predicted                      pred       0.46739403510848 fit       0.46739403510848 d  31.94 e  21.59 [consistent]
+  D2 C K2           WKB predicted                      pred       0.62431984155024 fit       0.62431984155024 d  23.55 e  14.22 [consistent]
+  D2 C K3           WKB predicted                      pred                    0.0 fit   -9.9516038975498e-21 d      - e -8.808 [consistent] |fit| 1.0e-20
+  D2 C K4           resonant finite part, unresolved   pred                      - fit        2.6418418000373 d      - e  7.871 [no prediction]
+  D2 C K5           WKB predicted                      pred                    0.0 fit    7.0260930207182e-14 d      - e -7.767 [consistent] |fit| 7.0e-14
+  D2 C K6           WKB predicted                      pred       -15.238972040107 fit       -15.238972040207 d  11.18 e  3.944 [consistent]
+  D2 C K7           resonant finite part, unresolved   pred                      - fit        62.404956265435 d      - e  1.446 [no prediction]
+  D2 C K8           WKB predicted                      pred        616.03080871803 fit        616.03087505265 d  6.968 e  0.805 [consistent]
+  D2 C L-3/2        non-WKB registered before data     pred       -0.7855224609375 fit       -0.7855224609375 d  16.76 e   8.47 [consistent]
+  D2 C L-3          non-WKB registered before data     pred                    0.0 fit     4.0326351057568e-8 d      - e -6.705 [consistent] |fit| 4.0e-8
+  D2 C L-9/2        non-WKB registered before data     pred       -35712.128132413 fit       -35707.915208725 d  3.928 e -1.114 [consistent]
+  D2 C log          fitted free                        pred                      - fit     -0.083333333333333 d      - e  17.26 [no prediction]
+  D2 C const        fitted free                        pred                      - fit        2.5936591673005 d      - e  17.52 [no prediction]
+== D3 NUM2 (Sol 3, t = 9/4)
+  (D3 A: dominant theta = 2.5666667; window K2 = 18)
+  D3 A K0           WKB predicted                      pred       0.40283208683148 fit       0.40283208683148 d  30.84 e  25.82 [consistent]
+  D3 A K2           WKB predicted                      pred       0.54554894567482 fit       0.54554894567482 d  21.28 e  17.32 [consistent]
+  D3 A K3           WKB predicted                      pred                    0.0 fit   -1.6891874029691e-17 d      - e -3.442 [consistent] |fit| 1.7e-17
+  D3 A K4           WKB predicted                      pred        3.7209471124647 fit        3.7209471124647 d  13.91 e  10.98 [consistent]
+  D3 A K5           WKB predicted                      pred                    0.0 fit    3.9026537929737e-10 d      - e -2.426 [consistent] |fit| 3.9e-10
+  D3 A K6           WKB predicted                      pred        86.151672126704 fit        86.151672983717 d  8.002 e  6.081 [consistent]
+  D3 A K7           WKB predicted                      pred                    0.0 fit    -0.0016418629163564 d      - e -1.408 [consistent] |fit| 0.0016
+  D3 A K8           WKB predicted                      pred        1130.0004876812 fit        1127.2328923749 d  2.611 e  1.744 [consistent]
+  D3 A N1           non-WKB position sealed, coefficient free pred                      - fit      -0.48970795719696 d      - e  12.29 [no prediction]
+  D3 A N2           non-WKB post hoc (position)        pred                      - fit       -19.332915910122 d      - e  6.953 [no prediction]
+  D3 A N3           non-WKB post hoc (position)        pred                      - fit        -316.8311879686 d      - e  2.081 [no prediction]
+  D3 A log          fitted free                        pred                      - fit     -0.081818181818182 d      - e  20.93 [no prediction]
+  D3 A const        fitted free                        pred                      - fit        2.4867940268269 d      - e  21.19 [no prediction]
+  (D3 B: dominant theta = 2.2666667; window K2 = 18)
+  D3 B K0           WKB predicted                      pred       0.40283208683148 fit       0.40283208683148 d   30.9 e  25.89 [consistent]
+  D3 B K2           WKB predicted                      pred       0.52706158078065 fit       0.52706158078065 d  21.32 e  17.37 [consistent]
+  D3 B K3           WKB predicted                      pred                    0.0 fit   -1.4598273998947e-17 d      - e -3.442 [consistent] |fit| 1.5e-17
+  D3 B K4           WKB predicted                      pred        3.5061906978406 fit        3.5061906978405 d  13.95 e  11.01 [consistent]
+  D3 B K5           WKB predicted                      pred                    0.0 fit    3.3727291601733e-10 d      - e -2.427 [consistent] |fit| 3.4e-10
+  D3 B K6           WKB predicted                      pred        80.808387503307 fit        80.808388243947 d  8.038 e  6.117 [consistent]
+  D3 B K7           WKB predicted                      pred                    0.0 fit    -0.0014189071604063 d      - e -1.408 [consistent] |fit| 0.0014
+  D3 B K8           WKB predicted                      pred        1056.3241726437 fit        1053.9324230445 d  2.645 e  1.778 [consistent]
+  D3 B N1           non-WKB position sealed, coefficient free pred                      - fit      -0.35586287460174 d      - e  12.21 [no prediction]
+  D3 B N2           non-WKB post hoc (position)        pred                      - fit        -18.70028856429 d      - e  7.002 [no prediction]
+  D3 B N3           non-WKB post hoc (position)        pred                      - fit       -478.34739125735 d      - e  2.323 [no prediction]
+  D3 B log          fitted free                        pred                      - fit      -0.12272727272727 d      - e  21.17 [no prediction]
+  D3 B const        fitted free                        pred                      - fit         1.218352749961 d      - e  20.95 [no prediction]
+== D4 NUM3 (Sol 2, t = 2; extended grid E >= 1e4)
+  (D4 A: dominant theta = 2.4; window K2 = 19)
+  D4 A K0           WKB predicted                      pred        0.4227318509767 fit        0.4227318509767 d  34.05 e  26.51 [consistent]
+  D4 A K2           WKB predicted                      pred       0.67154238185204 fit       0.67154238185204 d  25.31 e  18.75 [consistent]
+  D4 A K3           WKB predicted                      pred                    0.0 fit   -2.4767161808295e-22 d      - e -6.099 [consistent] |fit| 2.5e-22
+  D4 A K4           WKB predicted                      pred       -4.2007677733631 fit       -4.2007677733631 d  18.13 e  12.48 [consistent]
+  D4 A K5           WKB predicted                      pred                    0.0 fit    1.1539822960141e-14 d      - e -5.208 [consistent] |fit| 1.2e-14
+  D4 A K6           WKB predicted                      pred       -29.919287120483 fit       -29.919287120495 d  12.37 e  7.589 [consistent]
+  D4 A K7           WKB predicted                      pred                    0.0 fit     2.8055465665692e-8 d      - e -4.358 [consistent] |fit| 2.8e-8
+  D4 A K8           resonant finite part, unresolved   pred                      - fit       -1222.8298468432 d      - e  2.874 [no prediction]
+  D4 A N-3/2        non-WKB position sealed, coefficient free pred                      - fit        8.3740312300857 d      - e  11.01 [no prediction]
+  D4 A N-9/2        non-WKB position sealed, coefficient free pred                      - fit         8878185.137629 d      - e  -1.37 [no prediction]
+  D4 A N-15/2       non-WKB position sealed, coefficient free pred                      - fit   -8.8779910644929e+20 d      - e -0.01675 [no prediction]
+  D4 A L-3          non-WKB registered before data     pred                    0.0 fit    -1.3283979677192e-5 d      - e -3.942 [consistent] |fit| 1.3e-5
+  D4 A L-6          non-WKB registered before data     pred                    0.0 fit       20938845881983.0 d      - e -0.9319 [consistent] |fit| 2.1e+13
+  D4 A log          fitted free                        pred                      - fit     -0.085714285714286 d      - e  22.06 [no prediction]
+  D4 A const        fitted free                        pred                      - fit       0.81664974011156 d      - e  21.71 [no prediction]
+  (D4 B: dominant theta = 2.8; window K2 = 19)
+  D4 B K0           WKB predicted                      pred        0.4227318509767 fit        0.4227318509767 d  33.88 e  26.41 [consistent]
+  D4 B K2           WKB predicted                      pred       0.60951056484447 fit       0.60951056484447 d   25.1 e   18.6 [consistent]
+  D4 B K3           WKB predicted                      pred                    0.0 fit   -3.6739974963963e-22 d      - e -6.032 [consistent] |fit| 3.7e-22
+  D4 B K4           WKB predicted                      pred       -4.8000665903881 fit       -4.8000665903881 d  18.01 e  12.43 [consistent]
+  D4 B K5           WKB predicted                      pred                    0.0 fit    1.7092752528593e-14 d      - e -5.142 [consistent] |fit| 1.7e-14
+  D4 B K6           WKB predicted                      pred       -34.084942216509 fit       -34.084942216528 d  12.25 e  7.542 [consistent]
+  D4 B K7           WKB predicted                      pred                    0.0 fit     4.1473635717331e-8 d      - e -4.292 [consistent] |fit| 4.1e-8
+  D4 B K8           resonant finite part, unresolved   pred                      - fit       -1461.1574323959 d      - e  2.847 [no prediction]
+  D4 B N-3/2        non-WKB position sealed, coefficient free pred                      - fit        8.1194338239299 d      - e  10.89 [no prediction]
+  D4 B N-9/2        non-WKB position sealed, coefficient free pred                      - fit        12118357.306245 d      - e -1.339 [no prediction]
+  D4 B N-15/2       non-WKB position sealed, coefficient free pred                      - fit    -1.277638841094e+21 d      - e -0.01492 [no prediction]
+  D4 B L-3          non-WKB registered before data     pred                    0.0 fit    -1.9613839025454e-5 d      - e -3.876 [consistent] |fit| 2.0e-5
+  D4 B L-6          non-WKB registered before data     pred                    0.0 fit       30493821412639.0 d      - e -0.8804 [consistent] |fit| 3.0e+13
+  D4 B log          fitted free                        pred                      - fit     -0.028571428571429 d      - e  21.48 [no prediction]
+  D4 B const        fitted free                        pred                      - fit        2.7543542371096 d      - e  22.14 [no prediction]
+== D5 NUM3 (Sol 2, t = 9/4; extended grid E >= 1e4; extra)
+  (D5 A: dominant theta = 3.7333333; window K2 = 21)
+  D5 A K0           WKB predicted                      pred       0.30946165715512 fit       0.30946165715512 d   32.5 e  25.86 [consistent]
+  D5 A K2           WKB predicted                      pred       0.59728699706445 fit       0.59728699706445 d  23.59 e  17.84 [consistent]
+  D5 A K3           WKB predicted                      pred                    0.0 fit    1.8313693506728e-20 d      - e -5.331 [consistent] |fit| 1.8e-20
+  D5 A K4           WKB predicted                      pred        45.313168474552 fit        45.313168474552 d  16.72 e  11.77 [consistent]
+  D5 A K5           WKB predicted                      pred                    0.0 fit   -3.8142203625733e-13 d      - e -4.575 [consistent] |fit| 3.8e-13
+  D5 A K6           WKB predicted                      pred       -266.78104903971 fit       -266.78104903859 d  11.38 e  7.153 [consistent]
+  D5 A K7           WKB predicted                      pred                    0.0 fit     6.2353842593725e-6 d      - e -3.893 [consistent] |fit| 6.2e-6
+  D5 A K8           WKB predicted                      pred          -14071.221184 fit       -14071.222647196 d  6.983 e  3.409 [consistent]
+  D5 A N1           non-WKB position sealed, coefficient free pred                      - fit       -38.091396668547 d      - e  12.02 [no prediction]
+  D5 A N2           non-WKB position sealed, coefficient free pred                      - fit        1049.4636944021 d      - e  4.867 [no prediction]
+  D5 A N3           non-WKB position sealed, coefficient free pred                      - fit        146092.62109911 d      - e -0.3224 [no prediction]
+  D5 A log          fitted free                        pred                      - fit     -0.062068965517241 d      - e  21.22 [no prediction]
+  D5 A const        fitted free                        pred                      - fit        1.0893167447417 d      - e  21.14 [no prediction]
+  (D5 B: dominant theta = 4.1333333; window K2 = 21)
+  D5 B K0           WKB predicted                      pred       0.30946165715512 fit       0.30946165715512 d   32.1 e  25.73 [consistent]
+  D5 B K2           WKB predicted                      pred       0.53578206764172 fit       0.53578206764172 d  23.14 e  17.67 [consistent]
+  D5 B K3           WKB predicted                      pred                    0.0 fit    4.5498480653818e-20 d      - e -5.063 [consistent] |fit| 4.5e-20
+  D5 B K4           WKB predicted                      pred        49.625947163318 fit        49.625947163318 d  16.36 e  11.69 [consistent]
+  D5 B K5           WKB predicted                      pred                    0.0 fit   -9.3684173099683e-13 d      - e  -4.31 [consistent] |fit| 9.4e-13
+  D5 B K6           WKB predicted                      pred       -283.23140721083 fit        -283.2314072081 d  11.02 e  7.054 [consistent]
+  D5 B K7           WKB predicted                      pred                    0.0 fit     1.5089652109965e-5 d      - e -3.634 [consistent] |fit| 1.5e-5
+  D5 B K8           WKB predicted                      pred       -14896.393750781 fit       -14896.397260953 d  6.628 e   3.31 [consistent]
+  D5 B N1           non-WKB position sealed, coefficient free pred                      - fit       -43.026250812123 d      - e  11.95 [no prediction]
+  D5 B N2           non-WKB position sealed, coefficient free pred                      - fit        899.07425518573 d      - e  4.675 [no prediction]
+  D5 B N3           non-WKB position sealed, coefficient free pred                      - fit        68801.346850674 d      - e -0.7721 [no prediction]
+  D5 B log          fitted free                        pred                      - fit     -0.020689655172414 d      - e  20.62 [no prediction]
+  D5 B const        fitted free                        pred                      - fit        3.0632519941142 d      - e  21.46 [no prediction]
+
+167 rows; TENSION rows: 0; done (6s)
+exit 0

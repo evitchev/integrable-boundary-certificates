@@ -1,0 +1,7 @@
+k = 5/3, P extra roots [1/5], L extra roots [2/7] TAMPER: order 2: A0 = -5/19; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): False
+k = 5/3, P extra roots [1/5], L extra roots [2/7] TAMPER: order 3: A0 = -10/19; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): False
+k = 5/3, P extra roots [1/5], L extra roots [2/7] TAMPER: order 4: A0 = -15/19; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): False
+k = 5/3, P extra roots [1/5], L extra roots [2/7] TAMPER: order 5: A0 = -20/19; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): False
+k = 5/3, P extra roots [1/5], L extra roots [2/7] TAMPER: order 6: A0 = -25/19; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): False
+GENERAL DISAGREE
+exit 0

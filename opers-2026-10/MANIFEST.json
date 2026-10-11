@@ -85,10 +85,12 @@
   }
  ],
  "stages": [
+  "akns1",
   "br2",
   "exc1",
   "exc2",
   "exc3",
+  "joint1",
   "lead_exc3_check",
   "lead_gates",
   "lead_num2_prereg",
@@ -97,9 +99,13 @@
   "lead_vir5a_check",
   "lead_vir5c_check",
   "lead_vir7_check",
+  "lean3",
   "num1",
   "num2",
+  "numtab",
   "proof1",
+  "proof2",
+  "proof3",
   "second1",
   "second2",
   "second2_h2b",
@@ -121,5 +127,5 @@
   "mathlib": "v4.24.0 (f897ebcf72cd16f89ab4577d0c826cd14afaafc7)",
   "python_also_checked": "3.8.10 (sympy 1.13.3): see logs"
  },
- "paper_version": "v2 (private commit 5a6485a); kit release v1.2.3"
+ "paper_version": "v2 (private commit 1bbf0e2); kit release v1.2.4"
 }

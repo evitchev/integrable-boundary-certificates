@@ -1,0 +1,8 @@
+C3: Sol 3, t = 2, block 2 x 2.  [M_3, M_5] = 0 symbolically: True.  disc(I_3 charpoly) = 64*(4*P**4 - 4*P**2*Q**2 - 4*P**2 + 4*Q**4 + 4*Q**2 + 1)
+   SYMBOLIC in (P, Q): marginals tr/det-level (s3, s5) equal: True True; MIXED tr(M3 M5): True; tr(M3^2 M5): True; tr(M3 M5^2): True; data crossed invariant equals operator T11: False; (a1-a2)(b1-b2) = (nonzero polynomial, 8 terms)
+   point (P,Q) = (1/2, 1/3): disc(I_3) = 3280/81; DATA pairs (I_3, I_5): [(4417/1296 - 2*sqrt(205)/9, (2695201 - 133920*sqrt(205))/326592), (2*sqrt(205)/9 + 4417/1296, (133920*sqrt(205) + 2695201)/326592)]
+      OPER pairs : [(4417/1296 - 2*sqrt(205)/9, -sqrt(205)*(27453600 - 2695201*sqrt(205))/66951360), (2*sqrt(205)/9 + 4417/1296, sqrt(205)*(27453600 - 2695201*sqrt(205))/66951360 + 2695201/163296)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+   point (P,Q) = (2/5, 1/4): disc(I_3) = 27521/625; DATA pairs (I_3, I_5): [(1413763/480000 - sqrt(27521)/50, (3526277383 - 13872000*sqrt(27521))/448000000), (1413763/480000 + sqrt(27521)/50, (13872000*sqrt(27521) + 3526277383)/448000000)]
+      OPER pairs : [(1413763/480000 - sqrt(27521)/50, -sqrt(27521)*(381771312000 - 3526277383*sqrt(27521))/12329408000000), (1413763/480000 + sqrt(27521)/50, sqrt(27521)*(381771312000 - 3526277383*sqrt(27521))/12329408000000 + 3526277383/224000000)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+C3 [crossed]: tamper fires  (2s)
+exit 0

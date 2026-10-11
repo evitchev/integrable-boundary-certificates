@@ -1,0 +1,52 @@
+LEAN3 build log (cognitive, 2026-10-10T20:06Z)
+toolchain: Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+Mathlib: v4.24.0, prebuilt oleans via the lean-mathlib wrapper (baked LEAN_PATH; no Lake project)
+
+== lean Theorem3Intertwining.lean  sha256 98d70c75384d445d8e2d686ba7d354a83e76e1574078859dbd46b39cd7e65fbb
+exit=0  seconds=2  output_lines=0
+== lean Theorem3FrozenLattice.lean  sha256 3ee2dd28637aa4ddb1ad5c72f1fbf9785b19cafcfc06b1a7195593996dac23a6
+exit=0  seconds=5  output_lines=0
+
+== #print axioms, every theorem (a copy with #print axioms appended)
+Theorem3Intertwining: exit=0, theorems=17
+'IntegrableBoundary.Theorem3Intertwining.m_add_three' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.m_sub_six' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.m_ratio_add_three' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.m_ratio_sub_six' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.K_monomial' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.L6_coeff' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.L4_coeff' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.lemma2_i' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.aux_ii' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.lemma2_ii' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.aux_iii' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.lemma2_iii' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.prop1' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.prop1_monomial' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.nonvacuity_prop1' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.tamper_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3Intertwining.tamper_prop1' depends on axioms: [propext, Classical.choice, Quot.sound] 
+Theorem3FrozenLattice: exit=0, theorems=12
+'IntegrableBoundary.Theorem3FrozenLattice.m_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3FrozenLattice.P_shift_prod' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3FrozenLattice.indicial_exponent_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3FrozenLattice.indicial_frozen_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3FrozenLattice.indicial_frozen_zero' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3FrozenLattice.m_exponent_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3FrozenLattice.lattice_clause_of_difference_clause' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3FrozenLattice.nonvacuity_H' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3FrozenLattice.nonvacuity_H_real' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3FrozenLattice.tamper_lattice' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3FrozenLattice.tamper_no_difference_clause' depends on axioms: [propext, Classical.choice, Quot.sound] 
+'IntegrableBoundary.Theorem3FrozenLattice.tamper_indicial' depends on axioms: [propext, Classical.choice, Quot.sound] 
+
+== mutation copies (each must FAIL to build)
+M1_recurrence_mu5 [(mu-1)(mu-5) in m_sub_six]: exit=1; failing: m_ratio_sub_six m_sub_six prop1 tamper_recurrence 
+M2_L4_theta_plus_3 [x^9(theta+3) in L4]: exit=1; failing: L4_coeff prop1 
+M3_indicial_mu5 [(mu-1)(mu-5) in Ind]: exit=1; failing: indicial_exponent_ne_zero indicial_frozen_ne_zero indicial_frozen_zero 
+M4_lattice_2_plus_3Z [2+3n in m_eq_zero_iff]: exit=1; failing: m_eq_zero_iff m_exponent_ne_zero 
+
+== checker negative control (a false proof must be rejected)
+theorem bogus : (2:ℕ) + 2 = 5 := by norm_num  ->  exit=1
+
+LEAN3: ALL CHECKS AS REQUIRED

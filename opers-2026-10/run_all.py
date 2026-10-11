@@ -127,6 +127,42 @@ check('exc3_level1_I5', 'Excited states (Solution 2)', 'registered prediction (b
 check('exc3_lead_blind', 'Excited states (Solution 2)', "lead's blind comparison of the registered prediction with its own data blocks", LN + 'lead_exc3_check',
       ['lead_compare_exc3.py'], 'lead_compare_exc3.log',
       drill=dict(argv=['lead_compare_exc3.py', 'tamper'], must=['MISMATCH']))
+# --- PROOF2 (v1.2.4): Theorem 2's rank-drop vanishing at losses 2-3 (record side), and the formal-WKB equivalence (Theorem 1) beyond the two archived cases
+for _f in ('p1_factor', 'p1_proof', 'p1_proof_b'):
+    check(f'proof2_{_f}', 'Spins that are multiples of n', 'symbolic proof (rank-drop vanishing at losses 1-3)', LN + 'proof2', [f'{_f}.py'], f'{_f}.log',
+          drill=dict(edit=[('bumpat', LN + 'proof2/codex_sol3_loss2.json', ['projection_over_c_a', 'numerator'])], must=[]))
+for _n, _args in (('case1', ['3/2', '1/3', '-', '7']), ('case1_near', ['1500001/1000000', '1/3', '-', '7']), ('case2', ['8/5', '1/3', '-', '7']),
+                  ('case3', ['5/3', '1/5', '2/7', '7']), ('case4', ['7/4', '1/3,-2/5', '3/7', '6']), ('case5', ['-6/5', '2/3', '-1/4', '6'])):
+    check(f'proof2_general_{_n}', 'The opers (Theorem 1)', 'operator identity (formal WKB), general P and L', LN + 'proof2/vir8copy',
+          ['../p2_general.py'] + _args, f'../p2_general_{_n}.log', 
+          drill=dict(argv=['../p2_general.py'] + _args + ['tamper'], must=['DISAGREE']))
+for _sol, _k, _tag in ((3, '3/2', '3-3_2-8'), (3, '5/3', '3-5_3-8'), (3, '-6/5', '3--6_5-8'), (3, '7/2', '3-7_2-8'),
+                       (2, '3/2', '2-3_2-8'), (2, '5/2', '2-5_2-8'), (2, '-6/5', '2--6_5-8')):
+    check(f'proof2_aequiv_s{_sol}_k{_k.replace("/", "o").replace("-", "m")}', 'The opers (Theorem 1)', 'operator identity (formal WKB)', LN + 'proof2/vir8copy',
+          ['a_equiv.py', str(_sol), _k, '8'], f'../p2_aequiv_{_tag}.log', 
+          drill=dict(argv=['a_equiv.py', str(_sol), _k, '8', 'tamper'], must=['DISAGREE']))
+# --- PROOF3 (v1.2.4): Theorem 3 (Appendix A) -- the constant omega against the archived Q-function data, and the Hankel-kernel identities
+check('thm3_constant', 'Theorem 3 (Appendix A)', 'numerical: (Q4/Q6) m(theta_j)^-1 is one E-independent constant 1/omega (archived NUM2 data, t = 2)',
+      LN + 'proof3', ['m3_constant.py'], 'm3_constant.log',
+      drill=dict(edit=[('bumpat', LN + 'proof3/t1.json', ['A', '#0', 'Q3', 0], '1e-20')], must=['M3 FAIL']))
+check('thm3_kernel', 'Theorem 3 (Appendix A)', 'Hankel kernel, integration by parts, intertwining, frozen zeros, Laplace constant (numerical + symbolic)',
+      LN + 'proof3', ['m124_checks.py'], 'm124_checks.log',
+      drill=dict(edit=[('replace', LN + 'proof3/m124_checks.py', None, None)], must=[]))
+# --- JOINT1 (v1.2.4): the (I_3, I_5) pairing of the level-one excited-state comparisons (mixed trace + explicit pairs)
+for _c in range(1, 7):
+    check(f'joint1_C{_c}', 'Excited states', 'oper vs data: joint (I_3, I_5) pairing', LN + 'joint1', ['joint1.py', f'C{_c}'], f'C{_c}_real.log',
+          drill=dict(argv=['joint1.py', f'C{_c}', 'crossed'], must=['tamper fires']))
+# --- AKNS1 (v1.2.4): Solution 1 = quantum AKNS (Fateev-Lukyanov hep-th/0510271)
+check('akns_spin3', 'Relation to quantum AKNS', 'FL (95) vs the certified Sol 1 spin-3 table (29 fibres; one fixed dictionary)', LN + 'akns1',
+      ['sol1_akns_spin3_check.py', '../../first_order/vev_w4_points.json'], 'sol1_akns_spin3_check.log',
+      drill=dict(edit=[('replace', LN + 'akns1/sol1_akns_spin3_check.py', None, None)], must=['0/29']))
+check('akns_top', 'Relation to quantum AKNS', 'FL top layer vs the Sol 1 top layer (spins 3-9)', LN + 'akns1', ['sol1_akns_top_check.py'], 'sol1_akns_top_check.log',
+      drill=dict(edit=[('replace', LN + 'akns1/sol1_akns_top_check.py', None, None)], must=[]))
+# --- NUMTAB (v1.2.4): the spectral evidence table (NUM1-3) with its error estimates
+check('numtab', 'Numerical spectral check (evidence table)', 'table of fitted vs predicted coefficients from the archived high-precision data', LN + 'numtab',
+      ['numtab.py'], 'run_numtab.log', out='run_numtab.log',
+      drill=dict(edit=[('bumpat', LN + 'numtab/inputs/num1/num1_dps60.json', ['data', 'A', 5], '1e-8'),
+                       ('rehash', LN + 'numtab/inputs/num1/num1_dps60.json', LN + 'numtab/inputs/ORIGIN_SHA256')], must=[]))
 # --- full mode only
 check('sol3_vir5a_compare', 'Verification (table)', 'registered predictions vs certified tables (all VIR5a cells)', LN + 'vir5', ['e3_compare.py'],
       'e3_compare.log', quick=False, drill=dict(edit=[('bumpat', 'results/lab/vev/vev_sol3_w10.json', ['coefficients', '#1'])], must=[]))

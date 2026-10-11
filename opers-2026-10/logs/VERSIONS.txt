@@ -11,3 +11,10 @@ v1.2.3 (2026-10-06): fresh copy outside the author's workspace, Python 3.12.8 / 
   New full-mode NUM2 checks (7) ALL PASS (2239 s; num2_t1_zeros 2052 s); their drills: 6 detected, num2_x0_control drill first mis-aimed
   (perturbed a grid point x0 does not read; summary kept), retargeted to index 17 and detected (v123_x0_drill_retargeted_full_output.txt).
   Python 3.8.10 / sympy 1.13.3: num2 quick checks, num2_t1_zeros, exc3 checks ALL PASS (v123_python38_summary.txt).
+
+v1.2.4 (2026-10-11): fresh copy outside the author's workspace, with ulimit -v 16000000.
+  Python 3.8.10 / sympy 1.13.3 / mpmath 1.3.0: --quick 55 checks ALL PASS (2065 s) -> v124_quick_*.txt;
+    the 27 new checks' drills, 27 detected (596 s) -> v124_new_drill_*.txt (run in the assembly directory).
+  Python 3.12.8 / sympy 1.14.0 / mpmath 1.3.0: the 27 new checks ALL PASS (534 s) -> v124_new_py312_*.txt.
+  The checks carried over from v1.2.3 were not changed; their drills are in the v1.2.3 logs.
+  Lean: the five files build with Lean 4.24.0 / Mathlib v4.24.0 against a local Mathlib (3191 jobs); see ../lean/BUILD_LOG_v124_local_path_mathlib.txt.

@@ -1,0 +1,7 @@
+k = -6/5, P extra roots [2/3], L extra roots [-1/4]: order 2: A0 = 2; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = -6/5, P extra roots [2/3], L extra roots [-1/4]: order 3: A0 = 4; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = -6/5, P extra roots [2/3], L extra roots [-1/4]: order 4: A0 = 6; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = -6/5, P extra roots [2/3], L extra roots [-1/4]: order 5: A0 = 8; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = -6/5, P extra roots [2/3], L extra roots [-1/4]: order 6: A0 = 10; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+GENERAL AGREE
+exit 0

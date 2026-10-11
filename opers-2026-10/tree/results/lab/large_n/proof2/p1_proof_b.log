@@ -1,0 +1,9 @@
+loss 2: nu = 1, a = K - 2 (K >= 4): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [2, 5/2]
+loss 2: nu = 1, a = K - 3 (K >= 5): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [2, 5/2]
+loss 3: nu = 1, a = K - 3 (K >= 5): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [2, 5/2]
+loss 3: nu = 1, a = K - 4 (K >= 6): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [2, 5/2]
+loss 3: nu = 2, a = K - 3 (K >= 6): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [7/2, 9/2]
+loss 3: nu = 2, a = K - 4 (K >= 7): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [7/2, 9/2]
+loss 3: nu = 2, a = K - 5 (K >= 8): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [7/2, 9/2]
+SUPPLEMENT PASS
+exit 0

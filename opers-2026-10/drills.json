@@ -38,5 +38,17 @@
  "results/lab/large_n/num2/t1_zeros.py": [
   "e6, _ = exact_sixth_E0(l0, l1)",
   "e6, _ = exact_sixth_E0(l0 * (1 + mp.mpf(10)**-25), l1)"
+ ],
+ "results/lab/large_n/proof3/m124_checks.py": [
+  "ex = sig ** (nu / sig) / mp.gamma(gam - nu / sig)",
+  "ex = sig ** (nu / sig) / mp.gamma(gam - nu / sig) * (1 + mp.mpf(10)**-20)"
+ ],
+ "results/lab/large_n/akns1/sol1_akns_spin3_check.py": [
+  "run(lambda t: -(t - 1)/(t + 1), 16, '(95) with (5n+4)/16')",
+  "run(lambda t: -(t - 1)/(t + 1) + sp.Rational(1, 1000), 16, '(95) with (5n+4)/16')"
+ ],
+ "results/lab/large_n/akns1/sol1_akns_top_check.py": [
+  "aY = (t - 1)/(t + 3)",
+  "aY = (t - 1)/(t + 3) + sp.Rational(1, 100)"
  ]
 }

@@ -1,0 +1,15 @@
+M1a nu = 0.7: Hankel vs m(nu): rel 0.649
+M1a nu = (2.3 + 0.4j): Hankel vs m(nu): rel 1.1
+M1a nu = -1.2: Hankel vs m(nu): rel 0.147
+M1b symbolic (monomials): True
+M1b numeric, psi = x^0.4 exp(-x^2): K_(g-1) psi vs K_g[(g-1-theta/sigma) psi]: rel 2.06
+M1c intertwining L3 K = x^n K x^-n L6 on monomials (symbolic): True
+M2 a = 1: frozen exponents + shift lattice are zeros of m (gamma_r - nu/sigma in Z<=0): True
+M2 a = 2: frozen exponents + shift lattice are zeros of m (gamma_r - nu/sigma in Z<=0): True
+M2 a = 3: frozen exponents + shift lattice are zeros of m (gamma_r - nu/sigma in Z<=0): True
+M2 a = 4: frozen exponents + shift lattice are zeros of m (gamma_r - nu/sigma in Z<=0): True
+M4 Laplace kappa = 3^(1/3)/sqrt(3 pi) = 0.4697911752287377642898417; from M3: 0.4697911752287377642898417; closed form 3^(-1/6) pi^(-1/2) = 0.4697911752287377642898417
+M4 E = 0: beta3 = -2.0, beta6 = -1.25, 2 beta6 + 1/2 = -2.0; leading a0: -1.0, -1.0
+M4 E = 37: beta3 = -2.0, beta6 = -1.25, 2 beta6 + 1/2 = -2.0; leading a0: -1.0, -1.0
+M1/M2/M4 FAIL
+exit 1

@@ -1,0 +1,15 @@
+point A: E = 0 exact: 1/kappa = 2.12860533089645112119295775073; spread over j 1.46e-61
+  E =   -20.0: spread over j 1.51e-56; |1/kappa(E) - 1/kappa(0)| rel 1.21e-56; TAMPER spread 0.362
+  E =    -5.0: spread over j 1.05e-57; |1/kappa(E) - 1/kappa(0)| rel 3.78e-57; TAMPER spread 0.362
+  E =     2.0: spread over j 3.25e-58; |1/kappa(E) - 1/kappa(0)| rel 2.72e-57; TAMPER spread 0.362
+  E =    50.0: spread over j 3.08e-58; |1/kappa(E) - 1/kappa(0)| rel 2.68e-57; TAMPER spread 0.362
+  E =   500.0: spread over j 6.73e-58; |1/kappa(E) - 1/kappa(0)| rel 1.29e-57; TAMPER spread 0.362
+point A: worst j-spread 1.51e-56, worst E-drift 1.21e-56
+point B: E = 0 exact: 1/kappa = 2.12860533089645112119295775073; spread over j 0.0
+  E =   -20.0: spread over j 1.89e-56; |1/kappa(E) - 1/kappa(0)| rel 1.06e-56; TAMPER spread 0.779
+  E =    -5.0: spread over j 3.74e-57; |1/kappa(E) - 1/kappa(0)| rel 3.67e-57; TAMPER spread 0.779
+  E =     2.0: spread over j 7.35e-58; |1/kappa(E) - 1/kappa(0)| rel 2.31e-57; TAMPER spread 0.779
+  E =    50.0: spread over j 9.56e-58; |1/kappa(E) - 1/kappa(0)| rel 2.77e-57; TAMPER spread 0.779
+  E =   500.0: spread over j 1.66e-58; |1/kappa(E) - 1/kappa(0)| rel 3.42e-57; TAMPER spread 0.779
+point B: worst j-spread 1.89e-56, worst E-drift 1.06e-56
+M3 PASS

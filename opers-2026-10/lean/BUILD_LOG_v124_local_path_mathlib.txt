@@ -1,0 +1,33 @@
+⚠ [3180/3191] Replayed WardLossOne
+warning: WardLossOne.lean:313:48: This simp argument is unused:
+  Nat.cast_ofNat
+
+Hint: Omit it from the simp argument list.
+  simp only [ff_zero, ff_one, ff_two, ff_three, Nat.cast_o̵f̵N̵a̵t̵,̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵mul, Nat.cast_sub (show a ≤ K by omega)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: WardLossOne.lean:313:64: This simp argument is unused:
+  Nat.cast_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [ff_zero, ff_one, ff_two, ff_three, Nat.cast_ofNat, Nat.cast_m̵u̵l̵,̵ ̵N̵a̵t̵.̵c̵a̵st̵_̵s̵ub (show a ≤ K by omega)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: WardLossOne.lean:394:48: This simp argument is unused:
+  Nat.cast_ofNat
+
+Hint: Omit it from the simp argument list.
+  simp only [ff_zero, ff_one, ff_two, ff_three, Nat.cast_o̵f̵N̵a̵t̵,̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵mul, Nat.cast_sub (show a ≤ K by omega)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: WardLossOne.lean:394:64: This simp argument is unused:
+  Nat.cast_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [ff_zero, ff_one, ff_two, ff_three, Nat.cast_ofNat, Nat.cast_m̵u̵l̵,̵ ̵N̵a̵t̵.̵c̵a̵st̵_̵s̵ub (show a ≤ K by omega)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3189/3191] Built Theorem3Intertwining (2.3s)
+✔ [3190/3191] Built Theorem3FrozenLattice (6.3s)
+Build completed successfully (3191 jobs).
+exit 0

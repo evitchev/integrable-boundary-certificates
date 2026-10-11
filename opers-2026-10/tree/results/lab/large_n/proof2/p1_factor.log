@@ -1,0 +1,28 @@
+== loss 1:
+   NUM factor (power 1, deg_nu 0): -K + a
+   NUM factor (power 1, deg_nu 3): 8*K**4 - 16*K**3*a - 36*K**3*nu - 32*K**3 + 16*K**2*a**2 + 56*K**2*a*nu + 44*K**2*a + 52*K**2*nu**2 + 100*K**2*nu + 42*K**2 - 56*K*a**2*nu - 16*K*a**2 - 48*K*a*nu**2 - 108*K*a*nu - 32*K*a - 24*K*nu**3...
+   DEN factor (power 1, deg_nu 1): 2*K - 4*nu - 1
+   DEN factor (power 1, deg_nu 1): 2*K - 3*nu - 1
+   DEN factor (power 1, deg_nu 1): -K + a + nu + 1
+== loss 2:
+   NUM factor (power 1, deg_nu 0): -K + a
+   NUM factor (power 1, deg_nu 0): -K + a + 1
+   NUM factor (power 1, deg_nu 7): 448*K**8*nu - 448*K**8 - 1792*K**7*a*nu + 1792*K**7*a - 4032*K**7*nu**2 - 64*K**7*nu + 4096*K**7 + 3584*K**6*a**2*nu - 3328*K**6*a**2 + 14336*K**6*a*nu**2 - 1088*K**6*a*nu - 13504*K**6*a + 14896*K**6*...
+   DEN factor (power 1, deg_nu 1): nu - 1
+   DEN factor (power 2, deg_nu 1): 2*K - 4*nu - 1
+   DEN factor (power 2, deg_nu 1): 2*K - 3*nu - 1
+   DEN factor (power 1, deg_nu 1): -K + a + nu + 1
+   DEN factor (power 1, deg_nu 1): -K + a + nu + 2
+== loss 3:
+   NUM factor (power 1, deg_nu 0): -K + a
+   NUM factor (power 1, deg_nu 0): -K + a + 1
+   NUM factor (power 1, deg_nu 0): -K + a + 2
+   NUM factor (power 1, deg_nu 11): 47616*K**12*nu**2 - 142848*K**12*nu + 95232*K**12 - 285696*K**11*a*nu**2 + 857088*K**11*a*nu - 571392*K**11*a - 642816*K**11*nu**3 + 1172736*K**11*nu**2 + 981504*K**11*nu - 1511424*K**11 + 857088*K**1...
+   DEN factor (power 1, deg_nu 1): nu - 2
+   DEN factor (power 1, deg_nu 1): nu - 1
+   DEN factor (power 3, deg_nu 1): 2*K - 4*nu - 1
+   DEN factor (power 3, deg_nu 1): 2*K - 3*nu - 1
+   DEN factor (power 1, deg_nu 1): -K + a + nu + 1
+   DEN factor (power 1, deg_nu 1): -K + a + nu + 2
+   DEN factor (power 1, deg_nu 1): -K + a + nu + 3
+exit 0

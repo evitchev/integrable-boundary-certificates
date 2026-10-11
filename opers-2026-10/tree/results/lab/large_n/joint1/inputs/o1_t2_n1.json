@@ -1,0 +1,11 @@
+{
+ "t": "2",
+ "M": "5",
+ "npts": 1,
+ "tamper": false,
+ "R": {
+  "2": "Add(Mul(Integer(-1), Rational(1, 40), Pow(Symbol('l0'), Integer(2))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('l1'), Integer(2))), Rational(-11, 2))",
+  "4": "Add(Mul(Integer(-1), Rational(7, 3200), Pow(Symbol('l0'), Integer(4))), Mul(Rational(3, 80), Pow(Symbol('l0'), Integer(2)), Pow(Symbol('l1'), Integer(2))), Mul(Rational(9, 16), Pow(Symbol('l0'), Integer(2))), Mul(Integer(21), Symbol('l0'), Symbol('z1')), Mul(Rational(1, 8), Pow(Symbol('l1'), Integer(4))), Mul(Rational(9, 4), Pow(Symbol('l1'), Integer(2))), Mul(Integer(30), Pow(Symbol('z1'), Integer(2))), Rational(337, 40))",
+  "6": "Add(Mul(Integer(-1), Rational(1, 5120), Pow(Symbol('l0'), Integer(6))), Mul(Rational(1, 256), Pow(Symbol('l0'), Integer(4)), Pow(Symbol('l1'), Integer(2))), Mul(Rational(19, 256), Pow(Symbol('l0'), Integer(4))), Mul(Integer(-1), Rational(21, 8), Pow(Symbol('l0'), Integer(3)), Symbol('z1')), Mul(Integer(-1), Rational(3, 64), Pow(Symbol('l0'), Integer(2)), Pow(Symbol('l1'), Integer(4))), Mul(Integer(-1), Rational(39, 32), Pow(Symbol('l0'), Integer(2)), Pow(Symbol('l1'), Integer(2))), Mul(Integer(-1), Rational(117, 4), Pow(Symbol('l0'), Integer(2)), Pow(Symbol('z1'), Integer(2))), Mul(Integer(-1), Rational(2867, 320), Pow(Symbol('l0'), Integer(2))), Mul(Integer(-1), Rational(63, 2), Symbol('l0'), Pow(Symbol('l1'), Integer(2)), Symbol('z1')), Mul(Integer(-1), Integer(57), Symbol('l0'), Pow(Symbol('z1'), Integer(3))), Mul(Integer(-1), Rational(63, 2), Symbol('l0'), Symbol('z1')), Mul(Integer(-1), Rational(1, 16), Pow(Symbol('l1'), Integer(6))), Mul(Integer(-1), Rational(21, 16), Pow(Symbol('l1'), Integer(4))), Mul(Integer(-1), Integer(39), Pow(Symbol('l1'), Integer(2)), Pow(Symbol('z1'), Integer(2))), Mul(Integer(-1), Rational(91, 16), Pow(Symbol('l1'), Integer(2))), Mul(Integer(-1), Integer(30), Pow(Symbol('z1'), Integer(4))), Mul(Integer(-1), Integer(219), Pow(Symbol('z1'), Integer(2))), Rational(2103, 112))"
+ }
+}

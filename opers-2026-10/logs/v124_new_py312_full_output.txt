@@ -1,0 +1,485 @@
+
+===== proof2_p1_factor: argv ['p1_factor.py']  exit 0  46s
+== loss 1:
+   NUM factor (power 1, deg_nu 0): -K + a
+   NUM factor (power 1, deg_nu 3): 8*K**4 - 16*K**3*a - 36*K**3*nu - 32*K**3 + 16*K**2*a**2 + 56*K**2*a*nu + 44*K**2*a + 52*K**2*nu**2 + 100*K**2*nu + 42*K**2 - 56*K*a**2*nu - 16*K*a**2 - 48*K*a*nu**2 - 108*K*a*nu - 32*K*a - 24*K*nu**3...
+   DEN factor (power 1, deg_nu 1): 2*K - 4*nu - 1
+   DEN factor (power 1, deg_nu 1): 2*K - 3*nu - 1
+   DEN factor (power 1, deg_nu 1): -K + a + nu + 1
+== loss 2:
+   NUM factor (power 1, deg_nu 0): -K + a
+   NUM factor (power 1, deg_nu 0): -K + a + 1
+   NUM factor (power 1, deg_nu 7): 448*K**8*nu - 448*K**8 - 1792*K**7*a*nu + 1792*K**7*a - 4032*K**7*nu**2 - 64*K**7*nu + 4096*K**7 + 3584*K**6*a**2*nu - 3328*K**6*a**2 + 14336*K**6*a*nu**2 - 1088*K**6*a*nu - 13504*K**6*a + 14896*K**6*...
+   DEN factor (power 1, deg_nu 1): nu - 1
+   DEN factor (power 2, deg_nu 1): 2*K - 4*nu - 1
+   DEN factor (power 2, deg_nu 1): 2*K - 3*nu - 1
+   DEN factor (power 1, deg_nu 1): -K + a + nu + 1
+   DEN factor (power 1, deg_nu 1): -K + a + nu + 2
+== loss 3:
+   NUM factor (power 1, deg_nu 0): -K + a
+   NUM factor (power 1, deg_nu 0): -K + a + 1
+   NUM factor (power 1, deg_nu 0): -K + a + 2
+   NUM factor (power 1, deg_nu 11): 47616*K**12*nu**2 - 142848*K**12*nu + 95232*K**12 - 285696*K**11*a*nu**2 + 857088*K**11*a*nu - 571392*K**11*a - 642816*K**11*nu**3 + 1172736*K**11*nu**2 + 981504*K**11*nu - 1511424*K**11 + 857088*K**1...
+   DEN factor (power 1, deg_nu 1): nu - 2
+   DEN factor (power 1, deg_nu 1): nu - 1
+   DEN factor (power 3, deg_nu 1): 2*K - 4*nu - 1
+   DEN factor (power 3, deg_nu 1): 2*K - 3*nu - 1
+   DEN factor (power 1, deg_nu 1): -K + a + nu + 1
+   DEN factor (power 1, deg_nu 1): -K + a + nu + 2
+   DEN factor (power 1, deg_nu 1): -K + a + nu + 3
+
+===== proof2_p1_proof: argv ['p1_proof.py']  exit 0  341s
+== loss 1
+  (-K+a+nu+1) pole, K = 2i + 1, a = i + 1 - 1, i symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of i (checked in PART B): [-1]
+  PART B: 1488 exact cells (i = 1..6, K = 2i+1..2i+16): nonzero limits 0: []
+  NEGATIVE CONTROL (2i = K, outside the locus): nonzero coefficients found: 6 (must be > 0)
+== loss 2
+  (nu - 1) pole, i = 1, a = 0, K symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of K (checked in PART B): [2, 5/2, 3]
+  (nu - 1) pole, i = 1, a = 1, K symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of K (checked in PART B): [2, 5/2, 3, 4]
+  (-K+a+nu+1) pole, K = 2i + 1, a = i + 1 - 1, i symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of i (checked in PART B): [-1, 1]
+  (-K+a+nu+2) pole, K = 2i + 1, a = i + 1 - 2, i symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of i (checked in PART B): [-1, 1]
+  (-K+a+nu+2) pole, K = 2i + 2, a = i + 2 - 2, i symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of i (checked in PART B): [-3, 1]
+  PART B: 1392 exact cells (i = 1..6, K = 2i+1..2i+16): nonzero limits 0: []
+  NEGATIVE CONTROL (2i = K, outside the locus): nonzero coefficients found: 9 (must be > 0)
+== loss 3
+  (nu - 1) pole, i = 1, a = 0, K symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of K (checked in PART B): [2, 5/2, 3, 4]
+  (nu - 1) pole, i = 1, a = 1, K symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of K (checked in PART B): [2, 5/2, 3, 4, 5]
+  (nu - 2) pole, i = 2, a = 0, K symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of K (checked in PART B): [3, 7/2, 4, 9/2, 5]
+  (nu - 2) pole, i = 2, a = 1, K symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of K (checked in PART B): [7/2, 4, 9/2, 5, 6]
+  (nu - 2) pole, i = 2, a = 2, K symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of K (checked in PART B): [7/2, 9/2, 5, 6, 7]
+  (-K+a+nu+1) pole, K = 2i + 1, a = i + 1 - 1, i symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of i (checked in PART B): [-1, 1, 2]
+  (-K+a+nu+2) pole, K = 2i + 1, a = i + 1 - 2, i symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of i (checked in PART B): [-1, 1, 2]
+  (-K+a+nu+2) pole, K = 2i + 2, a = i + 2 - 2, i symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of i (checked in PART B): [-3, 1, 2]
+  (-K+a+nu+3) pole, K = 2i + 1, a = i + 1 - 3, i symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of i (checked in PART B): [-1, 1, 2]
+  (-K+a+nu+3) pole, K = 2i + 2, a = i + 2 - 3, i symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of i (checked in PART B): [-3, 1, 2]
+  (-K+a+nu+3) pole, K = 2i + 3, a = i + 3 - 3, i symbolic: ord_eps(N) = 1, ord_eps(D) = 1, z = 1 -> total 1: VANISHES; coincident-pole values of i (checked in PART B): [-5, 1, 2]
+  PART B: 1296 exact cells (i = 1..6, K = 2i+1..2i+16): nonzero limits 0: []
+  NEGATIVE CONTROL (2i = K, outside the locus): nonzero coefficients found: 10 (must be > 0)
+PROOF2 (1) PASS
+
+===== proof2_p1_proof_b: argv ['p1_proof_b.py']  exit 0  53s
+loss 2: nu = 1, a = K - 2 (K >= 4): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [2, 5/2]
+loss 2: nu = 1, a = K - 3 (K >= 5): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [2, 5/2]
+loss 3: nu = 1, a = K - 3 (K >= 5): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [2, 5/2]
+loss 3: nu = 1, a = K - 4 (K >= 6): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [2, 5/2]
+loss 3: nu = 2, a = K - 3 (K >= 6): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [7/2, 9/2]
+loss 3: nu = 2, a = K - 4 (K >= 7): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [7/2, 9/2]
+loss 3: nu = 2, a = K - 5 (K >= 8): ord N = 1, ord D = 2, z = 2 -> total 1: VANISHES; extra-coincidence K (in PART B range if small): [7/2, 9/2]
+SUPPLEMENT PASS
+
+===== proof2_general_case1: argv ['../p2_general.py', '3/2', '1/3', '-', '7']  exit 0  5s
+k = 3/2, P extra roots [1/3], L extra roots []: order 2: A0 = -1/3; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 3/2, P extra roots [1/3], L extra roots []: order 3: A0 = -2/3; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 3/2, P extra roots [1/3], L extra roots []: order 4: A0 = -1 (BETA-POLE CELL); cB zero False; R zero False; cG zero True; monic(cB) == monic(R): False
+k = 3/2, P extra roots [1/3], L extra roots []: order 5: A0 = -4/3; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 3/2, P extra roots [1/3], L extra roots []: order 6: A0 = -5/3; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 3/2, P extra roots [1/3], L extra roots []: order 7: A0 = -2 (BETA-POLE CELL); cB zero False; R zero False; cG zero True; monic(cB) == monic(R): False
+GENERAL AGREE
+
+===== proof2_general_case1_near: argv ['../p2_general.py', '1500001/1000000', '1/3', '-', '7']  exit 0  7s
+k = 1500001/1000000, P extra roots [1/3], L extra roots []: order 2: A0 = -1500001/4500001; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 1500001/1000000, P extra roots [1/3], L extra roots []: order 3: A0 = -3000002/4500001; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 1500001/1000000, P extra roots [1/3], L extra roots []: order 4: A0 = -4500003/4500001; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 1500001/1000000, P extra roots [1/3], L extra roots []: order 5: A0 = -6000004/4500001; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 1500001/1000000, P extra roots [1/3], L extra roots []: order 6: A0 = -7500005/4500001; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 1500001/1000000, P extra roots [1/3], L extra roots []: order 7: A0 = -9000006/4500001; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+GENERAL AGREE
+
+===== proof2_general_case2: argv ['../p2_general.py', '8/5', '1/3', '-', '7']  exit 0  5s
+k = 8/5, P extra roots [1/3], L extra roots []: order 2: A0 = -8/23; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 8/5, P extra roots [1/3], L extra roots []: order 3: A0 = -16/23; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 8/5, P extra roots [1/3], L extra roots []: order 4: A0 = -24/23; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 8/5, P extra roots [1/3], L extra roots []: order 5: A0 = -32/23; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 8/5, P extra roots [1/3], L extra roots []: order 6: A0 = -40/23; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 8/5, P extra roots [1/3], L extra roots []: order 7: A0 = -48/23; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+GENERAL AGREE
+
+===== proof2_general_case3: argv ['../p2_general.py', '5/3', '1/5', '2/7', '7']  exit 0  6s
+k = 5/3, P extra roots [1/5], L extra roots [2/7]: order 2: A0 = -5/19; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 5/3, P extra roots [1/5], L extra roots [2/7]: order 3: A0 = -10/19; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 5/3, P extra roots [1/5], L extra roots [2/7]: order 4: A0 = -15/19; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 5/3, P extra roots [1/5], L extra roots [2/7]: order 5: A0 = -20/19; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 5/3, P extra roots [1/5], L extra roots [2/7]: order 6: A0 = -25/19; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 5/3, P extra roots [1/5], L extra roots [2/7]: order 7: A0 = -30/19; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+GENERAL AGREE
+
+===== proof2_general_case4: argv ['../p2_general.py', '7/4', '1/3,-2/5', '3/7', '6']  exit 0  3s
+k = 7/4, P extra roots [1/3, -2/5], L extra roots [3/7]: order 2: A0 = -7/30; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 7/4, P extra roots [1/3, -2/5], L extra roots [3/7]: order 3: A0 = -7/15; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 7/4, P extra roots [1/3, -2/5], L extra roots [3/7]: order 4: A0 = -7/10; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 7/4, P extra roots [1/3, -2/5], L extra roots [3/7]: order 5: A0 = -14/15; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = 7/4, P extra roots [1/3, -2/5], L extra roots [3/7]: order 6: A0 = -7/6; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+GENERAL AGREE
+
+===== proof2_general_case5: argv ['../p2_general.py', '-6/5', '2/3', '-1/4', '6']  exit 0  3s
+k = -6/5, P extra roots [2/3], L extra roots [-1/4]: order 2: A0 = 2; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = -6/5, P extra roots [2/3], L extra roots [-1/4]: order 3: A0 = 4; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = -6/5, P extra roots [2/3], L extra roots [-1/4]: order 4: A0 = 6; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = -6/5, P extra roots [2/3], L extra roots [-1/4]: order 5: A0 = 8; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+k = -6/5, P extra roots [2/3], L extra roots [-1/4]: order 6: A0 = 10; cB zero False; R zero False; cG zero True; monic(cB) == monic(R): True
+GENERAL AGREE
+
+===== proof2_aequiv_s3_k3o2: argv ['a_equiv.py', '3', '3/2', '8']  exit 0  7s
+Sol 3 k = 3/2 order 2 (spin 1): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 3/2 order 3 (spin 2): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 3/2 order 4 (spin 3): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 3/2 order 5 (spin 4): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 3/2 order 6 (spin 5): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 3/2 order 7 (spin 6): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 3/2 order 8 (spin 7): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+(a) Sol 3 k = 3/2: AGREE
+
+===== proof2_aequiv_s3_k5o3: argv ['a_equiv.py', '3', '5/3', '8']  exit 0  7s
+Sol 3 k = 5/3 order 2 (spin 1): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 5/3 order 3 (spin 2): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 5/3 order 4 (spin 3): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 5/3 order 5 (spin 4): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 5/3 order 6 (spin 5): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (7s)
+Sol 3 k = 5/3 order 7 (spin 6): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (7s)
+Sol 3 k = 5/3 order 8 (spin 7): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (7s)
+(a) Sol 3 k = 5/3: AGREE
+
+===== proof2_aequiv_s3_km6o5: argv ['a_equiv.py', '3', '-6/5', '8']  exit 0  7s
+Sol 3 k = -6/5 order 2 (spin 1): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = -6/5 order 3 (spin 2): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = -6/5 order 4 (spin 3): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = -6/5 order 5 (spin 4): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = -6/5 order 6 (spin 5): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = -6/5 order 7 (spin 6): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = -6/5 order 8 (spin 7): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+(a) Sol 3 k = -6/5: AGREE
+
+===== proof2_aequiv_s3_k7o2: argv ['a_equiv.py', '3', '7/2', '8']  exit 0  7s
+Sol 3 k = 7/2 order 2 (spin 1): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 7/2 order 3 (spin 2): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 7/2 order 4 (spin 3): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 7/2 order 5 (spin 4): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 7/2 order 6 (spin 5): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 3 k = 7/2 order 7 (spin 6): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (7s)
+Sol 3 k = 7/2 order 8 (spin 7): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (7s)
+(a) Sol 3 k = 7/2: AGREE
+
+===== proof2_aequiv_s2_k3o2: argv ['a_equiv.py', '2', '3/2', '8']  exit 0  6s
+Sol 2 k = 3/2 order 2 (spin 1): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 3/2 order 3 (spin 2): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 3/2 order 4 (spin 3): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 3/2 order 5 (spin 4): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 3/2 order 6 (spin 5): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 3/2 order 7 (spin 6): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 3/2 order 8 (spin 7): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+(a) Sol 2 k = 3/2: AGREE
+
+===== proof2_aequiv_s2_k5o2: argv ['a_equiv.py', '2', '5/2', '8']  exit 0  6s
+Sol 2 k = 5/2 order 2 (spin 1): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 5/2 order 3 (spin 2): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 5/2 order 4 (spin 3): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 5/2 order 5 (spin 4): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 5/2 order 6 (spin 5): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 5/2 order 7 (spin 6): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (6s)
+Sol 2 k = 5/2 order 8 (spin 7): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (6s)
+(a) Sol 2 k = 5/2: AGREE
+
+===== proof2_aequiv_s2_km6o5: argv ['a_equiv.py', '2', '-6/5', '8']  exit 0  7s
+Sol 2 k = -6/5 order 2 (spin 1): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (7s)
+Sol 2 k = -6/5 order 3 (spin 2): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (7s)
+Sol 2 k = -6/5 order 4 (spin 3): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (7s)
+Sol 2 k = -6/5 order 5 (spin 4): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (7s)
+Sol 2 k = -6/5 order 6 (spin 5): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (7s)
+Sol 2 k = -6/5 order 7 (spin 6): Gamma-form R zero: True; cB zero: True; cG zero: True; monic(cB) == monic(R): True  (7s)
+Sol 2 k = -6/5 order 8 (spin 7): Gamma-form R zero: False; cB zero: False; cG zero: True; monic(cB) == monic(R): True  (7s)
+(a) Sol 2 k = -6/5: AGREE
+
+===== thm3_constant: argv ['m3_constant.py']  exit 0  0s
+point A: E = 0 exact: 1/kappa = 2.12860533089645112119295775073; spread over j 1.46e-61
+  E =   -20.0: spread over j 1.51e-56; |1/kappa(E) - 1/kappa(0)| rel 1.21e-56; TAMPER spread 0.362
+  E =    -5.0: spread over j 1.05e-57; |1/kappa(E) - 1/kappa(0)| rel 3.78e-57; TAMPER spread 0.362
+  E =     2.0: spread over j 3.25e-58; |1/kappa(E) - 1/kappa(0)| rel 2.72e-57; TAMPER spread 0.362
+  E =    50.0: spread over j 3.08e-58; |1/kappa(E) - 1/kappa(0)| rel 2.68e-57; TAMPER spread 0.362
+  E =   500.0: spread over j 6.73e-58; |1/kappa(E) - 1/kappa(0)| rel 1.29e-57; TAMPER spread 0.362
+point A: worst j-spread 1.51e-56, worst E-drift 1.21e-56
+point B: E = 0 exact: 1/kappa = 2.12860533089645112119295775073; spread over j 0.0
+  E =   -20.0: spread over j 1.89e-56; |1/kappa(E) - 1/kappa(0)| rel 1.06e-56; TAMPER spread 0.779
+  E =    -5.0: spread over j 3.74e-57; |1/kappa(E) - 1/kappa(0)| rel 3.67e-57; TAMPER spread 0.779
+  E =     2.0: spread over j 7.35e-58; |1/kappa(E) - 1/kappa(0)| rel 2.31e-57; TAMPER spread 0.779
+  E =    50.0: spread over j 9.56e-58; |1/kappa(E) - 1/kappa(0)| rel 2.77e-57; TAMPER spread 0.779
+  E =   500.0: spread over j 1.66e-58; |1/kappa(E) - 1/kappa(0)| rel 3.42e-57; TAMPER spread 0.779
+point B: worst j-spread 1.89e-56, worst E-drift 1.06e-56
+M3 PASS
+
+===== thm3_kernel: argv ['m124_checks.py']  exit 0  2s
+M1a nu = 0.7: Hankel vs m(nu): rel 2.11e-41
+M1a nu = (2.3 + 0.4j): Hankel vs m(nu): rel 4.14e-42
+M1a nu = -1.2: Hankel vs m(nu): rel 0.0
+M1b symbolic (monomials): True
+M1b numeric, psi = x^0.4 exp(-x^2): K_(g-1) psi vs K_g[(g-1-theta/sigma) psi]: rel 1.29e-41
+M1c intertwining L3 K = x^n K x^-n L6 on monomials (symbolic): True
+M1c tamper (gamma + 1/7): intertwining holds? False (expected False)
+M2 a = 1: frozen exponents + shift lattice are zeros of m (gamma_r - nu/sigma in Z<=0): True
+M2 a = 2: frozen exponents + shift lattice are zeros of m (gamma_r - nu/sigma in Z<=0): True
+M2 a = 3: frozen exponents + shift lattice are zeros of m (gamma_r - nu/sigma in Z<=0): True
+M2 a = 4: frozen exponents + shift lattice are zeros of m (gamma_r - nu/sigma in Z<=0): True
+M2 tamper a = 1 (frozen + sigma/2): zeros of m? False (expected False)
+M2 tamper a = 2 (frozen + sigma/2): zeros of m? False (expected False)
+M2 tamper a = 3 (frozen + sigma/2): zeros of m? False (expected False)
+M2 tamper a = 4 (frozen + sigma/2): zeros of m? False (expected False)
+M4 Laplace kappa = 3^(1/3)/sqrt(3 pi) = 0.4697911752287377642898417; from M3: 0.4697911752287377642898417; closed form 3^(-1/6) pi^(-1/2) = 0.4697911752287377642898417
+M4 E = 0: beta3 = -2.0, beta6 = -1.25, 2 beta6 + 1/2 = -2.0; leading a0: -1.0, -1.0
+M4 E = 37: beta3 = -2.0, beta6 = -1.25, 2 beta6 + 1/2 = -2.0; leading a0: -1.0, -1.0
+M1/M2/M4 PASS
+
+===== joint1_C1: argv ['joint1.py', 'C1']  exit 0  1s
+C1: Sol 1, t = 2, block 2 x 2.  [M_3, M_5] = 0 symbolically: True.  disc(I_3 charpoly) = 2304*P**2*(4*P**2 + Q**2)/49
+   SYMBOLIC in (P, Q): marginals tr/det-level (s3, s5) equal: True True; MIXED tr(M3 M5): True; tr(M3^2 M5): True; tr(M3 M5^2): True; data crossed invariant equals operator T11: False; (a1-a2)(b1-b2) = (nonzero polynomial, 5 terms)
+   point (P,Q) = (1/2, 1/3): disc(I_3) = 640/49; DATA pairs (I_3, I_5): [(11803/45360 - 4*sqrt(10)/7, (17812609 - 1632960*sqrt(10))/8164800), (11803/45360 + 4*sqrt(10)/7, (1632960*sqrt(10) + 17812609)/8164800)]
+      OPER pairs : [(11803/45360 - 4*sqrt(10)/7, -sqrt(10)*(16329600 - 17812609*sqrt(10))/81648000), (11803/45360 + 4*sqrt(10)/7, sqrt(10)*(16329600 - 17812609*sqrt(10))/81648000 + 17812609/4082400)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+   point (P,Q) = (2/5, 1/4): disc(I_3) = 161856/30625; DATA pairs (I_3, I_5): [(-53153/1120000 + 12*sqrt(281)/175, (172569600*sqrt(281) + 14996762341)/12096000000), (-12*sqrt(281)/175 - 53153/1120000, (14996762341 - 172569600*sqrt(281))/12096000000)]
+      OPER pairs : [(-12*sqrt(281)/175 - 53153/1120000, -sqrt(281)*(48492057600 - 14996762341*sqrt(281))/3398976000000), (-53153/1120000 + 12*sqrt(281)/175, sqrt(281)*(48492057600 - 14996762341*sqrt(281))/3398976000000 + 14996762341/6048000000)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+C1 [real]: PASS  (1s)
+
+===== joint1_C2: argv ['joint1.py', 'C2']  exit 0  1s
+C2: Sol 1, t = 9/4, block 2 x 2.  [M_3, M_5] = 0 symbolically: True.  disc(I_3 charpoly) = 256*P**2*(64*P**2 + 25*Q**2)/81
+   SYMBOLIC in (P, Q): marginals tr/det-level (s3, s5) equal: True True; MIXED tr(M3 M5): True; tr(M3^2 M5): True; tr(M3 M5^2): True; data crossed invariant equals operator T11: False; (a1-a2)(b1-b2) = (nonzero polynomial, 5 terms)
+   point (P,Q) = (1/2, 1/3): disc(I_3) = 10816/729; DATA pairs (I_3, I_5): [(-54234361/29568240, 2991211705361/1199458653120), (59658119/29568240, 3377876674961/1199458653120)]
+      OPER pairs : [(-54234361/29568240, 2991211705361/1199458653120), (59658119/29568240, 3377876674961/1199458653120)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+   point (P,Q) = (2/5, 1/4): disc(I_3) = 302144/50625; DATA pairs (I_3, I_5): [(-13797253/81120000 + 4*sqrt(4721)/225, (13611426762545177 - 3806345088000*sqrt(4721))/8884878912000000), (-4*sqrt(4721)/225 - 13797253/81120000, (3806345088000*sqrt(4721) + 13611426762545177)/8884878912000000)]
+      OPER pairs : [(-4*sqrt(4721)/225 - 13797253/81120000, -sqrt(4721)*(-13611426762545177*sqrt(4721) - 17969755160448000)/41945513343552000000), (-13797253/81120000 + 4*sqrt(4721)/225, sqrt(4721)*(-13611426762545177*sqrt(4721) - 17969755160448000)/41945513343552000000 + 13611426762545177/4442439456000000)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+C2 [real]: PASS  (1s)
+
+===== joint1_C3: argv ['joint1.py', 'C3']  exit 0  1s
+C3: Sol 3, t = 2, block 2 x 2.  [M_3, M_5] = 0 symbolically: True.  disc(I_3 charpoly) = 64*(4*P**4 - 4*P**2*Q**2 - 4*P**2 + 4*Q**4 + 4*Q**2 + 1)
+   SYMBOLIC in (P, Q): marginals tr/det-level (s3, s5) equal: True True; MIXED tr(M3 M5): True; tr(M3^2 M5): True; tr(M3 M5^2): True; data crossed invariant equals operator T11: False; (a1-a2)(b1-b2) = (nonzero polynomial, 8 terms)
+   point (P,Q) = (1/2, 1/3): disc(I_3) = 3280/81; DATA pairs (I_3, I_5): [(4417/1296 - 2*sqrt(205)/9, (2695201 - 133920*sqrt(205))/326592), (2*sqrt(205)/9 + 4417/1296, (133920*sqrt(205) + 2695201)/326592)]
+      OPER pairs : [(4417/1296 - 2*sqrt(205)/9, -sqrt(205)*(27453600 - 2695201*sqrt(205))/66951360), (2*sqrt(205)/9 + 4417/1296, sqrt(205)*(27453600 - 2695201*sqrt(205))/66951360 + 2695201/163296)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+   point (P,Q) = (2/5, 1/4): disc(I_3) = 27521/625; DATA pairs (I_3, I_5): [(1413763/480000 - sqrt(27521)/50, (3526277383 - 13872000*sqrt(27521))/448000000), (1413763/480000 + sqrt(27521)/50, (13872000*sqrt(27521) + 3526277383)/448000000)]
+      OPER pairs : [(1413763/480000 - sqrt(27521)/50, -sqrt(27521)*(381771312000 - 3526277383*sqrt(27521))/12329408000000), (1413763/480000 + sqrt(27521)/50, sqrt(27521)*(381771312000 - 3526277383*sqrt(27521))/12329408000000 + 3526277383/224000000)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+C3 [real]: PASS  (1s)
+
+===== joint1_C4: argv ['joint1.py', 'C4']  exit 0  1s
+C4: Sol 3, t = 9/4, block 2 x 2.  [M_3, M_5] = 0 symbolically: True.  disc(I_3 charpoly) = 2304*(2704*P**4 - 3887*P**2*Q**2 - 2288*P**2 + 2704*Q**4 + 2288*Q**2 + 484)/28561
+   SYMBOLIC in (P, Q): marginals tr/det-level (s3, s5) equal: True True; MIXED tr(M3 M5): True; tr(M3^2 M5): True; tr(M3 M5^2): True; data crossed invariant equals operator T11: False; (a1-a2)(b1-b2) = (nonzero polynomial, 10 terms)
+   point (P,Q) = (1/2, 1/3): disc(I_3) = 5404480/257049; DATA pairs (I_3, I_5): [(4017701/1095120 - 4*sqrt(84445)/507, (2568259672747 - 6466824000*sqrt(84445))/371574216000), (4*sqrt(84445)/507 + 4017701/1095120, (6466824000*sqrt(84445) + 2568259672747)/371574216000)]
+      OPER pairs : [(4017701/1095120 - 4*sqrt(84445)/507, -sqrt(84445)*(546090952680000 - 2568259672747*sqrt(84445))/31377584670120000), (4*sqrt(84445)/507 + 4017701/1095120, sqrt(84445)*(546090952680000 - 2568259672747*sqrt(84445))/31377584670120000 + 2568259672747/185787108000)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+   point (P,Q) = (2/5, 1/4): disc(I_3) = 434642256/17850625; DATA pairs (I_3, I_5): [(249448987/81120000 - 174*sqrt(3589)/4225, (72718667027491 - 954817344000*sqrt(3589))/12232896000000), (174*sqrt(3589)/4225 + 249448987/81120000, (954817344000*sqrt(3589) + 72718667027491)/12232896000000)]
+      OPER pairs : [(249448987/81120000 - 174*sqrt(3589)/4225, -sqrt(3589)*(3426839447616000 - 72718667027491*sqrt(3589))/43903863744000000), (174*sqrt(3589)/4225 + 249448987/81120000, sqrt(3589)*(3426839447616000 - 72718667027491*sqrt(3589))/43903863744000000 + 72718667027491/6116448000000)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+C4 [real]: PASS  (1s)
+
+===== joint1_C5: argv ['joint1.py', 'C5']  exit 0  1s
+C5: Sol 2, t = 2, block 2 x 2.  [M_3, M_5] = 0 symbolically: True.  disc(I_3 charpoly) = 1296*P**4 + 576*P**2*Q**2 - 2520*P**2 + 14400*Q**4 + 8400*Q**2 + 1225
+   point (P,Q) = (1/2, 1/3): disc(I_3) = 16228/9; DATA pairs (I_3, I_5): [(10649/324 - sqrt(4057)/3, (-813565 + 11200*sqrt(4057))/18144), (sqrt(4057)/3 + 10649/324, (-813565 - 11200*sqrt(4057))/18144)]
+      OPER pairs : [(10649/324 - sqrt(4057)/3, -sqrt(4057)*(-45438400 + 813565*sqrt(4057))/73610208), (sqrt(4057)/3 + 10649/324, -813565/9072 + sqrt(4057)*(-45438400 + 813565*sqrt(4057))/73610208)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+   at this point: marginals tr/det-level (s3, s5) equal: True True; MIXED tr(M3 M5): True; tr(M3^2 M5): True; tr(M3 M5^2): True; data crossed invariant equals operator T11: False; (a1-a2)(b1-b2) = -811400/243
+   point (P,Q) = (2/5, 1/4): disc(I_3) = 3604969/2500; DATA pairs (I_3, I_5): [(1924111/60000 - sqrt(3604969)/100, (-247480606267 + 113904000*sqrt(3604969))/6048000000), (sqrt(3604969)/100 + 1924111/60000, (-247480606267 - 113904000*sqrt(3604969))/6048000000)]
+      OPER pairs : [(1924111/60000 - sqrt(3604969)/100, -sqrt(3604969)*(-410620388976000 + 247480606267*sqrt(3604969))/21802852512000000), (sqrt(3604969)/100 + 1924111/60000, -247480606267/3024000000 + sqrt(3604969)*(-410620388976000 + 247480606267*sqrt(3604969))/21802852512000000)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+   at this point: marginals tr/det-level (s3, s5) equal: True True; MIXED tr(M3 M5): True; tr(M3^2 M5): True; tr(M3 M5^2): True; data crossed invariant equals operator T11: False; (a1-a2)(b1-b2) = -407361497/150000
+C5 [real]: PASS  (1s)
+
+===== joint1_C6: argv ['joint1.py', 'C6']  exit 0  1s
+C6: Sol 2, t = 9/4, block 2 x 2.  [M_3, M_5] = 0 symbolically: True.  disc(I_3 charpoly) = (1971216*P**4 + 5353920*P**2*Q**2 - 5618808*P**2 + 143041600*Q**4 + 47863920*Q**2 + 4004001)/169
+   point (P,Q) = (1/2, 1/3): disc(I_3) = 806385700/13689; DATA pairs (I_3, I_5): [(-235713403/821340 - 5*sqrt(8063857)/117, (-4021988492009 - 912600000*sqrt(8063857))/13837936320), (-235713403/821340 + 5*sqrt(8063857)/117, (-4021988492009 + 912600000*sqrt(8063857))/13837936320)]
+      OPER pairs : [(-235713403/821340 - 5*sqrt(8063857)/117, -sqrt(8063857)*(7359075898200000 + 4021988492009*sqrt(8063857))/111587139659586240), (-235713403/821340 + 5*sqrt(8063857)/117, -4021988492009/6918968160 + sqrt(8063857)*(7359075898200000 + 4021988492009*sqrt(8063857))/111587139659586240)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+   at this point: marginals tr/det-level (s3, s5) equal: True True; MIXED tr(M3 M5): True; tr(M3^2 M5): True; tr(M3 M5^2): True; data crossed invariant equals operator T11: False; (a1-a2)(b1-b2) = 100798212500/1108809
+   point (P,Q) = (2/5, 1/4): disc(I_3) = 16898113249/422500; DATA pairs (I_3, I_5): [(-8435144923/30420000 - sqrt(16898113249)/1300, (-3044124111196817 - 13421304000*sqrt(16898113249))/11389248000000), (-8435144923/30420000 + sqrt(16898113249)/1300, (-3044124111196817 + 13421304000*sqrt(16898113249))/11389248000000)]
+      OPER pairs : [(-8435144923/30420000 - sqrt(16898113249)/1300, -sqrt(16898113249)*(226794714941256696000 + 3044124111196817*sqrt(16898113249))/192456802524946752000000), (-8435144923/30420000 + sqrt(16898113249)/1300, -3044124111196817/5694624000000 + sqrt(16898113249)*(226794714941256696000 + 3044124111196817*sqrt(16898113249))/192456802524946752000000)];  sets of pairs EQUAL: True;  crossed pairing would match: False
+   at this point: marginals tr/det-level (s3, s5) equal: True True; MIXED tr(M3 M5): True; tr(M3^2 M5): True; tr(M3 M5^2): True; data crossed invariant equals operator T11: False; (a1-a2)(b1-b2) = 18638618913647/304200000
+C6 [real]: PASS  (1s)
+
+===== akns_spin3: argv ['sol1_akns_spin3_check.py', '../../first_order/vev_w4_points.json']  exit 0  1s
+(95) with (5n+4)/16: 29/29 fibres exact in all 6 coefficients
+CONTROL (95) literal: 0/29 fibres exact in all 6 coefficients
+CONTROL tamper n + 1/10: 0/29 fibres exact in all 6 coefficients
+FL general top formula at n=-1/3: Q^4/P^4 = -7.00000000000000; (5n+4)/n = -7.00000000000000; literal 16(5n+4)/n = -112.000000000000
+FL general top formula at n=1/2: Q^4/P^4 = 13.0000000000000; (5n+4)/n = 13.0000000000000; literal 16(5n+4)/n = 208.000000000000
+FL general top formula at n=3: Q^4/P^4 = 6.33333333333333; (5n+4)/n = 6.33333333333333; literal 16(5n+4)/n = 101.333333333333
+
+===== akns_top: argv ['sol1_akns_top_check.py']  exit 0  1s
+7 | FL P^2 ~ record Y, Q^2 ~ X | distinct scale factors: ['1', 'nan']
+7 | FL P^2 ~ record X, Q^2 ~ Y | distinct scale factors: ['-1/3', '-3', '-3/13', '-63/17', '135/11', '225/49', 'nan']
+11/3 | FL P^2 ~ record Y, Q^2 ~ X | distinct scale factors: ['1', 'nan']
+11/3 | FL P^2 ~ record X, Q^2 ~ Y | distinct scale factors: ['-1/11', '-1/2', '-1/8', '-5/2', '-7/8', '25', 'nan']
+-2 | FL P^2 ~ record Y, Q^2 ~ X | distinct scale factors: ['1']
+-2 | FL P^2 ~ record X, Q^2 ~ Y | distinct scale factors: ['1/9', '225/961', '27/115', '3/11', '3/19', '3/35', '63/319', '81/289']
+
+===== numtab: argv ['numtab.py']  exit 0  6s
+== D1 NUM1 (Sol 1, M = 5)
+  D1 A K0           WKB predicted                      pred       0.99214985135031 fit       0.99214985135031 d  52.59 e  39.63 [consistent]
+  D1 A K2           WKB predicted                      pred       0.11472498148562 fit       0.11472498148562 d  42.36 e  30.56 [consistent]
+  D1 A K3           WKB predicted                      pred      -0.12741947172589 fit      -0.12741947172589 d  38.48 e  27.24 [consistent]
+  D1 A K4           WKB predicted                      pred      -0.40889404172617 fit      -0.40889404172617 d  35.12 e  24.44 [consistent]
+  D1 A K5           WKB predicted                      pred        0.4287122133382 fit        0.4287122133382 d  31.38 e  21.25 [consistent]
+  D1 A e^-3 (K6)    non-WKB post hoc (lim WKB + a Mellin) pred        2.1707969168463 fit        2.1707969168463 d  28.43 e  18.86 [consistent]
+  D1 A K7           WKB predicted                      pred       -7.9209969306189 fit       -7.9209969306189 d  25.45 e  16.43 [consistent]
+  D1 A K8           WKB predicted                      pred       -62.369414226338 fit       -62.369414226338 d   22.9 e  14.44 [consistent]
+  D1 A log e        fitted free                        pred                      - fit      -0.46666666666667 d      - e  35.28 [no prediction]
+  D1 A const        fitted free                        pred                      - fit       0.35996809041504 d      - e  33.98 [no prediction]
+  D1 A(+-a avg) K0           WKB predicted (alpha-even)         pred       0.99214985135031 fit       0.99214985135031 d  52.92 e  40.22 [consistent]
+  D1 A(+-a avg) K2           WKB predicted (alpha-even)         pred       0.11472498148562 fit       0.11472498148562 d  42.64 e  31.15 [consistent]
+  D1 A(+-a avg) K3           WKB predicted (alpha-even)         pred    1.8669045833583e-60 fit     2.467907224045e-40 d -20.12 e -10.88 [consistent]
+  D1 A(+-a avg) K4           WKB predicted (alpha-even)         pred      -0.40889404172617 fit      -0.40889404172617 d  35.29 e  25.03 [consistent]
+  D1 A(+-a avg) K5           WKB predicted (alpha-even)         pred    1.9913648889156e-58 fit     1.389254461963e-32 d -25.84 e -9.636 [consistent]
+  D1 A(+-a avg) K6           WKB predicted (alpha-even)         pred        2.3952482200013 fit        2.3952482200013 d  28.52 e  19.51 [consistent]
+  D1 A(+-a avg) K7           WKB predicted (alpha-even)         pred   -1.5293682346872e-55 fit    2.9507625596161e-25 d -30.29 e -8.388 [consistent]
+  D1 A(+-a avg) K8           WKB predicted (alpha-even)         pred       -62.369414226338 fit       -62.369414226338 d  22.82 e  15.06 [consistent]
+  D1 B K0           WKB predicted                      pred       0.99214985135031 fit       0.99214985135031 d  51.08 e   39.7 [consistent]
+  D1 B K2           WKB predicted                      pred      -0.24803042192923 fit      -0.24803042192923 d  41.21 e  30.96 [consistent]
+  D1 B K3           WKB predicted                      pred       0.27051885648427 fit       0.27051885648427 d  37.33 e  27.63 [consistent]
+  D1 B K4           WKB predicted                      pred      -0.46939692407486 fit      -0.46939692407486 d  33.71 e  24.56 [consistent]
+  D1 B K5           WKB predicted                      pred      -0.59668891651183 fit      -0.59668891651183 d  30.05 e  21.46 [consistent]
+  D1 B e^-3 (K6)    non-WKB post hoc (lim WKB + a Mellin) pred        1.2068200158482 fit        1.2068200158482 d  26.71 e  18.66 [consistent]
+  D1 B K7           WKB predicted                      pred        11.859962350079 fit        11.859962350079 d  24.16 e  16.66 [consistent]
+  D1 B K8           WKB predicted                      pred       -48.607312511157 fit       -48.607312511157 d  21.34 e  14.38 [consistent]
+  D1 B log e        fitted free                        pred                      - fit                 -0.525 d      - e   35.4 [no prediction]
+  D1 B const        fitted free                        pred                      - fit       0.59896065373385 d      - e  34.27 [no prediction]
+  D1 B(+-a avg) K0           WKB predicted (alpha-even)         pred       0.99214985135031 fit       0.99214985135031 d  51.33 e  40.35 [consistent]
+  D1 B(+-a avg) K2           WKB predicted (alpha-even)         pred      -0.24803042192923 fit      -0.24803042192923 d  41.45 e  31.61 [consistent]
+  D1 B(+-a avg) K3           WKB predicted (alpha-even)         pred    1.2446030555722e-60 fit   -7.2994323267223e-39 d -21.77 e -9.278 [consistent]
+  D1 B(+-a avg) K4           WKB predicted (alpha-even)         pred      -0.46939692407486 fit      -0.46939692407486 d  33.94 e  25.23 [consistent]
+  D1 B(+-a avg) K5           WKB predicted (alpha-even)         pred    3.9827297778311e-59 fit   -3.0735577821293e-31 d -27.89 e -8.159 [consistent]
+  D1 B(+-a avg) K6           WKB predicted (alpha-even)         pred        1.7474920158482 fit        1.7474920158482 d   27.1 e   19.5 [consistent]
+  D1 B(+-a avg) K7           WKB predicted (alpha-even)         pred   -1.0195788231248e-56 fit   -4.8536280937464e-24 d -32.68 e  -7.04 [consistent]
+  D1 B(+-a avg) K8           WKB predicted (alpha-even)         pred       -48.607312511157 fit       -48.607312511157 d  21.56 e  15.08 [consistent]
+  D1 C K0           WKB predicted                      pred       0.99214985135031 fit       0.99214985135031 d  51.27 e  40.12 [consistent]
+  D1 C K2           WKB predicted                      pred       0.13717117351541 fit       0.13717117351541 d  41.13 e  31.13 [consistent]
+  D1 C K3           WKB predicted                      pred    1.2446030555722e-60 fit   -8.8224371075278e-39 d -21.85 e -9.419 [consistent]
+  D1 C K4           WKB predicted                      pred      -0.47089866740719 fit      -0.47089866740719 d  33.85 e   25.0 [consistent]
+  D1 C K5           WKB predicted                      pred    1.9913648889156e-58 fit   -4.0435420923351e-31 d -27.31 e -8.263 [consistent]
+  D1 C K6           WKB predicted                      pred        3.0044341767914 fit        3.0044341767914 d   27.2 e  19.51 [consistent]
+  D1 C K7           WKB predicted                      pred   -1.1215367054372e-55 fit   -7.1554021836258e-24 d  -31.8 e -7.095 [consistent]
+  D1 C K8           WKB predicted                      pred       -76.744679889655 fit       -76.744679889655 d  21.56 e  15.05 [consistent]
+  D1 C log e        fitted free                        pred                      - fit      -0.41666666666667 d      - e  35.73 [no prediction]
+  D1 C const        fitted free                        pred                      - fit       0.29065337235904 d      - e  34.38 [no prediction]
+== D2 NUM2 (Sol 3, t = 2)
+  (D2 A: dominant theta = 1.9; window K2 = 18)
+  D2 A K0           WKB predicted                      pred       0.46739403510848 fit       0.46739403510848 d  32.15 e  21.81 [consistent]
+  D2 A K2           WKB predicted                      pred       0.61292138816814 fit       0.61292138816814 d  23.74 e  14.42 [consistent]
+  D2 A K3           WKB predicted                      pred                    0.0 fit   -6.2771025043987e-21 d      - e -8.809 [consistent] |fit| 6.3e-21
+  D2 A K4           resonant finite part, unresolved   pred                      - fit        2.6904054378917 d      - e  8.072 [no prediction]
+  D2 A K5           WKB predicted                      pred                    0.0 fit    4.4832301856971e-14 d      - e -7.774 [consistent] |fit| 4.5e-14
+  D2 A K6           WKB predicted                      pred        -14.59948683175 fit       -14.599486831814 d  11.36 e  4.108 [consistent]
+  D2 A K7           resonant finite part, unresolved   pred                      - fit        74.428959123983 d      - e  1.697 [no prediction]
+  D2 A K8           WKB predicted                      pred        589.74516361513 fit        589.74520693105 d  7.134 e  0.955 [consistent]
+  D2 A L-3/2        non-WKB registered before data     pred      -0.75606193415638 fit      -0.75606193415638 d  16.94 e  8.647 [consistent]
+  D2 A L-3          non-WKB registered before data     pred                    0.0 fit     2.6108996610645e-8 d      - e -6.718 [consistent] |fit| 2.6e-8
+  D2 A L-9/2        non-WKB registered before data     pred       -34174.677527174 fit       -34171.871662849 d  4.086 e -0.9795 [consistent]
+  D2 A log          fitted free                        pred                      - fit                   -0.1 d      - e  17.55 [no prediction]
+  D2 A const        fitted free                        pred                      - fit        2.2245690693549 d      - e  17.66 [no prediction]
+  (D2 B: dominant theta = 1.6; window K2 = 18)
+  D2 B K0           WKB predicted                      pred       0.46739403510848 fit       0.46739403510848 d  32.21 e  21.84 [consistent]
+  D2 B K2           WKB predicted                      pred       0.58569285854786 fit       0.58569285854786 d  23.81 e  14.48 [consistent]
+  D2 B K3           WKB predicted                      pred                    0.0 fit     5.024414116673e-21 d      - e -8.802 [consistent] |fit| 5.0e-21
+  D2 B K4           resonant finite part, unresolved   pred                      - fit        2.8427391562423 d      - e  8.235 [no prediction]
+  D2 B K5           WKB predicted                      pred                    0.0 fit   -3.3469056863064e-14 d      - e -7.731 [consistent] |fit| 3.3e-14
+  D2 B K6           WKB predicted                      pred       -13.207655015815 fit       -13.207655015769 d  11.46 e  4.276 [consistent]
+  D2 B K7           resonant finite part, unresolved   pred                      - fit        104.66320452461 d      - e  2.117 [no prediction]
+  D2 B K8           WKB predicted                      pred        532.07807198876 fit        532.07804424428 d  7.283 e  1.233 [consistent]
+  D2 B L-3/2        non-WKB registered before data     pred      -0.69055104166667 fit      -0.69055104166667 d  17.01 e  8.741 [consistent]
+  D2 B L-3          non-WKB registered before data     pred                    0.0 fit    -1.7738538750677e-8 d      - e -6.624 [consistent] |fit| 1.8e-8
+  D2 B L-9/2        non-WKB registered before data     pred         -30786.5933955 fit       -30788.141655997 d  4.299 e -0.5315 [consistent]
+  D2 B log          fitted free                        pred                      - fit                  -0.15 d      - e  17.78 [no prediction]
+  D2 B const        fitted free                        pred                      - fit       0.98347176080572 d      - e  17.36 [no prediction]
+  (D2 C: dominant theta = 2.0; window K2 = 18)
+  D2 C K0           WKB predicted                      pred       0.46739403510848 fit       0.46739403510848 d  31.94 e  21.59 [consistent]
+  D2 C K2           WKB predicted                      pred       0.62431984155024 fit       0.62431984155024 d  23.55 e  14.22 [consistent]
+  D2 C K3           WKB predicted                      pred                    0.0 fit   -9.9516038975498e-21 d      - e -8.808 [consistent] |fit| 1.0e-20
+  D2 C K4           resonant finite part, unresolved   pred                      - fit        2.6418418000373 d      - e  7.871 [no prediction]
+  D2 C K5           WKB predicted                      pred                    0.0 fit    7.0260930207182e-14 d      - e -7.767 [consistent] |fit| 7.0e-14
+  D2 C K6           WKB predicted                      pred       -15.238972040107 fit       -15.238972040207 d  11.18 e  3.944 [consistent]
+  D2 C K7           resonant finite part, unresolved   pred                      - fit        62.404956265435 d      - e  1.446 [no prediction]
+  D2 C K8           WKB predicted                      pred        616.03080871803 fit        616.03087505265 d  6.968 e  0.805 [consistent]
+  D2 C L-3/2        non-WKB registered before data     pred       -0.7855224609375 fit       -0.7855224609375 d  16.76 e   8.47 [consistent]
+  D2 C L-3          non-WKB registered before data     pred                    0.0 fit     4.0326351057568e-8 d      - e -6.705 [consistent] |fit| 4.0e-8
+  D2 C L-9/2        non-WKB registered before data     pred       -35712.128132413 fit       -35707.915208725 d  3.928 e -1.114 [consistent]
+  D2 C log          fitted free                        pred                      - fit     -0.083333333333333 d      - e  17.26 [no prediction]
+  D2 C const        fitted free                        pred                      - fit        2.5936591673005 d      - e  17.52 [no prediction]
+== D3 NUM2 (Sol 3, t = 9/4)
+  (D3 A: dominant theta = 2.5666667; window K2 = 18)
+  D3 A K0           WKB predicted                      pred       0.40283208683148 fit       0.40283208683148 d  30.84 e  25.82 [consistent]
+  D3 A K2           WKB predicted                      pred       0.54554894567482 fit       0.54554894567482 d  21.28 e  17.32 [consistent]
+  D3 A K3           WKB predicted                      pred                    0.0 fit   -1.6891874029691e-17 d      - e -3.442 [consistent] |fit| 1.7e-17
+  D3 A K4           WKB predicted                      pred        3.7209471124647 fit        3.7209471124647 d  13.91 e  10.98 [consistent]
+  D3 A K5           WKB predicted                      pred                    0.0 fit    3.9026537929737e-10 d      - e -2.426 [consistent] |fit| 3.9e-10
+  D3 A K6           WKB predicted                      pred        86.151672126704 fit        86.151672983717 d  8.002 e  6.081 [consistent]
+  D3 A K7           WKB predicted                      pred                    0.0 fit    -0.0016418629163564 d      - e -1.408 [consistent] |fit| 0.0016
+  D3 A K8           WKB predicted                      pred        1130.0004876812 fit        1127.2328923749 d  2.611 e  1.744 [consistent]
+  D3 A N1           non-WKB position sealed, coefficient free pred                      - fit      -0.48970795719696 d      - e  12.29 [no prediction]
+  D3 A N2           non-WKB post hoc (position)        pred                      - fit       -19.332915910122 d      - e  6.953 [no prediction]
+  D3 A N3           non-WKB post hoc (position)        pred                      - fit        -316.8311879686 d      - e  2.081 [no prediction]
+  D3 A log          fitted free                        pred                      - fit     -0.081818181818182 d      - e  20.93 [no prediction]
+  D3 A const        fitted free                        pred                      - fit        2.4867940268269 d      - e  21.19 [no prediction]
+  (D3 B: dominant theta = 2.2666667; window K2 = 18)
+  D3 B K0           WKB predicted                      pred       0.40283208683148 fit       0.40283208683148 d   30.9 e  25.89 [consistent]
+  D3 B K2           WKB predicted                      pred       0.52706158078065 fit       0.52706158078065 d  21.32 e  17.37 [consistent]
+  D3 B K3           WKB predicted                      pred                    0.0 fit   -1.4598273998947e-17 d      - e -3.442 [consistent] |fit| 1.5e-17
+  D3 B K4           WKB predicted                      pred        3.5061906978406 fit        3.5061906978405 d  13.95 e  11.01 [consistent]
+  D3 B K5           WKB predicted                      pred                    0.0 fit    3.3727291601733e-10 d      - e -2.427 [consistent] |fit| 3.4e-10
+  D3 B K6           WKB predicted                      pred        80.808387503307 fit        80.808388243947 d  8.038 e  6.117 [consistent]
+  D3 B K7           WKB predicted                      pred                    0.0 fit    -0.0014189071604063 d      - e -1.408 [consistent] |fit| 0.0014
+  D3 B K8           WKB predicted                      pred        1056.3241726437 fit        1053.9324230445 d  2.645 e  1.778 [consistent]
+  D3 B N1           non-WKB position sealed, coefficient free pred                      - fit      -0.35586287460174 d      - e  12.21 [no prediction]
+  D3 B N2           non-WKB post hoc (position)        pred                      - fit        -18.70028856429 d      - e  7.002 [no prediction]
+  D3 B N3           non-WKB post hoc (position)        pred                      - fit       -478.34739125735 d      - e  2.323 [no prediction]
+  D3 B log          fitted free                        pred                      - fit      -0.12272727272727 d      - e  21.17 [no prediction]
+  D3 B const        fitted free                        pred                      - fit         1.218352749961 d      - e  20.95 [no prediction]
+== D4 NUM3 (Sol 2, t = 2; extended grid E >= 1e4)
+  (D4 A: dominant theta = 2.4; window K2 = 19)
+  D4 A K0           WKB predicted                      pred        0.4227318509767 fit        0.4227318509767 d  34.05 e  26.51 [consistent]
+  D4 A K2           WKB predicted                      pred       0.67154238185204 fit       0.67154238185204 d  25.31 e  18.75 [consistent]
+  D4 A K3           WKB predicted                      pred                    0.0 fit   -2.4767161808295e-22 d      - e -6.099 [consistent] |fit| 2.5e-22
+  D4 A K4           WKB predicted                      pred       -4.2007677733631 fit       -4.2007677733631 d  18.13 e  12.48 [consistent]
+  D4 A K5           WKB predicted                      pred                    0.0 fit    1.1539822960141e-14 d      - e -5.208 [consistent] |fit| 1.2e-14
+  D4 A K6           WKB predicted                      pred       -29.919287120483 fit       -29.919287120495 d  12.37 e  7.589 [consistent]
+  D4 A K7           WKB predicted                      pred                    0.0 fit     2.8055465665692e-8 d      - e -4.358 [consistent] |fit| 2.8e-8
+  D4 A K8           resonant finite part, unresolved   pred                      - fit       -1222.8298468432 d      - e  2.874 [no prediction]
+  D4 A N-3/2        non-WKB position sealed, coefficient free pred                      - fit        8.3740312300857 d      - e  11.01 [no prediction]
+  D4 A N-9/2        non-WKB position sealed, coefficient free pred                      - fit         8878185.137629 d      - e  -1.37 [no prediction]
+  D4 A N-15/2       non-WKB position sealed, coefficient free pred                      - fit   -8.8779910644929e+20 d      - e -0.01675 [no prediction]
+  D4 A L-3          non-WKB registered before data     pred                    0.0 fit    -1.3283979677192e-5 d      - e -3.942 [consistent] |fit| 1.3e-5
+  D4 A L-6          non-WKB registered before data     pred                    0.0 fit       20938845881983.0 d      - e -0.9319 [consistent] |fit| 2.1e+13
+  D4 A log          fitted free                        pred                      - fit     -0.085714285714286 d      - e  22.06 [no prediction]
+  D4 A const        fitted free                        pred                      - fit       0.81664974011156 d      - e  21.71 [no prediction]
+  (D4 B: dominant theta = 2.8; window K2 = 19)
+  D4 B K0           WKB predicted                      pred        0.4227318509767 fit        0.4227318509767 d  33.88 e  26.41 [consistent]
+  D4 B K2           WKB predicted                      pred       0.60951056484447 fit       0.60951056484447 d   25.1 e   18.6 [consistent]
+  D4 B K3           WKB predicted                      pred                    0.0 fit   -3.6739974963963e-22 d      - e -6.032 [consistent] |fit| 3.7e-22
+  D4 B K4           WKB predicted                      pred       -4.8000665903881 fit       -4.8000665903881 d  18.01 e  12.43 [consistent]
+  D4 B K5           WKB predicted                      pred                    0.0 fit    1.7092752528593e-14 d      - e -5.142 [consistent] |fit| 1.7e-14
+  D4 B K6           WKB predicted                      pred       -34.084942216509 fit       -34.084942216528 d  12.25 e  7.542 [consistent]
+  D4 B K7           WKB predicted                      pred                    0.0 fit     4.1473635717331e-8 d      - e -4.292 [consistent] |fit| 4.1e-8
+  D4 B K8           resonant finite part, unresolved   pred                      - fit       -1461.1574323959 d      - e  2.847 [no prediction]
+  D4 B N-3/2        non-WKB position sealed, coefficient free pred                      - fit        8.1194338239299 d      - e  10.89 [no prediction]
+  D4 B N-9/2        non-WKB position sealed, coefficient free pred                      - fit        12118357.306245 d      - e -1.339 [no prediction]
+  D4 B N-15/2       non-WKB position sealed, coefficient free pred                      - fit    -1.277638841094e+21 d      - e -0.01492 [no prediction]
+  D4 B L-3          non-WKB registered before data     pred                    0.0 fit    -1.9613839025454e-5 d      - e -3.876 [consistent] |fit| 2.0e-5
+  D4 B L-6          non-WKB registered before data     pred                    0.0 fit       30493821412639.0 d      - e -0.8804 [consistent] |fit| 3.0e+13
+  D4 B log          fitted free                        pred                      - fit     -0.028571428571429 d      - e  21.48 [no prediction]
+  D4 B const        fitted free                        pred                      - fit        2.7543542371096 d      - e  22.14 [no prediction]
+== D5 NUM3 (Sol 2, t = 9/4; extended grid E >= 1e4; extra)
+  (D5 A: dominant theta = 3.7333333; window K2 = 21)
+  D5 A K0           WKB predicted                      pred       0.30946165715512 fit       0.30946165715512 d   32.5 e  25.86 [consistent]
+  D5 A K2           WKB predicted                      pred       0.59728699706445 fit       0.59728699706445 d  23.59 e  17.84 [consistent]
+  D5 A K3           WKB predicted                      pred                    0.0 fit    1.8313693506728e-20 d      - e -5.331 [consistent] |fit| 1.8e-20
+  D5 A K4           WKB predicted                      pred        45.313168474552 fit        45.313168474552 d  16.72 e  11.77 [consistent]
+  D5 A K5           WKB predicted                      pred                    0.0 fit   -3.8142203625733e-13 d      - e -4.575 [consistent] |fit| 3.8e-13
+  D5 A K6           WKB predicted                      pred       -266.78104903971 fit       -266.78104903859 d  11.38 e  7.153 [consistent]
+  D5 A K7           WKB predicted                      pred                    0.0 fit     6.2353842593725e-6 d      - e -3.893 [consistent] |fit| 6.2e-6
+  D5 A K8           WKB predicted                      pred          -14071.221184 fit       -14071.222647196 d  6.983 e  3.409 [consistent]
+  D5 A N1           non-WKB position sealed, coefficient free pred                      - fit       -38.091396668547 d      - e  12.02 [no prediction]
+  D5 A N2           non-WKB position sealed, coefficient free pred                      - fit        1049.4636944021 d      - e  4.867 [no prediction]
+  D5 A N3           non-WKB position sealed, coefficient free pred                      - fit        146092.62109911 d      - e -0.3224 [no prediction]
+  D5 A log          fitted free                        pred                      - fit     -0.062068965517241 d      - e  21.22 [no prediction]
+  D5 A const        fitted free                        pred                      - fit        1.0893167447417 d      - e  21.14 [no prediction]
+  (D5 B: dominant theta = 4.1333333; window K2 = 21)
+  D5 B K0           WKB predicted                      pred       0.30946165715512 fit       0.30946165715512 d   32.1 e  25.73 [consistent]
+  D5 B K2           WKB predicted                      pred       0.53578206764172 fit       0.53578206764172 d  23.14 e  17.67 [consistent]
+  D5 B K3           WKB predicted                      pred                    0.0 fit    4.5498480653818e-20 d      - e -5.063 [consistent] |fit| 4.5e-20
+  D5 B K4           WKB predicted                      pred        49.625947163318 fit        49.625947163318 d  16.36 e  11.69 [consistent]
+  D5 B K5           WKB predicted                      pred                    0.0 fit   -9.3684173099683e-13 d      - e  -4.31 [consistent] |fit| 9.4e-13
+  D5 B K6           WKB predicted                      pred       -283.23140721083 fit        -283.2314072081 d  11.02 e  7.054 [consistent]
+  D5 B K7           WKB predicted                      pred                    0.0 fit     1.5089652109965e-5 d      - e -3.634 [consistent] |fit| 1.5e-5
+  D5 B K8           WKB predicted                      pred       -14896.393750781 fit       -14896.397260953 d  6.628 e   3.31 [consistent]
+  D5 B N1           non-WKB position sealed, coefficient free pred                      - fit       -43.026250812123 d      - e  11.95 [no prediction]
+  D5 B N2           non-WKB position sealed, coefficient free pred                      - fit        899.07425518573 d      - e  4.675 [no prediction]
+  D5 B N3           non-WKB position sealed, coefficient free pred                      - fit        68801.346850674 d      - e -0.7721 [no prediction]
+  D5 B log          fitted free                        pred                      - fit     -0.020689655172414 d      - e  20.62 [no prediction]
+  D5 B const        fitted free                        pred                      - fit        3.0632519941142 d      - e  21.46 [no prediction]
+
+167 rows; TENSION rows: 0; done (5s)
