@@ -1,0 +1,6 @@
+(0) rescaling (R3): symbol identities hold: True  [P = n^4 (tau^2-PX^2/p^2)(tau^2-pi^2/p^2); middle = n x^c (tau - (1+M)/2); 1 + M = 1/p^2]
+    limit k -> oo: 1/p^2 -> 1, (1+M)/2 -> 1/2, exponent 1+M -> 1: True
+A1: terminating solutions at En = N + 1/2 + rho for rho in {+-PX, +-pi}, N = 0..3: True; generic En does not terminate: True
+A2: L_inf Frobenius solution = xi^rho 1F3(rho + 1/2 - En; 2rho+1, rho-pi+1, rho+pi+1; xi); oscillator = xi^rho 1F1(rho + 1/2 - En; 2rho+1; xi): True
+    oscillator: y^2 x [Schrodinger operator on y^(1/2) e^(-y^2/2) chi(y^2)] == -4 x [(th^2 - (lam/2)^2) - xi (th + 1/2 - E/4)] chi: False
+(A) operator level: NOT as sealed

@@ -1,0 +1,7 @@
+Sol 3: zeta^4 coefficient minus the characteristic polynomial (th**4 - th): 0
+       zeta^3 coefficient at the SIMPLE (tamper) root: 3*(-2*D*gamma - 3*gamma + 2*q)/2
+       tamper: next-to-leading coefficient nonzero: True
+Sol 2: zeta^3 coefficient minus the characteristic polynomial (th**3 - th**2): 0
+       zeta^2 coefficient at the SIMPLE (tamper) root: -D*gamma - gamma + q
+       tamper: next-to-leading coefficient nonzero: True
+(B) operator level (tamper): tamper fires

@@ -1,0 +1,10 @@
+t=401/100, kq=-602/101, k=-602/101
+ch[9] has 21 terms, PX powers = [(0, 0), (0, 2), (0, 4), (0, 6), (0, 8), (0, 10), (2, 0), (2, 2), (2, 4), (2, 6), (2, 8), (4, 0), (4, 2), (4, 4), (4, 6), (6, 0), (6, 2), (6, 4), (8, 0), (8, 2), (10, 0)]
+monic coeff (PX^5) = 0
+MONIC ZERO - bug!
+Max PX power is (10, 0), not 5
+Traceback (most recent call last):
+  File "<home>/qwen-work/nzero1/quick_debug.py", line 45, in <module>
+    mono2 = P.coeff_monomial(PX**maxpx)
+                             ~~^^~~~~~
+TypeError: unsupported operand type(s) for ** or pow(): 'Symbol' and 'tuple'

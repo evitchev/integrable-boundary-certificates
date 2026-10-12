@@ -1,0 +1,6 @@
+481 weight-10 monomials; images computed (7s)
+kernel (before mod d): dim 302 (29s)
+dim K_10 mod d = 2  (record / VIR5d: 2)
+GATE certified vev_sol3_w10 (t = 7/5) in span eigen(K_10): True
+G_10 in K_10 + d (cross-check of P3 with the full kernel): True
+certified Sol 3 spin 9 itself proportional to eigen(G_10)? False (expected False: the Sol 3 class is the symmetric one)

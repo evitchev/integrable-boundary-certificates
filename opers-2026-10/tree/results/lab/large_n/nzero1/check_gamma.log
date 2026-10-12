@@ -1,0 +1,14 @@
+t=401/100, spin 9:
+  Raw WKB charge has Gamma: False
+  Monic has Gamma: False
+
+t=4, spin 3 (pole path, non-zero):
+  Raw has Gamma: True
+  Gamma args: [-1/3, 2/3]
+  Note: gamma(-1/3) and gamma(2/3) are independent (not reducible to each other)
+
+At t=4 spin 9 (exceptional): all surviving Gamma args are positive integers
+  Gamma(1)=1, Gamma(2)=1, Gamma(3)=2, Gamma(4)=6, Gamma(5)=24
+  -> No Gamma functions in the limit expression. Fully reduced.
+
+At t=7 spin 3: same structure, Gamma(1)=1, Gamma(2)=1 -> fully reduced.

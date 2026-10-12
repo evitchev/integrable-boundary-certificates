@@ -1,0 +1,12 @@
+A NO log terms Q0: res 4.2e-35; K2 24.9, K4 18.0, K6 12.6; E^-3 coefficient -1589.475001609285 [stab 6.14] vs lim C_8 -1332.467454950669: difference (non-WKB m = 2) -257.007546659
+A NO log terms Q1: res 2.7e-35; K2 25.1, K4 18.2, K6 12.8; E^-3 coefficient -1222.830066988258 [stab 6.15] vs lim C_8 -1332.467454950669: difference (non-WKB m = 2) 109.637387962
+A NO log terms Q2: res 4.6e-35; K2 24.8, K4 17.9, K6 12.6; E^-3 coefficient -1210.038005337044 [stab 6.04] vs lim C_8 -1332.467454950669: difference (non-WKB m = 2) 122.429449614
+A with log terms (sealed) Q0: res 2.1e-36; K2 25.1, K4 17.9, K6 12.2; E^-3 coefficient -1589.474640665436 [stab 4.41] vs lim C_8 -1332.467454950669: difference (non-WKB m = 2) -257.007185715
+A with log terms (sealed) Q1: res 1.2e-36; K2 25.3, K4 18.1, K6 12.4; E^-3 coefficient -1222.829846843233 [stab 4.42] vs lim C_8 -1332.467454950669: difference (non-WKB m = 2) 109.637608107
+A with log terms (sealed) Q2: res 2.3e-36; K2 25.0, K4 17.9, K6 12.1; E^-3 coefficient -1210.037605778986 [stab 4.31] vs lim C_8 -1332.467454950669: difference (non-WKB m = 2) 122.429849172
+B NO log terms Q0: res 4.2e-35; K2 24.8, K4 18.0, K6 12.7; E^-3 coefficient -1501.542795453562 [stab 6.12] vs lim C_8 -1463.542894939037: difference (non-WKB m = 2) -37.9999005145
+B NO log terms Q1: res 3.8e-35; K2 24.9, K4 18.1, K6 12.7; E^-3 coefficient -1461.157757189713 [stab 6.13] vs lim C_8 -1463.542894939037: difference (non-WKB m = 2) 2.38513774932
+B NO log terms Q2: res 4.5e-35; K2 24.8, K4 18.0, K6 12.7; E^-3 coefficient -1456.12331638786 [stab 6.1] vs lim C_8 -1463.542894939037: difference (non-WKB m = 2) 7.41957855118
+B with log terms (sealed) Q0: res 2.1e-36; K2 25.1, K4 18.0, K6 12.2; E^-3 coefficient -1501.542433592454 [stab 4.39] vs lim C_8 -1463.542894939037: difference (non-WKB m = 2) -37.9995386534
+B with log terms (sealed) Q1: res 1.8e-36; K2 25.1, K4 18.0, K6 12.3; E^-3 coefficient -1461.15743239594 [stab 4.4] vs lim C_8 -1463.542894939037: difference (non-WKB m = 2) 2.3854625431
+B with log terms (sealed) Q2: res 2.2e-36; K2 25.0, K4 17.9, K6 12.2; E^-3 coefficient -1456.122929090007 [stab 4.36] vs lim C_8 -1463.542894939037: difference (non-WKB m = 2) 7.41996584903

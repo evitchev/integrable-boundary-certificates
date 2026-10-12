@@ -1,0 +1,46 @@
+
+=== u = 3: t = -5/4, N = -125/3
+Sol 1: I_5 two-boson image has 23 monomials; 16 conditions  (1.1s)
+   sealed S1                                               I_3: True   I_5: True
+   Groebner basis of the joint {I_3, I_5} system (a != 0, beta != 0): ['(2*q + 7)/2', '(2*g + 3)/2']
+   a = 0: gcd over I_3 and I_5 conditions: (g - 3)*(3*g + 1)/3   (g = u: 3, g = -1/u: -1/3)
+Sol 2: I_5 two-boson image has 23 monomials; 16 conditions  (2.9s)
+   found at spin 3: a^2 = 1 - 2u^2, beta = -sqrt2 u        I_3: True   I_5: True
+   Groebner basis of the joint {I_3, I_5} system (a != 0, beta != 0): ['q + 17', 'g + 3']
+   a = 0: gcd over I_3 and I_5 conditions: (g - 3)*(3*g + 1)/3   (g = u: 3, g = -1/u: -1/3)
+Sol 3: I_5 two-boson image has 23 monomials; 16 conditions  (4.7s)
+   sealed S3                                               I_3: True   I_5: True
+   second I_3 solution: a^2 = 2u^2, beta = -sqrt2 u        I_3: True   I_5: True
+   Groebner basis of the joint {I_3, I_5} system (a != 0, beta != 0): ['(17*g + 3*q - 3)/3', '(g + 3)*(6*g - 1)/6']
+   a = 0: gcd over I_3 and I_5 conditions: (g - 3)*(3*g + 1)/3   (g = u: 3, g = -1/u: -1/3)
+
+=== u = 2/5: t = 29/21, N = -1273/50
+Sol 1: I_5 two-boson image has 23 monomials; 16 conditions  (6.6s)
+   sealed S1                                               I_3: True   I_5: True
+   Groebner basis of the joint {I_3, I_5} system (a != 0, beta != 0): ['(25*q - 23)/25', '(5*g + 1)/5']
+   a = 0: gcd over I_3 and I_5 conditions: (2*g + 5)*(5*g - 2)/10   (g = u: 2/5, g = -1/u: -5/2)
+Sol 2: I_5 two-boson image has 23 monomials; 16 conditions  (8.6s)
+   found at spin 3: a^2 = 1 - 2u^2, beta = -sqrt2 u        I_3: True   I_5: True
+   Groebner basis of the joint {I_3, I_5} system (a != 0, beta != 0): ['(25*q - 17)/25', '(5*g + 2)/5']
+   a = 0: gcd over I_3 and I_5 conditions: (2*g + 5)*(5*g - 2)/10   (g = u: 2/5, g = -1/u: -5/2)
+Sol 3: I_5 two-boson image has 23 monomials; 16 conditions  (10.4s)
+   sealed S3                                               I_3: True   I_5: True
+   second I_3 solution: a^2 = 2u^2, beta = -sqrt2 u        I_3: True   I_5: True
+   Groebner basis of the joint {I_3, I_5} system (a != 0, beta != 0): ['(-17*g + 10*q - 10)/10', '(4*g - 5)*(5*g + 2)/20']
+   a = 0: gcd over I_3 and I_5 conditions: (2*g + 5)*(5*g - 2)/10   (g = u: 2/5, g = -1/u: -5/2)
+
+=== u = -7/3: t = -29/20, N = -3053/147
+Sol 1: I_5 two-boson image has 23 monomials; 16 conditions  (12.3s)
+   sealed S1                                               I_3: True   I_5: True
+   Groebner basis of the joint {I_3, I_5} system (a != 0, beta != 0): ['(18*q + 31)/18', '(6*g - 7)/6']
+   a = 0: gcd over I_3 and I_5 conditions: (3*g + 7)*(7*g - 3)/21   (g = u: -7/3, g = -1/u: 3/7)
+Sol 2: I_5 two-boson image has 23 monomials; 16 conditions  (14.1s)
+   found at spin 3: a^2 = 1 - 2u^2, beta = -sqrt2 u        I_3: True   I_5: True
+   Groebner basis of the joint {I_3, I_5} system (a != 0, beta != 0): ['(9*q + 89)/9', '(3*g - 7)/3']
+   a = 0: gcd over I_3 and I_5 conditions: (3*g + 7)*(7*g - 3)/21   (g = u: -7/3, g = -1/u: 3/7)
+Sol 3: I_5 two-boson image has 23 monomials; 16 conditions  (15.9s)
+   sealed S3                                               I_3: True   I_5: True
+   second I_3 solution: a^2 = 2u^2, beta = -sqrt2 u        I_3: True   I_5: True
+   Groebner basis of the joint {I_3, I_5} system (a != 0, beta != 0): ['(-89*g + 21*q - 21)/21', '(3*g - 7)*(14*g + 3)/42']
+   a = 0: gcd over I_3 and I_5 conditions: (3*g + 7)*(7*g - 3)/21   (g = u: -7/3, g = -1/u: 3/7)
+done 16.7s

@@ -1,0 +1,21 @@
+=== ext_fibres.run() at t=4 (k=-6, M=-1/6) ===
+t=4, n=-9, C=-15
+  spin 3: 6 terms, PX powers=[(0, 0), (0, 2), (0, 4), (2, 0), (2, 2), (4, 0)], PX^2 coeff=-345/(64*gamma(-1/3)) + 65/(16*gamma(2/3
+  spin 5: 10 terms, PX powers=[(0, 0), (0, 2), (0, 4), (0, 6), (2, 0), (2, 2), (2, 4), (4, 0), (4, 2), (6, 0)], PX^4 coeff=-118125/128
+  spin 7: 15 terms, PX powers=[(0, 0), (0, 2), (0, 4), (0, 6), (0, 8), (2, 0), (2, 2), (2, 4), (2, 6), (4, 0), (4, 2), (4, 4), (6, 0), (6, 2), (8, 0)], PX^6 coeff=-3031875/128
+  spin 9: 1 terms, PX powers=[(0, 0)], PX^8 coeff=ZERO
+
+=== score() path at t=4 ===
+  spin 3: monic diff = ZERO (MATCH)
+  spin 5: monic diff = ZERO (MATCH)
+  spin 7: monic diff = ZERO (MATCH)
+  spin 9: gnorm(ch) == 0 -> 'WKB charge identically 0 (certified: %s)' % non-zero
+
+=== Key insight check ===
+WKB spin 9 at t=4: terms = [((0, 0), 0)]
+Certified spin 9 at t=4 (first 5): [((10, 0), 1), ((8, 2), 15), ((8, 0), -5), ((6, 4), 120), ((6, 2), -95)]
+
+The WKB gives ONLY the PI^2 term (PX^0), while certified has full polynomial.
+This means the WKB 'charge' at the exceptional point is NOT the full charge,
+but only the subleading (in PX) component. The monic normalisation then fails
+because it expects the leading PX^(s-1) term which has vanished.

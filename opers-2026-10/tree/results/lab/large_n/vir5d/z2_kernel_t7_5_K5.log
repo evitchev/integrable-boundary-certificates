@@ -1,0 +1,4 @@
+t = 7/5 (N = -24), weight 10: kernel dimension 2  (4s)
+  class 0: in HV + d; eigenvalue monomials 21; odd-in-rho part zero: True; even in PX and pi: True  (5s)
+  class 1: in HV + d; eigenvalue monomials 21; odd-in-rho part zero: True; even in PX and pi: True  (6s)
+done (6s)

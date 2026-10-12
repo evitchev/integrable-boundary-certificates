@@ -1,0 +1,2126 @@
+
+===== vir1_engine_selftest: argv ['v0_selftest.py']  exit 0  0s
+PASS  a0 weight-4 basis == repo (7)
+PASS  a0 weight-6 basis == repo (20)
+PASS  a  residue == repo residue_mixed_mono on 189 monomial pairs
+PASS  a2 d_mono == repo d_mixed_mono on weights 5 and 8
+PASS  b  P4 == repo cyl_P4 at 8 curve points x 3 solutions
+PASS  c  Virasoro algebra with c = loop on 756 (state, m, n) triples, loop in {7/3, 28, -2}
+PASS  d  Virasoro states L_{-n1}..L_{-nk}|0> loop-independent through weight 8
+PASS  e  (T_Y T_Y) = (1/4)(11)(11) + (1/2)(13): got {((), ((1, 1), (1, 1))): Fraction(1, 4), ((), ((1, 3),)): Fraction(1, 2)}
+PASS  f  dim V_4 = 7, dim V_6 = 20
+PASS  f  dim Q_4 = 1, dim Q_6 = 3
+functional on V_4 (basis order [((), ((1, 1), (1, 1))), ((), ((1, 3),)), ((), ((2, 2),)), ((1, 1), ((1, 1),)), ((1, 1, 1, 1), ()), ((1, 3), ()), ((2, 2), ())]):
+    {((), ((1, 1), (1, 1))): '1', ((), ((1, 3),)): '-1/2', ((), ((2, 2),)): '1/2'}
+functionals on V_6:
+    {((), ((1, 1), (1, 1), (1, 1))): '1', ((), ((1, 1), (2, 2))): '1/18', ((), ((1, 2), (1, 2))): '-1/36', ((), ((1, 5),)): '-1/3', ((), ((2, 4),)): '1/3', ((), ((3, 3),)): '-1/3'}
+    {((), ((1, 1), (1, 3))): '1', ((), ((1, 1), (2, 2))): '-2/3', ((), ((1, 2), (1, 2))): '-1/6', ((), ((1, 5),)): '-2', ((), ((2, 4),)): '2', ((), ((3, 3),)): '-2'}
+    {((1, 1), ((1, 1), (1, 1))): '1', ((1, 1), ((1, 3),)): '-1/2', ((1, 1), ((2, 2),)): '1/2'}
+SELFTEST PASSED
+
+===== vir1_heisvir_I3_I5: argv ['v1_main.py']  exit 0  3s
+seal hash ok 6f23e25680592942a8370a9417609c7c558323a4af0c32c4dfe246a33993cf23
+dim Q_4 = 1, dim Q_6 = 3
+weight 6: complement of dV_5 has 12 monomials; target quotient V_9/dV_8 has dim 24
+120 generic sample fibres (fixed seed), both signs: 55 negative
+
+== P-spin3: W_4 coordinate of I_3 ==
+HOLDS  Sol 1: W_4 coordinate of I_3 = 0 at all 120 sample fibres (values seen: [Fraction(0, 1)])
+HOLDS  Sol 2: W_4 coordinate of I_3 = 0 at all 120 sample fibres (values seen: [Fraction(0, 1)])
+HOLDS  Sol 3: W_4 coordinate of I_3 = 0 at all 120 sample fibres (values seen: [Fraction(0, 1)])
+   functional support: [((), ((1, 1), (1, 1))), ((), ((1, 3),)), ((), ((2, 2),))]
+PASS  W_4 functional is supported on Y-only monomials, whose I_3 coefficients are t-independent -> zero identically in t
+
+== P-spin5: three non-Virasoro coordinates of I_5 ==
+   Sol 1: kernel dimensions over samples {1: 120}; (dX)^6 coefficient zero in 0 kernels
+PASS  Sol 1: kernel one-dimensional at all sample fibres
+HOLDS  Sol 1: all three non-Virasoro coordinates of I_5 vanish at all 120 sample fibres
+   Sol 2: kernel dimensions over samples {1: 120}; (dX)^6 coefficient zero in 1 kernels
+PASS  Sol 2: kernel one-dimensional at all sample fibres
+HOLDS  Sol 2: all three non-Virasoro coordinates of I_5 vanish at all 120 sample fibres
+   Sol 3: kernel dimensions over samples {1: 120}; (dX)^6 coefficient zero in 0 kernels
+PASS  Sol 3: kernel one-dimensional at all sample fibres
+HOLDS  Sol 3: all three non-Virasoro coordinates of I_5 vanish at all 120 sample fibres
+   degree bound: (t^2-1)^4 x the weight-6 system has polynomial entries of degree <= 8;
+   an adjugate kernel vector has degree <= 11 x 8 = 88 < 120 sample fibres -> identically zero
+
+== special points (full kernels) ==
+   exact point N=28, Sol 1 t=-1/3       (N,s)=(28,-9): kernel dim 1 = 1 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   exact point N=28, Sol 2 t=+1/3       (N,s)=(28,9): kernel dim 1 = 1 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   anchor N=-2, Sol 3 t=3               (N,s)=(-2,-9): kernel dim 2 = 2 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   N=-2, Sol 2 t=3                      (N,s)=(-2,-9): kernel dim 2 = 2 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   N=-2, Sol 1 t=3                      (N,s)=(-2,-9): kernel dim 1 = 1 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   N=0, Sol 3 t=5                       (N,s)=(0,-5): kernel dim 1 = 1 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   N=0, Sol 2 t=-5                      (N,s)=(0,5): kernel dim 1 = 1 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   jump N=-25/2, Sol 2 t=5/3            (N,s)=(-25/2,-45/2): kernel dim 2 = 2 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   jump N=-25/2, Sol 3 t=5/3            (N,s)=(-25/2,-45/2): kernel dim 2 = 2 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   N=-25/2 other sheet, Sol 1 t=5/3     (N,s)=(-25/2,-45/2): kernel dim 1 = 1 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   N=1 (t=inf), Sol 1                   (N,s)=(1,0): kernel dim 1 = 1 in HV+d (+) 0 outside
+   N=1 (t=inf), Sol 2                   (N,s)=(1,0): kernel dim 1 = 1 in HV+d (+) 0 outside
+   N=1 (t=inf), Sol 3                   (N,s)=(1,0): kernel dim 1 = 1 in HV+d (+) 0 outside
+   approach to exact point N=28, Sol 1 t=-1/3 kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to exact point N=28, Sol 2 t=+1/3 kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to anchor N=-2, Sol 3 t=3         kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to N=-2, Sol 2 t=3                kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to N=-2, Sol 1 t=3                kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to N=0, Sol 3 t=5                 kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to N=0, Sol 2 t=-5                kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to jump N=-25/2, Sol 2 t=5/3      kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to jump N=-25/2, Sol 3 t=5/3      kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to N=-25/2 other sheet, Sol 1 t=5/3 kernel dims [1, 1], non-Virasoro coords all zero: True
+HOLDS  N = 28: yes (whole spin-5 kernel in HV + d, both solutions)
+HOLDS  N = -2: yes (Sol 3 anchor)
+HOLDS  N = 0: yes
+HOLDS  N = 1: yes
+HOLDS  N = -25/2: yes
+HOLDS  P-jump t=5/3: kernel dim 2, both directions in HV + d: (2, 0)
+HOLDS  P-jump t=3 (Sol 3): kernel dim 2, both directions in HV + d: (2, 0)
+
+== C1: cyl_membership's CLASSICAL test, reproduced with my own span ==
+   Sol 1 t=2 classical: I_3 in A<=2 False, A<=4 True;  I_5 in A<=2 False, A<=4 False, A<=6 True
+PASS  Sol 1: bcd-note table reproduced at t = 2 (I_3: no/YES; I_5: no/no/YES)
+   Sol 2 t=2 classical: I_3 in A<=2 False, A<=4 True;  I_5 in A<=2 False, A<=4 False, A<=6 True
+PASS  Sol 2: bcd-note table reproduced at t = 2 (I_3: no/YES; I_5: no/no/YES)
+   Sol 3 t=2 classical: I_3 in A<=2 False, A<=4 True;  I_5 in A<=2 False, A<=4 False, A<=6 True
+PASS  Sol 3: bcd-note table reproduced at t = 2 (I_3: no/YES; I_5: no/no/YES)
+PASS  the classical test ALSO rejects the exact point (Sol 1, t = -1/3): I_3 "not in A<=2"
+PASS  the classical test ALSO rejects the exact point (Sol 2, t = 1/3): I_3 "not in A<=2"
+
+== lead addition 1: the ladder at t = 2 with QUANTUM products (HV = <X, T_Y>) ==
+   Sol 1 t=2 quantum: I_3 in <X,T_Y> True;  I_5 in <X,T_Y> True
+HOLDS  Sol 1: I_3 and I_5 at t = 2 lie in the vertex subalgebra <X, T_Y> + Im d
+   Sol 2 t=2 quantum: I_3 in <X,T_Y> True;  I_5 in <X,T_Y> True
+HOLDS  Sol 2: I_3 and I_5 at t = 2 lie in the vertex subalgebra <X, T_Y> + Im d
+   Sol 3 t=2 quantum: I_3 in <X,T_Y> True;  I_5 in <X,T_Y> True
+HOLDS  Sol 3: I_3 and I_5 at t = 2 lie in the vertex subalgebra <X, T_Y> + Im d
+
+== C3: loop-factor tamper N -> N + 1 at the exact point ==
+   Sol 1 t=-1/3: kernel dim 1 with loop N; 0 with loop N+1
+PASS  Sol 1: with the loop factor N+1 the spin-5 charge at the exact point disappears
+   Sol 2 t=1/3: kernel dim 1 with loop N; 0 with loop N+1
+PASS  Sol 2: with the loop factor N+1 the spin-5 charge at the exact point disappears
+
+== C4: plants ==
+PASS  Sol 1: I_5 + (1/1000)(33)_Y is flagged: coords ['-1/3000', '-1/500', '0']
+PASS  Sol 1: I_3 with (22) -> -2 + 1/1000 is flagged: coord 1/2000
+PASS  Sol 1: I_5 + (1/1000)(dX)^2(22)_Y is flagged: coords ['0', '0', '1/2000']
+PASS  Sol 2: I_5 + (1/1000)(33)_Y is flagged: coords ['-1/3000', '-1/500', '0']
+PASS  Sol 2: I_3 with (22) -> -2 + 1/1000 is flagged: coord 1/2000
+PASS  Sol 2: I_5 + (1/1000)(dX)^2(22)_Y is flagged: coords ['0', '0', '1/2000']
+PASS  Sol 3: I_5 + (1/1000)(33)_Y is flagged: coords ['-1/3000', '-1/500', '0']
+PASS  Sol 3: I_3 with (22) -> -2 + 1/1000 is flagged: coord 1/2000
+PASS  Sol 3: I_5 + (1/1000)(dX)^2(22)_Y is flagged: coords ['0', '0', '1/2000']
+
+== C5: vacuity ==
+PASS  a generic vector of V_6 has all three coordinates nonzero: ['-62/81', '-76/27', '533/504']
+PASS  a generic element of HV_6 + dV_5 has all three coordinates zero
+PASS  rank(HV_6 + dV_5) = 17 (expected 17 of 20)
+
+RESULT: P-spin3 and P-spin5 CONFIRMED; all controls fired
+
+===== vir1_heisvir_I5_symbolic: argv ['v4_details.py']  exit 0  44s
+largest loop power in the weight-4 x weight-6 residues: 1
+Sol 1: symbolic I_5(t): primitive polynomial vector of degree 4; non-Virasoro coordinates [0, 0, 0]; (dX)^6 coefficient (t - 17)*(t + 1)**2*(3*t - 11)   (9s)
+Sol 2: symbolic I_5(t): primitive polynomial vector of degree 5; non-Virasoro coordinates [0, 0, 0]; (dX)^6 coefficient 12*(t - 3)**2*(t + 1)**2*(2*t - 5)   (27s)
+Sol 3: symbolic I_5(t): primitive polynomial vector of degree 5; non-Virasoro coordinates [0, 0, 0]; (dX)^6 coefficient (t - 1)**2*(t + 1)**2*(t + 5)   (44s)
+
+jump point t = 5/3 (N = -25/2): Sol 2 limit class nonzero True, lies in the kernel of ITS OWN I_3 there (dim 2): True; non-Virasoro coords ['0', '0', '0']
+jump point t = 5/3 (N = -25/2): Sol 3 limit class nonzero True, lies in the kernel of ITS OWN I_3 there (dim 2): True; non-Virasoro coords ['0', '0', '0']
+   same I_3 density at the point: [(2, 3, True)]
+   Sols 2,3 share I_3: their two limit classes have rank 2; kernel dim 2 -> they SPAN the kernel
+anchor t = 3 (N = -2): Sol 1 limit class nonzero True, lies in the kernel of ITS OWN I_3 there (dim 1): True; non-Virasoro coords ['0', '0', '0']
+anchor t = 3 (N = -2): Sol 2 limit class nonzero True, lies in the kernel of ITS OWN I_3 there (dim 2): True; non-Virasoro coords ['0', '0', '0']
+anchor t = 3 (N = -2): Sol 3 limit class nonzero True, lies in the kernel of ITS OWN I_3 there (dim 2): True; non-Virasoro coords ['0', '0', '0']
+   same I_3 density at the point: [(1, 2, False), (1, 3, False), (2, 3, False)]
+anchor, Sol 3: kernel dim 2; rank of the mixed (X and Y) components over the kernel: 0 (0 = the kernel is {pure-X class} + {pure-Y class})
+I_3 at the anchor (Sol 3): {((), ((1, 1), (1, 1))): '1', ((), ((2, 2),)): '-2', ((2, 2), ()): '-1', ((1, 1, 1, 1), ()): '1'}
+DETAILS OK
+
+===== vir1_heisvir_I7_kernel: argv ['v2_spin7.py']  exit 0  4s
+dim V_8 = 56, dim HV_8 span = 40, dim Q_8 = 10; complement of dV_7: 29; V_11/dV_10: 71  (0.2s)
+Sol 1 t=2     (N=-7) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (0.5s)
+      classical at t=2: I_7 in A<=6 False, A<=8 True (bcd table: no / YES)
+      plant I_7 + (1/1000)(44)_Y flagged
+Sol 1 t=-2    (N=-7) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (0.6s)
+Sol 1 t=7/2   (N=-17/15) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (0.6s)
+Sol 1 t=-7/2  (N=-17/15) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (0.7s)
+Sol 1 t=4     (N=-3/5) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (0.8s)
+Sol 1 t=11/5  (N=-21/4) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (0.9s)
+Sol 1 t=-3/7  (N=152/5) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (0.9s)
+Sol 1 t=9/2   (N=-19/77) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (1.0s)
+Sol 1 t=-13/4 (N=-77/51) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (1.1s)
+Sol 1 t=1/2   (N=33) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (1.2s)
+Sol 1 t=-1/3  (N=28) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (1.2s)
+Sol 1 t=1/3   (N=28) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (1.3s)
+Sol 1 t=3     (N=-2) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (1.4s)
+Sol 1 t=5     (N=0) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (1.4s)
+Sol 1 t=-5    (N=0) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (1.5s)
+Sol 1 t=5/3   (N=-25/2) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (1.6s)
+Sol 2 t=2     (N=-7) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (1.7s)
+      classical at t=2: I_7 in A<=6 False, A<=8 True (bcd table: no / YES)
+      plant I_7 + (1/1000)(44)_Y flagged
+Sol 2 t=-2    (N=-7) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (1.8s)
+Sol 2 t=7/2   (N=-17/15) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (1.8s)
+Sol 2 t=-7/2  (N=-17/15) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (1.9s)
+Sol 2 t=4     (N=-3/5) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (2.0s)
+Sol 2 t=11/5  (N=-21/4) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (2.1s)
+Sol 2 t=-3/7  (N=152/5) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (2.1s)
+Sol 2 t=9/2   (N=-19/77) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (2.2s)
+Sol 2 t=-13/4 (N=-77/51) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (2.3s)
+Sol 2 t=1/2   (N=33) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (2.4s)
+Sol 2 t=-1/3  (N=28) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (2.4s)
+Sol 2 t=1/3   (N=28) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (2.5s)
+Sol 2 t=3     (N=-2) SPECIAL: kernel dim 2 = 2 in HV+d (+) 0 outside  (2.6s)
+Sol 2 t=5     (N=0) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (2.6s)
+Sol 2 t=-5    (N=0) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (2.7s)
+Sol 2 t=5/3   (N=-25/2) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (2.8s)
+Sol 3 t=2     (N=-7) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (2.8s)
+      classical at t=2: I_7 in A<=6 False, A<=8 True (bcd table: no / YES)
+      plant I_7 + (1/1000)(44)_Y flagged
+Sol 3 t=-2    (N=-7) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (2.9s)
+Sol 3 t=7/2   (N=-17/15) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (3.0s)
+Sol 3 t=-7/2  (N=-17/15) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (3.1s)
+Sol 3 t=4     (N=-3/5) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (3.2s)
+Sol 3 t=11/5  (N=-21/4) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (3.2s)
+Sol 3 t=-3/7  (N=152/5) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (3.3s)
+Sol 3 t=9/2   (N=-19/77) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (3.4s)
+Sol 3 t=-13/4 (N=-77/51) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (3.5s)
+Sol 3 t=1/2   (N=33) generic: kernel dim 1 = 1 in HV+d (+) 0 outside  (3.5s)
+Sol 3 t=-1/3  (N=28) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (3.6s)
+Sol 3 t=1/3   (N=28) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (3.7s)
+Sol 3 t=3     (N=-2) SPECIAL: kernel dim 2 = 2 in HV+d (+) 0 outside  (3.7s)
+Sol 3 t=5     (N=0) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (3.8s)
+Sol 3 t=-5    (N=0) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (3.9s)
+Sol 3 t=5/3   (N=-25/2) SPECIAL: kernel dim 1 = 1 in HV+d (+) 0 outside  (4.0s)
+vacuity: generic V_8 vector has 10 of 10 coordinates nonzero
+RESULT: I_7 in <X, T_Y> + Im d at every generic fibre tested, all three solutions
+
+===== vir1_heisvir_I7_I11_symbolic_N: argv ['v3_ladder.py']  exit 0  54s
+
+== sigma 7 (weight 8): dim V = 56, HV span 40, dim Q_w = 10  (0s)
+   vacuity: generic vector has 10 of 10 coordinates nonzero
+   Sol 1 I_7: symbolic in N: all 10 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (0s)
+      promoted I_7 at t=2 == my own kernel class mod d: True
+      classical at t=2: I_7 in A<=6: False (record: no)
+   Sol 2 I_7: symbolic in N: all 10 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (1s)
+      promoted I_7 at t=2 == my own kernel class mod d: True
+      classical at t=2: I_7 in A<=6: False (record: no)
+   Sol 3 I_7: symbolic in N: all 10 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (2s)
+      promoted I_7 at t=2 == my own kernel class mod d: True
+      classical at t=2: I_7 in A<=6: False (record: no)
+
+== sigma 9 (weight 10): dim V = 148, HV span 94, dim Q_w = 29  (3s)
+   vacuity: generic vector has 29 of 29 coordinates nonzero
+   Sol 1 I_9: symbolic in N: all 29 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (3s)
+      classical at t=2: I_9 in A<=8: False (record: no)
+   Sol 2 I_9: symbolic in N: all 29 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (6s)
+      classical at t=2: I_9 in A<=8: False (record: no)
+   Sol 3 I_9: symbolic in N: all 29 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (9s)
+      classical at t=2: I_9 in A<=8: False (record: no)
+
+== sigma 11 (weight 12): dim V = 379, HV span 212, dim Q_w = 80  (12s)
+   vacuity: generic vector has 80 of 80 coordinates nonzero
+   Sol 1 I_11: symbolic in N: all 80 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (14s)
+   Sol 2 I_11: symbolic in N: all 80 coordinates == 0: True; pointwise outside at 0 of 22 fibres (2 skipped)  (29s)
+   Sol 3 I_11: symbolic in N: all 80 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (53s)
+
+RESULT: every promoted charge tested lies in the vertex subalgebra <X, T_Y> + Im d, identically in N
+
+===== vir1r_explicit_I3_I5: argv ['vir1r.py']  exit 0  21s
+== N=25: t = 0, N = 25, s = 0; components used 25  (inputs 0 s)
+   W = 4: spanning fields 15 (X x Vir: 10; d V_(W-1): 5); Vir field counts by weight [1, 0, 1, 1, 2]  (0 s)
+   Sol 1 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   Sol 2 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   Sol 3 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   W = 6: spanning fields 47 (X x Vir: 29; d V_(W-1): 18); Vir field counts by weight [1, 0, 1, 1, 2, 2, 4]  (0 s)
+   Sol 1 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=25, Sol 1 flagged OUT (votes [False, False, False, False]): True
+   Sol 2 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=25, Sol 2 flagged OUT (votes [False, False, False, False]): True
+   Sol 3 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=25, Sol 3 flagged OUT (votes [False, False, False, False]): True
+CONTROL (d) SANITY d(:TT:) dX + 3 (dX)^4 d^2X IN at N=25 (votes [True, True, True, True]): True
+== N=26 s=+5: t = 1/5, N = 26, s = 5; components used 26  (inputs 0 s)
+   W = 4: spanning fields 15 (X x Vir: 10; d V_(W-1): 5); Vir field counts by weight [1, 0, 1, 1, 2]  (0 s)
+   Sol 1 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   Sol 2 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   Sol 3 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   W = 6: spanning fields 47 (X x Vir: 29; d V_(W-1): 18); Vir field counts by weight [1, 0, 1, 1, 2, 2, 4]  (0 s)
+   Sol 1 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=26 s=+5, Sol 1 flagged OUT (votes [False, False, False, False]): True
+   Sol 2 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=26 s=+5, Sol 2 flagged OUT (votes [False, False, False, False]): True
+   Sol 3 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=26 s=+5, Sol 3 flagged OUT (votes [False, False, False, False]): True
+CONTROL (d) SANITY d(:TT:) dX + 3 (dX)^4 d^2X IN at N=26 s=+5 (votes [True, True, True, True]): True
+== N=26 s=-5: t = -1/5, N = 26, s = -5; components used 26  (inputs 0 s)
+   W = 4: spanning fields 15 (X x Vir: 10; d V_(W-1): 5); Vir field counts by weight [1, 0, 1, 1, 2]  (0 s)
+   Sol 1 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   Sol 2 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   Sol 3 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   W = 6: spanning fields 47 (X x Vir: 29; d V_(W-1): 18); Vir field counts by weight [1, 0, 1, 1, 2, 2, 4]  (0 s)
+   Sol 1 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=26 s=-5, Sol 1 flagged OUT (votes [False, False, False, False]): True
+   Sol 2 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=26 s=-5, Sol 2 flagged OUT (votes [False, False, False, False]): True
+   Sol 3 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=26 s=-5, Sol 3 flagged OUT (votes [False, False, False, False]): True
+CONTROL (d) SANITY d(:TT:) dX + 3 (dX)^4 d^2X IN at N=26 s=-5 (votes [True, True, True, True]): True
+== N=28 (control): t = -1/3, N = 28, s = -9; components used 28  (inputs 0 s)
+   W = 4: spanning fields 15 (X x Vir: 10; d V_(W-1): 5); Vir field counts by weight [1, 0, 1, 1, 2]  (0 s)
+   Sol 1 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   Sol 2 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   Sol 3 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   W = 6: spanning fields 47 (X x Vir: 29; d V_(W-1): 18); Vir field counts by weight [1, 0, 1, 1, 2, 2, 4]  (0 s)
+   Sol 1 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=28 (control), Sol 1 flagged OUT (votes [False, False, False, False]): True
+   Sol 2 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=28 (control), Sol 2 flagged OUT (votes [False, False, False, False]): True
+   Sol 3 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=28 (control), Sol 3 flagged OUT (votes [False, False, False, False]): True
+CONTROL (d) SANITY d(:TT:) dX + 3 (dX)^4 d^2X IN at N=28 (control) (votes [True, True, True, True]): True
+CONTROL (b) I_3 IN at every point and solution: True
+SEALED PREDICTION (I_5 IN everywhere): True  {'N=25|1|6': 'IN', 'N=25|2|6': 'IN', 'N=25|3|6': 'IN', 'N=26 s=+5|1|6': 'IN', 'N=26 s=+5|2|6': 'IN', 'N=26 s=+5|3|6': 'IN', 'N=26 s=-5|1|6': 'IN', 'N=26 s=-5|2|6': 'IN', 'N=26 s=-5|3|6': 'IN', 'N=28 (control)|1|6': 'IN', 'N=28 (control)|2|6': 'IN', 'N=28 (control)|3|6': 'IN'}
+done (21 s)
+controls passed; sealed prediction holds -> exit 0
+
+===== vir1r_explicit_I7: argv ['vir1r.py', '--i7']  exit 0  133s
+== N=25: t = 0, N = 25, s = 0; components used 25  (inputs 1 s)
+   W = 4: spanning fields 15 (X x Vir: 10; d V_(W-1): 5); Vir field counts by weight [1, 0, 1, 1, 2]  (0 s)
+   Sol 1 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   Sol 2 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   Sol 3 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   W = 6: spanning fields 47 (X x Vir: 29; d V_(W-1): 18); Vir field counts by weight [1, 0, 1, 1, 2, 2, 4]  (0 s)
+   Sol 1 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=25, Sol 1 flagged OUT (votes [False, False, False, False]): True
+   Sol 2 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=25, Sol 2 flagged OUT (votes [False, False, False, False]): True
+   Sol 3 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=25, Sol 3 flagged OUT (votes [False, False, False, False]): True
+   W = 8: spanning fields 132 (X x Vir: 75; d V_(W-1): 57); Vir field counts by weight [1, 0, 1, 1, 2, 2, 4, 4, 7]  (3 s)
+   Sol 1 I_7 (weight 8): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_7 + (1/1000)(44)_Y at N=25, Sol 1 flagged OUT (votes [False, False, False, False]): True
+   Sol 2 I_7 (weight 8): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_7 + (1/1000)(44)_Y at N=25, Sol 2 flagged OUT (votes [False, False, False, False]): True
+   Sol 3 I_7 (weight 8): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_7 + (1/1000)(44)_Y at N=25, Sol 3 flagged OUT (votes [False, False, False, False]): True
+CONTROL (d) SANITY d(:TT:) dX + 3 (dX)^4 d^2X IN at N=25 (votes [True, True, True, True]): True
+CONTROL (b) I_3 IN at every point and solution: True
+SEALED PREDICTION (I_5 IN everywhere): True  {'N=25|1|6': 'IN', 'N=25|2|6': 'IN', 'N=25|3|6': 'IN'}
+I_7: {'N=25|1|8': 'IN', 'N=25|2|8': 'IN', 'N=25|3|8': 'IN'}
+done (133 s)
+controls passed; sealed prediction holds -> exit 0
+
+===== vir2_gates: argv ['w0_gates.py']  exit 0  0s
+PASS  g1 Virasoro algebra of T_phi with c = 1 - 12 rho^2 on 294 (state, m, n) triples
+PASS  g2 h(e^{b phi}) = b^2/2 - rho b
+PASS  g3 (11)(11) - 2(22) = 4 L_-2 L_-2 |0> + total derivative: HV coefficients {((), (2, 2)): 4}
+PASS  g3 its two-boson image is exactly 4 (T_phi T_phi) = {((), (1, 1, 1, 1)): '1', ((), (1, 1, 2)): '4*rho', ((), (1, 3)): '2', ((), (2, 2)): '4*rho**2', ((), (4,)): '4*rho/3'}
+PASS  g3 4 L_-2^2 - 4 L_-4 and 4 L_-2^2 have the same two-boson class mod d
+PASS  g3 (T_phi T_phi) itself is not a total derivative (the test is not vacuous)
+PASS  g4 Sol 1 I_3 image even in X, (TT) coefficient 4; HV coefficients {((), (2, 2)): '4', ((1, 1), (2,)): '12', ((1, 1, 1, 1), ()): '-11/5', ((1, 3), ()): '-14/45'}
+PASS  g4 Sol 2 I_3 image even in X, (TT) coefficient 4; HV coefficients {((), (2, 2)): '4', ((1, 1), (2,)): '3/5', ((1, 1, 1, 1), ()): '13/200', ((1, 3), ()): '3787/1800'}
+PASS  g4 Sol 3 I_3 image even in X, (TT) coefficient 4; HV coefficients {((), (2, 2)): '4', ((1, 1), (2,)): '4/3', ((1, 1, 1, 1), ()): '1', ((1, 3), ()): '182/135'}
+GATES PASSED
+
+===== vir2_I5_symbolic: argv ['w2_i5sym.py']  exit 0  44s
+Sol 1: degree 4, verified vs numeric kernel: True  (9s)
+Sol 2: degree 5, verified vs numeric kernel: True  (27s)
+Sol 3: degree 5, verified vs numeric kernel: True  (44s)
+
+===== vir2_pairs_symbolic: argv ['w3_symbolic.py']  exit 0  15s
+curve in p verified: N = (t^2-25)/(t^2-1), s = -24t/(t^2-1) with t = (2+p^2)/(2-p^2)
+
+Sol 1: two-boson images symbolic in p: I_3 9 monomials, I_5 23 monomials  (0s)
+   S1  beta = -p/2, a^2 = 1 - p^2/4           I_3 conserved identically: True   I_5 conserved identically: True  (1s)
+   Virasoro beta_+ = p, a = 0                 I_3 conserved identically: True   I_5 conserved identically: True  (1s)
+   Virasoro beta_- = -2/p, a = 0              I_3 conserved identically: True   I_5 conserved identically: True  (1s)
+   negative: beta = p/3, a = 0                I_3: False (2 conditions nonzero)   I_5: False (7 nonzero)
+   negative: beta = -p/2, a^2 = 1 - p^2/3     I_3: False (5 conditions nonzero)   I_5: False (16 nonzero)
+   negative: mirror beta = +p/2, a^2 = 1 - p^2/4 I_3: False (4 conditions nonzero)   I_5: False (15 nonzero)
+   negative: the pair of Sol 2                I_3: False   I_5: False
+
+Sol 2: two-boson images symbolic in p: I_3 9 monomials, I_5 23 monomials  (5s)
+   S2  beta = -p,   a^2 = 1 - p^2             I_3 conserved identically: True   I_5 conserved identically: True  (6s)
+   Virasoro beta_+ = p, a = 0                 I_3 conserved identically: True   I_5 conserved identically: True  (6s)
+   Virasoro beta_- = -2/p, a = 0              I_3 conserved identically: True   I_5 conserved identically: True  (6s)
+   negative: beta = p/3, a = 0                I_3: False (2 conditions nonzero)   I_5: False (7 nonzero)
+   negative: beta = -p/2, a^2 = 1 - p^2/3     I_3: False (5 conditions nonzero)   I_5: False (16 nonzero)
+   negative: mirror beta = +p/2, a^2 = 1 - p^2/4 I_3: False (5 conditions nonzero)   I_5: False (16 nonzero)
+   negative: the pair of Sol 1                I_3: False   I_5: False
+
+Sol 3: two-boson images symbolic in p: I_3 9 monomials, I_5 23 monomials  (10s)
+   S3  beta = 1/p,  a^2 = 1/p^2               I_3 conserved identically: True   I_5 conserved identically: True  (11s)
+   S3' beta = -p,   a^2 = p^2                 I_3 conserved identically: True   I_5 conserved identically: True  (12s)
+   Virasoro beta_+ = p, a = 0                 I_3 conserved identically: True   I_5 conserved identically: True  (12s)
+   Virasoro beta_- = -2/p, a = 0              I_3 conserved identically: True   I_5 conserved identically: True  (12s)
+   negative: beta = p/3, a = 0                I_3: False (2 conditions nonzero)   I_5: False (7 nonzero)
+   negative: beta = -p/2, a^2 = 1 - p^2/3     I_3: False (5 conditions nonzero)   I_5: False (16 nonzero)
+   negative: mirror beta = +p/2, a^2 = 1 - p^2/4 I_3: False (5 conditions nonzero)   I_5: False (16 nonzero)
+   negative: the pair of Sol 1                I_3: False   I_5: False
+
+RESULT: all listed pairs conserved against I_3 and I_5 identically in p; negatives fail
+
+===== vir2_points_gram: argv ['w5_points.py']  exit 0  9s
+== exponents: the record's (A, B, C) = (eps, -a_X, -a_Y) against the pairs, symbolic in p ==
+Sol 1 S1 : a^2 = -(p - 2)*(p + 2)/4, beta = -p/2;  B : C = a^2 : beta^2  True;  (B, C) = -k (a^2, beta^2) with k = -4/((p - 2)*(p + 2));  |v|^2 = 1, v_+.v_- = (p**2 - 2)/2;  A = -2*(p**2 - 2)/((p - 2)*(p + 2))
+Sol 2 S2 : a^2 = -(p - 1)*(p + 1), beta = -p;  B : C = a^2 : beta^2  True;  (B, C) = -k (a^2, beta^2) with k = -2/(p**2 - 3);  |v|^2 = 1, v_+.v_- = 2*p**2 - 1;  A = -2*(p**2 - 2)/(p**2 - 3)
+Sol 3 S3 : a^2 = p**(-2), beta = 1/p;  B : C = a^2 : beta^2  True;  (B, C) = -k (a^2, beta^2) with k = 2*p**2*(p - 1)*(p + 1)/(3*p**2 - 4);  |v|^2 = 2/p**2, v_+.v_- = 0;  A = -2*(p**2 - 2)/(3*p**2 - 4)
+Sol 3 S3': a^2 = p**2, beta = -p;  B : C = a^2 : beta^2  True;  (B, C) = -k (a^2, beta^2) with k = 2*(p - 1)*(p + 1)/(p**2*(3*p**2 - 4));  |v|^2 = 2*p**2, v_+.v_- = 0;  A = -2*(p**2 - 2)/(3*p**2 - 4)
+Sealed S-exponents (Sol 1): A = (v_+ . v_-)/a^2: True ; B = -1 ; C = -beta^2/a^2: True
+
+== Gram matrices of the full screening sets (rows/cols: Vir beta_+, Vir beta_-, then the pairs +,-) ==
+Sol 1  [v_phi+ = (0, p); v_phi- = (0, -2/p); S1+ = (a, -p/2); S1- = (-a, -p/2)]
+      ['p**2', '-2', '-p**2/2', '-p**2/2']
+      ['-2', '4/p**2', '1', '1']
+      ['-p**2/2', '1', '1', '(p**2 - 2)/2']
+      ['-p**2/2', '1', '(p**2 - 2)/2', '1']
+      rank over Q(p): 2
+Sol 2  [v_phi+ = (0, p); v_phi- = (0, -2/p); S2+ = (a, -p); S2- = (-a, -p)]
+      ['p**2', '-2', '-p**2', '-p**2']
+      ['-2', '4/p**2', '2', '2']
+      ['-p**2', '2', '1', '2*p**2 - 1']
+      ['-p**2', '2', '2*p**2 - 1', '1']
+      rank over Q(p): 2
+Sol 3  [v_phi+ = (0, p); v_phi- = (0, -2/p); S3+ = (a, 1/p); S3- = (-a, 1/p); S3'+ = (a, -p); S3'- = (-a, -p)]
+      ['p**2', '-2', '1', '1', '-p**2', '-p**2']
+      ['-2', '4/p**2', '-2/p**2', '-2/p**2', '2', '2']
+      ['1', '-2/p**2', '2/p**2', '0', '0', '-2']
+      ['1', '-2/p**2', '0', '2/p**2', '-2', '0']
+      ['-p**2', '2', '0', '-2', '2*p**2', '0']
+      ['-p**2', '2', '-2', '0', '0', '2*p**2']
+      rank over Q(p): 2
+Sealed Gram, Sol 1 {v_phi+, v_+, v_-} in u (p^2 = 2u^2): [[2u^2,-u^2,-u^2],[-u^2,1,u^2-1],[-u^2,u^2-1,1]]
+   computed: [[2*u**2, -u**2, -u**2], [-u**2, 1, u**2 - 1], [-u**2, u**2 - 1, 1]]  == sealed: True
+Sealed Gram, Sol 3 {v_phi-, v_+, v_-}: (1/u^2)[[2,-1,-1],[-1,1,0],[-1,0,1]];  computed: [[2/u**2, -1/u**2, -1/u**2], [-1/u**2, u**(-2), 0], [-1/u**2, 0, u**(-2)]]  == sealed: True
+Sol 2 {v_phi+, S2+, S2-} (not sealed): [[p**2, -p**2, -p**2], [-p**2, 1, 2*p**2 - 1], [-p**2, 2*p**2 - 1, 1]]
+Sol 3 {v_phi+, S3'+, S3'-} (not sealed): [[p**2, -p**2, -p**2], [-p**2, 2*p**2, 0], [-p**2, 0, 2*p**2]]
+Linear relations: Sol 1: v_phi+ + S1+ + S1- = 0;  Sol 2: 2 v_phi+ + S2+ + S2- = 0;  Sol 3: v_phi- + S3+ + S3- = 0 and 2 v_phi+ + S3'+ + S3'- = 0;  S3'+- = -p^2 S3-+ (same lines, dual exponents: product -2)
+
+== the known points (values of the formulas; conservation recomputed at each point) ==
+t = 3 (N = -2): p = beta_+ = 1, beta_- = -2, rho = -1/2
+   Sol 1 S1 : a^2 = 3/4   beta = -1/2         h_phi = -1/8   |v|^2 = 1     v_+.v_- = -1/2   conserved I_3 True, I_5 True
+   Sol 2 S2 : a^2 = 0     beta = -1           h_phi = 0      |v|^2 = 1     v_+.v_- = 1      conserved I_3 True, I_5 True
+   Sol 3 S3 : a^2 = 1     beta = 1            h_phi = 1      |v|^2 = 2     v_+.v_- = 0      conserved I_3 True, I_5 True
+   Sol 3 S3': a^2 = 1     beta = -1           h_phi = 0      |v|^2 = 2     v_+.v_- = 0      conserved I_3 True, I_5 True
+t -> infinity (N = 1): p = beta_+ = sqrt(2), beta_- = -sqrt(2), rho = 0
+   Sol 1 S1 : a^2 = 1/2   beta = -sqrt(2)/2   h_phi = 1/4    |v|^2 = 1     v_+.v_- = 0      conserved I_3 True, I_5 True
+   Sol 2 S2 : a^2 = -1    beta = -sqrt(2)     h_phi = 1      |v|^2 = 1     v_+.v_- = 3      conserved I_3 True, I_5 True
+   Sol 3 S3 : a^2 = 1/2   beta = sqrt(2)/2    h_phi = 1/4    |v|^2 = 1     v_+.v_- = 0      conserved I_3 True, I_5 True
+   Sol 3 S3': a^2 = 2     beta = -sqrt(2)     h_phi = 1      |v|^2 = 4     v_+.v_- = 0      conserved I_3 True, I_5 True
+t = 5 (N = 0, s = -5): p = beta_+ = 2*sqrt(3)/3, beta_- = -sqrt(3), rho = -sqrt(3)/6
+   Sol 1 S1 : a^2 = 2/3   beta = -sqrt(3)/3   h_phi = 0      |v|^2 = 1     v_+.v_- = -1/3   conserved I_3 True, I_5 True
+   Sol 2 S2 : a^2 = -1/3  beta = -2*sqrt(3)/3 h_phi = 1/3    |v|^2 = 1     v_+.v_- = 5/3    conserved I_3 True, I_5 True
+   Sol 3 S3 : a^2 = 3/4   beta = sqrt(3)/2    h_phi = 5/8    |v|^2 = 3/2   v_+.v_- = 0      conserved I_3 True, I_5 True
+   Sol 3 S3': a^2 = 4/3   beta = -2*sqrt(3)/3 h_phi = 1/3    |v|^2 = 8/3   v_+.v_- = 0      conserved I_3 True, I_5 True
+t = -5 (N = 0, s = +5): p = beta_+ = sqrt(3), beta_- = -2*sqrt(3)/3, rho = sqrt(3)/6
+   Sol 1 S1 : a^2 = 1/4   beta = -sqrt(3)/2   h_phi = 5/8    |v|^2 = 1     v_+.v_- = 1/2    conserved I_3 True, I_5 True
+   Sol 2 S2 : a^2 = -2    beta = -sqrt(3)     h_phi = 2      |v|^2 = 1     v_+.v_- = 5      conserved I_3 True, I_5 True
+   Sol 3 S3 : a^2 = 1/3   beta = sqrt(3)/3    h_phi = 0      |v|^2 = 2/3   v_+.v_- = 0      conserved I_3 True, I_5 True
+   Sol 3 S3': a^2 = 3     beta = -sqrt(3)     h_phi = 2      |v|^2 = 6     v_+.v_- = 0      conserved I_3 True, I_5 True
+t = -1/3 (N = 28, s = -9): p = beta_+ = 2*I, beta_- = I, rho = 3*I/2
+   Sol 1 S1 : a^2 = 2     beta = -I           h_phi = -2     |v|^2 = 1     v_+.v_- = -3     conserved I_3 True, I_5 True
+   Sol 2 S2 : a^2 = 5     beta = -2*I         h_phi = -5     |v|^2 = 1     v_+.v_- = -9     conserved I_3 True, I_5 True
+   Sol 3 S3 : a^2 = -1/4  beta = -I/2         h_phi = -7/8   |v|^2 = -1/2  v_+.v_- = 0      conserved I_3 True, I_5 True
+   Sol 3 S3': a^2 = -4    beta = -2*I         h_phi = -5     |v|^2 = -8    v_+.v_- = 0      conserved I_3 True, I_5 True
+t = +1/3 (N = 28, s = +9): p = beta_+ = I, beta_- = 2*I, rho = 3*I/2
+   Sol 1 S1 : a^2 = 5/4   beta = -I/2         h_phi = -7/8   |v|^2 = 1     v_+.v_- = -3/2   conserved I_3 True, I_5 True
+   Sol 2 S2 : a^2 = 2     beta = -I           h_phi = -2     |v|^2 = 1     v_+.v_- = -3     conserved I_3 True, I_5 True
+   Sol 3 S3 : a^2 = -1    beta = -I           h_phi = -2     |v|^2 = -2    v_+.v_- = 0      conserved I_3 True, I_5 True
+   Sol 3 S3': a^2 = -1    beta = -I           h_phi = -2     |v|^2 = -2    v_+.v_- = 0      conserved I_3 True, I_5 True
+t = 5/3 (N = -25/2): p = beta_+ = sqrt(2)/2, beta_- = -2*sqrt(2), rho = -3*sqrt(2)/4
+   Sol 1 S1 : a^2 = 7/8   beta = -sqrt(2)/4   h_phi = -5/16  |v|^2 = 1     v_+.v_- = -3/4   conserved I_3 True, I_5 True
+   Sol 2 S2 : a^2 = 1/2   beta = -sqrt(2)/2   h_phi = -1/2   |v|^2 = 1     v_+.v_- = 0      conserved I_3 True, I_5 True
+   Sol 3 S3 : a^2 = 2     beta = sqrt(2)      h_phi = 5/2    |v|^2 = 4     v_+.v_- = 0      conserved I_3 True, I_5 True
+   Sol 3 S3': a^2 = 1/2   beta = -sqrt(2)/2   h_phi = -1/2   |v|^2 = 1     v_+.v_- = 0      conserved I_3 True, I_5 True
+t = -3 (N = -2, other sheet): p = beta_+ = 2, beta_- = -1, rho = 1/2
+   Sol 1 S1 : a^2 = 0     beta = -1           h_phi = 1      |v|^2 = 1     v_+.v_- = 1      conserved I_3 True, I_5 True
+   Sol 2 S2 : a^2 = -3    beta = -2           h_phi = 3      |v|^2 = 1     v_+.v_- = 7      conserved I_3 True, I_5 True
+   Sol 3 S3 : a^2 = 1/4   beta = 1/2          h_phi = -1/8   |v|^2 = 1/2   v_+.v_- = 0      conserved I_3 True, I_5 True
+   Sol 3 S3': a^2 = 4     beta = -2           h_phi = 3      |v|^2 = 8     v_+.v_- = 0      conserved I_3 True, I_5 True
+
+== N = 0: I_3 = 4 (T_X + T_phi)^2 there; is the whole curve a^2/2 + h_phi = 1 conserved? ==
+   t = 5, Sol 3: generic beta = 1/3, h = 1/18 + sqrt(3)/18, a^2 = 2(1 - h) = 17/9 - sqrt(3)/9: conserved I_3 True, I_5 True
+   t = 5, Sol 3: generic beta = -5/7, h = 25/98 - 5*sqrt(3)/42, a^2 = 2(1 - h) = 5*sqrt(3)/21 + 73/49: conserved I_3 True, I_5 True
+   t = 5, Sol 3: off the curve (beta, a^2) = (1/3, 5/7): I_3 False
+   t = -5, Sol 2: generic beta = 1/3, h = 1/18 - sqrt(3)/18, a^2 = 2(1 - h) = sqrt(3)/9 + 17/9: conserved I_3 True, I_5 True
+   t = -5, Sol 2: generic beta = -5/7, h = 5*sqrt(3)/42 + 25/98, a^2 = 2(1 - h) = 73/49 - 5*sqrt(3)/21: conserved I_3 True, I_5 True
+   t = -5, Sol 2: off the curve (beta, a^2) = (1/3, 5/7): I_3 False
+
+POINTS OK
+
+===== vir2_commutant_w4_w6: argv ['w6_structure.py']  exit 0  15s
+
+=== p = 3/2: t = -17, N = 11/12, rho = 1/12
+   Sol 1 weight 4, pair(s) alone:             commutant dim mod d =  2 ; cylindrical I_3 inside: True  (0s)
+   Sol 1 weight 4, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_3 inside: True  (0s)
+   Sol 1 weight 4, Virasoro beta_+ alone:     commutant dim mod d =  5 ; cylindrical I_3 inside: True  (0s)
+   Sol 1 weight 6, pair(s) alone:             commutant dim mod d =  5 ; cylindrical I_5 inside: True  (1s)
+   Sol 1 weight 6, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_5 inside: True  (2s)
+   Sol 1 weight 6, Virasoro beta_+ alone:     commutant dim mod d = 13 ; cylindrical I_5 inside: True  (2s)
+   Sol 2 weight 4, pair(s) alone:             commutant dim mod d =  2 ; cylindrical I_3 inside: True  (2s)
+   Sol 2 weight 4, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_3 inside: True  (2s)
+   Sol 2 weight 4, Virasoro beta_+ alone:     commutant dim mod d =  5 ; cylindrical I_3 inside: True  (2s)
+   Sol 2 weight 6, pair(s) alone:             commutant dim mod d =  5 ; cylindrical I_5 inside: True  (3s)
+   Sol 2 weight 6, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_5 inside: True  (3s)
+   Sol 2 weight 6, Virasoro beta_+ alone:     commutant dim mod d = 13 ; cylindrical I_5 inside: True  (3s)
+   Sol 3 weight 4, pair(s) alone:             commutant dim mod d =  3 ; cylindrical I_3 inside: True  (3s)
+   Sol 3 weight 4, S3 alone:                  commutant dim mod d =  3 ; cylindrical I_3 inside: True  (3s)
+   Sol 3 weight 4, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_3 inside: True  (4s)
+   Sol 3 weight 4, Virasoro beta_+ alone:     commutant dim mod d =  5 ; cylindrical I_3 inside: True  (4s)
+   Sol 3 weight 6, pair(s) alone:             commutant dim mod d =  7 ; cylindrical I_5 inside: True  (5s)
+   Sol 3 weight 6, S3 alone:                  commutant dim mod d =  7 ; cylindrical I_5 inside: True  (6s)
+   Sol 3 weight 6, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_5 inside: True  (7s)
+   Sol 3 weight 6, Virasoro beta_+ alone:     commutant dim mod d = 13 ; cylindrical I_5 inside: True  (7s)
+
+=== p = -2/3: t = 11/7, N = -46/3, rho = 7/6
+   Sol 1 weight 4, pair(s) alone:             commutant dim mod d =  2 ; cylindrical I_3 inside: True  (7s)
+   Sol 1 weight 4, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_3 inside: True  (7s)
+   Sol 1 weight 4, Virasoro beta_+ alone:     commutant dim mod d =  5 ; cylindrical I_3 inside: True  (7s)
+   Sol 1 weight 6, pair(s) alone:             commutant dim mod d =  5 ; cylindrical I_5 inside: True  (8s)
+   Sol 1 weight 6, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_5 inside: True  (9s)
+   Sol 1 weight 6, Virasoro beta_+ alone:     commutant dim mod d = 13 ; cylindrical I_5 inside: True  (9s)
+   Sol 2 weight 4, pair(s) alone:             commutant dim mod d =  2 ; cylindrical I_3 inside: True  (9s)
+   Sol 2 weight 4, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_3 inside: True  (9s)
+   Sol 2 weight 4, Virasoro beta_+ alone:     commutant dim mod d =  5 ; cylindrical I_3 inside: True  (9s)
+   Sol 2 weight 6, pair(s) alone:             commutant dim mod d =  5 ; cylindrical I_5 inside: True  (10s)
+   Sol 2 weight 6, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_5 inside: True  (10s)
+   Sol 2 weight 6, Virasoro beta_+ alone:     commutant dim mod d = 13 ; cylindrical I_5 inside: True  (10s)
+   Sol 3 weight 4, pair(s) alone:             commutant dim mod d =  3 ; cylindrical I_3 inside: True  (10s)
+   Sol 3 weight 4, S3 alone:                  commutant dim mod d =  3 ; cylindrical I_3 inside: True  (10s)
+   Sol 3 weight 4, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_3 inside: True  (11s)
+   Sol 3 weight 4, Virasoro beta_+ alone:     commutant dim mod d =  5 ; cylindrical I_3 inside: True  (11s)
+   Sol 3 weight 6, pair(s) alone:             commutant dim mod d =  7 ; cylindrical I_5 inside: True  (12s)
+   Sol 3 weight 6, S3 alone:                  commutant dim mod d =  7 ; cylindrical I_5 inside: True  (13s)
+   Sol 3 weight 6, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_5 inside: True  (14s)
+   Sol 3 weight 6, Virasoro beta_+ alone:     commutant dim mod d = 13 ; cylindrical I_5 inside: True  (14s)
+
+== Sol 3: I_3 in U = (X + phi)/sqrt2, W = (phi - X)/sqrt2, symbolic in p ==
+   I_3 (Sol 3) = alpha [(T_U T_U) + (T_W T_W)] + lambda T_U T_W + total derivative, with rho_U = rho_W = (1/p - p)/sqrt2: True
+   alpha = 2*(3*p**2 - 2)   lambda = -12*(p**2 - 2)   c_U = c_W = 1 - 12 rho_U^2 = -(2*p**2 - 3)*(3*p**2 - 2)/p**2
+
+STRUCTURE OK
+
+===== vir2_commutant_w8: argv ['w7_weight8.py']  exit 0  36s
+p = 3/2: t = -17, N = 11/12
+Sol 1 weight 8 (185 monomials): commutant of pair(s) + Virasoro: dim mod d = 1 ; promoted I_7 inside: True  (9s)
+Sol 2 weight 8 (185 monomials): commutant of pair(s) + Virasoro: dim mod d = 1 ; promoted I_7 inside: True  (18s)
+Sol 3 weight 8 (185 monomials): commutant of pair(s) + Virasoro: dim mod d = 1 ; promoted I_7 inside: True  (35s)
+WEIGHT8 OK
+
+===== vir2_spectrum: argv ['w8_spectrum.py']  exit 0  29s
+p = 3/2   Sol 1: commutant dims at weights 2..7: [1, 1, 1, 1, 1, 1]   (X-even + X-odd: ['1e+0o', '0e+1o', '1e+0o', '0e+1o', '1e+0o', '0e+1o'])
+p = 3/2   Sol 2: commutant dims at weights 2..7: [1, 0, 1, 0, 1, 0]   (X-even + X-odd: ['1e+0o', '0e+0o', '1e+0o', '0e+0o', '1e+0o', '0e+0o'])
+p = 3/2   Sol 3: commutant dims at weights 2..7: [1, 0, 1, 0, 1, 0]   (X-even + X-odd: ['1e+0o', '0e+0o', '1e+0o', '0e+0o', '1e+0o', '0e+0o'])
+p = -2/3  Sol 1: commutant dims at weights 2..7: [1, 1, 1, 1, 1, 1]   (X-even + X-odd: ['1e+0o', '0e+1o', '1e+0o', '0e+1o', '1e+0o', '0e+1o'])
+p = -2/3  Sol 2: commutant dims at weights 2..7: [1, 0, 1, 0, 1, 0]   (X-even + X-odd: ['1e+0o', '0e+0o', '1e+0o', '0e+0o', '1e+0o', '0e+0o'])
+p = -2/3  Sol 3: commutant dims at weights 2..7: [1, 0, 1, 0, 1, 0]   (X-even + X-odd: ['1e+0o', '0e+0o', '1e+0o', '0e+0o', '1e+0o', '0e+0o'])
+SPECTRUM OK (Sol 1: one charge at every weight, X-odd at odd weight; Sols 2, 3: even weights only)
+
+===== vir2_main: argv ['w4_main.py']  exit 0  787s
+seal hash ok 9ac0c5560861245c9e33ee228a96c717fa50555b2bf63d9fdde66633b483a499
+24 real-p fibres (N < 1) + 6 imaginary-p fibres (N > 25); t < 0 on 15 of them
+
+== C0: the two-boson images commute ==
+PASS  Sol 1 at p = 3/2: Res I_3(z) I_5(w) (126 monomials) is a total derivative  (1s)
+PASS  Sol 2 at p = 3/2: Res I_3(z) I_5(w) (126 monomials) is a total derivative  (3s)
+PASS  Sol 3 at p = 3/2: Res I_3(z) I_5(w) (126 monomials) is a total derivative  (4s)
+
+== sealed pairs against I_3 and I_5; a = 0 control; joint solution sets ==
+   p = 1/3    t = 19/17    N = -286/3     done  (5s)
+   p = -1/3   t = 19/17    N = -286/3     done  (6s)
+   p = 2/3    t = 11/7     N = -46/3      done  (7s)
+   p = -2/3   t = 11/7     N = -46/3      done  (8s)
+   p = 3/2    t = -17      N = 11/12      done  (9s)
+   p = -3/2   t = -17      N = 11/12      done  (10s)
+   p = 2      t = -3       N = -2         done  (11s)
+   p = -2     t = -3       N = -2         done  (11s)
+   p = 3      t = -11/7    N = -46/3      done  (12s)
+   p = -3     t = -11/7    N = -46/3      done  (13s)
+   p = 4/3    t = 17       N = 11/12      done  (14s)
+   p = -4/3   t = 17       N = 11/12      done  (15s)
+   p = 5/2    t = -33/17   N = -767/100   done  (16s)
+   p = -5/2   t = -33/17   N = -767/100   done  (17s)
+   p = 1/4    t = 33/31    N = -2867/16   done  (18s)
+   p = -1/4   t = 33/31    N = -2867/16   done  (19s)
+   p = 5/3    t = -43/7    N = 26/75      done  (20s)
+   p = -5/3   t = -43/7    N = 26/75      done  (21s)
+   p = 7/2    t = -57/41   N = -4847/196  done  (22s)
+   p = -7/2   t = -57/41   N = -4847/196  done  (23s)
+   p = 3/4    t = 41/23    N = -481/48    done  (24s)
+   p = -3/4   t = 41/23    N = -481/48    done  (25s)
+   p = 6/5    t = 43/7     N = 26/75      done  (26s)
+   p = -6/5   t = 43/7     N = 26/75      done  (27s)
+   p = I/2    t = 7/9      N = 247/4      done  (28s)
+   p = 3*I/2  t = -1/17    N = 301/12     done  (30s)
+   p = 3*I    t = -7/11    N = 124/3      done  (31s)
+   p = 2*I/3  t = 7/11     N = 124/3      done  (33s)
+   p = 5*I/2  t = -17/33   N = 3367/100   done  (34s)
+   p = I/3    t = 17/19    N = 364/3      done  (36s)
+   S1                                     fibres x sols tested  30: conserved vs I_3  30, vs I_5  30
+   Virasoro a=0                           fibres x sols tested 180: conserved vs I_3 180, vs I_5 180
+   generic beta = p/3, a=0 (must fail)    fibres x sols tested  90: conserved vs I_3   0, vs I_5   0
+   S2                                     fibres x sols tested  30: conserved vs I_3  30, vs I_5  30
+   S3                                     fibres x sols tested  30: conserved vs I_3  30, vs I_5  30
+   S3'                                    fibres x sols tested  30: conserved vs I_3  30, vs I_5  30
+HOLDS  S1: Solution 1 pair conserved against I_3 and I_5 at all 30 fibres
+HOLDS  S3: Solution 3 pair conserved against I_3 and I_5 at all 30 fibres
+HOLDS  S2: Solution 2 has a level-3-degenerate pair (beta = -beta_+, a^2 = 1 - p^2 -> -1 at N = 1), I_3 and I_5, all 30 fibres
+S-complete REFUTED on Sol 3 (not exit-setting): the second Sol-3 pair S3' (beta = -p, a^2 = p^2) is conserved against I_5 at 30 of 30 fibres
+PASS  C1: both Virasoro screenings pass I_3 and I_5 at every fibre, every solution (180 tests)
+PASS  C1: a generic pure-phi exponent fails at every fibre
+
+== completeness: all (a^2, beta), a != 0, beta != 0 (Groebner + solve) ==
+   p = 3/2   Sol 1: I_3 alone (5 conditions): [(7/16, -3/4)] ; I_3 and I_5 (21 conditions): [(7/16, -3/4)] ; == listed pairs: True  (36s)
+   p = 3/2   Sol 2: I_3 alone (5 conditions): [(-5/4, -3/2)] ; I_3 and I_5 (21 conditions): [(-5/4, -3/2)] ; == listed pairs: True  (37s)
+   p = 3/2   Sol 3: I_3 alone (5 conditions): [(4/9, 2/3), (9/4, -3/2)] ; I_3 and I_5 (21 conditions): [(4/9, 2/3), (9/4, -3/2)] ; == listed pairs: True  (38s)
+   p = -2/3  Sol 1: I_3 alone (5 conditions): [(8/9, 1/3)] ; I_3 and I_5 (21 conditions): [(8/9, 1/3)] ; == listed pairs: True  (38s)
+   p = -2/3  Sol 2: I_3 alone (5 conditions): [(5/9, 2/3)] ; I_3 and I_5 (21 conditions): [(5/9, 2/3)] ; == listed pairs: True  (39s)
+   p = -2/3  Sol 3: I_3 alone (5 conditions): [(4/9, 2/3), (9/4, -3/2)] ; I_3 and I_5 (21 conditions): [(4/9, 2/3), (9/4, -3/2)] ; == listed pairs: True  (40s)
+   p = 3     Sol 1: I_3 alone (5 conditions): [(-5/4, -3/2)] ; I_3 and I_5 (21 conditions): [(-5/4, -3/2)] ; == listed pairs: True  (40s)
+   p = 3     Sol 2: I_3 alone (5 conditions): [(-8, -3)] ; I_3 and I_5 (21 conditions): [(-8, -3)] ; == listed pairs: True  (41s)
+   p = 3     Sol 3: I_3 alone (5 conditions): [(1/9, 1/3), (9, -3)] ; I_3 and I_5 (21 conditions): [(1/9, 1/3), (9, -3)] ; == listed pairs: True  (42s)
+   p = 1/4   Sol 1: I_3 alone (5 conditions): [(63/64, -1/8)] ; I_3 and I_5 (21 conditions): [(63/64, -1/8)] ; == listed pairs: True  (43s)
+   p = 1/4   Sol 2: I_3 alone (5 conditions): [(15/16, -1/4)] ; I_3 and I_5 (21 conditions): [(15/16, -1/4)] ; == listed pairs: True  (43s)
+   p = 1/4   Sol 3: I_3 alone (5 conditions): [(1/16, -1/4), (16, 4)] ; I_3 and I_5 (21 conditions): [(1/16, -1/4), (16, 4)] ; == listed pairs: True  (44s)
+   p = 3*I/2 Sol 1: I_3 alone (5 conditions): [(25/16, -3*I/4)] ; I_3 and I_5 (21 conditions): [(25/16, -3*I/4)] ; == listed pairs: True  (45s)
+   p = 3*I/2 Sol 2: I_3 alone (5 conditions): [(13/4, -3*I/2)] ; I_3 and I_5 (21 conditions): [(13/4, -3*I/2)] ; == listed pairs: True  (46s)
+   p = 3*I/2 Sol 3: I_3 alone (5 conditions): [(-4/9, -2*I/3), (-9/4, -3*I/2)] ; I_3 and I_5 (21 conditions): [(-4/9, -2*I/3), (-9/4, -3*I/2)] ; == listed pairs: True  (47s)
+   p = 3*I   Sol 1: I_3 alone (5 conditions): [(13/4, -3*I/2)] ; I_3 and I_5 (21 conditions): [(13/4, -3*I/2)] ; == listed pairs: True  (47s)
+   p = 3*I   Sol 2: I_3 alone (5 conditions): [(10, -3*I)] ; I_3 and I_5 (21 conditions): [(10, -3*I)] ; == listed pairs: True  (48s)
+   p = 3*I   Sol 3: I_3 alone (5 conditions): [(-1/9, -I/3), (-9, -3*I)] ; I_3 and I_5 (21 conditions): [(-1/9, -I/3), (-9, -3*I)] ; == listed pairs: True  (49s)
+HOLDS  the mixed solution set of {I_3} and of {I_3, I_5} is exactly S1 | S2 | {S3, S3'} at 6 fibres
+
+== hold-outs: I_7 (sealed), I_9 (post-seal bonus), promoted charges ==
+   I_7 at p = 3/2   (54-monomial images) done  (64s)
+   I_7 at p = -2/3  (54-monomial images) done  (79s)
+   I_7 at p = 3     (54-monomial images) done  (95s)
+   I_7 at p = -5/2  (54-monomial images) done  (110s)
+   I_7 at p = 3*I/2 (54-monomial images) done  (128s)
+   I_7 at p = I/2   (54-monomial images) done  (147s)
+   I_9 at p = 3/2   (121-monomial images) done  (349s)
+   I_9 at p = -2/3  (121-monomial images) done  (552s)
+   I_9 at p = 3*I/2 (121-monomial images) done  (777s)
+   I_7  S3'                    conserved at 6 of 6
+   I_7  S1                     conserved at 6 of 6
+   I_7  S2                     conserved at 6 of 6
+   I_7  S3                     conserved at 6 of 6
+   I_7  Virasoro               conserved at 18 of 18
+   I_7  negative (wrong a^2)   conserved at 0 of 18
+   I_9  S3'                    conserved at 3 of 3
+   I_9  S1                     conserved at 3 of 3
+   I_9  S2                     conserved at 3 of 3
+   I_9  S3                     conserved at 3 of 3
+   I_9  Virasoro               conserved at 9 of 9
+   I_9  negative (wrong a^2)   conserved at 0 of 9
+HOLDS  S1 hold-out: conserved against I_7 at all tested fibres
+HOLDS  S3 hold-out: conserved against I_7 at all tested fibres
+PASS  C1: Virasoro screenings pass I_7
+PASS  C5: a wrong a^2 fails I_7 everywhere
+
+== C2: prior-art controls ==
+PASS  p = 2i is the exact point of Sol 1: t = -1/3, N = 28, rho = 3*I/2
+PASS  Sol 1 at (28,-9): pure-X (a^2, beta) = (2, 0) conserved against I_3 and I_5
+PASS  Sol 1 at (28,-9): a^2 = 3 is NOT (non-root control)
+PASS  Sol 1 at a generic fibre: pure-X a^2 = 2 is NOT conserved (1 conditions nonzero)
+PASS  N = 1, Sol 1: BOP's (a^2, beta^2) = (1/2, 1/2), beta = +1/sqrt2: I_3 and I_5
+PASS  N = 1, Sol 1: BOP's (a^2, beta^2) = (1/2, 1/2), beta = -1/sqrt2: I_3 and I_5
+PASS  N = 1, Sol 3: BOP's (a^2, beta^2) = (1/2, 1/2), beta = +1/sqrt2: I_3 and I_5
+PASS  N = 1, Sol 3: BOP's (a^2, beta^2) = (1/2, 1/2), beta = -1/sqrt2: I_3 and I_5
+PASS  N = 1, Sol 2: (a^2, beta^2) = (-1, 2) [BOP's N = 1 value for Solution 2]: I_3 and I_5
+   N = 1, Sol 1: the branch (a^2, beta^2) = (2, 2): I_3 True, I_5 True
+   N = 1, Sol 3: the branch (a^2, beta^2) = (2, 2): I_3 True, I_5 True
+
+== C3: tampers ==
+PASS  tamper A (rho -> -rho), Sol 1: S1 fails, its mirror beta -> -beta passes
+PASS  tamper B (rho^2 from N+1, rho = sqrt(11)*I/12), Sol 1: S1 fails I_3 (4) and I_5 (15 conditions nonzero)
+PASS  tamper B' (rho -> rho + 1/5, wrong central charge), Sol 1: the two-boson images of I_3, I_5 no longer commute
+PASS  tamper A (rho -> -rho), Sol 2: S2 fails, its mirror beta -> -beta passes
+PASS  tamper B (rho^2 from N+1, rho = sqrt(11)*I/12), Sol 2: S2 fails I_3 (4) and I_5 (15 conditions nonzero)
+PASS  tamper B' (rho -> rho + 1/5, wrong central charge), Sol 2: the two-boson images of I_3, I_5 no longer commute
+PASS  tamper A (rho -> -rho), Sol 3: S3 fails, its mirror beta -> -beta passes
+PASS  tamper B (rho^2 from N+1, rho = sqrt(11)*I/12), Sol 3: S3 fails I_3 (4) and I_5 (15 conditions nonzero)
+PASS  tamper B' (rho -> rho + 1/5, wrong central charge), Sol 3: the two-boson images of I_3, I_5 no longer commute
+
+== C4 plant, C5 vacuity ==
+PASS  plant, Sol 1: I_5 + (1/1000) x1^2 f2^2 is flagged for S1 (11 conditions nonzero)
+PASS  vacuity, Sol 1: a generic (a^2, beta) = (5/3, 2/7) fails: 5 of I_3's and 16 of I_5's conditions nonzero
+PASS  plant, Sol 2: I_5 + (1/1000) x1^2 f2^2 is flagged for S2 (11 conditions nonzero)
+PASS  vacuity, Sol 2: a generic (a^2, beta) = (5/3, 2/7) fails: 5 of I_3's and 16 of I_5's conditions nonzero
+PASS  plant, Sol 3: I_5 + (1/1000) x1^2 f2^2 is flagged for S3 (11 conditions nonzero)
+PASS  vacuity, Sol 3: a generic (a^2, beta) = (5/3, 2/7) fails: 5 of I_3's and 16 of I_5's conditions nonzero
+
+total 787s
+RESULT: S1 and S3 CONFIRMED against I_3, I_5 and the I_7 hold-out; all controls fired
+
+===== vir2r_engine_control: argv ['ctrl_e.py']  exit 0  0s
+N = 3: :TT:: formal-N engine == explicit engine: True  (9 monomials)
+N = 3: :T:TT::: formal-N engine == explicit engine: True  (25 monomials)
+N = 3: :dT T:: formal-N engine == explicit engine: True  (12 monomials)
+N = 3: T T pole 4: formal-N engine == explicit engine: True  (1 monomials)
+N = 3: :(dXdX T) T: pole 2: formal-N engine == explicit engine: True  (5 monomials)
+N = 4: :TT:: formal-N engine == explicit engine: True  (14 monomials)
+N = 4: :T:TT::: formal-N engine == explicit engine: True  (44 monomials)
+N = 4: :dT T:: formal-N engine == explicit engine: True  (20 monomials)
+N = 4: T T pole 4: formal-N engine == explicit engine: True  (1 monomials)
+N = 4: :(dXdX T) T: pole 2: formal-N engine == explicit engine: True  (6 monomials)
+control (e): True
+
+===== vir2r_replication: argv ['vir2r.py']  exit 0  192s
+== Sol 1, p = 8/5: t = -57/7, N = 253/400 (= 1 - 12 rho^2, rho = 7/40), s = 1197/400  (inputs 0 s)
+SEALED TEST VIR1 at Sol 1 p = 8/5, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 8/5 I_3 vs pair (beta = -4/5, a^2 = 9/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(8/5 phi) conserved for I_3 (Sol 1, p = 8/5): True
+CONTROL (c) Virasoro screening exp(-5/4 phi) conserved for I_3 (Sol 1, p = 8/5): True
+      (0 s)
+SEALED TEST VIR1 at Sol 1 p = 8/5, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 8/5 I_5 vs pair (beta = -4/5, a^2 = 9/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(8/5 phi) conserved for I_5 (Sol 1, p = 8/5): True
+CONTROL (c) Virasoro screening exp(-5/4 phi) conserved for I_5 (Sol 1, p = 8/5): True
+      (1 s)
+SEALED TEST VIR1 at Sol 1 p = 8/5, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 8/5 I_7 vs pair (beta = -4/5, a^2 = 9/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(8/5 phi) conserved for I_7 (Sol 1, p = 8/5): True
+CONTROL (c) Virasoro screening exp(-5/4 phi) conserved for I_7 (Sol 1, p = 8/5): True
+      (17 s)
+CONTROL (a) a^2 + 1/10 (pair, Sol 1) FAILS on I_5: True
+CONTROL (d) generic (a^2, beta) = (2/7, 3/11) FAILS on I_5 (Sol 1): True
+CONTROL (b) rho -> -rho translation FAILS for pair on I_5 (Sol 1): True
+CONTROL (f) sanity: a total derivative passes V_+- (Sol 1): True
+== Sol 1, p = 6/5: t = 43/7, N = 26/75 (= 1 - 12 rho^2, rho = -7/30), s = -301/75  (inputs 0 s)
+SEALED TEST VIR1 at Sol 1 p = 6/5, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 6/5 I_3 vs pair (beta = -3/5, a^2 = 16/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(6/5 phi) conserved for I_3 (Sol 1, p = 6/5): True
+CONTROL (c) Virasoro screening exp(-5/3 phi) conserved for I_3 (Sol 1, p = 6/5): True
+      (0 s)
+SEALED TEST VIR1 at Sol 1 p = 6/5, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 6/5 I_5 vs pair (beta = -3/5, a^2 = 16/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(6/5 phi) conserved for I_5 (Sol 1, p = 6/5): True
+CONTROL (c) Virasoro screening exp(-5/3 phi) conserved for I_5 (Sol 1, p = 6/5): True
+      (1 s)
+SEALED TEST VIR1 at Sol 1 p = 6/5, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 6/5 I_7 vs pair (beta = -3/5, a^2 = 16/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(6/5 phi) conserved for I_7 (Sol 1, p = 6/5): True
+CONTROL (c) Virasoro screening exp(-5/3 phi) conserved for I_7 (Sol 1, p = 6/5): True
+      (17 s)
+== Sol 1, p = 40/29: t = 1641/41, N = 331357/336400 (= 1 - 12 rho^2, rho = -41/1160), s = -201843/336400  (inputs 0 s)
+SEALED TEST VIR1 at Sol 1 p = 40/29, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 40/29 I_3 vs pair (beta = -20/29, a^2 = 441/841): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(40/29 phi) conserved for I_3 (Sol 1, p = 40/29): True
+CONTROL (c) Virasoro screening exp(-29/20 phi) conserved for I_3 (Sol 1, p = 40/29): True
+      (0 s)
+SEALED TEST VIR1 at Sol 1 p = 40/29, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 40/29 I_5 vs pair (beta = -20/29, a^2 = 441/841): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(40/29 phi) conserved for I_5 (Sol 1, p = 40/29): True
+CONTROL (c) Virasoro screening exp(-29/20 phi) conserved for I_5 (Sol 1, p = 40/29): True
+      (1 s)
+SEALED TEST VIR1 at Sol 1 p = 40/29, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 40/29 I_7 vs pair (beta = -20/29, a^2 = 441/841): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(40/29 phi) conserved for I_7 (Sol 1, p = 40/29): True
+CONTROL (c) Virasoro screening exp(-29/20 phi) conserved for I_7 (Sol 1, p = 40/29): True
+      (17 s)
+== Sol 2, p = 4/5: t = 33/17, N = -767/100 (= 1 - 12 rho^2, rho = -17/20), s = -1683/100  (inputs 0 s)
+SEALED TEST VIR1 at Sol 2 p = 4/5, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 4/5 I_3 vs pair (beta = -4/5, a^2 = 9/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(4/5 phi) conserved for I_3 (Sol 2, p = 4/5): True
+CONTROL (c) Virasoro screening exp(-5/2 phi) conserved for I_3 (Sol 2, p = 4/5): True
+      (0 s)
+SEALED TEST VIR1 at Sol 2 p = 4/5, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 4/5 I_5 vs pair (beta = -4/5, a^2 = 9/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(4/5 phi) conserved for I_5 (Sol 2, p = 4/5): True
+CONTROL (c) Virasoro screening exp(-5/2 phi) conserved for I_5 (Sol 2, p = 4/5): True
+      (1 s)
+SEALED TEST VIR1 at Sol 2 p = 4/5, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 4/5 I_7 vs pair (beta = -4/5, a^2 = 9/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(4/5 phi) conserved for I_7 (Sol 2, p = 4/5): True
+CONTROL (c) Virasoro screening exp(-5/2 phi) conserved for I_7 (Sol 2, p = 4/5): True
+      (17 s)
+CONTROL (a) a^2 + 1/10 (pair, Sol 2) FAILS on I_5: True
+CONTROL (d) generic (a^2, beta) = (2/7, 3/11) FAILS on I_5 (Sol 2): True
+CONTROL (b) rho -> -rho translation FAILS for pair on I_5 (Sol 2): True
+CONTROL (f) sanity: a total derivative passes V_+- (Sol 2): True
+== Sol 2, p = 3/5: t = 59/41, N = -1606/75 (= 1 - 12 rho^2, rho = -41/30), s = -2419/75  (inputs 0 s)
+SEALED TEST VIR1 at Sol 2 p = 3/5, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 3/5 I_3 vs pair (beta = -3/5, a^2 = 16/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(3/5 phi) conserved for I_3 (Sol 2, p = 3/5): True
+CONTROL (c) Virasoro screening exp(-10/3 phi) conserved for I_3 (Sol 2, p = 3/5): True
+      (0 s)
+SEALED TEST VIR1 at Sol 2 p = 3/5, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 3/5 I_5 vs pair (beta = -3/5, a^2 = 16/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(3/5 phi) conserved for I_5 (Sol 2, p = 3/5): True
+CONTROL (c) Virasoro screening exp(-10/3 phi) conserved for I_5 (Sol 2, p = 3/5): True
+      (1 s)
+SEALED TEST VIR1 at Sol 2 p = 3/5, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 3/5 I_7 vs pair (beta = -3/5, a^2 = 16/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(3/5 phi) conserved for I_7 (Sol 2, p = 3/5): True
+CONTROL (c) Virasoro screening exp(-10/3 phi) conserved for I_7 (Sol 2, p = 3/5): True
+      (17 s)
+== Sol 2, p = 8/17: t = 321/257, N = -193523/4624 (= 1 - 12 rho^2, rho = -257/136), s = -247491/4624  (inputs 0 s)
+SEALED TEST VIR1 at Sol 2 p = 8/17, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 8/17 I_3 vs pair (beta = -8/17, a^2 = 225/289): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(8/17 phi) conserved for I_3 (Sol 2, p = 8/17): True
+CONTROL (c) Virasoro screening exp(-17/4 phi) conserved for I_3 (Sol 2, p = 8/17): True
+      (0 s)
+SEALED TEST VIR1 at Sol 2 p = 8/17, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 8/17 I_5 vs pair (beta = -8/17, a^2 = 225/289): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(8/17 phi) conserved for I_5 (Sol 2, p = 8/17): True
+CONTROL (c) Virasoro screening exp(-17/4 phi) conserved for I_5 (Sol 2, p = 8/17): True
+      (1 s)
+SEALED TEST VIR1 at Sol 2 p = 8/17, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 8/17 I_7 vs pair (beta = -8/17, a^2 = 225/289): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(8/17 phi) conserved for I_7 (Sol 2, p = 8/17): True
+CONTROL (c) Virasoro screening exp(-17/4 phi) conserved for I_7 (Sol 2, p = 8/17): True
+      (17 s)
+== Sol 3, p = 1/2: t = 9/7, N = -143/4 (= 1 - 12 rho^2, rho = -7/4), s = -189/4  (inputs 0 s)
+SEALED TEST VIR1 at Sol 3 p = 1/2, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 1/2 I_3 vs pair A (beta = 2, a^2 = 4): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 1/2 I_3 vs pair B (beta = -1/2, a^2 = 1/4): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(1/2 phi) conserved for I_3 (Sol 3, p = 1/2): True
+CONTROL (c) Virasoro screening exp(-4 phi) conserved for I_3 (Sol 3, p = 1/2): True
+      (0 s)
+SEALED TEST VIR1 at Sol 3 p = 1/2, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 1/2 I_5 vs pair A (beta = 2, a^2 = 4): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 1/2 I_5 vs pair B (beta = -1/2, a^2 = 1/4): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(1/2 phi) conserved for I_5 (Sol 3, p = 1/2): True
+CONTROL (c) Virasoro screening exp(-4 phi) conserved for I_5 (Sol 3, p = 1/2): True
+      (1 s)
+SEALED TEST VIR1 at Sol 3 p = 1/2, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 1/2 I_7 vs pair A (beta = 2, a^2 = 4): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 1/2 I_7 vs pair B (beta = -1/2, a^2 = 1/4): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(1/2 phi) conserved for I_7 (Sol 3, p = 1/2): True
+CONTROL (c) Virasoro screening exp(-4 phi) conserved for I_7 (Sol 3, p = 1/2): True
+      (20 s)
+CONTROL (a) a^2 + 1/10 (pair A, Sol 3) FAILS on I_5: True
+CONTROL (a) a^2 + 1/10 (pair B, Sol 3) FAILS on I_5: True
+CONTROL (d) generic (a^2, beta) = (2/7, 3/11) FAILS on I_5 (Sol 3): True
+CONTROL (b) rho -> -rho translation FAILS for pair A on I_5 (Sol 3): True
+CONTROL (f) sanity: a total derivative passes V_+- (Sol 3): True
+== Sol 3, p = 2/3: t = 11/7, N = -46/3 (= 1 - 12 rho^2, rho = -7/6), s = -77/3  (inputs 0 s)
+SEALED TEST VIR1 at Sol 3 p = 2/3, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 2/3 I_3 vs pair A (beta = 3/2, a^2 = 9/4): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 2/3 I_3 vs pair B (beta = -2/3, a^2 = 4/9): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(2/3 phi) conserved for I_3 (Sol 3, p = 2/3): True
+CONTROL (c) Virasoro screening exp(-3 phi) conserved for I_3 (Sol 3, p = 2/3): True
+      (0 s)
+SEALED TEST VIR1 at Sol 3 p = 2/3, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 2/3 I_5 vs pair A (beta = 3/2, a^2 = 9/4): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 2/3 I_5 vs pair B (beta = -2/3, a^2 = 4/9): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(2/3 phi) conserved for I_5 (Sol 3, p = 2/3): True
+CONTROL (c) Virasoro screening exp(-3 phi) conserved for I_5 (Sol 3, p = 2/3): True
+      (1 s)
+SEALED TEST VIR1 at Sol 3 p = 2/3, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 2/3 I_7 vs pair A (beta = 3/2, a^2 = 9/4): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 2/3 I_7 vs pair B (beta = -2/3, a^2 = 4/9): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(2/3 phi) conserved for I_7 (Sol 3, p = 2/3): True
+CONTROL (c) Virasoro screening exp(-3 phi) conserved for I_7 (Sol 3, p = 2/3): True
+      (20 s)
+== Sol 3, p = 3/2: t = -17, N = 11/12 (= 1 - 12 rho^2, rho = 1/12), s = 17/12  (inputs 0 s)
+SEALED TEST VIR1 at Sol 3 p = 3/2, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 3/2 I_3 vs pair A (beta = 2/3, a^2 = 4/9): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 3/2 I_3 vs pair B (beta = -3/2, a^2 = 9/4): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(3/2 phi) conserved for I_3 (Sol 3, p = 3/2): True
+CONTROL (c) Virasoro screening exp(-4/3 phi) conserved for I_3 (Sol 3, p = 3/2): True
+      (0 s)
+SEALED TEST VIR1 at Sol 3 p = 3/2, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 3/2 I_5 vs pair A (beta = 2/3, a^2 = 4/9): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 3/2 I_5 vs pair B (beta = -3/2, a^2 = 9/4): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(3/2 phi) conserved for I_5 (Sol 3, p = 3/2): True
+CONTROL (c) Virasoro screening exp(-4/3 phi) conserved for I_5 (Sol 3, p = 3/2): True
+      (1 s)
+SEALED TEST VIR1 at Sol 3 p = 3/2, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 3/2 I_7 vs pair A (beta = 2/3, a^2 = 4/9): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 3/2 I_7 vs pair B (beta = -3/2, a^2 = 9/4): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(3/2 phi) conserved for I_7 (Sol 3, p = 3/2): True
+CONTROL (c) Virasoro screening exp(-4/3 phi) conserved for I_7 (Sol 3, p = 3/2): True
+      (20 s)
+conservation phase done (171 s)
+SEALED TEST COMMUTANT Sol 1 p = 8/5 weight 4: dim mod d = 1 (proj rank 11 - d-image 10); == 1 and spanned by I_3 (in commutant by conservation; not a total derivative: True): True
+      (0 s)
+SEALED TEST COMMUTANT Sol 1 p = 8/5 weight 6: dim mod d = 1 (proj rank 37 - d-image 36); == 1 and spanned by I_5 (in commutant by conservation; not a total derivative: True): True
+      (0 s)
+SEALED TEST COMMUTANT Sol 1 p = 8/5 weight 8: dim mod d = 1 (proj rank 111 - d-image 110); == 1 and spanned by I_7 (in commutant by conservation; not a total derivative: True): True
+      (7 s)
+SEALED TEST COMMUTANT Sol 2 p = 4/5 weight 4: dim mod d = 1 (proj rank 11 - d-image 10); == 1 and spanned by I_3 (in commutant by conservation; not a total derivative: True): True
+      (0 s)
+SEALED TEST COMMUTANT Sol 2 p = 4/5 weight 6: dim mod d = 1 (proj rank 37 - d-image 36); == 1 and spanned by I_5 (in commutant by conservation; not a total derivative: True): True
+      (0 s)
+SEALED TEST COMMUTANT Sol 2 p = 4/5 weight 8: dim mod d = 1 (proj rank 111 - d-image 110); == 1 and spanned by I_7 (in commutant by conservation; not a total derivative: True): True
+      (7 s)
+SEALED TEST COMMUTANT Sol 3 p = 1/2 weight 4: dim mod d = 1 (proj rank 11 - d-image 10); == 1 and spanned by I_3 (in commutant by conservation; not a total derivative: True): True
+      (0 s)
+SEALED TEST COMMUTANT Sol 3 p = 1/2 weight 6: dim mod d = 1 (proj rank 37 - d-image 36); == 1 and spanned by I_5 (in commutant by conservation; not a total derivative: True): True
+      (0 s)
+SEALED TEST COMMUTANT Sol 3 p = 1/2 weight 8: dim mod d = 1 (proj rank 111 - d-image 110); == 1 and spanned by I_7 (in commutant by conservation; not a total derivative: True): True
+      (7 s)
+done (192 s)
+controls passed; sealed prediction holds -> exit 0
+
+===== vir2r_posthoc_vir_alone: argv ['posthoc_viralone.py']  exit 0  7s
+Sol 1 p = 8/5, weight 4: commutant mod d with exp(p phi) only: 5; with exp(p phi) + V_+ only: 2
+Sol 1 p = 8/5, weight 6: commutant mod d with exp(p phi) only: 13; with exp(p phi) + V_+ only: 5
+Sol 1 p = 8/5, weight 8: commutant mod d with exp(p phi) only: 30; with exp(p phi) + V_+ only: 11
+
+===== red1_anchor_operator: argv ['a_op.py']  exit 0  2s
+(0) rescaling (R3): symbol identities hold: True  [P = n^4 (tau^2-PX^2/p^2)(tau^2-pi^2/p^2); middle = n x^c (tau - (1+M)/2); 1 + M = 1/p^2]
+    limit k -> oo: 1/p^2 -> 1, (1+M)/2 -> 1/2, exponent 1+M -> 1: True
+A1: terminating solutions at En = N + 1/2 + rho for rho in {+-PX, +-pi}, N = 0..3: True; generic En does not terminate: True
+A2: L_inf Frobenius solution = xi^rho 1F3(rho + 1/2 - En; 2rho+1, rho-pi+1, rho+pi+1; xi); oscillator = xi^rho 1F1(rho + 1/2 - En; 2rho+1; xi): True
+    oscillator: y^2 x [Schrodinger operator on y^(1/2) e^(-y^2/2) chi(y^2)] == -4 x [(th^2 - (lam/2)^2) - xi (th + 1/2 - E/4)] chi: True
+(A) operator level: AS SEALED
+
+===== red1_anchor_charges: argv ['a_ch.py']  exit 0  30s
+A3 spin 1: monic oscillator charge == 2^2 B_2(1/2 + l/2): True
+A3 spin 3: monic oscillator charge == 2^4 B_4(1/2 + l/2): True
+A3 spin 5: monic oscillator charge == 2^6 B_6(1/2 + l/2): True
+A3 spin 7: monic oscillator charge == 2^8 B_8(1/2 + l/2): True
+A3 spin 9: monic oscillator charge == 2^10 B_10(1/2 + l/2): True
+   k = 1e4 done (16s)
+   k = 1e8 done (30s)
+A4 spin 1: max|monic F - (B(1/2+PX) + B(1/2+pi))| = 0.0000e+00 (k=1e4), 0.0000e+00 (k=1e8), ratio inf -> O(1/k);   control without 1/2: 1.000e+00 (k=1e8)
+A4 spin 3: max|monic F - (B(1/2+PX) + B(1/2+pi))| = 5.9994e-04 (k=1e4), 6.0000e-08 (k=1e8), ratio 9.9990e+03 -> O(1/k);   control without 1/2: 2.000e+00 (k=1e8)
+A4 spin 5: max|monic F - (B(1/2+PX) + B(1/2+pi))| = 7.4989e-04 (k=1e4), 7.5000e-08 (k=1e8), ratio 9.9985e+03 -> O(1/k);   control without 1/2: 3.750e+00 (k=1e8)
+A4 spin 7: max|monic F - (B(1/2+PX) + B(1/2+pi))| = 1.5163e-03 (k=1e4), 1.5167e-07 (k=1e8), ratio 9.9975e+03 -> O(1/k);   control without 1/2: 7.000e+00 (k=1e8)
+A4 spin 9: max|monic F - (B(1/2+PX) + B(1/2+pi))| = 3.0926e-03 (k=1e4), 3.0937e-07 (k=1e8), ratio 9.9962e+03 -> O(1/k);   control without 1/2: 1.312e+01 (k=1e8)
+(A) charge level: AS SEALED | control fires: True
+
+===== red1_n0_operator: argv ['b_op.py']  exit 0  1s
+Sol 3: zeta^4 coefficient minus the characteristic polynomial (th**4 - th): 0
+       zeta^3 coefficient at the double root: 0
+       zeta^2 coefficient = 6*gamma**2*th**2 * [ (D - d0)^2 - nu^2 ],  d0 = (-gamma + q)/gamma
+       nu^2 (general k, symbols a2, b2, gamma) = (a2 + b2 - gamma**2)/(6*gamma**2)
+       at N = 0 (k -> -4): nu^2 = 2*PI**2 + 2*PX**2 - 1/6 ;  == 2(PX^2 + pi^2) - 1/6 = 4 Delta: True
+       double scaling: lim (1/eps)[1 - (Et/E_0) zeta^(-eps)] = -e + log(Z)   (expected log Z - e)
+       limit operator: gamma^2-normalised  [ (D - d0)^2 - nu^2 ] chi + (E_0/lead) Z^2 (log Z - e) chi = 0,  E_0 = -3*th/4, E_0/lead = -1/(8*gamma**2*th)
+       remaining coefficients at zeta^j, j in [0, 1]: suppressed by eps^((2-j)/2) -> 0
+Sol 2: zeta^3 coefficient minus the characteristic polynomial (th**3 - th**2): 0
+       zeta^2 coefficient at the double root: 0
+       zeta^1 coefficient = gamma**2 * [ (D - d0)^2 - nu^2 ],  d0 = (-gamma + 2*q)/(2*gamma)
+       nu^2 (general k, symbols a2, b2, gamma) = -(6*a2 - 4*b2 + gamma**2)/(6*gamma**2)
+       at N = 0 (k -> -3/2): nu^2 = 2*PI**2 + 2*PX**2 - 1/6 ;  == 2(PX^2 + pi^2) - 1/6 = 4 Delta: True
+       double scaling: lim (1/eps)[1 - (Et/E_0) zeta^(-eps)] = -e + log(Z)   (expected log Z - e)
+       limit operator: gamma^2-normalised  [ (D - d0)^2 - nu^2 ] chi + (E_0/lead) Z^2 (log Z - e) chi = 0,  E_0 = -4/27, E_0/lead = -4/(27*gamma**2)
+       remaining coefficients at zeta^j, j in [0]: suppressed by eps^((1-j)/2) -> 0
+(B) operator level (real): AS SEALED
+
+===== red1_n0_charges: argv ['b_ch.py']  exit 0  74s
+BLZ engine at M = 1e-8, 1e-16 done (10s)
+B1 Sol 3, k -> -4, t = 5: operator runs done (41s)
+   spin 3: |operator - certified table| = 6.667e-09, 6.667e-17 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 6.667e-09, 6.667e-17 (O(h))
+   spin 5: |operator - certified table| = 1.200e-08, 1.200e-16 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 3.700e-08, 3.700e-16 (O(h))
+   spin 7: |operator - certified table| = 3.857e-08, 3.857e-16 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 1.254e-07, 1.254e-15 (O(h))
+   spin 9: |operator - certified table| = 1.667e-07, 1.667e-15 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 5.536e-07, 5.536e-15 (O(h)); vs item 271 printed polynomial (h = 1e-16): 3.088e-17
+B2 Sol 2, k -> -3/2, t = -5: operator runs done (73s)
+   spin 3: |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 1.111e-08, 1.111e-16 (O(h))
+   spin 5: |operator - certified table| = 3.600e-08, 3.600e-16 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 3.600e-08, 3.600e-16 (O(h))
+   spin 7: |operator - certified table| = 1.371e-07, 1.371e-15 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 8.000e-08, 8.000e-16 (O(h))
+   spin 9: |operator - certified table| = 5.417e-07, 5.417e-15 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 2.784e-07, 2.784e-15 (O(h)); vs item 271 printed polynomial (h = 1e-16): 4.940e-16
+(B) charge level: AS SEALED
+
+===== red2_paperclip_sol1_and_exact_local: argv ['b1_a1_checks.py']  exit 0  0s
+B1(i) Erdelyi-Kober term identity k = 0..6: True
+B1(ii) a invariant under (alpha, l) -> (alpha - 2 delta, l + delta): True
+B1(iii) B_2: single member P_X-odd part nonzero: True;  P_X-even part == (1/2) sum over the doublet: True
+B1(iii) B_4: single member P_X-odd part nonzero: True;  P_X-even part == (1/2) sum over the doublet: True
+B1(iii) B_6: single member P_X-odd part nonzero: True;  P_X-even part == (1/2) sum over the doublet: True
+B1(iii) B_8: single member P_X-odd part nonzero: True;  P_X-even part == (1/2) sum over the doublet: True
+B1(iii) B_10: single member P_X-odd part nonzero: True;  P_X-even part == (1/2) sum over the doublet: True
+A1(i) orders of Lambda dw^2 at (w = 0, 1, infinity): Suzuki(M = -2): (-5/2, 1, -5/2)   pillow (t = -1/3): (-1/2, -1, -5/2)
+A1(ii) kappa-odd part of the transformed normal form: alpha*kappa*U(f(z))*Derivative(f(z), z)**2  == kappa alpha f'^2 U(f): True
+
+===== red2_paperclip_sol3_tensor: argv ['b2_coulomb.py']  exit 0  1s
+tensor product of two Coulomb problems, denominator 1
+   x^0 D^0: lam_m**2 - 2*lam_m*lam_p - 2*lam_m + lam_p**2 - 2*lam_p
+   x^0 D^1: 2*(2*lam_m + 2*lam_p - 1)
+   x^0 D^2: -2*lam_m - 2*lam_p + 5
+   x^0 D^3: -4
+   x^0 D^4: 1
+   x^1 D^1: 2
+   x^1 D^2: -4
+   x^2 D^1: 4*E
+   x^2 D^2: 4*E
+exact solve T(gauged, scaled) == S over (g, mu, lam_p, lam_m, C): [{C: 0, g: 1/2, lam_m: l0**2/4 - l0*l1/2 + l1**2/4 - 1/4, lam_p: (l0 + l1 - 1)*(l0 + l1 + 1)/4, mu: 0}, {C: 0, g: 1/2, lam_m: l0**2/4 + l0*l1/2 + l1**2/4 - 1/4, lam_p: (l0 - l1 - 1)*(l0 - l1 + 1)/4, mu: 0}]
+  check residual zero: False
+  check residual zero: False
+
+===== red2_paperclip_sol3_mellin: argv ['b2_mellin.py']  exit 0  1s
+x^0 parts equal (P4): True
+solve for (rho, mu) making the recurrences identical: [{C: 4, mu: rho}, {mu: 0, rho: 0}]
+  identity in nu: True (residuals 0 0 )
+  identity in nu: False (residuals C*(nu**2 - 3*nu + 2) C*E*(-nu**2 + 5*nu - 6) )
+NEGATIVE CONTROL (wrong multiplier Gamma(nu+1)/Gamma(nu-1)) constant solutions (must be none): [{C: 0, mu: 0}, {C: 4*(nu - 2)*(2*nu - 1)/((nu - 1)*(2*nu - 3)), mu: 2*rho*(nu - 2)/(2*nu - 3)}]
+NEGATIVE CONTROL (unrotated momenta) x^0 parts equal: False
+
+===== red2_exact_laplace: argv ['a2_laplace.py']  exit 0  0s
+L4 indicial polynomial at p = i sqrt(E): 2*r*sqrt(-E)*(r - 2)*(r - 1)*(r + 1) -> exponents [-1, 0, 1, 2]
+pillow V(0) = 1/16  -> psi ~ w^(+-sqrt(V0)) = w^(+- 1/4 ): exponent difference 1/2 (in s = sqrt(w): 1 )
+pillow V(1) = -X/2  -> psi ~ (1-w)^(+-sqrt(V1)): exponent difference sqrt(2)*sqrt(-X) (momentum-dependent; generic irrational)
+CONCLUSION (exponent obstruction): every exponent difference of L4 at its finite singular points is an integer; the pillow X-point difference
+  2 sqrt(-X/2) is not an integer for generic X, and no ramified map makes it one. So the pillow is not a right factor of L4, nor is its symmetric
+  cube equal to L4, for ANY identification sending the pillow X-point to p = +-i sqrt(E).  Identifications sending it to p = infinity (irregular) NOT tested.
+
+===== pillow1_mellin_forms: argv ['r1_pillow_mellin.py']  exit 0  12s
+== placement w = s^2, no gauge:
+   theta^2: (s - 1)**2*(s + 1)**2
+   theta^1: 2*s**2*(s - 1)*(s + 1)
+   theta^0: (8*X*s**2 - 4*Y*s**4 + 4*Y*s**2 + 16*kappa**2*s**5 - 16*kappa**2*s**3 - 5*s**4 + 6*s**2 - 1)/4
+   V(1) = -X/2 ; exponents at s = 1 satisfy 4 r^2 = 4 V(1) -> r = +-sqrt(V(1)) (in the variable 1 - s^2)
+   gauge h = 0, g = 0: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = 0, g = 1/2: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = 0, g = -1/2: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = 0, g = 1/4: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = 0, g = -1/4: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = 0: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = 1/2: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = -1/2: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = 1/4: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = -1/4: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = 0: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = 1/2: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = -1/2: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = 1/4: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = -1/4: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+MINIMAL: (3, sqrt(2)*sqrt(-X)/2, 0, [0, 2, 3], [3])
+   reduced theta-polynomials per shift:
+     s^0: (2*T - 1)*(2*T + 1)/4
+     s^2: -(4*T**2 + 8*sqrt(2)*T*sqrt(-X) + 8*T - 8*X - 4*Y + 8*sqrt(2)*sqrt(-X) - 5)/4
+     s^3: -4*kappa**2
+
+===== pillow1_invariants: argv ['r1b_invariants.py']  exit 0  28s
+== placement w = s^2, no gauge:
+   theta^2: (s - 1)**2*(s + 1)**2
+   theta^1: 2*s**2*(s - 1)*(s + 1)
+   theta^0: (8*X*s**2 - 4*Y*s**4 + 4*Y*s**2 + 16*kappa**2*s**5 - 16*kappa**2*s**3 - 5*s**4 + 6*s**2 - 1)/4
+   V(1) = -X/2 ; exponents at s = 1 satisfy 4 r^2 = 4 V(1) -> r = +-sqrt(V(1)) (in the variable 1 - s^2)
+   gauge h = 0, g = 0: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = 0, g = 1/2: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = 0, g = -1/2: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = 0, g = 1/4: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = 0, g = -1/4: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = 0: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = 1/2: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = -1/2: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = 1/4: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = -1/4: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = 0: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = 1/2: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = -1/2: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = 1/4: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = -1/4: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+MINIMAL: (3, sqrt(2)*sqrt(-X)/2, 0, [0, 2, 3], [3])
+   reduced theta-polynomials per shift:
+     s^0: (2*T - 1)*(2*T + 1)/4
+     s^2: -(4*T**2 + 8*sqrt(2)*T*sqrt(-X) + 8*T - 8*X - 4*Y + 8*sqrt(2)*sqrt(-X) - 5)/4
+     s^3: -4*kappa**2
+h1 = 0, h2 = 0: shifts [0, 2, 3, 4, 5] (5 terms), E at [3, 5]
+h1 = 0, h2 = sqrt(2)*sqrt(-X)/2: shifts [0, 1, 2, 3, 4] (5 terms), E at [3, 4]
+h1 = 0, h2 = -sqrt(2)*sqrt(-X)/2: shifts [0, 1, 2, 3, 4] (5 terms), E at [3, 4]
+h1 = sqrt(2)*sqrt(-X)/2, h2 = 0: shifts [0, 1, 2, 3, 4] (5 terms), E at [3, 4]
+h1 = sqrt(2)*sqrt(-X)/2, h2 = sqrt(2)*sqrt(-X)/2: shifts [0, 2, 3] (3 terms), E at [3]  -> invariant [-2, 2/3]
+h1 = sqrt(2)*sqrt(-X)/2, h2 = -sqrt(2)*sqrt(-X)/2: shifts [0, 1, 2, 3] (4 terms), E at [3]
+h1 = -sqrt(2)*sqrt(-X)/2, h2 = 0: shifts [0, 1, 2, 3, 4] (5 terms), E at [3, 4]
+h1 = -sqrt(2)*sqrt(-X)/2, h2 = sqrt(2)*sqrt(-X)/2: shifts [0, 1, 2, 3] (4 terms), E at [3]
+h1 = -sqrt(2)*sqrt(-X)/2, h2 = -sqrt(2)*sqrt(-X)/2: shifts [0, 2, 3] (3 terms), E at [3]  -> invariant [-2, 2/3]
+PILLOW 3-term invariants found: {(-2, 2/3)}
+Sol 1 (t = -1/3): shifts {0, c, n} = (0, -2/3, 4/3)  invariant [-1/2, 1/3]
+Sol 2 (t = +1/3): shifts {0, c, n} = (0, -2, 2)  invariant [-1, 1/2]
+Sol 1 Schrodinger form (Suzuki M = -2): shifts {0, -2, -1, 2 (E)}: 4 terms
+
+===== pillow1_doublet: argv ['r2_doublet.py']  exit 0  2s
+doublet tensor: denominator z**2
+doublet tensor shifts (in z = 1/x): [8, 10, 12]  E-carrying: [8]
+Sym^3(pillow) shifts: [0, 2, 3, 4, 5, 6, 7, 8]  E-carrying: [3, 5, 6, 7, 8]  (denominator 16*(s - 1)**3*(s + 1)**3 )
+doublet vs Sym^3(pillow) share an affine normal form: False
+doublet vs pillow (x) first order (= pillow 3-term pattern) share a normal form: False
+doublet term count 3 ; Sym^3(pillow) term count 8 ; pillow 3-term 3
+
+===== pillow1_expgauge: argv ['r3_r_expgauge.py']  exit 0  1s
+Newton points (order j, p-weight m - j): [(0, 0), (1, -1), (2, -2), (3, -2), (4, -4), (4, -2)]
+maximal p-weight 0 attained at orders [0] -> regular-type (slope 0) formal solutions at infinity exist only if the maximum is attained at order >= 1:  False
+edge from (0, 0) to (4, -2) has slope 1/2 and contains (1, -1) and (3, -2)? -> all four formal solutions are exp(c p^(1/2)) type (rank 1/2): NO slope-0 part
+exp(beta s^1) gauge on the pillow 3-term form: shifts present (generic beta): [0, 1, 2, 3, 4, 5, 6]
+exp(beta s^2) gauge on the pillow 3-term form: shifts present (generic beta): [0, 2, 3, 4, 6]
+exp(beta s^3) gauge on the pillow 3-term form: shifts present (generic beta): [0, 2, 3, 4, 5, 6, 7, 8]
+
+===== nzero1_fibres: argv ['exact_series_v4.py']  exit 0  101s
+========================================================================
+NZERO1 v4: series in eps = t - t0; common.monic normalisation
+========================================================================
+
+### t0=4 spin 9 ###
+  cert(t0): 21 terms, leading monomial = (10, 0)
+  N=25: diff has 20 terms, max|coeff| = -31935520424675783/32491087851300, monic==cert(same t): True [7.3s]
+  N=50: diff has 20 terms, max|coeff| = -40972171621606261267741/79868954399772432600, monic==cert(same t): True [8.1s]
+  N=100: diff has 20 terms, max|coeff| = -1687459954907897270030197/6436173966959422439200, monic==cert(same t): True [8.3s]
+  N=200: diff has 20 terms, max|coeff| = -90942914132337324916701613/686083575392920989226800, monic==cert(same t): True [8.6s]
+  O(1/N) check (|diff(N)/diff(2N)| should be ~2):
+    |d(25)|/|d(50)| = 8502188748438104212868682787399086/4437434758720499386894377805649711 (~0 if O(1/N))
+    |d(50)|/|d(100)| = 1318520121803879213552756392191472772469236/673878310949904461926918916974044650736111 (~0 if O(1/N))
+    |d(100)|/|d(200)| = 2894346397988968473795200581845127914869204199/1463311041044939104659403170123979890907586074 (~0 if O(1/N))
+
+  => lim_{eps->0} monic(WKB(t0+eps)) = cert(t0)  [O(1/N) convergence confirmed]
+
+### t0=7 spin 3 ###
+  cert(t0): 6 terms, leading monomial = (4, 0)
+  N=25: diff has 5 terms, max|coeff| = -907/61105, monic==cert(same t): True [8.1s]
+  N=50: diff has 5 terms, max|coeff| = -1807/242205, monic==cert(same t): True [8.4s]
+  N=100: diff has 5 terms, max|coeff| = -3607/964405, monic==cert(same t): True [8.7s]
+  N=200: diff has 5 terms, max|coeff| = -7207/3848805, monic==cert(same t): True [9.0s]
+  O(1/N) check (|diff(N)/diff(2N)| should be ~2):
+    |d(25)|/|d(50)| = 43935987/22083347 (~0 if O(1/N))
+    |d(50)|/|d(100)| = 348535967/174726687 (~0 if O(1/N))
+    |d(100)|/|d(200)| = 2776527927/1390093367 (~0 if O(1/N))
+
+  => lim_{eps->0} monic(WKB(t0+eps)) = cert(t0)  [O(1/N) convergence confirmed]
+
+### t0=7 spin 9 ###
+  cert(t0): 21 terms, leading monomial = (10, 0)
+  N=25: diff has 20 terms, max|coeff| = -1731027621908063174219/377899682277730209352, monic==cert(same t): True [8.0s]
+  N=50: diff has 20 terms, max|coeff| = -40475649053810404873277/17527789791955316888091, monic==cert(same t): True [8.3s]
+  N=100: diff has 20 terms, max|coeff| = -13636285566861423350508247/11761577180936894509385376, monic==cert(same t): True [8.6s]
+  N=200: diff has 20 terms, max|coeff| = -5202177248752756195734956791/8955407594962361465528138928, monic==cert(same t): True [8.9s]
+  O(1/N) check (|diff(N)/diff(2N)| should be ~2):
+    |d(25)|/|d(50)| = 64693151984803491613261444873187485414341/32613507286609516791632138713614290491016 (~0 if O(1/N))
+    |d(50)|/|d(100)| = 1823618642697811781477258898075323598547552/915583341795362890805328228188931811283127 (~0 if O(1/N))
+    |d(100)|/|d(200)| = 4083684300847593003654208367181384013188651980529/2046074412122775950878339344540087673506143503454 (~0 if O(1/N))
+
+  => lim_{eps->0} monic(WKB(t0+eps)) = cert(t0)  [O(1/N) convergence confirmed]
+
+Total: 101s
+
+===== nz_loss1_identity: argv ['z0a_f1prime.py']  exit 0  3s
+F1prime == F1 for K = 1..12 at five fibres: mismatches 0
+F1prime == Ward loss-1 amplitudes, K = 2..40, five fibres: 0 mismatches / 4095
+lattice scan K = 2..12, i = 1..K-1: (top vanishes) == (loss-1 vanishes) == (2i <= K-1) violated at 0 points []
+Z0(b) PASS
+
+===== nz_op_vanish_k1o2: argv ['z0c_engine.py', '1/2', '10']  exit 0  11s
+k = 1/2 (t = 7/5, n = 9/2) real  K = 1 spin  1  nu = 2/9     R identically zero: False   top monomials (X^a Y^b): [(1, 0), (0, 1)]
+k = 1/2 (t = 7/5, n = 9/2) real  K = 2 spin  3  nu = 2/3     R identically zero: False   top monomials (X^a Y^b): [(2, 0), (1, 1), (0, 2)]
+k = 1/2 (t = 7/5, n = 9/2) real  K = 3 spin  5  nu = 10/9    R identically zero: False   top monomials (X^a Y^b): [(3, 0), (2, 1), (1, 2), (0, 3)]
+k = 1/2 (t = 7/5, n = 9/2) real  K = 4 spin  7  nu = 14/9    R identically zero: False   top monomials (X^a Y^b): [(4, 0), (3, 1), (2, 2), (1, 3), (0, 4)]
+k = 1/2 (t = 7/5, n = 9/2) real  K = 5 spin  9  nu = 2       R identically zero: True   top monomials (X^a Y^b): []
+done in 10s
+
+===== nz_op_vanish_k7: argv ['z0c_engine.py', '7', '12']  exit 0  23s
+k = 7 (t = 23/9, n = 11) real  K = 1 spin  1  nu = 1/11    R identically zero: False   top monomials (X^a Y^b): [(1, 0), (0, 1)]
+k = 7 (t = 23/9, n = 11) real  K = 2 spin  3  nu = 3/11    R identically zero: False   top monomials (X^a Y^b): [(2, 0), (1, 1), (0, 2)]
+k = 7 (t = 23/9, n = 11) real  K = 3 spin  5  nu = 5/11    R identically zero: False   top monomials (X^a Y^b): [(3, 0), (2, 1), (1, 2), (0, 3)]
+k = 7 (t = 23/9, n = 11) real  K = 4 spin  7  nu = 7/11    R identically zero: False   top monomials (X^a Y^b): [(4, 0), (3, 1), (2, 2), (1, 3), (0, 4)]
+k = 7 (t = 23/9, n = 11) real  K = 5 spin  9  nu = 9/11    R identically zero: False   top monomials (X^a Y^b): [(5, 0), (4, 1), (3, 2), (2, 3), (1, 4), (0, 5)]
+k = 7 (t = 23/9, n = 11) real  K = 6 spin 11  nu = 1       R identically zero: True   top monomials (X^a Y^b): []
+done in 22s
+
+===== nz_op_vanish_k3o2: argv ['z0c_engine.py', '3/2', '12']  exit 0  31s
+k = 3/2 (t = 13/7, n = 11/2) real  K = 1 spin  1  nu = 2/11    R identically zero: False   top monomials (X^a Y^b): [(1, 0), (0, 1)]
+k = 3/2 (t = 13/7, n = 11/2) real  K = 2 spin  3  nu = 6/11    R identically zero: False   top monomials (X^a Y^b): [(2, 0), (1, 1), (0, 2)]
+k = 3/2 (t = 13/7, n = 11/2) real  K = 3 spin  5  nu = 10/11   R identically zero: False   top monomials (X^a Y^b): [(3, 0), (2, 1), (1, 2), (0, 3)]
+k = 3/2 (t = 13/7, n = 11/2) real  K = 4 spin  7  nu = 14/11   R identically zero: False   top monomials (X^a Y^b): [(4, 0), (3, 1), (2, 2), (1, 3), (0, 4)]
+k = 3/2 (t = 13/7, n = 11/2) real  K = 5 spin  9  nu = 18/11   R identically zero: False   top monomials (X^a Y^b): [(5, 0), (4, 1), (3, 2), (2, 3), (1, 4), (0, 5)]
+k = 3/2 (t = 13/7, n = 11/2) real  K = 6 spin 11  nu = 2       R identically zero: True   top monomials (X^a Y^b): []
+done in 31s
+
+===== nz_op_vanish_k9: argv ['z0c_engine.py', '9', '14']  exit 0  62s
+k = 9 (t = 29/11, n = 13) real  K = 1 spin  1  nu = 1/13    R identically zero: False   top monomials (X^a Y^b): [(1, 0), (0, 1)]
+k = 9 (t = 29/11, n = 13) real  K = 2 spin  3  nu = 3/13    R identically zero: False   top monomials (X^a Y^b): [(2, 0), (1, 1), (0, 2)]
+k = 9 (t = 29/11, n = 13) real  K = 3 spin  5  nu = 5/13    R identically zero: False   top monomials (X^a Y^b): [(3, 0), (2, 1), (1, 2), (0, 3)]
+k = 9 (t = 29/11, n = 13) real  K = 4 spin  7  nu = 7/13    R identically zero: False   top monomials (X^a Y^b): [(4, 0), (3, 1), (2, 2), (1, 3), (0, 4)]
+k = 9 (t = 29/11, n = 13) real  K = 5 spin  9  nu = 9/13    R identically zero: False   top monomials (X^a Y^b): [(5, 0), (4, 1), (3, 2), (2, 3), (1, 4), (0, 5)]
+k = 9 (t = 29/11, n = 13) real  K = 6 spin 11  nu = 11/13   R identically zero: False   top monomials (X^a Y^b): [(6, 0), (5, 1), (4, 2), (3, 3), (2, 4), (1, 5), (0, 6)]
+k = 9 (t = 29/11, n = 13) real  K = 7 spin 13  nu = 1       R identically zero: True   top monomials (X^a Y^b): []
+done in 61s
+
+===== nz_op_vanish_k5o2: argv ['z0c_engine.py', '5/2', '14']  exit 0  86s
+k = 5/2 (t = 19/9, n = 13/2) real  K = 1 spin  1  nu = 2/13    R identically zero: False   top monomials (X^a Y^b): [(1, 0), (0, 1)]
+k = 5/2 (t = 19/9, n = 13/2) real  K = 2 spin  3  nu = 6/13    R identically zero: False   top monomials (X^a Y^b): [(2, 0), (1, 1), (0, 2)]
+k = 5/2 (t = 19/9, n = 13/2) real  K = 3 spin  5  nu = 10/13   R identically zero: False   top monomials (X^a Y^b): [(3, 0), (2, 1), (1, 2), (0, 3)]
+k = 5/2 (t = 19/9, n = 13/2) real  K = 4 spin  7  nu = 14/13   R identically zero: False   top monomials (X^a Y^b): [(4, 0), (3, 1), (2, 2), (1, 3), (0, 4)]
+k = 5/2 (t = 19/9, n = 13/2) real  K = 5 spin  9  nu = 18/13   R identically zero: False   top monomials (X^a Y^b): [(5, 0), (4, 1), (3, 2), (2, 3), (1, 4), (0, 5)]
+k = 5/2 (t = 19/9, n = 13/2) real  K = 6 spin 11  nu = 22/13   R identically zero: False   top monomials (X^a Y^b): [(6, 0), (5, 1), (4, 2), (3, 3), (2, 4), (1, 5), (0, 6)]
+k = 5/2 (t = 19/9, n = 13/2) real  K = 7 spin 13  nu = 2       R identically zero: True   top monomials (X^a Y^b): []
+done in 85s
+
+===== nz_op_vanish_k1o3: argv ['z0c_engine.py', '1/3', '14']  exit 0  81s
+k = 1/3 (t = 9/7, n = 13/3) real  K = 1 spin  1  nu = 3/13    R identically zero: False   top monomials (X^a Y^b): [(1, 0), (0, 1)]
+k = 1/3 (t = 9/7, n = 13/3) real  K = 2 spin  3  nu = 9/13    R identically zero: False   top monomials (X^a Y^b): [(2, 0), (1, 1), (0, 2)]
+k = 1/3 (t = 9/7, n = 13/3) real  K = 3 spin  5  nu = 15/13   R identically zero: False   top monomials (X^a Y^b): [(3, 0), (2, 1), (1, 2), (0, 3)]
+k = 1/3 (t = 9/7, n = 13/3) real  K = 4 spin  7  nu = 21/13   R identically zero: False   top monomials (X^a Y^b): [(4, 0), (3, 1), (2, 2), (1, 3), (0, 4)]
+k = 1/3 (t = 9/7, n = 13/3) real  K = 5 spin  9  nu = 27/13   R identically zero: False   top monomials (X^a Y^b): [(5, 0), (4, 1), (3, 2), (2, 3), (1, 4), (0, 5)]
+k = 1/3 (t = 9/7, n = 13/3) real  K = 6 spin 11  nu = 33/13   R identically zero: False   top monomials (X^a Y^b): [(6, 0), (5, 1), (4, 2), (3, 3), (2, 4), (1, 5), (0, 6)]
+k = 1/3 (t = 9/7, n = 13/3) real  K = 7 spin 13  nu = 3       R identically zero: True   top monomials (X^a Y^b): []
+done in 80s
+
+===== nz_op_vanish_k5o3: argv ['z0c_engine.py', '5/3', '18']  exit 0  486s
+k = 5/3 (t = 21/11, n = 17/3) real  K = 1 spin  1  nu = 3/17    R identically zero: False   top monomials (X^a Y^b): [(1, 0), (0, 1)]
+k = 5/3 (t = 21/11, n = 17/3) real  K = 2 spin  3  nu = 9/17    R identically zero: False   top monomials (X^a Y^b): [(2, 0), (1, 1), (0, 2)]
+k = 5/3 (t = 21/11, n = 17/3) real  K = 3 spin  5  nu = 15/17   R identically zero: False   top monomials (X^a Y^b): [(3, 0), (2, 1), (1, 2), (0, 3)]
+k = 5/3 (t = 21/11, n = 17/3) real  K = 4 spin  7  nu = 21/17   R identically zero: False   top monomials (X^a Y^b): [(4, 0), (3, 1), (2, 2), (1, 3), (0, 4)]
+k = 5/3 (t = 21/11, n = 17/3) real  K = 5 spin  9  nu = 27/17   R identically zero: False   top monomials (X^a Y^b): [(5, 0), (4, 1), (3, 2), (2, 3), (1, 4), (0, 5)]
+k = 5/3 (t = 21/11, n = 17/3) real  K = 6 spin 11  nu = 33/17   R identically zero: False   top monomials (X^a Y^b): [(6, 0), (5, 1), (4, 2), (3, 3), (2, 4), (1, 5), (0, 6)]
+k = 5/3 (t = 21/11, n = 17/3) real  K = 7 spin 13  nu = 39/17   R identically zero: False   top monomials (X^a Y^b): [(7, 0), (6, 1), (5, 2), (4, 3), (3, 4), (2, 5), (1, 6), (0, 7)]
+k = 5/3 (t = 21/11, n = 17/3) real  K = 8 spin 15  nu = 45/17   R identically zero: False   top monomials (X^a Y^b): [(8, 0), (7, 1), (6, 2), (5, 3), (4, 4), (3, 5), (2, 6), (1, 7), (0, 8)]
+k = 5/3 (t = 21/11, n = 17/3) real  K = 9 spin 17  nu = 3       R identically zero: True   top monomials (X^a Y^b): []
+done in 473s
+
+===== nz_op_vanish_km1o2: argv ['z0c_engine.py', '-1/2', '8']  exit 0  3s
+k = -1/2 (t = 1/3, n = 7/2) real  K = 1 spin  1  nu = 2/7     R identically zero: False   top monomials (X^a Y^b): [(1, 0), (0, 1)]
+k = -1/2 (t = 1/3, n = 7/2) real  K = 2 spin  3  nu = 6/7     R identically zero: False   top monomials (X^a Y^b): [(2, 0), (1, 1), (0, 2)]
+k = -1/2 (t = 1/3, n = 7/2) real  K = 3 spin  5  nu = 10/7    R identically zero: False   top monomials (X^a Y^b): [(3, 0), (2, 1), (1, 2), (0, 3)]
+k = -1/2 (t = 1/3, n = 7/2) real  K = 4 spin  7  nu = 2       R identically zero: False   top monomials (X^a Y^b): [(2, 2)]
+done in 3s
+
+===== nz_op_stripped_k1o2: argv ['z0c_engine.py', '1/2', '10', 'stripped']  exit 0  11s
+k = 1/2 (t = 7/5, n = 9/2) stripped  K = 1 spin  1  nu = 2/9     R identically zero: False   top monomials (X^a Y^b): [(1, 0), (0, 1)]
+k = 1/2 (t = 7/5, n = 9/2) stripped  K = 2 spin  3  nu = 2/3     R identically zero: False   top monomials (X^a Y^b): [(2, 0), (1, 1), (0, 2)]
+k = 1/2 (t = 7/5, n = 9/2) stripped  K = 3 spin  5  nu = 10/9    R identically zero: False   top monomials (X^a Y^b): [(3, 0), (2, 1), (1, 2), (0, 3)]
+k = 1/2 (t = 7/5, n = 9/2) stripped  K = 4 spin  7  nu = 14/9    R identically zero: False   top monomials (X^a Y^b): [(4, 0), (3, 1), (2, 2), (1, 3), (0, 4)]
+k = 1/2 (t = 7/5, n = 9/2) stripped  K = 5 spin  9  nu = 2       R identically zero: False   top monomials (X^a Y^b): []
+done in 10s
+
+===== nz_limit_point_k1_s5_h8: argv ['z1_point.py', '1', '5', '8']  exit 0  1s
+k0 = 1 + 1e-8 spin 5: |leading coefficient| = 8.333e-06  (1s)
+
+===== nz_limit_point_k1_s5_h16: argv ['z1_point.py', '1', '5', '16']  exit 0  1s
+k0 = 1 + 1e-16 spin 5: |leading coefficient| = 8.333e-14  (1s)
+
+===== nz_limit_point_k3_s7_h8: argv ['z1_point.py', '3', '7', '8']  exit 0  4s
+k0 = 3 + 1e-8 spin 7: |leading coefficient| = 3.099e-04  (4s)
+
+===== nz_limit_point_k3_s7_h16: argv ['z1_point.py', '3', '7', '16']  exit 0  5s
+k0 = 3 + 1e-16 spin 7: |leading coefficient| = 3.099e-12  (4s)
+
+===== nz_limit_point_k5_s9_h8: argv ['z1_point.py', '5', '9', '8']  exit 0  14s
+k0 = 5 + 1e-8 spin 9: |leading coefficient| = 5.356e-02  (14s)
+
+===== nz_limit_point_k5_s9_h16: argv ['z1_point.py', '5', '9', '16']  exit 0  17s
+k0 = 5 + 1e-16 spin 9: |leading coefficient| = 5.356e-10  (17s)
+
+===== nz_limit_point_k1o2_s9_h8: argv ['z1_point.py', '1/2', '9', '8']  exit 0  14s
+k0 = 1/2 + 1e-8 spin 9: |leading coefficient| = 1.362e-02  (14s)
+
+===== nz_limit_point_k1o2_s9_h16: argv ['z1_point.py', '1/2', '9', '16']  exit 0  17s
+k0 = 1/2 + 1e-16 spin 9: |leading coefficient| = 1.362e-10  (17s)
+
+===== nz_limits_sol3: argv ['z1_compare.py']  exit 0  0s
+k0 = 1    t0 = 5/3   spin 5: 9 coefficients; max|monic(k0 + h) - certified| = 1.200000e-08 (h = 1e-8), 1.200000e-16 (h = 1e-16); ratio 1.000000e+08  -> O(h): PASS
+k0 = 3    t0 = 11/5  spin 7: 14 coefficients; max|monic(k0 + h) - certified| = 4.285714e-09 (h = 1e-8), 4.285714e-17 (h = 1e-16); ratio 1.000000e+08  -> O(h): PASS
+k0 = 5    t0 = 17/7  spin 9: 18 coefficients; max|monic(k0 + h) - certified| = 4.835391e-09 (h = 1e-8), 4.835391e-17 (h = 1e-16); ratio 1.000000e+08  -> O(h): PASS
+k0 = 1/2  t0 = 7/5   spin 9: 21 coefficients; max|monic(k0 + h) - certified| = 3.674485e-07 (h = 1e-8), 3.674485e-15 (h = 1e-16); ratio 9.999999e+07  -> O(h): PASS
+Z1 PASS
+
+===== nz_ode_vanish: argv ['b_nz.py']  exit 2  17s
+b1  Sol-3 ODE at t = 11/5 (k = 3, n = 7), spin 7 (nu = 1; A0 = -3, B0 + 1 = 4): cB zero: True; cG zero: True  (3s)
+      order 2 (spin 1): cB zero: False; cG zero: True
+      order 4 (spin 3): cB zero: False; cG zero: True
+      order 6 (spin 5): cB zero: False; cG zero: True
+b2  Sol-3 ODE at t = 5/3 (k = 1, n = 5), spin 5 (nu = 1; A0 = -1, B0 + 1 = 2): cB zero: True; cG zero: True  (4s)
+      order 2 (spin 1): cB zero: False; cG zero: True
+      order 4 (spin 3): cB zero: False; cG zero: True
+b3  Sol-2 ODE at t = 5/3 (k = 1, n = 5), spin 5 (nu = 1; A0 = -1, B0 + 1 = 2): cB zero: True; cG zero: True  (5s)
+      order 2 (spin 1): cB zero: False; cG zero: True
+      order 4 (spin 3): cB zero: False; cG zero: True
+b4  Sol-3 ODE at t = 7/5 (k = 1/2, n = 9/2), spin 9 (nu = 2; A0 = -1, B0 + 1 = 3): cB zero: True; cG zero: True  (17s)
+      order 2 (spin 1): cB zero: False; cG zero: True
+      order 4 (spin 3): cB zero: False; cG zero: True
+      order 6 (spin 5): cB zero: False; cG zero: True
+      order 8 (spin 7): cB zero: False; cG zero: True
+(b) NOT as sealed
+
+===== nz_limits_sol2_ode: argv ['b2_limit.py']  exit 0  65s
+b1: Sol-3 ODE, k0 = 3 (t0 = 11/5), spin 7 vs certified Sol-3: max|monic - certified| = 4.2857e-09 (h=1e-8), 4.2857e-17 (h=1e-16); un-normalised lead 1.190e-10, 1.190e-18  -> converges O(h)  (11s)
+b2: Sol-3 ODE, k0 = 1 (t0 = 5/3), spin 5 vs certified Sol-3: max|monic - certified| = 1.2000e-08 (h=1e-8), 1.2000e-16 (h=1e-16); un-normalised lead 3.333e-10, 3.333e-18  -> converges O(h)  (13s)
+b3: Sol-2 ODE, k0 = 1 (t0 = 5/3), spin 5 vs certified Sol-2: max|monic - certified| = 4.4000e-08 (h=1e-8), 4.4000e-16 (h=1e-16); un-normalised lead 1.000e-09, 1.000e-17  -> converges O(h)  (16s)
+b4: Sol-3 ODE, k0 = 1/2 (t0 = 7/5), spin 9 vs certified Sol-3: max|monic - certified| = 3.6745e-07 (h=1e-8), 3.6745e-15 (h=1e-16); un-normalised lead 7.407e-11, 7.407e-19  -> converges O(h)  (61s)
+x1 (cross-check: Sol-2 ODE limit vs the SOL-3 table): Sol-2 ODE, k0 = 1 (t0 = 5/3), spin 5 vs certified Sol-3: max|monic - certified| = 5.0000e+00 (h=1e-8), 5.0000e+00 (h=1e-16); un-normalised lead 1.000e-09, 1.000e-17  -> does NOT converge to this charge  (63s)
+x2 (cross-check: Sol-3 ODE limit vs the SOL-2 table): Sol-3 ODE, k0 = 1 (t0 = 5/3), spin 5 vs certified Sol-2: max|monic - certified| = 5.0000e+00 (h=1e-8), 5.0000e+00 (h=1e-16); un-normalised lead 3.333e-10, 3.333e-18  -> does NOT converge to this charge  (65s)
+directional limits PASS
+
+===== nz_kernel_t5o3_K3: argv ['z2_kernel.py', '5/3', '3']  exit 0  0s
+t = 5/3 (N = -25/2), weight 6: kernel dimension 2  (0s)
+  class 0: in HV + d; eigenvalue monomials 9; odd-in-rho part zero: True; even in PX and pi: True  (0s)
+  class 1: in HV + d; eigenvalue monomials 9; odd-in-rho part zero: True; even in PX and pi: True  (0s)
+done (0s)
+
+===== nz_kernel_t7o5_K5: argv ['z2_kernel.py', '7/5', '5']  exit 0  6s
+t = 7/5 (N = -24), weight 10: kernel dimension 2  (4s)
+  class 0: in HV + d; eigenvalue monomials 21; odd-in-rho part zero: True; even in PX and pi: True  (5s)
+  class 1: in HV + d; eigenvalue monomials 21; odd-in-rho part zero: True; even in PX and pi: True  (6s)
+done (6s)
+
+===== nz_kernel_t11o5_K4: argv ['z2_kernel.py', '11/5', '4']  exit 0  1s
+t = 11/5 (N = -21/4), weight 8: kernel dimension 1  (0s)
+  class 0: in HV + d; eigenvalue monomials 14; odd-in-rho part zero: True; even in PX and pi: True  (1s)
+done (1s)
+
+===== nz_kernel_t17o7_K5: argv ['z2_kernel.py', '17/7', '5']  exit 0  5s
+t = 17/7 (N = -39/10), weight 10: kernel dimension 1  (4s)
+  class 0: in HV + d; eigenvalue monomials 18; odd-in-rho part zero: True; even in PX and pi: True  (5s)
+done (5s)
+
+===== nz_kernel_t13o7_K6: argv ['z2_kernel.py', '13/7', '6']  exit 0  61s
+t = 13/7 (N = -44/5), weight 12: kernel dimension 1  (51s)
+  class 0: in HV + d; eigenvalue monomials 27; odd-in-rho part zero: True; even in PX and pi: True  (61s)
+done (61s)
+
+===== nz_kernel_t23o9_K6: argv ['z2_kernel.py', '23/9', '6']  exit 0  62s
+t = 23/9 (N = -187/56), weight 12: kernel dimension 1  (52s)
+  class 0: in HV + d; eigenvalue monomials 23; odd-in-rho part zero: True; even in PX and pi: True  (61s)
+done (61s)
+
+===== nz_kernel_t9o7_K7: argv ['z2_kernel.py', '9/7', '7']  exit 0  817s
+t = 9/7 (N = -143/4), weight 14: kernel dimension 2  (604s)
+  class 0: in HV + d; eigenvalue monomials 36; odd-in-rho part zero: True; even in PX and pi: True  (741s)
+  class 1: in HV + d; eigenvalue monomials 36; odd-in-rho part zero: True; even in PX and pi: True  (816s)
+done (816s)
+
+===== nz_pw_law_i123: argv ['z3_pw.py']  exit 0  0s
+i = 1 (t = 5/3, K = 3, weight 6) training: kernel dimension 2; antisymmetric classes 1; c_U = c_W = -2 (c_(1,2) = -2); coefficients compared 8, mismatches 0
+i = 2 (t = 7/5, K = 5, weight 10) T-a (4 of 15 coefficients were training): kernel dimension 2; antisymmetric classes 1; c_U = c_W = -7 (c_(1,3) = -7); coefficients compared 18, mismatches 0
+i = 3 (t = 9/7, K = 7, weight 14) T-b HOLD-OUT: kernel dimension 2; antisymmetric classes 1; c_U = c_W = -25/2 (c_(1,4) = -25/2); coefficients compared 32, mismatches 0
+T-c t = 11/5 K = 4 (non-boundary drop point): kernel dimension 1, antisymmetric classes 0
+T-c t = 17/7 K = 5 (non-boundary drop point): kernel dimension 1, antisymmetric classes 0
+T-c t = 13/7 K = 6 (non-boundary drop point): kernel dimension 1, antisymmetric classes 0
+T-c t = 23/9 K = 6 (non-boundary drop point): kernel dimension 1, antisymmetric classes 0
+P-W (real): PASS
+
+===== nz_kernel_gate_K6_K7: argv ['z5_gate_K6_K7.py']  exit 0  1s
+t = 13/7  K = 6: kernel dimension 1; Sol-3 table charge (X^K coefficient nonzero) in the kernel: True; table charge symmetric: True
+t = 23/9  K = 6: kernel dimension 1; Sol-3 table charge (X^K coefficient nonzero) in the kernel: True; table charge symmetric: True
+t = 9/7   K = 7: kernel dimension 2; Sol-3 table charge (X^K coefficient nonzero) in the kernel: True; table charge symmetric: True
+gate PASS
+
+===== nz_fusion_fit_q4_q6: argv ['classical_fusion_product.py']  exit 0  0s
+q = 4: eigenvalue + fusion product == 0: True
+q = 6: eigenvalue + fusion product == 0: True
+q = 8 prediction (weight 14, t = 9/7, sheet 3), e = -P**14 + 7*P**12*Q**2 - 455*P**12/16 - 21*P**10*Q**4 + 1253*P**10*Q**2/8 - 77077*P**10/256 + 35*P**8*Q**6 - 5705*P**8*Q**4/16 + 317961*P**8*Q**2/256 - 6092515*P**8/4096 - 35*P**6*Q**8 + 1715*P**6*Q**6/4 - 256809*P**6*Q**4/128 + 4375987*P**6*Q**2/1024 - 230673443*P**6/65536 + 21*P**4*Q**10 - 4585*P**4*Q**8/16 + 201929*P**4*Q**6/128 - 9010953*P**4*Q**4/2048 + 410089897*P**4*Q**2/65536 - 3841278805*P**4/1048576 - 7*P**2*Q**12 + 805*P**2*Q**10/8 - 153321*P**2*Q**8/256 + 1938643*P**2*Q**6/1024 - 220578281*P**2*Q**4/65536 + 1685025573*P**2*Q**2/524288 - 21878089479*P**2/16777216 + Q**14 - 231*Q**12/16 + 22197*Q**10/256 - 1144099*Q**8/4096 + 33936483*Q**6/65536 - 574653429*Q**4/1048576 + 5100516135*Q**2/16777216 - 18261468225/268435456
+
+===== nz_fusion_q8: argv ['classical_w14_fusion_test.py']  exit 0  1080s
+record: lab record: exact fast-path computation, pending independent certification by the registered pure-Python certificate genuine_dim 2 ; basis size 929
+combination with top part (x^2 - r^2)^7: found
+extra invariant: nonzero monomials 324 ; levels [0, 2, 4, 6, 8, 10, 12]
+VEV computed in 1078s
+eigenvalue (article momenta): -(16*P**2 - 16*Q**2 + 49)*(256*P**4 - 512*P**2*Q**2 + 1696*P**2 + 256*Q**4 - 1440*Q**2 + 2025)*(256*P**4 - 512*P**2*Q**2 + 2080*P**2 + 256*Q**4 - 1056*Q**2 + 1089)*(256*P**4 - 512*P**2*Q**2 + 2720*P**2 + 256*Q**4 - 416*Q**2 + 169)/268435456
+prediction: -(16*P**2 - 16*Q**2 + 49)*(256*P**4 - 512*P**2*Q**2 + 1696*P**2 + 256*Q**4 - 1440*Q**2 + 2025)*(256*P**4 - 512*P**2*Q**2 + 2080*P**2 + 256*Q**4 - 1056*Q**2 + 1089)*(256*P**4 - 512*P**2*Q**2 + 2720*P**2 + 256*Q**4 - 416*Q**2 + 169)/268435456
+FUSION PREDICTION AT q = 8: CONFIRMED ; difference: 0
+
+===== nz_fusion_q10: argv ['classical_w18_fusion_test.py']  exit 0  7s
+record: lab record: exact fast-path computation, pending independent certification by the registered pure-Python certificate genuine_dim 2 ; basis size 5106
+combination with top part (x^2 - r^2)^9: found
+extra invariant: nonzero monomials 1656 ; levels [0, 2, 4, 6, 8, 10, 12, 14, 16]
+VEV computed in 1s
+eigenvalue (article momenta): -(20*P**2 - 20*Q**2 + 81)*(80*P**4 - 160*P**2*Q**2 + 776*P**2 + 80*Q**4 - 520*Q**2 + 845)*(80*P**4 - 160*P**2*Q**2 + 936*P**2 + 80*Q**4 - 360*Q**2 + 405)*(400*P**4 - 800*P**2*Q**2 + 3400*P**2 + 400*Q**4 - 3080*Q**2 + 5929)*(400*P**4 - 800*P**2*Q**2 + 5800*P**2 + 400*Q**4 - 680*Q**2 + 289)/20480000000
+prediction: -(20*P**2 - 20*Q**2 + 81)*(80*P**4 - 160*P**2*Q**2 + 776*P**2 + 80*Q**4 - 520*Q**2 + 845)*(80*P**4 - 160*P**2*Q**2 + 936*P**2 + 80*Q**4 - 360*Q**2 + 405)*(400*P**4 - 800*P**2*Q**2 + 3400*P**2 + 400*Q**4 - 3080*Q**2 + 5929)*(400*P**4 - 800*P**2*Q**2 + 5800*P**2 + 400*Q**4 - 680*Q**2 + 289)/20480000000
+FUSION PREDICTION AT q = 10: CONFIRMED ; difference: 0
+
+===== nz_fusion_q12: argv ['classical_w22_fusion_test.py']  exit 0  15s
+record: lab record: exact fast-path computation (quotient formulation), pending independent certification by the registered pure-Python certificate genuine_dim 2 ; basis size 25258
+combination with top part (x^2 - r^2)^11: found
+extra invariant: nonzero monomials 7908 ; levels [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+VEV computed in 9s
+eigenvalue (article momenta): -(24*P**2 - 24*Q**2 + 121)*(192*P**4 - 384*P**2*Q**2 + 2000*P**2 + 192*Q**4 - 1872*Q**2 + 4563)*(192*P**4 - 384*P**2*Q**2 + 2192*P**2 + 192*Q**4 - 1680*Q**2 + 3675)*(192*P**4 - 384*P**2*Q**2 + 2960*P**2 + 192*Q**4 - 912*Q**2 + 1083)*(192*P**4 - 384*P**2*Q**2 + 3536*P**2 + 192*Q**4 - 336*Q**2 + 147)*(576*P**4 - 1152*P**2*Q**2 + 7536*P**2 + 576*Q**4 - 4080*Q**2 + 7225)/18786186952704
+prediction: -(24*P**2 - 24*Q**2 + 121)*(192*P**4 - 384*P**2*Q**2 + 2000*P**2 + 192*Q**4 - 1872*Q**2 + 4563)*(192*P**4 - 384*P**2*Q**2 + 2192*P**2 + 192*Q**4 - 1680*Q**2 + 3675)*(192*P**4 - 384*P**2*Q**2 + 2960*P**2 + 192*Q**4 - 912*Q**2 + 1083)*(192*P**4 - 384*P**2*Q**2 + 3536*P**2 + 192*Q**4 - 336*Q**2 + 147)*(576*P**4 - 1152*P**2*Q**2 + 7536*P**2 + 576*Q**4 - 4080*Q**2 + 7225)/18786186952704
+FUSION PREDICTION AT q = 12: CONFIRMED ; difference: 0
+
+===== nz_fusion_q14: argv ['kit_gunzip_run.py', '../results/lab/fast_kernel3/w26_t1513_sheet3.json.gz', '67a978bd6565462c8aa0e9bfd9b55dc5e7eca96efbf03145f9e32a483038aa24', 'classical_w26_fusion_test.py']  exit 0  72s
+record: lab record: exact fast-path computation (quotient formulation, distributed phases), pending independent certification by the registered pure-Python certificate genuine_dim 2 ; basis size 114795
+combination with top part (x^2 - r^2)^13: found
+extra invariant: nonzero monomials 34690 ; levels [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24]
+VEV computed in 64s
+eigenvalue (article momenta): -(28*P**2 - 28*Q**2 + 169)*(112*P**4 - 224*P**2*Q**2 + 1640*P**2 + 112*Q**4 - 1064*Q**2 + 2527)*(112*P**4 - 224*P**2*Q**2 + 1864*P**2 + 112*Q**4 - 840*Q**2 + 1575)*(784*P**4 - 1568*P**2*Q**2 + 9688*P**2 + 784*Q**4 - 9240*Q**2 + 27225)*(784*P**4 - 1568*P**2*Q**2 + 10360*P**2 + 784*Q**4 - 8568*Q**2 + 23409)*(784*P**4 - 1568*P**2*Q**2 + 15064*P**2 + 784*Q**4 - 3864*Q**2 + 4761)*(784*P**4 - 1568*P**2*Q**2 + 17528*P**2 + 784*Q**4 - 1400*Q**2 + 625)/132696151479549952
+prediction: -(28*P**2 - 28*Q**2 + 169)*(112*P**4 - 224*P**2*Q**2 + 1640*P**2 + 112*Q**4 - 1064*Q**2 + 2527)*(112*P**4 - 224*P**2*Q**2 + 1864*P**2 + 112*Q**4 - 840*Q**2 + 1575)*(784*P**4 - 1568*P**2*Q**2 + 9688*P**2 + 784*Q**4 - 9240*Q**2 + 27225)*(784*P**4 - 1568*P**2*Q**2 + 10360*P**2 + 784*Q**4 - 8568*Q**2 + 23409)*(784*P**4 - 1568*P**2*Q**2 + 15064*P**2 + 784*Q**4 - 3864*Q**2 + 4761)*(784*P**4 - 1568*P**2*Q**2 + 17528*P**2 + 784*Q**4 - 1400*Q**2 + 625)/132696151479549952
+FUSION PREDICTION AT q = 14: CONFIRMED ; difference: 0
+
+===== nz_wuw1: argv ['wuw1.py']  exit 1  15s
+(1) W_U = Res e^(2U)(z) e^(-2U)(w) = {((1, 0), (1, 0), (1, 0)): Fraction(4, 3), ((1, 0), (1, 1)): Fraction(2, 1), ((1, 2),): Fraction(1, 3)}
+CONTROL (1)(i) W_U is T_U-primary of weight 3 (c_U = -2): True
+   c(T_U) check: T_U T_U 4th pole = {(): Fraction(-1, 1)}  (c/2)
+CONTROL (1)(ii) field level: Res e^(-U)(z) W_U(w) = 0 (short screening): True
+   (reported) field level Res e^(2U)(z) W_U(w) = {((1, 0), (1, 0)): Fraction(8, 1), ((1, 1),): Fraction(-8, 1)}
+CONTROL (1)(iii) W_U not a T_U descendant (not in span{dT_U}): True
+   eigen(W_U) = P_U*(2*P_U - 1)*(2*P_U + 1)/3
+SEALED TEST P1 eigen(W_U) proportional to P_U (P_U^2 - 1/4): True
+(2) weight-4 commutant of {e^((U+W)/2), e^(2U), e^(2W)} mod d: dim 1
+CONTROL GATE I_3: dim 1 and eigen(I_3) proportional to the record cyl(3,4) at t = 5/3: True
+   weight-6 screening commutant mod d: dim 1
+   K_6 = ker ad I_3 at weight 6 mod d: dim 2 (12s)
+CONTROL GATE K_6 contains the weight-6 screening commutant (I_5): True
+CONTROL GATE vev_sol3_w6 (t = 5/3) in span eigen(K_6): True
+CONTROL GATE vev_sol2_w6 (t = 5/3) in span eigen(K_6): True
+CONTROL eigen of a total derivative vanishes (recipe sanity): True
+SEALED TEST P2 G_6 = W_U W_W in K_6 mod d, and not in span{I_5} + d: True
+   (P2 parts: in K_6 True; not in I_5 + d True)
+   eigen(G_6) = -(P_X - pi)*(P_X + pi)*(2*P_X**2 - 4*P_X*pi + 2*pi**2 - 1)*(2*P_X**2 + 4*P_X*pi + 2*pi**2 - 1)/18
+   E_1 = (P_X - pi)*(P_X + pi)*(2*P_X**2 - 4*P_X*pi + 2*pi**2 - 1)*(2*P_X**2 + 4*P_X*pi + 2*pi**2 - 1)/4
+SEALED TEST P3 eigen(G_6) proportional to E_1: True
+CONTROL antisymmetry: eigen(G_6) odd under P_X <-> pi: True
+   Fable's relation at 5/3 with this E: Sol 2 in span(Sol 3, eigen(G_6))? {c0: 1/6, c1: -15/4}
+   P4 (reported): G_6 zero mode commutes with pair B e^(-U): True
+   P4 (reported): G_6 zero mode commutes with pair B e^(-W): True
+   P4 (reported): G_6 zero mode commutes with Virasoro e^((U+W)/2): True
+   P4 (reported): G_6 zero mode commutes with pair A e^(2U): False
+   P4 (reported): G_6 zero mode commutes with Virasoro e^(-2(U+W)): True
+CONTROL symmetric W_U^2 + W_W^2: eigenvalue NOT antisymmetric: True
+   (reported) W_U^2 + W_W^2 in K_6 mod d: False; eigen symmetric: True
+CONTROL TAMPER 1 G_6 + (dU)^6/100 leaves K_6 and breaks P3: True
+CONTROL TAMPER 2 exponent 21/10: breaks P1 and P3: False
+CONTROL SCORING TAMPER E_1 with p^2 + 1/1000 breaks P3: True
+done (15s)
+CONTROLS FAILED ['TAMPER 2 exponent 21/10: breaks P1 and P3'] -> exit 1
+
+===== nz_wuw1_uniqueness: argv ['posthoc_products.py']  exit 0  15s
+linear space of M (3x3, f_i(U) g_j(W)) with product in K_6 + d: dim 1
+   basis row (M_11..M_33): ['1', '3/2', '1/4', '3/2', '9/4', '3/8', '1/4', '3/8', '1/16']
+rank-1 (product) solutions: [{}]
+W_U W_W as M: ['16/9', '8/3', '4/9', '8/3', '4', '2/3', '4/9', '2/3', '1/9']
+   solution M = [[x0, 3*x0/2, x0/4], [3*x0/2, 9*x0/4, 3*x0/8], [x0/4, 3*x0/8, x0/16]]; rank 1
+TAMPER S_3(21/10)_U S_3(21/10)_W in K_6 + d: False (must be False)
+(dU)^3 (dW)^3 in K_6 + d: False
+
+===== nz_wuw1_vacuity: argv ['diag_tamper2.py']  exit 0  2s
+a = 2: S_3 field {((1, 0), (1, 0), (1, 0)): Fraction(4, 3), ((1, 0), (1, 1)): Fraction(2, 1), ((1, 2),): Fraction(1, 3)}; eigen = P_U*(2*P_U - 1)*(2*P_U + 1)/3; field-level Res e^(-U) W = {}
+a = 21/10: S_3 field {((1, 0), (1, 0), (1, 0)): Fraction(3087, 2000), ((1, 0), (1, 1)): Fraction(441, 200), ((1, 2),): Fraction(7, 20)}; eigen = 3087*P_U*(2*P_U - 1)*(2*P_U + 1)/8000; field-level Res e^(-U) W = {((1, 0), (1, 0)): Fraction(77, 4000), ((1, 1),): Fraction(-77, 4000)}
+a = 3: S_3 field {((1, 0), (1, 0), (1, 0)): Fraction(9, 2), ((1, 0), (1, 1)): Fraction(9, 2), ((1, 2),): Fraction(1, 2)}; eigen = 9*P_U*(2*P_U - 1)*(2*P_U + 1)/8; field-level Res e^(-U) W = {((1, 0), (1, 0)): Fraction(1, 2), ((1, 1),): Fraction(-1, 2)}
+a = 1: S_3 field {((1, 0), (1, 0), (1, 0)): Fraction(1, 6), ((1, 0), (1, 1)): Fraction(1, 2), ((1, 2),): Fraction(1, 6)}; eigen = P_U*(2*P_U - 1)*(2*P_U + 1)/24; field-level Res e^(-U) W = {}
+reading: the cylinder vacuum eigenvalue of S_3(a d^k U/k!) is a^3/6 [P^3 - P/4]: the a-dependence is an overall factor, so the sealed exponent tamper is
+VACUOUS for the eigenvalue tests (P1, P3); it is NOT vacuous at field level (screening).
+
+===== nz_wuw2: argv ['wuw2.py']  exit 0  14s
+CONTROL (0) kappa = 1 engine reproduces WUW1 (I_3 dim 1; W_U; unique bilinear (1,3/2,1/4)^2 in K_6): True
+CONTROL c(T_U) = -7: 4th pole {(): Fraction(-7, 2)}: True
+CONTROL c(T_total) = -23: 4th pole {(): Fraction(-23, 2)}: True
+(1) W^(5) = Res e^(2V) e^(-2V) = {((1, 0), (1, 0), (1, 0), (1, 0), (1, 0)): Fraction(4, 15), ((1, 0), (1, 0), (1, 0), (1, 1)): Fraction(4, 3), ((1, 0), (1, 0), (1, 2)): Fraction(2, 3), ((1, 0), (1, 1), (1, 1)): Fraction(1, 1), ((1, 0), (1, 3)): Fraction(1, 6), ((1, 1), (1, 2)): Fraction(1, 3), ((1, 4),): Fraction(1, 60)}
+CONTROL (1)(i) W^(5) T_U-primary of weight 5: True
+CONTROL (1)(ii) field level Res e^(-(2/3)V)(z) W^(5)(w) = 0: True
+   (reported) field level Res e^(2V) W^(5) has 5 terms
+CONTROL (1)(iii) W^(5) not in span{d^3 T_U, :T_U dT_U:}: True
+CONTROL GATE I_3 (weight-4 commutant of {e^((V+Z)/3), e^(2V), e^(2Z)}) dim 1 and eigen proportional to cyl(3,4) at t = 7/5: True
+   eigen(W^(5)) = P_A*(P_A - 1)*(P_A + 1)*(2*P_A - 1)*(2*P_A + 1)/15
+SEALED TEST P1 eigen(W^(5)) proportional to P_V (P_V^2 - 1/4)(P_V^2 - 1): True
+   vacuity: eigenvalues of the 7 one-boson weight-5 monomials span dim 2 (shape space a P^5 + b P^3 + c P)
+   d-echelon at weight 13: 1165 rows (0s)
+   bilinears f_i(V) g_j(Z) (7 x 7 = 49) with Res_1 I_3 x . in d: relation space dim 1 (1s)
+SEALED TEST P2 the bilinear space in K_10 + d is 1-dimensional and equals W^(5) (x) W^(5): True
+   eigen(G_10) = -(P_X - pi)*(P_X + pi)*(3*P_X**2 - 6*P_X*pi + 3*pi**2 - 4)*(3*P_X**2 - 6*P_X*pi + 3*pi**2 - 1)*(3*P_X**2 + 6*P_X*pi + 3*pi**2 - 4)*(3*P_X**2 + 6*P_X*pi + 3*pi**2 - 1)/4800
+   E_2 = (P_X - pi)*(P_X + pi)*(3*P_X**2 - 6*P_X*pi + 3*pi**2 - 4)*(3*P_X**2 - 6*P_X*pi + 3*pi**2 - 1)*(3*P_X**2 + 6*P_X*pi + 3*pi**2 - 4)*(3*P_X**2 + 6*P_X*pi + 3*pi**2 - 1)/81
+SEALED TEST P3 G_10 in K_10 (mod d) and eigen(G_10) proportional to E_2: True
+   (P3 parts: in K_10 True; eigen ~ E_2 True)
+CONTROL antisymmetry: eigen(G_10) odd under P_X <-> pi: True
+SEALED TEST P4a G_10 primary (weight 10) under T_U + T_W: True
+SEALED TEST P4b NO representative G_10 + dH is T_total-primary (consistent with cyl_t2_primary): True
+   (4s; T_total-primary representative exists: False)
+CONTROL symmetric W_V^2 + W_Z^2: eigen NOT antisymmetric: True
+   (reported) W_V^2 + W_Z^2 in K_10: False
+CONTROL TAMPER W + (dV)^2 d^3V/10: leaves K_10 and breaks P1 and P3: True
+CONTROL TAMPER exponent 21/10 (S_5 shape): breaks P1 and leaves K_10: True
+CONTROL SCORING TAMPER E_2 with p^2 + 1/1000 breaks P3: True
+done (14s)
+
+===== nz_wuw2_k10_full: argv ['k10_full.py']  exit 0  43s
+481 weight-10 monomials; images computed (7s)
+kernel (before mod d): dim 302 (29s)
+dim K_10 mod d = 2  (record / VIR5d: 2)
+GATE certified vev_sol3_w10 (t = 7/5) in span eigen(K_10): True
+G_10 in K_10 + d (cross-check of P3 with the full kernel): True
+certified Sol 3 spin 9 itself proportional to eigen(G_10)? False (expected False: the Sol 3 class is the symmetric one)
+
+===== br2_direct_paperclip: argv ['br2_direct.py']  exit 0  1s
+(a) LVZ W4sym at n = -18/25: conserved mod d by all four hairpin exponentials: True; TAMPER (+1/7): False (must be False)
+(a) LVZ W4sym at n = -32/25: conserved mod d by all four hairpin exponentials: True; TAMPER (+1/7): False (must be False)
+(a) LVZ W4sym at n = -50/169: conserved mod d by all four hairpin exponentials: True; TAMPER (+1/7): False (must be False)
+(b) N = 1, weight 4: commutant mod d of pair: 3; pair + mirror (four): 2; pair + Virasoro: 1; all five: 1
+(b) N = 1, weight 6: commutant mod d of pair: 10; pair + mirror (four): 3; pair + Virasoro: 2; all five: 2
+DIRECT CHECKS PASS
+
+===== num3_fitext_2_A_60: argv ['num3_fit_ext.py', '2_A_60']  exit 0  1s
+
+=== 2_A_60: BARE (lattice only)
+  Q (theta = 3.0): lsq residual 1.44e-17; K0: 16.61 digits [stab 16.1]; K2: 8.28 digits [stab 8.12]; K3: |fit| 1.5e-5 vs 0 [stab-abs 1.1e-5]; K4: 1.655 digits [stab 2.3]; K5: |fit| 1.5e+2 vs 0 [stab-abs 28.0]; K6: -3.308 digits [stab 0.0395]; K7: |fit| 3.4e+7 vs 0 [stab-abs 2.3e+7]; K8 (pole): fit -17620398737.3 [stab -0.606]
+  Q (theta = 2.4): lsq residual 1.99e-17; K0: 16.47 digits [stab 16.0]; K2: 8.14 digits [stab 7.98]; K3: |fit| 2.0e-5 vs 0 [stab-abs 1.6e-5]; K4: 1.515 digits [stab 2.15]; K5: |fit| 2.1e+2 vs 0 [stab-abs 39.0]; K6: -3.448 digits [stab 0.0394]; K7: |fit| 4.7e+7 vs 0 [stab-abs 3.2e+7]; K8 (pole): fit -24336976880.7 [stab -0.606]
+  Q (theta = 3.6): lsq residual 1.13e-17; K0: 16.71 digits [stab 16.2]; K2: 8.386 digits [stab 8.22]; K3: |fit| 1.2e-5 vs 0 [stab-abs 8.8e-6]; K4: 1.761 digits [stab 2.41]; K5: |fit| 1.2e+2 vs 0 [stab-abs 22.0]; K6: -3.202 digits [stab 0.0396]; K7: |fit| 2.7e+7 vs 0 [stab-abs 1.8e+7]; K8 (pole): fit -13809279663.3 [stab -0.606]
+
+=== 2_A_60: SEALED basis
+  Q (theta = 3.0): lsq residual 2.05e-36; K0: 33.83 digits [stab 30.3]; K2: 25.09 digits [stab 21.8]; K3: |fit| 4.1e-22 vs 0 [stab-abs 5.7e-19]; K4: 17.91 digits [stab 14.9]; K5: |fit| 1.9e-14 vs 0 [stab-abs 1.3e-11]; K6: 12.15 digits [stab 9.49]; K7: |fit| 4.6e-8 vs 0 [stab-abs 1.4e-5]; K8 (pole): fit -1589.47464067 [stab 4.41]
+     extra N-3/2: 6.062945457008697770445 [stab 13.2]
+     extra N-9/2: 11568837.68743609283662 [stab 0.137]
+     extra N-15/2: -1408816370072582950953.0 [stab -1.01]
+     extra logE_-3: -0.00002180208067683485305525 [stab 0.00234]  vs PREDICTED 1.622117732871101586786e-47: -42.13 digits
+     extra logE_-6: 33751308084213.43943334 [stab 0.194]  vs PREDICTED 0.0: pred 0, |fit| 3.38e+13
+  Q (theta = 2.4): lsq residual 1.23e-36; K0: 34.05 digits [stab 30.5]; K2: 25.31 digits [stab 21.9]; K3: |fit| 2.5e-22 vs 0 [stab-abs 4.2e-19]; K4: 18.13 digits [stab 15.0]; K5: |fit| 1.2e-14 vs 0 [stab-abs 9.7e-12]; K6: 12.37 digits [stab 9.62]; K7: |fit| 2.8e-8 vs 0 [stab-abs 1.0e-5]; K8 (pole): fit -1222.82984684 [stab 4.42]
+     extra N-3/2: 8.374031230085742000487 [stab 13.4]
+     extra N-9/2: 8878185.137628984764533 [stab 0.139]
+     extra N-15/2: -887799106449292881171.7 [stab -0.926]
+     extra logE_-3: -0.00001328397967719229182756 [stab 0.0019]  vs PREDICTED 1.622117732871101586786e-47: -41.91 digits
+     extra logE_-6: 20938845881982.88945328 [stab 0.154]  vs PREDICTED 0.0: pred 0, |fit| 2.09e+13
+  Q (theta = 3.6): lsq residual 2.3e-36; K0: 33.79 digits [stab 30.4]; K2: 25.05 digits [stab 21.8]; K3: |fit| 4.5e-22 vs 0 [stab-abs 5.5e-19]; K4: 17.86 digits [stab 14.9]; K5: |fit| 2.1e-14 vs 0 [stab-abs 1.3e-11]; K6: 12.11 digits [stab 9.51]; K7: |fit| 5.1e-8 vs 0 [stab-abs 1.3e-5]; K8 (pole): fit -1210.03760578 [stab 4.31]
+     extra N-3/2: 4.751589953415488374256 [stab 13.1]
+     extra N-9/2: 15670390.21421011590297 [stab 0.183]
+     extra N-15/2: -1530992597237622839543.0 [stab -1.06]
+     extra logE_-3: -0.00002414792760954998297295 [stab 0.00267]  vs PREDICTED 1.622117732871101586786e-47: -42.17 digits
+     extra logE_-6: 37008633366075.5827994 [stab 0.228]  vs PREDICTED 0.0: pred 0, |fit| 3.7e+13
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.88 digits; K4: 2.24 digits; K6: 2.29 digits (must be << sealed)
+
+===== num3_fitext_2_B_60: argv ['num3_fit_ext.py', '2_B_60']  exit 0  1s
+
+=== 2_B_60: BARE (lattice only)
+  Q (theta = 3.0): lsq residual 1.76e-17; K0: 16.52 digits [stab 16.0]; K2: 8.152 digits [stab 7.99]; K3: |fit| 1.8e-5 vs 0 [stab-abs 1.4e-5]; K4: 1.627 digits [stab 2.27]; K5: |fit| 1.8e+2 vs 0 [stab-abs 34.0]; K6: -3.337 digits [stab 0.0395]; K7: |fit| 4.2e+7 vs 0 [stab-abs 2.8e+7]; K8 (pole): fit -21473281788.4 [stab -0.606]
+  Q (theta = 2.8): lsq residual 1.93e-17; K0: 16.48 digits [stab 16.0]; K2: 8.111 digits [stab 7.95]; K3: |fit| 2.0e-5 vs 0 [stab-abs 1.5e-5]; K4: 1.586 digits [stab 2.23]; K5: |fit| 2.0e+2 vs 0 [stab-abs 38.0]; K6: -3.378 digits [stab 0.0394]; K7: |fit| 4.6e+7 vs 0 [stab-abs 3.1e+7]; K8 (pole): fit -23597055006.8 [stab -0.606]
+  Q (theta = 3.2): lsq residual 1.61e-17; K0: 16.56 digits [stab 16.1]; K2: 8.19 digits [stab 8.03]; K3: |fit| 1.6e-5 vs 0 [stab-abs 1.3e-5]; K4: 1.665 digits [stab 2.31]; K5: |fit| 1.7e+2 vs 0 [stab-abs 31.0]; K6: -3.3 digits [stab 0.0395]; K7: |fit| 3.8e+7 vs 0 [stab-abs 2.6e+7]; K8 (pole): fit -19700229158.1 [stab -0.606]
+
+=== 2_B_60: SEALED basis
+  Q (theta = 3.0): lsq residual 2.06e-36; K0: 33.83 digits [stab 30.3]; K2: 25.05 digits [stab 21.8]; K3: |fit| 4.1e-22 vs 0 [stab-abs 5.7e-19]; K4: 17.96 digits [stab 15.0]; K5: |fit| 1.9e-14 vs 0 [stab-abs 1.3e-11]; K6: 12.21 digits [stab 9.55]; K7: |fit| 4.6e-8 vs 0 [stab-abs 1.4e-5]; K8 (pole): fit -1501.54243359 [stab 4.39]
+     extra N-3/2: 7.388671553204386618569 [stab 13.3]
+     extra N-9/2: 13231474.46195140940724 [stab 0.154]
+     extra N-15/2: -1412363305310310864434.0 [stab -1.01]
+     extra logE_-3: -0.00002185750174867404035963 [stab 0.00234]  vs PREDICTED 1.760656204665622429456e-47: -42.09 digits
+     extra logE_-6: 33836659380058.56798524 [stab 0.194]  vs PREDICTED 0.0: pred 0, |fit| 3.38e+13
+  Q (theta = 2.8): lsq residual 1.84e-36; K0: 33.88 digits [stab 30.4]; K2: 25.1 digits [stab 21.8]; K3: |fit| 3.7e-22 vs 0 [stab-abs 5.4e-19]; K4: 18.01 digits [stab 15.0]; K5: |fit| 1.7e-14 vs 0 [stab-abs 1.2e-11]; K6: 12.25 digits [stab 9.57]; K7: |fit| 4.1e-8 vs 0 [stab-abs 1.3e-5]; K8 (pole): fit -1461.1574324 [stab 4.4]
+     extra N-3/2: 8.119433823929941667042 [stab 13.3]
+     extra N-9/2: 12118357.30624469754432 [stab 0.149]
+     extra N-15/2: -1277638841094021808217.0 [stab -0.988]
+     extra logE_-3: -0.00001961383902545404212939 [stab 0.00222]  vs PREDICTED 1.760656204665622429456e-47: -42.05 digits
+     extra logE_-6: 30493821412638.8684685 [stab 0.183]  vs PREDICTED 0.0: pred 0, |fit| 3.05e+13
+  Q (theta = 3.2): lsq residual 2.21e-36; K0: 33.8 digits [stab 30.3]; K2: 25.02 digits [stab 21.8]; K3: |fit| 4.4e-22 vs 0 [stab-abs 5.8e-19]; K4: 17.93 digits [stab 15.0]; K5: |fit| 2.0e-14 vs 0 [stab-abs 1.3e-11]; K6: 12.18 digits [stab 9.54]; K7: |fit| 5.0e-8 vs 0 [stab-abs 1.4e-5]; K8 (pole): fit -1456.12292909 [stab 4.36]
+     extra N-3/2: 6.77858762465442523368 [stab 13.2]
+     extra N-9/2: 14506820.05400596927993 [stab 0.163]
+     extra N-15/2: -1501693006131754640225.0 [stab -1.03]
+     extra logE_-3: -0.00002339864187082928794966 [stab 0.00245]  vs PREDICTED 1.760656204665622429456e-47: -42.12 digits
+     extra logE_-6: 36091951050231.41882971 [stab 0.205]  vs PREDICTED 0.0: pred 0, |fit| 3.61e+13
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.43 digits; K4: 1.82 digits; K6: 1.99 digits (must be << sealed)
+
+===== num3_fitext_t10o3_A_60: argv ['num3_fit_ext.py', '10_3_A_60']  exit 0  1s
+
+=== 10_3_A_60: BARE (lattice only)
+  Q (theta = 4.3333333): lsq residual 2.15e-15; K0: 14.68 digits [stab 14.3]; K2: 6.097 digits [stab 6.1]; K3: |fit| 0.0034 vs 0 [stab-abs 0.0014]; K4: -0.2782 digits [stab 1.04]; K5: |fit| 1.7e+4 vs 0 [stab-abs 6.2e+3]; K6: -4.716 digits [stab -0.183]; K7: |fit| 1.1e+10 vs 0 [stab-abs 8.6e+9]; K8: -8.757 digits [stab -0.771]
+  Q (theta = 3.7333333): lsq residual 2.04e-15; K0: 14.7 digits [stab 14.3]; K2: 6.119 digits [stab 6.12]; K3: |fit| 0.0032 vs 0 [stab-abs 0.0013]; K4: -0.257 digits [stab 1.01]; K5: |fit| 1.6e+4 vs 0 [stab-abs 5.9e+3]; K6: -4.695 digits [stab -0.183]; K7: |fit| 1.1e+10 vs 0 [stab-abs 8.2e+9]; K8: -8.736 digits [stab -0.771]
+  Q (theta = 4.9333333): lsq residual 2.23e-15; K0: 14.66 digits [stab 14.3]; K2: 6.081 digits [stab 6.08]; K3: |fit| 0.0035 vs 0 [stab-abs 0.0015]; K4: -0.2948 digits [stab 1.06]; K5: |fit| 1.7e+4 vs 0 [stab-abs 6.4e+3]; K6: -4.733 digits [stab -0.183]; K7: |fit| 1.2e+10 vs 0 [stab-abs 9.0e+9]; K8: -8.774 digits [stab -0.771]
+
+=== 10_3_A_60: SEALED basis
+  Q (theta = 4.3333333): lsq residual 1.06e-33; K0: 31.99 digits [stab 27.9]; K2: 23.09 digits [stab 19.2]; K3: |fit| 5.7e-20 vs 0 [stab-abs 2.9e-16]; K4: 16.22 digits [stab 12.7]; K5: |fit| 1.2e-12 vs 0 [stab-abs 2.8e-9]; K6: 10.89 digits [stab 7.7]; K7: |fit| 1.9e-5 vs 0 [stab-abs 0.018]; K8: 6.506 digits [stab 3.73]
+     extra N1: -39.99760113477018740008 [stab 13.0]
+     extra N2: 711.9118249171732227241 [stab 5.14]
+     extra N3: -28455.8035620424224599 [stab 0.0607]
+  Q (theta = 3.7333333): lsq residual 3.1e-34; K0: 32.5 digits [stab 28.0]; K2: 23.59 digits [stab 19.4]; K3: |fit| 1.8e-20 vs 0 [stab-abs 2.2e-16]; K4: 16.72 digits [stab 12.8]; K5: |fit| 3.8e-13 vs 0 [stab-abs 2.2e-9]; K6: 11.38 digits [stab 7.82]; K7: |fit| 6.2e-6 vs 0 [stab-abs 0.014]; K8: 6.983 digits [stab 3.85]
+     extra N1: -38.09139666854672779961 [stab 13.1]
+     extra N2: 1049.463694402114888306 [stab 5.43]
+     extra N3: 146092.6210991052647632 [stab -2.87]
+  Q (theta = 4.9333333): lsq residual 1.67e-33; K0: 31.8 digits [stab 27.9]; K2: 22.9 digits [stab 19.2]; K3: |fit| 8.9e-20 vs 0 [stab-abs 3.2e-16]; K4: 16.03 digits [stab 12.6]; K5: |fit| 1.8e-12 vs 0 [stab-abs 3.0e-9]; K6: 10.7 digits [stab 7.67]; K7: |fit| 2.9e-5 vs 0 [stab-abs 0.02]; K8: 6.315 digits [stab 3.7]
+     extra N1: -41.55522704654493088718 [stab 12.9]
+     extra N2: 520.3744528400657351184 [stab 4.97]
+     extra N3: -7780.272930062740541537 [stab 0.0162]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.88 digits; K4: 2.23 digits; K6: 2.76 digits (must be << sealed)
+
+===== num3_fitext_t10o3_B_60: argv ['num3_fit_ext.py', '10_3_B_60']  exit 0  1s
+
+=== 10_3_B_60: BARE (lattice only)
+  Q (theta = 4.3333333): lsq residual 2.34e-15; K0: 14.64 digits [stab 14.3]; K2: 6.012 digits [stab 6.02]; K3: |fit| 0.0037 vs 0 [stab-abs 0.0015]; K4: -0.2769 digits [stab 1.04]; K5: |fit| 1.8e+4 vs 0 [stab-abs 6.8e+3]; K6: -4.728 digits [stab -0.183]; K7: |fit| 1.2e+10 vs 0 [stab-abs 9.4e+9]; K8: -8.771 digits [stab -0.771]
+  Q (theta = 4.1333333): lsq residual 2.31e-15; K0: 14.64 digits [stab 14.3]; K2: 6.018 digits [stab 6.02]; K3: |fit| 0.0037 vs 0 [stab-abs 0.0015]; K4: -0.2705 digits [stab 1.03]; K5: |fit| 1.8e+4 vs 0 [stab-abs 6.7e+3]; K6: -4.722 digits [stab -0.183]; K7: |fit| 1.2e+10 vs 0 [stab-abs 9.3e+9]; K8: -8.764 digits [stab -0.771]
+  Q (theta = 4.5333333): lsq residual 2.37e-15; K0: 14.63 digits [stab 14.2]; K2: 6.006 digits [stab 6.01]; K3: |fit| 0.0038 vs 0 [stab-abs 0.0016]; K4: -0.2827 digits [stab 1.04]; K5: |fit| 1.8e+4 vs 0 [stab-abs 6.9e+3]; K6: -4.734 digits [stab -0.183]; K7: |fit| 1.3e+10 vs 0 [stab-abs 9.5e+9]; K8: -8.776 digits [stab -0.771]
+
+=== 10_3_B_60: SEALED basis
+  Q (theta = 4.3333333): lsq residual 1.07e-33; K0: 31.99 digits [stab 27.9]; K2: 23.04 digits [stab 19.2]; K3: |fit| 5.8e-20 vs 0 [stab-abs 2.9e-16]; K4: 16.26 digits [stab 12.7]; K5: |fit| 1.2e-12 vs 0 [stab-abs 2.8e-9]; K6: 10.91 digits [stab 7.73]; K7: |fit| 1.9e-5 vs 0 [stab-abs 0.018]; K8: 6.524 digits [stab 3.76]
+     extra N1: -43.66419454483094688521 [stab 13.0]
+     extra N2: 799.458799490525442201 [stab 5.19]
+     extra N3: 31262.50972173033188115 [stab -0.078]
+  Q (theta = 4.1333333): lsq residual 8.3e-34; K0: 32.1 digits [stab 27.9]; K2: 23.14 digits [stab 19.2]; K3: |fit| 4.5e-20 vs 0 [stab-abs 2.7e-16]; K4: 16.36 digits [stab 12.7]; K5: |fit| 9.4e-13 vs 0 [stab-abs 2.6e-9]; K6: 11.02 digits [stab 7.76]; K7: |fit| 1.5e-5 vs 0 [stab-abs 0.017]; K8: 6.628 digits [stab 3.78]
+     extra N1: -43.02625081212302018271 [stab 13.0]
+     extra N2: 899.0742551857312061991 [stab 5.27]
+     extra N3: 68801.34685067434376765 [stab -0.211]
+  Q (theta = 4.5333333): lsq residual 1.29e-33; K0: 31.91 digits [stab 27.9]; K2: 22.96 digits [stab 19.2]; K3: |fit| 7.0e-20 vs 0 [stab-abs 3.1e-16]; K4: 16.18 digits [stab 12.7]; K5: |fit| 1.4e-12 vs 0 [stab-abs 2.9e-9]; K6: 10.83 digits [stab 7.71]; K7: |fit| 2.3e-5 vs 0 [stab-abs 0.019]; K8: 6.446 digits [stab 3.74]
+     extra N1: -44.26118168110856555872 [stab 13.0]
+     extra N2: 716.4710782671722380184 [stab 5.13]
+     extra N3: 15877.98736779347932035 [stab -0.0362]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.43 digits; K4: 1.87 digits; K6: 2.37 digits (must be << sealed)
+
+===== num3_fit_2_A_60: argv ['num3_fit.py', '2_A_60']  exit 0  2s
+
+=== 2_A_60: BARE (lattice only)
+  Q (theta = 3.0): lsq residual 1.52e-19; K0: 14.37 digits [stab 14.0]; K2: 7.122 digits [stab 7.07]; K3: |fit| 6.9e-5 vs 0 [stab-abs 4.1e-5]; K4: 1.44 digits [stab 2.17]; K5: |fit| 93.0 vs 0 [stab-abs 14.0]; K6: -2.706 digits [stab 0.162]; K7: |fit| 3.6e+6 vs 0 [stab-abs 2.2e+6]; K8 (pole): fit -847871593.784 [stab -0.428]
+  Q (theta = 2.4): lsq residual 2.1e-19; K0: 14.23 digits [stab 13.8]; K2: 6.982 digits [stab 6.93]; K3: |fit| 9.5e-5 vs 0 [stab-abs 5.7e-5]; K4: 1.3 digits [stab 2.02]; K5: |fit| 1.3e+2 vs 0 [stab-abs 20.0]; K6: -2.846 digits [stab 0.162]; K7: |fit| 5.0e+6 vs 0 [stab-abs 3.0e+6]; K8 (pole): fit -1171063575.66 [stab -0.428]
+  Q (theta = 3.6): lsq residual 1.19e-19; K0: 14.47 digits [stab 14.1]; K2: 7.228 digits [stab 7.17]; K3: |fit| 5.4e-5 vs 0 [stab-abs 3.3e-5]; K4: 1.546 digits [stab 2.28]; K5: |fit| 73.0 vs 0 [stab-abs 11.0]; K6: -2.6 digits [stab 0.163]; K7: |fit| 2.9e+6 vs 0 [stab-abs 1.7e+6]; K8 (pole): fit -664485623.51 [stab -0.428]
+
+=== 2_A_60: SEALED basis
+  Q (theta = 3.0): lsq residual 9.37e-30; K0: 20.92 digits [stab 17.9]; K2: 13.27 digits [stab 10.5]; K3: |fit| 8.5e-11 vs 0 [stab-abs 4.1e-8]; K4: 7.07 digits [stab 4.51]; K5: |fit| 0.00046 vs 0 [stab-abs 0.12]; K6: 2.207 digits [stab 0.261]; K7: |fit| 1.6e+2 vs 0 [stab-abs 2.2e+4]; K8 (pole): fit -431417.825648 [stab -0.0048]
+     extra N-3/2: 6.062965715141327884756 [stab 2.98]
+     extra N-9/2: -91308440597739.14843174 [stab -0.0182]
+     extra N-15/2: 1.738229728724631886287e+27 [stab -0.459]
+     extra logE_-3: 30158.0103611529405608 [stab -0.0045]  vs PREDICTED 1.622117732871101586786e-47: -51.27 digits
+     extra logE_-6: -264406775065114695834.9 [stab -0.0905]  vs PREDICTED 0.0: pred 0, |fit| 2.64e+20
+  Q (theta = 2.4): lsq residual 1.5e-29; K0: 20.68 digits [stab 18.0]; K2: 13.03 digits [stab 10.6]; K3: |fit| 1.5e-10 vs 0 [stab-abs 3.3e-8]; K4: 6.827 digits [stab 4.61]; K5: |fit| 0.0008 vs 0 [stab-abs 0.098]; K6: 1.958 digits [stab 0.303]; K7: |fit| 2.8e+2 vs 0 [stab-abs 1.8e+4]; K8 (pole): fit -778186.110959 [stab -0.0105]
+     extra N-3/2: 8.374066791931923908978 [stab 3.22]
+     extra N-9/2: -171885386236869.5726852 [stab -0.0398]
+     extra N-15/2: 3.860126394515365313722e+27 [stab -0.744]
+     extra logE_-3: 54427.71652488888152579 [stab -0.0099]  vs PREDICTED 1.622117732871101586786e-47: -51.53 digits
+     extra logE_-6: -530996862887033566416.1 [stab -0.186]  vs PREDICTED 0.0: pred 0, |fit| 5.31e+20
+  Q (theta = 3.6): lsq residual 1.11e-30; K0: 24.85 digits [stab 17.9]; K2: 15.11 digits [stab 10.5]; K3: |fit| 2.0e-12 vs 0 [stab-abs 3.8e-8]; K4: 8.55 digits [stab 4.55]; K5: |fit| 2.0e-5 vs 0 [stab-abs 0.11]; K6: 3.451 digits [stab 0.281]; K7: |fit| 11.0 vs 0 [stab-abs 2.0e+4]; K8 (pole): fit 37781.7481382 [stab 0.00047]
+     extra N-3/2: 4.751589172707400713215 [stab 2.91]
+     extra N-9/2: 15118019636330.71028857 [stab 0.00352]
+     extra N-15/2: -8.75754328035496873861e+26 [stab 0.739]
+     extra logE_-3: -2649.485693877759067833 [stab 0.000441]  vs PREDICTED 1.622117732871101586786e-47: -50.21 digits
+     extra logE_-6: 77036735100702579793.71 [stab 0.0362]  vs PREDICTED 0.0: pred 0, |fit| 7.7e+19
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.88 digits; K4: 2.24 digits; K6: 1.95 digits (must be << sealed)
+
+===== num3_fit_2_B_60: argv ['num3_fit.py', '2_B_60']  exit 0  2s
+
+=== 2_B_60: BARE (lattice only)
+  Q (theta = 3.0): lsq residual 1.85e-19; K0: 14.28 digits [stab 13.9]; K2: 6.994 digits [stab 6.94]; K3: |fit| 8.4e-5 vs 0 [stab-abs 5.1e-5]; K4: 1.412 digits [stab 2.14]; K5: |fit| 1.1e+2 vs 0 [stab-abs 18.0]; K6: -2.735 digits [stab 0.162]; K7: |fit| 4.4e+6 vs 0 [stab-abs 2.6e+6]; K8 (pole): fit -1033267059.24 [stab -0.428]
+  Q (theta = 2.8): lsq residual 2.03e-19; K0: 14.24 digits [stab 13.8]; K2: 6.953 digits [stab 6.9]; K3: |fit| 9.2e-5 vs 0 [stab-abs 5.6e-5]; K4: 1.371 digits [stab 2.1]; K5: |fit| 1.2e+2 vs 0 [stab-abs 19.0]; K6: -2.776 digits [stab 0.162]; K7: |fit| 4.9e+6 vs 0 [stab-abs 2.9e+6]; K8 (pole): fit -1135460007.62 [stab -0.428]
+  Q (theta = 3.2): lsq residual 1.7e-19; K0: 14.32 digits [stab 13.9]; K2: 7.032 digits [stab 6.98]; K3: |fit| 7.7e-5 vs 0 [stab-abs 4.6e-5]; K4: 1.45 digits [stab 2.18]; K5: |fit| 1.0e+2 vs 0 [stab-abs 16.0]; K6: -2.698 digits [stab 0.162]; K7: |fit| 4.1e+6 vs 0 [stab-abs 2.4e+6]; K8 (pole): fit -947950225.182 [stab -0.428]
+
+=== 2_B_60: SEALED basis
+  Q (theta = 3.0): lsq residual 9.36e-30; K0: 20.92 digits [stab 17.9]; K2: 13.23 digits [stab 10.4]; K3: |fit| 8.5e-11 vs 0 [stab-abs 4.1e-8]; K4: 7.129 digits [stab 4.57]; K5: |fit| 0.00046 vs 0 [stab-abs 0.12]; K6: 2.264 digits [stab 0.287]; K7: |fit| 1.6e+2 vs 0 [stab-abs 2.2e+4]; K8 (pole): fit -430791.913628 [stab -0.00478]
+     extra N-3/2: 7.388691790049636044944 [stab 3.07]
+     extra N-9/2: -91167745274895.60901265 [stab -0.0181]
+     extra N-15/2: 1.733258608014322641448e+27 [stab -0.458]
+     extra logE_-3: 30120.59675069591603784 [stab -0.00448]  vs PREDICTED 1.760656204665622429456e-47: -51.23 digits
+     extra logE_-6: -263870182975366963521.5 [stab -0.0901]  vs PREDICTED 0.0: pred 0, |fit| 2.64e+20
+  Q (theta = 2.8): lsq residual 1.16e-29; K0: 20.81 digits [stab 17.9]; K2: 13.12 digits [stab 10.4]; K3: |fit| 1.1e-10 vs 0 [stab-abs 4.0e-8]; K4: 7.016 digits [stab 4.58]; K5: |fit| 0.00059 vs 0 [stab-abs 0.12]; K6: 2.149 digits [stab 0.293]; K7: |fit| 2.1e+2 vs 0 [stab-abs 2.1e+4]; K8 (pole): fit -566370.115468 [stab -0.00647]
+     extra N-3/2: 8.119460083634229735027 [stab 3.12]
+     extra N-9/2: -122362950246102.8701019 [stab -0.0247]
+     extra N-15/2: 2.532342316435530345474e+27 [stab -0.57]
+     extra logE_-3: 39605.87217213901750842 [stab -0.00607]  vs PREDICTED 1.760656204665622429456e-47: -51.35 digits
+     extra logE_-6: -365812702203547248620.8 [stab -0.122]  vs PREDICTED 0.0: pred 0, |fit| 3.66e+20
+  Q (theta = 3.2): lsq residual 6.79e-30; K0: 21.08 digits [stab 17.9]; K2: 13.39 digits [stab 10.4]; K3: |fit| 5.8e-11 vs 0 [stab-abs 4.2e-8]; K4: 7.301 digits [stab 4.56]; K5: |fit| 0.0003 vs 0 [stab-abs 0.12]; K6: 2.442 digits [stab 0.287]; K7: |fit| 1.0e+2 vs 0 [stab-abs 2.2e+4]; K8 (pole): fit -281330.234147 [stab -0.00313]
+     extra N-3/2: 6.778601188213527786406 [stab 3.03]
+     extra N-9/2: -57042359810627.21689511 [stab -0.0115]
+     extra N-15/2: 8.784680334192572944309e+26 [stab -0.297]
+     extra logE_-3: 19667.22552371472184114 [stab -0.00293]  vs PREDICTED 1.760656204665622429456e-47: -51.05 digits
+     extra logE_-6: -153446790386564103459.6 [stab -0.0558]  vs PREDICTED 0.0: pred 0, |fit| 1.53e+20
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.43 digits; K4: 1.82 digits; K6: 1.81 digits (must be << sealed)
+
+===== num3_fit_t10o3_A_60: argv ['num3_fit.py', '10_3_A_60']  exit 0  2s
+
+=== 10_3_A_60: BARE (lattice only)
+  Q (theta = 4.3333333): lsq residual 1.72e-17; K0: 12.6 digits [stab 12.3]; K2: 5.162 digits [stab 5.26]; K3: |fit| 0.0091 vs 0 [stab-abs 0.003]; K4: -0.2326 digits [stab 1.07]; K5: |fit| 5.5e+3 vs 0 [stab-abs 1.7e+3]; K6: -3.825 digits [stab -0.0493]; K7: |fit| 6.1e+8 vs 0 [stab-abs 4.1e+8]; K8: -7.127 digits [stab -0.577]
+  Q (theta = 3.7333333): lsq residual 1.64e-17; K0: 12.63 digits [stab 12.3]; K2: 5.183 digits [stab 5.28]; K3: |fit| 0.0086 vs 0 [stab-abs 0.0029]; K4: -0.2114 digits [stab 1.03]; K5: |fit| 5.2e+3 vs 0 [stab-abs 1.6e+3]; K6: -3.803 digits [stab -0.0493]; K7: |fit| 5.8e+8 vs 0 [stab-abs 4.0e+8]; K8: -7.106 digits [stab -0.577]
+  Q (theta = 4.9333333): lsq residual 1.79e-17; K0: 12.59 digits [stab 12.3]; K2: 5.146 digits [stab 5.24]; K3: |fit| 0.0094 vs 0 [stab-abs 0.0032]; K4: -0.2492 digits [stab 1.09]; K5: |fit| 5.7e+3 vs 0 [stab-abs 1.8e+3]; K6: -3.841 digits [stab -0.0493]; K7: |fit| 6.3e+8 vs 0 [stab-abs 4.3e+8]; K8: -7.144 digits [stab -0.577]
+
+=== 10_3_A_60: SEALED basis
+  Q (theta = 4.3333333): lsq residual 1.33e-26; K0: 19.69 digits [stab 16.7]; K2: 11.93 digits [stab 9.18]; K3: |fit| 2.4e-9 vs 0 [stab-abs 1.0e-6]; K4: 6.092 digits [stab 3.6]; K5: |fit| 0.0054 vs 0 [stab-abs 1.2]; K6: 1.674 digits [stab -0.157]; K7: |fit| 1.2e+4 vs 0 [stab-abs 1.3e+6]; K8: -1.897 digits [stab -0.00575]
+     extra N1: -39.99758334321265178631 [stab 3.85]
+     extra N2: 4336.671437777217494715 [stab -0.00439]
+     extra N3: 47242527383.38799481651 [stab -0.0118]
+  Q (theta = 3.7333333): lsq residual 1.63e-26; K0: 19.58 digits [stab 16.7]; K2: 11.82 digits [stab 9.21]; K3: |fit| 3.1e-9 vs 0 [stab-abs 9.8e-7]; K4: 5.982 digits [stab 3.62]; K5: |fit| 0.007 vs 0 [stab-abs 1.2]; K6: 1.56 digits [stab -0.165]; K7: |fit| 1.6e+4 vs 0 [stab-abs 1.3e+6]; K8: -2.015 digits [stab -0.00776]
+     extra N1: -38.09137374296064277494 [stab 3.84]
+     extra N2: 5778.095559943986609228 [stab -0.00604]
+     extra N3: 62723767039.73836192463 [stab -0.0158]
+  Q (theta = 4.9333333): lsq residual 8.34e-27; K0: 19.93 digits [stab 16.8]; K2: 12.17 digits [stab 9.23]; K3: |fit| 1.4e-9 vs 0 [stab-abs 9.2e-7]; K4: 6.343 digits [stab 3.65]; K5: |fit| 0.003 vs 0 [stab-abs 1.1]; K6: 1.934 digits [stab -0.18]; K7: |fit| 6.5e+3 vs 0 [stab-abs 1.2e+6]; K8: -1.627 digits [stab -0.0035]
+     extra N1: -41.55521706082873779651 [stab 3.91]
+     extra N2: 2496.92394417700548406 [stab -0.00287]
+     extra N3: 24667032927.409025236 [stab -0.00716]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.88 digits; K4: 2.23 digits; K6: 1.71 digits (must be << sealed)
+
+===== num3_fit_t10o3_B_60: argv ['num3_fit.py', '10_3_B_60']  exit 0  2s
+
+=== 10_3_B_60: BARE (lattice only)
+  Q (theta = 4.3333333): lsq residual 1.88e-17; K0: 12.57 digits [stab 12.3]; K2: 5.077 digits [stab 5.18]; K3: |fit| 0.0099 vs 0 [stab-abs 0.0033]; K4: -0.2312 digits [stab 1.06]; K5: |fit| 6.0e+3 vs 0 [stab-abs 1.9e+3]; K6: -3.837 digits [stab -0.0493]; K7: |fit| 6.6e+8 vs 0 [stab-abs 4.5e+8]; K8: -7.141 digits [stab -0.577]
+  Q (theta = 4.1333333): lsq residual 1.85e-17; K0: 12.57 digits [stab 12.3]; K2: 5.083 digits [stab 5.18]; K3: |fit| 0.0098 vs 0 [stab-abs 0.0033]; K4: -0.2248 digits [stab 1.05]; K5: |fit| 5.9e+3 vs 0 [stab-abs 1.9e+3]; K6: -3.83 digits [stab -0.0493]; K7: |fit| 6.5e+8 vs 0 [stab-abs 4.5e+8]; K8: -7.134 digits [stab -0.577]
+  Q (theta = 4.5333333): lsq residual 1.9e-17; K0: 12.56 digits [stab 12.3]; K2: 5.071 digits [stab 5.17]; K3: |fit| 0.01 vs 0 [stab-abs 0.0034]; K4: -0.2371 digits [stab 1.07]; K5: |fit| 6.0e+3 vs 0 [stab-abs 1.9e+3]; K6: -3.843 digits [stab -0.0493]; K7: |fit| 6.7e+8 vs 0 [stab-abs 4.6e+8]; K8: -7.147 digits [stab -0.577]
+
+=== 10_3_B_60: SEALED basis
+  Q (theta = 4.3333333): lsq residual 1.33e-26; K0: 19.68 digits [stab 16.7]; K2: 11.88 digits [stab 9.14]; K3: |fit| 2.4e-9 vs 0 [stab-abs 1.0e-6]; K4: 6.131 digits [stab 3.64]; K5: |fit| 0.0054 vs 0 [stab-abs 1.2]; K6: 1.7 digits [stab -0.168]; K7: |fit| 1.2e+4 vs 0 [stab-abs 1.3e+6]; K8: -1.872 digits [stab -0.00574]
+     extra N1: -43.66417674628685091876 [stab 3.88]
+     extra N2: 4425.402384158284377137 [stab -0.00447]
+     extra N3: 47253469376.9475384164 [stab -0.0118]
+  Q (theta = 4.1333333): lsq residual 1.46e-26; K0: 19.64 digits [stab 16.7]; K2: 11.84 digits [stab 9.13]; K3: |fit| 2.7e-9 vs 0 [stab-abs 1.0e-6]; K4: 6.084 digits [stab 3.64]; K5: |fit| 0.006 vs 0 [stab-abs 1.2]; K6: 1.651 digits [stab -0.167]; K7: |fit| 1.3e+4 vs 0 [stab-abs 1.3e+6]; K8: -1.923 digits [stab -0.0064]
+     extra N1: -43.02623094977936119097 [stab 3.88]
+     extra N2: 4965.266524010603667147 [stab -0.00498]
+     extra N3: 53365193660.03898746662 [stab -0.0131]
+  Q (theta = 4.5333333): lsq residual 1.19e-26; K0: 19.74 digits [stab 16.7]; K2: 11.94 digits [stab 9.14]; K3: |fit| 2.1e-9 vs 0 [stab-abs 1.0e-6]; K4: 6.193 digits [stab 3.65]; K5: |fit| 0.0047 vs 0 [stab-abs 1.2]; K6: 1.764 digits [stab -0.172]; K7: |fit| 1.0e+4 vs 0 [stab-abs 1.3e+6]; K8: -1.806 digits [stab -0.00505]
+     extra N1: -44.26116624671705337795 [stab 3.9]
+     extra N2: 3840.978073350689471586 [stab -0.00398]
+     extra N3: 40344372117.6292699119 [stab -0.0104]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.43 digits; K4: 1.87 digits; K6: 1.81 digits (must be << sealed)
+
+===== num3_fit_2_A_120: argv ['num3_fit.py', '2_A_120']  exit 0  3s
+
+=== 2_A_120: BARE (lattice only)
+  Q (theta = 3.0): lsq residual 1.52e-19; K0: 14.37 digits [stab 14.0]; K2: 7.122 digits [stab 7.07]; K3: |fit| 6.9e-5 vs 0 [stab-abs 4.1e-5]; K4: 1.44 digits [stab 2.17]; K5: |fit| 93.0 vs 0 [stab-abs 14.0]; K6: -2.706 digits [stab 0.162]; K7: |fit| 3.6e+6 vs 0 [stab-abs 2.2e+6]; K8 (pole): fit -847871593.784 [stab -0.428]
+  Q (theta = 2.4): lsq residual 2.1e-19; K0: 14.23 digits [stab 13.8]; K2: 6.982 digits [stab 6.93]; K3: |fit| 9.5e-5 vs 0 [stab-abs 5.7e-5]; K4: 1.3 digits [stab 2.02]; K5: |fit| 1.3e+2 vs 0 [stab-abs 20.0]; K6: -2.846 digits [stab 0.162]; K7: |fit| 5.0e+6 vs 0 [stab-abs 3.0e+6]; K8 (pole): fit -1171063575.66 [stab -0.428]
+  Q (theta = 3.6): lsq residual 1.19e-19; K0: 14.47 digits [stab 14.1]; K2: 7.228 digits [stab 7.17]; K3: |fit| 5.4e-5 vs 0 [stab-abs 3.3e-5]; K4: 1.546 digits [stab 2.28]; K5: |fit| 73.0 vs 0 [stab-abs 11.0]; K6: -2.6 digits [stab 0.163]; K7: |fit| 2.9e+6 vs 0 [stab-abs 1.7e+6]; K8 (pole): fit -664485623.51 [stab -0.428]
+
+=== 2_A_120: SEALED basis
+  Q (theta = 3.0): lsq residual 9.37e-30; K0: 20.92 digits [stab 17.9]; K2: 13.27 digits [stab 10.5]; K3: |fit| 8.5e-11 vs 0 [stab-abs 4.1e-8]; K4: 7.07 digits [stab 4.51]; K5: |fit| 0.00046 vs 0 [stab-abs 0.12]; K6: 2.207 digits [stab 0.261]; K7: |fit| 1.6e+2 vs 0 [stab-abs 2.2e+4]; K8 (pole): fit -431417.825648 [stab -0.0048]
+     extra N-3/2: 6.062965715141327884756 [stab 2.98]
+     extra N-9/2: -91308440597739.14843174 [stab -0.0182]
+     extra N-15/2: 1.738229728724631886287e+27 [stab -0.459]
+     extra logE_-3: 30158.0103611529405608 [stab -0.0045]  vs PREDICTED 1.622117732871101586786e-47: -51.27 digits
+     extra logE_-6: -264406775065114695834.9 [stab -0.0905]  vs PREDICTED 0.0: pred 0, |fit| 2.64e+20
+  Q (theta = 2.4): lsq residual 1.5e-29; K0: 20.68 digits [stab 18.0]; K2: 13.03 digits [stab 10.6]; K3: |fit| 1.5e-10 vs 0 [stab-abs 3.3e-8]; K4: 6.827 digits [stab 4.61]; K5: |fit| 0.0008 vs 0 [stab-abs 0.098]; K6: 1.958 digits [stab 0.303]; K7: |fit| 2.8e+2 vs 0 [stab-abs 1.8e+4]; K8 (pole): fit -778186.110959 [stab -0.0105]
+     extra N-3/2: 8.374066791931923908978 [stab 3.22]
+     extra N-9/2: -171885386236869.5726852 [stab -0.0398]
+     extra N-15/2: 3.860126394515365313722e+27 [stab -0.744]
+     extra logE_-3: 54427.71652488888152579 [stab -0.0099]  vs PREDICTED 1.622117732871101586786e-47: -51.53 digits
+     extra logE_-6: -530996862887033566416.1 [stab -0.186]  vs PREDICTED 0.0: pred 0, |fit| 5.31e+20
+  Q (theta = 3.6): lsq residual 1.11e-30; K0: 24.85 digits [stab 17.9]; K2: 15.11 digits [stab 10.5]; K3: |fit| 2.0e-12 vs 0 [stab-abs 3.8e-8]; K4: 8.55 digits [stab 4.55]; K5: |fit| 2.0e-5 vs 0 [stab-abs 0.11]; K6: 3.451 digits [stab 0.281]; K7: |fit| 11.0 vs 0 [stab-abs 2.0e+4]; K8 (pole): fit 37781.7481382 [stab 0.00047]
+     extra N-3/2: 4.751589172707400713215 [stab 2.91]
+     extra N-9/2: 15118019636330.71028857 [stab 0.00352]
+     extra N-15/2: -8.75754328035496873861e+26 [stab 0.739]
+     extra logE_-3: -2649.485693877759067833 [stab 0.000441]  vs PREDICTED 1.622117732871101586786e-47: -50.21 digits
+     extra logE_-6: 77036735100702579793.71 [stab 0.0362]  vs PREDICTED 0.0: pred 0, |fit| 7.7e+19
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.88 digits; K4: 2.24 digits; K6: 1.95 digits (must be << sealed)
+
+===== num3_wrong_ordering: argv ['num3_fit_ext.py', '2_A_60_wrong']  exit 0  1s
+
+=== 2_A_60_wrong: BARE (lattice only)
+  Q (theta = 3.0): lsq residual 6.15e-17; K0: 15.98 digits [stab 15.5]; K2: -0.3064 digits [stab 7.5]; K3: |fit| 0.76 vs 0 [stab-abs 4.8e-5]; K4: -0.5742 digits [stab 2.12]; K5: |fit| 6.1e+2 vs 0 [stab-abs 1.2e+2]; K6: -3.938 digits [stab 0.0393]; K7: |fit| 1.5e+8 vs 0 [stab-abs 9.8e+7]; K8 (pole): fit 75117589059.7 [stab -0.606]
+  Q (theta = 2.4): lsq residual 6.54e-17; K0: 15.95 digits [stab 15.5]; K2: -0.3064 digits [stab 7.47]; K3: |fit| 0.76 vs 0 [stab-abs 5.1e-5]; K4: -0.5735 digits [stab 2.09]; K5: |fit| 6.5e+2 vs 0 [stab-abs 1.3e+2]; K6: -3.965 digits [stab 0.0392]; K7: |fit| 1.5e+8 vs 0 [stab-abs 1.0e+8]; K8 (pole): fit 79956374391.2 [stab -0.606]
+  Q (theta = 3.6): lsq residual 6.77e-17; K0: 15.94 digits [stab 15.4]; K2: -0.3064 digits [stab 7.46]; K3: |fit| 0.76 vs 0 [stab-abs 5.3e-5]; K4: -0.5731 digits [stab 2.07]; K5: |fit| 6.8e+2 vs 0 [stab-abs 1.3e+2]; K6: -3.98 digits [stab 0.0392]; K7: |fit| 1.6e+8 vs 0 [stab-abs 1.1e+8]; K8 (pole): fit 82665080399.6 [stab -0.606]
+
+=== 2_A_60_wrong: SEALED basis
+  Q (theta = 3.0): lsq residual 2.42e-36; K0: 33.77 digits [stab 30.3]; K2: -0.3064 digits [stab 21.8]; K3: |fit| 0.76 vs 0 [stab-abs 5.9e-19]; K4: -0.585 digits [stab 15.4]; K5: |fit| 25.0 vs 0 [stab-abs 1.3e-11]; K6: -0.4592 digits [stab 9.75]; K7: |fit| 1.0e+2 vs 0 [stab-abs 1.4e-5]; K8 (pole): fit 2208.54968889 [stab 4.54]
+     extra N-3/2: -25.8469674729838977491 [stab 13.8]
+     extra N-9/2: -7229956.148100121927829 [stab 0.0879]
+     extra N-15/2: 1616225203514407134504.0 [stab -1.06]
+     extra logE_-3: 0.00002542336943154237961276 [stab 0.00262]  vs PREDICTED 1.622117732871101586786e-47: -42.2 digits
+     extra logE_-6: -39018755306842.10840213 [stab 0.223]  vs PREDICTED 0.0: pred 0, |fit| 3.9e+13
+  Q (theta = 2.4): lsq residual 2.07e-36; K0: 33.83 digits [stab 30.3]; K2: -0.3064 digits [stab 21.8]; K3: |fit| 0.76 vs 0 [stab-abs 5.8e-19]; K4: -0.585 digits [stab 15.4]; K5: |fit| 25.0 vs 0 [stab-abs 1.3e-11]; K6: -0.4592 digits [stab 9.76]; K7: |fit| 1.0e+2 vs 0 [stab-abs 1.4e-5]; K8 (pole): fit 2587.204477 [stab 4.61]
+     extra N-3/2: -27.51192933513310545079 [stab 13.8]
+     extra N-9/2: -2344726.850704266850088 [stab 0.0307]
+     extra N-15/2: 1425209204455829685773.0 [stab -1.0]
+     extra logE_-3: 0.00002198505796547723849979 [stab 0.00229]  vs PREDICTED 1.622117732871101586786e-47: -42.13 digits
+     extra logE_-6: -34092623949213.41244603 [stab 0.19]  vs PREDICTED 0.0: pred 0, |fit| 3.41e+13
+  Q (theta = 3.6): lsq residual 2.08e-36; K0: 33.83 digits [stab 30.5]; K2: -0.3064 digits [stab 22.0]; K3: |fit| 0.76 vs 0 [stab-abs 4.3e-19]; K4: -0.585 digits [stab 15.5]; K5: |fit| 25.0 vs 0 [stab-abs 9.8e-12]; K6: -0.4592 digits [stab 9.89]; K7: |fit| 1.0e+2 vs 0 [stab-abs 1.0e-5]; K8 (pole): fit 927.378463187 [stab 4.3]
+     extra N-3/2: -28.44395979471001297893 [stab 14.0]
+     extra N-9/2: -12728920.33561591059526 [stab 0.189]
+     extra N-15/2: 1349695385339299436155.0 [stab -1.12]
+     extra logE_-3: 0.00002166442628862262884127 [stab 0.00307]  vs PREDICTED 1.622117732871101586786e-47: -42.13 digits
+     extra logE_-6: -32898823430878.04135142 [stab 0.272]  vs PREDICTED 0.0: pred 0, |fit| 3.29e+13
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: -0.309 digits; K4: -0.583 digits; K6: -0.458 digits (must be << sealed)
+
+===== num3_wrong_ordering_sealed: argv ['num3_fit.py', '2_A_60_wrong']  exit 0  2s
+
+=== 2_A_60_wrong: BARE (lattice only)
+  Q (theta = 3.0): lsq residual 6.47e-19; K0: 13.74 digits [stab 13.3]; K2: -0.3064 digits [stab 6.45]; K3: |fit| 0.76 vs 0 [stab-abs 0.00018]; K4: -0.5671 digits [stab 1.99]; K5: |fit| 3.7e+2 vs 0 [stab-abs 62.0]; K6: -3.336 digits [stab 0.161]; K7: |fit| 1.6e+7 vs 0 [stab-abs 9.2e+6]; K8 (pole): fit 3614559920.66 [stab -0.428]
+  Q (theta = 2.4): lsq residual 6.89e-19; K0: 13.71 digits [stab 13.3]; K2: -0.3064 digits [stab 6.42]; K3: |fit| 0.76 vs 0 [stab-abs 0.00019]; K4: -0.5659 digits [stab 1.96]; K5: |fit| 4.0e+2 vs 0 [stab-abs 66.0]; K6: -3.363 digits [stab 0.161]; K7: |fit| 1.7e+7 vs 0 [stab-abs 9.8e+6]; K8 (pole): fit 3847395780.9 [stab -0.428]
+  Q (theta = 3.6): lsq residual 7.12e-19; K0: 13.7 digits [stab 13.3]; K2: -0.3064 digits [stab 6.41]; K3: |fit| 0.76 vs 0 [stab-abs 0.00019]; K4: -0.5653 digits [stab 1.94]; K5: |fit| 4.1e+2 vs 0 [stab-abs 68.0]; K6: -3.378 digits [stab 0.161]; K7: |fit| 1.7e+7 vs 0 [stab-abs 1.0e+7]; K8 (pole): fit 3977734017.07 [stab -0.428]
+
+=== 2_A_60_wrong: SEALED basis
+  Q (theta = 3.0): lsq residual 1.98e-30; K0: 21.93 digits [stab 17.9]; K2: -0.3064 digits [stab 10.5]; K3: |fit| 0.76 vs 0 [stab-abs 4.1e-8]; K4: -0.585 digits [stab 4.97]; K5: |fit| 25.0 vs 0 [stab-abs 0.12]; K6: -0.4592 digits [stab 0.413]; K7: |fit| 97.0 vs 0 [stab-abs 2.1e+4]; K8 (pole): fit 6097.56226314 [stab -7.03e-5]
+     extra N-3/2: -25.84696868271499475944 [stab 3.62]
+     extra N-9/2: -5813061261231.18283534 [stab 0.00125]
+     extra N-15/2: 6.821085213144581336544e+26 [stab 0.811]
+     extra logE_-3: -356.6702079714339612937 [stab -5.5e-5]  vs PREDICTED 1.622117732871101586786e-47: -49.34 digits
+     extra logE_-6: -49150313787808378727.47 [stab 0.0209]  vs PREDICTED 0.0: pred 0, |fit| 4.92e+19
+  Q (theta = 2.4): lsq residual 1.05e-29; K0: 20.86 digits [stab 17.9]; K2: -0.3064 digits [stab 10.5]; K3: |fit| 0.76 vs 0 [stab-abs 4.3e-8]; K4: -0.585 digits [stab 4.94]; K5: |fit| 25.0 vs 0 [stab-abs 0.13]; K6: -0.4582 digits [stab 0.393]; K7: |fit| 78.0 vs 0 [stab-abs 2.3e+4]; K8 (pole): fit 494301.323675 [stab -0.00522]
+     extra N-3/2: -27.51195240820519267858 [stab 3.62]
+     extra N-9/2: 105110562336177.9891019 [stab -0.0198]
+     extra N-15/2: -2.056894057162227837342e+27 [stab -0.49]
+     extra logE_-3: -34491.79894146547824423 [stab -0.00488]  vs PREDICTED 1.622117732871101586786e-47: -51.33 digits
+     extra logE_-6: 307549409005032552489.5 [stab -0.0986]  vs PREDICTED 0.0: pred 0, |fit| 3.08e+20
+  Q (theta = 3.6): lsq residual 7.12e-30; K0: 20.93 digits [stab 18.1]; K2: -0.3064 digits [stab 10.7]; K3: |fit| 0.76 vs 0 [stab-abs 2.7e-8]; K4: -0.585 digits [stab 5.15]; K5: |fit| 25.0 vs 0 [stab-abs 0.078]; K6: -0.4602 digits [stab 0.543]; K7: |fit| 2.7e+2 vs 0 [stab-abs 1.3e+4]; K8 (pole): fit -484129.516557 [stab 0.00891]
+     extra N-3/2: -28.44393879772768337124 [stab 3.84]
+     extra N-9/2: -115095456940367.1377717 [stab 0.043]
+     extra N-15/2: 3.228110963865191394322e+27 [stab -0.846]
+     extra logE_-3: 33880.8196074458008701 [stab 0.00832]  vs PREDICTED 1.622117732871101586786e-47: -51.32 digits
+     extra logE_-6: -391949605298682523677.2 [stab 0.481]  vs PREDICTED 0.0: pred 0, |fit| 3.92e+20
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: -0.309 digits; K4: -0.583 digits; K6: -0.458 digits (must be << sealed)
+
+===== num3_controls: argv ['controls.py']  exit 0  128s
+X0(a) Sol 1 M = 1 E = -10.0: rel diff 1.18e-58
+X0(a) Sol 1 M = 1 E = -100.0: rel diff 1.76e-57
+X0(a) Sol 1 M = 1 E = 3.0: rel diff 2.87e-59
+X0(b) NUM2 archived Sol 3 point (t = 2, A, E = 1e3): max |log|Q| diff| = 4.98e-59
+X1 3rd order k = 2 point A: beta -7.5 vs p theta_G -7.5; Q rel diffs ['1.08e-56', '1.08e-56', '1.09e-56'] (11s)
+X1 3rd order k = 2 point B: beta -7.5 vs p theta_G -7.5; Q rel diffs ['1.1e-56', '1.1e-56', '1.1e-56'] (11s)
+X1 3rd order k = 10/3 point A: beta -8.23333333333333 vs p theta_G -8.23333333333333; Q rel diffs ['2.87e-55', '2.87e-55', '2.87e-55'] (41s)
+X1 3rd order k = 10/3 point B: beta -8.23333333333333 vs p theta_G -8.23333333333333; Q rel diffs ['2.88e-55', '2.88e-55', '2.88e-55'] (41s)
+X1 7th order point A: beta -1.5 vs p theta_G -1.5; Q rel diffs ['4.85e-55', '9.08e-57', '3.71e-56', '5.22e-54', '1.48e-53', '1.68e-55', '1.36e-54'] (6s)
+X1 7th order point B: beta -1.5 vs p theta_G -1.5; Q rel diffs ['3.24e-55', '7.3e-55', '6.39e-55', '9.67e-55', '2.67e-53', '4.43e-55', '1.59e-55'] (6s)
+X0/X1 all: True
+
+===== num3_t1_verify: argv ['../kit_num3/t1_verify.py']  exit 0  17s
+point A E =  -20.0: digits of Q3_j/Q7_j/C_j - 1 = ['55.13', '55.43', '53.13']; recomputed dev == archived dev: True
+point A E =   -5.0: digits of Q3_j/Q7_j/C_j - 1 = ['52.84', '52.84', '52.84']; recomputed dev == archived dev: True
+point A E =    2.0: digits of Q3_j/Q7_j/C_j - 1 = ['38.46', '38.46', '38.46']; recomputed dev == archived dev: True
+point A E =   50.0: digits of Q3_j/Q7_j/C_j - 1 = ['55.82', '55.84', '55.8']; recomputed dev == archived dev: True
+point A E =  500.0: digits of Q3_j/Q7_j/C_j - 1 = ['56.66', '56.63', '56.66']; recomputed dev == archived dev: True
+point B E =  -20.0: digits of Q3_j/Q7_j/C_j - 1 = ['55.07', '55.2', '54.87']; recomputed dev == archived dev: True
+point B E =   -5.0: digits of Q3_j/Q7_j/C_j - 1 = ['50.83', '50.83', '50.83']; recomputed dev == archived dev: True
+point B E =    2.0: digits of Q3_j/Q7_j/C_j - 1 = ['36.09', '36.09', '36.09']; recomputed dev == archived dev: True
+point B E =   50.0: digits of Q3_j/Q7_j/C_j - 1 = ['55.14', '55.2', '55.09']; recomputed dev == archived dev: True
+point B E =  500.0: digits of Q3_j/Q7_j/C_j - 1 = ['55.87', '55.89', '55.84']; recomputed dev == archived dev: True
+30 cells: worst 8.22e-37 = 36.09 digits; median 55.1 digits; sealed >= 25 digits: True
+spot recomputation point B, E = 2 (both ODEs): Q3 and Q7 equal the archived values to 1e-50: True (17s)
+T1 VERIFY: PASS
+
+===== num3_t1_zeros: argv ['t1_zeros3.py']  exit 0  2938s
+T1 point A E = -20.0: |Q3_j/Q7_j/C_j - 1| = ['7.37e-56', '3.69e-56', '7.47e-54']; l0-exponent Q7 = ['1.598913058', '-3.000986613', '0.1218741618', '-0.03274885964'] (18s)
+T1 point A E = -5.0: |Q3_j/Q7_j/C_j - 1| = ['1.45e-53', '1.46e-53', '1.45e-53']; l0-exponent Q7 = ['2.183897557', '-4.565832546', '-0.1031489425', '0.004519209861'] (17s)
+T1 point A E = 2.0: |Q3_j/Q7_j/C_j - 1| = ['3.48e-39', '3.48e-39', '3.48e-39']; l0-exponent Q7 = ['2.47992704', '-5.365699235', '-0.2267695835', '0.02559728137'] (17s)
+T1 point A E = 50.0: |Q3_j/Q7_j/C_j - 1| = ['1.52e-56', '1.44e-56', '1.6e-56']; l0-exponent Q7 = ['4.945937747', '-12.17832586', '-1.445532743', '0.244681851'] (18s)
+T1 point A E = 500.0: |Q3_j/Q7_j/C_j - 1| = ['2.2e-57', '2.32e-57', '2.19e-57']; l0-exponent Q7 = ['102.0701073', '-312.2574988', '-97.73253819', '20.64430574'] (18s)
+T1 point B E = -20.0: |Q3_j/Q7_j/C_j - 1| = ['8.56e-56', '6.24e-56', '1.35e-55']; l0-exponent Q7 = ['0.4987212329', '-3.005162638', '0.1595892305', '-0.006335703841'] (18s)
+T1 point B E = -5.0: |Q3_j/Q7_j/C_j - 1| = ['1.48e-51', '1.48e-51', '1.48e-51']; l0-exponent Q7 = ['0.6427942815', '-5.387556924', '-0.5831993527', '-0.0007050880328'] (17s)
+T1 point B E = 2.0: |Q3_j/Q7_j/C_j - 1| = ['8.22e-37', '8.22e-37', '8.22e-37']; l0-exponent Q7 = ['0.7151844703', '-6.617971901', '-0.9834608734', '0.002584903693'] (17s)
+T1 point B E = 50.0: |Q3_j/Q7_j/C_j - 1| = ['7.19e-56', '6.29e-56', '8.12e-56']; l0-exponent Q7 = ['1.308614008', '-17.33490241', '-4.786270889', '0.0387266259'] (18s)
+T1 point B E = 500.0: |Q3_j/Q7_j/C_j - 1| = ['1.36e-56', '1.29e-56', '1.44e-56']; l0-exponent Q7 = ['22.74938655', '-541.6523134', '-269.1075205', '3.957926656'] (19s)
+T1 (sealed >= 25 digits): worst 8.22e-37 -> True
+zeros scan Q_(s-l1) A, E in [-300, 0] step 5 (684s): ++++++++-----------------------------------------------------
+zero: projected -38.5234778416685267237408972 Wronskian -38.5234778416685267237408972 |diff| 0.0
+zeros (sealed >= 10 digits): True
+
+===== num3_spot_point: argv ['../kit_num3/spot_point.py', '2', 'A', '60', '0']  exit 0  11s
+2_A_60_0: E = 1000.0 log|Q| = ['9.337850159660521548124', '8.420680995010324279127', '8.905459961674070194469'] signs [-1, 1, 1] (11s)
+archived point points/pt_2_A_60_0.json: E = 1000.0; recomputed max |delta log|Q_j|| < 1e-50: True; E, signs, thetas identical: True (archived run 12 s, now 11 s)
+SPOT POINT: PASS
+
+===== num3_assemble: argv ['../kit_num3/assemble_verify.py']  exit 0  0s
+data_2_A_60.json (sha256 bdaef356edfab2d2...): 36 points, equal to the assembly of points/: True
+data_2_B_60.json (sha256 db0f232d0a8dcd9a...): 36 points, equal to the assembly of points/: True
+data_10_3_A_60.json (sha256 3763ef757db413b8...): 36 points, equal to the assembly of points/: True
+data_10_3_B_60.json (sha256 c1e239c7f0e68404...): 36 points, equal to the assembly of points/: True
+data_2_A_120.json (sha256 0c6c683033955266...): 36 points, equal to the assembly of points/: True
+data_2_A_60_wrong.json (sha256 c5d64f3457922956...): 36 points, equal to the assembly of points/: True
+ASSEMBLY: PASS
+
+===== num3_wkb_pred: argv ['wkb_pred3.py']  exit 0  1646s
+gwkb Sol 2 k = 2: s_0..s_16 (99s)
+k = 2 point A: K=0: E^0.428571 0.422731850976696; K=1: POLE at E^0; K=2: E^-0.428571 0.671542381852042; K=3: E^-0.857143 0.0; K=4: E^-1.28571 -4.20076777336307; K=5: E^-1.71429 0.0; K=6: E^-2.14286 -29.9192871204826; K=7: E^-2.57143 0.0; K=8: POLE at E^-3; K=9: E^-3.42857 0.0; K=10: E^-3.85714 -140076.020072311; K=11: E^-4.28571 0.0; K=12: E^-4.71429 -53315609.1747453; K=13: E^-5.14286 0.0; K=14: E^-5.57143 2595023235.07099; K=15: POLE at E^-6; K=16: E^-6.42857 -703815533491.302
+k = 2 point B: K=0: E^0.428571 0.422731850976696; K=1: POLE at E^0; K=2: E^-0.428571 0.609510564844473; K=3: E^-0.857143 0.0; K=4: E^-1.28571 -4.8000665903881; K=5: E^-1.71429 0.0; K=6: E^-2.14286 -34.084942216509; K=7: E^-2.57143 0.0; K=8: POLE at E^-3; K=9: E^-3.42857 0.0; K=10: E^-3.85714 -155177.665606392; K=11: E^-4.28571 0.0; K=12: E^-4.71429 -58804115.7683035; K=13: E^-5.14286 0.0; K=14: E^-5.57143 2857378493.89238; K=15: POLE at E^-6; K=16: E^-6.42857 -774276110935.09
+gwkb Sol 2 k = 10/3: s_0..s_16 (157s)
+k = 10/3 point A: K=0: E^0.448276 0.309461657155123; K=1: POLE at E^0; K=2: E^-0.448276 0.597286997064448; K=3: E^-0.896552 0.0; K=4: E^-1.34483 45.3131684745523; K=5: E^-1.7931 0.0; K=6: E^-2.24138 -266.781049039709; K=7: E^-2.68966 0.0; K=8: E^-3.13793 -14071.2211840002; K=9: E^-3.58621 0.0; K=10: E^-4.03448 -1889480.77986476; K=11: E^-4.48276 0.0; K=12: E^-4.93103 -481488232.51772; K=13: E^-5.37931 0.0; K=14: E^-5.82759 -220123351869.703; K=15: E^-6.27586 0.0; K=16: E^-6.72414 -234301208375079.0
+k = 10/3 point B: K=0: E^0.448276 0.309461657155123; K=1: POLE at E^0; K=2: E^-0.448276 0.535782067641722; K=3: E^-0.896552 0.0; K=4: E^-1.34483 49.6259471633179; K=5: E^-1.7931 0.0; K=6: E^-2.24138 -283.231407210825; K=7: E^-2.68966 0.0; K=8: E^-3.13793 -14896.3937507806; K=9: E^-3.58621 0.0; K=10: E^-4.03448 -1995950.12064652; K=11: E^-4.48276 0.0; K=12: E^-4.93103 -507740967.258623; K=13: E^-5.37931 0.0; K=14: E^-5.82759 -231854475175.887; K=15: E^-6.27586 0.0; K=16: E^-6.72414 -246573263811259.0
+pole grades: {'2': [1, 8, 15], '10/3': [1]}
+point A K = 8 (E^-3.0, m = 2.0): residue R = -2.523294251132824690555398e-47; PREDICTED coefficient of E^-3.0 log E = 1.622117732871101586785613e-47
+point A K = 15 (E^-6.0, m = 4.0): residue R = 0.0; PREDICTED coefficient of E^-6.0 log E = 0.0
+point B K = 8 (E^-3.0, m = 2.0): residue R = -2.738798540590968223598963e-47; PREDICTED coefficient of E^-3.0 log E = 1.760656204665622429456476e-47
+point B K = 15 (E^-6.0, m = 4.0): residue R = 0.0; PREDICTED coefficient of E^-6.0 log E = 0.0
+
+===== num3_diag_window_2_A_60: argv ['diag_window.py', '2_A_60']  exit 1  0s
+2_A_60 Emin 1e3 (36 pts) K2 16: res 1.2e-15; K0 13.2, K2 6.39, K4 1.18, K6 -2.52; N1 -2.35098660989
+2_A_60 Emin 1e3 (36 pts) K2 20: res 1.5e-18; K0 14.9, K2 7.87, K4 2.35, K6 -1.72; N1 6.75394724202
+2_A_60 Emin 1e4 (27 pts) K2 16: res 2.7e-28; K0 23.1, K2 15.8, K4 10.1, K6 5.72; N1 6.06294547282
+2_A_60 Emin 1e4 (27 pts) K2 20: res 1.9e-32; K0 25.1, K2 17.5, K4 11.5, K6 6.88; N1 6.06294545638
+--- stderr ---
+Traceback (most recent call last):
+  File "/tmp/opers-kit-8cn8ur41/tree/results/lab/large_n/num3/diag_window.py", line 21, in <module>
+    x, res = mp.qr_solve(mp.matrix(rows), mp.matrix([y[i] for i in idx]))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/python312/lib/python3.12/site-packages/mpmath/matrices/linalg.py", line 406, in qr_solve
+    raise ValueError('cannot solve underdetermined system')
+ValueError: cannot solve underdetermined system
+
+
+===== num3_diag_window_t10o3_A_60: argv ['diag_window.py', '10_3_A_60']  exit 1  0s
+10_3_A_60 Emin 1e3 (36 pts) K2 16: res 2.9e-14; K0 12.4, K2 5.47, K4 0.64, K6 -2.54; N1 -34.2731651117
+10_3_A_60 Emin 1e3 (36 pts) K2 20: res 2.7e-17; K0 14.3, K2 7.14, K4 1.99, K6 -1.59; N1 -40.2455736286
+10_3_A_60 Emin 1e4 (27 pts) K2 16: res 3.1e-25; K0 21.0, K2 13.6, K4 8.23, K6 4.41; N1 -39.9976009984
+10_3_A_60 Emin 1e4 (27 pts) K2 20: res 4.3e-30; K0 23.8, K2 16.1, K4 10.4, K6 6.22; N1 -39.9976011339
+--- stderr ---
+Traceback (most recent call last):
+  File "/tmp/opers-kit-ap1288rp/tree/results/lab/large_n/num3/diag_window.py", line 21, in <module>
+    x, res = mp.qr_solve(mp.matrix(rows), mp.matrix([y[i] for i in idx]))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/python312/lib/python3.12/site-packages/mpmath/matrices/linalg.py", line 406, in qr_solve
+    raise ValueError('cannot solve underdetermined system')
+ValueError: cannot solve underdetermined system
+
+
+===== num3_diag_k8: argv ['diag_k8.py']  exit 0  3s
+A NO log terms Q0: res 4.2e-35; K2 24.9, K4 18.0, K6 12.6; E^-3 coefficient -1589.475001609285 [stab 6.14] vs lim C_8 -1332.467454950669: difference (non-WKB m = 2) -257.007546659
+A NO log terms Q1: res 2.7e-35; K2 25.1, K4 18.2, K6 12.8; E^-3 coefficient -1222.830066988258 [stab 6.15] vs lim C_8 -1332.467454950669: difference (non-WKB m = 2) 109.637387962
+A NO log terms Q2: res 4.6e-35; K2 24.8, K4 17.9, K6 12.6; E^-3 coefficient -1210.038005337044 [stab 6.04] vs lim C_8 -1332.467454950669: difference (non-WKB m = 2) 122.429449614
+A with log terms (sealed) Q0: res 2.1e-36; K2 25.1, K4 17.9, K6 12.2; E^-3 coefficient -1589.474640665436 [stab 4.41] vs lim C_8 -1332.467454950669: difference (non-WKB m = 2) -257.007185715
+A with log terms (sealed) Q1: res 1.2e-36; K2 25.3, K4 18.1, K6 12.4; E^-3 coefficient -1222.829846843233 [stab 4.42] vs lim C_8 -1332.467454950669: difference (non-WKB m = 2) 109.637608107
+A with log terms (sealed) Q2: res 2.3e-36; K2 25.0, K4 17.9, K6 12.1; E^-3 coefficient -1210.037605778986 [stab 4.31] vs lim C_8 -1332.467454950669: difference (non-WKB m = 2) 122.429849172
+B NO log terms Q0: res 4.2e-35; K2 24.8, K4 18.0, K6 12.7; E^-3 coefficient -1501.542795453562 [stab 6.12] vs lim C_8 -1463.542894939037: difference (non-WKB m = 2) -37.9999005145
+B NO log terms Q1: res 3.8e-35; K2 24.9, K4 18.1, K6 12.7; E^-3 coefficient -1461.157757189713 [stab 6.13] vs lim C_8 -1463.542894939037: difference (non-WKB m = 2) 2.38513774932
+B NO log terms Q2: res 4.5e-35; K2 24.8, K4 18.0, K6 12.7; E^-3 coefficient -1456.12331638786 [stab 6.1] vs lim C_8 -1463.542894939037: difference (non-WKB m = 2) 7.41957855118
+B with log terms (sealed) Q0: res 2.1e-36; K2 25.1, K4 18.0, K6 12.2; E^-3 coefficient -1501.542433592454 [stab 4.39] vs lim C_8 -1463.542894939037: difference (non-WKB m = 2) -37.9995386534
+B with log terms (sealed) Q1: res 1.8e-36; K2 25.1, K4 18.0, K6 12.3; E^-3 coefficient -1461.15743239594 [stab 4.4] vs lim C_8 -1463.542894939037: difference (non-WKB m = 2) 2.3854625431
+B with log terms (sealed) Q2: res 2.2e-36; K2 25.0, K4 17.9, K6 12.2; E^-3 coefficient -1456.122929090007 [stab 4.36] vs lim C_8 -1463.542894939037: difference (non-WKB m = 2) 7.41996584903
+
+===== exc4_data_level2_t2P12Q13: argv ['d2_level2_exc4.py', '3', '2', '1/2', '1/3']  exit 0  6s
+level-2 singlet states: [((), ((1, 1),), ()), ((), (), (2,)), ((), (), (1, 1)), ((1,), (), (1,)), ((2,), (), ()), ((1, 1), (), ())]
+matrices done (0s)
+characteristic polynomial factors (degree): [(1, 1), (5, 1)]
+linear roots: [24433/1296] ; level-shift value (Q^2 -> Q^2 + 4): 24433/1296
+done (1s)
+
+===== exc4_gb_t2P12Q13: argv ['../kit_exc4/gb_verify.py', 't2_P1-2_Q1-3']  exit 0  29s
+t2_P1-2_Q1-3: 26 input polynomials (Singular .sing), 26 (msolve .ms), same set: True; Groebner basis G: 83 elements (5s)
+   standard monomials (vdim): 40; G is a reduced basis (no tail term divisible by a leading monomial): True (5s)
+   multiplication matrices of the 12 variables built (5s)
+   all 66 pairs of multiplication matrices commute (G is a Groebner basis): True (18s)
+   input polynomials with normal form 0 modulo G: 26 of 26 (every solution of G solves the system) (26s)
+   M_ii = 175/36 * identity: True;  quintic(M_ee) = 0: True;  quintic irreducible over Q: True  =>  charpoly(M_ee) = quintic^8 (27s)
+   charpoly of M_(z + 3 z3 + 5 r12 + 7 u12): degree 40, squarefree: True (40 distinct ordered solutions) (29s)
+   quintic == data block quintic factor (d2_sol3_*.json, factors [1, 5]): True;  sixth state linear (level shift): True
+   not a registered point (post hoc: t = 2, (1/2,1/3))
+GB VERIFY t2_P1-2_Q1-3 [real]: PASS (29s)
+
+===== exc4_regen_t2P12Q13: argv ['../kit_exc4/regen.py', 'h_fourq_t2_P1-2_Q1-3_four.sing', 'h_four_q.py', '2', '1/2', '1/3', 'four']  exit 0  29s
+path redirection: <seat workspace>/exc2/g_charges_t*.json -> ../exc2/g_charges_t*.json
+   ../exc2/g_charges_t2.json sha256 37d7f1a345c0da27f7bc43e2af7ee3ef8b6e5a0c878366ea214c6e4118e17e59
+   ../exc2/g_charges_t9_4.json sha256 9c601c6381df2531786c71ba64c61f8f199c65c6c0101c08c4fcd7ff11e8934c
+point A: 5 new conditions (4s)
+point B: 5 new conditions (8s)
+point C: 5 new conditions (13s)
+point D: 5 new conditions (18s)
+   r02 eliminated
+   s02 eliminated
+   r01 eliminated
+   s01 eliminated
+   u02 eliminated
+   v02 eliminated
+   u01 eliminated
+   v01 eliminated
+   equation reduced: 18 terms (26s)
+   equation reduced: 70 terms (26s)
+   equation reduced: 66 terms (26s)
+   equation reduced: 18 terms (26s)
+   equation reduced: 364 terms (26s)
+   equation reduced: 18 terms (26s)
+   equation reduced: 62 terms (26s)
+   equation reduced: 62 terms (26s)
+   equation reduced: 18 terms (26s)
+   equation reduced: 372 terms (27s)
+   equation reduced: 18 terms (27s)
+   equation reduced: 70 terms (27s)
+   equation reduced: 66 terms (27s)
+   equation reduced: 18 terms (27s)
+   equation reduced: 364 terms (28s)
+   equation reduced: 18 terms (28s)
+   equation reduced: 62 terms (28s)
+   equation reduced: 62 terms (28s)
+   equation reduced: 18 terms (28s)
+   equation reduced: 372 terms (29s)
+20 equations in 6 unknowns [r11, r12, z, u11, u12, z3] (29s)
+written h_fourq_t2_P1-2_Q1-3_four.sing; vacuum monic I_1 = 31/36; running Singular (29s)
+REGEN h_fourq_t2_P1-2_Q1-3_four.sing: regenerated by h_four_q.py 2 1/2 1/3 four, byte-identical to the archived file: True (sha256 e1e9e15c156dd8087506e4af5fd0874617a5d87c8dca8ee1d7d48edb5b273614)
+
+===== exc4_data_level2_t94P12Q13: argv ['d2_level2_exc4.py', '3', '9/4', '1/2', '1/3']  exit 0  6s
+level-2 singlet states: [((), ((1, 1),), ()), ((), (), (2,)), ((), (), (1, 1)), ((1,), (), (1,)), ((2,), (), ()), ((1, 1), (), ())]
+matrices done (0s)
+characteristic polynomial factors (degree): [(1, 1), (5, 1)]
+linear roots: [3905329/219024] ; level-shift value (Q^2 -> Q^2 + 4): 3905329/219024
+done (1s)
+
+===== exc4_gb_t94P12Q13: argv ['../kit_exc4/gb_verify.py', 't9_4_P1-2_Q1-3']  exit 0  48s
+t9_4_P1-2_Q1-3: 26 input polynomials (Singular .sing), 26 (msolve .ms), same set: True; Groebner basis G: 83 elements (5s)
+   standard monomials (vdim): 40; G is a reduced basis (no tail term divisible by a leading monomial): True (5s)
+   multiplication matrices of the 12 variables built (6s)
+   all 66 pairs of multiplication matrices commute (G is a Groebner basis): True (26s)
+   input polynomials with normal form 0 modulo G: 26 of 26 (every solution of G solves the system) (41s)
+   M_ii = 10967/2340 * identity: True;  quintic(M_ee) = 0: True;  quintic irreducible over Q: True  =>  charpoly(M_ee) = quintic^8 (42s)
+   charpoly of M_(z + 3 z3 + 5 r12 + 7 u12): degree 40, squarefree: True (40 distinct ordered solutions) (48s)
+   quintic == data block quintic factor (d2_sol3_*.json, factors [1, 5]): True;  sixth state linear (level shift): True
+   REGISTERED hold-out point: registered quintic, I_1 and vdim equal the verified ones: True
+GB VERIFY t9_4_P1-2_Q1-3 [real]: PASS (48s)
+
+===== exc4_regen_t94P12Q13: argv ['../kit_exc4/regen.py', 'h_fourq_t9_4_P1-2_Q1-3_four.sing', 'h_four_q.py', '9/4', '1/2', '1/3', 'four']  exit 0  30s
+path redirection: <seat workspace>/exc2/g_charges_t*.json -> ../exc2/g_charges_t*.json
+   ../exc2/g_charges_t2.json sha256 37d7f1a345c0da27f7bc43e2af7ee3ef8b6e5a0c878366ea214c6e4118e17e59
+   ../exc2/g_charges_t9_4.json sha256 9c601c6381df2531786c71ba64c61f8f199c65c6c0101c08c4fcd7ff11e8934c
+point A: 5 new conditions (4s)
+point B: 5 new conditions (8s)
+point C: 5 new conditions (13s)
+point D: 5 new conditions (18s)
+   r02 eliminated
+   s02 eliminated
+   r01 eliminated
+   s01 eliminated
+   u02 eliminated
+   v02 eliminated
+   u01 eliminated
+   v01 eliminated
+   equation reduced: 18 terms (26s)
+   equation reduced: 70 terms (26s)
+   equation reduced: 67 terms (26s)
+   equation reduced: 18 terms (27s)
+   equation reduced: 373 terms (27s)
+   equation reduced: 18 terms (27s)
+   equation reduced: 70 terms (27s)
+   equation reduced: 67 terms (27s)
+   equation reduced: 18 terms (27s)
+   equation reduced: 373 terms (28s)
+   equation reduced: 18 terms (28s)
+   equation reduced: 70 terms (28s)
+   equation reduced: 67 terms (28s)
+   equation reduced: 18 terms (28s)
+   equation reduced: 373 terms (29s)
+   equation reduced: 18 terms (29s)
+   equation reduced: 70 terms (29s)
+   equation reduced: 67 terms (29s)
+   equation reduced: 18 terms (29s)
+   equation reduced: 373 terms (29s)
+20 equations in 6 unknowns [r11, r12, z, u11, u12, z3] (29s)
+written h_fourq_t9_4_P1-2_Q1-3_four.sing; vacuum monic I_1 = 1607/2340; running Singular (30s)
+REGEN h_fourq_t9_4_P1-2_Q1-3_four.sing: regenerated by h_four_q.py 9/4 1/2 1/3 four, byte-identical to the archived file: True (sha256 1313a91c63fb099a5f01524f3dd1e648ba90c09360ad76076d359acec2c1d264)
+
+===== exc4_data_level2_t2P13Q15: argv ['d2_level2_exc4.py', '3', '2', '1/3', '1/5']  exit 0  6s
+level-2 singlet states: [((), ((1, 1),), ()), ((), (), (2,)), ((), (), (1, 1)), ((1,), (), (1,)), ((2,), (), ()), ((1, 1), (), ())]
+matrices done (0s)
+characteristic polynomial factors (degree): [(1, 1), (5, 1)]
+linear roots: [3957049/202500] ; level-shift value (Q^2 -> Q^2 + 4): 3957049/202500
+done (1s)
+
+===== exc4_gb_t2P13Q15: argv ['../kit_exc4/gb_verify.py', 't2_P1-3_Q1-5']  exit 0  38s
+t2_P1-3_Q1-5: 26 input polynomials (Singular .sing), 26 (msolve .ms), same set: True; Groebner basis G: 83 elements (5s)
+   standard monomials (vdim): 40; G is a reduced basis (no tail term divisible by a leading monomial): True (5s)
+   multiplication matrices of the 12 variables built (5s)
+   all 66 pairs of multiplication matrices commute (G is a Groebner basis): True (22s)
+   input polynomials with normal form 0 modulo G: 26 of 26 (every solution of G solves the system) (34s)
+   M_ii = 2093/450 * identity: True;  quintic(M_ee) = 0: True;  quintic irreducible over Q: True  =>  charpoly(M_ee) = quintic^8 (34s)
+   charpoly of M_(z + 3 z3 + 5 r12 + 7 u12): degree 40, squarefree: True (40 distinct ordered solutions) (38s)
+   quintic == data block quintic factor (d2_sol3_*.json, factors [1, 5]): True;  sixth state linear (level shift): True
+   REGISTERED hold-out point: registered quintic, I_1 and vdim equal the verified ones: True
+GB VERIFY t2_P1-3_Q1-5 [real]: PASS (38s)
+
+===== exc4_regen_t2P13Q15: argv ['../kit_exc4/regen.py', 'h_fourq_t2_P1-3_Q1-5_four.sing', 'h_four_q.py', '2', '1/3', '1/5', 'four']  exit 0  29s
+path redirection: <seat workspace>/exc2/g_charges_t*.json -> ../exc2/g_charges_t*.json
+   ../exc2/g_charges_t2.json sha256 37d7f1a345c0da27f7bc43e2af7ee3ef8b6e5a0c878366ea214c6e4118e17e59
+   ../exc2/g_charges_t9_4.json sha256 9c601c6381df2531786c71ba64c61f8f199c65c6c0101c08c4fcd7ff11e8934c
+point A: 5 new conditions (4s)
+point B: 5 new conditions (8s)
+point C: 5 new conditions (13s)
+point D: 5 new conditions (18s)
+   r02 eliminated
+   s02 eliminated
+   r01 eliminated
+   s01 eliminated
+   u02 eliminated
+   v02 eliminated
+   u01 eliminated
+   v01 eliminated
+   equation reduced: 18 terms (26s)
+   equation reduced: 70 terms (26s)
+   equation reduced: 66 terms (26s)
+   equation reduced: 18 terms (26s)
+   equation reduced: 364 terms (26s)
+   equation reduced: 18 terms (26s)
+   equation reduced: 62 terms (27s)
+   equation reduced: 62 terms (27s)
+   equation reduced: 18 terms (27s)
+   equation reduced: 372 terms (27s)
+   equation reduced: 18 terms (27s)
+   equation reduced: 70 terms (27s)
+   equation reduced: 66 terms (27s)
+   equation reduced: 18 terms (27s)
+   equation reduced: 364 terms (28s)
+   equation reduced: 18 terms (28s)
+   equation reduced: 62 terms (28s)
+   equation reduced: 62 terms (28s)
+   equation reduced: 18 terms (28s)
+   equation reduced: 372 terms (29s)
+20 equations in 6 unknowns [r11, r12, z, u11, u12, z3] (29s)
+written h_fourq_t2_P1-3_Q1-5_four.sing; vacuum monic I_1 = 293/450; running Singular (29s)
+REGEN h_fourq_t2_P1-3_Q1-5_four.sing: regenerated by h_four_q.py 2 1/3 1/5 four, byte-identical to the archived file: True (sha256 255bd164184fcadaba546219b57d1433271e1027285b1150415c29cd6df6360a)
+
+===== exc4_data_level2_t94P25Q14: argv ['d2_level2_exc4.py', '3', '9/4', '2/5', '1/4']  exit 0  6s
+level-2 singlet states: [((), ((1, 1),), ()), ((), (), (2,)), ((), (), (1, 1)), ((1,), (), (1,)), ((2,), (), ()), ((1, 1), (), ())]
+matrices done (0s)
+characteristic polynomial factors (degree): [(1, 1), (5, 1)]
+linear roots: [1459044187/81120000] ; level-shift value (Q^2 -> Q^2 + 4): 1459044187/81120000
+done (1s)
+
+===== exc4_gb_t94P25Q14: argv ['../kit_exc4/gb_verify.py', 't9_4_P2-5_Q1-4']  exit 0  52s
+t9_4_P2-5_Q1-4: 26 input polynomials (Singular .sing), 26 (msolve .ms), same set: True; Groebner basis G: 83 elements (5s)
+   standard monomials (vdim): 40; G is a reduced basis (no tail term divisible by a leading monomial): True (5s)
+   multiplication matrices of the 12 variables built (6s)
+   all 66 pairs of multiplication matrices commute (G is a Groebner basis): True (27s)
+   input polynomials with normal form 0 modulo G: 26 of 26 (every solution of G solves the system) (43s)
+   M_ii = 70951/15600 * identity: True;  quintic(M_ee) = 0: True;  quintic irreducible over Q: True  =>  charpoly(M_ee) = quintic^8 (44s)
+   charpoly of M_(z + 3 z3 + 5 r12 + 7 u12): degree 40, squarefree: True (40 distinct ordered solutions) (51s)
+   quintic == data block quintic factor (d2_sol3_*.json, factors [1, 5]): True;  sixth state linear (level shift): True
+   REGISTERED hold-out point: registered quintic, I_1 and vdim equal the verified ones: True
+GB VERIFY t9_4_P2-5_Q1-4 [real]: PASS (51s)
+
+===== exc4_regen_t94P25Q14: argv ['../kit_exc4/regen.py', 'h_fourq_t9_4_P2-5_Q1-4_four.sing', 'h_four_q.py', '9/4', '2/5', '1/4', 'four']  exit 0  30s
+path redirection: <seat workspace>/exc2/g_charges_t*.json -> ../exc2/g_charges_t*.json
+   ../exc2/g_charges_t2.json sha256 37d7f1a345c0da27f7bc43e2af7ee3ef8b6e5a0c878366ea214c6e4118e17e59
+   ../exc2/g_charges_t9_4.json sha256 9c601c6381df2531786c71ba64c61f8f199c65c6c0101c08c4fcd7ff11e8934c
+point A: 5 new conditions (4s)
+point B: 5 new conditions (8s)
+point C: 5 new conditions (13s)
+point D: 5 new conditions (18s)
+   r02 eliminated
+   s02 eliminated
+   r01 eliminated
+   s01 eliminated
+   u02 eliminated
+   v02 eliminated
+   u01 eliminated
+   v01 eliminated
+   equation reduced: 18 terms (26s)
+   equation reduced: 70 terms (27s)
+   equation reduced: 67 terms (27s)
+   equation reduced: 18 terms (27s)
+   equation reduced: 373 terms (27s)
+   equation reduced: 18 terms (27s)
+   equation reduced: 70 terms (27s)
+   equation reduced: 67 terms (27s)
+   equation reduced: 18 terms (27s)
+   equation reduced: 373 terms (28s)
+   equation reduced: 18 terms (28s)
+   equation reduced: 70 terms (28s)
+   equation reduced: 67 terms (28s)
+   equation reduced: 18 terms (28s)
+   equation reduced: 373 terms (29s)
+   equation reduced: 18 terms (29s)
+   equation reduced: 70 terms (29s)
+   equation reduced: 67 terms (29s)
+   equation reduced: 18 terms (29s)
+   equation reduced: 373 terms (30s)
+20 equations in 6 unknowns [r11, r12, z, u11, u12, z3] (30s)
+written h_fourq_t9_4_P2-5_Q1-4_four.sing; vacuum monic I_1 = 8551/15600; running Singular (30s)
+REGEN h_fourq_t9_4_P2-5_Q1-4_four.sing: regenerated by h_four_q.py 9/4 2/5 1/4 four, byte-identical to the archived file: True (sha256 db6b423f3cf82d86162430a1cdaccfe9d2e8cdc2fbe1ee5fdabf45bddcc9e2f4)
+
+===== exc4_holdout_compare: argv ['u_compare_exc4.py', 'real']  exit 0  0s
+t = 9/4  (P,Q) = (1/2,1/3) [real]: data factors degrees [1, 5]; quintic coefficients differing: 0 of 6; level-shift root present: True
+t = 2    (P,Q) = (1/3,1/5) [real]: data factors degrees [1, 5]; quintic coefficients differing: 0 of 6; level-shift root present: True
+t = 9/4  (P,Q) = (2/5,1/4) [real]: data factors degrees [1, 5]; quintic coefficients differing: 0 of 6; level-shift root present: True
+U3 level-two hold-out [real]: PASS
+
+===== exc4_lead_blind: argv ['lead_compare_exc4.py']  exit 0  0s
+t = 9/4 (P,Q) = (1/2,1/3): monic quintic identical: True
+t = 2 (P,Q) = (1/3,1/5): monic quintic identical: True
+t = 9/4 (P,Q) = (2/5,1/4): monic quintic identical: True
+RESULT MATCH
+
+===== exc4_posthoc_t2: argv ['chk_four_gb.py']  exit 0  0s
+t = 2, (P,Q) = (1/2,1/3): vdim 40 ordered = 5 unordered configurations; I_1 = [175/36] (vacuum 31/36 + 4 = 175/36)
+   oper quintic : x**5 - 65141*x**4/1296 + 324397541*x**3/839808 + 2100362038699*x**2/1088391168 + 4256145665443781*x/2821109907456 + 1805871727733524367/3656158440062976
+   data quintic : e**5 - 65141*e**4/1296 + 324397541*e**3/839808 + 2100362038699*e**2/1088391168 + 4256145665443781*e/2821109907456 + 1805871727733524367/3656158440062976
+   EQUAL: True
+
+===== exc4_pair_regression: argv ['chk_pair.py']  exit 0  0s
+pair-mode I_3 eliminant: e**2 - 4417*e/648 + 2506369/1679616
+data level-one quadratic : e**2 - 4417*e/648 + 2506369/1679616
+equal: True
+
+===== exc4_six_onepoint: argv ['../kit_exc4/six_verify.py']  exit 0  2s
+input: 17 polynomials in 17 unknowns; Singular basis: 17 elements
+input polynomials reducing to 0 modulo the Singular basis: 17 of 17 (every solution of the basis solves the system)
+standard monomials of the basis (vdim): 2
+Buchberger criterion on the Singular basis: 0 of 136 S-polynomials fail to reduce to 0
+solutions: 2 (vdim 2 expected)
+relations from the Gamma-form engine: 8*ii + 12*r41 - 3 = 0, 64*ee + 576*r21 - 144*r41^2 + 88*r41 + 7 = 0; vacuum monic I_1 = 3/8
+  solution z = 7/5832, r32 = 35/2187 - 7*sqrt(2)/5832: all 17 input equations vanish exactly: True; r41 = -2/3 (sealed -b = -2/3); Delta I_1 = 1 (half level = 1); I_3 = 41/64
+  solution z = 7/5832, r32 = 7*sqrt(2)/5832 + 35/2187: all 17 input equations vanish exactly: True; r41 = -2/3 (sealed -b = -2/3); Delta I_1 = 1 (half level = 1); I_3 = 41/64
+level-one data quadratic at this point: e**2 - 89*e/32 + 20209/4096; 41/64 is a root: False
+SIX VERIFY [real]: PASS
+
+===== exc4_regen_six: argv ['../kit_exc4/regen.py', 'f_six_t2_1-2_1-3.sing', 'f_six_sol3.py', '2', '1/2', '1/3']  exit 0  4s
+T0 vacuum I_1 (monic) = P**2 + Q**2 + 1/2
+T0 sixth-order form, vacuum I_3 == certified (d1_sol3_t2 vacuum): True
+indicial conditions fix: [{r06: -144*z**5, r15: 144*z**4, r24: -72*z**3, r33: 24*z**2, r42: -6*z}]  (1s)
+16 no-log equations in 16 unknowns (4s)
+   E-linear condition at the top exponent: r05 + 2*r14*z + 11*r23*z**2 + 27*r32*z**3 + 72*r41*z**4 + 372*z**4
+written f_six_t2_1-2_1-3.sing; running Singular (4s)
+REGEN f_six_t2_1-2_1-3.sing: regenerated by f_six_sol3.py 2 1/2 1/3, byte-identical to the archived file: True (sha256 bc100c23ee4022be4f70f77baeef8ddb020221228dca40688642a89aa821a063)
+
+===== exc4_regen_six_charges: argv ['../kit_exc4/regen.py', 'f_six_charges_1-2_1-3.sing', 'f_six_charges.py', '1/2', '1/3']  exit 0  1s
+vacuum monic I_1 = 3/8, I_3 = -7/64 at (a0, a1) = (1/2, 1/3)
+monic I_1 of the deformed operator = vacuum + (-3*r41/2)
+REGEN f_six_charges_1-2_1-3.sing: regenerated by f_six_charges.py 1/2 1/3, byte-identical to the archived file: True (sha256 afcdbfa8db869d4d0baab727c78950cdb3e47222c966a0f7bbc4f111500a0668)

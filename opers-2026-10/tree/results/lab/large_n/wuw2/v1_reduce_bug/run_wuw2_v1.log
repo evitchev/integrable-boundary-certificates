@@ -1,0 +1,30 @@
+CONTROL (0) kappa = 1 engine reproduces WUW1 (I_3 dim 1; W_U; unique bilinear (1,3/2,1/4)^2 in K_6): False
+CONTROL c(T_U) = -7: 4th pole {(): Fraction(-7, 2)}: True
+CONTROL c(T_total) = -23: 4th pole {(): Fraction(-23, 2)}: True
+(1) W^(5) = Res e^(2V) e^(-2V) = {((1, 0), (1, 0), (1, 0), (1, 0), (1, 0)): Fraction(4, 15), ((1, 0), (1, 0), (1, 0), (1, 1)): Fraction(4, 3), ((1, 0), (1, 0), (1, 2)): Fraction(2, 3), ((1, 0), (1, 1), (1, 1)): Fraction(1, 1), ((1, 0), (1, 3)): Fraction(1, 6), ((1, 1), (1, 2)): Fraction(1, 3), ((1, 4),): Fraction(1, 60)}
+CONTROL (1)(i) W^(5) T_U-primary of weight 5: True
+CONTROL (1)(ii) field level Res e^(-(2/3)V)(z) W^(5)(w) = 0: True
+   (reported) field level Res e^(2V) W^(5) has 5 terms
+CONTROL (1)(iii) W^(5) not in span{d^3 T_U, :T_U dT_U:}: True
+CONTROL GATE I_3 (weight-4 commutant of {e^((V+Z)/3), e^(2V), e^(2Z)}) dim 1 and eigen proportional to cyl(3,4) at t = 7/5: True
+   eigen(W^(5)) = P_A*(P_A - 1)*(P_A + 1)*(2*P_A - 1)*(2*P_A + 1)/15
+SEALED TEST P1 eigen(W^(5)) proportional to P_V (P_V^2 - 1/4)(P_V^2 - 1): True
+   vacuity: eigenvalues of the 7 one-boson weight-5 monomials span dim 2 (shape space a P^5 + b P^3 + c P)
+   d-echelon at weight 13: 1165 rows (0s)
+   bilinears f_i(V) g_j(Z) (7 x 7 = 49) with Res_1 I_3 x . in d: relation space dim 0 (1s)
+SEALED TEST P2 the bilinear space in K_10 + d is 1-dimensional and equals W^(5) (x) W^(5): False
+   eigen(G_10) = -(P_X - pi)*(P_X + pi)*(3*P_X**2 - 6*P_X*pi + 3*pi**2 - 4)*(3*P_X**2 - 6*P_X*pi + 3*pi**2 - 1)*(3*P_X**2 + 6*P_X*pi + 3*pi**2 - 4)*(3*P_X**2 + 6*P_X*pi + 3*pi**2 - 1)/4800
+   E_2 = (P_X - pi)*(P_X + pi)*(3*P_X**2 - 6*P_X*pi + 3*pi**2 - 4)*(3*P_X**2 - 6*P_X*pi + 3*pi**2 - 1)*(3*P_X**2 + 6*P_X*pi + 3*pi**2 - 4)*(3*P_X**2 + 6*P_X*pi + 3*pi**2 - 1)/81
+SEALED TEST P3 G_10 in K_10 (mod d) and eigen(G_10) proportional to E_2: True
+   (P3 parts: in K_10 True; eigen ~ E_2 True)
+CONTROL antisymmetry: eigen(G_10) odd under P_X <-> pi: True
+SEALED TEST P4a G_10 primary (weight 10) under T_U + T_W: True
+SEALED TEST P4b NO representative G_10 + dH is T_total-primary (consistent with cyl_t2_primary): True
+   (4s; T_total-primary representative exists: False)
+CONTROL symmetric W_V^2 + W_Z^2: eigen NOT antisymmetric: True
+   (reported) W_V^2 + W_Z^2 in K_10: False
+CONTROL TAMPER W + (dV)^2 d^3V/10: leaves K_10 and breaks P1 and P3: True
+CONTROL TAMPER exponent 21/10 (S_5 shape): breaks P1 and leaves K_10: True
+CONTROL SCORING TAMPER E_2 with p^2 + 1/1000 breaks P3: True
+done (12s)
+CONTROLS FAILED ['(0) kappa = 1 engine reproduces WUW1 (I_3 dim 1; W_U; unique bilinear (1,3/2,1/4)^2 in K_6)'] -> exit 1

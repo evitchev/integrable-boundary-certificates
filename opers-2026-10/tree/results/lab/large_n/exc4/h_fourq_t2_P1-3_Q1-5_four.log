@@ -1,0 +1,34 @@
+point A: 5 new conditions (15s)
+point B: 5 new conditions (31s)
+point C: 5 new conditions (49s)
+point D: 5 new conditions (69s)
+   r02 eliminated
+   s02 eliminated
+   r01 eliminated
+   s01 eliminated
+   u02 eliminated
+   v02 eliminated
+   u01 eliminated
+   v01 eliminated
+   equation reduced: 18 terms (97s)
+   equation reduced: 70 terms (97s)
+   equation reduced: 66 terms (97s)
+   equation reduced: 18 terms (97s)
+   equation reduced: 364 terms (100s)
+   equation reduced: 18 terms (100s)
+   equation reduced: 62 terms (100s)
+   equation reduced: 62 terms (101s)
+   equation reduced: 18 terms (101s)
+   equation reduced: 372 terms (103s)
+   equation reduced: 18 terms (103s)
+   equation reduced: 70 terms (104s)
+   equation reduced: 66 terms (104s)
+   equation reduced: 18 terms (104s)
+   equation reduced: 364 terms (106s)
+   equation reduced: 18 terms (106s)
+   equation reduced: 62 terms (107s)
+   equation reduced: 62 terms (107s)
+   equation reduced: 18 terms (107s)
+   equation reduced: 372 terms (109s)
+20 equations in 6 unknowns [r11, r12, z, u11, u12, z3] (109s)
+written h_fourq_t2_P1-3_Q1-5_four.sing; vacuum monic I_1 = 293/450; running Singular (111s)

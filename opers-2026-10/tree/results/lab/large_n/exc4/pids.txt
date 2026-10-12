@@ -1,0 +1,26 @@
+1400068 h_four pair
+1400069 h_four four
+1403713 f_six_sol3 one point
+1406104 f_six_two two points
+1406294 f_six_two two points (relaunch)
+1406929 h_four four 9/4 1/2 1/3
+1406940 h_four four 2 1/3 1/5
+1406951 h_four four 9/4 2/5 1/4
+1414271 h_four tamper 2 1/2 1/3
+1440484 h_four_fast four 2 1/2 1/3
+1449975 msolve GB four t2
+1465325 h_four_q four 2 1/2 1/3
+1466731 h_four_q 2 1/2 1/3 four
+1466742 h_four_q 9/4 1/2 1/3 four
+1466753 h_four_q 2 1/3 1/5 four
+1466764 h_four_q 9/4 2/5 1/4 four
+1466775 h_four_q 2 1/2 1/3 tamper
+1468390 h_four_q 2 1/2 1/3 four (rerun, clear_denoms)
+1468401 h_four_q 9/4 1/2 1/3 four (rerun, clear_denoms)
+1468412 h_four_q 2 1/3 1/5 four (rerun, clear_denoms)
+1468423 h_four_q 9/4 2/5 1/4 four (rerun, clear_denoms)
+1468434 h_four_q 2 1/2 1/3 tamper (rerun, clear_denoms)
+1487901 msolve q-variant t2_P1-2_Q1-3
+1487902 msolve q-variant t9_4_P1-2_Q1-3
+1487903 msolve q-variant t2_P1-3_Q1-5
+1487904 msolve q-variant t9_4_P2-5_Q1-4

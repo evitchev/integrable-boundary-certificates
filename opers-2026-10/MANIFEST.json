@@ -82,6 +82,38 @@
    "kit_path": "tree/results/lab/anchor15/vev_profile_sol3_w16.json",
    "private_repo_path": "results/lab/anchor15/vev_profile_sol3_w16.json",
    "sha256": "09ed23a7fd2256ed93b35825980968885e2e0bde9656dc04bd4e8199fda1c355"
+  },
+  {
+   "kit_path": "tree/results/qt_promotion.json",
+   "private_repo_path": "results/qt_promotion.json",
+   "sha256": "4cd5025379fbac3c137c2a25ecf84cf7065990be3916b218c7d0879b40a7cb60"
+  },
+  {
+   "kit_path": "tree/results/lab/audits/codex_wardsol12b_27403fc_2026-09-28/AMPLITUDES_sol3_loss1.json",
+   "private_repo_path": "results/lab/audits/codex_wardsol12b_27403fc_2026-09-28/AMPLITUDES_sol3_loss1.json",
+   "sha256": "9fbca1cd4223d876fd880069af1f9a92ee67f4c37a369a3b030a19cfa483a053"
+  },
+  {
+   "kit_path": "tree/results/lab/fast_kernel2/w14_t97_sheet3.json",
+   "private_repo_path": "results/lab/fast_kernel2/w14_t97_sheet3.json",
+   "sha256": "881e703606283155645381ecbac0907e1d456029cd838574f3894e450b5ea316"
+  },
+  {
+   "kit_path": "tree/results/lab/fast_kernel2/w18_P1_sheet3_t4.json",
+   "private_repo_path": "results/lab/fast_kernel2/w18_P1_sheet3_t4.json",
+   "sha256": "4c32f4266ad2addb13dd83f2915f22fc0d154f217e67a63a55dbe9d55c29492c"
+  },
+  {
+   "kit_path": "tree/results/lab/fast_kernel3/w22_t1311_sheet3.json",
+   "private_repo_path": "results/lab/fast_kernel3/w22_t1311_sheet3.json",
+   "sha256": "31128b848fca4126a981e1b41e8945e919d4ce933b797d5ee193fbd95239edb7"
+  },
+  {
+   "kit_path": "tree/results/lab/fast_kernel3/w26_t1513_sheet3.json.gz",
+   "private_repo_path": "results/lab/fast_kernel3/w26_t1513_sheet3.json",
+   "sha256": "03aac2e1feee8dff94c7042c9402e1028a80f1c550304b92c4bebcb40bc8cf48",
+   "sha256_uncompressed": "67a978bd6565462c8aa0e9bfd9b55dc5e7eca96efbf03145f9e32a483038aa24",
+   "note": "gzip -n -9 of the archived record (60 MB); lab/kit_gunzip_run.py verifies sha256_uncompressed before use"
   }
  ],
  "stages": [
@@ -90,8 +122,12 @@
   "exc1",
   "exc2",
   "exc3",
+  "exc4",
   "joint1",
+  "kit_exc4",
+  "kit_num3",
   "lead_exc3_check",
+  "lead_exc4_check",
   "lead_gates",
   "lead_num2_prereg",
   "lead_sol2f_check",
@@ -102,22 +138,34 @@
   "lean3",
   "num1",
   "num2",
+  "num3",
   "numtab",
+  "nzero1",
+  "pillow1",
   "proof1",
   "proof2",
   "proof3",
+  "red1",
+  "red2",
   "second1",
   "second2",
   "second2_h2b",
   "sol2_ext_fable",
   "sol2f",
   "super3",
+  "vir1",
+  "vir1r",
+  "vir2",
+  "vir2r",
   "vir4d",
   "vir4d_prereg",
   "vir5",
   "vir5c",
+  "vir5d",
   "vir7",
-  "vir8"
+  "vir8",
+  "wuw1",
+  "wuw2"
  ],
  "versions": {
   "python": "3.12.8",
@@ -125,7 +173,7 @@
   "mpmath": "1.3.0",
   "lean": "v4.24.0",
   "mathlib": "v4.24.0 (f897ebcf72cd16f89ab4577d0c826cd14afaafc7)",
-  "python_also_checked": "3.8.10 (sympy 1.13.3): see logs"
+  "python_also_checked": "3.8.10 (sympy 1.13.3): full run and all drills of v1.2.5; see logs"
  },
- "paper_version": "v2 (private commit 1bbf0e2); kit release v1.2.4"
+ "paper_version": "v2 as revised 2026-10-11 (cites kit release v1.2.5)"
 }

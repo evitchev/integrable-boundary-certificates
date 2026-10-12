@@ -1,0 +1,47 @@
+point A: 5 new conditions (15s)
+point B: 5 new conditions (31s)
+point C: 5 new conditions (50s)
+point D: 5 new conditions (68s)
+   r02 eliminated
+   s02 eliminated
+   r01 eliminated
+   s01 eliminated
+   u02 eliminated
+   v02 eliminated
+   u01 eliminated
+   v01 eliminated
+   equation reduced: 18 terms (97s)
+   equation reduced: 70 terms (97s)
+   equation reduced: 66 terms (98s)
+   equation reduced: 18 terms (98s)
+   equation reduced: 364 terms (100s)
+   equation reduced: 18 terms (100s)
+   equation reduced: 62 terms (100s)
+   equation reduced: 62 terms (100s)
+   equation reduced: 18 terms (100s)
+   equation reduced: 372 terms (103s)
+   equation reduced: 18 terms (103s)
+   equation reduced: 70 terms (103s)
+   equation reduced: 66 terms (103s)
+   equation reduced: 18 terms (103s)
+   equation reduced: 364 terms (105s)
+   equation reduced: 18 terms (105s)
+   equation reduced: 62 terms (106s)
+   equation reduced: 62 terms (106s)
+   equation reduced: 18 terms (106s)
+   equation reduced: 372 terms (108s)
+20 equations in 6 unknowns [r11, r12, z, u11, u12, z3] (108s)
+written h_fourq_t2_P1-2_Q1-3_tamper.sing; vacuum monic I_1 = 31/36; running Singular (110s)
+dim:
+-1
+vdim:
+0
+eliminant ii:
+Ji[1]=1
+eliminant ee:
+Je[1]=1
+eliminant z:
+Jz[1]=1
+
+done (112s)
+exit 0

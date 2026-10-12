@@ -1,0 +1,7 @@
+p = 3/2   Sol 1: commutant dims at weights 2..7: [1, 1, 1, 1, 1, 1]   (X-even + X-odd: ['1e+0o', '0e+1o', '1e+0o', '0e+1o', '1e+0o', '0e+1o'])
+p = 3/2   Sol 2: commutant dims at weights 2..7: [1, 0, 1, 0, 1, 0]   (X-even + X-odd: ['1e+0o', '0e+0o', '1e+0o', '0e+0o', '1e+0o', '0e+0o'])
+p = 3/2   Sol 3: commutant dims at weights 2..7: [1, 0, 1, 0, 1, 0]   (X-even + X-odd: ['1e+0o', '0e+0o', '1e+0o', '0e+0o', '1e+0o', '0e+0o'])
+p = -2/3  Sol 1: commutant dims at weights 2..7: [1, 1, 1, 1, 1, 1]   (X-even + X-odd: ['1e+0o', '0e+1o', '1e+0o', '0e+1o', '1e+0o', '0e+1o'])
+p = -2/3  Sol 2: commutant dims at weights 2..7: [1, 0, 1, 0, 1, 0]   (X-even + X-odd: ['1e+0o', '0e+0o', '1e+0o', '0e+0o', '1e+0o', '0e+0o'])
+p = -2/3  Sol 3: commutant dims at weights 2..7: [1, 0, 1, 0, 1, 0]   (X-even + X-odd: ['1e+0o', '0e+0o', '1e+0o', '0e+0o', '1e+0o', '0e+0o'])
+SPECTRUM OK (Sol 1: one charge at every weight, X-odd at odd weight; Sols 2, 3: even weights only)

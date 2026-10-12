@@ -1,0 +1,102 @@
+seal hash ok 6f23e25680592942a8370a9417609c7c558323a4af0c32c4dfe246a33993cf23
+dim Q_4 = 1, dim Q_6 = 3
+weight 6: complement of dV_5 has 12 monomials; target quotient V_9/dV_8 has dim 24
+120 generic sample fibres (fixed seed), both signs: 55 negative
+
+== P-spin3: W_4 coordinate of I_3 ==
+HOLDS  Sol 1: W_4 coordinate of I_3 = 0 at all 120 sample fibres (values seen: [Fraction(0, 1)])
+HOLDS  Sol 2: W_4 coordinate of I_3 = 0 at all 120 sample fibres (values seen: [Fraction(0, 1)])
+HOLDS  Sol 3: W_4 coordinate of I_3 = 0 at all 120 sample fibres (values seen: [Fraction(0, 1)])
+   functional support: [((), ((1, 1), (1, 1))), ((), ((1, 3),)), ((), ((2, 2),))]
+PASS  W_4 functional is supported on Y-only monomials, whose I_3 coefficients are t-independent -> zero identically in t
+
+== P-spin5: three non-Virasoro coordinates of I_5 ==
+   Sol 1: kernel dimensions over samples {1: 120}; (dX)^6 coefficient zero in 0 kernels
+PASS  Sol 1: kernel one-dimensional at all sample fibres
+HOLDS  Sol 1: all three non-Virasoro coordinates of I_5 vanish at all 120 sample fibres
+   Sol 2: kernel dimensions over samples {1: 120}; (dX)^6 coefficient zero in 1 kernels
+PASS  Sol 2: kernel one-dimensional at all sample fibres
+HOLDS  Sol 2: all three non-Virasoro coordinates of I_5 vanish at all 120 sample fibres
+   Sol 3: kernel dimensions over samples {1: 120}; (dX)^6 coefficient zero in 0 kernels
+PASS  Sol 3: kernel one-dimensional at all sample fibres
+HOLDS  Sol 3: all three non-Virasoro coordinates of I_5 vanish at all 120 sample fibres
+   degree bound: (t^2-1)^4 x the weight-6 system has polynomial entries of degree <= 8;
+   an adjugate kernel vector has degree <= 11 x 8 = 88 < 120 sample fibres -> identically zero
+
+== special points (full kernels) ==
+   exact point N=28, Sol 1 t=-1/3       (N,s)=(28,-9): kernel dim 1 = 1 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   exact point N=28, Sol 2 t=+1/3       (N,s)=(28,9): kernel dim 1 = 1 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   anchor N=-2, Sol 3 t=3               (N,s)=(-2,-9): kernel dim 2 = 2 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   N=-2, Sol 2 t=3                      (N,s)=(-2,-9): kernel dim 2 = 2 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   N=-2, Sol 1 t=3                      (N,s)=(-2,-9): kernel dim 1 = 1 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   N=0, Sol 3 t=5                       (N,s)=(0,-5): kernel dim 1 = 1 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   N=0, Sol 2 t=-5                      (N,s)=(0,5): kernel dim 1 = 1 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   jump N=-25/2, Sol 2 t=5/3            (N,s)=(-25/2,-45/2): kernel dim 2 = 2 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   jump N=-25/2, Sol 3 t=5/3            (N,s)=(-25/2,-45/2): kernel dim 2 = 2 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   N=-25/2 other sheet, Sol 1 t=5/3     (N,s)=(-25/2,-45/2): kernel dim 1 = 1 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   N=1 (t=inf), Sol 1                   (N,s)=(1,0): kernel dim 1 = 1 in HV+d (+) 0 outside
+   N=1 (t=inf), Sol 2                   (N,s)=(1,0): kernel dim 1 = 1 in HV+d (+) 0 outside
+   N=1 (t=inf), Sol 3                   (N,s)=(1,0): kernel dim 1 = 1 in HV+d (+) 0 outside
+   approach to exact point N=28, Sol 1 t=-1/3 kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to exact point N=28, Sol 2 t=+1/3 kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to anchor N=-2, Sol 3 t=3         kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to N=-2, Sol 2 t=3                kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to N=-2, Sol 1 t=3                kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to N=0, Sol 3 t=5                 kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to N=0, Sol 2 t=-5                kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to jump N=-25/2, Sol 2 t=5/3      kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to jump N=-25/2, Sol 3 t=5/3      kernel dims [1, 1], non-Virasoro coords all zero: True
+   approach to N=-25/2 other sheet, Sol 1 t=5/3 kernel dims [1, 1], non-Virasoro coords all zero: True
+HOLDS  N = 28: yes (whole spin-5 kernel in HV + d, both solutions)
+HOLDS  N = -2: yes (Sol 3 anchor)
+HOLDS  N = 0: yes
+HOLDS  N = 1: yes
+HOLDS  N = -25/2: yes
+HOLDS  P-jump t=5/3: kernel dim 2, both directions in HV + d: (2, 0)
+HOLDS  P-jump t=3 (Sol 3): kernel dim 2, both directions in HV + d: (2, 0)
+
+== C1: cyl_membership's CLASSICAL test, reproduced with my own span ==
+   Sol 1 t=2 classical: I_3 in A<=2 False, A<=4 True;  I_5 in A<=2 False, A<=4 False, A<=6 True
+PASS  Sol 1: bcd-note table reproduced at t = 2 (I_3: no/YES; I_5: no/no/YES)
+   Sol 2 t=2 classical: I_3 in A<=2 False, A<=4 True;  I_5 in A<=2 False, A<=4 False, A<=6 True
+PASS  Sol 2: bcd-note table reproduced at t = 2 (I_3: no/YES; I_5: no/no/YES)
+   Sol 3 t=2 classical: I_3 in A<=2 False, A<=4 True;  I_5 in A<=2 False, A<=4 False, A<=6 True
+PASS  Sol 3: bcd-note table reproduced at t = 2 (I_3: no/YES; I_5: no/no/YES)
+PASS  the classical test ALSO rejects the exact point (Sol 1, t = -1/3): I_3 "not in A<=2"
+PASS  the classical test ALSO rejects the exact point (Sol 2, t = 1/3): I_3 "not in A<=2"
+
+== lead addition 1: the ladder at t = 2 with QUANTUM products (HV = <X, T_Y>) ==
+   Sol 1 t=2 quantum: I_3 in <X,T_Y> True;  I_5 in <X,T_Y> True
+HOLDS  Sol 1: I_3 and I_5 at t = 2 lie in the vertex subalgebra <X, T_Y> + Im d
+   Sol 2 t=2 quantum: I_3 in <X,T_Y> True;  I_5 in <X,T_Y> True
+HOLDS  Sol 2: I_3 and I_5 at t = 2 lie in the vertex subalgebra <X, T_Y> + Im d
+   Sol 3 t=2 quantum: I_3 in <X,T_Y> True;  I_5 in <X,T_Y> True
+HOLDS  Sol 3: I_3 and I_5 at t = 2 lie in the vertex subalgebra <X, T_Y> + Im d
+
+== C3: loop-factor tamper N -> N + 1 at the exact point ==
+   Sol 1 t=-1/3: kernel dim 1 with loop N; 0 with loop N+1
+PASS  Sol 1: with the loop factor N+1 the spin-5 charge at the exact point disappears
+   Sol 2 t=1/3: kernel dim 1 with loop N; 0 with loop N+1
+PASS  Sol 2: with the loop factor N+1 the spin-5 charge at the exact point disappears
+
+== C4: plants ==
+PASS  Sol 1: I_5 + (1/1000)(33)_Y is flagged: coords ['-1/3000', '-1/500', '0']
+PASS  Sol 1: I_3 with (22) -> -2 + 1/1000 is flagged: coord 1/2000
+PASS  Sol 1: I_5 + (1/1000)(dX)^2(22)_Y is flagged: coords ['0', '0', '1/2000']
+PASS  Sol 2: I_5 + (1/1000)(33)_Y is flagged: coords ['-1/3000', '-1/500', '0']
+PASS  Sol 2: I_3 with (22) -> -2 + 1/1000 is flagged: coord 1/2000
+PASS  Sol 2: I_5 + (1/1000)(dX)^2(22)_Y is flagged: coords ['0', '0', '1/2000']
+PASS  Sol 3: I_5 + (1/1000)(33)_Y is flagged: coords ['-1/3000', '-1/500', '0']
+PASS  Sol 3: I_3 with (22) -> -2 + 1/1000 is flagged: coord 1/2000
+PASS  Sol 3: I_5 + (1/1000)(dX)^2(22)_Y is flagged: coords ['0', '0', '1/2000']
+
+== C5: vacuity ==
+PASS  a generic vector of V_6 has all three coordinates nonzero: ['-62/81', '-76/27', '533/504']
+PASS  a generic element of HV_6 + dV_5 has all three coordinates zero
+PASS  rank(HV_6 + dV_5) = 17 (expected 17 of 20)
+
+RESULT: P-spin3 and P-spin5 CONFIRMED; all controls fired
+
+real	0m2.710s
+user	0m2.702s
+sys	0m0.008s

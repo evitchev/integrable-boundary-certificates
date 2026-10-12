@@ -1,0 +1,16 @@
+killing wrapper 1406104 (f_six_two, Singular-format bug) and its children 07:32:37Z
+killing stray 1406525 (old f_six_two python from the first launch) 07:33:09Z
+NOTE 07:33:30Z: the 'stray 1406525' above was this seat's own shell (pgrep -f matched its own command line); the relaunched f_six_two python (1406296) is alive and no computation was affected
+killing wrapper 1465325 (h_four_q four: no eliminations, file names would collide) + children 10:28:35Z
+killing wrapper 1406929 (h_four four 9/4 1/2 1/3): superseded by the q-variant (msolve + fglm), 11:19:51Z
+killing wrapper 1406940 (h_four four 2 1/3 1/5): superseded by the q-variant (msolve + fglm), 11:19:51Z
+killing wrapper 1406951 (h_four four 9/4 2/5 1/4): superseded by the q-variant (msolve + fglm), 11:19:51Z
+killing wrapper 1400069 (h_four four$): superseded by the q-variant (msolve + fglm), 11:19:51Z
+killing wrapper 1414271 (h_four tamper 2 1/2 1/3): superseded by the q-variant (msolve + fglm), 11:19:51Z
+killing wrapper 1449975 (msolve GB four t2): superseded by the q-variant (msolve + fglm), 11:19:51Z
+killing wrapper 1440484 (h_four_fast four 2 1/2 1/3): superseded by the q-variant (msolve + fglm), 11:19:51Z
+killing wrapper 1468390 (h_four_q Singular std cross-check, superseded by msolve + fglm; not finished after ~55 min) 11:25:48Z
+killing wrapper 1468401 (h_four_q Singular std cross-check, superseded by msolve + fglm; not finished after ~55 min) 11:25:49Z
+killing wrapper 1468412 (h_four_q Singular std cross-check, superseded by msolve + fglm; not finished after ~55 min) 11:25:49Z
+killing wrapper 1468423 (h_four_q Singular std cross-check, superseded by msolve + fglm; not finished after ~55 min) 11:25:49Z
+killing wrapper 1468434 (h_four_q Singular std cross-check, superseded by msolve + fglm; not finished after ~55 min) 11:25:49Z

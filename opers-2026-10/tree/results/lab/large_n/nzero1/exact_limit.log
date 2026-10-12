@@ -1,0 +1,50 @@
+======================================================================
+NZERO1 EXACT LIMIT: sympy.limit of monic WKB charge as eps -> 0
+======================================================================
+
+### t=4 spin 9 ###
+  k(t0+eps) = 2*(-eps - 3)/(eps + 1)
+  = -6 + 4*eps - 4*eps**2 + O(eps**3)
+  n(t0+eps) = (-eps - 9)/(eps + 1)
+  M(t0+eps) = (-eps - 1)/(2*(eps + 3))
+
+  EXACT LIMIT STATEMENT:
+  For t = 4 + eps, eps -> 0+:
+    monic(WKB_charge_9(t)) = cert_9(t)  [EXACT, for all rational t in a neighbourhood]
+    Therefore: lim_{eps->0} monic(WKB_charge_9(4+eps))
+             = lim_{eps->0} cert_9(4+eps)
+             = cert_9(4)  [by continuity of the rational function cert_9(t)]
+  cert_9(4) has 21 terms (computed above).
+  cert(4+1/100) - cert(4): 20 terms (O(1/100) as expected)
+
+### t=7 spin 3 ###
+  k(t0+eps) = 2*(-eps - 6)/(eps + 4)
+  = -3 + eps/4 - eps**2/16 + O(eps**3)
+  n(t0+eps) = (-eps - 12)/(eps + 4)
+  M(t0+eps) = (-eps - 4)/(2*(eps + 6))
+
+  EXACT LIMIT STATEMENT:
+  For t = 4 + eps, eps -> 0+:
+    monic(WKB_charge_9(t)) = cert_9(t)  [EXACT, for all rational t in a neighbourhood]
+    Therefore: lim_{eps->0} monic(WKB_charge_9(4+eps))
+             = lim_{eps->0} cert_9(4+eps)
+             = cert_9(4)  [by continuity of the rational function cert_9(t)]
+  cert_9(4) has 6 terms (computed above).
+  cert(7+1/100) - cert(7): 5 terms (O(1/100) as expected)
+
+### t=7 spin 9 ###
+  k(t0+eps) = 2*(-eps - 6)/(eps + 4)
+  = -3 + eps/4 - eps**2/16 + O(eps**3)
+  n(t0+eps) = (-eps - 12)/(eps + 4)
+  M(t0+eps) = (-eps - 4)/(2*(eps + 6))
+
+  EXACT LIMIT STATEMENT:
+  For t = 4 + eps, eps -> 0+:
+    monic(WKB_charge_9(t)) = cert_9(t)  [EXACT, for all rational t in a neighbourhood]
+    Therefore: lim_{eps->0} monic(WKB_charge_9(4+eps))
+             = lim_{eps->0} cert_9(4+eps)
+             = cert_9(4)  [by continuity of the rational function cert_9(t)]
+  cert_9(4) has 21 terms (computed above).
+  cert(7+1/100) - cert(7): 20 terms (O(1/100) as expected)
+
+Total time: 1s

@@ -1,0 +1,22 @@
+
+=== 10_3_A_60: BARE (lattice only)
+  Q (theta = 4.3333333): lsq residual 1.72e-17; K0: 12.6 digits [stab 12.3]; K2: 5.162 digits [stab 5.26]; K3: |fit| 0.0091 vs 0 [stab-abs 0.003]; K4: -0.2326 digits [stab 1.07]; K5: |fit| 5.5e+3 vs 0 [stab-abs 1.7e+3]; K6: -3.825 digits [stab -0.0493]; K7: |fit| 6.1e+8 vs 0 [stab-abs 4.1e+8]; K8: -7.127 digits [stab -0.577]
+  Q (theta = 3.7333333): lsq residual 1.64e-17; K0: 12.63 digits [stab 12.3]; K2: 5.183 digits [stab 5.28]; K3: |fit| 0.0086 vs 0 [stab-abs 0.0029]; K4: -0.2114 digits [stab 1.03]; K5: |fit| 5.2e+3 vs 0 [stab-abs 1.6e+3]; K6: -3.803 digits [stab -0.0493]; K7: |fit| 5.8e+8 vs 0 [stab-abs 4.0e+8]; K8: -7.106 digits [stab -0.577]
+  Q (theta = 4.9333333): lsq residual 1.79e-17; K0: 12.59 digits [stab 12.3]; K2: 5.146 digits [stab 5.24]; K3: |fit| 0.0094 vs 0 [stab-abs 0.0032]; K4: -0.2492 digits [stab 1.09]; K5: |fit| 5.7e+3 vs 0 [stab-abs 1.8e+3]; K6: -3.841 digits [stab -0.0493]; K7: |fit| 6.3e+8 vs 0 [stab-abs 4.3e+8]; K8: -7.144 digits [stab -0.577]
+
+=== 10_3_A_60: SEALED basis
+  Q (theta = 4.3333333): lsq residual 1.33e-26; K0: 19.69 digits [stab 16.7]; K2: 11.93 digits [stab 9.18]; K3: |fit| 2.4e-9 vs 0 [stab-abs 1.0e-6]; K4: 6.092 digits [stab 3.6]; K5: |fit| 0.0054 vs 0 [stab-abs 1.2]; K6: 1.674 digits [stab -0.157]; K7: |fit| 1.2e+4 vs 0 [stab-abs 1.3e+6]; K8: -1.897 digits [stab -0.00575]
+     extra N1: -39.99758334321265178631 [stab 3.85]
+     extra N2: 4336.671437777217494715 [stab -0.00439]
+     extra N3: 47242527383.38799481651 [stab -0.0118]
+  Q (theta = 3.7333333): lsq residual 1.63e-26; K0: 19.58 digits [stab 16.7]; K2: 11.82 digits [stab 9.21]; K3: |fit| 3.1e-9 vs 0 [stab-abs 9.8e-7]; K4: 5.982 digits [stab 3.62]; K5: |fit| 0.007 vs 0 [stab-abs 1.2]; K6: 1.56 digits [stab -0.165]; K7: |fit| 1.6e+4 vs 0 [stab-abs 1.3e+6]; K8: -2.015 digits [stab -0.00776]
+     extra N1: -38.09137374296064277494 [stab 3.84]
+     extra N2: 5778.095559943986609228 [stab -0.00604]
+     extra N3: 62723767039.73836192463 [stab -0.0158]
+  Q (theta = 4.9333333): lsq residual 8.34e-27; K0: 19.93 digits [stab 16.8]; K2: 12.17 digits [stab 9.23]; K3: |fit| 1.4e-9 vs 0 [stab-abs 9.2e-7]; K4: 6.343 digits [stab 3.65]; K5: |fit| 0.003 vs 0 [stab-abs 1.1]; K6: 1.934 digits [stab -0.18]; K7: |fit| 6.5e+3 vs 0 [stab-abs 1.2e+6]; K8: -1.627 digits [stab -0.0035]
+     extra N1: -41.55521706082873779651 [stab 3.91]
+     extra N2: 2496.92394417700548406 [stab -0.00287]
+     extra N3: 24667032927.409025236 [stab -0.00716]
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.88 digits; K4: 2.23 digits; K6: 1.71 digits (must be << sealed)
+exit 0

@@ -1,0 +1,3 @@
+t = 11/5 (N = -21/4), weight 8: kernel dimension 1  (1s)
+  class 0: in HV + d; eigenvalue monomials 14; odd-in-rho part zero: True; even in PX and pi: True  (1s)
+done (1s)

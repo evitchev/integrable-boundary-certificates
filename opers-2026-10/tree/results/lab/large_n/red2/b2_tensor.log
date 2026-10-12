@@ -1,0 +1,21 @@
+tensor product T (coeffs left of D = theta), cleared denominator 1 :
+   x^0 D^0: (lam_m**2 - 2*lam_m*lam_p - 2*lam_m + lam_p**2 - 2*lam_p)/16
+   x^0 D^1: (2*lam_m + 2*lam_p - 1)/4
+   x^0 D^2: -(2*lam_m + 2*lam_p - 5)/4
+   x^0 D^3: -2
+   x^0 D^4: 1
+   x^1 D^1: Ep/2
+   x^1 D^2: Ep
+   x^2 D^0: -3/4
+   x^2 D^1: -2
+   x^2 D^2: -1
+Sol 3 member S:
+   x^0 D^0: (2*l0 - 1)*(2*l0 + 1)*(2*l1 - 1)*(2*l1 + 1)/16
+   x^0 D^1: (2*l0**2 + 2*l1**2 - 1)/2
+   x^0 D^2: -(2*l0**2 + 2*l1**2 - 3)/2
+   x^0 D^3: -2
+   x^0 D^4: 1
+   x^1 D^1: C
+   x^1 D^2: -C
+   x^2 D^1: -C*E
+   x^2 D^2: C*E

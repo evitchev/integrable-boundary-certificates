@@ -50,5 +50,165 @@
  "results/lab/large_n/akns1/sol1_akns_top_check.py": [
   "aY = (t - 1)/(t + 3)",
   "aY = (t - 1)/(t + 3) + sp.Rational(1, 100)"
+ ],
+ "results/lab/large_n/vir1/vir_lib.py": [
+  "if all(k >= 2 for k in p)]",
+  "if all(k >= 2 for k in p) and len(p) < 3]"
+ ],
+ "results/lab/large_n/vir1r/vir1r.py": [
+  "for part in partitions(w2, 2):",
+  "for part in [q for q in partitions(w2, 2) if len(q) < 3]:"
+ ],
+ "results/lab/large_n/vir2/vir2_lib.py": [
+  "T_PHI = {((), (1, 1)): sp.Rational(1, 2), ((), (2,)): rho}",
+  "T_PHI = {((), (1, 1)): sp.Rational(1, 2), ((), (2,)): 2 * rho}"
+ ],
+ "results/lab/large_n/vir2/w2_i5sym.py": [
+  "((1, 1), ((1, 1),)): 7 - N + s,",
+  "((1, 1), ((1, 1),)): 7 - N + s + sp.Rational(1, 1000),"
+ ],
+ "results/lab/large_n/vir2/w3_symbolic.py": [
+  "-p / 2, 1 - p**2 / 4)]",
+  "-p / 2, 1 - p**2 / 5)]"
+ ],
+ "results/lab/large_n/vir2/w4_main.py": [
+  "return [('S1', -p / 2, 1 - p**2 / 4)]",
+  "return [('S1', -p / 2, 1 - p**2 / 5)]"
+ ],
+ "results/lab/large_n/vir2r/vir2r.py": [
+  "for part in partitions(w2, 2):",
+  "for part in [q for q in partitions(w2, 2) if len(q) < 3]:"
+ ],
+ "results/lab/large_n/vir2r/ctrl_e.py": [
+  "O.ope_pairs(Tp, Tp, Nc, (4,))",
+  "O.ope_pairs(Tp, Tp, Nc + 1, (4,))"
+ ],
+ "results/lab/large_n/vir2r/posthoc_viralone.py": [
+  "{XC: QS(a0), FC: QS(beta)}",
+  "{XC: QS(a0 + F(1, 7)), FC: QS(beta)}"
+ ],
+ "results/lab/large_n/br2/br2_direct.py": [
+  "-F(1, 2) * (4 * n_**2 + 7 * n_ + 2)",
+  "-F(1, 2) * (4 * n_**2 + 7 * n_ + 3)"
+ ],
+ "results/lab/large_n/red1/a_ch.py": [
+  "h = [MG.ONE, MG.ZERO, MG.P_(-MG.l0**2)]",
+  "h = [MG.ONE, MG.ZERO, MG.P_(-MG.l0**2 + sp.Rational(1, 10))]"
+ ],
+ "results/lab/large_n/red1/b_op.py": [
+  "(ONE, -sp.Rational(3, 2) * gam)",
+  "(ONE, -sp.Rational(1, 1) * gam)"
+ ],
+ "results/lab/large_n/red2/b1_a1_checks.py": [
+  "a = (2 * l + 3 - E + al) / 4",
+  "a = (2 * l + 3 - E + 2 * al) / 4"
+ ],
+ "results/lab/large_n/red2/b2_coulomb.py": [
+  "a0m = lm + x - E * x**2",
+  "a0m = lm + x + E * x**2"
+ ],
+ "results/lab/large_n/red2/b2_mellin.py": [
+  "r = lambda n: rho * (n - sp.Rational(1, 2)) / (n - 2)",
+  "r = lambda n: rho * (n - sp.Rational(1, 3)) / (n - 2)"
+ ],
+ "results/lab/large_n/red2/a2_laplace.py": [
+  "- lam * sp.diff(f, q, 2) + al",
+  "- lam * sp.diff(f, q, 2) / q + al"
+ ],
+ "results/lab/large_n/pillow1/r1_pillow_mellin.py": [
+  "for hv in (0, sp.sqrt(V(1)), -sp.sqrt(V(1))):",
+  "for hv in (0, sp.sqrt(V(1)) / 2, -sp.sqrt(V(1)) / 2):"
+ ],
+ "results/lab/large_n/pillow1/r1b_invariants.py": [
+  "hX = sp.sqrt(2) * sp.sqrt(-X) / 2",
+  "hX = sp.sqrt(2) * sp.sqrt(-X) / 3"
+ ],
+ "results/lab/large_n/pillow1/r2_doublet.py": [
+  "A0m = lam + z**2 - al * z - E * z**-2",
+  "A0m = lam + z**2 - al * z - E * z**-1"
+ ],
+ "results/lab/large_n/pillow1/r3_r_expgauge.py": [
+  "(2, 0), (2, 0), (1, 0), (0, 0)]",
+  "(2, 0), (2, 0), (1, 1), (0, 0)]"
+ ],
+ "results/lab/large_n/nzero1/exact_series_v4.py": [
+  "n = g['D']; Cv = 2 * n * (1 + F(M))",
+  "n = g['D']; Cv = 2 * n * (1 + F(M)) * F(1001, 1000)"
+ ],
+ "results/lab/large_n/vir5d/z0c_engine.py": [
+  "h = MW.family_symbol(k, order // 2 + 1)",
+  "h = MW.family_symbol(k + sp.Rational(1, 1000), order // 2 + 1)"
+ ],
+ "results/lab/large_n/vir5d/z1_point.py": [
+  "k = k0 + sp.Rational(1, 10**hexp)",
+  "k = k0 + sp.Rational(2, 10**hexp)"
+ ],
+ "results/lab/large_n/vir5d/z0a_f1prime.py": [
+  "return tot * L.q_(nu / 6)",
+  "return tot * L.q_(nu / 7)"
+ ],
+ "results/lab/large_n/vir8/b_nz.py": [
+  "('b3', 2, sp.Integer(1), 5, 2)",
+  "('b3', 2, sp.Integer(1) + sp.Rational(1, 1000), 5, 2)"
+ ],
+ "results/lab/large_n/vir5d/z2_kernel.py": [
+  "N, s = V.curve_point(tq)",
+  "N, s = V.curve_point(tq + F(1, 100))"
+ ],
+ "lab/classical_fusion_product.py": [
+  "sp.Rational((q - 1)**2, 2 * q)",
+  "sp.Rational((q - 1)**2 + 1, 2 * q)"
+ ],
+ "lab/classical_w14_fusion_test.py": [
+  "sp.Rational((q - 1)**2, 2 * q)",
+  "sp.Rational((q - 1)**2 + 1, 2 * q)"
+ ],
+ "lab/classical_w18_fusion_test.py": [
+  "sp.Rational((q - 1)**2, 2 * q)",
+  "sp.Rational((q - 1)**2 + 1, 2 * q)"
+ ],
+ "lab/classical_w22_fusion_test.py": [
+  "sp.Rational((q - 1)**2, 2 * q)",
+  "sp.Rational((q - 1)**2 + 1, 2 * q)"
+ ],
+ "lab/classical_w26_fusion_test.py": [
+  "sp.Rational((q - 1)**2, 2 * q)",
+  "sp.Rational((q - 1)**2 + 1, 2 * q)"
+ ],
+ "results/lab/large_n/wuw1/posthoc_products.py": [
+  "K6 = ad_kernel(I3, 6)",
+  "K6 = ad_kernel(I3, 6)[1:]"
+ ],
+ "results/lab/large_n/wuw1/diag_tamper2.py": [
+  "for a in (F(2), F(21, 10), F(3), F(1)):",
+  "for a in (F(2), F(21, 10), F(3), F(1, 2)):"
+ ],
+ "results/lab/large_n/wuw2/wuw2.py": [
+  "E2 = sp.expand(sp.prod([(PX + PI - j * sp.sqrt(p2))",
+  "E2 = sp.expand(sp.prod([(PX + PI - j * sp.sqrt(p2 + sp.Rational(1, 1000)))"
+ ],
+ "results/lab/large_n/exc4/vir_lib.py": [
+  "base = {M((), [(1, 1), (1, 1)]): F(1), M((), [(2, 2)]): F(-2)}",
+  "base = {M((), [(1, 1), (1, 1)]): F(1), M((), [(2, 2)]): F(-3)}"
+ ],
+ "results/lab/large_n/exc4/h_four_q.py": [
+  "Lcoef = [sp.Integer(1) if mode == 'tamper' else sp.Rational(1, 2), 1]",
+  "Lcoef = [sp.Integer(1) if mode == 'tamper' else sp.Rational(1, 3), 1]"
+ ],
+ "results/lab/large_n/exc4/f_six_sol3.py": [
+  "f = sp.Rational(3, 2) / c",
+  "f = sp.Rational(5, 2) / c"
+ ],
+ "results/lab/large_n/exc4/f_six_charges.py": [
+  "f = sp.Rational(3, 2) / c",
+  "f = sp.Rational(5, 2) / c"
+ ],
+ "results/lab/large_n/num3/t1_zeros3.py": [
+  "e7, _ = exact_E0(ex7, Fr(21, 2), mp.mpf(1), [])",
+  "e7, _ = exact_E0(ex7, Fr(21, 2), mp.mpf(1) * (1 + mp.mpf(10)**-30), [])"
+ ],
+ "results/lab/large_n/num3/wkb_pred3.py": [
+  "PTS = {'A': (mp.mpf(1) / 3, mp.mpf(3) / 5)",
+  "PTS = {'A': (mp.mpf(1) / 3 + mp.mpf(1) / 1000, mp.mpf(3) / 5)"
  ]
 }

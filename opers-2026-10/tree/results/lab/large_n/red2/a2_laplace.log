@@ -1,0 +1,6 @@
+L4 indicial polynomial at p = i sqrt(E): 2*r*sqrt(-E)*(r - 2)*(r - 1)*(r + 1) -> exponents [-1, 0, 1, 2]
+pillow V(0) = 1/16  -> psi ~ w^(+-sqrt(V0)) = w^(+- 1/4 ): exponent difference 1/2 (in s = sqrt(w): 1 )
+pillow V(1) = -X/2  -> psi ~ (1-w)^(+-sqrt(V1)): exponent difference sqrt(2)*sqrt(-X) (momentum-dependent; generic irrational)
+CONCLUSION (exponent obstruction): every exponent difference of L4 at its finite singular points is an integer; the pillow X-point difference
+  2 sqrt(-X/2) is not an integer for generic X, and no ramified map makes it one. So the pillow is not a right factor of L4, nor is its symmetric
+  cube equal to L4, for ANY identification sending the pillow X-point to p = +-i sqrt(E).  Identifications sending it to p = infinity (irregular) NOT tested.

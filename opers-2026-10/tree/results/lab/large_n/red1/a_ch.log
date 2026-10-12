@@ -1,0 +1,13 @@
+A3 spin 1: monic oscillator charge == 2^2 B_2(1/2 + l/2): True
+A3 spin 3: monic oscillator charge == 2^4 B_4(1/2 + l/2): True
+A3 spin 5: monic oscillator charge == 2^6 B_6(1/2 + l/2): True
+A3 spin 7: monic oscillator charge == 2^8 B_8(1/2 + l/2): True
+A3 spin 9: monic oscillator charge == 2^10 B_10(1/2 + l/2): True
+   k = 1e4 done (13s)
+   k = 1e8 done (23s)
+A4 spin 1: max|monic F - (B(1/2+PX) + B(1/2+pi))| = 0.0000e+00 (k=1e4), 0.0000e+00 (k=1e8), ratio inf -> O(1/k);   control without 1/2: 1.000e+00 (k=1e8)
+A4 spin 3: max|monic F - (B(1/2+PX) + B(1/2+pi))| = 5.9994e-04 (k=1e4), 6.0000e-08 (k=1e8), ratio 9.9990e+03 -> O(1/k);   control without 1/2: 2.000e+00 (k=1e8)
+A4 spin 5: max|monic F - (B(1/2+PX) + B(1/2+pi))| = 7.4989e-04 (k=1e4), 7.5000e-08 (k=1e8), ratio 9.9985e+03 -> O(1/k);   control without 1/2: 3.750e+00 (k=1e8)
+A4 spin 7: max|monic F - (B(1/2+PX) + B(1/2+pi))| = 1.5163e-03 (k=1e4), 1.5167e-07 (k=1e8), ratio 9.9975e+03 -> O(1/k);   control without 1/2: 7.000e+00 (k=1e8)
+A4 spin 9: max|monic F - (B(1/2+PX) + B(1/2+pi))| = 3.0926e-03 (k=1e4), 3.0937e-07 (k=1e8), ratio 9.9962e+03 -> O(1/k);   control without 1/2: 1.312e+01 (k=1e8)
+(A) charge level: AS SEALED | control fires: True

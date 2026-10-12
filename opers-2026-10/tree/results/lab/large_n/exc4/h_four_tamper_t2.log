@@ -1,0 +1,14 @@
+point A: 5 new conditions (80s)
+point B: 5 new conditions (125s)
+point C: 5 new conditions (216s)
+point D: 5 new conditions (272s)
+   r02 eliminated
+   s02 eliminated
+   r01 eliminated
+   s01 eliminated
+   u02 eliminated
+   v02 eliminated
+   u01 eliminated
+   v01 eliminated
+11 equations in 6 unknowns [r11, r12, z, u11, u12, z3] (8230s)
+written h_four_t2_P1-2_Q1-3_tamper.sing; vacuum monic I_1 = 31/36; running Singular (8236s)

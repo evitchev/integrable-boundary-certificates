@@ -1,0 +1,6 @@
+x^0 parts equal (P4): True
+solve for (rho, mu) making the recurrences identical: [{C: 4, mu: rho}, {mu: 0, rho: 0}]
+  identity in nu: True (residuals 0 0 )
+  identity in nu: False (residuals C*(nu**2 - 3*nu + 2) C*E*(-nu**2 + 5*nu - 6) )
+NEGATIVE CONTROL (wrong multiplier Gamma(nu+1)/Gamma(nu-1)) constant solutions (must be none): [{C: 0, mu: 0}, {C: 4*(nu - 2)*(2*nu - 1)/((nu - 1)*(2*nu - 3)), mu: 2*rho*(nu - 2)/(2*nu - 3)}]
+NEGATIVE CONTROL (unrotated momenta) x^0 parts equal: False

@@ -1,0 +1,44 @@
+========================================================================
+NZERO1 v4: series in eps = t - t0; common.monic normalisation
+========================================================================
+
+### t0=4 spin 9 ###
+  cert(t0): 21 terms, leading monomial = (10, 0)
+  N=25: diff has 20 terms, max|coeff| = -31935520424675783/32491087851300, monic==cert(same t): True [8.0s]
+  N=50: diff has 20 terms, max|coeff| = -40972171621606261267741/79868954399772432600, monic==cert(same t): True [8.7s]
+  N=100: diff has 20 terms, max|coeff| = -1687459954907897270030197/6436173966959422439200, monic==cert(same t): True [9.0s]
+  N=200: diff has 20 terms, max|coeff| = -90942914132337324916701613/686083575392920989226800, monic==cert(same t): True [9.3s]
+  O(1/N) check (|diff(N)/diff(2N)| should be ~2):
+    |d(25)|/|d(50)| = 8502188748438104212868682787399086/4437434758720499386894377805649711 (~0 if O(1/N))
+    |d(50)|/|d(100)| = 1318520121803879213552756392191472772469236/673878310949904461926918916974044650736111 (~0 if O(1/N))
+    |d(100)|/|d(200)| = 2894346397988968473795200581845127914869204199/1463311041044939104659403170123979890907586074 (~0 if O(1/N))
+
+  => lim_{eps->0} monic(WKB(t0+eps)) = cert(t0)  [O(1/N) convergence confirmed]
+
+### t0=7 spin 3 ###
+  cert(t0): 6 terms, leading monomial = (4, 0)
+  N=25: diff has 5 terms, max|coeff| = -907/61105, monic==cert(same t): True [8.8s]
+  N=50: diff has 5 terms, max|coeff| = -1807/242205, monic==cert(same t): True [9.1s]
+  N=100: diff has 5 terms, max|coeff| = -3607/964405, monic==cert(same t): True [9.4s]
+  N=200: diff has 5 terms, max|coeff| = -7207/3848805, monic==cert(same t): True [9.8s]
+  O(1/N) check (|diff(N)/diff(2N)| should be ~2):
+    |d(25)|/|d(50)| = 43935987/22083347 (~0 if O(1/N))
+    |d(50)|/|d(100)| = 348535967/174726687 (~0 if O(1/N))
+    |d(100)|/|d(200)| = 2776527927/1390093367 (~0 if O(1/N))
+
+  => lim_{eps->0} monic(WKB(t0+eps)) = cert(t0)  [O(1/N) convergence confirmed]
+
+### t0=7 spin 9 ###
+  cert(t0): 21 terms, leading monomial = (10, 0)
+  N=25: diff has 20 terms, max|coeff| = -1731027621908063174219/377899682277730209352, monic==cert(same t): True [8.7s]
+  N=50: diff has 20 terms, max|coeff| = -40475649053810404873277/17527789791955316888091, monic==cert(same t): True [9.1s]
+  N=100: diff has 20 terms, max|coeff| = -13636285566861423350508247/11761577180936894509385376, monic==cert(same t): True [9.3s]
+  N=200: diff has 20 terms, max|coeff| = -5202177248752756195734956791/8955407594962361465528138928, monic==cert(same t): True [9.6s]
+  O(1/N) check (|diff(N)/diff(2N)| should be ~2):
+    |d(25)|/|d(50)| = 64693151984803491613261444873187485414341/32613507286609516791632138713614290491016 (~0 if O(1/N))
+    |d(50)|/|d(100)| = 1823618642697811781477258898075323598547552/915583341795362890805328228188931811283127 (~0 if O(1/N))
+    |d(100)|/|d(200)| = 4083684300847593003654208367181384013188651980529/2046074412122775950878339344540087673506143503454 (~0 if O(1/N))
+
+  => lim_{eps->0} monic(WKB(t0+eps)) = cert(t0)  [O(1/N) convergence confirmed]
+
+Total: 109s

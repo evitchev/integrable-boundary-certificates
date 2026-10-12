@@ -1,0 +1,7 @@
+LOCAL REGISTRATION (lead switch in progress; old lead asked for no messages until the new lead contacts):
+2026-10-07 04:18:47 EDT
+048c36e65942679504aad6e13291a957a8f5ab7ac228232b6cb7dd522952efc8  PREDICTION_NUM3_logE.json
+4fa7008b8b05d9dfd00aaa8c4a0b859d8518e460f8d8429c9a9046abeab2ee14  wkb_pred3.json
+data files present at registration:
+ls: cannot access 'points': No such file or directory
+ls: cannot access 'data_*': No such file or directory

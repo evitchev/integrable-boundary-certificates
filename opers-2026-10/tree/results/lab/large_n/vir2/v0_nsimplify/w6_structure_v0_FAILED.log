@@ -1,0 +1,20 @@
+
+=== p = 3/2: t = -17, N = 11/12, rho = 1/12
+   Sol 1 weight 4, pair(s) alone:             commutant dim mod d =  2 ; cylindrical I_3 inside: True  (0s)
+   Sol 1 weight 4, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_3 inside: True  (0s)
+   Sol 1 weight 4, Virasoro beta_+ alone:     commutant dim mod d =  5 ; cylindrical I_3 inside: True  (0s)
+Traceback (most recent call last):
+  File "<home>/fable-work/vir2/w6_structure.py", line 99, in <module>
+    dim, ns, _, drows = commutant(w, sc, fib.rho)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/fable-work/vir2/w6_structure.py", line 54, in commutant
+    entries[(si, m2, par)] = fq(val)
+                             ^^^^^^^
+  File "<home>/fable-work/vir2/w6_structure.py", line 25, in fq
+    assert x.is_Rational, x
+           ^^^^^^^^^^^^^
+AssertionError: -405*2**(62/129)*3**(2/129)*5**(121/129)*7**(8/43)/128
+
+real	0m0.790s
+user	0m0.758s
+sys	0m0.032s

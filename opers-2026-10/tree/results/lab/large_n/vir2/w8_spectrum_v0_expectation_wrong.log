@@ -1,0 +1,7 @@
+p = 3/2   Sol 1: commutant dims at weights 2..7: [1, 1, 1, 1, 1, 1]
+p = 3/2   Sol 2: commutant dims at weights 2..7: [1, 0, 1, 0, 1, 0]
+p = 3/2   Sol 3: commutant dims at weights 2..7: [1, 0, 1, 0, 1, 0]
+p = -2/3  Sol 1: commutant dims at weights 2..7: [1, 1, 1, 1, 1, 1]
+p = -2/3  Sol 2: commutant dims at weights 2..7: [1, 0, 1, 0, 1, 0]
+p = -2/3  Sol 3: commutant dims at weights 2..7: [1, 0, 1, 0, 1, 0]
+SPECTRUM FAILED

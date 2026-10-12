@@ -168,18 +168,6 @@
   "sha256_kit": "9e14dcde038506a8d8fbc132ade611643ec74c817666c0ffdf5357c9668e1447"
  },
  {
-  "path": "results/lab/large_n/vir8/b_core.py",
-  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
-  "sha256_archived": "83dd34eba0ec529924599694eb9389ee8da70d83b734e3962ce9bc23ebf4c1d7",
-  "sha256_kit": "437543f76eaec99562da0a8b753fde4c4b73726ef9816be14b7f8fa836329a2a"
- },
- {
-  "path": "results/lab/large_n/vir8/b_nz.py",
-  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
-  "sha256_archived": "84b096d6f3b078a5f0352f6f1403fcc0544a1089571a46ebcfe684b71cc62636",
-  "sha256_kit": "d042056835f9ad1734a85efccf3f0b33a3361c25aa9126225c96b9a4fbdd6393"
- },
- {
   "path": "results/lab/large_n/exc1/d2_level2.py",
   "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
   "sha256_archived": "9ea00fce8d5c00a535f5d29edf4534e1b4e41f654a94813183dd5ec5f2d6ce99",
@@ -298,5 +286,377 @@
   "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
   "sha256_archived": "8e3473b711cf0a61e9c315fc980d0dccdc847281faeb800094eeb37def7c31de",
   "sha256_kit": "199d50882c7fee36dc87a268938f2a097c9b697ffd00792c28af7fb34cde3d48"
+ },
+ {
+  "path": "results/lab/large_n/sol2f/common.py",
+  "kind": "functional: '~/opus5-w8-clone/code' import path -> tree/code (vendored copies of code/cyl_first_order.py and code/wkb.py) relative to __file__; v1.2.5 portability fix",
+  "sha256_archived": "b45b919b6af7ccf78d1274e5aad40c72ab0f91442c4495c7aa1a7e9bb3e409f0",
+  "sha256_kit": "7327e121fb9b81dd8fdf45aa126605a97f92204bfadf4d3e15cf81dbd07ba0f8"
+ },
+ {
+  "path": "results/lab/large_n/sol2_ext_fable/common.py",
+  "kind": "functional: '~/opus5-w8-clone/code' import path -> tree/code (vendored copies of code/cyl_first_order.py and code/wkb.py) relative to __file__; v1.2.5 portability fix",
+  "sha256_archived": "b45b919b6af7ccf78d1274e5aad40c72ab0f91442c4495c7aa1a7e9bb3e409f0",
+  "sha256_kit": "7327e121fb9b81dd8fdf45aa126605a97f92204bfadf4d3e15cf81dbd07ba0f8"
+ },
+ {
+  "path": "results/lab/large_n/vir1r/vir1r.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "b6f840cdf222321da149d85bdd5f6ecfb914cb4ca2d4ba1b57ecd22e8760ae69",
+  "sha256_kit": "0a87c755aa0b285e1c89bdd00097a839ec8cc918ecebeefb4d8b0a73c882bc87"
+ },
+ {
+  "path": "results/lab/large_n/vir1/v0_selftest.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "b8f43eff561aa34c9f1ff0aff01dfa4094b5418c73eef2b6a64a1f162ce715ec",
+  "sha256_kit": "29ac659e8605dd4e73f9016dca82abba53f0e2bb977fdcb6a31c7d3fa71b21af"
+ },
+ {
+  "path": "results/lab/large_n/vir1/v3_ladder.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "22410faa0b0ef924e57b396ad10dac86200191551f902bb57b828c27c5002809",
+  "sha256_kit": "170cf1b40cc6a6a8ba421eb2242478162e131d47bc895f70b31f8a58cda2d87b"
+ },
+ {
+  "path": "results/lab/large_n/vir2r/vir2r.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "04884734ea71103dcb0cc84c913817f807e724cfad789d58443559a2e38bd443",
+  "sha256_kit": "474ac846da8643c8248cc2831798eb73baf9cb9b89289a42b81a6c9c723403e4"
+ },
+ {
+  "path": "results/lab/large_n/vir2/w4_main.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "ebb64d71b3b08f4470dd84591e5e992a756278e927c5f8457a9790bf5947d3e6",
+  "sha256_kit": "84302d9005e3d82f9997296eb65e97aeed8c5c6d5b5aa63274de3d27111e3b4d"
+ },
+ {
+  "path": "results/lab/large_n/vir2/w5_points.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "7f62021adcb2f3a760990270bf832533191834412b9eafeeac3ab6f1b8347c33",
+  "sha256_kit": "90b096ce2540ad4ade743780c96822428999ac11d068cba89cf3c83a9adc002b"
+ },
+ {
+  "path": "results/lab/large_n/vir2/w6_structure.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "2735dd675b4ce9208d2e887c07aebbfd37f172a47634a952a71bb7559befe01a",
+  "sha256_kit": "334c0b84a7e12f18209e0345a9c181935177a4d94bfd53dc12df836d589c0918"
+ },
+ {
+  "path": "results/lab/large_n/vir2/w7_weight8.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "3bdb5fb6e8a798a94949beaad3a23afb6f4613520e8da214e906f511fabf7105",
+  "sha256_kit": "5ae0d2c14754d8b5f30860fa320a8e1f5c10c96175d943bebaf6fa31d14ea433"
+ },
+ {
+  "path": "results/lab/large_n/vir2/w8_spectrum.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "2afebbdf19bb04c393fee3079f8a4175cc83b0d8a25c8f95c399231637303890",
+  "sha256_kit": "93abdb58ee88386e2de8ed9bf77014d8f7224393b495930fc2ecb5c29508eeac"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/exact_series_v4.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "e2762d09d91030247583a94b7549736b206475c0bfabc5dc6716c7da1e8c76e7",
+  "sha256_kit": "4371700fbddecbb0c8531001917126a31a085ee7621b2e97753ddfbd9a847f3e"
+ },
+ {
+  "path": "results/lab/large_n/red1/b_ch.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "77253049656173869cea5d39a1606aac2d30b8f934a583fb204e5d358b899d64",
+  "sha256_kit": "4b102d624f981db60ef4997a7e9ad8938b5ef13cfcd2951ffc47b974869c2148"
+ },
+ {
+  "path": "results/lab/large_n/vir5d/cft_lib.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "7f31a2988f043ebfc97c6fe080a9b77b1fe494caa658e82b1f6c13ca332b27c5",
+  "sha256_kit": "c79885f05c3455cc9bb82c5725a0ad11b9e500ea80d567c324f52776c8a6ae96"
+ },
+ {
+  "path": "results/lab/large_n/vir5d/z0a_f1prime.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "f5105cf9fd494c9d88662985964840657d40d505b2f65ac3ea44a2444428e16a",
+  "sha256_kit": "c9def609d12d53779e11e2b5d9f7b4a877d9a98baa93059e857065d79ba8f163"
+ },
+ {
+  "path": "results/lab/large_n/vir5d/z1_compare.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "a0b0bc9e82f1754ebf8d38bb6a139ffe7bab80b028c78508c2666d09e6b29d4c",
+  "sha256_kit": "4f92162f3a9e927d4e3d6087c8afee4080bbfe36107fa5a9ca7cf3bd6d0d736b"
+ },
+ {
+  "path": "results/lab/large_n/vir5d/z5_gate_K6_K7.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "6cdb9390db45c97930d64ff5b63a99a8d5c9f401002c0d71d48a98f121430394",
+  "sha256_kit": "0fffa63b286c160efc0a70249c8cb9ebbf401f1e1750785abaa0179c7bb6814a"
+ },
+ {
+  "path": "results/lab/large_n/vir8/b_core.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "83dd34eba0ec529924599694eb9389ee8da70d83b734e3962ce9bc23ebf4c1d7",
+  "sha256_kit": "ff7d34c9d555a210a7591fdac32cb9603e1166f6bc52971a59ee7e29d8ffed82"
+ },
+ {
+  "path": "results/lab/large_n/vir8/b_nz.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "84b096d6f3b078a5f0352f6f1403fcc0544a1089571a46ebcfe684b71cc62636",
+  "sha256_kit": "fd95f9b8316ac71e64fe75d1fecd24377f52eccb9d77bee9a464b434eee0aa0b"
+ },
+ {
+  "path": "results/lab/large_n/wuw1/wuw1.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "6a573c7dc447ca2f960330a060a362a86e10ffe90c79d5e9b9c0eee68a412fb0",
+  "sha256_kit": "418f1ee0563f5ac5973b1c841988a1423baedf1544beba5d729d7546edbea2c8"
+ },
+ {
+  "path": "results/lab/large_n/wuw2/wuw2.py",
+  "kind": "functional: absolute or private-clone path -> relative to __file__ (v1.2.5)",
+  "sha256_archived": "05d2cb75820612568f34899645e20d56bd0171422a3e4a4bf9de9815145ad580",
+  "sha256_kit": "91f1e1c48a733b77cd21c4971c36a4cf950a78677177b766a1feb88d176345ac"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/NOTE.md",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "2774c0c8f59b5326031d629c88a60f86e559a2efd87b39ba4d2adcb249c4ff5d",
+  "sha256_kit": "e03b415d2dc3358cd3af4c6efd9d2a197eba7cbfaadc6d0a0cd54af33aa178f9"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/quick_debug.log",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "790e0d06b8c22a34bc3338f6a38515b31ba3ebc1e30add5d4483eb36e60adcb3",
+  "sha256_kit": "6ad69a990b8967d110933abfda24a08b4b5cef862604b5559e7390977e7149ef"
+ },
+ {
+  "path": "results/lab/large_n/vir2/v0_nsimplify/w4_main_v0.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "75392b6c4ccf4cc29061bf8c74a02e22ca4e31f36f0703e733014f50e8504994",
+  "sha256_kit": "d832fca301f6c35c4fd68f3a251066b1fb88cb9a8fd8445cf8bc7621d1a0b2c6"
+ },
+ {
+  "path": "results/lab/large_n/vir2/v0_nsimplify/w6_structure_v0_FAILED.log",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "5aed23de133edc0fd0262a5320912f3e9e30db8d2093066bb948731a241ad69c",
+  "sha256_kit": "940fa6ef7e15fa2bf5c3dd7ca1c81a1411e9ba79890691f3e2ff0b197b9eca32"
+ },
+ {
+  "path": "results/lab/large_n/vir2/v0_nsimplify/w6_structure_v0.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "12cf03efb6ac738053faf8a085aa15b8a629ec7f7b22c1a7fc5d4faf4a1acb88",
+  "sha256_kit": "badd40c7d7a4dd6c968e8f57c345073143daddeb8dbdaed6ccd3928a99fb928e"
+ },
+ {
+  "path": "results/lab/large_n/vir5d/z2_compare.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "5446a5dfa926a5dd5e5d1ede0c0e82e5a504939b571a701e7afef30e129157c2",
+  "sha256_kit": "2a25cb6ca31cc438d4fb4118a4a4c2cf8b6ca117bed6b59f781e3895da498e8e"
+ },
+ {
+  "path": "results/lab/large_n/vir5d/z4_sol2_at_5_3.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "71f44c6b7e8384e085dd9b3bb6e2d822fd1c7c894d65dcb80416b6bf7f1423cc",
+  "sha256_kit": "c54065ac18104a8646807eab00409f6d40907ee5b1c9d59bd59029101572e5f6"
+ },
+ {
+  "path": "results/lab/large_n/exc4/d1_data_exc4.py",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "cbff92592afe09534881980dd743fad50d0c8b182e086f7e8315902a2e9c334e",
+  "sha256_kit": "4e7b598fa69f19125b20fa90724707346c87f292b3bb613cd8367d4b38f0b6fc"
+ },
+ {
+  "path": "results/lab/large_n/exc4/d2_level2_exc4.py",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "3ef4d1c865afcfe090677c7bd92d112ec1e7bc33da513fda80248b31c2f0f67c",
+  "sha256_kit": "d0c41d66e90adc0c53461f08c1adfb21b5d83abea5b272f3fd90ece890471b36"
+ },
+ {
+  "path": "results/lab/large_n/exc4/f_six_charges.py",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "eed1763a79111ac36865499f242c6909972a1760518ee8f9e09189ec5f9afcc9",
+  "sha256_kit": "893bece979b75b9062f45218d2c6a1d2ff931d2c62858f32f2a93380e39210cd"
+ },
+ {
+  "path": "results/lab/large_n/exc4/f_six_sol3.py",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "9c7019fcbaad1e24e50f22a0a20d8837788b5a4a5eac603cc8352c55ef87640a",
+  "sha256_kit": "ecb18fafdf5c6ecd1bddddff03d4ad60cbdb0b1d486dad0940400b48d8a324e3"
+ },
+ {
+  "path": "results/lab/large_n/exc4/f_six_t2_a.log",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "5d78a62e6a084306c71532ee57b0406bcf9b655437744f489ac10bda68507f67",
+  "sha256_kit": "0d43073964c71d3140a486fb10c0afcd404c3afccd67805720d14abd87e968fd"
+ },
+ {
+  "path": "results/lab/large_n/exc4/f_six_two.py",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "c307a066163b409421591f19fa67821bee80ad839217d99e1d3466d09ee48991",
+  "sha256_kit": "7fdb6d79194ca2fb2ab903558c388ca8b78381b9837db3b115f93cae293579de"
+ },
+ {
+  "path": "results/lab/large_n/exc4/gb_elim.py",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "8f44ce142eb6d7f99175af4cfbea8e6bae14de1b25cf06408e996e9e27776cd4",
+  "sha256_kit": "0f73b64598006f4c4047cb9c8083ae4b39fe490c8bc86800f655982de7bbb61f"
+ },
+ {
+  "path": "results/lab/large_n/exc4/h_four_fast.py",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "a022d43f135246925c3fba639aceb64994f1ab62db5e669cf2388e0c831b1f2d",
+  "sha256_kit": "736c5a7ffed4a038836d88bd32608726722d225d164a02dcbe4447cdd467abba"
+ },
+ {
+  "path": "results/lab/large_n/exc4/h_four_q.py",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "408bd1c246dc6f694616b01a80a8f28e00245261f28043c137dff31595b7da6d",
+  "sha256_kit": "8cf39eeffc326b1870188592a0eb744d97efb4b3c3acdd796fe70f2b51b7762e"
+ },
+ {
+  "path": "results/lab/large_n/exc4/h_four_sol3.py",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "91a91783e393750ef86aa9f6a1b83d474072b20d08d07d73b6623aaa9101d93c",
+  "sha256_kit": "0c57fad8601a077a7642f448dd4cf8bbfe2071df1a03575214b9eef411bf5b62"
+ },
+ {
+  "path": "results/lab/large_n/lead_exc4_check/d2_level2.py",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "9ea00fce8d5c00a535f5d29edf4534e1b4e41f654a94813183dd5ec5f2d6ce99",
+  "sha256_kit": "d142b9f2bc576676ab9a6f07dff1116f8ba0dd646576ecd956d1716256f37518"
+ },
+ {
+  "path": "results/lab/large_n/lead_exc4_check/lead_compare_exc4.py",
+  "kind": "functional: prediction path -> the snapshot next to the script (same sha256 cff1aead...); plus textual redaction of private paths",
+  "sha256_archived": "ac55b3389a7fccadfe40c9d28aabab0bb5efd54d05a03afde1ba92be7e85d649",
+  "sha256_kit": "aaeb90a1b155783fc0c45664744201c6c558be11f11356295b7a63f30c94da4d"
+ },
+ {
+  "path": "results/lab/large_n/num3/run_diag_window.log",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "0ac1387223ac36ab745628338e629fbdb5344439b3b16eed173a2a089e6dcd9d",
+  "sha256_kit": "cd3bd69b4deae347101a62363197b34ad36f23e067546d5ff1b0e95b85ee58b5"
+ },
+ {
+  "path": "results/lab/large_n/num3/run_wkb_pred3_v1_crash.stdout",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "acdeb10bf604e409ff0e3404d6f6cf415dab3531cd6d58a016788fdd82a330a5",
+  "sha256_kit": "7618c48c6577973be26c8235e2d94d13a13578d62e4665dfad34152c2e5ff865"
+ },
+ {
+  "path": "results/lab/large_n/num3/time_probe.txt",
+  "kind": "textual redaction of private paths/identifiers (default paths overridden at run time or file not executed by the kit)",
+  "sha256_archived": "084ff09548d2a39a5923edeab675efbff3d2e5365ac043b7619c27887ac10441",
+  "sha256_kit": "6856f0a8b138fb2964d8937e05b52f1d7ace2826b2e57dc16b8af4a699e6d826"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/check_gamma.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "25048f0f71619aea9db46af208d4fce3498a710827b2268afc8a2a8b9ed10180",
+  "sha256_kit": "8c231795981972da0e6e4eb5987efcc35d1995d5b5fbaa2d31224c1bdd0bc40f"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/compute_limit_v2.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "eb246558926504a79f7b1491df83bebc15c1935b3f59a9e356b75e97e2a1925d",
+  "sha256_kit": "10a4596a790b4f8934a3efd1fe51781829a708151605f3bb2aff714894c2648d"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/compute_limit_v3.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "cf14005f3408852009b16c5fecd489c9db244a3b54cbadfd56c8a3a7fa1c67b1",
+  "sha256_kit": "6d528573e3767b639b47ead86fb89fd864da441e7827ab6250fa44590e1e85ba"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/compute_limits.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "a245c794963e8a335156f782414f0feed99526f580a1673f20f6843e2a6319e5",
+  "sha256_kit": "7e93700831fbfb03c1346ad53bf8f2ed7e8dc5c31ccf8764038f6146266146fa"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/debug2.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "48f3e77fdae7c7a1db2c7f440d59f29e447bb2ba12a08851223a83842f0f328c",
+  "sha256_kit": "f12c425f7a35d5624753adbddbfd0720e5ec200f1316f0b3c85372d5906ca732"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/debug_engine.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "589d8bf2c7a43fd3e144f05223aae37a9927c0d4546bd8bfbd9a1c4f92e092f6",
+  "sha256_kit": "99cf15ef93a7fb56d04b5c23a8389d8733c5a9e8c9232a1554215d25b84ea985"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/debug_score.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "0c2151d856959d5e4b00dfd6257b68d8db80d4d8382d6a2083998942228fc845",
+  "sha256_kit": "f484346e607bcd1d9df47f55a4406253a5f558d79ad1bd6968c4b7b3303e448b"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/exact_limit.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "b04958d7cfefbf441aacc9b8bfc82554b0b0ba1a5964e1c0244b779c807a061f",
+  "sha256_kit": "7b625a1ff8bacad4677ce04fb75668a816d241879d105bab43a670a224e8bab4"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/exact_series.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "898c15a6a0a77f77fa73433b6211b646e43b68a3efce4b5827d852e4310a2a5c",
+  "sha256_kit": "97626cee2d4e7b4d1bcfe80fef434cee4744481cc5c7f685dd69d11b8b7d6166"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/exact_series_v2.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "a8472d6ac0b3f3e476d6a7a3ff241997fcd1bcd6f870dd1e5474f91161ba4d15",
+  "sha256_kit": "721daf32368f2f5d50a2927eb8dd6225e18bd228a8911af52e06bb512fdd5299"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/exact_series_v3.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "79cfbdb66f87e4b6448a11bcc702ef4c60eca5472e4e5c8641cc07cda2ff2776",
+  "sha256_kit": "97bbd363246daae5151681f4ce1416aa580df13f56946ce1a48b44ff9df027be"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/exact_series_v5.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "1e52f00a322b025c575afbe2452c8d8415afcff8178e715194b43a154cb7aaca",
+  "sha256_kit": "8aa0baf249f65308fbe013141c788d96878e6e4d81b249d12833fb5719915468"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/final_limit.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "ef503861833ce3018bab6bfba710845a70e70c546ab047bd4ca0bfe9ba19bf85",
+  "sha256_kit": "17f1b9b874d33cf5864e6ce8adcd0e5d987436a599199715bd08fd951b2737c1"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/quick_debug.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "38d47106071ff30c0bbc2833cfd88ddd30d557c7d9a5909e29c4bf99cddac43e",
+  "sha256_kit": "8bb369c472e83eee918af1aa6d969292d46b0d97f8f295e5362bf390f513e599"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/trace_monic.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "f0d164f2ae1383c3ab1d3c52e2eac405a575cf80c75027da26aca370bfcfb4b5",
+  "sha256_kit": "df817380ea4efa1ce2ca47570e511f48773081fdef0b25f722b2e7eeafb57fc1"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/trace_zero.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "d63625cfb50d754ac5b6994aff77824ff0204e3bef185017c6899595b8d6ca54",
+  "sha256_kit": "f207718ddf1f5a498203e8924e856c34a46f8843926929d2f6eae897064e39a0"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/trace_zero2.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "cb35f866530c43346d75ffb4201af8bee1943cf69003b99a3afc72a5f62e07b6",
+  "sha256_kit": "b8b96adc5e82645fa46fc0bb7bbffc9f6ce38fc94bdc0758350dfc885a6a7b33"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/trace_zero3.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "69f1df7ed93861519ffaa2b68e3d89932e9a4c7b16960b804ba380037b9a4276",
+  "sha256_kit": "83dd25fab68bb37920bdd4a2a90361c1093965758253a1efaa6ce5ad2052c7f3"
+ },
+ {
+  "path": "results/lab/large_n/nzero1/verify_zero.py",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
+  "sha256_archived": "e09c20826dd6cbc740913a1cf5ab71a39603a9c87b57fd277b4a34dc67f91461",
+  "sha256_kit": "a941077a0287f8daba75b55cf8a735ba22a945cd9a8a8945aaeeaa65f68b9847"
  }
 ]

@@ -1,0 +1,7 @@
+Newton points (order j, p-weight m - j): [(0, 0), (1, -1), (2, -2), (3, -2), (4, -4), (4, -2)]
+maximal p-weight 0 attained at orders [0] -> regular-type (slope 0) formal solutions at infinity exist only if the maximum is attained at order >= 1:  False
+edge from (0, 0) to (4, -2) has slope 1/2 and contains (1, -1) and (3, -2)? -> all four formal solutions are exp(c p^(1/2)) type (rank 1/2): NO slope-0 part
+exp(beta s^1) gauge on the pillow 3-term form: shifts present (generic beta): [0, 1, 2, 3, 4, 5, 6]
+exp(beta s^2) gauge on the pillow 3-term form: shifts present (generic beta): [0, 2, 3, 4, 6]
+exp(beta s^3) gauge on the pillow 3-term form: shifts present (generic beta): [0, 2, 3, 4, 5, 6, 7, 8]
+exit 0

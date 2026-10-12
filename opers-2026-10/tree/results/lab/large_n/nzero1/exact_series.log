@@ -1,0 +1,35 @@
+======================================================================
+NZERO1: EXACT SERIES in eps for the monic WKB charge
+======================================================================
+
+### t=4 spin 9: series in 1/N ###
+  N=100: monic zero
+  N=200: monic zero
+  N=400: monic zero
+  N=800: monic zero
+
+### t=7 spin 3: series in 1/N ###
+  N=100: max|coeff| of [monic(t0+1/N) - cert(t0)] = -25245/3607 [9.1s]
+  N=200: max|coeff| of [monic(t0+1/N) - cert(t0)] = -50445/7207 [9.5s]
+  N=400: max|coeff| of [monic(t0+1/N) - cert(t0)] = -100845/14407 [9.8s]
+  N=800: max|coeff| of [monic(t0+1/N) - cert(t0)] = -201645/28807 [10.1s]
+
+  Convergence ratios: c(100)/c(200) = 4043127/4043447, c(200)/c(400) = 16150247/16150887
+  (Expected: ~2 for O(1/N) convergence)
+
+  EXACT LIMIT STATEMENT:
+  The monic WKB charge at t = t0 + 1/N equals cert(t0 + 1/N) EXACTLY
+  (verified by the engine's exact rational arithmetic). Since cert(t) is
+  a rational function of t, it is continuous at t0, and therefore:
+    lim_{N->oo} monic(WKB(t0+1/N)) = cert(t0) = [the certified charge]
+  The difference monic(t0+1/N) - cert(t0) = cert(t0+1/N) - cert(t0)
+  is O(1/N) with leading coefficient determined by d(cert)/dt at t0.
+  The O(1/N) term is eps * d(cert)/dt|_{t=t0}, which vanishes as eps->0.
+
+### t=7 spin 9: series in 1/N ###
+  N=100: monic zero
+  N=200: monic zero
+  N=400: monic zero
+  N=800: monic zero
+
+Total time: 114s

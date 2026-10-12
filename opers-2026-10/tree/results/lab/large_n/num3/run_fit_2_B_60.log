@@ -1,0 +1,27 @@
+
+=== 2_B_60: BARE (lattice only)
+  Q (theta = 3.0): lsq residual 1.85e-19; K0: 14.28 digits [stab 13.9]; K2: 6.994 digits [stab 6.94]; K3: |fit| 8.4e-5 vs 0 [stab-abs 5.1e-5]; K4: 1.412 digits [stab 2.14]; K5: |fit| 1.1e+2 vs 0 [stab-abs 18.0]; K6: -2.735 digits [stab 0.162]; K7: |fit| 4.4e+6 vs 0 [stab-abs 2.6e+6]; K8 (pole): fit -1033267059.24 [stab -0.428]
+  Q (theta = 2.8): lsq residual 2.03e-19; K0: 14.24 digits [stab 13.8]; K2: 6.953 digits [stab 6.9]; K3: |fit| 9.2e-5 vs 0 [stab-abs 5.6e-5]; K4: 1.371 digits [stab 2.1]; K5: |fit| 1.2e+2 vs 0 [stab-abs 19.0]; K6: -2.776 digits [stab 0.162]; K7: |fit| 4.9e+6 vs 0 [stab-abs 2.9e+6]; K8 (pole): fit -1135460007.62 [stab -0.428]
+  Q (theta = 3.2): lsq residual 1.7e-19; K0: 14.32 digits [stab 13.9]; K2: 7.032 digits [stab 6.98]; K3: |fit| 7.7e-5 vs 0 [stab-abs 4.6e-5]; K4: 1.45 digits [stab 2.18]; K5: |fit| 1.0e+2 vs 0 [stab-abs 16.0]; K6: -2.698 digits [stab 0.162]; K7: |fit| 4.1e+6 vs 0 [stab-abs 2.4e+6]; K8 (pole): fit -947950225.182 [stab -0.428]
+
+=== 2_B_60: SEALED basis
+  Q (theta = 3.0): lsq residual 9.36e-30; K0: 20.92 digits [stab 17.9]; K2: 13.23 digits [stab 10.4]; K3: |fit| 8.5e-11 vs 0 [stab-abs 4.1e-8]; K4: 7.129 digits [stab 4.57]; K5: |fit| 0.00046 vs 0 [stab-abs 0.12]; K6: 2.264 digits [stab 0.287]; K7: |fit| 1.6e+2 vs 0 [stab-abs 2.2e+4]; K8 (pole): fit -430791.913628 [stab -0.00478]
+     extra N-3/2: 7.388691790049636044944 [stab 3.07]
+     extra N-9/2: -91167745274895.60901265 [stab -0.0181]
+     extra N-15/2: 1.733258608014322641448e+27 [stab -0.458]
+     extra logE_-3: 30120.59675069591603784 [stab -0.00448]  vs PREDICTED 1.760656204665622429456e-47: -51.23 digits
+     extra logE_-6: -263870182975366963521.5 [stab -0.0901]  vs PREDICTED 0.0: pred 0, |fit| 2.64e+20
+  Q (theta = 2.8): lsq residual 1.16e-29; K0: 20.81 digits [stab 17.9]; K2: 13.12 digits [stab 10.4]; K3: |fit| 1.1e-10 vs 0 [stab-abs 4.0e-8]; K4: 7.016 digits [stab 4.58]; K5: |fit| 0.00059 vs 0 [stab-abs 0.12]; K6: 2.149 digits [stab 0.293]; K7: |fit| 2.1e+2 vs 0 [stab-abs 2.1e+4]; K8 (pole): fit -566370.115468 [stab -0.00647]
+     extra N-3/2: 8.119460083634229735027 [stab 3.12]
+     extra N-9/2: -122362950246102.8701019 [stab -0.0247]
+     extra N-15/2: 2.532342316435530345474e+27 [stab -0.57]
+     extra logE_-3: 39605.87217213901750842 [stab -0.00607]  vs PREDICTED 1.760656204665622429456e-47: -51.35 digits
+     extra logE_-6: -365812702203547248620.8 [stab -0.122]  vs PREDICTED 0.0: pred 0, |fit| 3.66e+20
+  Q (theta = 3.2): lsq residual 6.79e-30; K0: 21.08 digits [stab 17.9]; K2: 13.39 digits [stab 10.4]; K3: |fit| 5.8e-11 vs 0 [stab-abs 4.2e-8]; K4: 7.301 digits [stab 4.56]; K5: |fit| 0.0003 vs 0 [stab-abs 0.12]; K6: 2.442 digits [stab 0.287]; K7: |fit| 1.0e+2 vs 0 [stab-abs 2.2e+4]; K8 (pole): fit -281330.234147 [stab -0.00313]
+     extra N-3/2: 6.778601188213527786406 [stab 3.03]
+     extra N-9/2: -57042359810627.21689511 [stab -0.0115]
+     extra N-15/2: 8.784680334192572944309e+26 [stab -0.297]
+     extra logE_-3: 19667.22552371472184114 [stab -0.00293]  vs PREDICTED 1.760656204665622429456e-47: -51.05 digits
+     extra logE_-6: -153446790386564103459.6 [stab -0.0558]  vs PREDICTED 0.0: pred 0, |fit| 1.53e+20
+
+TAMPER (a) WKB l0 + 1/10 vs extraction (Q_0): K2: 1.43 digits; K4: 1.82 digits; K6: 1.81 digits (must be << sealed)

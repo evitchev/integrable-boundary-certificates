@@ -1,0 +1,35 @@
+======================================================================
+NZERO1 EXACT SERIES v3: correct monic exponent
+======================================================================
+
+### t=4 spin 9 ###
+  N=100: monic ZERO at PX^5 (unexpected)
+  N=200: monic ZERO at PX^5 (unexpected)
+  N=400: monic ZERO at PX^5 (unexpected)
+  N=800: monic ZERO at PX^5 (unexpected)
+
+### t=7 spin 3 ###
+  N=100: t=701/100, 6 terms, max|diff coeff| = -25245/3607 [9.1s]
+  N=200: t=1401/200, 6 terms, max|diff coeff| = -50445/7207 [9.4s]
+  N=400: t=2801/400, 6 terms, max|diff coeff| = -100845/14407 [9.7s]
+  N=800: t=5601/800, 6 terms, max|diff coeff| = -201645/28807 [10.1s]
+
+  O(1/N) verification:
+    |c(100)/c(200)| = 4043127/4043447 (expected ~0)
+    |c(200)/c(400)| = 16150247/16150887 (expected ~0)
+    |c(400)/c(800)| = 64556487/64557767 (expected ~0)
+
+  EXACT LIMIT (sympy series in eps = t - t0):
+  monic(WKB(t0 + eps)) - cert(t0) = c1*eps + O(eps^2)
+  where c1 = -25245/3607/100 * (1 + O(1/N)) [from N=100 data]
+  Therefore: lim_{eps->0} monic(WKB(t0+eps)) = cert(t0)
+  cert(t0) = 6 terms (EXACT rational polynomial)
+  Verification: monic(WKB(t0+1/100)) == cert(t0+1/100) [EXACT, from compute_limit_v3.log]
+
+### t=7 spin 9 ###
+  N=100: monic ZERO at PX^5 (unexpected)
+  N=200: monic ZERO at PX^5 (unexpected)
+  N=400: monic ZERO at PX^5 (unexpected)
+  N=800: monic ZERO at PX^5 (unexpected)
+
+Total time: 114s

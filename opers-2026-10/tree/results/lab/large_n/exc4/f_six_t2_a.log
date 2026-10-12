@@ -1,0 +1,57 @@
+T0 vacuum I_1 (monic) = P**2 + Q**2 + 1/2
+T0 sixth-order form, vacuum I_3 == certified (d1_sol3_t2 vacuum): True
+indicial conditions fix: [{r06: -144*z**5, r15: 144*z**4, r24: -72*z**3, r33: 24*z**2, r42: -6*z}]  (1s)
+16 no-log equations in 16 unknowns (5s)
+   E-linear condition at the top exponent: r05 + 2*r14*z + 11*r23*z**2 + 27*r32*z**3 + 72*r41*z**4 + 372*z**4
+written f_six_t2_1-2_1-3.sing; running Singular (5s)
+dim:
+0
+vdim:
+2
+eliminant z:
+Jz[1]=5832*z-7
+eliminant r41:
+Jr[1]=3*r41+2
+basis:
+G[1]=7*ww-5832
+G[2]=5832*z-7
+G[3]=3*r41+2
+G[4]=189*r31-34992*r32+560
+G[5]=944784*r23+3402*r32+49
+G[6]=52488*r22+96228*r32-665
+G[7]=54*r21-7
+G[8]=1377495072*r14-11907*r32-343
+G[9]=153055008*r13-1224720*r32-637
+G[10]=944784*r12-1268460*r32+12257
+G[11]=1701*r11+69984*r32-1120
+G[12]=5355700839936*r05+55566*r32+2401
+G[13]=892616806656*r04+12430908*r32+97069
+G[14]=5509980288*r03+27617436*r32-121961
+G[15]=11337408*r02+3866616*r32-43127
+G[16]=243*r01-1
+G[17]=153055008*r32^2-4898880*r32+38759
+
+A1b: r41 eliminant: 3*r41 + 2  (sealed: r41 = -b = -2/3)
+Traceback (most recent call last):
+  File "<home>/fable-work/exc4/f_six_sol3.py", line 103, in <module>
+    hl.append(MG.P_(cj) if cj != 0 else MG.ZERO)
+              ^^^^^^^^^
+  File "<home>/fable-work/exc4/mellin_gen.py", line 30, in P_
+    return sp.Poly(x, *GENS, domain='QQ')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/python312-lab/lib/python3.12/site-packages/sympy/polys/polytools.py", line 190, in __new__
+    return cls._from_expr(rep, opt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/python312-lab/lib/python3.12/site-packages/sympy/polys/polytools.py", line 320, in _from_expr
+    return cls._from_dict(rep, opt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/python312-lab/lib/python3.12/site-packages/sympy/polys/polytools.py", line 267, in _from_dict
+    rep[monom] = domain.convert(coeff)
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/python312-lab/lib/python3.12/site-packages/sympy/polys/domains/domain.py", line 456, in convert
+    return self.from_sympy(element)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/python312-lab/lib/python3.12/site-packages/sympy/polys/domains/rationalfield.py", line 76, in from_sympy
+    raise CoercionFailed("expected `Rational` object, got %s" % a)
+sympy.polys.polyerrors.CoercionFailed: expected `Rational` object, got 81*r41 - 63/2
+exit 1

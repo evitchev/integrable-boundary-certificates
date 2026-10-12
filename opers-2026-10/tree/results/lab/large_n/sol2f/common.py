@@ -8,7 +8,7 @@ assert hashlib.sha256(open(os.path.join(HERE, 'SEAL_SOL2F.md'), 'rb').read()).he
 ORIG = {l.split()[1]: l.split()[0] for l in open(os.path.join(HERE, 'inputs', 'ORIGIN_SHA256'))}
 assert all(hashlib.sha256(open(os.path.join(HERE, 'inputs', f_), 'rb').read()).hexdigest() == h for f_, h in ORIG.items())
 PX, PI, C = sp.symbols('P_X pi C'); Pa, Qa = sp.symbols('P Q'); tS = sp.Symbol('t')
-ROOT = os.path.expanduser('~/opus5-w8-clone/code'); sys.path.insert(0, ROOT); _cwd = os.getcwd(); os.chdir(ROOT)
+ROOT = os.path.normpath(os.path.join(HERE, '..', '..', '..', '..', 'code')); sys.path.insert(0, ROOT); _cwd = os.getcwd(); os.chdir(ROOT)
 from cyl_first_order import cyl, X, Y, t as tc
 os.chdir(_cwd)
 TABLES = {}

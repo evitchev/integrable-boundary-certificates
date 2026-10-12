@@ -1,0 +1,8 @@
+k = 1/3 (t = 9/7, n = 13/3) real  K = 1 spin  1  nu = 3/13    R identically zero: False   top monomials (X^a Y^b): [(1, 0), (0, 1)]
+k = 1/3 (t = 9/7, n = 13/3) real  K = 2 spin  3  nu = 9/13    R identically zero: False   top monomials (X^a Y^b): [(2, 0), (1, 1), (0, 2)]
+k = 1/3 (t = 9/7, n = 13/3) real  K = 3 spin  5  nu = 15/13   R identically zero: False   top monomials (X^a Y^b): [(3, 0), (2, 1), (1, 2), (0, 3)]
+k = 1/3 (t = 9/7, n = 13/3) real  K = 4 spin  7  nu = 21/13   R identically zero: False   top monomials (X^a Y^b): [(4, 0), (3, 1), (2, 2), (1, 3), (0, 4)]
+k = 1/3 (t = 9/7, n = 13/3) real  K = 5 spin  9  nu = 27/13   R identically zero: False   top monomials (X^a Y^b): [(5, 0), (4, 1), (3, 2), (2, 3), (1, 4), (0, 5)]
+k = 1/3 (t = 9/7, n = 13/3) real  K = 6 spin 11  nu = 33/13   R identically zero: False   top monomials (X^a Y^b): [(6, 0), (5, 1), (4, 2), (3, 3), (2, 4), (1, 5), (0, 6)]
+k = 1/3 (t = 9/7, n = 13/3) real  K = 7 spin 13  nu = 3       R identically zero: True   top monomials (X^a Y^b): []
+done in 66s

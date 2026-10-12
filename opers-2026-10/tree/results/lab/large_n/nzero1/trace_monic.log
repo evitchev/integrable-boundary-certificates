@@ -1,0 +1,34 @@
+
+=== t=4, k=-6, n=-9 ===
+  spin 1: raw charge has PX powers [0, 1]
+    PX^0 coeff = -5/4
+    monic OK, leading terms: 3 terms
+  spin 3: raw charge has PX powers [0, 1, 2]
+    PX^2 coeff = -345/(64*gamma(-1/3)) + 65/(16*gamma(2/3))
+    monic OK, leading terms: 6 terms
+  spin 5: raw charge has PX powers [0, 1, 2, 3]
+    PX^4 coeff = -118125/128
+    monic OK, leading terms: 10 terms
+  spin 7: raw charge has PX powers [0, 1, 2, 3, 4]
+    PX^6 coeff = -3031875/128
+    monic OK, leading terms: 15 terms
+  spin 9: raw charge has PX powers [0]
+    PX^8 coeff = 0
+    *** MONIC COEFFICIENT IS ZERO -> score() reports 'WKB charge identically 0' ***
+
+=== t=7, k=-3, n=-3 ===
+  spin 1: raw charge has PX powers [0, 1]
+    PX^0 coeff = 1/(3*gamma(-1/3))
+    monic OK, leading terms: 3 terms
+  spin 3: raw charge has PX powers [0]
+    PX^2 coeff = 0
+    *** MONIC COEFFICIENT IS ZERO -> score() reports 'WKB charge identically 0' ***
+  spin 5: raw charge has PX powers [0, 1, 2, 3]
+    PX^4 coeff = -31/(27*gamma(1/3)) - 113/(54*gamma(-2/3))
+    monic OK, leading terms: 10 terms
+  spin 7: raw charge has PX powers [0, 1, 2, 3, 4]
+    PX^6 coeff = -898/(3645*gamma(2/3)) - 241/(405*gamma(-1/3))
+    monic OK, leading terms: 15 terms
+  spin 9: raw charge has PX powers [0]
+    PX^8 coeff = 0
+    *** MONIC COEFFICIENT IS ZERO -> score() reports 'WKB charge identically 0' ***

@@ -1,0 +1,56 @@
+======================================================================
+NZERO1: Exact limits at exceptional cells
+======================================================================
+
+### Cell 1: t=4 (k=-6, n=-9), spin 9 ###
+
+  Certified charges at t=4:
+    spin 3: 6 terms
+    spin 5: 10 terms
+    spin 7: 15 terms
+    spin 9: 21 terms
+  (certified computed in 0.3s)
+
+  Computing WKB charges near t=4:
+    t=801/200 (801/200): monic OK, 21 terms
+    t=1201/300 (1201/300): monic OK, 21 terms
+    t=1601/400 (1601/400): monic OK, 21 terms
+
+  MISMATCH vs certified at t=801/200: 21 terms differ
+
+### Cell 2: t=7 (k=-3, n=-3), spin 3 ###
+
+  Certified charges at t=7:
+    spin 1: 3 terms
+    spin 3: 6 terms
+    spin 5: 10 terms
+    spin 7: 15 terms
+    spin 9: 21 terms
+
+  Computing WKB charges near t=7:
+    t=1401/200 (1401/200): monic OK, 6 terms
+    t=2101/300 (2101/300): monic OK, 6 terms
+    t=2801/400 (2801/400): monic OK, 6 terms
+
+  MISMATCH vs certified at t=1401/200: 6 terms differ
+
+### Cell 3: t=7 (k=-3, n=-3), spin 9 ###
+
+  Computing WKB charges near t=7:
+    t=1401/200 (1401/200): monic OK, 21 terms
+    t=2101/300 (2101/300): monic OK, 21 terms
+    t=2801/400 (2801/400): monic OK, 21 terms
+
+  MISMATCH vs certified at t=1401/200: 21 terms differ
+
+### CONTROL 1: t=4, spin 7 (regular, should match directly) ###
+  Direct value matches certified: NO
+
+### CONTROL 2: t=4+1/100 (non-exceptional neighbour) ###
+  t=401/100, k=-602/101
+  spin 3: matches certified at t=401/100: NO
+  spin 5: matches certified at t=401/100: NO
+  spin 7: matches certified at t=401/100: NO
+  spin 9: matches certified at t=401/100: NO
+
+Total time: 96s

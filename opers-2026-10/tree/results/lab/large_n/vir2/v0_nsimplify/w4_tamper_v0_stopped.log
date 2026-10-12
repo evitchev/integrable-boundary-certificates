@@ -1,0 +1,37 @@
+seal hash ok 9ac0c5560861245c9e33ee228a96c717fa50555b2bf63d9fdde66633b483a499
+24 real-p fibres (N < 1) + 6 imaginary-p fibres (N > 25); t < 0 on 15 of them
+
+== C0: the two-boson images commute ==
+PASS  Sol 1 at p = 3/2: Res I_3(z) I_5(w) (126 monomials) is a total derivative  (2s)
+PASS  Sol 2 at p = 3/2: Res I_3(z) I_5(w) (126 monomials) is a total derivative  (3s)
+PASS  Sol 3 at p = 3/2: Res I_3(z) I_5(w) (126 monomials) is a total derivative  (4s)
+
+== sealed pairs against I_3 and I_5; a = 0 control; joint solution sets ==
+   p = 1/3    t = 19/17    N = -286/3     done  (5s)
+   p = -1/3   t = 19/17    N = -286/3     done  (6s)
+   p = 2/3    t = 11/7     N = -46/3      done  (7s)
+   p = -2/3   t = 11/7     N = -46/3      done  (8s)
+   p = 3/2    t = -17      N = 11/12      done  (9s)
+   p = -3/2   t = -17      N = 11/12      done  (10s)
+   p = 2      t = -3       N = -2         done  (11s)
+   p = -2     t = -3       N = -2         done  (12s)
+   p = 3      t = -11/7    N = -46/3      done  (13s)
+   p = -3     t = -11/7    N = -46/3      done  (14s)
+   p = 4/3    t = 17       N = 11/12      done  (15s)
+   p = -4/3   t = 17       N = 11/12      done  (16s)
+   p = 5/2    t = -33/17   N = -767/100   done  (17s)
+   p = -5/2   t = -33/17   N = -767/100   done  (18s)
+   p = 1/4    t = 33/31    N = -2867/16   done  (19s)
+   p = -1/4   t = 33/31    N = -2867/16   done  (20s)
+   p = 5/3    t = -43/7    N = 26/75      done  (21s)
+   p = -5/3   t = -43/7    N = 26/75      done  (22s)
+   p = 7/2    t = -57/41   N = -4847/196  done  (23s)
+   p = -7/2   t = -57/41   N = -4847/196  done  (24s)
+   p = 3/4    t = 41/23    N = -481/48    done  (25s)
+   p = -3/4   t = 41/23    N = -481/48    done  (26s)
+   p = 6/5    t = 43/7     N = 26/75      done  (27s)
+   p = -6/5   t = 43/7     N = 26/75      done  (28s)
+   p = I/2    t = 7/9      N = 247/4      done  (30s)
+   p = 3*I/2  t = -1/17    N = 301/12     done  (31s)
+   p = 3*I    t = -7/11    N = 124/3      done  (33s)
+   p = 2*I/3  t = 7/11     N = 124/3      done  (34s)

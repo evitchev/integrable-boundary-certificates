@@ -1,0 +1,20 @@
+largest loop power in the weight-4 x weight-6 residues: 1
+Sol 1: symbolic I_5(t): primitive polynomial vector of degree 4; non-Virasoro coordinates [0, 0, 0]; (dX)^6 coefficient (t - 17)*(t + 1)**2*(3*t - 11)   (9s)
+Sol 2: symbolic I_5(t): primitive polynomial vector of degree 5; non-Virasoro coordinates [0, 0, 0]; (dX)^6 coefficient 12*(t - 3)**2*(t + 1)**2*(2*t - 5)   (27s)
+Sol 3: symbolic I_5(t): primitive polynomial vector of degree 5; non-Virasoro coordinates [0, 0, 0]; (dX)^6 coefficient (t - 1)**2*(t + 1)**2*(t + 5)   (43s)
+
+jump point t = 5/3 (N = -25/2): Sol 2 limit class nonzero True, lies in the kernel of ITS OWN I_3 there (dim 2): True; non-Virasoro coords ['0', '0', '0']
+jump point t = 5/3 (N = -25/2): Sol 3 limit class nonzero True, lies in the kernel of ITS OWN I_3 there (dim 2): True; non-Virasoro coords ['0', '0', '0']
+   same I_3 density at the point: [(2, 3, True)]
+   Sols 2,3 share I_3: their two limit classes have rank 2; kernel dim 2 -> they SPAN the kernel
+anchor t = 3 (N = -2): Sol 1 limit class nonzero True, lies in the kernel of ITS OWN I_3 there (dim 1): True; non-Virasoro coords ['0', '0', '0']
+anchor t = 3 (N = -2): Sol 2 limit class nonzero True, lies in the kernel of ITS OWN I_3 there (dim 2): True; non-Virasoro coords ['0', '0', '0']
+anchor t = 3 (N = -2): Sol 3 limit class nonzero True, lies in the kernel of ITS OWN I_3 there (dim 2): True; non-Virasoro coords ['0', '0', '0']
+   same I_3 density at the point: [(1, 2, False), (1, 3, False), (2, 3, False)]
+anchor, Sol 3: kernel dim 2; rank of the mixed (X and Y) components over the kernel: 0 (0 = the kernel is {pure-X class} + {pure-Y class})
+I_3 at the anchor (Sol 3): {((), ((1, 1), (1, 1))): '1', ((), ((2, 2),)): '-2', ((2, 2), ()): '-1', ((1, 1, 1, 1), ()): '1'}
+DETAILS OK
+
+real	0m43.973s
+user	0m43.895s
+sys	0m0.056s

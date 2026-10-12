@@ -1,0 +1,188 @@
+== Sol 1, p = 8/5: t = -57/7, N = 253/400 (= 1 - 12 rho^2, rho = 7/40), s = 1197/400  (inputs 0 s)
+SEALED TEST VIR1 at Sol 1 p = 8/5, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 8/5 I_3 vs pair (beta = -4/5, a^2 = 9/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(8/5 phi) conserved for I_3 (Sol 1, p = 8/5): True
+CONTROL (c) Virasoro screening exp(-5/4 phi) conserved for I_3 (Sol 1, p = 8/5): True
+      (0 s)
+SEALED TEST VIR1 at Sol 1 p = 8/5, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 8/5 I_5 vs pair (beta = -4/5, a^2 = 9/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(8/5 phi) conserved for I_5 (Sol 1, p = 8/5): True
+CONTROL (c) Virasoro screening exp(-5/4 phi) conserved for I_5 (Sol 1, p = 8/5): True
+      (1 s)
+SEALED TEST VIR1 at Sol 1 p = 8/5, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 8/5 I_7 vs pair (beta = -4/5, a^2 = 9/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(8/5 phi) conserved for I_7 (Sol 1, p = 8/5): True
+CONTROL (c) Virasoro screening exp(-5/4 phi) conserved for I_7 (Sol 1, p = 8/5): True
+      (17 s)
+CONTROL (a) a^2 + 1/10 (pair, Sol 1) FAILS on I_5: True
+CONTROL (d) generic (a^2, beta) = (2/7, 3/11) FAILS on I_5 (Sol 1): True
+CONTROL (b) rho -> -rho translation FAILS for pair on I_5 (Sol 1): True
+CONTROL (f) sanity: a total derivative passes V_+- (Sol 1): True
+== Sol 1, p = 6/5: t = 43/7, N = 26/75 (= 1 - 12 rho^2, rho = -7/30), s = -301/75  (inputs 0 s)
+SEALED TEST VIR1 at Sol 1 p = 6/5, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 6/5 I_3 vs pair (beta = -3/5, a^2 = 16/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(6/5 phi) conserved for I_3 (Sol 1, p = 6/5): True
+CONTROL (c) Virasoro screening exp(-5/3 phi) conserved for I_3 (Sol 1, p = 6/5): True
+      (0 s)
+SEALED TEST VIR1 at Sol 1 p = 6/5, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 6/5 I_5 vs pair (beta = -3/5, a^2 = 16/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(6/5 phi) conserved for I_5 (Sol 1, p = 6/5): True
+CONTROL (c) Virasoro screening exp(-5/3 phi) conserved for I_5 (Sol 1, p = 6/5): True
+      (1 s)
+SEALED TEST VIR1 at Sol 1 p = 6/5, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 6/5 I_7 vs pair (beta = -3/5, a^2 = 16/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(6/5 phi) conserved for I_7 (Sol 1, p = 6/5): True
+CONTROL (c) Virasoro screening exp(-5/3 phi) conserved for I_7 (Sol 1, p = 6/5): True
+      (17 s)
+== Sol 1, p = 40/29: t = 1641/41, N = 331357/336400 (= 1 - 12 rho^2, rho = -41/1160), s = -201843/336400  (inputs 0 s)
+SEALED TEST VIR1 at Sol 1 p = 40/29, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 40/29 I_3 vs pair (beta = -20/29, a^2 = 441/841): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(40/29 phi) conserved for I_3 (Sol 1, p = 40/29): True
+CONTROL (c) Virasoro screening exp(-29/20 phi) conserved for I_3 (Sol 1, p = 40/29): True
+      (0 s)
+SEALED TEST VIR1 at Sol 1 p = 40/29, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 40/29 I_5 vs pair (beta = -20/29, a^2 = 441/841): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(40/29 phi) conserved for I_5 (Sol 1, p = 40/29): True
+CONTROL (c) Virasoro screening exp(-29/20 phi) conserved for I_5 (Sol 1, p = 40/29): True
+      (1 s)
+SEALED TEST VIR1 at Sol 1 p = 40/29, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 1 p = 40/29 I_7 vs pair (beta = -20/29, a^2 = 441/841): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(40/29 phi) conserved for I_7 (Sol 1, p = 40/29): True
+CONTROL (c) Virasoro screening exp(-29/20 phi) conserved for I_7 (Sol 1, p = 40/29): True
+      (18 s)
+== Sol 2, p = 4/5: t = 33/17, N = -767/100 (= 1 - 12 rho^2, rho = -17/20), s = -1683/100  (inputs 0 s)
+SEALED TEST VIR1 at Sol 2 p = 4/5, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 4/5 I_3 vs pair (beta = -4/5, a^2 = 9/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(4/5 phi) conserved for I_3 (Sol 2, p = 4/5): True
+CONTROL (c) Virasoro screening exp(-5/2 phi) conserved for I_3 (Sol 2, p = 4/5): True
+      (0 s)
+SEALED TEST VIR1 at Sol 2 p = 4/5, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 4/5 I_5 vs pair (beta = -4/5, a^2 = 9/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(4/5 phi) conserved for I_5 (Sol 2, p = 4/5): True
+CONTROL (c) Virasoro screening exp(-5/2 phi) conserved for I_5 (Sol 2, p = 4/5): True
+      (1 s)
+SEALED TEST VIR1 at Sol 2 p = 4/5, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 4/5 I_7 vs pair (beta = -4/5, a^2 = 9/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(4/5 phi) conserved for I_7 (Sol 2, p = 4/5): True
+CONTROL (c) Virasoro screening exp(-5/2 phi) conserved for I_7 (Sol 2, p = 4/5): True
+      (17 s)
+CONTROL (a) a^2 + 1/10 (pair, Sol 2) FAILS on I_5: True
+CONTROL (d) generic (a^2, beta) = (2/7, 3/11) FAILS on I_5 (Sol 2): True
+CONTROL (b) rho -> -rho translation FAILS for pair on I_5 (Sol 2): True
+CONTROL (f) sanity: a total derivative passes V_+- (Sol 2): True
+== Sol 2, p = 3/5: t = 59/41, N = -1606/75 (= 1 - 12 rho^2, rho = -41/30), s = -2419/75  (inputs 0 s)
+SEALED TEST VIR1 at Sol 2 p = 3/5, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 3/5 I_3 vs pair (beta = -3/5, a^2 = 16/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(3/5 phi) conserved for I_3 (Sol 2, p = 3/5): True
+CONTROL (c) Virasoro screening exp(-10/3 phi) conserved for I_3 (Sol 2, p = 3/5): True
+      (0 s)
+SEALED TEST VIR1 at Sol 2 p = 3/5, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 3/5 I_5 vs pair (beta = -3/5, a^2 = 16/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(3/5 phi) conserved for I_5 (Sol 2, p = 3/5): True
+CONTROL (c) Virasoro screening exp(-10/3 phi) conserved for I_5 (Sol 2, p = 3/5): True
+      (1 s)
+SEALED TEST VIR1 at Sol 2 p = 3/5, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 3/5 I_7 vs pair (beta = -3/5, a^2 = 16/25): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(3/5 phi) conserved for I_7 (Sol 2, p = 3/5): True
+CONTROL (c) Virasoro screening exp(-10/3 phi) conserved for I_7 (Sol 2, p = 3/5): True
+      (17 s)
+== Sol 2, p = 8/17: t = 321/257, N = -193523/4624 (= 1 - 12 rho^2, rho = -257/136), s = -247491/4624  (inputs 0 s)
+SEALED TEST VIR1 at Sol 2 p = 8/17, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 8/17 I_3 vs pair (beta = -8/17, a^2 = 225/289): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(8/17 phi) conserved for I_3 (Sol 2, p = 8/17): True
+CONTROL (c) Virasoro screening exp(-17/4 phi) conserved for I_3 (Sol 2, p = 8/17): True
+      (0 s)
+SEALED TEST VIR1 at Sol 2 p = 8/17, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 8/17 I_5 vs pair (beta = -8/17, a^2 = 225/289): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(8/17 phi) conserved for I_5 (Sol 2, p = 8/17): True
+CONTROL (c) Virasoro screening exp(-17/4 phi) conserved for I_5 (Sol 2, p = 8/17): True
+      (1 s)
+SEALED TEST VIR1 at Sol 2 p = 8/17, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 2 p = 8/17 I_7 vs pair (beta = -8/17, a^2 = 225/289): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(8/17 phi) conserved for I_7 (Sol 2, p = 8/17): True
+CONTROL (c) Virasoro screening exp(-17/4 phi) conserved for I_7 (Sol 2, p = 8/17): True
+      (17 s)
+== Sol 3, p = 1/2: t = 9/7, N = -143/4 (= 1 - 12 rho^2, rho = -7/4), s = -189/4  (inputs 0 s)
+SEALED TEST VIR1 at Sol 3 p = 1/2, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 1/2 I_3 vs pair A (beta = 2, a^2 = 4): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 1/2 I_3 vs pair B (beta = -1/2, a^2 = 1/4): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(1/2 phi) conserved for I_3 (Sol 3, p = 1/2): True
+CONTROL (c) Virasoro screening exp(-4 phi) conserved for I_3 (Sol 3, p = 1/2): True
+      (0 s)
+SEALED TEST VIR1 at Sol 3 p = 1/2, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 1/2 I_5 vs pair A (beta = 2, a^2 = 4): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 1/2 I_5 vs pair B (beta = -1/2, a^2 = 1/4): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(1/2 phi) conserved for I_5 (Sol 3, p = 1/2): True
+CONTROL (c) Virasoro screening exp(-4 phi) conserved for I_5 (Sol 3, p = 1/2): True
+      (1 s)
+SEALED TEST VIR1 at Sol 3 p = 1/2, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 1/2 I_7 vs pair A (beta = 2, a^2 = 4): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 1/2 I_7 vs pair B (beta = -1/2, a^2 = 1/4): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(1/2 phi) conserved for I_7 (Sol 3, p = 1/2): True
+CONTROL (c) Virasoro screening exp(-4 phi) conserved for I_7 (Sol 3, p = 1/2): True
+      (20 s)
+CONTROL (a) a^2 + 1/10 (pair A, Sol 3) FAILS on I_5: True
+CONTROL (a) a^2 + 1/10 (pair B, Sol 3) FAILS on I_5: True
+CONTROL (d) generic (a^2, beta) = (2/7, 3/11) FAILS on I_5 (Sol 3): True
+CONTROL (b) rho -> -rho translation FAILS for pair A on I_5 (Sol 3): True
+CONTROL (f) sanity: a total derivative passes V_+- (Sol 3): True
+== Sol 3, p = 2/3: t = 11/7, N = -46/3 (= 1 - 12 rho^2, rho = -7/6), s = -77/3  (inputs 0 s)
+SEALED TEST VIR1 at Sol 3 p = 2/3, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 2/3 I_3 vs pair A (beta = 3/2, a^2 = 9/4): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 2/3 I_3 vs pair B (beta = -2/3, a^2 = 4/9): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(2/3 phi) conserved for I_3 (Sol 3, p = 2/3): True
+CONTROL (c) Virasoro screening exp(-3 phi) conserved for I_3 (Sol 3, p = 2/3): True
+      (0 s)
+SEALED TEST VIR1 at Sol 3 p = 2/3, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 2/3 I_5 vs pair A (beta = 3/2, a^2 = 9/4): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 2/3 I_5 vs pair B (beta = -2/3, a^2 = 4/9): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(2/3 phi) conserved for I_5 (Sol 3, p = 2/3): True
+CONTROL (c) Virasoro screening exp(-3 phi) conserved for I_5 (Sol 3, p = 2/3): True
+      (1 s)
+SEALED TEST VIR1 at Sol 3 p = 2/3, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 2/3 I_7 vs pair A (beta = 3/2, a^2 = 9/4): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 2/3 I_7 vs pair B (beta = -2/3, a^2 = 4/9): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(2/3 phi) conserved for I_7 (Sol 3, p = 2/3): True
+CONTROL (c) Virasoro screening exp(-3 phi) conserved for I_7 (Sol 3, p = 2/3): True
+      (20 s)
+== Sol 3, p = 3/2: t = -17, N = 11/12 (= 1 - 12 rho^2, rho = 1/12), s = 17/12  (inputs 0 s)
+SEALED TEST VIR1 at Sol 3 p = 3/2, I_3: decomposition residual 0 (X x Vir 10 + dV 5; nullspace 5, ambiguous 5, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 3/2 I_3 vs pair A (beta = 2/3, a^2 = 4/9): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 3/2 I_3 vs pair B (beta = -3/2, a^2 = 9/4): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(3/2 phi) conserved for I_3 (Sol 3, p = 3/2): True
+CONTROL (c) Virasoro screening exp(-4/3 phi) conserved for I_3 (Sol 3, p = 3/2): True
+      (0 s)
+SEALED TEST VIR1 at Sol 3 p = 3/2, I_5: decomposition residual 0 (X x Vir 29 + dV 18; nullspace 16, ambiguous 16, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 3/2 I_5 vs pair A (beta = 2/3, a^2 = 4/9): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 3/2 I_5 vs pair B (beta = -3/2, a^2 = 9/4): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(3/2 phi) conserved for I_5 (Sol 3, p = 3/2): True
+CONTROL (c) Virasoro screening exp(-4/3 phi) conserved for I_5 (Sol 3, p = 3/2): True
+      (1 s)
+SEALED TEST VIR1 at Sol 3 p = 3/2, I_7: decomposition residual 0 (X x Vir 75 + dV 57; nullspace 45, ambiguous 45, ambiguity phi-images total derivatives True): True
+SEALED TEST Sol 3 p = 3/2 I_7 vs pair A (beta = 2/3, a^2 = 4/9): V_+ and V_- conserved: True
+SEALED TEST Sol 3 p = 3/2 I_7 vs pair B (beta = -3/2, a^2 = 9/4): V_+ and V_- conserved: True
+CONTROL (c) Virasoro screening exp(3/2 phi) conserved for I_7 (Sol 3, p = 3/2): True
+CONTROL (c) Virasoro screening exp(-4/3 phi) conserved for I_7 (Sol 3, p = 3/2): True
+      (20 s)
+conservation phase done (173 s)
+SEALED TEST COMMUTANT Sol 1 p = 8/5 weight 4: dim mod d = 1 (proj rank 11 - d-image 10); == 1 and spanned by I_3 (in commutant by conservation; not a total derivative: True): True
+      (0 s)
+SEALED TEST COMMUTANT Sol 1 p = 8/5 weight 6: dim mod d = 1 (proj rank 37 - d-image 36); == 1 and spanned by I_5 (in commutant by conservation; not a total derivative: True): True
+      (0 s)
+SEALED TEST COMMUTANT Sol 1 p = 8/5 weight 8: dim mod d = 1 (proj rank 111 - d-image 110); == 1 and spanned by I_7 (in commutant by conservation; not a total derivative: True): True
+      (7 s)
+SEALED TEST COMMUTANT Sol 2 p = 4/5 weight 4: dim mod d = 1 (proj rank 11 - d-image 10); == 1 and spanned by I_3 (in commutant by conservation; not a total derivative: True): True
+      (0 s)
+SEALED TEST COMMUTANT Sol 2 p = 4/5 weight 6: dim mod d = 1 (proj rank 37 - d-image 36); == 1 and spanned by I_5 (in commutant by conservation; not a total derivative: True): True
+      (0 s)
+SEALED TEST COMMUTANT Sol 2 p = 4/5 weight 8: dim mod d = 1 (proj rank 111 - d-image 110); == 1 and spanned by I_7 (in commutant by conservation; not a total derivative: True): True
+      (7 s)
+SEALED TEST COMMUTANT Sol 3 p = 1/2 weight 4: dim mod d = 1 (proj rank 11 - d-image 10); == 1 and spanned by I_3 (in commutant by conservation; not a total derivative: True): True
+      (0 s)
+SEALED TEST COMMUTANT Sol 3 p = 1/2 weight 6: dim mod d = 1 (proj rank 37 - d-image 36); == 1 and spanned by I_5 (in commutant by conservation; not a total derivative: True): True
+      (0 s)
+SEALED TEST COMMUTANT Sol 3 p = 1/2 weight 8: dim mod d = 1 (proj rank 111 - d-image 110); == 1 and spanned by I_7 (in commutant by conservation; not a total derivative: True): True
+      (7 s)
+done (194 s)
+controls passed; sealed prediction holds -> exit 0
+exit 0

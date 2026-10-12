@@ -1,0 +1,61 @@
+
+== t = 5/3 (k = 1), K = 3 (spin 5): certified kernel dimension 2
+   gate: Sol-3 table charge at this fibre lies in the computed kernel: True
+   handle: Sol-2 table charge at t = 5/3 lies in the kernel: True; independent of the Sol-3 charge: True
+   (ii) kernel invariant under PX <-> pi: True
+        Sol-3 charge symmetric: True
+   A  (antisymmetric power deformation)          R(0) = 0: True;  dR/de in the certified kernel: False;  antisymmetric: True; symmetric: False; deepest nonzero loss: 0
+   A / (X^K coefficient)  (X = PX^2, Y = pi^2):
+      loss 0: 1 X^3 Y^0 ; -3 X^2 Y^1 ; 3 X^1 Y^2 ; -1 X^0 Y^3
+   S~ (symmetric power deformation, fixed n)     R(0) = 0: True;  dR/de in the certified kernel: False;  antisymmetric: False; symmetric: True; deepest nonzero loss: 0
+   A_X (X-power only)                            R(0) = 0: True;  dR/de in the certified kernel: False;  antisymmetric: False; symmetric: False; deepest nonzero loss: 0
+   S = Sol-3 table charge, monic  (X = PX^2, Y = pi^2):
+      loss 0: 1 X^3 Y^0 ; -3 X^2 Y^1 ; -3 X^1 Y^2 ; 1 X^0 Y^3
+      loss 1: -1 X^2 Y^0 ; 3 X^1 Y^1 ; -1 X^0 Y^2
+      loss 2: 1/4 X^1 Y^0 ; 1/4 X^0 Y^1
+   antisymmetric elements of the kernel: dimension 1
+   certified antisymmetric class / (X^K coefficient)  (X = PX^2, Y = pi^2):
+      loss 0: 1 X^3 Y^0 ; -3 X^2 Y^1 ; 3 X^1 Y^2 ; -1 X^0 Y^3
+      loss 1: -1 X^2 Y^0 ; 1 X^0 Y^2
+      loss 2: 1/4 X^1 Y^0 ; -1/4 X^0 Y^1
+
+== t = 7/5 (k = 1/2), K = 5 (spin 9): certified kernel dimension 2
+   gate: Sol-3 table charge at this fibre lies in the computed kernel: True
+   (ii) kernel invariant under PX <-> pi: True
+        Sol-3 charge symmetric: True
+   A  (antisymmetric power deformation)          R(0) = 0: True;  dR/de in the certified kernel: False;  antisymmetric: True; symmetric: False; deepest nonzero loss: 2
+   A / (X^K coefficient)  (X = PX^2, Y = pi^2):
+      loss 0: 1 X^5 Y^0 ; -5 X^4 Y^1 ; 10 X^3 Y^2 ; -10 X^2 Y^3 ; 5 X^1 Y^4 ; -1 X^0 Y^5
+      loss 1: -10/3 X^4 Y^0 ; 20/3 X^3 Y^1 ; -20/3 X^1 Y^3 ; 10/3 X^0 Y^4
+      loss 2: -5/3 X^3 Y^0 ; 5 X^2 Y^1 ; -5 X^1 Y^2 ; 5/3 X^0 Y^3
+   S~ (symmetric power deformation, fixed n)     R(0) = 0: True;  dR/de in the certified kernel: False;  antisymmetric: False; symmetric: True; deepest nonzero loss: 2
+   A_X (X-power only)                            R(0) = 0: True;  dR/de in the certified kernel: False;  antisymmetric: False; symmetric: False; deepest nonzero loss: 2
+   A stripped                                    R(0) = 0: False;  dR/de in the certified kernel: None;  antisymmetric: True; symmetric: False; deepest nonzero loss: 4
+   S = Sol-3 table charge, monic  (X = PX^2, Y = pi^2):
+      loss 0: 1 X^5 Y^0 ; -5 X^4 Y^1 ; 10 X^3 Y^2 ; 10 X^2 Y^3 ; -5 X^1 Y^4 ; 1 X^0 Y^5
+      loss 1: -10/3 X^4 Y^0 ; 20/3 X^3 Y^1 ; -25 X^2 Y^2 ; 20/3 X^1 Y^3 ; -10/3 X^0 Y^4
+      loss 2: 11/3 X^3 Y^0 ; -5/4 X^2 Y^1 ; -5/4 X^1 Y^2 ; 11/3 X^0 Y^3
+      loss 3: -7855/3024 X^2 Y^0 ; -445/756 X^1 Y^1 ; -7855/3024 X^0 Y^2
+      loss 4: -124039/72576 X^1 Y^0 ; -124039/72576 X^0 Y^1
+      loss 5: -486925/177408 X^0 Y^0
+   antisymmetric elements of the kernel: dimension 1
+   certified antisymmetric class / (X^K coefficient)  (X = PX^2, Y = pi^2):
+      loss 0: 1 X^5 Y^0 ; -5 X^4 Y^1 ; 10 X^3 Y^2 ; -10 X^2 Y^3 ; 5 X^1 Y^4 ; -1 X^0 Y^5
+      loss 1: -10/3 X^4 Y^0 ; 20/3 X^3 Y^1 ; -20/3 X^1 Y^3 ; 10/3 X^0 Y^4
+      loss 2: 11/3 X^3 Y^0 ; -35/9 X^2 Y^1 ; 35/9 X^1 Y^2 ; -11/3 X^0 Y^3
+      loss 3: -40/27 X^2 Y^0 ; 40/27 X^0 Y^2
+      loss 4: 16/81 X^1 Y^0 ; -16/81 X^0 Y^1
+
+== t = 11/5 (k = 3), K = 4 (spin 7): certified kernel dimension 1
+   gate: Sol-3 table charge at this fibre lies in the computed kernel: True
+   (ii) kernel invariant under PX <-> pi: True
+        Sol-3 charge symmetric: True
+   A  (antisymmetric power deformation)          R(0) = 0: True;  dR/de in the certified kernel: False;  antisymmetric: True; symmetric: False; deepest nonzero loss: 1
+
+== t = 17/7 (k = 5), K = 5 (spin 9): certified kernel dimension 1
+   gate: Sol-3 table charge at this fibre lies in the computed kernel: True
+   (ii) kernel invariant under PX <-> pi: True
+        Sol-3 charge symmetric: True
+   A  (antisymmetric power deformation)          R(0) = 0: True;  dR/de in the certified kernel: False;  antisymmetric: True; symmetric: False; deepest nonzero loss: 2
+
+RESULT (real): H-A FAILS as sealed

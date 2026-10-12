@@ -1,0 +1,5 @@
+Sol-2(5/3) monic = -2*PI**6/3 + 2*PI**4*PX**2 + 2*PI**4/3 - 3*PI**2*PX**4 + PI**2*PX**2/2 - PI**2/6 + PX**6 - PX**4 + PX**2/4
+Sol-3(5/3) monic = PI**6 - 3*PI**4*PX**2 - PI**4 - 3*PI**2*PX**4 + 3*PI**2*PX**2 + PI**2/4 + PX**6 - PX**4 + PX**2/4
+E = -PI**6 + 3*PI**4*PX**2 + PI**4 - 3*PI**2*PX**4 - PI**2/4 + PX**6 - PX**4 + PX**2/4
+Sol-2 = al * Sol-3 + be * E with [{al: 1/6, be: 5/6}]
+exact: residual 0

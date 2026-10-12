@@ -1,0 +1,22 @@
+=== t=4 spin 9: individual term values ===
+integrate_reg returned 0 surviving terms:
+
+SUM = 0
+Is zero: True
+
+
+=== LIMIT via symbolic eps ===
+k(eps) = 2*(-eps - 3)/(eps + 1)
+M(eps) = (-eps - 1)/(2*(eps + 3))
+n(eps) = (-eps - 9)/(eps + 1)
+aX(eps) = 2*(-eps - 1)/(eps + 9)
+aY(eps) = 4*(eps + 3)/(eps + 9)
+
+Certified spin 9 at t=4: 21 terms
+Leading: -5 * PX^8 * ...
+
+=== Convergence check: monic at t=4+1/N for N=10..50 ===
+  N=10: ERROR too many values to unpack (expected 4)
+  N=20: ERROR too many values to unpack (expected 4)
+  N=50: ERROR too many values to unpack (expected 4)
+  N=100: ERROR too many values to unpack (expected 4)

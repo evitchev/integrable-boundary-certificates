@@ -1,0 +1,11 @@
+X0(a) Sol 1 M = 1 E = -10.0: rel diff 1.18e-58
+X0(a) Sol 1 M = 1 E = -100.0: rel diff 1.76e-57
+X0(a) Sol 1 M = 1 E = 3.0: rel diff 2.87e-59
+X0(b) NUM2 archived Sol 3 point (t = 2, A, E = 1e3): max |log|Q| diff| = 4.98e-59
+X1 3rd order k = 2 point A: beta -7.5 vs p theta_G -7.5; Q rel diffs ['1.08e-56', '1.08e-56', '1.09e-56'] (11s)
+X1 3rd order k = 2 point B: beta -7.5 vs p theta_G -7.5; Q rel diffs ['1.1e-56', '1.1e-56', '1.1e-56'] (11s)
+X1 3rd order k = 10/3 point A: beta -8.23333333333333 vs p theta_G -8.23333333333333; Q rel diffs ['2.87e-55', '2.87e-55', '2.87e-55'] (42s)
+X1 3rd order k = 10/3 point B: beta -8.23333333333333 vs p theta_G -8.23333333333333; Q rel diffs ['2.88e-55', '2.88e-55', '2.88e-55'] (42s)
+X1 7th order point A: beta -1.5 vs p theta_G -1.5; Q rel diffs ['4.85e-55', '9.08e-57', '3.71e-56', '5.22e-54', '1.48e-53', '1.68e-55', '1.36e-54'] (6s)
+X1 7th order point B: beta -1.5 vs p theta_G -1.5; Q rel diffs ['3.24e-55', '7.3e-55', '6.39e-55', '9.67e-55', '2.67e-53', '4.43e-55', '1.59e-55'] (6s)
+X0/X1 all: True

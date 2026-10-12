@@ -1,0 +1,26 @@
+== N=25: t = 0, N = 25, s = 0; components used 25  (inputs 1 s)
+   W = 4: spanning fields 15 (X x Vir: 10; d V_(W-1): 5); Vir field counts by weight [1, 0, 1, 1, 2]  (0 s)
+   Sol 1 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   Sol 2 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   Sol 3 I_3 (weight 4): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+   W = 6: spanning fields 47 (X x Vir: 29; d V_(W-1): 18); Vir field counts by weight [1, 0, 1, 1, 2, 2, 4]  (0 s)
+   Sol 1 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=25, Sol 1 flagged OUT (votes [False, False, False, False]): True
+   Sol 2 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=25, Sol 2 flagged OUT (votes [False, False, False, False]): True
+   Sol 3 I_5 (weight 6): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_5 + (1/1000)(33)_Y at N=25, Sol 3 flagged OUT (votes [False, False, False, False]): True
+   W = 8: spanning fields 132 (X x Vir: 75; d V_(W-1): 57); Vir field counts by weight [1, 0, 1, 1, 2, 2, 4, 4, 7]  (3 s)
+   Sol 1 I_7 (weight 8): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_7 + (1/1000)(44)_Y at N=25, Sol 1 flagged OUT (votes [False, False, False, False]): True
+   Sol 2 I_7 (weight 8): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_7 + (1/1000)(44)_Y at N=25, Sol 2 flagged OUT (votes [False, False, False, False]): True
+   Sol 3 I_7 (weight 8): IN  votes (p1s1, p1s2, p2s1, p2s2) [True, True, True, True]
+CONTROL (a) PLANT I_7 + (1/1000)(44)_Y at N=25, Sol 3 flagged OUT (votes [False, False, False, False]): True
+CONTROL (d) SANITY d(:TT:) dX + 3 (dX)^4 d^2X IN at N=25 (votes [True, True, True, True]): True
+CONTROL (b) I_3 IN at every point and solution: True
+SEALED PREDICTION (I_5 IN everywhere): True  {'N=25|1|6': 'IN', 'N=25|2|6': 'IN', 'N=25|3|6': 'IN'}
+I_7: {'N=25|1|8': 'IN', 'N=25|2|8': 'IN', 'N=25|3|8': 'IN'}
+done (135 s)
+controls passed; sealed prediction holds -> exit 0
+exit 0

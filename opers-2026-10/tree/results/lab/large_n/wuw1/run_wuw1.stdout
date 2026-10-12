@@ -1,0 +1,35 @@
+(1) W_U = Res e^(2U)(z) e^(-2U)(w) = {((1, 0), (1, 0), (1, 0)): Fraction(4, 3), ((1, 0), (1, 1)): Fraction(2, 1), ((1, 2),): Fraction(1, 3)}
+CONTROL (1)(i) W_U is T_U-primary of weight 3 (c_U = -2): True
+   c(T_U) check: T_U T_U 4th pole = {(): Fraction(-1, 1)}  (c/2)
+CONTROL (1)(ii) field level: Res e^(-U)(z) W_U(w) = 0 (short screening): True
+   (reported) field level Res e^(2U)(z) W_U(w) = {((1, 0), (1, 0)): Fraction(8, 1), ((1, 1),): Fraction(-8, 1)}
+CONTROL (1)(iii) W_U not a T_U descendant (not in span{dT_U}): True
+   eigen(W_U) = P_U*(2*P_U - 1)*(2*P_U + 1)/3
+SEALED TEST P1 eigen(W_U) proportional to P_U (P_U^2 - 1/4): True
+(2) weight-4 commutant of {e^((U+W)/2), e^(2U), e^(2W)} mod d: dim 1
+CONTROL GATE I_3: dim 1 and eigen(I_3) proportional to the record cyl(3,4) at t = 5/3: True
+   weight-6 screening commutant mod d: dim 1
+   K_6 = ker ad I_3 at weight 6 mod d: dim 2 (14s)
+CONTROL GATE K_6 contains the weight-6 screening commutant (I_5): True
+CONTROL GATE vev_sol3_w6 (t = 5/3) in span eigen(K_6): True
+CONTROL GATE vev_sol2_w6 (t = 5/3) in span eigen(K_6): True
+CONTROL eigen of a total derivative vanishes (recipe sanity): True
+SEALED TEST P2 G_6 = W_U W_W in K_6 mod d, and not in span{I_5} + d: True
+   (P2 parts: in K_6 True; not in I_5 + d True)
+   eigen(G_6) = -(P_X - pi)*(P_X + pi)*(2*P_X**2 - 4*P_X*pi + 2*pi**2 - 1)*(2*P_X**2 + 4*P_X*pi + 2*pi**2 - 1)/18
+   E_1 = (P_X - pi)*(P_X + pi)*(2*P_X**2 - 4*P_X*pi + 2*pi**2 - 1)*(2*P_X**2 + 4*P_X*pi + 2*pi**2 - 1)/4
+SEALED TEST P3 eigen(G_6) proportional to E_1: True
+CONTROL antisymmetry: eigen(G_6) odd under P_X <-> pi: True
+   Fable's relation at 5/3 with this E: Sol 2 in span(Sol 3, eigen(G_6))? {c0: 1/6, c1: -15/4}
+   P4 (reported): G_6 zero mode commutes with pair B e^(-U): True
+   P4 (reported): G_6 zero mode commutes with pair B e^(-W): True
+   P4 (reported): G_6 zero mode commutes with Virasoro e^((U+W)/2): True
+   P4 (reported): G_6 zero mode commutes with pair A e^(2U): False
+   P4 (reported): G_6 zero mode commutes with Virasoro e^(-2(U+W)): True
+CONTROL symmetric W_U^2 + W_W^2: eigenvalue NOT antisymmetric: True
+   (reported) W_U^2 + W_W^2 in K_6 mod d: False; eigen symmetric: True
+CONTROL TAMPER 1 G_6 + (dU)^6/100 leaves K_6 and breaks P3: True
+CONTROL TAMPER 2 exponent 21/10: breaks P1 and P3: False
+CONTROL SCORING TAMPER E_1 with p^2 + 1/1000 breaks P3: True
+done (19s)
+CONTROLS FAILED ['TAMPER 2 exponent 21/10: breaks P1 and P3'] -> exit 1

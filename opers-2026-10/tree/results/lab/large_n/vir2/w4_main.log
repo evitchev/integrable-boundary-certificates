@@ -1,0 +1,139 @@
+seal hash ok 9ac0c5560861245c9e33ee228a96c717fa50555b2bf63d9fdde66633b483a499
+24 real-p fibres (N < 1) + 6 imaginary-p fibres (N > 25); t < 0 on 15 of them
+
+== C0: the two-boson images commute ==
+PASS  Sol 1 at p = 3/2: Res I_3(z) I_5(w) (126 monomials) is a total derivative  (2s)
+PASS  Sol 2 at p = 3/2: Res I_3(z) I_5(w) (126 monomials) is a total derivative  (3s)
+PASS  Sol 3 at p = 3/2: Res I_3(z) I_5(w) (126 monomials) is a total derivative  (4s)
+
+== sealed pairs against I_3 and I_5; a = 0 control; joint solution sets ==
+   p = 1/3    t = 19/17    N = -286/3     done  (5s)
+   p = -1/3   t = 19/17    N = -286/3     done  (6s)
+   p = 2/3    t = 11/7     N = -46/3      done  (7s)
+   p = -2/3   t = 11/7     N = -46/3      done  (8s)
+   p = 3/2    t = -17      N = 11/12      done  (9s)
+   p = -3/2   t = -17      N = 11/12      done  (10s)
+   p = 2      t = -3       N = -2         done  (11s)
+   p = -2     t = -3       N = -2         done  (12s)
+   p = 3      t = -11/7    N = -46/3      done  (13s)
+   p = -3     t = -11/7    N = -46/3      done  (14s)
+   p = 4/3    t = 17       N = 11/12      done  (15s)
+   p = -4/3   t = 17       N = 11/12      done  (16s)
+   p = 5/2    t = -33/17   N = -767/100   done  (17s)
+   p = -5/2   t = -33/17   N = -767/100   done  (18s)
+   p = 1/4    t = 33/31    N = -2867/16   done  (19s)
+   p = -1/4   t = 33/31    N = -2867/16   done  (20s)
+   p = 5/3    t = -43/7    N = 26/75      done  (21s)
+   p = -5/3   t = -43/7    N = 26/75      done  (22s)
+   p = 7/2    t = -57/41   N = -4847/196  done  (23s)
+   p = -7/2   t = -57/41   N = -4847/196  done  (24s)
+   p = 3/4    t = 41/23    N = -481/48    done  (25s)
+   p = -3/4   t = 41/23    N = -481/48    done  (26s)
+   p = 6/5    t = 43/7     N = 26/75      done  (27s)
+   p = -6/5   t = 43/7     N = 26/75      done  (28s)
+   p = I/2    t = 7/9      N = 247/4      done  (30s)
+   p = 3*I/2  t = -1/17    N = 301/12     done  (31s)
+   p = 3*I    t = -7/11    N = 124/3      done  (33s)
+   p = 2*I/3  t = 7/11     N = 124/3      done  (34s)
+   p = 5*I/2  t = -17/33   N = 3367/100   done  (36s)
+   p = I/3    t = 17/19    N = 364/3      done  (37s)
+   S1                                     fibres x sols tested  30: conserved vs I_3  30, vs I_5  30
+   Virasoro a=0                           fibres x sols tested 180: conserved vs I_3 180, vs I_5 180
+   generic beta = p/3, a=0 (must fail)    fibres x sols tested  90: conserved vs I_3   0, vs I_5   0
+   S2                                     fibres x sols tested  30: conserved vs I_3  30, vs I_5  30
+   S3                                     fibres x sols tested  30: conserved vs I_3  30, vs I_5  30
+   S3'                                    fibres x sols tested  30: conserved vs I_3  30, vs I_5  30
+HOLDS  S1: Solution 1 pair conserved against I_3 and I_5 at all 30 fibres
+HOLDS  S3: Solution 3 pair conserved against I_3 and I_5 at all 30 fibres
+HOLDS  S2: Solution 2 has a level-3-degenerate pair (beta = -beta_+, a^2 = 1 - p^2 -> -1 at N = 1), I_3 and I_5, all 30 fibres
+S-complete REFUTED on Sol 3 (not exit-setting): the second Sol-3 pair S3' (beta = -p, a^2 = p^2) is conserved against I_5 at 30 of 30 fibres
+PASS  C1: both Virasoro screenings pass I_3 and I_5 at every fibre, every solution (180 tests)
+PASS  C1: a generic pure-phi exponent fails at every fibre
+
+== completeness: all (a^2, beta), a != 0, beta != 0 (Groebner + solve) ==
+   p = 3/2   Sol 1: I_3 alone (5 conditions): [(7/16, -3/4)] ; I_3 and I_5 (21 conditions): [(7/16, -3/4)] ; == listed pairs: True  (38s)
+   p = 3/2   Sol 2: I_3 alone (5 conditions): [(-5/4, -3/2)] ; I_3 and I_5 (21 conditions): [(-5/4, -3/2)] ; == listed pairs: True  (39s)
+   p = 3/2   Sol 3: I_3 alone (5 conditions): [(4/9, 2/3), (9/4, -3/2)] ; I_3 and I_5 (21 conditions): [(4/9, 2/3), (9/4, -3/2)] ; == listed pairs: True  (40s)
+   p = -2/3  Sol 1: I_3 alone (5 conditions): [(8/9, 1/3)] ; I_3 and I_5 (21 conditions): [(8/9, 1/3)] ; == listed pairs: True  (40s)
+   p = -2/3  Sol 2: I_3 alone (5 conditions): [(5/9, 2/3)] ; I_3 and I_5 (21 conditions): [(5/9, 2/3)] ; == listed pairs: True  (41s)
+   p = -2/3  Sol 3: I_3 alone (5 conditions): [(4/9, 2/3), (9/4, -3/2)] ; I_3 and I_5 (21 conditions): [(4/9, 2/3), (9/4, -3/2)] ; == listed pairs: True  (42s)
+   p = 3     Sol 1: I_3 alone (5 conditions): [(-5/4, -3/2)] ; I_3 and I_5 (21 conditions): [(-5/4, -3/2)] ; == listed pairs: True  (42s)
+   p = 3     Sol 2: I_3 alone (5 conditions): [(-8, -3)] ; I_3 and I_5 (21 conditions): [(-8, -3)] ; == listed pairs: True  (43s)
+   p = 3     Sol 3: I_3 alone (5 conditions): [(1/9, 1/3), (9, -3)] ; I_3 and I_5 (21 conditions): [(1/9, 1/3), (9, -3)] ; == listed pairs: True  (44s)
+   p = 1/4   Sol 1: I_3 alone (5 conditions): [(63/64, -1/8)] ; I_3 and I_5 (21 conditions): [(63/64, -1/8)] ; == listed pairs: True  (45s)
+   p = 1/4   Sol 2: I_3 alone (5 conditions): [(15/16, -1/4)] ; I_3 and I_5 (21 conditions): [(15/16, -1/4)] ; == listed pairs: True  (45s)
+   p = 1/4   Sol 3: I_3 alone (5 conditions): [(1/16, -1/4), (16, 4)] ; I_3 and I_5 (21 conditions): [(1/16, -1/4), (16, 4)] ; == listed pairs: True  (46s)
+   p = 3*I/2 Sol 1: I_3 alone (5 conditions): [(25/16, -3*I/4)] ; I_3 and I_5 (21 conditions): [(25/16, -3*I/4)] ; == listed pairs: True  (47s)
+   p = 3*I/2 Sol 2: I_3 alone (5 conditions): [(13/4, -3*I/2)] ; I_3 and I_5 (21 conditions): [(13/4, -3*I/2)] ; == listed pairs: True  (48s)
+   p = 3*I/2 Sol 3: I_3 alone (5 conditions): [(-4/9, -2*I/3), (-9/4, -3*I/2)] ; I_3 and I_5 (21 conditions): [(-4/9, -2*I/3), (-9/4, -3*I/2)] ; == listed pairs: True  (49s)
+   p = 3*I   Sol 1: I_3 alone (5 conditions): [(13/4, -3*I/2)] ; I_3 and I_5 (21 conditions): [(13/4, -3*I/2)] ; == listed pairs: True  (49s)
+   p = 3*I   Sol 2: I_3 alone (5 conditions): [(10, -3*I)] ; I_3 and I_5 (21 conditions): [(10, -3*I)] ; == listed pairs: True  (50s)
+   p = 3*I   Sol 3: I_3 alone (5 conditions): [(-1/9, -I/3), (-9, -3*I)] ; I_3 and I_5 (21 conditions): [(-1/9, -I/3), (-9, -3*I)] ; == listed pairs: True  (51s)
+HOLDS  the mixed solution set of {I_3} and of {I_3, I_5} is exactly S1 | S2 | {S3, S3'} at 6 fibres
+
+== hold-outs: I_7 (sealed), I_9 (post-seal bonus), promoted charges ==
+   I_7 at p = 3/2   (54-monomial images) done  (67s)
+   I_7 at p = -2/3  (54-monomial images) done  (83s)
+   I_7 at p = 3     (54-monomial images) done  (99s)
+   I_7 at p = -5/2  (54-monomial images) done  (115s)
+   I_7 at p = 3*I/2 (54-monomial images) done  (134s)
+   I_7 at p = I/2   (54-monomial images) done  (154s)
+   I_9 at p = 3/2   (121-monomial images) done  (367s)
+   I_9 at p = -2/3  (121-monomial images) done  (585s)
+   I_9 at p = 3*I/2 (121-monomial images) done  (820s)
+   I_7  S3'                    conserved at 6 of 6
+   I_7  S1                     conserved at 6 of 6
+   I_7  S2                     conserved at 6 of 6
+   I_7  S3                     conserved at 6 of 6
+   I_7  Virasoro               conserved at 18 of 18
+   I_7  negative (wrong a^2)   conserved at 0 of 18
+   I_9  S3'                    conserved at 3 of 3
+   I_9  S1                     conserved at 3 of 3
+   I_9  S2                     conserved at 3 of 3
+   I_9  S3                     conserved at 3 of 3
+   I_9  Virasoro               conserved at 9 of 9
+   I_9  negative (wrong a^2)   conserved at 0 of 9
+HOLDS  S1 hold-out: conserved against I_7 at all tested fibres
+HOLDS  S3 hold-out: conserved against I_7 at all tested fibres
+PASS  C1: Virasoro screenings pass I_7
+PASS  C5: a wrong a^2 fails I_7 everywhere
+
+== C2: prior-art controls ==
+PASS  p = 2i is the exact point of Sol 1: t = -1/3, N = 28, rho = 3*I/2
+PASS  Sol 1 at (28,-9): pure-X (a^2, beta) = (2, 0) conserved against I_3 and I_5
+PASS  Sol 1 at (28,-9): a^2 = 3 is NOT (non-root control)
+PASS  Sol 1 at a generic fibre: pure-X a^2 = 2 is NOT conserved (1 conditions nonzero)
+PASS  N = 1, Sol 1: BOP's (a^2, beta^2) = (1/2, 1/2), beta = +1/sqrt2: I_3 and I_5
+PASS  N = 1, Sol 1: BOP's (a^2, beta^2) = (1/2, 1/2), beta = -1/sqrt2: I_3 and I_5
+PASS  N = 1, Sol 3: BOP's (a^2, beta^2) = (1/2, 1/2), beta = +1/sqrt2: I_3 and I_5
+PASS  N = 1, Sol 3: BOP's (a^2, beta^2) = (1/2, 1/2), beta = -1/sqrt2: I_3 and I_5
+PASS  N = 1, Sol 2: (a^2, beta^2) = (-1, 2) [BOP's N = 1 value for Solution 2]: I_3 and I_5
+   N = 1, Sol 1: the branch (a^2, beta^2) = (2, 2): I_3 True, I_5 True
+   N = 1, Sol 3: the branch (a^2, beta^2) = (2, 2): I_3 True, I_5 True
+
+== C3: tampers ==
+PASS  tamper A (rho -> -rho), Sol 1: S1 fails, its mirror beta -> -beta passes
+PASS  tamper B (rho^2 from N+1, rho = sqrt(11)*I/12), Sol 1: S1 fails I_3 (4) and I_5 (15 conditions nonzero)
+PASS  tamper B' (rho -> rho + 1/5, wrong central charge), Sol 1: the two-boson images of I_3, I_5 no longer commute
+PASS  tamper A (rho -> -rho), Sol 2: S2 fails, its mirror beta -> -beta passes
+PASS  tamper B (rho^2 from N+1, rho = sqrt(11)*I/12), Sol 2: S2 fails I_3 (4) and I_5 (15 conditions nonzero)
+PASS  tamper B' (rho -> rho + 1/5, wrong central charge), Sol 2: the two-boson images of I_3, I_5 no longer commute
+PASS  tamper A (rho -> -rho), Sol 3: S3 fails, its mirror beta -> -beta passes
+PASS  tamper B (rho^2 from N+1, rho = sqrt(11)*I/12), Sol 3: S3 fails I_3 (4) and I_5 (15 conditions nonzero)
+PASS  tamper B' (rho -> rho + 1/5, wrong central charge), Sol 3: the two-boson images of I_3, I_5 no longer commute
+
+== C4 plant, C5 vacuity ==
+PASS  plant, Sol 1: I_5 + (1/1000) x1^2 f2^2 is flagged for S1 (11 conditions nonzero)
+PASS  vacuity, Sol 1: a generic (a^2, beta) = (5/3, 2/7) fails: 5 of I_3's and 16 of I_5's conditions nonzero
+PASS  plant, Sol 2: I_5 + (1/1000) x1^2 f2^2 is flagged for S2 (11 conditions nonzero)
+PASS  vacuity, Sol 2: a generic (a^2, beta) = (5/3, 2/7) fails: 5 of I_3's and 16 of I_5's conditions nonzero
+PASS  plant, Sol 3: I_5 + (1/1000) x1^2 f2^2 is flagged for S3 (11 conditions nonzero)
+PASS  vacuity, Sol 3: a generic (a^2, beta) = (5/3, 2/7) fails: 5 of I_3's and 16 of I_5's conditions nonzero
+
+total 830s
+RESULT: S1 and S3 CONFIRMED against I_3, I_5 and the I_7 hold-out; all controls fired
+
+real	13m50.118s
+user	13m49.237s
+sys	0m0.196s
+main exit 0

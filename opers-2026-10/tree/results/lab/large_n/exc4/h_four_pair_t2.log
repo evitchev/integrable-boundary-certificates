@@ -1,0 +1,21 @@
+point A: 5 new conditions (1s)
+point B: 5 new conditions (2s)
+   r02 eliminated
+   s02 eliminated
+   r01 eliminated
+   s01 eliminated
+5 equations in 3 unknowns [r11, r12, z] (2s)
+written h_four_t2_P1-2_Q1-3_pair.sing; vacuum monic I_1 = 31/36; running Singular (2s)
+dim:
+0
+vdim:
+4
+eliminant ii:
+Ji[1]=36*ii-103
+eliminant ee:
+Je[1]=1679616*ee^2-11448864*ee+2506369
+eliminant z:
+Jz[1]=3486784401*z^4+225206325*z^2-11045
+
+done (3s)
+exit 0

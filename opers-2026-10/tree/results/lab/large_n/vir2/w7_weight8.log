@@ -1,0 +1,9 @@
+p = 3/2: t = -17, N = 11/12
+Sol 1 weight 8 (185 monomials): commutant of pair(s) + Virasoro: dim mod d = 1 ; promoted I_7 inside: True  (10s)
+Sol 2 weight 8 (185 monomials): commutant of pair(s) + Virasoro: dim mod d = 1 ; promoted I_7 inside: True  (20s)
+Sol 3 weight 8 (185 monomials): commutant of pair(s) + Virasoro: dim mod d = 1 ; promoted I_7 inside: True  (38s)
+WEIGHT8 OK
+
+real	0m38.469s
+user	0m38.425s
+sys	0m0.040s

@@ -1,0 +1,5 @@
+k0 = 1    t0 = 5/3   spin 5: 9 coefficients; max|monic(k0 + h) - certified| = 1.200000e-08 (h = 1e-8), 1.200000e-16 (h = 1e-16); ratio 1.000000e+08  -> O(h): PASS
+k0 = 3    t0 = 11/5  spin 7: 14 coefficients; max|monic(k0 + h) - certified| = 4.285714e-09 (h = 1e-8), 4.285714e-17 (h = 1e-16); ratio 1.000000e+08  -> O(h): PASS
+k0 = 5    t0 = 17/7  spin 9: 18 coefficients; max|monic(k0 + h) - certified| = 4.835391e-09 (h = 1e-8), 4.835391e-17 (h = 1e-16); ratio 1.000000e+08  -> O(h): PASS
+k0 = 1/2  t0 = 7/5   spin 9: 21 coefficients; max|monic(k0 + h) - certified| = 3.674485e-07 (h = 1e-8), 3.674485e-15 (h = 1e-16); ratio 9.999999e+07  -> O(h): PASS
+Z1 PASS

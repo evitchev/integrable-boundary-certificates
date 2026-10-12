@@ -1,0 +1,14 @@
+point A: 5 new conditions (79s)
+point B: 5 new conditions (125s)
+point C: 5 new conditions (216s)
+point D: 5 new conditions (270s)
+   r02 eliminated
+   s02 eliminated
+   r01 eliminated
+   s01 eliminated
+   u02 eliminated
+   v02 eliminated
+   u01 eliminated
+   v01 eliminated
+11 equations in 6 unknowns [r11, r12, z, u11, u12, z3] (6662s)
+written h_four_t9_4_P2-5_Q1-4_four.sing; vacuum monic I_1 = 8551/15600; running Singular (6669s)

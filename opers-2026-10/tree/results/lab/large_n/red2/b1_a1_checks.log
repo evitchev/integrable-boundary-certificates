@@ -1,0 +1,9 @@
+B1(i) Erdelyi-Kober term identity k = 0..6: True
+B1(ii) a invariant under (alpha, l) -> (alpha - 2 delta, l + delta): True
+B1(iii) B_2: single member P_X-odd part nonzero: True;  P_X-even part == (1/2) sum over the doublet: True
+B1(iii) B_4: single member P_X-odd part nonzero: True;  P_X-even part == (1/2) sum over the doublet: True
+B1(iii) B_6: single member P_X-odd part nonzero: True;  P_X-even part == (1/2) sum over the doublet: True
+B1(iii) B_8: single member P_X-odd part nonzero: True;  P_X-even part == (1/2) sum over the doublet: True
+B1(iii) B_10: single member P_X-odd part nonzero: True;  P_X-even part == (1/2) sum over the doublet: True
+A1(i) orders of Lambda dw^2 at (w = 0, 1, infinity): Suzuki(M = -2): (-5/2, 1, -5/2)   pillow (t = -1/3): (-1/2, -1, -5/2)
+A1(ii) kappa-odd part of the transformed normal form: alpha*kappa*U(f(z))*Derivative(f(z), z)**2  == kappa alpha f'^2 U(f): True

@@ -1,0 +1,50 @@
+======================================================================
+NZERO1: Limit computation at exceptional cells
+======================================================================
+
+### Mechanism verification ###
+t=4 spin 9: s_10 has 11 monomials, integrate_reg returns 0 terms, nonpole=4
+  ALL monomials in s_10 have integer a <= 0 (all hit Gamma poles)
+  integrate_reg kills terms where Gamma(-c) also has a pole
+  Result: 0 surviving terms -> sum = 0 (exact cancellation)
+t=7 spin 3: s_4 has 3 monomials, integrate_reg returns 0 terms
+t=7 spin 9: s_10 has 10 monomials, integrate_reg returns 0 terms
+
+### Limit: monic(WKB(t0+1/N)) vs certified(t0+1/N) ###
+
+--- t=4 spin 9 ---
+  N=10: t=4001/1000, monic 21 terms vs cert(t): DIFF (21 terms)
+         vs cert(t0=4): differs by 21 terms
+  N=50: t=20001/5000, monic 21 terms vs cert(t): DIFF (21 terms)
+         vs cert(t0=4): differs by 21 terms
+  N=100: t=40001/10000, monic 21 terms vs cert(t): DIFF (21 terms)
+         vs cert(t0=4): differs by 21 terms
+
+--- t=7 spin 3 ---
+  N=10: t=7001/1000, monic 6 terms vs cert(t): DIFF (6 terms)
+         vs cert(t0=7): differs by 6 terms
+  N=50: t=35001/5000, monic 6 terms vs cert(t): DIFF (6 terms)
+         vs cert(t0=7): differs by 6 terms
+  N=100: t=70001/10000, monic 6 terms vs cert(t): DIFF (6 terms)
+         vs cert(t0=7): differs by 6 terms
+
+--- t=7 spin 9 ---
+  N=10: t=7001/1000, monic 21 terms vs cert(t): DIFF (21 terms)
+         vs cert(t0=7): differs by 21 terms
+  N=50: t=35001/5000, monic 21 terms vs cert(t): DIFF (21 terms)
+         vs cert(t0=7): differs by 21 terms
+  N=100: t=70001/10000, monic 21 terms vs cert(t): DIFF (21 terms)
+         vs cert(t0=7): differs by 21 terms
+
+### CONTROLS ###
+Control 1 (t=4 spin 7): direct monic vs cert = MISMATCH
+  t=401/100 spin 3: MISMATCH
+  t=401/100 spin 5: MISMATCH
+  t=401/100 spin 7: MISMATCH
+  t=401/100 spin 9: MISMATCH
+Control 2 (t=401/100 all spins): SOME MISMATCH
+
+Control 3 (TAMPER: Cv * 1.1 at t=4+1/100, spin 9):
+  Tampered charge vs certified: MISMATCH (GOOD - tamper breaks agreement)
+
+Total time: 131s

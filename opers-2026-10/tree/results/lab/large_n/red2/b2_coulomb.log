@@ -1,0 +1,13 @@
+tensor product of two Coulomb problems, denominator 1
+   x^0 D^0: lam_m**2 - 2*lam_m*lam_p - 2*lam_m + lam_p**2 - 2*lam_p
+   x^0 D^1: 2*(2*lam_m + 2*lam_p - 1)
+   x^0 D^2: -2*lam_m - 2*lam_p + 5
+   x^0 D^3: -4
+   x^0 D^4: 1
+   x^1 D^1: 2
+   x^1 D^2: -4
+   x^2 D^1: 4*E
+   x^2 D^2: 4*E
+exact solve T(gauged, scaled) == S over (g, mu, lam_p, lam_m, C): [{C: 0, g: 1/2, lam_m: l0**2/4 - l0*l1/2 + l1**2/4 - 1/4, lam_p: (l0 + l1 - 1)*(l0 + l1 + 1)/4, mu: 0}, {C: 0, g: 1/2, lam_m: l0**2/4 + l0*l1/2 + l1**2/4 - 1/4, lam_p: (l0 - l1 - 1)*(l0 - l1 + 1)/4, mu: 0}]
+  check residual zero: False
+  check residual zero: False

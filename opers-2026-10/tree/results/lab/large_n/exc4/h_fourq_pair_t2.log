@@ -1,0 +1,27 @@
+point A: 5 new conditions (4s)
+point B: 5 new conditions (7s)
+   equation reduced: 7 terms (7s)
+   equation reduced: 13 terms (7s)
+   equation reduced: 13 terms (7s)
+   equation reduced: 7 terms (7s)
+   equation reduced: 31 terms (7s)
+   equation reduced: 7 terms (7s)
+   equation reduced: 12 terms (7s)
+   equation reduced: 14 terms (7s)
+   equation reduced: 7 terms (7s)
+   equation reduced: 32 terms (7s)
+10 equations in 7 unknowns [r11, r12, r01, r02, s01, s02, z] (7s)
+written h_fourq_t2_P1-2_Q1-3_pair.sing; vacuum monic I_1 = 31/36; running Singular (8s)
+dim:
+0
+vdim:
+4
+eliminant ii:
+Ji[1]=36*ii-103
+eliminant ee:
+Je[1]=1679616*ee^2-11448864*ee+2506369
+eliminant z:
+Jz[1]=3486784401*z^4+225206325*z^2-11045
+
+done (8s)
+exit 0

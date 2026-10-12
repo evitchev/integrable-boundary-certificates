@@ -1,0 +1,12 @@
+N = 3: :TT:: formal-N engine == explicit engine: True  (9 monomials)
+N = 3: :T:TT::: formal-N engine == explicit engine: True  (25 monomials)
+N = 3: :dT T:: formal-N engine == explicit engine: True  (12 monomials)
+N = 3: T T pole 4: formal-N engine == explicit engine: True  (1 monomials)
+N = 3: :(dXdX T) T: pole 2: formal-N engine == explicit engine: True  (5 monomials)
+N = 4: :TT:: formal-N engine == explicit engine: True  (14 monomials)
+N = 4: :T:TT::: formal-N engine == explicit engine: True  (44 monomials)
+N = 4: :dT T:: formal-N engine == explicit engine: True  (20 monomials)
+N = 4: T T pole 4: formal-N engine == explicit engine: True  (1 monomials)
+N = 4: :(dXdX T) T: pole 2: formal-N engine == explicit engine: True  (6 monomials)
+control (e): True
+exit 0

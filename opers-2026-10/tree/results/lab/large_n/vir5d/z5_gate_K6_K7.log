@@ -1,0 +1,4 @@
+t = 13/7  K = 6: kernel dimension 1; Sol-3 table charge (X^K coefficient nonzero) in the kernel: True; table charge symmetric: True
+t = 23/9  K = 6: kernel dimension 1; Sol-3 table charge (X^K coefficient nonzero) in the kernel: True; table charge symmetric: True
+t = 9/7   K = 7: kernel dimension 2; Sol-3 table charge (X^K coefficient nonzero) in the kernel: True; table charge symmetric: True
+gate PASS

@@ -1,0 +1,10 @@
+PASS  g1 Virasoro algebra of T_phi with c = 1 - 12 rho^2 on 294 (state, m, n) triples
+PASS  g2 h(e^{b phi}) = b^2/2 - rho b
+PASS  g3 (11)(11) - 2(22) = 4 L_-2 L_-2 |0> + total derivative: HV coefficients {((), (2, 2)): 4}
+PASS  g3 its two-boson image is exactly 4 (T_phi T_phi) = {((), (1, 1, 1, 1)): '1', ((), (1, 1, 2)): '4*rho', ((), (1, 3)): '2', ((), (2, 2)): '4*rho**2', ((), (4,)): '4*rho/3'}
+PASS  g3 4 L_-2^2 - 4 L_-4 and 4 L_-2^2 have the same two-boson class mod d
+PASS  g3 (T_phi T_phi) itself is not a total derivative (the test is not vacuous)
+PASS  g4 Sol 1 I_3 image even in X, (TT) coefficient 4; HV coefficients {((), (2, 2)): '4', ((1, 1), (2,)): '12', ((1, 1, 1, 1), ()): '-11/5', ((1, 3), ()): '-14/45'}
+PASS  g4 Sol 2 I_3 image even in X, (TT) coefficient 4; HV coefficients {((), (2, 2)): '4', ((1, 1), (2,)): '3/5', ((1, 1, 1, 1), ()): '13/200', ((1, 3), ()): '3787/1800'}
+PASS  g4 Sol 3 I_3 image even in X, (TT) coefficient 4; HV coefficients {((), (2, 2)): '4', ((1, 1), (2,)): '4/3', ((1, 1, 1, 1), ()): '1', ((1, 3), ()): '182/135'}
+GATES PASSED

@@ -1,0 +1,10 @@
+dim:
+0
+vdim:
+4
+eliminant ii:
+Ji[1]=36*ii-103
+eliminant ee:
+Je[1]=1679616*ee^2-11448864*ee+2506369
+eliminant z:
+Jz[1]=3486784401*z^4+225206325*z^2-11045

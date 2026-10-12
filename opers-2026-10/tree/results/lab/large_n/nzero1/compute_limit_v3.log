@@ -1,0 +1,48 @@
+======================================================================
+NZERO1 v3: Limits with CORRECT monic (PX^(spin+1))
+======================================================================
+
+### Mechanism (from trace_zero.log + verify_zero.log) ###
+At t=4 (k=-6, n=-9) spin 9 and t=7 (k=-3, n=-3) spins 3,9:
+- The WKB s_k contains ONLY monomials v^a(v+E')^c with a a non-positive integer.
+- thwkb.integrate_reg() replaces Gamma(a) by its residue (-1)^m/m! for a=-m.
+- For terms where Gamma(-c) ALSO has a pole (i.e., -c is a non-positive integer),
+  the product res(Gamma(a)) * Gamma(-c) = finite * infinity -> killed (set to 0).
+- At these exceptional cells, ALL surviving terms cancel exactly in the sum.
+  integrate_reg returns an EMPTY dict (0 terms).
+- File:line: thwkb.py ~L218-225 (integrate_reg), the `if g == 0: continue` line.
+- The zero is then detected in ext_fibres.py score() via gnorm(ch[s]) == 0.
+
+### Limit: monic(WKB(t0+delta)) vs certified(t0+delta) ###
+
+--- t=4 spin 9 ---
+  t=401/100 (+1/100): vs cert(same t): MATCH | vs cert(t0): DIFF(20) [8.9s]
+  t=2001/500 (+1/500): vs cert(same t): MATCH | vs cert(t0): DIFF(20) [9.5s]
+  t=4001/1000 (+1/1000): vs cert(same t): MATCH | vs cert(t0): DIFF(20) [9.7s]
+
+--- t=7 spin 3 ---
+  t=701/100 (+1/100): vs cert(same t): MATCH | vs cert(t0): DIFF(5) [9.1s]
+  t=3501/500 (+1/500): vs cert(same t): MATCH | vs cert(t0): DIFF(5) [9.8s]
+  t=7001/1000 (+1/1000): vs cert(same t): MATCH | vs cert(t0): DIFF(5) [10.0s]
+
+--- t=7 spin 9 ---
+  t=701/100 (+1/100): vs cert(same t): MATCH | vs cert(t0): DIFF(20) [9.1s]
+  t=3501/500 (+1/500): vs cert(same t): MATCH | vs cert(t0): DIFF(20) [9.8s]
+  t=7001/1000 (+1/1000): vs cert(same t): MATCH | vs cert(t0): DIFF(20) [10.0s]
+
+### CONTROLS ###
+C1 (t=4 spin 7, regular): MATCH
+  C2 t=401/100 spin 1: MATCH
+  C2 t=401/100 spin 3: MATCH
+  C2 t=401/100 spin 5: MATCH
+  C2 t=401/100 spin 7: MATCH
+  C2 t=401/100 spin 9: MATCH
+C2 summary: ALL MATCH
+
+C3 (TAMPER: M -> M/(1+eps) i.e. k -> k*(1+eps), eps=1/10):
+  Tampered at t=401/100 spin 9: DIFF(15) (GOOD - breaks)
+
+C4 (TAMPER at t=4 spin 9: perturb M by 1%):
+  Tamper raised: ZeroDivisionError: Fraction(1, 0)
+
+Total time: 117s

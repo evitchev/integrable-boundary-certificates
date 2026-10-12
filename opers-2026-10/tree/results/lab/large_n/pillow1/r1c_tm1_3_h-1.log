@@ -1,0 +1,3 @@
+t' = -1/3: consistent role maps (pillow base, pillow c-shift, lam): []
+RESULT: NONE (no affine shift map; invariant mismatch)
+exit 0

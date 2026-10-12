@@ -2,7 +2,8 @@
 import json
 import sympy as sp
 import wkb3 as W3
-ROOT = '<repo>/results/lab/'
+import os as _os_kit; _KITROOT = _os_kit.path.join(_os_kit.path.dirname(_os_kit.path.abspath(__file__)), '..', '..', '..', '..') + '/'  # KIT PATCH: repo root from __file__ (was an absolute path)
+ROOT = _KITROOT + 'results/lab/'
 l0, l1 = W3.l0, W3.l1
 ts, PX, PI = sp.symbols('t PX PI')
 

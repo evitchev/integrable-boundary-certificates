@@ -1,0 +1,3 @@
+2_A_60_0: E = 1000.0 log|Q| = ['9.337850159660521548124', '8.420680995010324279127', '8.905459961674070194469'] signs [-1, 1, 1] (13s)
+archived point points/pt_2_A_60_0.json: E = 1000.0; recomputed max |delta log|Q_j|| < 1e-50: True; E, signs, thetas identical: True (archived run 12 s, now 13 s)
+SPOT POINT: PASS

@@ -1,0 +1,39 @@
+== placement w = s^2, no gauge:
+   theta^2: (s - 1)**2*(s + 1)**2
+   theta^1: 2*s**2*(s - 1)*(s + 1)
+   theta^0: (8*X*s**2 - 4*Y*s**4 + 4*Y*s**2 + 16*kappa**2*s**5 - 16*kappa**2*s**3 - 5*s**4 + 6*s**2 - 1)/4
+   V(1) = -X/2 ; exponents at s = 1 satisfy 4 r^2 = 4 V(1) -> r = +-sqrt(V(1)) (in the variable 1 - s^2)
+   gauge h = 0, g = 0: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = 0, g = 1/2: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = 0, g = -1/2: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = 0, g = 1/4: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = 0, g = -1/4: common (1-s^2)^0 removed; s-shifts [0, 2, 3, 4, 5] (5 terms); kappa^2 carried by shifts [3, 5]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = 0: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = 1/2: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = -1/2: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = 1/4: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = sqrt(2)*sqrt(-X)/2, g = -1/4: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = 0: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = 1/2: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = -1/2: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = 1/4: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+   gauge h = -sqrt(2)*sqrt(-X)/2, g = -1/4: common (1-s^2)^1 removed; s-shifts [0, 2, 3] (3 terms); kappa^2 carried by shifts [3]
+MINIMAL: (3, sqrt(2)*sqrt(-X)/2, 0, [0, 2, 3], [3])
+   reduced theta-polynomials per shift:
+     s^0: (2*T - 1)*(2*T + 1)/4
+     s^2: -(4*T**2 + 8*sqrt(2)*T*sqrt(-X) + 8*T - 8*X - 4*Y + 8*sqrt(2)*sqrt(-X) - 5)/4
+     s^3: -4*kappa**2
+h1 = 0, h2 = 0: shifts [0, 2, 3, 4, 5] (5 terms), E at [3, 5]
+h1 = 0, h2 = sqrt(2)*sqrt(-X)/2: shifts [0, 1, 2, 3, 4] (5 terms), E at [3, 4]
+h1 = 0, h2 = -sqrt(2)*sqrt(-X)/2: shifts [0, 1, 2, 3, 4] (5 terms), E at [3, 4]
+h1 = sqrt(2)*sqrt(-X)/2, h2 = 0: shifts [0, 1, 2, 3, 4] (5 terms), E at [3, 4]
+h1 = sqrt(2)*sqrt(-X)/2, h2 = sqrt(2)*sqrt(-X)/2: shifts [0, 2, 3] (3 terms), E at [3]  -> invariant [-2, 2/3]
+h1 = sqrt(2)*sqrt(-X)/2, h2 = -sqrt(2)*sqrt(-X)/2: shifts [0, 1, 2, 3] (4 terms), E at [3]
+h1 = -sqrt(2)*sqrt(-X)/2, h2 = 0: shifts [0, 1, 2, 3, 4] (5 terms), E at [3, 4]
+h1 = -sqrt(2)*sqrt(-X)/2, h2 = sqrt(2)*sqrt(-X)/2: shifts [0, 1, 2, 3] (4 terms), E at [3]
+h1 = -sqrt(2)*sqrt(-X)/2, h2 = -sqrt(2)*sqrt(-X)/2: shifts [0, 2, 3] (3 terms), E at [3]  -> invariant [-2, 2/3]
+PILLOW 3-term invariants found: {(-2, 2/3)}
+Sol 1 (t = -1/3): shifts {0, c, n} = (0, -2/3, 4/3)  invariant [-1/2, 1/3]
+Sol 2 (t = +1/3): shifts {0, c, n} = (0, -2, 2)  invariant [-1, 1/2]
+Sol 1 Schrodinger form (Suzuki M = -2): shifts {0, -2, -1, 2 (E)}: 4 terms
+exit 0

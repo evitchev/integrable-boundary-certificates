@@ -1,0 +1,35 @@
+curve in p verified: N = (t^2-25)/(t^2-1), s = -24t/(t^2-1) with t = (2+p^2)/(2-p^2)
+
+Sol 1: two-boson images symbolic in p: I_3 9 monomials, I_5 23 monomials  (0s)
+   S1  beta = -p/2, a^2 = 1 - p^2/4           I_3 conserved identically: True   I_5 conserved identically: True  (1s)
+   Virasoro beta_+ = p, a = 0                 I_3 conserved identically: True   I_5 conserved identically: True  (1s)
+   Virasoro beta_- = -2/p, a = 0              I_3 conserved identically: True   I_5 conserved identically: True  (2s)
+   negative: beta = p/3, a = 0                I_3: False (2 conditions nonzero)   I_5: False (7 nonzero)
+   negative: beta = -p/2, a^2 = 1 - p^2/3     I_3: False (5 conditions nonzero)   I_5: False (16 nonzero)
+   negative: mirror beta = +p/2, a^2 = 1 - p^2/4 I_3: False (4 conditions nonzero)   I_5: False (15 nonzero)
+   negative: the pair of Sol 2                I_3: False   I_5: False
+
+Sol 2: two-boson images symbolic in p: I_3 9 monomials, I_5 23 monomials  (5s)
+   S2  beta = -p,   a^2 = 1 - p^2             I_3 conserved identically: True   I_5 conserved identically: True  (6s)
+   Virasoro beta_+ = p, a = 0                 I_3 conserved identically: True   I_5 conserved identically: True  (6s)
+   Virasoro beta_- = -2/p, a = 0              I_3 conserved identically: True   I_5 conserved identically: True  (7s)
+   negative: beta = p/3, a = 0                I_3: False (2 conditions nonzero)   I_5: False (7 nonzero)
+   negative: beta = -p/2, a^2 = 1 - p^2/3     I_3: False (5 conditions nonzero)   I_5: False (16 nonzero)
+   negative: mirror beta = +p/2, a^2 = 1 - p^2/4 I_3: False (5 conditions nonzero)   I_5: False (16 nonzero)
+   negative: the pair of Sol 1                I_3: False   I_5: False
+
+Sol 3: two-boson images symbolic in p: I_3 9 monomials, I_5 23 monomials  (11s)
+   S3  beta = 1/p,  a^2 = 1/p^2               I_3 conserved identically: True   I_5 conserved identically: True  (12s)
+   S3' beta = -p,   a^2 = p^2                 I_3 conserved identically: True   I_5 conserved identically: True  (12s)
+   Virasoro beta_+ = p, a = 0                 I_3 conserved identically: True   I_5 conserved identically: True  (12s)
+   Virasoro beta_- = -2/p, a = 0              I_3 conserved identically: True   I_5 conserved identically: True  (13s)
+   negative: beta = p/3, a = 0                I_3: False (2 conditions nonzero)   I_5: False (7 nonzero)
+   negative: beta = -p/2, a^2 = 1 - p^2/3     I_3: False (5 conditions nonzero)   I_5: False (16 nonzero)
+   negative: mirror beta = +p/2, a^2 = 1 - p^2/4 I_3: False (5 conditions nonzero)   I_5: False (16 nonzero)
+   negative: the pair of Sol 1                I_3: False   I_5: False
+
+RESULT: all listed pairs conserved against I_3 and I_5 identically in p; negatives fail
+
+real	0m16.115s
+user	0m16.094s
+sys	0m0.020s

@@ -1,0 +1,12 @@
+BLZ engine at M = 1e-8, 1e-16 done (9s)
+B1 Sol 3, k -> -4, t = 5: operator runs done (31s)
+   spin 3: |operator - certified table| = 6.667e-09, 6.667e-17 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 6.667e-09, 6.667e-17 (O(h))
+   spin 5: |operator - certified table| = 1.200e-08, 1.200e-16 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 3.700e-08, 3.700e-16 (O(h))
+   spin 7: |operator - certified table| = 3.857e-08, 3.857e-16 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 1.254e-07, 1.254e-15 (O(h))
+   spin 9: |operator - certified table| = 1.667e-07, 1.667e-15 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 5.536e-07, 5.536e-15 (O(h)); vs item 271 printed polynomial (h = 1e-16): 3.088e-17
+B2 Sol 2, k -> -3/2, t = -5: operator runs done (55s)
+   spin 3: |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 1.111e-08, 1.111e-16 (O(h))
+   spin 5: |operator - certified table| = 3.600e-08, 3.600e-16 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 3.600e-08, 3.600e-16 (O(h))
+   spin 7: |operator - certified table| = 1.371e-07, 1.371e-15 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 8.000e-08, 8.000e-16 (O(h))
+   spin 9: |operator - certified table| = 5.417e-07, 5.417e-15 (O(h)); table depends on PX^2 + pi^2 only: True; |operator - BLZ(M=h) at l^2 = 4 Delta (1+M)^2| = 2.784e-07, 2.784e-15 (O(h)); vs item 271 printed polynomial (h = 1e-16): 4.940e-16
+(B) charge level: AS SEALED

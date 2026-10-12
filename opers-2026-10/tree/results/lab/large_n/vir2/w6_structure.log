@@ -1,0 +1,54 @@
+
+=== p = 3/2: t = -17, N = 11/12, rho = 1/12
+   Sol 1 weight 4, pair(s) alone:             commutant dim mod d =  2 ; cylindrical I_3 inside: True  (0s)
+   Sol 1 weight 4, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_3 inside: True  (0s)
+   Sol 1 weight 4, Virasoro beta_+ alone:     commutant dim mod d =  5 ; cylindrical I_3 inside: True  (0s)
+   Sol 1 weight 6, pair(s) alone:             commutant dim mod d =  5 ; cylindrical I_5 inside: True  (1s)
+   Sol 1 weight 6, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_5 inside: True  (2s)
+   Sol 1 weight 6, Virasoro beta_+ alone:     commutant dim mod d = 13 ; cylindrical I_5 inside: True  (2s)
+   Sol 2 weight 4, pair(s) alone:             commutant dim mod d =  2 ; cylindrical I_3 inside: True  (2s)
+   Sol 2 weight 4, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_3 inside: True  (2s)
+   Sol 2 weight 4, Virasoro beta_+ alone:     commutant dim mod d =  5 ; cylindrical I_3 inside: True  (2s)
+   Sol 2 weight 6, pair(s) alone:             commutant dim mod d =  5 ; cylindrical I_5 inside: True  (3s)
+   Sol 2 weight 6, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_5 inside: True  (3s)
+   Sol 2 weight 6, Virasoro beta_+ alone:     commutant dim mod d = 13 ; cylindrical I_5 inside: True  (4s)
+   Sol 3 weight 4, pair(s) alone:             commutant dim mod d =  3 ; cylindrical I_3 inside: True  (4s)
+   Sol 3 weight 4, S3 alone:                  commutant dim mod d =  3 ; cylindrical I_3 inside: True  (4s)
+   Sol 3 weight 4, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_3 inside: True  (4s)
+   Sol 3 weight 4, Virasoro beta_+ alone:     commutant dim mod d =  5 ; cylindrical I_3 inside: True  (4s)
+   Sol 3 weight 6, pair(s) alone:             commutant dim mod d =  7 ; cylindrical I_5 inside: True  (5s)
+   Sol 3 weight 6, S3 alone:                  commutant dim mod d =  7 ; cylindrical I_5 inside: True  (6s)
+   Sol 3 weight 6, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_5 inside: True  (8s)
+   Sol 3 weight 6, Virasoro beta_+ alone:     commutant dim mod d = 13 ; cylindrical I_5 inside: True  (8s)
+
+=== p = -2/3: t = 11/7, N = -46/3, rho = 7/6
+   Sol 1 weight 4, pair(s) alone:             commutant dim mod d =  2 ; cylindrical I_3 inside: True  (8s)
+   Sol 1 weight 4, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_3 inside: True  (8s)
+   Sol 1 weight 4, Virasoro beta_+ alone:     commutant dim mod d =  5 ; cylindrical I_3 inside: True  (8s)
+   Sol 1 weight 6, pair(s) alone:             commutant dim mod d =  5 ; cylindrical I_5 inside: True  (9s)
+   Sol 1 weight 6, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_5 inside: True  (9s)
+   Sol 1 weight 6, Virasoro beta_+ alone:     commutant dim mod d = 13 ; cylindrical I_5 inside: True  (9s)
+   Sol 2 weight 4, pair(s) alone:             commutant dim mod d =  2 ; cylindrical I_3 inside: True  (9s)
+   Sol 2 weight 4, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_3 inside: True  (10s)
+   Sol 2 weight 4, Virasoro beta_+ alone:     commutant dim mod d =  5 ; cylindrical I_3 inside: True  (10s)
+   Sol 2 weight 6, pair(s) alone:             commutant dim mod d =  5 ; cylindrical I_5 inside: True  (10s)
+   Sol 2 weight 6, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_5 inside: True  (11s)
+   Sol 2 weight 6, Virasoro beta_+ alone:     commutant dim mod d = 13 ; cylindrical I_5 inside: True  (11s)
+   Sol 3 weight 4, pair(s) alone:             commutant dim mod d =  3 ; cylindrical I_3 inside: True  (11s)
+   Sol 3 weight 4, S3 alone:                  commutant dim mod d =  3 ; cylindrical I_3 inside: True  (11s)
+   Sol 3 weight 4, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_3 inside: True  (11s)
+   Sol 3 weight 4, Virasoro beta_+ alone:     commutant dim mod d =  5 ; cylindrical I_3 inside: True  (11s)
+   Sol 3 weight 6, pair(s) alone:             commutant dim mod d =  7 ; cylindrical I_5 inside: True  (13s)
+   Sol 3 weight 6, S3 alone:                  commutant dim mod d =  7 ; cylindrical I_5 inside: True  (14s)
+   Sol 3 weight 6, pair(s) + Virasoro beta_+: commutant dim mod d =  1 ; cylindrical I_5 inside: True  (15s)
+   Sol 3 weight 6, Virasoro beta_+ alone:     commutant dim mod d = 13 ; cylindrical I_5 inside: True  (15s)
+
+== Sol 3: I_3 in U = (X + phi)/sqrt2, W = (phi - X)/sqrt2, symbolic in p ==
+   I_3 (Sol 3) = alpha [(T_U T_U) + (T_W T_W)] + lambda T_U T_W + total derivative, with rho_U = rho_W = (1/p - p)/sqrt2: True
+   alpha = 2*(3*p**2 - 2)   lambda = -12*(p**2 - 2)   c_U = c_W = 1 - 12 rho_U^2 = -(2*p**2 - 3)*(3*p**2 - 2)/p**2
+
+STRUCTURE OK
+
+real	0m15.888s
+user	0m15.860s
+sys	0m0.028s

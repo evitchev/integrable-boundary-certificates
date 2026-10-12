@@ -1,0 +1,3 @@
+Sol 1: degree 4, verified vs numeric kernel: True  (9s)
+Sol 2: degree 5, verified vs numeric kernel: True  (28s)
+Sol 3: degree 5, verified vs numeric kernel: True  (45s)

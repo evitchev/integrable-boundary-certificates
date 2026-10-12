@@ -1,0 +1,32 @@
+======================================================================
+NZERO1 EXACT SERIES v2: monic(WKB(t0+1/N)) - cert(t0) as N -> oo
+======================================================================
+
+### t=4 spin 9 ###
+  N=100: monic coefficient ZERO (unexpected)
+  N=200: monic coefficient ZERO (unexpected)
+  N=400: monic coefficient ZERO (unexpected)
+  N=800: monic coefficient ZERO (unexpected)
+
+### t=7 spin 3 ###
+  N=100: max|coeff| = -25245/3607 [9.2s]
+  N=200: max|coeff| = -50445/7207 [9.6s]
+  N=400: max|coeff| = -100845/14407 [9.9s]
+  N=800: max|coeff| = -201645/28807 [10.1s]
+  |c_i/c_3| ratios: ['4043127/4043', '16150247/161', '64556487/645']
+  (Expected ~2 for each step if O(1/N))
+
+  EXACT LIMIT:
+  monic(WKB(t0+eps)) = cert(t0+eps)  [EXACT identity for all rational t0+eps in domain]
+  lim_{eps->0} cert(t0+eps) = cert(t0)  [rational function, continuous]
+  Therefore: lim_{eps->0} monic(WKB(t0+eps)) = cert(t0)
+  cert(t0) = 6 terms (the certified charge)
+  The O(eps) correction vanishes in the limit.
+
+### t=7 spin 9 ###
+  N=100: monic coefficient ZERO (unexpected)
+  N=200: monic coefficient ZERO (unexpected)
+  N=400: monic coefficient ZERO (unexpected)
+  N=800: monic coefficient ZERO (unexpected)
+
+Total time: 114s

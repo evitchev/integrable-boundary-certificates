@@ -7,9 +7,9 @@ integrals of motion" (2026), and check that the archived results reproduce. Ever
 ## Quick start
 
     python3 run_all.py --list          # the checks, with the paper section each supports
-    python3 run_all.py --quick         # all quick checks (about 35 min on one core)
+    python3 run_all.py --quick         # all quick checks (about 1.5 h on one core)
     python3 run_all.py --drill         # every check re-run with a deliberate tamper; each tampered run must FAIL
-    python3 run_all.py --full          # quick checks plus the slower ones (about 1.5 h; num2_t1_zeros alone about 35 min)
+    python3 run_all.py --full          # quick checks plus the slower ones (about 6 h; num3_t1_zeros and num3_wkb_pred about 1 h each)
     python3 run_all.py --only gate,thm2_ward --log out.txt
 
 `run_all.py` resolves every path from its own location, so the working directory does not matter. It first checks every
@@ -23,7 +23,7 @@ overwritten. A check PASSES only if:
 
 Exit status: 0 if all requested checks pass, 1 otherwise.
 
-Tested with Python 3.12.8, sympy 1.14.0 and mpmath 1.3.0. The v1.2.4 quick run (all 55 checks) used Python 3.8.10 / sympy 1.13.3, and the 27 checks new in v1.2.4 were also run under Python 3.12.8 / sympy 1.14.0 (`logs/VERSIONS.txt`). The two `second2_h2b_*` checks also pass, with byte-identical output, under Python 3.8.10 / sympy 1.13.3. Under sympy
+Release v1.2.5 was run in full (all checks, and all drills) under Python 3.8.10 / sympy 1.13.3, and its new checks and drills also under Python 3.12.8 / sympy 1.14.0, with HOME pointing to an empty directory (`logs/VERSIONS.txt`, `logs/v125_*`). Earlier: tested with Python 3.12.8, sympy 1.14.0 and mpmath 1.3.0. The v1.2.4 quick run (all 55 checks) used Python 3.8.10 / sympy 1.13.3, and the 27 checks new in v1.2.4 were also run under Python 3.12.8 / sympy 1.14.0 (`logs/VERSIONS.txt`). The two `second2_h2b_*` checks also pass, with byte-identical output, under Python 3.8.10 / sympy 1.13.3. Under sympy
 1.14.0 the floating-point magnitudes they print as diagnostics (`min ... max ...` of |residual| over the numerical roots)
 differ slightly. These numbers are therefore masked in the comparison for those two checks only. The exact counts of
 non-zero residuals, computed in Q[z]/(m), are compared in full. Under a different sympy version, printed expressions can differ
@@ -94,6 +94,25 @@ The checks follow the paper's section titles.
 | `second2_h2b_t9o4` (full) | The opers (second-order descriptions) | The same exclusion at t = 9/4. | exact exclusion |
 | `num1_shoot` (full) | Numerical spectral check | Zeros of D(E) equal the eigenvalues found by outward shooting (three levels, 1e-30 tolerance). | numerical |
 
+### New in v1.2.5
+
+v1.2.5 adds 111 checks (each with a drill), so that every computation the paper reports from the archive can be re-run from the kit
+(exceptions: "What the kit does NOT establish"). `python3 run_all.py --list` gives each check's paper section.
+
+| checks | paper section | establishes | kind |
+|---|---|---|---|
+| `vir1_*`, `vir1r_*`, `vir2r_engine_control` | The Y-sector is Vir_N (Proposition 1) | I_3 identically in t; I_5 symbolically in t; I_7..I_11 symbolically in N on the certified promoted charges (`results/qt_promotion.json`); replications with separate code (a second formal-N engine at three values of t per solution; explicit components with a randomised rank test mod p at N = 25, 26, control 28) | exact; the randomised rank test is probabilistic |
+| `vir2_*`, `vir2r_replication`, `vir2r_posthoc_vir_alone`, `br2_direct_paperclip` | Screening systems; Boundary interaction | the screening pairs are conserved by I_3, I_5 (symbolic in p) and I_7, I_9 (sample fibres); Gram matrices and exponents; commutant dimensions at weights 4, 6, 8 at 3-5 fibres per solution (not symbolically in t); LVZ's printed W_4 is conserved by the four hairpin exponentials | exact |
+| `nz_*` | Spins that are multiples of n | the operator's coefficient vanishes at the drop points (ten points, i = 1, 2, 3; checked, not proved); the Beta prefactor; the limits at the cells (exact evaluation at two step sizes); the two-dimensional kernel on the jump tower for i = 1, 2, 3 and one-dimensional kernels at the controls; the eigenvalue law (i = 3 a sealed hold-out); the fusion-product law evaluated on the archived kernel records i = 3..6 (difference 0); W_U W_W at i = 1, 2 | exact |
+| `red1_*`, `red2_*`, `pillow1_*` | The known points | anchor t = 3: the limiting fourth-order operator and its terminating energies (the two oscillator ladders, N = 0..3); N = 0: the log-radial Kondo limit; paperclip: Solution 1 and Solution 3 relations; exact point: the pillow's recurrence forms and invariants (no relation found) | exact |
+| `nzero1_fibres` (full) | Verification (exceptional cells) | Solution 2 cells at n < 0: at t0 + 1/N, N = 25, 50, 100, 200, the operator coefficient equals the certified charge exactly; the differences from t0 shrink like 1/N | exact |
+| `num3_*` | Numerical spectral check (third order) | re-fits of the archived Q data on the registered and the extended grids (the figures quoted), the wrong-ordering control, the controls X0/X1/X1', the post-hoc window and E^-3 diagnostics, the T1 ratio (re-verified from the archived Q values and recomputed at the worst cell; `num3_t1_zeros` re-runs the sealed script), one ODE point recomputed (`num3_spot_point`), the data assembly, and the WKB targets (`num3_wkb_pred`) | numerical |
+| `exc4_*` | Excited states (Solution 3, level two; the half-level rule) | the level-two data blocks recomputed; the polynomial systems regenerated byte-identically from the archived scripts; the Singular/msolve outputs verified in pure Python (Groebner basis property, membership of the inputs, I_1 = vacuum + 4, the I_3 quintic, 40 = 5 x 8 ordered solutions; at order six: two solutions, half a level); the registered prediction against the blind data | exact |
+
+New kit helpers (not archived files): `tree/results/lab/large_n/kit_num3/`, `tree/results/lab/large_n/kit_exc4/` (verifiers; their reference logs were
+made when the kit was assembled) and `tree/lab/kit_gunzip_run.py` (the i = 6 kernel record ships gzipped, `INPUTS.SHA256`; the helper checks the hash
+of the decompressed file before the archived script reads it).
+
 ## What the kit does NOT establish
 
 - Theorem 3 (Appendix A of the paper) is a hand proof. `thm3_*` check its constant and its algebraic identities numerically and
@@ -102,11 +121,22 @@ The checks follow the paper's section titles.
 - `akns_*` compare published formulas with the certified tables. They do not prove that Solution 1 and quantum AKNS coincide beyond
   spin 3 (lower layers at spins >= 5 are not printed by FL), nor the spectral identification, which Bazhanov-Tsuboi state as a conjecture.
 
-- Agreement of local charges (WKB coefficients) is not equality of spectra. Equality of spectral determinants is checked
-  numerically only for Sol 1 at one value of t (`num1_*`). Theorem 1 is a formal (Mellin-level) equivalence; its
-  spectral version needs hypotheses the paper does not prove.
-- The Sol 2 cells at n < 0 (t = 4 spin 9; t = 7 spins 3, 9) where the engine evaluates to zero are not understood.
+- Agreement of local charges (WKB coefficients) is not equality of spectra. The identification of the WKB coefficients with the
+  asymptotic coefficients of the spectral determinants is checked numerically for all three operators at the values of t of the
+  paper's Section 6 (`num1_*`, `num2_*`, `num3_*`, `numtab`). Theorem 1 is a formal (Mellin-level) equivalence; its spectral
+  version is proved only in the case of Theorem 3 (Sol 3, t = 2) and checked numerically for Sol 3 and Sol 2 at t = 2
+  (`num2_*`, `thm3_constant`, `num3_*`).
+- The Sol 2 cells at n < 0 (t = 4 spin 9; t = 7 spins 3, 9), where the engine evaluates to zero, are explained in the paper as an
+  evaluation artefact at coincident Gamma poles (checked numerically at the fibres t0 + 1/N, `nzero1_*`); a symbolic proof that
+  they are removable limits is open.
 - The high-precision Q-function integrations of NUM2 (`num2/num2_data.py`, `num2_point.py`) are not re-run; their outputs (`data_*.json`) are inputs to the fits, like the NUM1 determinant data. The extra non-WKB terms at t = 9/4 were found post hoc, and their coefficients have no closed form here.
+- Not covered in v1.2.5 (stated in the paper as such, or argued in the stage notes only): the kernel dimension 2 at i = 4, 5, 6 of the
+  jump tower and the kernel membership of the fusion-law witnesses at i = 3..6 (archived exact fast-path records; i = 3, 4 also certified by
+  separate computations of the research repository not included here); completeness of the Singular/msolve solution sets of EXC4 (the kit
+  verifies the bases and solutions, not that no solution is missing) and its ordering tamper; the ODE integrations of NUM3 except one point;
+  the anchor statement that the limiting operator is not the least common left multiple of the two oscillator operators; decoupling of the
+  other branches at N = 0; the exact-point gauge search beyond its finite grid; the W^ev(c = N, lambda) statement; the doubling argument and
+  the Kac labels of the boundary fields.
 - The certified tables are inputs. Their certification belongs to the earlier papers and certificates of this
   repository and is not repeated here.
 - `num1_doublet_average` re-analyses archived determinant data. Recomputing those data takes many core-hours
@@ -180,6 +210,11 @@ The stage notes are kept as written. Three statements in them were later superse
   marked line was added to each; nothing else changed.
 - Files that the kit does not execute (logs of superseded runs, helper scripts, process-id files, notes) had private
   absolute paths in their text (46 redaction entries in `PATCHES.json`). These were replaced by `<repo>/` or `<home>/`.
+- v1.2.5: 21 archived scripts opened files through an absolute path or imported code from a private read-only clone of the repository's
+  `code/` (among them `sol2f/common.py` and `sol2_ext_fable/common.py`, used by checks shipped since v1.2.2: those checks could not run
+  outside the author's machine). They now resolve the same files relative to their own location; the code modules are included under
+  `tree/code/` and `tree/lab/`, byte-identical to the repository's. Further files with private paths in their text were redacted as above
+  (default paths that the checks override at run time, or files the kit does not execute; 41 further redaction entries). Every entry is in `PATCHES.json`.
 
 Because of these edits, the per-stage `SHA256SUMS` (and `SHA256SUMS_subset`) from the time of archiving no longer match for those files.
 `PATCHES.json` gives the archived hash of each one.

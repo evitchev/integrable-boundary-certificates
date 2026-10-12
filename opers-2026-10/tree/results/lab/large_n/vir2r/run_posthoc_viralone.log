@@ -1,0 +1,4 @@
+Sol 1 p = 8/5, weight 4: commutant mod d with exp(p phi) only: 5; with exp(p phi) + V_+ only: 2
+Sol 1 p = 8/5, weight 6: commutant mod d with exp(p phi) only: 13; with exp(p phi) + V_+ only: 5
+Sol 1 p = 8/5, weight 8: commutant mod d with exp(p phi) only: 30; with exp(p phi) + V_+ only: 11
+exit 0

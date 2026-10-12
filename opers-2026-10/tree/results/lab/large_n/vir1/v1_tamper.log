@@ -1,0 +1,98 @@
+seal hash ok 6f23e25680592942a8370a9417609c7c558323a4af0c32c4dfe246a33993cf23
+dim Q_4 = 1, dim Q_6 = 3
+weight 6: complement of dV_5 has 12 monomials; target quotient V_9/dV_8 has dim 24
+120 generic sample fibres (fixed seed), both signs: 55 negative
+
+== P-spin3: W_4 coordinate of I_3 ==
+REFUTED  Sol 1: W_4 coordinate of I_3 = 0 at all 120 sample fibres (values seen: [Fraction(-87, 1000), Fraction(-43, 1000), Fraction(-17, 600), Fraction(-27, 1000), Fraction(-83, 5000), Fraction(-3, 200), Fraction(-41, 3000), Fraction(-13, 1000), Fraction(-81, 7000), Fraction(-51, 5000), Fraction(-1, 100), Fraction(-1, 120), Fraction(-39, 5000), Fraction(-7, 1000), Fraction(-3, 520), Fraction(-47, 9000), Fraction(-23, 5000), Fraction(-9, 2000), Fraction(-13, 3000), Fraction(-71, 17000), Fraction(-9, 2200), Fraction(-7, 1800), Fraction(-11, 3000), Fraction(-69, 19000), Fraction(-41, 15000), Fraction(-63, 25000), Fraction(-1, 400), Fraction(-31, 13000), Fraction(-39, 17000), Fraction(-3, 1400), Fraction(-19, 9000), Fraction(-59, 29000), Fraction(-9, 5000), Fraction(-33, 23000), Fraction(-1, 750), Fraction(-9, 7000), Fraction(-31, 25000), Fraction(-3, 2600), Fraction(-29, 27000), Fraction(-27, 29000), Fraction(-13, 15000), Fraction(-7, 9000), Fraction(-3, 4000), Fraction(-23, 33000), Fraction(-11, 17000), Fraction(-19, 37000), Fraction(-1, 2200), Fraction(-3, 13000), Fraction(7, 23000), Fraction(9, 25000), Fraction(11, 27000), Fraction(49, 33000), Fraction(47, 31000), Fraction(9, 5800), Fraction(43, 27000), Fraction(39, 23000), Fraction(7, 3800), Fraction(33, 17000), Fraction(27, 13000), Fraction(107, 51000), Fraction(3, 1400), Fraction(13, 6000), Fraction(103, 47000), Fraction(29, 13000), Fraction(101, 45000), Fraction(1, 440), Fraction(99, 43000), Fraction(97, 41000), Fraction(3, 1250), Fraction(19, 7800), Fraction(93, 37000), Fraction(89, 33000), Fraction(139, 51000), Fraction(11, 4000), Fraction(69, 25000), Fraction(1, 360), Fraction(17, 6000), Fraction(43, 15000), Fraction(27, 9400), Fraction(131, 43000), Fraction(83, 27000), Fraction(129, 41000), Fraction(41, 13000), Fraction(127, 39000), Fraction(1, 300), Fraction(1, 296), Fraction(31, 9000), Fraction(123, 35000), Fraction(61, 17000), Fraction(3, 800), Fraction(19, 5000), Fraction(117, 29000), Fraction(37, 9000), Fraction(29, 7000), Fraction(57, 13000), Fraction(9, 2000), Fraction(7, 1500), Fraction(109, 21000), Fraction(107, 19000), Fraction(17, 3000), Fraction(67, 11000), Fraction(19, 3000), Fraction(33, 5000), Fraction(51, 7000), Fraction(101, 13000), Fraction(1, 125), Fraction(31, 3000), Fraction(97, 9000), Fraction(61, 5000), Fraction(19, 1400), Fraction(3, 200), Fraction(47, 3000), Fraction(17, 1000), Fraction(93, 5000), Fraction(59, 3000), Fraction(23, 1000), Fraction(29, 1000), Fraction(91, 3000), Fraction(57, 1000), Fraction(89, 1000)])
+REFUTED  Sol 2: W_4 coordinate of I_3 = 0 at all 120 sample fibres (values seen: [Fraction(-1, 24000), Fraction(-19, 462400), Fraction(-21, 512000), Fraction(-39, 968000), Fraction(-1, 25000), Fraction(-1, 27000), Fraction(-1, 32000), Fraction(-87, 2888000), Fraction(-1, 43200), Fraction(9, 1352000), Fraction(11, 600000), Fraction(177, 5000000), Fraction(19, 512000), Fraction(1, 21125), Fraction(129, 2312000), Fraction(111, 1568000), Fraction(1, 13500), Fraction(553, 6728000), Fraction(87, 800000), Fraction(1, 8000), Fraction(657, 4232000), Fraction(13, 76800), Fraction(69, 392000), Fraction(913, 5000000), Fraction(33, 169000), Fraction(403, 1944000), Fraction(309, 1345600), Fraction(3, 12500), Fraction(11, 43200), Fraction(531, 2048000), Fraction(779, 2904000), Fraction(2, 7225), Fraction(3289, 10952000), Fraction(301, 968000), Fraction(1, 3000), Fraction(477, 1352000), Fraction(1957, 4232000), Fraction(2373, 5000000), Fraction(943, 1944000), Fraction(91, 128000), Fraction(2183, 2904000), Fraction(1169, 1537600), Fraction(153, 200000), Fraction(5181, 6728000), Fraction(1519, 1944000), Fraction(3429, 4232000), Fraction(2461, 2888000), Fraction(2037, 2312000), Fraction(4983, 5408000), Fraction(429, 462400), Fraction(369, 392000), Fraction(1457, 1536000), Fraction(16897, 17672000), Fraction(1309, 1352000), Fraction(5251, 5400000), Fraction(3799, 3872000), Fraction(14649, 14792000), Fraction(2717, 2689600), Fraction(3267, 3200000), Fraction(4187, 4056000), Fraction(11577, 10952000), Fraction(1081, 968000), Fraction(7811, 6936000), Fraction(2323, 2048000), Fraction(711, 625000), Fraction(247, 216000), Fraction(119, 102400), Fraction(11, 9375), Fraction(20769, 17672000), Fraction(93, 78400), Fraction(3653, 2958400), Fraction(2419, 1944000), Fraction(17073, 13448000), Fraction(43, 33800), Fraction(1769, 1352000), Fraction(171, 128000), Fraction(14809, 10952000), Fraction(1189, 864000), Fraction(13737, 9800000), Fraction(413, 289000), Fraction(3051, 2048000), Fraction(1207, 800000), Fraction(10761, 6728000), Fraction(11, 6750), Fraction(103, 62720), Fraction(11, 6400), Fraction(147, 84500), Fraction(183, 102400), Fraction(713, 384000), Fraction(1, 500), Fraction(817, 392000), Fraction(6601, 2888000), Fraction(221, 96000), Fraction(97, 38720), Fraction(21, 8000), Fraction(69, 25000), Fraction(153, 49000), Fraction(917, 270400), Fraction(697, 200000), Fraction(451, 128000), Fraction(1, 200), Fraction(1147, 216000), Fraction(1273, 200000), Fraction(2929, 392000), Fraction(279, 32000), Fraction(7, 750), Fraction(17, 1600), Fraction(3, 250), Fraction(2457, 200000), Fraction(323, 24000), Fraction(559, 32000), Fraction(13, 500), Fraction(9, 320), Fraction(7, 200), Fraction(141, 1600), Fraction(1281, 8000), Fraction(1633, 8000)])
+REFUTED  Sol 3: W_4 coordinate of I_3 = 0 at all 120 sample fibres (values seen: [Fraction(1, 1000)])
+   functional support: [((), ((1, 1), (1, 1))), ((), ((1, 3),)), ((), ((2, 2),)), ((1, 1, 1, 1), ())]
+PASS  W_4 functional is supported on Y-only monomials, whose I_3 coefficients are t-independent -> zero identically in t
+
+== P-spin5: three non-Virasoro coordinates of I_5 ==
+   Sol 1: kernel dimensions over samples {1: 120}; (dX)^6 coefficient zero in 0 kernels
+PASS  Sol 1: kernel one-dimensional at all sample fibres
+REFUTED  Sol 1: all three non-Virasoro coordinates of I_5 vanish at all 120 sample fibres
+   Sol 2: kernel dimensions over samples {1: 120}; (dX)^6 coefficient zero in 1 kernels
+PASS  Sol 2: kernel one-dimensional at all sample fibres
+REFUTED  Sol 2: all three non-Virasoro coordinates of I_5 vanish at all 120 sample fibres
+   Sol 3: kernel dimensions over samples {1: 120}; (dX)^6 coefficient zero in 0 kernels
+PASS  Sol 3: kernel one-dimensional at all sample fibres
+REFUTED  Sol 3: all three non-Virasoro coordinates of I_5 vanish at all 120 sample fibres
+   degree bound: (t^2-1)^4 x the weight-6 system has polynomial entries of degree <= 8;
+   an adjugate kernel vector has degree <= 11 x 8 = 88 < 120 sample fibres -> identically zero
+
+== special points (full kernels) ==
+   exact point N=28, Sol 1 t=-1/3       (N,s)=(28,-9): kernel dim 1 = 0 in HV+d (+) 1 outside; I_3 W_4 coord 7/1000
+   exact point N=28, Sol 2 t=+1/3       (N,s)=(28,9): kernel dim 1 = 0 in HV+d (+) 1 outside; I_3 W_4 coord 7/1000
+   anchor N=-2, Sol 3 t=3               (N,s)=(-2,-9): kernel dim 2 = 1 in HV+d (+) 1 outside; I_3 W_4 coord 1/1000
+   N=-2, Sol 2 t=3                      (N,s)=(-2,-9): kernel dim 2 = 2 in HV+d (+) 0 outside; I_3 W_4 coord 0
+   N=-2, Sol 1 t=3                      (N,s)=(-2,-9): kernel dim 1 = 0 in HV+d (+) 1 outside; I_3 W_4 coord -3/1000
+   N=0, Sol 3 t=5                       (N,s)=(0,-5): kernel dim 1 = 0 in HV+d (+) 1 outside; I_3 W_4 coord 1/1000
+   N=0, Sol 2 t=-5                      (N,s)=(0,5): kernel dim 1 = 0 in HV+d (+) 1 outside; I_3 W_4 coord 1/1000
+   jump N=-25/2, Sol 2 t=5/3            (N,s)=(-25/2,-45/2): kernel dim 2 = 1 in HV+d (+) 1 outside; I_3 W_4 coord 1/1000
+   jump N=-25/2, Sol 3 t=5/3            (N,s)=(-25/2,-45/2): kernel dim 2 = 1 in HV+d (+) 1 outside; I_3 W_4 coord 1/1000
+   N=-25/2 other sheet, Sol 1 t=5/3     (N,s)=(-25/2,-45/2): kernel dim 1 = 0 in HV+d (+) 1 outside; I_3 W_4 coord -11/1000
+   N=1 (t=inf), Sol 1                   (N,s)=(1,0): kernel dim 1 = 0 in HV+d (+) 1 outside
+   N=1 (t=inf), Sol 2                   (N,s)=(1,0): kernel dim 1 = 0 in HV+d (+) 1 outside
+   N=1 (t=inf), Sol 3                   (N,s)=(1,0): kernel dim 1 = 0 in HV+d (+) 1 outside
+   approach to exact point N=28, Sol 1 t=-1/3 kernel dims [1, 1], non-Virasoro coords all zero: False
+   approach to exact point N=28, Sol 2 t=+1/3 kernel dims [1, 1], non-Virasoro coords all zero: False
+   approach to anchor N=-2, Sol 3 t=3         kernel dims [1, 1], non-Virasoro coords all zero: False
+   approach to N=-2, Sol 2 t=3                kernel dims [1, 1], non-Virasoro coords all zero: False
+   approach to N=-2, Sol 1 t=3                kernel dims [1, 1], non-Virasoro coords all zero: False
+   approach to N=0, Sol 3 t=5                 kernel dims [1, 1], non-Virasoro coords all zero: False
+   approach to N=0, Sol 2 t=-5                kernel dims [1, 1], non-Virasoro coords all zero: False
+   approach to jump N=-25/2, Sol 2 t=5/3      kernel dims [1, 1], non-Virasoro coords all zero: False
+   approach to jump N=-25/2, Sol 3 t=5/3      kernel dims [1, 1], non-Virasoro coords all zero: False
+   approach to N=-25/2 other sheet, Sol 1 t=5/3 kernel dims [1, 1], non-Virasoro coords all zero: False
+REFUTED  N = 28: yes (whole spin-5 kernel in HV + d, both solutions)
+REFUTED  N = -2: yes (Sol 3 anchor)
+REFUTED  N = 0: yes
+REFUTED  N = 1: yes
+REFUTED  N = -25/2: yes
+REFUTED (secondary)  P-jump t=5/3: kernel dim 2, both directions in HV + d: (2, 1)
+REFUTED (secondary)  P-jump t=3 (Sol 3): kernel dim 2, both directions in HV + d: (2, 1)
+
+== C1: cyl_membership's CLASSICAL test, reproduced with my own span ==
+   Sol 1 t=2 classical: I_3 in A<=2 False, A<=4 True;  I_5 in A<=2 False, A<=4 False, A<=6 True
+PASS  Sol 1: bcd-note table reproduced at t = 2 (I_3: no/YES; I_5: no/no/YES)
+   Sol 2 t=2 classical: I_3 in A<=2 False, A<=4 True;  I_5 in A<=2 False, A<=4 False, A<=6 True
+PASS  Sol 2: bcd-note table reproduced at t = 2 (I_3: no/YES; I_5: no/no/YES)
+   Sol 3 t=2 classical: I_3 in A<=2 False, A<=4 True;  I_5 in A<=2 False, A<=4 False, A<=6 True
+PASS  Sol 3: bcd-note table reproduced at t = 2 (I_3: no/YES; I_5: no/no/YES)
+PASS  the classical test ALSO rejects the exact point (Sol 1, t = -1/3): I_3 "not in A<=2"
+PASS  the classical test ALSO rejects the exact point (Sol 2, t = 1/3): I_3 "not in A<=2"
+
+== lead addition 1: the ladder at t = 2 with QUANTUM products (HV = <X, T_Y>) ==
+   Sol 1 t=2 quantum: I_3 in <X,T_Y> True;  I_5 in <X,T_Y> True
+HOLDS  Sol 1: I_3 and I_5 at t = 2 lie in the vertex subalgebra <X, T_Y> + Im d
+   Sol 2 t=2 quantum: I_3 in <X,T_Y> True;  I_5 in <X,T_Y> True
+HOLDS  Sol 2: I_3 and I_5 at t = 2 lie in the vertex subalgebra <X, T_Y> + Im d
+   Sol 3 t=2 quantum: I_3 in <X,T_Y> True;  I_5 in <X,T_Y> True
+HOLDS  Sol 3: I_3 and I_5 at t = 2 lie in the vertex subalgebra <X, T_Y> + Im d
+
+== C3: loop-factor tamper N -> N + 1 at the exact point ==
+   Sol 1 t=-1/3: kernel dim 1 with loop N; 0 with loop N+1
+PASS  Sol 1: with the loop factor N+1 the spin-5 charge at the exact point disappears
+   Sol 2 t=1/3: kernel dim 1 with loop N; 0 with loop N+1
+PASS  Sol 2: with the loop factor N+1 the spin-5 charge at the exact point disappears
+
+== C4: plants ==
+PASS  Sol 1: I_5 + (1/1000)(33)_Y is flagged: coords ['583/276000', '41/92000', '9/3680']
+PASS  Sol 1: I_3 with (22) -> -2 + 1/1000 is flagged: coord -13/2000
+PASS  Sol 1: I_5 + (1/1000)(dX)^2(22)_Y is flagged: coords ['9/3680', '9/3680', '271/92000']
+PASS  Sol 2: I_5 + (1/1000)(33)_Y is flagged: coords ['-277/669000', '-58/27875', '-9/111500']
+PASS  Sol 2: I_3 with (22) -> -2 + 1/1000 is flagged: coord 1/1600
+PASS  Sol 2: I_5 + (1/1000)(dX)^2(22)_Y is flagged: coords ['-9/111500', '-9/111500', '187/446000']
+PASS  Sol 3: I_5 + (1/1000)(33)_Y is flagged: coords ['-11/6000', '-7/2000', '-3/2000']
+PASS  Sol 3: I_3 with (22) -> -2 + 1/1000 is flagged: coord 3/2000
+PASS  Sol 3: I_5 + (1/1000)(dX)^2(22)_Y is flagged: coords ['-3/2000', '-3/2000', '-1/1000']
+
+== C5: vacuity ==
+PASS  a generic vector of V_6 has all three coordinates nonzero: ['-123271/162000', '-151757/54000', '133817/126000']
+CONTROL-FAIL  a generic element of HV_6 + dV_5 has all three coordinates zero
+PASS  rank(HV_6 + dV_5) = 17 (expected 17 of 20)
+
+RESULT: CONTROL FAILURE (1)

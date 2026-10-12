@@ -1,0 +1,33 @@
+
+== sigma 7 (weight 8): dim V = 56, HV span 40, dim Q_w = 10  (0s)
+   vacuity: generic vector has 10 of 10 coordinates nonzero
+   Sol 1 I_7: symbolic in N: all 10 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (0s)
+      promoted I_7 at t=2 == my own kernel class mod d: True
+      classical at t=2: I_7 in A<=6: False (record: no)
+   Sol 2 I_7: symbolic in N: all 10 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (1s)
+      promoted I_7 at t=2 == my own kernel class mod d: True
+      classical at t=2: I_7 in A<=6: False (record: no)
+   Sol 3 I_7: symbolic in N: all 10 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (2s)
+      promoted I_7 at t=2 == my own kernel class mod d: True
+      classical at t=2: I_7 in A<=6: False (record: no)
+
+== sigma 9 (weight 10): dim V = 148, HV span 94, dim Q_w = 29  (3s)
+   vacuity: generic vector has 29 of 29 coordinates nonzero
+   Sol 1 I_9: symbolic in N: all 29 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (3s)
+      classical at t=2: I_9 in A<=8: False (record: no)
+   Sol 2 I_9: symbolic in N: all 29 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (6s)
+      classical at t=2: I_9 in A<=8: False (record: no)
+   Sol 3 I_9: symbolic in N: all 29 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (9s)
+      classical at t=2: I_9 in A<=8: False (record: no)
+
+== sigma 11 (weight 12): dim V = 379, HV span 212, dim Q_w = 80  (12s)
+   vacuity: generic vector has 80 of 80 coordinates nonzero
+   Sol 1 I_11: symbolic in N: all 80 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (14s)
+   Sol 2 I_11: symbolic in N: all 80 coordinates == 0: True; pointwise outside at 0 of 22 fibres (2 skipped)  (31s)
+   Sol 3 I_11: symbolic in N: all 80 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (55s)
+
+RESULT: every promoted charge tested lies in the vertex subalgebra <X, T_Y> + Im d, identically in N
+
+real	0m55.905s
+user	0m55.846s
+sys	0m0.056s

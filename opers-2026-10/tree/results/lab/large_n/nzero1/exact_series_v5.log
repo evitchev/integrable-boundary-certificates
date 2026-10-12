@@ -1,0 +1,35 @@
+========================================================================
+NZERO1 v5: explicit leading coefficient of series in eps
+========================================================================
+
+### t0=4 spin 9 ###
+  diff(N=100) leading monomial: PX^0 PI^6, coeff = -1687459954907897270030197/6436173966959422439200
+  If O(1/N): c1 = -1687459954907897270030197/6436173966959422439200 * 100 = -1687459954907897270030197/64361739669594224392
+  Ratio |d1/d2| at leading monomial: 2894346397988968473795200581845127914869204199/1463311041044939104659403170123979890907586074 (expected ~2 for O(1/N))
+
+  EXACT LIMIT:
+  lim_{eps->0} monic(WKB(t0+eps)) = cert(t0)
+  cert(t0) has 21 terms
+  First correction: O(eps), with leading coefficient -1687459954907897270030197/6436173966959422439200*100 at monomial PX^0 PI^6
+
+### t0=7 spin 3 ###
+  diff(N=100) leading monomial: PX^0 PI^4, coeff = -3607/964405
+  If O(1/N): c1 = -3607/964405 * 100 = -72140/192881
+  Ratio |d1/d2| at leading monomial: 2776527927/1390093367 (expected ~2 for O(1/N))
+
+  EXACT LIMIT:
+  lim_{eps->0} monic(WKB(t0+eps)) = cert(t0)
+  cert(t0) has 6 terms
+  First correction: O(eps), with leading coefficient -3607/964405*100 at monomial PX^0 PI^4
+
+### t0=7 spin 9 ###
+  diff(N=100) leading monomial: PX^0 PI^6, coeff = -13636285566861423350508247/11761577180936894509385376
+  If O(1/N): c1 = -13636285566861423350508247/11761577180936894509385376 * 100 = -340907139171535583762706175/2940394295234223627346344
+  Ratio |d1/d2| at leading monomial: 4083684300847593003654208367181384013188651980529/2046074412122775950878339344540087673506143503454 (expected ~2 for O(1/N))
+
+  EXACT LIMIT:
+  lim_{eps->0} monic(WKB(t0+eps)) = cert(t0)
+  cert(t0) has 21 terms
+  First correction: O(eps), with leading coefficient -13636285566861423350508247/11761577180936894509385376*100 at monomial PX^0 PI^6
+
+Total: 149s

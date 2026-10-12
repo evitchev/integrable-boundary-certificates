@@ -1,0 +1,31 @@
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before STDIN line 29: `*wz3^5*z3^5 - 131*wz3^4*z3^4 + 515*wz3^3*z3^3/9 - 101*wz3^2*z3^2 - 29617/1296;`
+   ? expected ideal-expression. type 'help ideal;'
+   ? `I` is not defined
+   ? error occurred in or before STDIN line 30: `ideal G = std(I);`
+   ? expected ideal-expression. type 'help ideal;'
+dim:
+   ? `G` is not defined
+   ? error occurred in or before STDIN line 31: `print("dim:"); dim(G);`
+vdim:
+   ? `G` is not defined
+   ? error occurred in or before STDIN line 32: `print("vdim:"); vdim(G);`
+   ? `G` is not defined
+   ? error occurred in or before STDIN line 33: `ideal Ji = eliminate(G, r11*r12*z*u11*u12*z3*wz*wz3*q13*q1m3*ee);`
+   ? expected ideal-expression. type 'help ideal;'
+eliminant ii:
+   ? `Ji` is undefined
+   ? error occurred in or before STDIN line 34: `print("eliminant ii:"); Ji;`
+   ? `G` is not defined
+   ? error occurred in or before STDIN line 35: `ideal Je = eliminate(G, r11*r12*z*u11*u12*z3*wz*wz3*q13*q1m3*ii);`
+   ? expected ideal-expression. type 'help ideal;'
+eliminant ee:
+   ? `Je` is undefined
+   ? error occurred in or before STDIN line 36: `print("eliminant ee:"); Je;`
+   ? `G` is not defined
+   ? error occurred in or before STDIN line 37: `ideal Jz = eliminate(G, r11*r12*u11*u12*z3*wz*wz3*q13*q1m3*ii*ee);`
+   ? expected ideal-expression. type 'help ideal;'
+eliminant z:
+   ? `Jz` is undefined
+   ? error occurred in or before STDIN line 38: `print("eliminant z:"); Jz;`

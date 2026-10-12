@@ -1,0 +1,12 @@
+point A done (20s)
+point B done (35s)
+32 equations in 33 unknowns (35s)
+written f_six_two_1-2_1-3.sing (35s); running Singular
+
+Singular error: no more memory
+System 15955084k:15957132k Appl 12494862k/86950k Malloc 9653172k/0k Valloc 2928640k/86950k Pages 727642/4518 Regions 1430:1431 Internal: 172112
+
+halt 14
+
+done (11014s)
+exit 0

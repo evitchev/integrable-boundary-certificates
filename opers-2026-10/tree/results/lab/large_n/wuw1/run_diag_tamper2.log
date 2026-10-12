@@ -1,0 +1,6 @@
+a = 2: S_3 field {((1, 0), (1, 0), (1, 0)): Fraction(4, 3), ((1, 0), (1, 1)): Fraction(2, 1), ((1, 2),): Fraction(1, 3)}; eigen = P_U*(2*P_U - 1)*(2*P_U + 1)/3; field-level Res e^(-U) W = {}
+a = 21/10: S_3 field {((1, 0), (1, 0), (1, 0)): Fraction(3087, 2000), ((1, 0), (1, 1)): Fraction(441, 200), ((1, 2),): Fraction(7, 20)}; eigen = 3087*P_U*(2*P_U - 1)*(2*P_U + 1)/8000; field-level Res e^(-U) W = {((1, 0), (1, 0)): Fraction(77, 4000), ((1, 1),): Fraction(-77, 4000)}
+a = 3: S_3 field {((1, 0), (1, 0), (1, 0)): Fraction(9, 2), ((1, 0), (1, 1)): Fraction(9, 2), ((1, 2),): Fraction(1, 2)}; eigen = 9*P_U*(2*P_U - 1)*(2*P_U + 1)/8; field-level Res e^(-U) W = {((1, 0), (1, 0)): Fraction(1, 2), ((1, 1),): Fraction(-1, 2)}
+a = 1: S_3 field {((1, 0), (1, 0), (1, 0)): Fraction(1, 6), ((1, 0), (1, 1)): Fraction(1, 2), ((1, 2),): Fraction(1, 6)}; eigen = P_U*(2*P_U - 1)*(2*P_U + 1)/24; field-level Res e^(-U) W = {}
+reading: the cylinder vacuum eigenvalue of S_3(a d^k U/k!) is a^3/6 [P^3 - P/4]: the a-dependence is an overall factor, so the sealed exponent tamper is
+VACUOUS for the eigenvalue tests (P1, P3); it is NOT vacuous at field level (screening).

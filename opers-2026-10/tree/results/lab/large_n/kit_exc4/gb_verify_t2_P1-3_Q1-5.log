@@ -1,0 +1,10 @@
+t2_P1-3_Q1-5: 26 input polynomials (Singular .sing), 26 (msolve .ms), same set: True; Groebner basis G: 83 elements (13s)
+   standard monomials (vdim): 40; G is a reduced basis (no tail term divisible by a leading monomial): True (13s)
+   multiplication matrices of the 12 variables built (14s)
+   all 66 pairs of multiplication matrices commute (G is a Groebner basis): True (21s)
+   input polynomials with normal form 0 modulo G: 26 of 26 (every solution of G solves the system) (30s)
+   M_ii = 2093/450 * identity: True;  quintic(M_ee) = 0: True;  quintic irreducible over Q: True  =>  charpoly(M_ee) = quintic^8 (30s)
+   charpoly of M_(z + 3 z3 + 5 r12 + 7 u12): degree 40, squarefree: True (40 distinct ordered solutions) (32s)
+   quintic == data block quintic factor (d2_sol3_*.json, factors [1, 5]): True;  sixth state linear (level shift): True
+   REGISTERED hold-out point: registered quintic, I_1 and vdim equal the verified ones: True
+GB VERIFY t2_P1-3_Q1-5 [real]: PASS (32s)

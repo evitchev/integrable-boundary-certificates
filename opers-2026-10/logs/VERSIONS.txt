@@ -18,3 +18,14 @@ v1.2.4 (2026-10-11): fresh copy outside the author's workspace, with ulimit -v 1
   Python 3.12.8 / sympy 1.14.0 / mpmath 1.3.0: the 27 new checks ALL PASS (534 s) -> v124_new_py312_*.txt.
   The checks carried over from v1.2.3 were not changed; their drills are in the v1.2.3 logs.
   Lean: the five files build with Lean 4.24.0 / Mathlib v4.24.0 against a local Mathlib (3191 jobs); see ../lean/BUILD_LOG_v124_local_path_mathlib.txt.
+
+v1.2.5 (2026-10-12): fresh copy outside the author's workspace, HOME set to an empty directory, ulimit -v 16000000, four runs in parallel.
+  Python 3.8.10 / sympy 1.13.3 / mpmath 1.3.0: --full 177 checks ALL PASS (20174 s) -> v125_full_py38_*.txt;
+    --full --drill 177 drills ALL PASS (20584 s) -> v125_drill_py38_*.txt.
+  Python 3.12.8 / sympy 1.14.0 / mpmath 1.3.0: the 111 new checks ALL PASS (9915 s) -> v125_new_py312_*.txt;
+    their drills ALL PASS (9978 s) -> v125_new_drill_py312_*.txt.
+  Home-directory prefixes in tracebacks printed by tampered runs are redacted to <home>/ in these logs.
+  Lean: files unchanged since v1.2.4 (not rebuilt).
+  After these runs, 19 helper scripts of nzero1/ that the kit does not execute had a private path in their text redacted
+  (PATCHES.json) and two counts in README.md were corrected; SHA256SUMS was regenerated, and the kit integrity check,
+  nzero1_fibres, num3_controls, exc4_regen_six and the nzero1_fibres drill were re-run from a fresh copy (v125_post_redaction_*.txt).

@@ -1,0 +1,22 @@
+2_A_60 Emin 1e3 (36 pts) K2 16: res 1.2e-15; K0 13.2, K2 6.39, K4 1.18, K6 -2.52; N1 -2.35098660989
+2_A_60 Emin 1e3 (36 pts) K2 20: res 1.5e-18; K0 14.9, K2 7.87, K4 2.35, K6 -1.72; N1 6.75394724202
+2_A_60 Emin 1e4 (27 pts) K2 16: res 2.7e-28; K0 23.1, K2 15.8, K4 10.1, K6 5.72; N1 6.06294547282
+2_A_60 Emin 1e4 (27 pts) K2 20: res 1.9e-32; K0 25.1, K2 17.5, K4 11.5, K6 6.88; N1 6.06294545638
+Traceback (most recent call last):
+  File "<home>/opus5-work/tq/stageNUM3/diag_window.py", line 21, in <module>
+    x, res = mp.qr_solve(mp.matrix(rows), mp.matrix([y[i] for i in idx]))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/python312/lib/python3.12/site-packages/mpmath/matrices/linalg.py", line 406, in qr_solve
+    raise ValueError('cannot solve underdetermined system')
+ValueError: cannot solve underdetermined system
+10_3_A_60 Emin 1e3 (36 pts) K2 16: res 2.9e-14; K0 12.4, K2 5.47, K4 0.64, K6 -2.54; N1 -34.2731651117
+10_3_A_60 Emin 1e3 (36 pts) K2 20: res 2.7e-17; K0 14.3, K2 7.14, K4 1.99, K6 -1.59; N1 -40.2455736286
+10_3_A_60 Emin 1e4 (27 pts) K2 16: res 3.1e-25; K0 21.0, K2 13.6, K4 8.23, K6 4.41; N1 -39.9976009984
+10_3_A_60 Emin 1e4 (27 pts) K2 20: res 4.3e-30; K0 23.8, K2 16.1, K4 10.4, K6 6.22; N1 -39.9976011339
+Traceback (most recent call last):
+  File "<home>/opus5-work/tq/stageNUM3/diag_window.py", line 21, in <module>
+    x, res = mp.qr_solve(mp.matrix(rows), mp.matrix([y[i] for i in idx]))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/python312/lib/python3.12/site-packages/mpmath/matrices/linalg.py", line 406, in qr_solve
+    raise ValueError('cannot solve underdetermined system')
+ValueError: cannot solve underdetermined system

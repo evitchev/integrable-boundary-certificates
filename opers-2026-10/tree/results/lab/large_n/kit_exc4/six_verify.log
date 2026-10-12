@@ -1,0 +1,10 @@
+input: 17 polynomials in 17 unknowns; Singular basis: 17 elements
+input polynomials reducing to 0 modulo the Singular basis: 17 of 17 (every solution of the basis solves the system)
+standard monomials of the basis (vdim): 2
+Buchberger criterion on the Singular basis: 0 of 136 S-polynomials fail to reduce to 0
+solutions: 2 (vdim 2 expected)
+relations from the Gamma-form engine: 8*ii + 12*r41 - 3 = 0, 64*ee + 576*r21 - 144*r41^2 + 88*r41 + 7 = 0; vacuum monic I_1 = 3/8
+  solution z = 7/5832, r32 = 35/2187 - 7*sqrt(2)/5832: all 17 input equations vanish exactly: True; r41 = -2/3 (sealed -b = -2/3); Delta I_1 = 1 (half level = 1); I_3 = 41/64
+  solution z = 7/5832, r32 = 7*sqrt(2)/5832 + 35/2187: all 17 input equations vanish exactly: True; r41 = -2/3 (sealed -b = -2/3); Delta I_1 = 1 (half level = 1); I_3 = 41/64
+level-one data quadratic at this point: e**2 - 89*e/32 + 20209/4096; 41/64 is a root: False
+SIX VERIFY [real]: PASS

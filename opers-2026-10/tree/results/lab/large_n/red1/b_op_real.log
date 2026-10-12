@@ -1,0 +1,17 @@
+Sol 3: zeta^4 coefficient minus the characteristic polynomial (th**4 - th): 0
+       zeta^3 coefficient at the double root: 0
+       zeta^2 coefficient = 6*gamma**2*th**2 * [ (D - d0)^2 - nu^2 ],  d0 = (-gamma + q)/gamma
+       nu^2 (general k, symbols a2, b2, gamma) = (a2 + b2 - gamma**2)/(6*gamma**2)
+       at N = 0 (k -> -4): nu^2 = 2*PI**2 + 2*PX**2 - 1/6 ;  == 2(PX^2 + pi^2) - 1/6 = 4 Delta: True
+       double scaling: lim (1/eps)[1 - (Et/E_0) zeta^(-eps)] = -e + log(Z)   (expected log Z - e)
+       limit operator: gamma^2-normalised  [ (D - d0)^2 - nu^2 ] chi + (E_0/lead) Z^2 (log Z - e) chi = 0,  E_0 = -3*th/4, E_0/lead = -1/(8*gamma**2*th)
+       remaining coefficients at zeta^j, j in [0, 1]: suppressed by eps^((2-j)/2) -> 0
+Sol 2: zeta^3 coefficient minus the characteristic polynomial (th**3 - th**2): 0
+       zeta^2 coefficient at the double root: 0
+       zeta^1 coefficient = gamma**2 * [ (D - d0)^2 - nu^2 ],  d0 = (-gamma + 2*q)/(2*gamma)
+       nu^2 (general k, symbols a2, b2, gamma) = -(6*a2 - 4*b2 + gamma**2)/(6*gamma**2)
+       at N = 0 (k -> -3/2): nu^2 = 2*PI**2 + 2*PX**2 - 1/6 ;  == 2(PX^2 + pi^2) - 1/6 = 4 Delta: True
+       double scaling: lim (1/eps)[1 - (Et/E_0) zeta^(-eps)] = -e + log(Z)   (expected log Z - e)
+       limit operator: gamma^2-normalised  [ (D - d0)^2 - nu^2 ] chi + (E_0/lead) Z^2 (log Z - e) chi = 0,  E_0 = -4/27, E_0/lead = -4/(27*gamma**2)
+       remaining coefficients at zeta^j, j in [0]: suppressed by eps^((1-j)/2) -> 0
+(B) operator level (real): AS SEALED

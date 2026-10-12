@@ -1,0 +1,4 @@
+F1prime == F1 for K = 1..12 at five fibres: mismatches 0
+F1prime == Ward loss-1 amplitudes, K = 2..40, five fibres: 0 mismatches / 4095
+lattice scan K = 2..12, i = 1..K-1: (top vanishes) == (loss-1 vanishes) == (2i <= K-1) violated at 0 points []
+Z0(b) PASS

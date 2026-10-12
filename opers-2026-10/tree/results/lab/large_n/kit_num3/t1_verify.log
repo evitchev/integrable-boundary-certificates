@@ -1,0 +1,13 @@
+point A E =  -20.0: digits of Q3_j/Q7_j/C_j - 1 = ['55.13', '55.43', '53.13']; recomputed dev == archived dev: True
+point A E =   -5.0: digits of Q3_j/Q7_j/C_j - 1 = ['52.84', '52.84', '52.84']; recomputed dev == archived dev: True
+point A E =    2.0: digits of Q3_j/Q7_j/C_j - 1 = ['38.46', '38.46', '38.46']; recomputed dev == archived dev: True
+point A E =   50.0: digits of Q3_j/Q7_j/C_j - 1 = ['55.82', '55.84', '55.8']; recomputed dev == archived dev: True
+point A E =  500.0: digits of Q3_j/Q7_j/C_j - 1 = ['56.66', '56.63', '56.66']; recomputed dev == archived dev: True
+point B E =  -20.0: digits of Q3_j/Q7_j/C_j - 1 = ['55.07', '55.2', '54.87']; recomputed dev == archived dev: True
+point B E =   -5.0: digits of Q3_j/Q7_j/C_j - 1 = ['50.83', '50.83', '50.83']; recomputed dev == archived dev: True
+point B E =    2.0: digits of Q3_j/Q7_j/C_j - 1 = ['36.09', '36.09', '36.09']; recomputed dev == archived dev: True
+point B E =   50.0: digits of Q3_j/Q7_j/C_j - 1 = ['55.14', '55.2', '55.09']; recomputed dev == archived dev: True
+point B E =  500.0: digits of Q3_j/Q7_j/C_j - 1 = ['55.87', '55.89', '55.84']; recomputed dev == archived dev: True
+30 cells: worst 8.22e-37 = 36.09 digits; median 55.1 digits; sealed >= 25 digits: True
+spot recomputation point B, E = 2 (both ODEs): Q3 and Q7 equal the archived values to 1e-50: True (16s)
+T1 VERIFY: PASS

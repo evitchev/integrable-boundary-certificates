@@ -1,0 +1,27 @@
+
+== sigma 7 (weight 8): dim V = 56, HV span 40, dim Q_w = 10  (0s)
+   vacuity: generic vector has 10 of 10 coordinates nonzero
+   Sol 1 I_7: symbolic in N: all 10 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (0s)
+      promoted I_7 at t=2 == my own kernel class mod d: True
+      classical at t=2: I_7 in A<=6: False (record: no)
+   Sol 2 I_7: symbolic in N: all 10 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (1s)
+      promoted I_7 at t=2 == my own kernel class mod d: True
+      classical at t=2: I_7 in A<=6: False (record: no)
+   Sol 3 I_7: symbolic in N: all 10 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (2s)
+      promoted I_7 at t=2 == my own kernel class mod d: True
+      classical at t=2: I_7 in A<=6: False (record: no)
+
+== sigma 9 (weight 10): dim V = 148, HV span 94, dim Q_w = 29  (3s)
+   vacuity: generic vector has 29 of 29 coordinates nonzero
+   Sol 1 I_9: symbolic in N: all 29 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (3s)
+      classical at t=2: I_9 in A<=8: False (record: no)
+   Sol 2 I_9: symbolic in N: all 29 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (6s)
+      classical at t=2: I_9 in A<=8: False (record: no)
+   Sol 3 I_9: symbolic in N: all 29 coordinates == 0: True; pointwise outside at 0 of 24 fibres (0 skipped)  (9s)
+      classical at t=2: I_9 in A<=8: False (record: no)
+
+RESULT: every promoted charge tested lies in the vertex subalgebra <X, T_Y> + Im d, identically in N
+
+real	0m9.695s
+user	0m9.657s
+sys	0m0.036s

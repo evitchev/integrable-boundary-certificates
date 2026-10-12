@@ -1,0 +1,41 @@
+======================================================================
+NZERO1 FINAL: Limit of monic(WKB(t0+eps)) as eps -> 0
+======================================================================
+
+### t=4 spin 9 ###
+  Monic at t=401/100: 21 terms [8.2s]
+  Contains Gamma? False
+  vs cert(same t): MATCH
+  vs cert(t0=4): 20 terms differ
+  At t0+1/500: 20 terms differ (was 20 at 1/100)
+  Max coeff ratio (1/100)/(1/500) = 4.912 (expected ~5 if O(eps))
+
+  CONCLUSION: lim_{eps->0} monic(WKB(t0+eps)) = cert(t0) = 21 terms
+  The engine's 'identically zero' is an artifact of the discrete evaluation;
+  the charge is the well-defined finite limit of the generic-t WKB expression.
+
+### t=7 spin 3 ###
+  Monic at t=701/100: 6 terms [8.6s]
+  Contains Gamma? False
+  vs cert(same t): MATCH
+  vs cert(t0=7): 5 terms differ
+  At t0+1/500: 5 terms differ (was 5 at 1/100)
+  Max coeff ratio (1/100)/(1/500) = 4.989 (expected ~5 if O(eps))
+
+  CONCLUSION: lim_{eps->0} monic(WKB(t0+eps)) = cert(t0) = 6 terms
+  The engine's 'identically zero' is an artifact of the discrete evaluation;
+  the charge is the well-defined finite limit of the generic-t WKB expression.
+
+### t=7 spin 9 ###
+  Monic at t=701/100: 21 terms [8.6s]
+  Contains Gamma? False
+  vs cert(same t): MATCH
+  vs cert(t0=7): 20 terms differ
+  At t0+1/500: 20 terms differ (was 20 at 1/100)
+  Max coeff ratio (1/100)/(1/500) = 4.983 (expected ~5 if O(eps))
+
+  CONCLUSION: lim_{eps->0} monic(WKB(t0+eps)) = cert(t0) = 21 terms
+  The engine's 'identically zero' is an artifact of the discrete evaluation;
+  the charge is the well-defined finite limit of the generic-t WKB expression.
+
+Total time: 55s
