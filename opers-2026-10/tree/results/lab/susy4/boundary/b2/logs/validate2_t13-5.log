@@ -1,0 +1,9 @@
+(1) bosonisation vev check on 11 neutral words (w2 <= 8; 1 of length >= 4, split-independence too): ALL OK
+(2) tower Z w2 = 4 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: True
+(2) tower Z w2 = 6 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: True
+(2) tower Z w2 = 8 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: True
+(2) tower Z w2 = 10 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: True
+(2) tower Z w2 = 12 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: True
+(2) tower K w2 = 4 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: True
+(2) tower K w2 = 8 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: True
+(2) tower K w2 = 12 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: True

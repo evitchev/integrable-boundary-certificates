@@ -1,0 +1,219 @@
+  l=1/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=1/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.2s
+  l=1/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.6s
+  l=2/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=2/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=2/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=3/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=3/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=3/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=4/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=4/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=4/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=5/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=5/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=5/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=6/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=6/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=6/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=7/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=7/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=7/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=8/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=8/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=8/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=9/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=9/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=9/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=10/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=10/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=10/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=11/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=11/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=11/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=12/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=12/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=12/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=14/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=14/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=14/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=15/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=15/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=15/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=16/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=16/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=16/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=17/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=17/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=17/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=18/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=18/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=18/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=19/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=19/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=19/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=20/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=20/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=20/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=21/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=21/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=21/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=22/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=22/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=22/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=23/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=23/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=23/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=24/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=24/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=24/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=25/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=25/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=25/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=27/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=27/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=27/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=28/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=28/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=28/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=29/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=29/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=29/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=30/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=30/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=30/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=31/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=31/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=31/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=32/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=32/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=32/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=33/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=33/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=33/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=34/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=34/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=34/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=35/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=35/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=35/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=36/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=36/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=36/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=37/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=37/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=37/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=38/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=38/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=38/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=40/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=40/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=40/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=41/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=41/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=41/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=42/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=42/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=42/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=43/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=43/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=43/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=44/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=44/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=44/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=45/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=45/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=45/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=46/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=46/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=46/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=47/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=47/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=47/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=48/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=48/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=48/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=49/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=49/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=49/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=50/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=50/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=50/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=51/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=51/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=51/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=53/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=53/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=53/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=54/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=54/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=54/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=55/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=55/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=55/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=56/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=56/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=56/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=57/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=57/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=57/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=58/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=58/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=58/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=59/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=59/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=59/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=60/13 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=60/13 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=60/13 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=3/7 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=3/7 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=3/7 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=5/7 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=5/7 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=5/7 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=9/7 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=9/7 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=9/7 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=11/7 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=11/7 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=11/7 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+  l=17/7 w2=12: |G-kernel|=5, joint dim 1, 8 monomials, 0.0s
+  l=17/7 w2=16: |G-kernel|=12, joint dim 1, 17 monomials, 0.0s
+  l=17/7 w2=20: |G-kernel|=25, joint dim 1, 33 monomials, 0.1s
+sampled 61 values of l in 7.8s
+w2=12: 8 canonical coefficients reconstructed as rational functions of l (fit on 40, all 61 samples reproduced)
+w2=16: 17 canonical coefficients reconstructed as rational functions of l (fit on 40, all 61 samples reproduced)
+w2=20: 33 canonical coefficients reconstructed as rational functions of l (fit on 40, all 61 samples reproduced)
+w2=8: symbolic in l: [G_l, I] total derivative: True; [I3(l), I] total derivative: True (0.0s)
+w2=12: symbolic in l: [G_l, I] total derivative: True; [I3(l), I] total derivative: True (0.3s)
+w2=16: symbolic in l: [G_l, I] total derivative: True; [I3(l), I] total derivative: True (1.0s)
+w2=20: symbolic in l: [G_l, I] total derivative: True; [I3(l), I] total derivative: True (2.8s)
+symbolic in l: [I(w2=12), I(w2=16)] total derivative: True (13.2s)
+symbolic in l: [I(w2=12), I(w2=20)] total derivative: True (47.5s)
+[I(w2=16), I(w2=20)] total derivative at l = 5/17, -7/3, 11/9 (exact, reconstructed densities; not symbolic): True (2240.8s)
+I3 NS (4.1s):
+   in (P, l):      P**4/4 - 5*P**2/32 - l**2/64 + 9/512
+   in (Delta, c):  Delta**2 + Delta*(-c/12 - 3/16) + c**2/576 + 7*c/768
+I3 R (1.0s):
+   in (P, l):      P**4/4 - P**2/16
+   in (Delta, c):  Delta**2 + Delta*(-c/12 - 1/8) + c**2/576 + c/192
+I5 NS (0.0s):
+   in (P, l):      P**6/8 - 35*P**4/192 - 23*P**2*l**2/768 + 179*P**2/2048 - l**4/128 + 95*l**2/6144 - 475/49152
+   in (Delta, c):  Delta**3 + Delta**2*(-c/8 - 13/24) + Delta*(c**2/192 + 77*c/1536 + 45/512) - c**3/13824 - 133*c**2/110592 - 55*c/12288
+I5 R (0.0s):
+   in (P, l):      P**6/8 - 5*P**4/48 - P**2*l**2/96 + 19*P**2/768
+   in (Delta, c):  Delta**3 + Delta**2*(-c/8 - 5/12) + Delta*(c**2/192 + 7*c/192 + 3/64) - c**3/13824 - 11*c**2/13824 - c/512
+I7 NS (0.1s):
+   in (P, l):      P**8/16 - 21*P**6/128 - 707*P**4*l**2/19200 + 27167*P**4/153600 - 19*P**2*l**4/1152 + 28867*P**2*l**2/460800 - 301877*P**2/3686400 - 17*l**6/2560 + 7483*l**4/368640 - 155687*l**2/7372800 + 1089809/117964800
+   in (Delta, c):  Delta**4 + Delta**3*(-c/6 - 17/16) + Delta**2*(c**2/96 + 8357*c/57600 + 597/1280) + Delta*(-c**3/3456 - 14071*c**2/2073600 - 2893*c/61440 - 315/4096) + c**4/331776 + 22207*c**3/199065600 + 7441*c**2/5898240 + 525*c/131072
+I7 R (0.0s):
+   in (P, l):      P**8/16 - 7*P**6/64 - 49*P**4*l**2/2400 + 1519*P**4/19200 - P**2*l**4/180 + 107*P**2*l**2/5760 - 913*P**2/46080
+   in (Delta, c):  Delta**4 + Delta**3*(-c/6 - 7/8) + Delta**2*(c**2/96 + 1673*c/14400 + 49/160) + Delta*(-c**3/3456 - 5393*c**2/1036800 - 109*c/3840 - 9/256) + c**4/331776 + 1949*c**3/24883200 + c**2/1536 + 3*c/2048
+I9 NS (0.2s):
+   in (P, l):      P**10/32 - 33*P**8/256 - 47*P**6*l**2/1280 + 2517*P**6/10240 - 143*P**4*l**4/6272 + 64783*P**4*l**2/501760 - 1012903*P**4/4014080 - 1149*P**2*l**6/71680 + 638583*P**2*l**4/8028160 - 952653*P**2*l**2/6422528 + 61761033*P**2/513802240 - 31*l**8/3584 + 3057*l**6/81920 - 3671763*l**4/64225280 + 2123199*l**2/51380224 - 57326373/4110417920
+   in (Delta, c):  Delta**5 + Delta**4*(-5*c/24 - 7/4) + Delta**3*(5*c**2/288 + 607*c/1920 + 93/64) + Delta**2*(-5*c**3/6912 - 49499*c**2/2257920 - 54739*c/250880 - 2259/3584) + Delta*(5*c**4/331776 + 20381*c**3/28901376 + 6679733*c**2/578027520 + 18141*c/262144 + 14175/131072) - c**5/7962624 - 97127*c**4/10404495360 - 3131809*c**3/13872660480 - 268637*c**2/132120576 - 5985*c/1048576
+I9 R (0.1s):
+   in (P, l):      P**10/32 - 3*P**8/32 - P**6*l**2/40 + 87*P**6/640 - 5*P**4*l**4/392 + 983*P**4*l**2/15680 - 6289*P**4/62720 - 3*P**2*l**6/560 + 219*P**2*l**4/8960 - 285*P**2*l**2/7168 + 15237*P**2/573440
+   in (Delta, c):  Delta**5 + Delta**4*(-5*c/24 - 3/2) + Delta**3*(5*c**2/288 + 4*c/15 + 17/16) + Delta**2*(-5*c**3/6912 - 2549*c**2/141120 - 4787*c/31360 - 83/224) + Delta*(5*c**4/331776 + 377*c**3/677376 + 11287*c**2/1505280 + 1571*c/43008 + 45/1024) - c**5/7962624 - 1073*c**4/162570240 - 13469*c**3/108380160 - 907*c**2/1032192 - 15*c/8192
+TOWER FIT COMPLETE (2321.2s)

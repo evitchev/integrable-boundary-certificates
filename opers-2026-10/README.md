@@ -7,9 +7,10 @@ integrals of motion" (2026), and check that the archived results reproduce. Ever
 ## Quick start
 
     python3 run_all.py --list          # the checks, with the paper section each supports
-    python3 run_all.py --quick         # all quick checks (about 1.5 h on one core)
+    python3 run_all.py --quick         # all quick checks (about 2 h on one core)
     python3 run_all.py --drill         # every check re-run with a deliberate tamper; each tampered run must FAIL
-    python3 run_all.py --full          # quick checks plus the slower ones (about 6 h; num3_t1_zeros and num3_wkb_pred about 1 h each)
+    python3 run_all.py --full          # quick checks plus the slower ones (about 12 h on one core: the five spec1_s3_* full
+                                       # checks take 40 min to 3 h each, num3_t1_zeros and num3_wkb_pred about 1 h each)
     python3 run_all.py --only gate,thm2_ward --log out.txt
 
 `run_all.py` resolves every path from its own location, so the working directory does not matter. It first checks every
@@ -23,7 +24,7 @@ overwritten. A check PASSES only if:
 
 Exit status: 0 if all requested checks pass, 1 otherwise.
 
-Release v1.2.5 was run in full (all checks, and all drills) under Python 3.8.10 / sympy 1.13.3, and its new checks and drills also under Python 3.12.8 / sympy 1.14.0, with HOME pointing to an empty directory (`logs/VERSIONS.txt`, `logs/v125_*`). Earlier: tested with Python 3.12.8, sympy 1.14.0 and mpmath 1.3.0. The v1.2.4 quick run (all 55 checks) used Python 3.8.10 / sympy 1.13.3, and the 27 checks new in v1.2.4 were also run under Python 3.12.8 / sympy 1.14.0 (`logs/VERSIONS.txt`). The two `second2_h2b_*` checks also pass, with byte-identical output, under Python 3.8.10 / sympy 1.13.3. Under sympy
+Release v1.2.6 was run in full (all 235 checks, and all drills) under Python 3.8.10 / sympy 1.13.3, and its 58 new checks and their drills also under Python 3.12.8 / sympy 1.14.0, from a fresh copy with HOME pointing to an empty directory (`logs/VERSIONS.txt`, `logs/v126_*`). Release v1.2.5 was run in the same way (`logs/v125_*`). Earlier: tested with Python 3.12.8, sympy 1.14.0 and mpmath 1.3.0. The v1.2.4 quick run (all 55 checks) used Python 3.8.10 / sympy 1.13.3, and the 27 checks new in v1.2.4 were also run under Python 3.12.8 / sympy 1.14.0 (`logs/VERSIONS.txt`). The two `second2_h2b_*` checks also pass, with byte-identical output, under Python 3.8.10 / sympy 1.13.3. Under sympy
 1.14.0 the floating-point magnitudes they print as diagnostics (`min ... max ...` of |residual| over the numerical roots)
 differ slightly. These numbers are therefore masked in the comparison for those two checks only. The exact counts of
 non-zero residuals, computed in Q[z]/(m), are compared in full. Under a different sympy version, printed expressions can differ
@@ -113,19 +114,75 @@ New kit helpers (not archived files): `tree/results/lab/large_n/kit_num3/`, `tre
 made when the kit was assembled) and `tree/lab/kit_gunzip_run.py` (the i = 6 kernel record ships gzipped, `INPUTS.SHA256`; the helper checks the hash
 of the decompressed file before the archived script reads it).
 
+### New in v1.2.6
+
+v1.2.6 adds 58 checks (each with a drill): the spectral theorem for positive integer a (the generalisation of Theorem 3, Appendix A of the
+revised text; 15 checks, `spec1_*`) and the Solution 1 entry "U(1) coset of N = 2" of the screening table (43 checks, `b2_*`, `b2b_*`).
+
+| checks | paper section | establishes | kind |
+|---|---|---|---|
+| `spec1_scope`, `spec1_scope_sol1_a3` | Spectral theorem (scope) | Solution 3 at t = (3a+2)/(a+2) and Solution 1 at t = 2a+1 satisfy deg L = 1, sigma > 0, d >= 2 for a = 1..6 (Solution 2 does not: deg L = 2); the no-resonance hypothesis (H) holds at both momentum points at t = 2, 5/3, 11/5, 3, 5, 7 | exact |
+| `spec1_kernel` | Spectral theorem; Appendix A (Lemma 2, Proposition A.1, Step 4) | the shift relations m(mu+sigma)/m(mu) = s - mu - r - c/2 and m(mu)/m(mu-n) = G_a(s-mu-r), symbolic in a, sigma, s, r, mu; the frozen exponents are zeros of m and the frozen lattice misses the other frozen exponents (a = 1..8); the intertwining on monomials at six points, symbolic in mu, l0, l1, E; K x^mu = m(mu) x^mu and Lemma 2(i) by 50-digit quadrature at three points | symbolic + numerical |
+| `spec1_constant`, `spec1_saddle` | Spectral theorem; Appendix A (Step 5, Proposition A.2) | beta_O, beta_Gamma by exact conjugation (a = 1..6, both solutions, symbolic in l0, l1); the power and saddle identities (symbolic in a); omega(t = 2) = 3^(-1/6) pi^(-1/2); the E-correction exponents; the descent function (lower bound on a grid only) and the Laplace main term by quadrature; omega Q^O(0) = m Q^Gamma(0) from the Meijer-G values at a = 1..6 | symbolic + numerical |
+| `spec1_e0_gauss` | Spectral theorem (the exact E = 0 identity) | the a frozen Gamma factors and one ODE factor form a complete Gauss product, and log(Q^O_j(0)/Q^Gamma_j(0)) - log m(theta_j) + log omega = 0 identically in s, r, theta, sigma, d, a | symbolic proof (given Gauss multiplication and the Meijer-G facts) |
+| `spec1_ddt` | Solution 1 (relation to DDT at t = 3) | the a = 1 operator maps to the DDT sextic under x = mu y^(2/3), mu^6 = 3, with E_S = -kappa E, kappa = 4/(3 sqrt 3); the gauge x^(-l0/3) maps the Gamma form to DDT's third-order equation | symbolic |
+| `spec1_s3_control`, `spec1_s3_archive`, `spec1_s3_spot`, `spec1_s3_*_a*` (5, full) | Spectral theorem (numerics at five points) | the solver reproduces the archived t = 2 Q data; the archived Q values at five points x 8 energies x 2 momenta satisfy the relation with the closed-form omega to the quoted accuracy, and the omega x 8/7 and multiplier-interchange tampers fail at every energy (`spec1_s3_archive`, no ODE solved); a re-solve at two (E, momentum) pairs per point agrees with the archive to >= 60 digits (`spec1_s3_spot`); the full runs, with the dps-140 repeat at E = 37 (`spec1_s3_sol3_a3`, `spec1_s3_sol1_a3`, `spec1_s3_sol3_a1`, `spec1_s3_sol1_a1`, `spec1_s3_sol1_a2`, full mode, 40 min to 3 h each) | numerical |
+| `b2_n2frame_v1`, `b2_n2frame_vertices`, `b2_level1` | Screening systems (table entry for Solution 1, and the sentence after it) | the two-superfield frame closes into the N = 2 superconformal algebra with c = 3 - 12/p^2, symbolic in p^2 (36 OPE checks); T, G, G' commute with the five screenings, J only with the three J-neutral ones; after bosonisation and rotation, the Gram matrix of those three equals that of Solution 1's (V+, V-, e^{p phi}), identically in p^2 | exact |
+| `b2_classical_Z`, `b2_classical_K` | Screening systems | the classical limits of the two towers fit the N = 2 KdV flow with a = 4 (Zeitlin's sl(2\|1)^(1) screenings) and a = -2 (Kolyaskin-Litvinov's sl(2\|2)^(1)), each fit unique | exact |
+| `b2_towers_*`, `b2_sol1_*`, `b2_level2_*`, `b2_validate2_*` | Screening systems | the towers' charges (commutants mod d, w2 = 2..12) and Solution 1's certified I_3, I_5 in the coset frame, recomputed at t = 2, 7/2, 11/3, 13/5; the U(1)-vacuum projections of the spin-3, 4, 5 charges are not in Solution 1's commutant (spin 2 is, with c_2 = (t-1)/(t+3)), for a = 4 and for a = -2 at all four values of t (13/5 = the registered hold-out); the archived controls; an end-to-end eigenvalue validation of the projection | exact |
+| `b2b_*` | Screening systems | Solution 1's I_2, I_3, I_5 do not commute with the a = 4 and a = -2 charges (spins 2, 3, 5) at t = 2, 7/2, 13/5: no residue is a total derivative; the consistency rows (each family commutes with itself, also after bosonisation) hold | exact |
+
+New kit helpers (not archived files):
+- `tree/results/lab/large_n/kit_spec1/`: `verify_s3.py` (verifier of the archived S3 outputs) and `spot_s3.py` (re-solves the operators at
+  two (E, momentum) pairs per point through the archived `spec1_s3.qpair`), with their reference logs made when the kit was assembled, and
+  `ORIGIN_SHA256` (the stage's sealed hashes of the archived S3 outputs). `kit_spec1/ref/` holds the references of the archived scripts:
+  the archived SPEC1 logs with two changes, the first line (`ARGV: run.sh ...`, written by the author's wrapper) removed and the author's
+  absolute workspace prefix replaced by `<stage>/`. The checks mask that path, the interpreter-version line and the solver timings; the
+  sha256 of each script printed in the banners is still compared. SPEC1's `deps_snapshot/ode.py`, `ops.py` and `inputs/proof3/t1.json`
+  are byte-identical to `proof3/ode.py`, `ops.py` and `proof3/t1.json`; the SPEC1 scripts import their own copies, so the copies ship in `spec1/`.
+- `tree/results/lab/susy4/kit_b2/fresh.py`: deletes the archived copy of a script's JSON output before the run and then runs the archived
+  script unchanged. With `--same-json`, it also requires that the script writes the file again and that the new file equals the archived
+  one as a JSON object (timing keys ignored where stated). Without this, a script that did not write its output could pass, because the
+  archived copy would still be in place. The helper writes only to stderr, so it needs no reference log.
+
+Notes on the B2 material:
+- `results/lab/susy4/boundary/b2b/inputs/` was not committed with the stage. The kit rebuilds it from byte copies of the `b2/` files;
+  their hashes are the entries `inputs/...` of `b2b/SHA256SUMS`.
+- The stage notes (`b2/PRIMARY.md`, `b2/NOTES.md`, `b2/HOLDOUT_RESULT.md`, `b2b/NOTES.md`, `b2b/RESULT.md`) are included with private paths
+  and session names redacted (`PATCHES.json`). `b2/NOTES.md` (line 69) states the Level II pattern "at all three fibres, Z and K", but the
+  stage kept tower K runs only at t = 2 and 13/5. The tower K runs at t = 7/2 and 11/3 (`level2_K_t7-2.*`, `level2_K_t11-3.*`) were made
+  on 2026-10-18 with the stage's own unchanged `level2.py` and the stage's inputs, by a replication and its re-run; they show the same
+  pattern. `b2/PRIMARY.md` section 7 ("identical pattern at t = 2, 7/2, 11/3") is headed "Tower Z unless stated".
+- At t = 11/3 the (dX)^6 coefficient of the kit's normalisation of Solution 1's I_5 vanishes (3t - 11 = 0); `level2.py` then prints the
+  kit-normalised c_5 as "undefined at this fibre", and the spin-5 eigenvalue-level ratio is not defined there (c = None). The membership
+  tests mod d do not use this normalisation and are unaffected.
+
 ## What the kit does NOT establish
 
 - Theorem 3 (Appendix A of the paper) is a hand proof. `thm3_*` check its constant and its algebraic identities numerically and
   symbolically, and `lean/Theorem3*.lean` certify the algebra (see "Lean proofs"); the analytic steps (convergence, growth
   bounds, asymptotics, uniqueness, the quoted existence theorem) are not machine-checked.
+- The spectral theorem for general positive integer a is a hand proof, like its t = 2 case. `spec1_*` check its algebraic identities by
+  exact symbolic computation (not in Lean; the Lean files cover t = 2 only), its E = 0 case exactly (Gauss multiplication, given the quoted
+  Meijer-G facts) and the full statement numerically at five points. The analytic steps (growth bounds, termwise action, the quoted
+  existence theorem (T) at Poincare rank Nq in xi = x^(1/N), the uniqueness of Lemma 4 and the Laplace estimate) are not machine-checked.
+  The descent constant of Proposition A.2 is shown only on a grid (`spec1_saddle`). The dps-140 repeat at E = 37 is re-run only by the
+  full-mode `spec1_s3_*_a*` checks; the quick checks verify the dps-70 data.
+- B2 runs at t = 2, 7/2, 11/3, 13/5 only, and B2b at t = 2, 7/2, 13/5 only. At these points the checks are exact, but nothing is proved
+  symbolically in t. The dictionary c_{N=2} = 3 - 12/p^2, p^2 = 2(t-1)/(t+1), n_FL = -p^2/2 comes from reading the sources (stage notes);
+  the scripts take it as given. The N = 2 KdV flow equation is entered from Mao-Liu (1) as transcribed in `classical.py`; the kit does not
+  compare that transcription with Laberge-Mathieu. The post-hoc readings of B2 (products, coset image, extras) and the KL (22) validation
+  V3 are not re-run.
 - `akns_*` compare published formulas with the certified tables. They do not prove that Solution 1 and quantum AKNS coincide beyond
   spin 3 (lower layers at spins >= 5 are not printed by FL), nor the spectral identification, which Bazhanov-Tsuboi state as a conjecture.
 
 - Agreement of local charges (WKB coefficients) is not equality of spectra. The identification of the WKB coefficients with the
   asymptotic coefficients of the spectral determinants is checked numerically for all three operators at the values of t of the
   paper's Section 6 (`num1_*`, `num2_*`, `num3_*`, `numtab`). Theorem 1 is a formal (Mellin-level) equivalence; its spectral
-  version is proved only in the case of Theorem 3 (Sol 3, t = 2) and checked numerically for Sol 3 and Sol 2 at t = 2
-  (`num2_*`, `thm3_constant`, `num3_*`).
+  version is proved for deg L = 1 and positive integer a (Theorem 3 at t = 2; its generalisation, new in v1.2.6, covers
+  Solution 3 at t = (3a+2)/(a+2) and Solution 1 at t = 2a+1, see `spec1_*`), and checked numerically for Sol 3 and Sol 2 at t = 2
+  (`num2_*`, `thm3_constant`, `num3_*`) and at five further points (`spec1_s3_*`). Solution 2 (deg L = 2) and non-integer a are not
+  covered by the proof.
 - The Sol 2 cells at n < 0 (t = 4 spin 9; t = 7 spins 3, 9), where the engine evaluates to zero, are explained in the paper as an
   evaluation artefact at coincident Gamma poles (checked numerically at the fibres t0 + 1/N, `nzero1_*`); a symbolic proof that
   they are removable limits is open.
@@ -215,6 +272,10 @@ The stage notes are kept as written. Three statements in them were later superse
   outside the author's machine). They now resolve the same files relative to their own location; the code modules are included under
   `tree/code/` and `tree/lab/`, byte-identical to the repository's. Further files with private paths in their text were redacted as above
   (default paths that the checks override at run time, or files the kit does not execute; 41 further redaction entries). Every entry is in `PATCHES.json`.
+- v1.2.6: three B2 scripts (`b2/gm.py`, `b2/sol1.py`, `b2b/b2b.py`) opened files through an absolute path or imported from a private copy of
+  the stage directory; they now resolve the same files relative to their own location (the imported code is byte-identical). Four B2 stage
+  notes had private paths and session names in their text, redacted as above. The SPEC1 files are not changed (their reference logs are
+  described under "New in v1.2.6").
 
 Because of these edits, the per-stage `SHA256SUMS` (and `SHA256SUMS_subset`) from the time of archiving no longer match for those files.
 `PATCHES.json` gives the archived hash of each one.

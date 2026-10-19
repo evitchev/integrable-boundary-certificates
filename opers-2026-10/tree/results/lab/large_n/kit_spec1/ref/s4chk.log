@@ -1,0 +1,34 @@
+script <stage>/code/spec1_s4_checks.py sha256 706b0412f5ab7940617d31a3c16620c71d8590dbda6007cc05b037b5d96b5ddf
+python 3.12.8 sympy 1.14.0 mpmath 1.3.0
+imported code/spec1_s4_checks.py sha256 706b0412f5ab7940617d31a3c16620c71d8590dbda6007cc05b037b5d96b5ddf
+imported code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+[PASS] (C1) p = q_G/sigma = (a+1)/(d+a); 1 - p = (d-1)/(d+a)
+[PASS] (C1) ODE E-correction power n - (d-1) q_O = -sigma
+[PASS] (C1) Gamma E-correction power n - (D-1) q_G = sigma (p - 1) < 0 for d > 1
+[PASS] (C1) q_O = p sigma/(1 - p)
+[PASS] (C2) tau* = x^(q_O)/sigma solves p x^(q_G) sigma^p tau^(p-1)/q_G = 1  1
+[PASS] (C2) tau - X^(q_G)/q_G = tau* (v - v^p/p) at tau = tau* v  0
+[PASS] (C2) tau* h(1) = -x^(q_O)/q_O
+[PASS] (C2) h'(1) = 0, h''(1) = 1 - p
+[PASS] (C3) R(y) = p(1-p) y^2/2 + O(y^4)  -p*(p - 1)/2
+[PASS] (C3) Re h(1+iy) - h(1) = -R(y)/p (dps 40, two p, four y)  7.02e-37
+   info (C3) p = 2/5: min over y in [1e-3, 1e6] of R/min(y^2, y^p) = 0.0924771  (p(1-p)/2 = 0.12, cos(p pi/2) = 0.809017)
+[PASS] (C3) R/min(y^2, y^p) bounded below by a positive constant on the grid, p = 2/5
+   info (C3) p = 1/2: min over y in [1e-3, 1e6] of R/min(y^2, y^p) = 0.0986841  (p(1-p)/2 = 0.125, cos(p pi/2) = 0.707107)
+[PASS] (C3) R/min(y^2, y^p) bounded below by a positive constant on the grid, p = 1/2
+   info (C3) p = 4/7: min over y in [1e-3, 1e6] of R/min(y^2, y^p) = 0.0982934  (p(1-p)/2 = 0.122449, cos(p pi/2) = 0.62349)
+[PASS] (C3) R/min(y^2, y^p) bounded below by a positive constant on the grid, p = 4/7
+   info (C3) p = 2/3: min over y in [1e-3, 1e6] of R/min(y^2, y^p) = 0.0911236  (p(1-p)/2 = 0.111111, cos(p pi/2) = 0.5)
+[PASS] (C3) R/min(y^2, y^p) bounded below by a positive constant on the grid, p = 2/3
+   info (C3) p = 3/4: min over y in [1e-3, 1e6] of R/min(y^2, y^p) = 0.0782827  (p(1-p)/2 = 0.09375, cos(p pi/2) = 0.382683)
+[PASS] (C3) R/min(y^2, y^p) bounded below by a positive constant on the grid, p = 3/4
+   info (C3) p = 4/5: min over y in [1e-3, 1e6] of R/min(y^2, y^p) = 0.0675043  (p(1-p)/2 = 0.08, cos(p pi/2) = 0.309017)
+[PASS] (C3) R/min(y^2, y^p) bounded below by a positive constant on the grid, p = 4/5
+   info (C4) lam = 50: sqrt(lam)/(2 pi) int = (0.889861635214 + 0.00706839248011j); |ratio - 1| = 0.008299
+   info (C4) lam = 200: sqrt(lam)/(2 pi) int = (0.891506450525 + 0.001779639343j); |ratio - 1| = 0.00209
+   info (C4) lam = 800: sqrt(lam)/(2 pi) int = (0.891922795344 + 0.000445746688984j); |ratio - 1| = 0.0005235
+[PASS] (C4) Laplace main term -> (2 pi (1-p))^(-1/2) with error ~ 1/lam (ratios 4 +- 1 between lam steps)  ['0.0083', '0.00209', '0.000524']
+imported(end) code/spec1_s4_checks.py sha256 706b0412f5ab7940617d31a3c16620c71d8590dbda6007cc05b037b5d96b5ddf
+imported(end) code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+S4CHK DONE: ALL PASS
+exit 0

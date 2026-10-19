@@ -1,0 +1,29 @@
+tower K, t = 11/3, s = 8/7; charges at w2 = [2, 3, 4, 5, 6, 7, 8, 10, 12]; dims [0, 2, 1, 0, 0, 0, 1, 0, 1]
+
+== w2 = 8 (spin 3) charge 0: J-charge sectors (size, total derivative?) {0: (15, False)}; projected q-powers [0, 1, 2, 4]; Solution 1 (u,v) commutant dim 1
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (False, 1)}, 1: {6: (True, 1)}, 2: {0: (True, 'const'), 4: (True, 1)}, 4: {0: (True, 'const')}}; ALL: False
+   q = 0 part has weight pieces [0, 4, 8]; top piece (weight 8) has 7 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0]]
+   q = 0: D_0 = c_3 * I_3^cert mod d with c_3 = None
+   (q^k, weight w) piece = c x (generator at that weight): {(0, 0): ('trivial', '{(): Fraction(168, 5)}'), (0, 4): ('gen w2=4', 28/25), (0, 8): ('I_3^cert', None), (1, 6): ('gen w2=6', -1008/125), (2, 0): ('trivial', '{(): Fraction(1792, 25)}'), (2, 4): ('gen w2=4', 672/125), (4, 0): ('trivial', '{(): Fraction(7168, 125)}')}
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [kit (dX)^4 normalisation of cyl_P4]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-12, 35)}, 0: {((0, 1, 1),): Fraction(-2, 5)}}), S1uv, S2uv: {'pure': {0: False, 1: True, 2: True, 4: True}, 'W0proj': {0: False, 1: False, 2: True, 3: True, 4: True, 5: True}, 'S1': {0: True, 1: True, 2: True, 4: True}, 'S2': {0: True, 1: True, 2: True, 4: True}}
+   info: unprojected charge commutes with S3, S4: {3: True, 4: True}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 12 (spin 5) charge 0: J-charge sectors (size, total derivative?) {0: (52, False)}; projected q-powers [0, 1, 2, 3, 4, 6]; Solution 1 (u,v) commutant dim 1
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (False, 1), 12: (False, 1)}, 1: {6: (True, 1), 10: (False, 1)}, 2: {0: (True, 'const'), 4: (True, 1), 8: (False, 1)}, 3: {6: (True, 1)}, 4: {0: (True, 'const'), 4: (True, 1)}, 6: {0: (True, 'const')}}; ALL: False
+   q = 0 part has weight pieces [0, 4, 8, 12]; top piece (weight 12) has 18 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0]]
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [ALT normalisation (P2^2 Q2 coefficient = 1)]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-12, 35)}, 0: {((0, 1, 1),): Fraction(-2, 5)}}), S1uv, S2uv: {'pure': {0: False, 1: False, 2: False, 3: True, 4: True, 6: True}, 'W0proj': {0: False, 1: False, 2: False, 3: False, 4: True, 5: True, 6: True, 7: True}, 'S1': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}, 'S2': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}}
+   info: unprojected charge commutes with S3, S4: {3: True, 4: True}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== CONTROLS
+   control wrong dictionary (s' = 9/7) at w2 = 8: D_0(s') in span(I_3^cert(t)) + Im d in the (X, phi) frame: False  (must be False)
+   control wrong dictionary at w2 = 12: eigenvalue proportional to the certified I_5: None  (must be None)
+   real projection at s in the (X, phi) frame: D_0 in span(I_3^cert) + Im d: False  (must be True)
+   control perturbed screening at w2 = 8: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed screening at w2 = 12: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed Solution 1 vector at w2 = 8: commutant dim 0; membership {0: False, 1: False, 2: True, 4: True}  (must fail)
+   control perturbed Solution 1 vector at w2 = 12: commutant dim 0; membership {0: False, 1: False, 2: False, 3: False, 4: True, 6: True}  (must fail)
+done in 35.0s

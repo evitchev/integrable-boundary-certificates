@@ -1,0 +1,17 @@
+tower K, s = 10/9 (c = -39/5), eta = (Fraction(10, 9), Fraction(-10, 9)), vertices: S1, S2, S3, S4
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S3: b = (Fraction(-1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S4: b = (Fraction(-1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(1, 2)}
+w2 = 2: commutant dim 0  (cands 3, rows 8, pivots 3; 0.0s, peak RSS 62 MB)
+w2 = 3: commutant dim 2  (cands 6, rows 12, pivots 6; 0.0s, peak RSS 62 MB)
+   charge 0: 2 monomials; sample: [(((0, 1, 0), (1, 0, 1)), Fraction(18, 1)), (((0, 1, 1), (1, 0, 0)), Fraction(-18, 1))]
+   charge 1: 2 monomials; sample: [(((0, 1, 0), (1, 0, 0)), Fraction(18, 1)), (((0, 1, 1), (1, 0, 1)), Fraction(-18, 1))]
+w2 = 4: commutant dim 1  (cands 11, rows 24, pivots 15; 0.0s, peak RSS 62 MB)
+   charge 0: 4 monomials; sample: [(((0, 1, 0), (0, 1, 0)), Fraction(9, 1)), (((0, 1, 1), (0, 1, 1)), Fraction(-9, 1)), (((1, 0, 0), (1, 1, 0)), Fraction(-9, 1)), (((1, 0, 1), (1, 1, 1)), Fraction(9, 1))]
+w2 = 5: commutant dim 0  (cands 18, rows 44, pivots 24; 0.0s, peak RSS 62 MB)
+w2 = 6: commutant dim 0  (cands 28, rows 72, pivots 41; 0.0s, peak RSS 62 MB)
+w2 = 7: commutant dim 0  (cands 44, rows 112, pivots 70; 0.1s, peak RSS 62 MB)
+w2 = 8: commutant dim 1  (cands 69, rows 176, pivots 112; 0.1s, peak RSS 63 MB)
+   charge 0: 15 monomials; sample: [(((0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0)), Fraction(-48114, 1)), (((0, 1, 0), (0, 1, 0), (0, 1, 1), (0, 1, 1)), Fraction(43740, 1)), (((0, 1, 0), (0, 1, 0), (1, 0, 0), (1, 1, 0)), Fraction(144342, 1)), (((0, 1, 0), (0, 1, 0), (1, 0, 1), (1, 1, 1)), Fraction(-144342, 1))]
+written towers_K_s10-9_w2_3_4_5_6_7_8.json

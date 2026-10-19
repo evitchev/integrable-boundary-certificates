@@ -1,0 +1,76 @@
+{
+ "tower": "K",
+ "t": "7/2",
+ "s": "10/9",
+ "pairs": {
+  "(2,3)": {
+   "commute": false,
+   "residue_monomials": 62,
+   "secs": 0.0
+  },
+  "(2,5)": {
+   "commute": false,
+   "residue_monomials": 280,
+   "secs": 0.1
+  },
+  "(3,3)": {
+   "commute": false,
+   "residue_monomials": 116,
+   "secs": 0.0
+  },
+  "(3,5)": {
+   "commute": false,
+   "residue_monomials": 505,
+   "secs": 0.3
+  },
+  "(5,3)": {
+   "commute": false,
+   "residue_monomials": 377,
+   "secs": 0.3
+  },
+  "(5,5)": {
+   "commute": false,
+   "residue_monomials": 1542,
+   "secs": 4.4
+  }
+ },
+ "controls": {
+  "(2,3)": {
+   "commute": false,
+   "partA": false,
+   "partB": false
+  },
+  "(2,5)": {
+   "commute": false,
+   "partA": false,
+   "partB": false
+  },
+  "(3,3)": {
+   "commute": false,
+   "partA": false,
+   "partB": false
+  },
+  "(3,5)": {
+   "commute": false,
+   "partA": false,
+   "partB": false
+  },
+  "(5,3)": {
+   "commute": false,
+   "partA": false,
+   "partB": false
+  },
+  "(5,5)": {
+   "commute": false,
+   "partA": false,
+   "partB": false
+  }
+ },
+ "consistency": {
+  "[L_2,L_3]": true,
+  "[L_2,L_5]": true,
+  "[L_3,L_5]": true,
+  "[I_3,I_5] fermionic": true,
+  "[I_3,I_5] bosonised": true
+ }
+}

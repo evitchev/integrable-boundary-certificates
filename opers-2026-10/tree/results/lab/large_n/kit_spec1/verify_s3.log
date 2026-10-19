@@ -1,0 +1,87 @@
+[PASS] Sol3_a3.json: sha256 = ORIGIN_SHA256  28f1db67a99c3315
+== Sol3 a=3 t=11/5: ODE order 4, Gamma order 7
+   A E=0: relation dev 2.4e-66; Q^O vs Meijer 5.3e-67; Q^Gamma vs Meijer 2.9e-66
+[PASS] Sol3 a=3 A E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol3 a=3 A E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   A max_j dev by E: -20:1.5e-65 -5:6.5e-66 0:2.4e-66 1:3.8e-66 7:6.1e-67 37:2.6e-66 100:1.9e-65 500:1.1e-65
+   B E=0: relation dev 2.8e-66; Q^O vs Meijer 1.2e-67; Q^Gamma vs Meijer 2.8e-66
+[PASS] Sol3 a=3 B E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol3 a=3 B E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   B max_j dev by E: -20:1.5e-65 -5:1.4e-65 0:2.8e-66 1:2.0e-66 7:2.4e-66 37:4.7e-66 100:3.2e-65 500:8.9e-66
+   recomputed deviations = archived 'dev': 64/64
+[PASS] Sol3 a=3: recomputed deviations equal the archived ones
+[PASS] Sol3 a=3: relation holds, max deviation < 1e-30 (registered criterion)  worst 3.2e-65
+[PASS] Sol3 a=3: max deviation < 2e-56 (paper: 'about 1e-56 or better')  worst 3.2e-65
+[PASS] Sol3 a=3: max deviation at every E < 1e-64 (paper: better than 1e-64 except at E = 0 for Solution 1)  worst 3.2e-65
+[PASS] Sol3 a=3: tamper omega * 8/7 fails at every E (min dev > 1e-3)  0.14 (= 1/7 by construction)
+[PASS] Sol3 a=3: tamper m(theta_j) interchanged fails at every E (min over E of max_j dev > 1e-3)  3.8
+[PASS] Sol1_a3.json: sha256 = ORIGIN_SHA256  d5a5df1eb22dd4c8
+== Sol1 a=3 t=7: ODE order 2, Gamma order 5
+   A E=0: relation dev 1.5e-57; Q^O vs Meijer 1.5e-57; Q^Gamma vs Meijer 8.4e-67
+[PASS] Sol1 a=3 A E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol1 a=3 A E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   A max_j dev by E: -20:9.6e-67 -5:1.1e-65 0:1.5e-57 1:2.0e-65 7:4.1e-67 37:1.4e-66 100:3.7e-66 500:1.0e-65
+   B E=0: relation dev 1.1e-56; Q^O vs Meijer 1.1e-56; Q^Gamma vs Meijer 3.3e-67
+[PASS] Sol1 a=3 B E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol1 a=3 B E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   B max_j dev by E: -20:1.7e-66 -5:1.2e-66 0:1.1e-56 1:4.5e-65 7:3.7e-67 37:4.8e-67 100:2.7e-66 500:1.1e-65
+   recomputed deviations = archived 'dev': 32/32
+[PASS] Sol1 a=3: recomputed deviations equal the archived ones
+[PASS] Sol1 a=3: relation holds, max deviation < 1e-30 (registered criterion)  worst 1.1e-56
+[PASS] Sol1 a=3: max deviation < 2e-56 (paper: 'about 1e-56 or better')  worst 1.1e-56
+[PASS] Sol1 a=3: max deviation at E != 0 < 1e-64 (paper: better than 1e-64 except at E = 0 for Solution 1)  worst 4.5e-65
+[PASS] Sol1 a=3: tamper omega * 8/7 fails at every E (min dev > 1e-3)  0.14 (= 1/7 by construction)
+[PASS] Sol1 a=3: tamper m(theta_j) interchanged fails at every E (min over E of max_j dev > 1e-3)  0.22
+[PASS] Sol3_a1.json: sha256 = ORIGIN_SHA256  cbecb09c0f18aa8e
+== Sol3 a=1 t=5/3: ODE order 4, Gamma order 5
+   A E=0: relation dev 7.7e-67; Q^O vs Meijer 1.7e-67; Q^Gamma vs Meijer 6.0e-67
+[PASS] Sol3 a=1 A E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol3 a=1 A E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   A max_j dev by E: -20:2.7e-66 -5:1.3e-66 0:7.7e-67 1:9.1e-67 7:1.2e-66 37:9.9e-68 100:3.2e-67 500:1.5e-67
+   B E=0: relation dev 5.7e-67; Q^O vs Meijer 8.8e-67; Q^Gamma vs Meijer 3.0e-67
+[PASS] Sol3 a=1 B E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol3 a=1 B E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   B max_j dev by E: -20:3.5e-66 -5:1.0e-66 0:5.7e-67 1:1.2e-66 7:2.5e-67 37:3.6e-68 100:4.1e-67 500:1.5e-67
+   recomputed deviations = archived 'dev': 64/64
+[PASS] Sol3 a=1: recomputed deviations equal the archived ones
+[PASS] Sol3 a=1: relation holds, max deviation < 1e-30 (registered criterion)  worst 3.5e-66
+[PASS] Sol3 a=1: max deviation < 2e-56 (paper: 'about 1e-56 or better')  worst 3.5e-66
+[PASS] Sol3 a=1: max deviation at every E < 1e-64 (paper: better than 1e-64 except at E = 0 for Solution 1)  worst 3.5e-66
+[PASS] Sol3 a=1: tamper omega * 8/7 fails at every E (min dev > 1e-3)  0.14 (= 1/7 by construction)
+[PASS] Sol3 a=1: tamper m(theta_j) interchanged fails at every E (min over E of max_j dev > 1e-3)  3.2
+[PASS] Sol1_a1.json: sha256 = ORIGIN_SHA256  1c462a590d31020b
+== Sol1 a=1 t=3: ODE order 2, Gamma order 3
+   A E=0: relation dev 2.3e-62; Q^O vs Meijer 2.3e-62; Q^Gamma vs Meijer 1.5e-67
+[PASS] Sol1 a=1 A E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol1 a=1 A E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   A max_j dev by E: -20:3.7e-67 -5:4.7e-67 0:2.3e-62 1:1.2e-67 7:9.8e-67 37:5.5e-67 100:4.6e-67 500:7.9e-67
+   B E=0: relation dev 4.4e-61; Q^O vs Meijer 4.4e-61; Q^Gamma vs Meijer 1.5e-67
+[PASS] Sol1 a=1 B E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol1 a=1 B E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   B max_j dev by E: -20:4.7e-67 -5:4.3e-67 0:4.4e-61 1:1.1e-66 7:1.7e-67 37:1.4e-67 100:4.7e-67 500:1.5e-66
+   recomputed deviations = archived 'dev': 32/32
+[PASS] Sol1 a=1: recomputed deviations equal the archived ones
+[PASS] Sol1 a=1: relation holds, max deviation < 1e-30 (registered criterion)  worst 4.4e-61
+[PASS] Sol1 a=1: max deviation < 2e-56 (paper: 'about 1e-56 or better')  worst 4.4e-61
+[PASS] Sol1 a=1: max deviation at E != 0 < 1e-64 (paper: better than 1e-64 except at E = 0 for Solution 1)  worst 1.5e-66
+[PASS] Sol1 a=1: tamper omega * 8/7 fails at every E (min dev > 1e-3)  0.14 (= 1/7 by construction)
+[PASS] Sol1 a=1: tamper m(theta_j) interchanged fails at every E (min over E of max_j dev > 1e-3)  0.55
+[PASS] Sol1_a2.json: sha256 = ORIGIN_SHA256  ecda8851f1b18e05
+== Sol1 a=2 t=5: ODE order 2, Gamma order 4
+   A E=0: relation dev 1.6e-62; Q^O vs Meijer 1.6e-62; Q^Gamma vs Meijer 7.2e-68
+[PASS] Sol1 a=2 A E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol1 a=2 A E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   A max_j dev by E: -20:1.1e-66 -5:5.6e-67 0:1.6e-62 1:8.8e-67 7:8.4e-67 37:2.1e-67 100:1.7e-66 500:8.3e-68
+   B E=0: relation dev 4.6e-61; Q^O vs Meijer 4.6e-61; Q^Gamma vs Meijer 1.1e-67
+[PASS] Sol1 a=2 B E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol1 a=2 B E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   B max_j dev by E: -20:6.6e-67 -5:3.7e-67 0:4.6e-61 1:3.9e-67 7:1.5e-66 37:9.0e-68 100:1.1e-66 500:3.7e-67
+   recomputed deviations = archived 'dev': 32/32
+[PASS] Sol1 a=2: recomputed deviations equal the archived ones
+[PASS] Sol1 a=2: relation holds, max deviation < 1e-30 (registered criterion)  worst 4.6e-61
+[PASS] Sol1 a=2: max deviation < 2e-56 (paper: 'about 1e-56 or better')  worst 4.6e-61
+[PASS] Sol1 a=2: max deviation at E != 0 < 1e-64 (paper: better than 1e-64 except at E = 0 for Solution 1)  worst 1.7e-66
+[PASS] Sol1 a=2: tamper omega * 8/7 fails at every E (min dev > 1e-3)  0.14 (= 1/7 by construction)
+[PASS] Sol1 a=2: tamper m(theta_j) interchanged fails at every E (min over E of max_j dev > 1e-3)  3.3
+[PASS] Solution 1, E = 0 (3 points x 2 momenta): deviations between about 1e-61 and 1e-56 (paper; tested as [1e-63, 2e-56])  range 1.6e-62 .. 1.1e-56
+VERIFY S3 ARCHIVE: ALL PASS

@@ -1,0 +1,37 @@
+
+===== spec1_s3_sol3_a1: argv ['code/spec1_s3.py', 'S3', 'Sol3', '1']  exit 0  5237s
+script /tmp/opers-kit-bbkq_1rn/tree/results/lab/large_n/spec1/code/spec1_s3.py sha256 2aaf8fcffaad799c33ee2044dce4da76963e8349cb0beac500515ca37ed59a19
+python 3.8.10 sympy 1.13.3 mpmath 1.3.0
+imported code/spec1_s3.py sha256 2aaf8fcffaad799c33ee2044dce4da76963e8349cb0beac500515ca37ed59a19
+imported deps_snapshot/ode.py sha256 595e6e1af6ffd25a3bf88bc0dd795c75b800538a99cd4f11a8fb656ff52f8f72
+imported code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+== Sol3 a=1 t=5/3 [SPECIAL (t = 5/3: Sol 2 = Sol 3 locus)]: ODE order 4, Gamma order 5, sigma 5, n 5, c 10
+   A E=-20: max_j |omega Q^O/(m Q^G) - 1| = 2.73e-66; T-omega min 0.143; T-perm max 3.16; time ODE 17.2s Gamma 14.7s
+   A E=-5: max_j |omega Q^O/(m Q^G) - 1| = 1.29e-66; T-omega min 0.143; T-perm max 3.16; time ODE 16.8s Gamma 14.5s
+   A E=0: max_j |omega Q^O/(m Q^G) - 1| = 7.66e-67; T-omega min 0.143; T-perm max 3.16; time ODE 15.3s Gamma 12.9s
+[PASS] S3 E=0 control Sol3 a=1 A: both solvers = Meijer closed forms (>= 40 digits)  max rel diff 6.01e-67
+   A E=1: max_j |omega Q^O/(m Q^G) - 1| = 9.11e-67; T-omega min 0.143; T-perm max 3.16; time ODE 16.4s Gamma 14.2s
+   A E=7: max_j |omega Q^O/(m Q^G) - 1| = 1.21e-66; T-omega min 0.143; T-perm max 3.16; time ODE 16.9s Gamma 14.5s
+   A E=37: max_j |omega Q^O/(m Q^G) - 1| = 9.87e-68; T-omega min 0.143; T-perm max 3.16; time ODE 14.5s Gamma 7.3s
+[PASS] S3 dps-140 repeat Sol3 a=1 A E=37: Q's agree with dps 70 to >= 50 digits  1.44e-67; dps-140 relation deviation 6.65e-134 (1248s + 957s)
+   A E=100: max_j |omega Q^O/(m Q^G) - 1| = 3.22e-67; T-omega min 0.143; T-perm max 3.16; time ODE 18.0s Gamma 15.0s
+   A E=500: max_j |omega Q^O/(m Q^G) - 1| = 1.54e-67; T-omega min 0.143; T-perm max 3.16; time ODE 18.4s Gamma 15.2s
+   B E=-20: max_j |omega Q^O/(m Q^G) - 1| = 3.48e-66; T-omega min 0.143; T-perm max 6.49; time ODE 8.6s Gamma 7.3s
+   B E=-5: max_j |omega Q^O/(m Q^G) - 1| = 9.97e-67; T-omega min 0.143; T-perm max 6.49; time ODE 8.5s Gamma 7.3s
+   B E=0: max_j |omega Q^O/(m Q^G) - 1| = 5.75e-67; T-omega min 0.143; T-perm max 6.49; time ODE 7.6s Gamma 6.4s
+[PASS] S3 E=0 control Sol3 a=1 B: both solvers = Meijer closed forms (>= 40 digits)  max rel diff 8.77e-67
+   B E=1: max_j |omega Q^O/(m Q^G) - 1| = 1.19e-66; T-omega min 0.143; T-perm max 6.49; time ODE 8.2s Gamma 7.3s
+   B E=7: max_j |omega Q^O/(m Q^G) - 1| = 2.53e-67; T-omega min 0.143; T-perm max 6.49; time ODE 8.5s Gamma 7.3s
+   B E=37: max_j |omega Q^O/(m Q^G) - 1| = 3.61e-68; T-omega min 0.143; T-perm max 6.49; time ODE 8.8s Gamma 7.4s
+[PASS] S3 dps-140 repeat Sol3 a=1 B E=37: Q's agree with dps 70 to >= 50 digits  5.38e-68; dps-140 relation deviation 1.75e-134 (1334s + 1274s)
+   B E=100: max_j |omega Q^O/(m Q^G) - 1| = 4.13e-67; T-omega min 0.143; T-perm max 6.49; time ODE 13.8s Gamma 10.4s
+   B E=500: max_j |omega Q^O/(m Q^G) - 1| = 1.48e-67; T-omega min 0.143; T-perm max 6.49; time ODE 9.2s Gamma 7.8s
+[PASS] S3 Sol3 a=1 [SPECIAL (t = 5/3: Sol 2 = Sol 3 locus)]: relation holds, max deviation < 1e-30 over E, j, A/B  worst 3.48e-66
+[PASS] S3 Sol3 a=1: T-omega fails (min deviation > 1e-3)  0.143
+[PASS] S3 Sol3 a=1: T-perm fails (deviation > 1e-3 at every E)  min over E 3.16
+   info T-order (x^c T ordering) at E = 37: deviations ['0.599', '0.601']
+total wall time 5237s
+imported(end) code/spec1_s3.py sha256 2aaf8fcffaad799c33ee2044dce4da76963e8349cb0beac500515ca37ed59a19
+imported(end) deps_snapshot/ode.py sha256 595e6e1af6ffd25a3bf88bc0dd795c75b800538a99cd4f11a8fb656ff52f8f72
+imported(end) code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+S3 DONE: ALL PASS

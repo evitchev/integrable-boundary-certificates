@@ -1,0 +1,15 @@
+script <stage>/code/spec1_ddt.py sha256 95f23fbe5e0e9c44a47dfe0278f94fff33cb8a1dba3f6361d5f23f5f8fe39f97
+python 3.12.8 sympy 1.14.0 mpmath 1.3.0
+imported code/spec1_ddt.py sha256 95f23fbe5e0e9c44a47dfe0278f94fff33cb8a1dba3f6361d5f23f5f8fe39f97
+imported code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+[PASS] (i) y^2 e^(-y^4/4) y^(1/6) S[Phi] = -(4/9) L_O[f] on f = x^nu (symbolic nu, l0, l1, E), mu^6 = 3, E_S = -kappa E  residual 0
+[PASS] (i) tamper E_S = -E (kappa -> 1) fails
+   alpha = -4*l0/3 (with l0 = 3 sqrt3 P_X: alpha = -4 sqrt3 P_X); l = [-2*l1/3 - 1/2, 2*l1/3 - 1/2] (l + 1/2 = 2 l1/3; with l1 = 3 pi: 2 pi)
+[PASS] (i) decaying branches correspond: exp(-y^4/2) = exp(-x^6/6) at x = mu y^(2/3), mu^6 = 3
+[PASS] (ii) gauge x^(-l0/3): prod(theta - e_i) x^(nu - l0/3) = x^(-l0/3) prod(theta - g_i) x^nu, g = e + l0/3, sum g = 3  g = [l0/3 - l1 + 1, l0/3 + l1 + 1, 1 - 2*l0/3]
+   (ii) the x^6 and E x^3 terms are unchanged by the gauge, so E_D = E_G (no rescaling)
+[PASS] composite: E_D = E_G = -E and E_S = -kappa E give E_D = kappa^-1 E_S (DDT (4.4))
+imported(end) code/spec1_ddt.py sha256 95f23fbe5e0e9c44a47dfe0278f94fff33cb8a1dba3f6361d5f23f5f8fe39f97
+imported(end) code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+DDT DONE: ALL PASS
+exit 0

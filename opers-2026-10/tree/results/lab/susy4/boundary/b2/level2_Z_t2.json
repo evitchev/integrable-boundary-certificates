@@ -1,0 +1,345 @@
+{
+ "tower": "Z",
+ "t": "2",
+ "s": "2/3",
+ "cells": {
+  "w6_0": {
+   "dim_sol1": 1,
+   "q_powers": [
+    0,
+    1,
+    3
+   ],
+   "membership": {
+    "0": true,
+    "1": true,
+    "3": true
+   },
+   "nonneutral": {
+    "0": [
+     9,
+     false
+    ],
+    "2": [
+     1,
+     true
+    ],
+    "-2": [
+     1,
+     true
+    ]
+   },
+   "D0_weights": [
+    6
+   ],
+   "vparity_D0": [
+    1
+   ],
+   "vparity_gens": [
+    [
+     1
+    ]
+   ],
+   "ck_vs_gen": {
+    "(0, 6)": "2/25",
+    "(1, 0)": "trivial",
+    "(1, 4)": "12/25",
+    "(3, 0)": "trivial"
+   },
+   "commutation_by_order": {
+    "pure": {
+     "0": true,
+     "1": true,
+     "3": true
+    },
+    "W0proj": {
+     "0": false,
+     "1": true,
+     "2": true,
+     "3": true,
+     "4": true
+    },
+    "S1": {
+     "0": true,
+     "1": true,
+     "3": true
+    },
+    "S2": {
+     "0": true,
+     "1": true,
+     "3": true
+    }
+   },
+   "S3S4_full": {
+    "3": false,
+    "4": false
+   },
+   "S3S4_uv_on_D0": {
+    "3": false,
+    "4": false
+   }
+  },
+  "w8_0": {
+   "dim_sol1": 1,
+   "q_powers": [
+    0,
+    1,
+    2,
+    4
+   ],
+   "membership": {
+    "0": false,
+    "1": true,
+    "2": true,
+    "4": true
+   },
+   "nonneutral": {
+    "0": [
+     17,
+     false
+    ]
+   },
+   "D0_weights": [
+    0,
+    4,
+    8
+   ],
+   "vparity_D0": [
+    0
+   ],
+   "vparity_gens": [
+    [
+     0
+    ]
+   ],
+   "c3_density": "None",
+   "ck": {
+    "(0, 0)": "('trivial', '{(): Fraction(121, 60)}')",
+    "(0, 4)": "('gen w2=4', -33/25)",
+    "(0, 8)": "('I_3^cert', None)",
+    "(1, 6)": "('gen w2=6', -72/125)",
+    "(2, 0)": "('trivial', '{(): Fraction(286, 25)}')",
+    "(2, 4)": "('gen w2=4', -396/125)",
+    "(4, 0)": "('trivial', '{(): Fraction(572, 125)}')"
+   },
+   "c_eigen": "None",
+   "commutation_by_order": {
+    "pure": {
+     "0": false,
+     "1": true,
+     "2": true,
+     "4": true
+    },
+    "W0proj": {
+     "0": false,
+     "1": false,
+     "2": true,
+     "3": true,
+     "4": true,
+     "5": true
+    },
+    "S1": {
+     "0": true,
+     "1": true,
+     "2": true,
+     "4": true
+    },
+    "S2": {
+     "0": true,
+     "1": true,
+     "2": true,
+     "4": true
+    }
+   },
+   "S3S4_full": {
+    "3": false,
+    "4": false
+   },
+   "S3S4_uv_on_D0": {
+    "3": false,
+    "4": false
+   }
+  },
+  "w10_0": {
+   "dim_sol1": 1,
+   "q_powers": [
+    0,
+    1,
+    2,
+    3,
+    5
+   ],
+   "membership": {
+    "0": false,
+    "1": false,
+    "2": true,
+    "3": true,
+    "5": true
+   },
+   "nonneutral": {
+    "0": [
+     42,
+     false
+    ],
+    "2": [
+     1,
+     true
+    ],
+    "-2": [
+     1,
+     true
+    ]
+   },
+   "D0_weights": [
+    6,
+    10
+   ],
+   "vparity_D0": [
+    1
+   ],
+   "vparity_gens": [
+    [
+     1
+    ]
+   ],
+   "commutation_by_order": {
+    "pure": {
+     "0": false,
+     "1": false,
+     "2": true,
+     "3": true,
+     "5": true
+    },
+    "W0proj": {
+     "0": false,
+     "1": false,
+     "2": false,
+     "3": true,
+     "4": true,
+     "5": true,
+     "6": true
+    },
+    "S1": {
+     "0": true,
+     "1": true,
+     "2": true,
+     "3": true,
+     "5": true
+    },
+    "S2": {
+     "0": true,
+     "1": true,
+     "2": true,
+     "3": true,
+     "5": true
+    }
+   },
+   "S3S4_full": {
+    "3": false,
+    "4": false
+   },
+   "S3S4_uv_on_D0": {
+    "3": false,
+    "4": false
+   }
+  },
+  "w12_0": {
+   "dim_sol1": 2,
+   "q_powers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "membership": {
+    "0": false,
+    "1": false,
+    "2": false,
+    "3": true,
+    "4": true,
+    "6": true
+   },
+   "nonneutral": {
+    "0": [
+     80,
+     false
+    ]
+   },
+   "D0_weights": [
+    0,
+    4,
+    8,
+    12
+   ],
+   "vparity_D0": [
+    0
+   ],
+   "vparity_gens": [
+    [
+     1
+    ],
+    [
+     0
+    ]
+   ],
+   "c_eigen": "None",
+   "commutation_by_order": {
+    "pure": {
+     "0": false,
+     "1": false,
+     "2": false,
+     "3": true,
+     "4": true,
+     "6": true
+    },
+    "W0proj": {
+     "0": false,
+     "1": false,
+     "2": false,
+     "3": false,
+     "4": true,
+     "5": true,
+     "6": true,
+     "7": true
+    },
+    "S1": {
+     "0": true,
+     "1": true,
+     "2": true,
+     "3": true,
+     "4": true,
+     "6": true
+    },
+    "S2": {
+     "0": true,
+     "1": true,
+     "2": true,
+     "3": true,
+     "4": true,
+     "6": true
+    }
+   },
+   "S3S4_full": {
+    "3": false,
+    "4": false
+   },
+   "S3S4_uv_on_D0": {
+    "3": false,
+    "4": false
+   }
+  }
+ },
+ "Z_equals_K_w8": false,
+ "Z_equals_K_w12": false,
+ "controls": {
+  "w8_wrong_dictionary_in_span": false,
+  "w12_wrong_dictionary_eigen_ratio": "None",
+  "w8_real_in_span_Xphi": false,
+  "w8_perturbed_screening": "no charge (commutant empty) -> fails",
+  "w12_perturbed_screening": "no charge (commutant empty) -> fails",
+  "w8_perturbed_sol1_vector": "{0: False, 1: False, 2: True, 4: True}",
+  "w12_perturbed_sol1_vector": "{0: False, 1: False, 2: False, 3: False, 4: True, 6: True}"
+ }
+}

@@ -1,0 +1,25 @@
+script <stage>/code/spec1_s2c_gauss.py sha256 89acbe323e1fda399de6a497e75e42273e12f9803f92036420b686a571ed5b70
+python 3.12.8 sympy 1.14.0 mpmath 1.3.0
+imported code/spec1_s2c_gauss.py sha256 89acbe323e1fda399de6a497e75e42273e12f9803f92036420b686a571ed5b70
+imported code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+[PASS] (G1) eps_{f_i} - al_j = u + i/(a+1)
+[PASS] (G2) u + a/(a+1) = beta1' - al_j
+[PASS] (G3) (a+1) u = g - theta_j/sigma
+[PASS] (G4) sum_i eps_{f_i} = a (s - r)/c  a*(-r + s)/(sigma*(a + 1))
+[PASS] (G5) X = (d-1) vt_O - D vt_G = 1/2 - g
+[PASS] (G6) log(Q^O_j/Q^G_j) - log m(theta_j) + log omega = 0 identically (symbolic s, r, theta, sigma, d, a)  residual 0
+[PASS] (G6) tamper g -> g + 1/7 in omega leaves a nonzero residual  Lsigma/7
+[PASS] (G2) tamper: u + (a-1)/a != beta1' - al_j
+[PASS] (GM) Gauss multiplication at dps 100, k = 2..9, three u (one complex)  5.0e-101
+[PASS] lib tie Sol3 a=3 A: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  4.67e-61
+[PASS] lib tie Sol3 a=3 B: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  1.63e-60
+[PASS] lib tie Sol1 a=3 A: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  3.11e-61
+[PASS] lib tie Sol1 a=3 B: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  4.67e-61
+[PASS] lib tie Sol3 a=1 A: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  7.78e-61
+[PASS] lib tie Sol3 a=1 B: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  7.78e-61
+[PASS] lib tie Sol1 a=1 A: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  1.56e-61
+[PASS] lib tie Sol1 a=1 B: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  0.0
+imported(end) code/spec1_s2c_gauss.py sha256 89acbe323e1fda399de6a497e75e42273e12f9803f92036420b686a571ed5b70
+imported(end) code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+GAUSS DONE: ALL PASS
+exit 0

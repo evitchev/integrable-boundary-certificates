@@ -1,0 +1,8 @@
+  weight S1: h = 1; double pole proportional: True; primary: True
+  weight S2: h = 1; double pole proportional: True; primary: True
+  weight S3: h = 0; double pole proportional: True; primary: True
+  weight S4: h = 0; double pole proportional: True; primary: True
+  weight e^{-X_0}: h = s/2 - 1; proportional: True; higher poles vanish: True; prefactor {(): Fraction(1, 1)}
+  weight W0_bottom: h = s/2 - 1/2; proportional: True; higher poles vanish: True; prefactor {((1, 0, 1),): Fraction(1, 1)}
+  weight W0_top[G]: h = s/2; proportional: True; higher poles vanish: True; prefactor {((1, 0, 0), (1, 0, 1)): -1, ((0, 1, 1),): 1}
+done weights in 0.1s

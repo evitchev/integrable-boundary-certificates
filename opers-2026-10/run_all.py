@@ -554,6 +554,213 @@ check('sol2_ext_all_fibres', 'The opers (Sol 2); Verification (table)', 'operato
 check('num1_shoot', 'Numerical spectral check', 'numerical (zeros of D vs shooting)', LN + 'num1', ['n2_shoot.py'], 'run_n2.stdout', quick=False,
       drill=dict(edit=[('replace', LN + 'num1/n2_shoot.py', None, None)], must=['False']))
 
+# ======== g6_b2 (v1.2.6) ========
+# g6_b2: checks for the Solution 1 entry "U(1) coset of N=2" of Section "Screening systems" (opers_npb.tex, sec:screen, l. 109 and
+# ll. 122-126).  Stages B2 (results/lab/susy4/boundary/b2) and B2b (results/lab/susy4/boundary/b2b).
+# Paste into run_all.py (after the last check block); merge DRILLS into drills.json.
+# The paper's statements checked:
+#   (a) c_{N=2} = 3 - 12/p^2 and the screening (Gram) data of the a = 4 tower's J-neutral screenings = Solution 1's        -> b2_n2frame_*, b2_level1
+#   (b) the two towers are the quantum N = 2 KdV hierarchies with a = 4 (Zeitlin's sl(2|1)^(1)) and a = -2 (KL's sl(2|2)^(1)) -> b2_classical_*
+#   (c) I_3, I_5 are not the U(1)-vacuum projections of those towers' charges, t = 2, 7/2, 11/3 (+ 13/5 hold-out)            -> b2_towers_*, b2_sol1_*, b2_level2_*, b2_validate2_*
+#   (d) I_3, I_5 (and the X-odd I_2) do not commute with those charges, t = 2, 7/2, 13/5                                    -> b2b_*
+_B2S = 'Screening systems (Solution 1: U(1) coset of N = 2)'
+_B2 = 'results/lab/susy4/boundary/b2'
+_B2B = 'results/lab/susy4/boundary/b2b'
+_FRESH = '../../kit_b2/fresh.py'      # kit helper: deletes the archived copy of the script's JSON output, then runs the script unchanged
+_DONE = [r'done( \w+)? in \d+(\.\d+)?s']
+_JSON_TIMING = [r'"secs": [0-9.]+', r'"rss_MB": \d+']
+_FIB = {'2': ('2-3', '2'), '7/2': ('10-9', '7-2'), '11/3': ('8-7', '11-3'), '13/5': ('8-9', '13-5')}   # t -> (s tag, t tag)
+
+# --- (a) N = 2 frame (V1) and Level I
+check('b2_n2frame_v1', _B2S, 'N = 2 superconformal OPEs of the two-superfield frame, symbolic in s = p^2 (exact)', _B2, [_FRESH, '--same-json', 'n2frame_v1.json', '--', 'n2frame.py', 'v1'],
+      'logs/n2frame_v1.log', mask=_DONE,
+      drill=dict(edit=[('replace', _B2 + '/n2frame.py', None, None)], must=['V1 TT/4 = c/2: FAIL', 'FAILURES']),
+      note='B2 V1: T, G+, G-, J of the frame eta = (s, -s) with background charge fixed by h(S1) = h(S2) = 1 close into the N = 2 SCA with '
+           'c = 3 - 12/s (36 OPE checks, poles 1-5, symbolic in s). Supports "c_{N=2} = 3 - 12/p^2". '
+           'n2frame_v1.json rewritten equal as a JSON object. Drill: target c = 3 - 12/s -> 3 - 11/s; the TT and JJ checks must FAIL')
+check('b2_n2frame_vertices', _B2S, 'commutation of T, G, g\', J with the five screening vertices at six values of s (exact)', _B2, [_FRESH, '--same-json', 'n2frame_vertices.json', '--', 'n2frame.py', 'vertices'],
+      'logs/n2frame_vertices.log', mask=_DONE,
+      drill=dict(edit=[('replace', _B2 + '/n2frame.py', 'lam0 = -1 / sv if not isinstance(sv, F) else F(-1) / sv',
+                        'lam0 = -2 / sv if not isinstance(sv, F) else F(-2) / sv')], must=['J: S1=n S2=n S3=n S4=n']),
+      note='B2: T, G, g\' commute with S1..S4 and W0; J with S1, S2, W0 only (S3, S4 carry J-charge -+2). Supports "U(1) coset": the J-neutral '
+           'screenings are S1, S2, W0. n2frame_vertices.json rewritten equal as a JSON object. Drill: background charge -1/s -> -2/s; J must '
+           'then fail to commute with S1, S2')
+check('b2_level1', _B2S, 'Level I: Gram matrix of the J-neutral screenings = Solution 1\'s, symbolic in s (exact)', _B2, ['level1.py'], 'logs/level1.log',
+      drill=dict(edit=[('replace', _B2 + '/level1.py', None, None)], must=['EQUAL: False']),
+      note='B2 Level I: after bosonisation and rotation (J = const dH~), Gram(S1, S2, W0) = Gram(V+, V-, e^{p phi}) of Solution 1 '
+           '(beta = -p/2, kappa^2 = 1 - p^2/4) identically in s; isometry u = -p phi, v = -2 kappa X. Supports "refers to the central charge '
+           'and the screening (Gram) data". Drill: kappa^2 = 1 - s/4 -> 1 - s/3 must give EQUAL: False')
+# --- (b) which hierarchies: the classical limits fit the N = 2 KdV flow with a = 4 (Z) and a = -2 (K)
+for _tw, _a, _oa in (('Z', '4', '-2'), ('K', '-2', '4')):
+    _ot = 'K' if _tw == 'Z' else 'Z'
+    check(f'b2_classical_{_tw}', _B2S, f'V2: classical limit of tower {_tw} fits the N = 2 KdV flow with a = {_a} (exact)', _B2, [_FRESH, '--same-json', f'classical_{_tw}.json', '--', 'classical.py', _tw],
+          f'logs/classical_{_tw}.log', mask=_DONE,
+          drill=dict(argv=[_FRESH, '--same-json', f'classical_{_tw}.json', '--', 'classical.py', _ot], must=[f'a: {_oa}']),
+          note=f'B2 V2: classical commutant dims = quantum ones (w2 = 2..8); the quantum weight-4 density at s = 1/j (j = 2..31) reconstructed '
+               f'and evaluated at s = 0 equals the classical one; the N = 2 superfield flow fits Mao-Liu (1) with a = {_a} only (unique). '
+               f'Supports the labels a = 4 / a = -2 (LM-N2KdV labelling). Drill: the other tower must fit a = {_oa} (the fit discriminates)')
+
+# --- (c) inputs: tower charges (commutants mod d), recomputed at the four fibres; JSON compared with timings masked
+for _t, (_st, _tt) in _FIB.items():
+    for _tw in ('Z', 'K'):
+        for _w, _wa in (('w2_3_4_5_6_7_8', '2,3,4,5,6,7,8'), ('w10_12', '10,12')):
+            _f = f'towers_{_tw}_s{_st}_{_w}.json'
+            check(f'b2_towers_{_tw}_t{_tt.replace("-", "o")}_{_w.split("_")[0]}{"_8" if _w.startswith("w2") else "_12"}', _B2S,
+                  f'tower {_tw} commutant mod d at w2 = {_wa} (t = {_t}, s = {_st.replace("-", "/")}; exact)', _B2,
+                  [_FRESH, '--rm', _f, '--', 'towers.py', _tw, _st.replace('-', '/'), _wa], _f, out=_f, mask=_JSON_TIMING,
+                  drill=dict(edit=[('replace', _B2 + '/towers.py', '    perturb = None', '    perturb = (2 if tower == "Z" else 3, F(1, 7))')], must=['+(1/7,0)']),
+                  note=f'B2 towers: the charges of tower {_tw} (dims and full kernels) that level2.py / b2b.py read; the archived JSON is deleted '
+                       'before the run (kit_b2/fresh.py) and must be rewritten identically (secs, rss_MB masked). Drill: the script\'s own '
+                       'negative control (last screening momentum + 1/7 along X_0) switched on by a one-line edit; the kernels must change')
+
+# --- (c) Solution 1's certified charges in the coset frame, at the four fibres
+for _t, (_st, _tt) in _FIB.items():
+    _f = f'sol1_t{_tt}.json'
+    _dr = (dict(edit=[('bumpat', 'results/lab/vev/vev_sol1_w6.json', ['coefficients', '#1'])], must=['kit table at t = ' + _t + ' (article P = i P_ours): False'])
+           if _t != '11/3' else
+           dict(edit=[('replace', _B2 + '/sol1.py', 'E3_repo = sp.expand(CV.vev_density(I3m, sp.Rational(N), P2, Q2))',
+                        'E3_repo = sp.expand(CV.vev_density(I3m, sp.Rational(N) + sp.Rational(1, 1000), P2, Q2))')], must=['dictionary: None']))
+    check(f'b2_sol1_t{_tt.replace("-", "o")}', _B2S, f'certified Solution 1 I_3, I_5 in the coset frame (t = {_t}; exact)', _B2,
+          [_FRESH, '--same-json', _f, '--', 'sol1.py', _t], f'logs/sol1_t{_tt}.log', drill=_dr,
+          note=f'B2: certified I_3 (code/mixed_engine.cyl_P4) -> Vir_N -> (X, phi) -> (u, v) by the Level-I isometry: rational and in the '
+               f'commutant of Solution 1\'s three (u, v) vectors; momentum dictionary pinned by the exact certified I_3 eigenvalue; I_5 = '
+               f'ker ad I_3 at weight 6, its eigenvalue vs the kit table results/lab/vev/vev_sol1_w6.json' +
+               (' (kit normalisation singular at t = 11/3: comparison skipped, as archived; Q^6 normalisation used)' if _t == '11/3' else '') +
+               f'. sol1_t{_tt}.json (read by level2.py, b2b.py) is deleted and must be rewritten equal to the archived one as a JSON object '
+               '(kit_b2/fresh.py --same-json; exit 3 otherwise' + (': at this fibre the archived file has one key in a different position, see REPORT' if _t in ('2', '7/2') else '') + '). Drill: ' +
+               ('one coefficient of the kit table bumped by 1/1000 must break the I_5 match' if _t != '11/3' else
+                'the certified I_3 eigenvalue evaluated at N + 1/1000 must leave no momentum dictionary (dictionary: None)'))
+
+# --- (c) Level II: projections of the tower charges onto the H~ vacuum vs Solution 1's commutant
+for _tw, _t in (('Z', '2'), ('Z', '7/2'), ('Z', '11/3'), ('Z', '13/5'), ('K', '2'), ('K', '7/2'), ('K', '11/3'), ('K', '13/5')):
+    _st, _tt = _FIB[_t]
+    _f = f'level2_{_tw}_t{_tt}.json'
+    check(f'b2_level2_{_tw}_t{_tt.replace("-", "o")}', _B2S + (' (hold-out fibre)' if _t == '13/5' else ''),
+          f'Level II: U(1)-vacuum projection of tower {_tw} charges vs Solution 1\'s commutant (t = {_t}; exact)', _B2,
+          [_FRESH, '--rm', _f, '--', 'level2.py', _tw, _t], f'logs/level2_{_tw}_t{_tt}.log', mask=_DONE, post=('same_file', _f),
+          drill=dict(edit=[('replace', _B2 + '/level2.py', None, None)], must=['8: (True, 2)']),
+          note=f'B2 Level II (t = {_t}' + (', the registered hold-out' if _t == '13/5' else '') + f'): the q = 0 top pieces of the projected '
+               'spin-3, 4, 5 charges are NOT in Solution 1\'s commutant mod d (spin 2 is: c_2 = (t-1)/(t+3)); pieces of weight <= 6 and constants '
+               'are; controls (wrong dictionary s + 1/7, perturbed W0, perturbed Solution 1 vector) fail as archived. Drill: drop Solution 1\'s '
+               'third screening e^{-u} from the comparison; the top pieces then lie in the pair commutant (the failure is due to the third screening)')
+for _t, (_st, _tt) in _FIB.items():
+    check(f'b2_validate2_t{_tt.replace("-", "o")}', _B2S, f'end-to-end validation of the projection machinery (t = {_t}; exact)', _B2,
+          ['validate2.py', _t], f'logs/validate2_t{_tt}.log',
+          drill=dict(edit=[('replace', _B2 + '/coset.py', None, None)], must=['False   diff =']),
+          note='B2 validate2: (1) bosonisation of neutral fermion words preserves NS vacuum eigenvalues; (2) for every charge of Z (w2 = 4..12) and '
+               'K (4, 8, 12) the eigenvalue of the original two-superfield density equals that of its projection at q = -2P_1/s. '
+               'Drill: H~ metric (s-4)/s -> (s-3)/s in coset.py must break (2)')
+
+# --- (d) B2b: commutation of Solution 1's (lifted) charges with the towers' charges
+for _tw in ('Z', 'K'):
+    for _t in ('2', '7/2', '13/5'):
+        _st, _tt = _FIB[_t]
+        _f = f'b2b_{_tw}_t{_tt}.json'
+        check(f'b2b_{_tw}_t{_tt.replace("-", "o")}', _B2S, f'B2b: [oint L_s, oint I_r] mod d, tower {_tw}, t = {_t} (exact)', _B2B,
+              [_FRESH, '--same-json', _f, '--ignore-key', 'secs', '--', 'b2b.py', _tw, _t], f'logs/b2b_{_tw}_t{_tt}.log', mask=_DONE,
+              drill=dict(edit=[('bumpat', _B2B + f'/inputs/sol1_t{_tt}.json', ['I3_uv', 0, 1])], must=['[L_2, L_3] = 0 mod d: False']),
+              note=f'B2b: residues of L_s (Solution 1\'s I_2, I_3, I_5 lifted H~-free to (u, v, H~)) against tower {_tw}\'s I_r (r = 2, 3, 5' +
+                   (', I_2 of Z only' if _tw == 'Z' else '') + ') are NOT total derivatives for every pair; consistency rows (L\'s among '
+                   'themselves; I\'s among themselves in the fermionic and the bosonised frame) commute; kappa + 1/7 control. The archived b2b JSON is '
+                   'deleted and must be rewritten equal as a JSON object (timings "secs" ignored). Inputs: b2b/inputs/ '
+                   '(byte copies of b2/ files, hashes in b2b/inputs/INPUTS.SHA256 and b2b/SHA256SUMS). Drill: one coefficient of the certified '
+                   'I_3 in (u, v) bumped by 1/1000 must break [L_2, L_3] = 0')
+
+# ======== g5_spec1 (v1.2.6) ========
+# g5_spec1: check(...) calls for run_all.py (kit v1.2.6), stage SPEC1 (register items 387-388).
+# Paste after the PROOF3 block (thm3_constant, thm3_kernel) of run_all.py.  No drills.json entries: every drill edit carries its old/new
+# strings inline (('replace', file, old, new)) or is a bumpat/rehash.
+# Requires in tree/ (FILES.txt): results/lab/large_n/spec1/{code/spec1_{lib,s0,s0b,s1,s2,s2c_gauss,s3,s4_checks,ddt}.py,
+# deps_snapshot/{ode,ops}.py, DEPS.SHA256, inputs/proof3/t1.json, out/s3/*.json} and the kit helper dir results/lab/large_n/kit_spec1/
+# (verify_s3.py, spot_s3.py, ORIGIN_SHA256, their reference logs, and ref/: the archived SPEC1 logs with the ARGV line removed and the
+# seat's absolute workspace prefix replaced by "<stage>/", see README_SECTION.md).  No archived file is patched.
+# Paper: papers/opers-2026-10/npb/opers_npb.tex, Theorem thm:spectral, the paragraphs after it, and Appendix A (app:proof3).
+SP1 = LN + 'spec1'
+SP1_MASK = [r'^(script|imported) (/|<)\S+', r'^python \S+ sympy \S+ mpmath \S+$', r'time ODE \S+ Gamma \S+', r'^total wall time \d+s$']
+SP1_SEC = 'Spectral equivalence (Theorem thm:spectral, App. A)'
+_lib = SP1 + '/code/spec1_lib.py'
+_g_old = '    return (sp.Rational(pt["s"]) - r) / sp.Rational(pt["sigma"]) + sp.Rational(1 - int(pt["a"]), 2)\n'
+_g_new = '    return (sp.Rational(pt["s"]) - r) / sp.Rational(pt["sigma"]) + sp.Rational(1 - int(pt["a"]), 2) + sp.Rational(1, 7)\n'
+_w_old = '    return sigma ** (g_of(pt, r) - sp.Rational(1, 2)) * sp.sqrt('
+_w_new = '    return sp.Rational(8, 7) * sigma ** (g_of(pt, r) - sp.Rational(1, 2)) * sp.sqrt('
+# --- S0: scope and the no-resonance hypothesis (H) at the momentum points of the numerics
+check('spec1_scope', SP1_SEC + '; scope', 'exact (rational arithmetic)', SP1, ['code/spec1_s0.py', 'S0'], '../kit_spec1/ref/s0.log', mask=SP1_MASK,
+      drill=dict(edit=[('replace', SP1 + '/code/spec1_s0.py', '("B", (F(9, 10), F(1, 5)))', '("B", (F(9, 10), F(9, 10)))')], must=['(H) FAILS']),
+      note='SPEC1 S0: Sol 3 at t = (3a+2)/(a+2) (d = 4, r = 0) and Sol 1 at t = 2a+1 (d = 2, r = l0) are in the scope of thm:spectral for a = 1..6 '
+           '(deg L = 1, sigma > 0), Sol 2 is not (deg L = 2); (H) holds at both momenta (1/3, 3/5), (9/10, 1/5) at the points t = 2, 5/3, 11/5, 3, 5. '
+           'Drill: momentum B with l1 = l0 (coincident exponents) -> (H) FAILS')
+check('spec1_scope_sol1_a3', SP1_SEC + '; scope', 'exact (rational arithmetic)', SP1, ['code/spec1_s0b.py', 'S0b'], '../kit_spec1/ref/s0b.log', mask=SP1_MASK,
+      drill=dict(edit=[('replace', SP1 + '/code/spec1_s0b.py', '("B", (F(9, 10), F(1, 5)))', '("B", (F(9, 10), F(9, 10)))')], must=['(H) FAILS']),
+      note='SPEC1 S0b: (H) at Sol 1 a = 3 (t = 7, N = 1/2) at both momenta (the point missing from the S0 table). Drill: l1 = l0 at B -> (H) FAILS')
+# --- S1: Lemma 2 / Proposition A.1 identities (symbolic in a, mu, r, s), frozen lattice, intertwining on monomials, Hankel quadrature
+check('spec1_kernel', SP1_SEC, 'symbolic identities (general a) + quadrature', SP1, ['code/spec1_s1.py', 'S1'], '../kit_spec1/ref/s1.log', mask=SP1_MASK,
+      drill=dict(edit=[('replace', _lib, _g_old, _g_new)], must=['[FAIL] (d)']),
+      note='SPEC1 S1: m(mu+sigma)/m(mu) = s - mu - r - c/2 and m(mu)/m(mu-n) = G_a(s-mu-r) symbolically in a, sigma, s, r, mu (and expanded, a = 1..8); '
+           'frozen exponents sigma g + sigma j (j < a) are zeros of m and the frozen Frobenius lattice misses the other frozen exponents (a = 1..8); '
+           'L_O K = x^n K x^-n L_Gamma on monomials at six points symbolically in mu, l0, l1, E; K x^mu = m(mu) x^mu and Lemma 2(i) by 50-digit '
+           'quadrature at three points; each with its own tamper. Drill: g + 1/7 in spec1_lib.g_of -> the intertwining (d) fails')
+# --- S2: beta_O, beta_Gamma, the power and saddle identities, omega(t = 2), and the closed-form omega at E = 0 (Meijer G, 12 points x 2 momenta)
+check('spec1_constant', SP1_SEC, 'symbolic (beta, saddle) + numerical E = 0 test of the closed-form omega (dps 60, 120)', SP1, ['code/spec1_s2.py', 'S2'],
+      '../kit_spec1/ref/s2.log', mask=SP1_MASK,
+      drill=dict(edit=[('replace', _lib, _w_old, _w_new)], must=['[FAIL] S2b', '[FAIL] S2c sealed omega']),
+      note='SPEC1 S2: the exponents beta_O, beta_Gamma of thm:spectral by exact conjugation (a = 1..6, both solutions), the power identity '
+           '-g q_O + beta_G(1 + q_O/sigma) + q_O/2 = beta_O and the saddle identities (symbolic); omega(t = 2) = 3^(-1/6) pi^(-1/2) exactly; the generic '
+           'Meijer-G E = 0 formulas reproduce the archived t = 2 closed forms (deps_snapshot/ops.py); omega Q^O(0) = m Q^Gamma(0) at a = 1..6, both '
+           'solutions and momenta. Drill: omega * 8/7 (the paper\'s tamper) in spec1_lib.omega_sealed')
+check('spec1_e0_gauss', SP1_SEC + '; E = 0 identity', 'symbolic proof (Gauss multiplication) + numerical ties', SP1, ['code/spec1_s2c_gauss.py', 'GAUSS'],
+      '../kit_spec1/ref/s2c_gauss.log', mask=SP1_MASK,
+      drill=dict(edit=[('replace', SP1 + '/code/spec1_s2c_gauss.py', '    logw = (g - sp.Rational(1, 2)) * Ls + LD / 2 - L2p / 2 - Ld1 / 2',
+                        '    logw = (g - sp.Rational(1, 2)) * Ls + LD / 2 - L2p / 2 + Ld1 / 2')], must=['[FAIL] (G6) log(Q^O_j/Q^G_j)']),
+      note='SPEC1 S2c: the exact E = 0 identity of thm:spectral: the a frozen Gamma factors and one ODE factor form a complete Gauss product (G1-G3), '
+           'and log(Q^O_j(0)/Q^G_j(0)) - log m(theta_j) + log omega = 0 identically in s, r, theta, sigma, d, a (G6); Gauss multiplication spot-checked '
+           '(dps 100), the closed form tied to spec1_lib at four points. Drill: (d-1) moved to the numerator of omega\'s square root -> (G6) residual')
+check('spec1_saddle', SP1_SEC + ' (App. A, Prop. A.2)', 'symbolic (exponents, saddle) + numerical (descent constant, Laplace rate)', SP1,
+      ['code/spec1_s4_checks.py', 'S4'], '../kit_spec1/ref/s4chk.log', mask=SP1_MASK,
+      drill=dict(edit=[('replace', SP1 + '/code/spec1_s4_checks.py', '    qG, qO = c / D, c / (d - 1)\n', '    qG, qO = c / D, c / d\n')],
+                 must=['[FAIL] (C1) ODE E-correction power']),
+      note='SPEC1 S4 checks: (C1) p = (a+1)/(d+a), the E-correction powers -sigma and sigma(p-1) < 0, q_O = p sigma/(1-p); (C2) tau* and the phase '
+           'tau* (v - v^p/p), h(1), h\'(1) = 0, h\'\'(1) = 1-p (symbolic); (C3) the descent function R(y) and a positive lower bound of R/min(y^2, y^p) on a '
+           'grid (six p; a grid check, not a proof); (C4) the Laplace main term (2 pi (1-p))^(-1/2) with O(1/lambda) error by quadrature. '
+           'Drill: q_O = c/d -> (C1) fails')
+check('spec1_ddt', 'Solution 1 (relation to DDT at t = 3); ' + SP1_SEC, 'symbolic (operator identities)', SP1, ['code/spec1_ddt.py', 'DDT'],
+      '../kit_spec1/ref/ddt.log', mask=SP1_MASK,
+      drill=dict(edit=[('replace', SP1 + '/code/spec1_ddt.py', '    kappa = 4 / (3 * sp.sqrt(3))', '    kappa = 4 / (3 * sp.sqrt(2))')],
+                 must=['[FAIL] (i) y^2']),
+      note='SPEC1 DDT (information in the stage; supports the paper\'s a = 1 remark): with x = mu y^(2/3), mu^6 = 3, the Sol 1 a = 1 ODE is the DDT sextic '
+           'with alpha = -(4/3) l0, l + 1/2 = 2 l1/3, E_S = -kappa E, kappa = 4/(3 sqrt 3); the gauge x^(-l0/3) maps the Gamma form to DDT\'s third-order '
+           'equation with exponents g = e + l0/3; composite E_D = kappa^-1 E_S. Checked on x^nu symbolically. Drill: kappa = 4/(3 sqrt 2)')
+# --- S3 numerics: positive control, archived-output verifier (quick), spot recomputation (quick), and the five full runs (full mode)
+check('spec1_s3_control', SP1_SEC + '; numerics', 'numerical control (solver vs the archived t = 2 Q data)', SP1, ['code/spec1_s3.py', 'S3', 'Sol3', '2', 'ctrl'],
+      '../kit_spec1/ref/s3_ctrl.log', mask=SP1_MASK,
+      drill=dict(edit=[('bumpat', SP1 + '/inputs/proof3/t1.json', ['A', '#0', 'Q3', 0], '1e-20')], must=['[FAIL] S3 positive control']),
+      note='SPEC1 S3 control: the solver path of spec1_s3.py at Sol 3 a = 2 (t = 2) reproduces the archived PROOF3/NUM2 Q3, Q6 (t1.json, '
+           'byte-identical to proof3/t1.json) at 10 (E, momentum) pairs to >= 45 digits. Drill: one archived Q3 value * (1 + 1e-20)')
+check('spec1_s3_archive', SP1_SEC + '; numerics (five points)', 'verifier of the archived S3 outputs (no ODE solved)', LN + 'kit_spec1', ['verify_s3.py'],
+      'verify_s3.log',
+      drill=dict(edit=[('bumpat', SP1 + '/out/s3/Sol3_a3.json', ['A', '37', 'QO', 0], '1e-8'),
+                       ('rehash', SP1 + '/out/s3/Sol3_a3.json', LN + 'kit_spec1/ORIGIN_SHA256')], must=['VERIFY S3 ARCHIVE: FAILURES']),
+      note='KIT HELPER verify_s3.py on the archived out/s3/*.json (sha256 = the stage\'s sealed SHA256SUMS): recomputes omega and m(theta_j) exactly and '
+           'the deviations at all five points, 8 energies, 2 momenta (equal to the archived ones), and the paper\'s figures: < 1e-30 (criterion), about '
+           '1e-56 or better (worst 1.07e-56), better than 1e-64 except at E = 0 for Sol 1 (there 1.6e-62 .. 1.1e-56), the E = 0 Meijer-G comparison of '
+           'the same size, and the omega*8/7 and multiplier-interchange tampers fail at every energy. Not the dps-140 repeat (full checks). '
+           'Drill: one archived Q^O value * (1 + 1e-8), hash refreshed')
+check('spec1_s3_spot', SP1_SEC + '; numerics (five points)', 'recomputation from the operators at two (E, momentum) pairs per point', LN + 'kit_spec1',
+      ['spot_s3.py'], 'spot_s3.log',
+      drill=dict(edit=[('replace', SP1 + '/code/spec1_s3.py', '    shift = sp.Integer(0) if wrong_order else c / 2\n', '    shift = sp.Integer(0)\n')],
+                 must=['SPOT S3: FAILURES']),
+      note='KIT HELPER spot_s3.py: re-solves both operators (archived spec1_s3.qpair, dps 70) at E = 7 (momentum A) and E = 500 (B) at the five points; '
+           'the Q\'s equal the archived values to >= 60 digits, the relation holds to < 1e-60, the two tampers fail. Drill: the operator ordering '
+           'x^c T instead of x^(c/2) T x^(c/2) in L_O (the stage\'s T-order) -> relation and archive agreement fail')
+# timeouts: about 2x the slowest measured run (py3.12.8, pure-Python mpmath: 3272, 3574, 3905, 5653 and ~10000 s; py3.8.10 with gmpy is ~25% faster)
+for _sol, _a, _to, _lab in (('Sol3', 3, 21600, 't = 11/5, generic'), ('Sol1', 3, 12000, 't = 7, generic'), ('Sol3', 1, 8000, 't = 5/3'),
+                            ('Sol1', 1, 7000, 't = 3'), ('Sol1', 2, 7500, 't = 5')):
+    check(f'spec1_s3_{_sol.lower()}_a{_a}', SP1_SEC + '; numerics (five points)', 'numerical (full re-run, dps 70 + dps-140 repeat)', SP1,
+          ['code/spec1_s3.py', 'S3', _sol, str(_a)], f'../kit_spec1/ref/s3_{_sol.lower()}_a{_a}.log', mask=SP1_MASK, quick=False, timeout=_to,
+          drill=dict(edit=[('replace', _lib, _w_old, _w_new)], must=['[FAIL] S3']),
+          note=f'SPEC1 S3 at {_sol} a = {_a} ({_lab}): Q^O_j(E) = (m(theta_j)/omega) Q^Gamma_j(-E) with the closed-form omega at E in {{-20, -5, 0, 1, 7, '
+               f'37, 100, 500}}, both momenta, dps 70 (< 1e-30 registered), E = 0 vs Meijer G, dps-140 repeat at E = 37, tampers omega*(1 + 1/7) and '
+               f'permuted m fail. Drill: omega * 8/7 in spec1_lib (the whole run fails its relation check)')
+
 # drill edits given as (replace, file, None, None) are filled in DRILL_SUBS: first occurrence of `old` -> `new`
 DRILL_SUBS = {}
 def load_drill_subs():

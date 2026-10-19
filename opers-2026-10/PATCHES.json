@@ -658,5 +658,47 @@
   "kind": "textual redaction of private paths/identifiers (file not executed by the kit)",
   "sha256_archived": "e09c20826dd6cbc740913a1cf5ab71a39603a9c87b57fd277b4a34dc67f91461",
   "sha256_kit": "a941077a0287f8daba75b55cf8a735ba22a945cd9a8a8945aaeeaa65f68b9847"
+ },
+ {
+  "kind": "functional: absolute repo path -> relative to __file__ (v1.2.6)",
+  "path": "results/lab/susy4/boundary/b2/gm.py",
+  "sha256_archived": "fa1b6fb412d227dace0d84d74752f85b8ef5cfdfc00eecaa5fc5ad539c744bdc",
+  "sha256_kit": "1ebadbac4804e2c7be17e2b5aea64acd34eb958435b983e42ca6aabdd095b95e"
+ },
+ {
+  "kind": "functional: absolute repo path and private-copy import path (vir1/, vir_lib.py byte-identical to results/lab/large_n/vir1/vir_lib.py) -> relative to __file__; plus textual redaction of a private path in the docstring (v1.2.6)",
+  "path": "results/lab/susy4/boundary/b2/sol1.py",
+  "sha256_archived": "057d26afcdc32a60d41f66c0c441216d363f66ae803505062718c05ba9c272fe",
+  "sha256_kit": "5c2441248c7a45498a861f360eb322322c277b55e4fdedac7fbcc8f2f185ecb9"
+ },
+ {
+  "kind": "functional: private-copy import path (the seat's b2/ workspace; every *.py byte-identical to the archived b2/) -> ../b2 relative to __file__ (v1.2.6)",
+  "path": "results/lab/susy4/boundary/b2b/b2b.py",
+  "sha256_archived": "57c6b7726759d77afa306c23407adfa68884e13c43b00366aeb2c9ec36fe84f7",
+  "sha256_kit": "e687f2d0592b328ddd066e279d6eb915b1306e1492ed2b1e4d233c8a5cedb25c"
+ },
+ {
+  "path": "results/lab/susy4/boundary/b2/PRIMARY.md",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit; v1.2.6)",
+  "sha256_archived": "600bfd83ef7deb6422640afc807d12578da1f13e6de2e7464d4fa58d3e306b51",
+  "sha256_kit": "5d307f7a9c22f5e37eb9afcb5ab69dd4a26a96876c84b6e731926e82822bc7e8"
+ },
+ {
+  "path": "results/lab/susy4/boundary/b2/NOTES.md",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit; v1.2.6)",
+  "sha256_archived": "1c46415b397b2b6cd789538f88198619094e4481e7a821f490efc1a3683f854b",
+  "sha256_kit": "bbf2dd10738e742c9bb0117fe4ce215386a3135d56830c3a351e719fbe52a0b5"
+ },
+ {
+  "path": "results/lab/susy4/boundary/b2b/NOTES.md",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit; v1.2.6)",
+  "sha256_archived": "ed3e5bea8135efd4af21e78e6443e15eb13803edd88408f5e5e3572692ace435",
+  "sha256_kit": "7d48ef12f3c4279355ac9f482bfd88d0c5fbc8973f966b7ea14dd36a018ed117"
+ },
+ {
+  "path": "results/lab/susy4/boundary/b2b/RESULT.md",
+  "kind": "textual redaction of private paths/identifiers (file not executed by the kit; v1.2.6)",
+  "sha256_archived": "7fdd5da9a6edb51f7833a1814b62ef3ce6ca76d16870f16fab38521b7bbd10d1",
+  "sha256_kit": "1ed697cc124ccc2c1b8a8e368b89251991660d2b07c36671d6ac0517fe73786b"
  }
 ]

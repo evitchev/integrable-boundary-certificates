@@ -1,0 +1,36 @@
+tower Z, t = 7/2, s = 10/9: L_2 (3 monomials), L_3 (9), L_5 (16; (u,v) commutant dim 1 at w2 = 12)
+  I_2 of Z: 8 monomials; charge sectors [-2, 0, 2] (non-neutral parts total derivatives: asserted); bosonised+rotated 9 monomials
+  I_3 of Z: 17 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 20 monomials
+  I_5 of Z: 80 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 76 monomials
+
+== main test: [oint L_s, oint I_r] = 0 mod d in the three-boson algebra
+   [L_2, I_2] = 0 mod d: False   (residue 24 monomials, 0.0s)
+   [L_2, I_3] = 0 mod d: False   (residue 62 monomials, 0.0s)
+   [L_2, I_5] = 0 mod d: False   (residue 280 monomials, 0.1s)
+   [L_3, I_2] = 0 mod d: False   (residue 47 monomials, 0.0s)
+   [L_3, I_3] = 0 mod d: False   (residue 116 monomials, 0.0s)
+   [L_3, I_5] = 0 mod d: False   (residue 507 monomials, 0.3s)
+   [L_5, I_2] = 0 mod d: False   (residue 159 monomials, 0.1s)
+   [L_5, I_3] = 0 mod d: False   (residue 377 monomials, 0.3s)
+   [L_5, I_5] = 0 mod d: False   (residue 1542 monomials, 4.4s)
+
+== consistency: Solution 1's charges among themselves (u,v frame) and the tower's charges among themselves
+   [L_2, L_3] = 0 mod d: True
+   [L_2, L_5] = 0 mod d: True
+   [L_3, L_5] = 0 mod d: True
+   [I_2, I_3] = 0 mod d: fermionic frame True; bosonised frame True
+   [I_2, I_5] = 0 mod d: fermionic frame True; bosonised frame True
+   [I_3, I_5] = 0 mod d: fermionic frame True; bosonised frame True
+
+== negative control: lift with kappa -> kappa + 1/7  (X -> -v/(2 kappa') instead of -v/(2 kappa): factor (kappa/kappa')^(n_v))
+   control [L_2', I_2] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_2', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_2', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_2] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_2] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_5] = 0 mod d: False   (rational part False, kappa part False)
+
+done in 12.1s

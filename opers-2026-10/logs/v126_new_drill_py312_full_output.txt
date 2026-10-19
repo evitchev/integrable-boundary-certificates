@@ -1,0 +1,1573 @@
+
+===== b2_n2frame_v1 [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'n2frame_v1.json', '--', 'n2frame.py', 'v1']  exit 3  1s
+derive G': 2 solutions of the ansatz (G' = i g'): {a1: -I, a2: I, a3: -2*I, a4: 0}; {a1: I, a2: -I, a3: 2*I, a4: 0}
+the fixed real g' of currents() is solution index [0] (the other is g' -> -g')
+  g' = {((0, 1, 1), (1, 0, 0)): -1/s, ((0, 1, 0), (1, 0, 1)): 1/s, ((1, 1, 1),): -2/s}
+  J  = (G+ G-)_2 / 2 in sqrt2-normalisation = {((1, 0, 0), (1, 0, 1)): 1/s, ((0, 1, 1),): -2/s}
+  V1 TT/4 = c/2: FAIL  got {(): 3/2 - 6/s} want {(): 3/2 - 11/(2*s)}
+  V1 TT/3 = 0: OK
+  V1 TT/2 = 2T: OK
+  V1 TT/1 = dT: OK
+  V1 TT/5 = 0: OK
+  V1 TJ/3 = 0 (primary): OK
+  V1 TJ/4 = 0: OK
+  V1 TJ/2 = 1 J: OK
+  V1 TJ/1 = dJ: OK
+  V1 TG+/3 = 0 (primary): OK
+  V1 TG+/4 = 0: OK
+  V1 TG+/2 = 3/2 G+: OK
+  V1 TG+/1 = dG+: OK
+  V1 TG-/3 = 0 (primary): OK
+  V1 TG-/4 = 0: OK
+  V1 TG-/2 = 3/2 G-: OK
+  V1 TG-/1 = dG-: OK
+  J J double pole = (s - 4)/s  (c/3 = (3*s - 11)/(3*s))
+  V1 JJ/2 = c/3: FAIL  got {(): 1 - 4/s} want {(): 1 - 11/(3*s)}
+  V1 JJ/1 = 0: OK
+  V1 JJ/3 = 0: OK
+  J G+ simple pole = 1 G+ (sign convention of J-charge)
+  V1 JG+/1 = +-G+: OK
+  V1 JG+/2 = 0: OK
+  V1 JG-/1 = -+G-: OK
+  V1 JG-/2 = 0: OK
+  V1 G+G+/1 = 0: OK
+  V1 G-G-/1 = 0: OK
+  V1 G+G+/2 = 0: OK
+  V1 G-G-/2 = 0: OK
+  V1 G+G+/3 = 0: OK
+  V1 G-G-/3 = 0: OK
+  V1 G+G-/3 = 2c/3 (x2): FAIL  got {(): 4 - 16/s} want {(): 4 - 44/(3*s)}
+  V1 G+G-/2 = 2J (x2): OK
+  V1 G+G-/1 = 2T + dJ (x2): OK
+V1 result: c = 3 - 11/s; all N = 2 OPEs (complex basis T, G+, G-, J; KL (9) form): FAILURES  (0.2s)
+done v1 in 0.2s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of n2frame_v1.json before the run
+[kit_b2/fresh] FAIL: n2frame_v1.json differs from the archived file as a JSON object
+
+
+===== b2_n2frame_vertices [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'n2frame_vertices.json', '--', 'n2frame.py', 'vertices']  exit 3  0s
+  s = 2/3: T: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | G: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | gp: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | J: S1=n S2=n S3=n S4=n W0[G]=Y W0[gp]=Y
+      bottom psi_1 e^(-X_0): {'W0b[G]': {'G': False, 'gp': True, 'J': False}, 'W0b[gp]': {'G': False, 'gp': True, 'J': False}}
+  s = 10/9: T: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | G: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | gp: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | J: S1=n S2=n S3=n S4=n W0[G]=Y W0[gp]=Y
+      bottom psi_1 e^(-X_0): {'W0b[G]': {'G': False, 'gp': True, 'J': False}, 'W0b[gp]': {'G': False, 'gp': True, 'J': False}}
+  s = 8/7: T: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | G: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | gp: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | J: S1=n S2=n S3=n S4=n W0[G]=Y W0[gp]=Y
+      bottom psi_1 e^(-X_0): {'W0b[G]': {'G': False, 'gp': True, 'J': False}, 'W0b[gp]': {'G': False, 'gp': True, 'J': False}}
+  s = 8/9: T: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | G: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | gp: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | J: S1=n S2=n S3=n S4=n W0[G]=Y W0[gp]=Y
+      bottom psi_1 e^(-X_0): {'W0b[G]': {'G': False, 'gp': True, 'J': False}, 'W0b[gp]': {'G': False, 'gp': True, 'J': False}}
+  s = 3: T: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | G: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | gp: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | J: S1=n S2=n S3=n S4=n W0[G]=Y W0[gp]=Y
+      bottom psi_1 e^(-X_0): {'W0b[G]': {'G': False, 'gp': True, 'J': False}, 'W0b[gp]': {'G': False, 'gp': True, 'J': False}}
+  s = 5/7: T: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | G: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | gp: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | J: S1=n S2=n S3=n S4=n W0[G]=Y W0[gp]=Y
+      bottom psi_1 e^(-X_0): {'W0b[G]': {'G': False, 'gp': True, 'J': False}, 'W0b[gp]': {'G': False, 'gp': True, 'J': False}}
+done vertices in 0.1s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of n2frame_vertices.json before the run
+[kit_b2/fresh] FAIL: n2frame_vertices.json differs from the archived file as a JSON object
+
+
+===== b2_level1 [DRILL]: argv ['level1.py']  exit 0  1s
+J direction a = (0, -2/s, -1): a.a = (s - 4)/s (= c/3 = (s - 4)/s);  v = b.Y, b = (0, -1, -2): v.v = 4 - s;  u.u = s
+
+momenta in Y = (X_0, X_1, X_3), metric (s, -s, 1); (u, v, H~) coordinates; J-charge a.m; norm:
+  S1 = (m_1.psi)e^{m_1.X}       : Y-momentum (1/2, 1/2, 1); (u, v, H~) = (1/2, -1/2, 0); J-charge 0; m.m = 1
+  S2 = (m_2.psi)e^{m_2.X}       : Y-momentum (1/2, -1/2, -1); (u, v, H~) = (1/2, 1/2, 0); J-charge 0; m.m = 1
+  S3 = (-m_1.psi)e^{-m_1.X}     : Y-momentum (-1/2, -1/2, 1); (u, v, H~) = (-1/2, (s + 4)/(2*(s - 4)), -2*s/(s - 4)); J-charge -2; m.m = 1
+  S4 = (-m_2.psi)e^{-m_2.X}     : Y-momentum (-1/2, 1/2, -1); (u, v, H~) = (-1/2, (-s - 4)/(2*(s - 4)), 2*s/(s - 4)); J-charge 2; m.m = 1
+  W0 (exponential e^{-X_0})     : Y-momentum (-1, 0, 0); (u, v, H~) = (-1, 0, 0); J-charge 0; m.m = s
+
+Gram matrix of Tower Z's three (J-neutral) vectors (S1, S2, W0):
+⎡       s      -s ⎤
+⎢  1    ─ - 1  ───⎥
+⎢       2       2 ⎥
+⎢                 ⎥
+⎢s             -s ⎥
+⎢─ - 1    1    ───⎥
+⎢2              2 ⎥
+⎢                 ⎥
+⎢ -s     -s       ⎥
+⎢ ───    ───    s ⎥
+⎣  2      2       ⎦
+
+Gram matrix of Solution 1's (V+, V-, e^{p phi}) (metric (1,1), opers paper Sec. 4):
+⎡    s    7⋅s      -s ⎤
+⎢1 - ──   ─── - 1  ───⎥
+⎢    12   12        2 ⎥
+⎢                     ⎥
+⎢7⋅s          s    -s ⎥
+⎢─── - 1  1 - ──   ───⎥
+⎢12           12    2 ⎥
+⎢                     ⎥
+⎢  -s       -s        ⎥
+⎢  ───      ───     s ⎥
+⎣   2        2        ⎦
+EQUAL: False
+Gram with the dual Virasoro screening e^{-2phi/p} instead: [1, 1, -2, 4/s]
+
+isometry: u = -p phi, v = (kappa/xi) X with xi = -1/2: (kappa/xi)^2 = 4 - 4*s/3 = v.v = 4 - s: False
+  S1 = (m_1.psi)e^{m_1.X}        -> (m_X, m_phi) = (sqrt(9 - 3*s)/3, -sqrt(s)/2)
+  S2 = (m_2.psi)e^{m_2.X}        -> (m_X, m_phi) = (-sqrt(9 - 3*s)/3, -sqrt(s)/2)
+  W0 (exponential e^{-X_0})      -> (m_X, m_phi) = (0, sqrt(s))
+Solution 1: {'V+': (sqrt(9 - 3*s)/3, -sqrt(s)/2), 'V-': (-sqrt(9 - 3*s)/3, -sqrt(s)/2), 'e^{p phi}': (0, sqrt(s)), 'e^{-2phi/p}': (0, -2/sqrt(s))}
+
+background charge along phi: coset inherits rho' = 1/p (c_uv = 1 + (1 - 12/p^2) = 2 - 12/p^2 = 2 - 12/s); opers paper rho = p/2 - 1/p (c = 1 + N = 2 - 3*(s - 2)**2/s); difference (rho - rho') = (s - 4)/(2*sqrt(s)) = p/2 - 2/p
+  weight of V+          : under rho (opers) 5*s/24; under rho' = 1/p (coset) 1 - s/24
+  weight of V-          : under rho (opers) 5*s/24; under rho' = 1/p (coset) 1 - s/24
+  weight of e^{p phi}   : under rho (opers) 1; under rho' = 1/p (coset) s/2 - 1
+  weight of e^{-2phi/p} : under rho (opers) 1; under rho' = 1/p (coset) 4/s
+
+===== b2_classical_Z [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'classical_Z.json', '--', 'classical.py', 'K']  exit 3  17s
+classical tower K: vertices S1: b=(Fraction(1, 2), Fraction(1, 2)), W={((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}, S2: b=(Fraction(1, 2), Fraction(-1, 2)), W={((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}, S3: b=(Fraction(-1, 2), Fraction(-1, 2)), W={((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(-1, 2)}, S4: b=(Fraction(-1, 2), Fraction(1, 2)), W={((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(1, 2)}
+  classical commutant w2 = 2: dim 0
+  classical commutant w2 = 3: dim 2
+  classical commutant w2 = 4: dim 1
+  classical commutant w2 = 5: dim 0
+  classical commutant w2 = 6: dim 0
+  classical commutant w2 = 7: dim 0
+  classical commutant w2 = 8: dim 1
+  J^ in classical commutant (mod d): False
+  G^ in classical commutant (mod d): True
+  gp^ in classical commutant (mod d): True
+  T^ in classical commutant (mod d): True
+classical weight-4 density (normalised (dX_0)^4 = 1): 12 monomials
+quantum kernels at s = 1/j, j = 2..31 (w2 = 8) ...
+quantum (s -> 0, reconstructed from 25 points, verified on 5) == classical commutant density: True
+superfield structure [Q_i] with (G -> Q_1, gp -> Q_2): 4 solution(s): [{b1: -1/2, b2: 1/2, d: -2*I, e: 0, g1: I/2, g2: I/2, k1: 1, k2: -I}, {b1: -1/2, b2: 1/2, d: 2*I, e: 0, g1: -I/2, g2: -I/2, k1: 1, k2: I}, {b1: 1/2, b2: -1/2, d: -2*I, e: 0, g1: -I/2, g2: -I/2, k1: -1, k2: I}, {b1: 1/2, b2: -1/2, d: 2*I, e: 0, g1: I/2, g2: I/2, k1: -1, k2: -I}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -1/2, b2: 1/2, d: -2*I, e: 0, g1: I/2, g2: I/2, k1: 1, k2: -I}: [{a: -2, alpha: -I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -1/2, b2: 1/2, d: 2*I, e: 0, g1: -I/2, g2: -I/2, k1: 1, k2: I}: [{a: -2, alpha: I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: 1/2, b2: -1/2, d: -2*I, e: 0, g1: -I/2, g2: -I/2, k1: -1, k2: I}: [{a: -2, alpha: -I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: 1/2, b2: -1/2, d: 2*I, e: 0, g1: I/2, g2: I/2, k1: -1, k2: -I}: [{a: -2, alpha: I/4, tau: 1/8}]
+superfield structure [Q_i] with (gp -> Q_1, G -> Q_2): 4 solution(s): [{b1: -I/2, b2: -I/2, d: -2*I, e: 0, g1: -1/2, g2: 1/2, k1: I, k2: 1}, {b1: -I/2, b2: -I/2, d: 2*I, e: 0, g1: 1/2, g2: -1/2, k1: I, k2: -1}, {b1: I/2, b2: I/2, d: -2*I, e: 0, g1: 1/2, g2: -1/2, k1: -I, k2: -1}, {b1: I/2, b2: I/2, d: 2*I, e: 0, g1: -1/2, g2: 1/2, k1: -I, k2: 1}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -I/2, b2: -I/2, d: -2*I, e: 0, g1: -1/2, g2: 1/2, k1: I, k2: 1}: [{a: -2, alpha: -I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -I/2, b2: -I/2, d: 2*I, e: 0, g1: 1/2, g2: -1/2, k1: I, k2: -1}: [{a: -2, alpha: I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: I/2, b2: I/2, d: -2*I, e: 0, g1: 1/2, g2: -1/2, k1: -I, k2: -1}: [{a: -2, alpha: -I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: I/2, b2: I/2, d: 2*I, e: 0, g1: -1/2, g2: 1/2, k1: -I, k2: 1}: [{a: -2, alpha: I/4, tau: 1/8}]
+superfield structure [D_i] with (G -> D_1, gp -> D_2): 4 solution(s): [{b1: -I/2, b2: I/2, d: -2*I, e: 0, g1: 1/2, g2: 1/2, k1: -I, k2: 1}, {b1: -I/2, b2: I/2, d: 2*I, e: 0, g1: -1/2, g2: -1/2, k1: -I, k2: -1}, {b1: I/2, b2: -I/2, d: -2*I, e: 0, g1: -1/2, g2: -1/2, k1: I, k2: -1}, {b1: I/2, b2: -I/2, d: 2*I, e: 0, g1: 1/2, g2: 1/2, k1: I, k2: 1}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -I/2, b2: I/2, d: -2*I, e: 0, g1: 1/2, g2: 1/2, k1: -I, k2: 1}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, -3*I*alpha + 6*tau, -6*I*alpha + 12*tau]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -I/2, b2: I/2, d: 2*I, e: 0, g1: -1/2, g2: -1/2, k1: -I, k2: -1}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 3*I*alpha + 6*tau, 6*I*alpha + 12*tau]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: I/2, b2: -I/2, d: -2*I, e: 0, g1: -1/2, g2: -1/2, k1: I, k2: -1}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, -3*I*alpha + 6*tau, -6*I*alpha + 12*tau]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: I/2, b2: -I/2, d: 2*I, e: 0, g1: 1/2, g2: 1/2, k1: I, k2: 1}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 3*I*alpha + 6*tau, 6*I*alpha + 12*tau]
+superfield structure [D_i] with (gp -> D_1, G -> D_2): 4 solution(s): [{b1: -1/2, b2: -1/2, d: -2*I, e: 0, g1: -I/2, g2: I/2, k1: -1, k2: -I}, {b1: -1/2, b2: -1/2, d: 2*I, e: 0, g1: I/2, g2: -I/2, k1: -1, k2: I}, {b1: 1/2, b2: 1/2, d: -2*I, e: 0, g1: I/2, g2: -I/2, k1: 1, k2: I}, {b1: 1/2, b2: 1/2, d: 2*I, e: 0, g1: -I/2, g2: I/2, k1: 1, k2: -I}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -1/2, b2: -1/2, d: -2*I, e: 0, g1: -I/2, g2: I/2, k1: -1, k2: -I}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, -3*I*alpha + 6*tau, -6*I*alpha + 12*tau]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -1/2, b2: -1/2, d: 2*I, e: 0, g1: I/2, g2: -I/2, k1: -1, k2: I}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 3*I*alpha + 6*tau, 6*I*alpha + 12*tau]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: 1/2, b2: 1/2, d: -2*I, e: 0, g1: I/2, g2: -I/2, k1: 1, k2: I}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, -3*I*alpha + 6*tau, -6*I*alpha + 12*tau]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: 1/2, b2: 1/2, d: 2*I, e: 0, g1: -I/2, g2: I/2, k1: 1, k2: -I}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 3*I*alpha + 6*tau, 6*I*alpha + 12*tau]
+done in 17.0s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of classical_Z.json before the run
+[kit_b2/fresh] FAIL: classical_Z.json not rewritten
+
+
+===== b2_classical_K [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'classical_K.json', '--', 'classical.py', 'Z']  exit 3  10s
+classical tower Z: vertices S1: b=(Fraction(1, 2), Fraction(1, 2)), W={((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}, S2: b=(Fraction(1, 2), Fraction(-1, 2)), W={((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}, W0_cl: b=(Fraction(-1, 1), Fraction(0, 1)), W={((1, 0, 0), (1, 0, 1)): Fraction(-1, 1), ((0, 1, 1),): Fraction(1, 1)}
+  classical commutant w2 = 2: dim 1
+  classical commutant w2 = 3: dim 2
+  classical commutant w2 = 4: dim 1
+  classical commutant w2 = 5: dim 0
+  classical commutant w2 = 6: dim 1
+  classical commutant w2 = 7: dim 0
+  classical commutant w2 = 8: dim 1
+  J^ in classical commutant (mod d): True
+  G^ in classical commutant (mod d): True
+  gp^ in classical commutant (mod d): True
+  T^ in classical commutant (mod d): True
+classical weight-4 density (normalised (dX_0)^4 = 1): 17 monomials
+quantum kernels at s = 1/j, j = 2..31 (w2 = 8) ...
+quantum (s -> 0, reconstructed from 25 points, verified on 5) == classical commutant density: True
+superfield structure [Q_i] with (G -> Q_1, gp -> Q_2): 4 solution(s): [{b1: -1/2, b2: 1/2, d: -2*I, e: 0, g1: I/2, g2: I/2, k1: 1, k2: -I}, {b1: -1/2, b2: 1/2, d: 2*I, e: 0, g1: -I/2, g2: -I/2, k1: 1, k2: I}, {b1: 1/2, b2: -1/2, d: -2*I, e: 0, g1: -I/2, g2: -I/2, k1: -1, k2: I}, {b1: 1/2, b2: -1/2, d: 2*I, e: 0, g1: I/2, g2: I/2, k1: -1, k2: -I}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -1/2, b2: 1/2, d: -2*I, e: 0, g1: I/2, g2: I/2, k1: 1, k2: -I}: [{a: 4, alpha: -I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -1/2, b2: 1/2, d: 2*I, e: 0, g1: -I/2, g2: -I/2, k1: 1, k2: I}: [{a: 4, alpha: I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: 1/2, b2: -1/2, d: -2*I, e: 0, g1: -I/2, g2: -I/2, k1: -1, k2: I}: [{a: 4, alpha: -I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: 1/2, b2: -1/2, d: 2*I, e: 0, g1: I/2, g2: I/2, k1: -1, k2: -I}: [{a: 4, alpha: I/4, tau: 1/8}]
+superfield structure [Q_i] with (gp -> Q_1, G -> Q_2): 4 solution(s): [{b1: -I/2, b2: -I/2, d: -2*I, e: 0, g1: -1/2, g2: 1/2, k1: I, k2: 1}, {b1: -I/2, b2: -I/2, d: 2*I, e: 0, g1: 1/2, g2: -1/2, k1: I, k2: -1}, {b1: I/2, b2: I/2, d: -2*I, e: 0, g1: 1/2, g2: -1/2, k1: -I, k2: -1}, {b1: I/2, b2: I/2, d: 2*I, e: 0, g1: -1/2, g2: 1/2, k1: -I, k2: 1}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -I/2, b2: -I/2, d: -2*I, e: 0, g1: -1/2, g2: 1/2, k1: I, k2: 1}: [{a: 4, alpha: -I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -I/2, b2: -I/2, d: 2*I, e: 0, g1: 1/2, g2: -1/2, k1: I, k2: -1}: [{a: 4, alpha: I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: I/2, b2: I/2, d: -2*I, e: 0, g1: 1/2, g2: -1/2, k1: -I, k2: -1}: [{a: 4, alpha: -I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: I/2, b2: I/2, d: 2*I, e: 0, g1: -1/2, g2: 1/2, k1: -I, k2: 1}: [{a: 4, alpha: I/4, tau: 1/8}]
+superfield structure [D_i] with (G -> D_1, gp -> D_2): 4 solution(s): [{b1: -I/2, b2: I/2, d: -2*I, e: 0, g1: 1/2, g2: 1/2, k1: -I, k2: 1}, {b1: -I/2, b2: I/2, d: 2*I, e: 0, g1: -1/2, g2: -1/2, k1: -I, k2: -1}, {b1: I/2, b2: -I/2, d: -2*I, e: 0, g1: -1/2, g2: -1/2, k1: I, k2: -1}, {b1: I/2, b2: -I/2, d: 2*I, e: 0, g1: 1/2, g2: 1/2, k1: I, k2: 1}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -I/2, b2: I/2, d: -2*I, e: 0, g1: 1/2, g2: 1/2, k1: -I, k2: 1}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -I/2, b2: I/2, d: 2*I, e: 0, g1: -1/2, g2: -1/2, k1: -I, k2: -1}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: I/2, b2: -I/2, d: -2*I, e: 0, g1: -1/2, g2: -1/2, k1: I, k2: -1}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: I/2, b2: -I/2, d: 2*I, e: 0, g1: 1/2, g2: 1/2, k1: I, k2: 1}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+superfield structure [D_i] with (gp -> D_1, G -> D_2): 4 solution(s): [{b1: -1/2, b2: -1/2, d: -2*I, e: 0, g1: -I/2, g2: I/2, k1: -1, k2: -I}, {b1: -1/2, b2: -1/2, d: 2*I, e: 0, g1: I/2, g2: -I/2, k1: -1, k2: I}, {b1: 1/2, b2: 1/2, d: -2*I, e: 0, g1: I/2, g2: -I/2, k1: 1, k2: I}, {b1: 1/2, b2: 1/2, d: 2*I, e: 0, g1: -I/2, g2: I/2, k1: 1, k2: -I}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -1/2, b2: -1/2, d: -2*I, e: 0, g1: -I/2, g2: I/2, k1: -1, k2: -I}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -1/2, b2: -1/2, d: 2*I, e: 0, g1: I/2, g2: -I/2, k1: -1, k2: I}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: 1/2, b2: 1/2, d: -2*I, e: 0, g1: I/2, g2: -I/2, k1: 1, k2: I}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: 1/2, b2: 1/2, d: 2*I, e: 0, g1: -I/2, g2: I/2, k1: 1, k2: -I}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+done in 9.7s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of classical_K.json before the run
+[kit_b2/fresh] FAIL: classical_K.json not rewritten
+
+
+===== b2_towers_Z_t2_w2_8 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_Z_s2-3_w2_3_4_5_6_7_8.json', '--', 'towers.py', 'Z', '2/3', '2,3,4,5,6,7,8']  exit 0  0s
+tower Z, s = 2/3 (c = -15), eta = (Fraction(2, 3), Fraction(-2, 3)), vertices: S1, S2, W0_top[G]+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   W0_top[G]+(1/7,0): b = (Fraction(-6, 7), Fraction(0, 1)), W = {((1, 0, 0), (1, 0, 1)): Fraction(-1, 1), ((0, 1, 1),): Fraction(1, 1)}
+w2 = 2: commutant dim 1  (cands 3, rows 7, pivots 3; 0.0s, peak RSS 51 MB)
+   charge 0: 2 monomials; sample: [(((0, 1, 1),), Fraction(6, 1)), (((1, 0, 0), (1, 0, 1)), Fraction(-3, 1))]
+w2 = 3: commutant dim 0  (cands 6, rows 12, pivots 8; 0.0s, peak RSS 51 MB)
+w2 = 4: commutant dim 1  (cands 11, rows 23, pivots 14; 0.0s, peak RSS 51 MB)
+   charge 0: 4 monomials; sample: [(((0, 1, 0), (0, 1, 0)), Fraction(-21, 1)), (((0, 1, 1), (0, 1, 1)), Fraction(21, 1)), (((1, 0, 0), (1, 1, 0)), Fraction(21, 1)), (((1, 0, 1), (1, 1, 1)), Fraction(-21, 1))]
+w2 = 5: commutant dim 0  (cands 18, rows 40, pivots 24; 0.0s, peak RSS 51 MB)
+w2 = 6: commutant dim 0  (cands 28, rows 64, pivots 40; 0.0s, peak RSS 51 MB)
+w2 = 7: commutant dim 0  (cands 44, rows 100, pivots 66; 0.0s, peak RSS 51 MB)
+w2 = 8: commutant dim 0  (cands 69, rows 157, pivots 105; 0.1s, peak RSS 51 MB)
+written towers_Z_s2-3_w2_3_4_5_6_7_8.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_Z_s2-3_w2_3_4_5_6_7_8.json before the run
+
+
+===== b2_towers_Z_t2_w10_12 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_Z_s2-3_w10_12.json', '--', 'towers.py', 'Z', '2/3', '10,12']  exit 0  5s
+tower Z, s = 2/3 (c = -15), eta = (Fraction(2, 3), Fraction(-2, 3)), vertices: S1, S2, W0_top[G]+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   W0_top[G]+(1/7,0): b = (Fraction(-6, 7), Fraction(0, 1)), W = {((1, 0, 0), (1, 0, 1)): Fraction(-1, 1), ((0, 1, 1),): Fraction(1, 1)}
+w2 = 10: commutant dim 0  (cands 152, rows 360, pivots 240; 0.5s, peak RSS 52 MB)
+w2 = 12: commutant dim 0  (cands 323, rows 767, pivots 531; 4.0s, peak RSS 56 MB)
+written towers_Z_s2-3_w10_12.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_Z_s2-3_w10_12.json before the run
+
+
+===== b2_towers_K_t2_w2_8 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_K_s2-3_w2_3_4_5_6_7_8.json', '--', 'towers.py', 'K', '2/3', '2,3,4,5,6,7,8']  exit 0  1s
+tower K, s = 2/3 (c = -15), eta = (Fraction(2, 3), Fraction(-2, 3)), vertices: S1, S2, S3, S4+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S3: b = (Fraction(-1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S4+(1/7,0): b = (Fraction(-5, 14), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(1, 2)}
+w2 = 2: commutant dim 0  (cands 3, rows 8, pivots 3; 0.0s, peak RSS 51 MB)
+w2 = 3: commutant dim 1  (cands 6, rows 12, pivots 7; 0.0s, peak RSS 51 MB)
+   charge 0: 4 monomials; sample: [(((0, 1, 0), (1, 0, 0)), Fraction(42, 1)), (((0, 1, 0), (1, 0, 1)), Fraction(-42, 1)), (((0, 1, 1), (1, 0, 0)), Fraction(42, 1)), (((0, 1, 1), (1, 0, 1)), Fraction(-42, 1))]
+w2 = 4: commutant dim 1  (cands 11, rows 24, pivots 15; 0.0s, peak RSS 51 MB)
+   charge 0: 4 monomials; sample: [(((0, 1, 0), (0, 1, 0)), Fraction(21, 1)), (((0, 1, 1), (0, 1, 1)), Fraction(-21, 1)), (((1, 0, 0), (1, 1, 0)), Fraction(-21, 1)), (((1, 0, 1), (1, 1, 1)), Fraction(21, 1))]
+w2 = 5: commutant dim 0  (cands 18, rows 44, pivots 24; 0.0s, peak RSS 51 MB)
+w2 = 6: commutant dim 0  (cands 28, rows 72, pivots 41; 0.0s, peak RSS 51 MB)
+w2 = 7: commutant dim 0  (cands 44, rows 112, pivots 70; 0.1s, peak RSS 51 MB)
+w2 = 8: commutant dim 0  (cands 69, rows 176, pivots 113; 0.2s, peak RSS 51 MB)
+written towers_K_s2-3_w2_3_4_5_6_7_8.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_K_s2-3_w2_3_4_5_6_7_8.json before the run
+
+
+===== b2_towers_K_t2_w10_12 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_K_s2-3_w10_12.json', '--', 'towers.py', 'K', '2/3', '10,12']  exit 0  16s
+tower K, s = 2/3 (c = -15), eta = (Fraction(2, 3), Fraction(-2, 3)), vertices: S1, S2, S3, S4+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S3: b = (Fraction(-1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S4+(1/7,0): b = (Fraction(-5, 14), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(1, 2)}
+w2 = 10: commutant dim 0  (cands 152, rows 416, pivots 259; 1.3s, peak RSS 52 MB)
+w2 = 12: commutant dim 0  (cands 323, rows 888, pivots 587; 14.3s, peak RSS 58 MB)
+written towers_K_s2-3_w10_12.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_K_s2-3_w10_12.json before the run
+
+
+===== b2_towers_Z_t7o2_w2_8 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_Z_s10-9_w2_3_4_5_6_7_8.json', '--', 'towers.py', 'Z', '10/9', '2,3,4,5,6,7,8']  exit 0  1s
+tower Z, s = 10/9 (c = -39/5), eta = (Fraction(10, 9), Fraction(-10, 9)), vertices: S1, S2, W0_top[G]+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   W0_top[G]+(1/7,0): b = (Fraction(-6, 7), Fraction(0, 1)), W = {((1, 0, 0), (1, 0, 1)): Fraction(-1, 1), ((0, 1, 1),): Fraction(1, 1)}
+w2 = 2: commutant dim 1  (cands 3, rows 7, pivots 3; 0.0s, peak RSS 51 MB)
+   charge 0: 2 monomials; sample: [(((0, 1, 1),), Fraction(18, 1)), (((1, 0, 0), (1, 0, 1)), Fraction(-9, 1))]
+w2 = 3: commutant dim 0  (cands 6, rows 12, pivots 8; 0.0s, peak RSS 51 MB)
+w2 = 4: commutant dim 1  (cands 11, rows 23, pivots 14; 0.0s, peak RSS 51 MB)
+   charge 0: 4 monomials; sample: [(((0, 1, 0), (0, 1, 0)), Fraction(-63, 1)), (((0, 1, 1), (0, 1, 1)), Fraction(63, 1)), (((1, 0, 0), (1, 1, 0)), Fraction(63, 1)), (((1, 0, 1), (1, 1, 1)), Fraction(-63, 1))]
+w2 = 5: commutant dim 0  (cands 18, rows 40, pivots 24; 0.0s, peak RSS 51 MB)
+w2 = 6: commutant dim 0  (cands 28, rows 64, pivots 40; 0.0s, peak RSS 51 MB)
+w2 = 7: commutant dim 0  (cands 44, rows 100, pivots 66; 0.1s, peak RSS 51 MB)
+w2 = 8: commutant dim 0  (cands 69, rows 157, pivots 105; 0.2s, peak RSS 51 MB)
+written towers_Z_s10-9_w2_3_4_5_6_7_8.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_Z_s10-9_w2_3_4_5_6_7_8.json before the run
+
+
+===== b2_towers_Z_t7o2_w10_12 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_Z_s10-9_w10_12.json', '--', 'towers.py', 'Z', '10/9', '10,12']  exit 0  10s
+tower Z, s = 10/9 (c = -39/5), eta = (Fraction(10, 9), Fraction(-10, 9)), vertices: S1, S2, W0_top[G]+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   W0_top[G]+(1/7,0): b = (Fraction(-6, 7), Fraction(0, 1)), W = {((1, 0, 0), (1, 0, 1)): Fraction(-1, 1), ((0, 1, 1),): Fraction(1, 1)}
+w2 = 10: commutant dim 0  (cands 152, rows 360, pivots 240; 1.0s, peak RSS 52 MB)
+w2 = 12: commutant dim 0  (cands 323, rows 767, pivots 531; 8.6s, peak RSS 56 MB)
+written towers_Z_s10-9_w10_12.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_Z_s10-9_w10_12.json before the run
+
+
+===== b2_towers_K_t7o2_w2_8 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_K_s10-9_w2_3_4_5_6_7_8.json', '--', 'towers.py', 'K', '10/9', '2,3,4,5,6,7,8']  exit 0  1s
+tower K, s = 10/9 (c = -39/5), eta = (Fraction(10, 9), Fraction(-10, 9)), vertices: S1, S2, S3, S4+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S3: b = (Fraction(-1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S4+(1/7,0): b = (Fraction(-5, 14), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(1, 2)}
+w2 = 2: commutant dim 0  (cands 3, rows 8, pivots 3; 0.0s, peak RSS 51 MB)
+w2 = 3: commutant dim 1  (cands 6, rows 12, pivots 7; 0.0s, peak RSS 51 MB)
+   charge 0: 4 monomials; sample: [(((0, 1, 0), (1, 0, 0)), Fraction(126, 1)), (((0, 1, 0), (1, 0, 1)), Fraction(-126, 1)), (((0, 1, 1), (1, 0, 0)), Fraction(126, 1)), (((0, 1, 1), (1, 0, 1)), Fraction(-126, 1))]
+w2 = 4: commutant dim 1  (cands 11, rows 24, pivots 15; 0.0s, peak RSS 51 MB)
+   charge 0: 4 monomials; sample: [(((0, 1, 0), (0, 1, 0)), Fraction(63, 1)), (((0, 1, 1), (0, 1, 1)), Fraction(-63, 1)), (((1, 0, 0), (1, 1, 0)), Fraction(-63, 1)), (((1, 0, 1), (1, 1, 1)), Fraction(63, 1))]
+w2 = 5: commutant dim 0  (cands 18, rows 44, pivots 24; 0.0s, peak RSS 51 MB)
+w2 = 6: commutant dim 0  (cands 28, rows 72, pivots 41; 0.0s, peak RSS 51 MB)
+w2 = 7: commutant dim 0  (cands 44, rows 112, pivots 70; 0.1s, peak RSS 51 MB)
+w2 = 8: commutant dim 0  (cands 69, rows 176, pivots 113; 0.4s, peak RSS 51 MB)
+written towers_K_s10-9_w2_3_4_5_6_7_8.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_K_s10-9_w2_3_4_5_6_7_8.json before the run
+
+
+===== b2_towers_K_t7o2_w10_12 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_K_s10-9_w10_12.json', '--', 'towers.py', 'K', '10/9', '10,12']  exit 0  24s
+tower K, s = 10/9 (c = -39/5), eta = (Fraction(10, 9), Fraction(-10, 9)), vertices: S1, S2, S3, S4+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S3: b = (Fraction(-1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S4+(1/7,0): b = (Fraction(-5, 14), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(1, 2)}
+w2 = 10: commutant dim 0  (cands 152, rows 416, pivots 259; 2.8s, peak RSS 52 MB)
+w2 = 12: commutant dim 0  (cands 323, rows 888, pivots 587; 21.1s, peak RSS 58 MB)
+written towers_K_s10-9_w10_12.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_K_s10-9_w10_12.json before the run
+
+
+===== b2_towers_Z_t11o3_w2_8 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_Z_s8-7_w2_3_4_5_6_7_8.json', '--', 'towers.py', 'Z', '8/7', '2,3,4,5,6,7,8']  exit 0  1s
+tower Z, s = 8/7 (c = -15/2), eta = (Fraction(8, 7), Fraction(-8, 7)), vertices: S1, S2, W0_top[G]+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   W0_top[G]+(1/7,0): b = (Fraction(-6, 7), Fraction(0, 1)), W = {((1, 0, 0), (1, 0, 1)): Fraction(-1, 1), ((0, 1, 1),): Fraction(1, 1)}
+w2 = 2: commutant dim 1  (cands 3, rows 7, pivots 3; 0.0s, peak RSS 51 MB)
+   charge 0: 2 monomials; sample: [(((0, 1, 1),), Fraction(14, 1)), (((1, 0, 0), (1, 0, 1)), Fraction(-7, 1))]
+w2 = 3: commutant dim 0  (cands 6, rows 12, pivots 8; 0.0s, peak RSS 51 MB)
+w2 = 4: commutant dim 1  (cands 11, rows 23, pivots 14; 0.0s, peak RSS 51 MB)
+   charge 0: 4 monomials; sample: [(((0, 1, 0), (0, 1, 0)), Fraction(-49, 1)), (((0, 1, 1), (0, 1, 1)), Fraction(49, 1)), (((1, 0, 0), (1, 1, 0)), Fraction(49, 1)), (((1, 0, 1), (1, 1, 1)), Fraction(-49, 1))]
+w2 = 5: commutant dim 0  (cands 18, rows 40, pivots 24; 0.0s, peak RSS 51 MB)
+w2 = 6: commutant dim 0  (cands 28, rows 64, pivots 40; 0.0s, peak RSS 51 MB)
+w2 = 7: commutant dim 0  (cands 44, rows 100, pivots 66; 0.1s, peak RSS 51 MB)
+w2 = 8: commutant dim 0  (cands 69, rows 157, pivots 105; 0.2s, peak RSS 51 MB)
+written towers_Z_s8-7_w2_3_4_5_6_7_8.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_Z_s8-7_w2_3_4_5_6_7_8.json before the run
+
+
+===== b2_towers_Z_t11o3_w10_12 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_Z_s8-7_w10_12.json', '--', 'towers.py', 'Z', '8/7', '10,12']  exit 0  8s
+tower Z, s = 8/7 (c = -15/2), eta = (Fraction(8, 7), Fraction(-8, 7)), vertices: S1, S2, W0_top[G]+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   W0_top[G]+(1/7,0): b = (Fraction(-6, 7), Fraction(0, 1)), W = {((1, 0, 0), (1, 0, 1)): Fraction(-1, 1), ((0, 1, 1),): Fraction(1, 1)}
+w2 = 10: commutant dim 0  (cands 152, rows 360, pivots 240; 1.0s, peak RSS 52 MB)
+w2 = 12: commutant dim 0  (cands 323, rows 767, pivots 531; 6.4s, peak RSS 56 MB)
+written towers_Z_s8-7_w10_12.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_Z_s8-7_w10_12.json before the run
+
+
+===== b2_towers_K_t11o3_w2_8 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_K_s8-7_w2_3_4_5_6_7_8.json', '--', 'towers.py', 'K', '8/7', '2,3,4,5,6,7,8']  exit 0  1s
+tower K, s = 8/7 (c = -15/2), eta = (Fraction(8, 7), Fraction(-8, 7)), vertices: S1, S2, S3, S4+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S3: b = (Fraction(-1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S4+(1/7,0): b = (Fraction(-5, 14), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(1, 2)}
+w2 = 2: commutant dim 0  (cands 3, rows 8, pivots 3; 0.0s, peak RSS 51 MB)
+w2 = 3: commutant dim 1  (cands 6, rows 12, pivots 7; 0.0s, peak RSS 51 MB)
+   charge 0: 4 monomials; sample: [(((0, 1, 0), (1, 0, 0)), Fraction(49, 1)), (((0, 1, 0), (1, 0, 1)), Fraction(-49, 1)), (((0, 1, 1), (1, 0, 0)), Fraction(49, 1)), (((0, 1, 1), (1, 0, 1)), Fraction(-49, 1))]
+w2 = 4: commutant dim 1  (cands 11, rows 24, pivots 15; 0.0s, peak RSS 51 MB)
+   charge 0: 4 monomials; sample: [(((0, 1, 0), (0, 1, 0)), Fraction(49, 1)), (((0, 1, 1), (0, 1, 1)), Fraction(-49, 1)), (((1, 0, 0), (1, 1, 0)), Fraction(-49, 1)), (((1, 0, 1), (1, 1, 1)), Fraction(49, 1))]
+w2 = 5: commutant dim 0  (cands 18, rows 44, pivots 24; 0.0s, peak RSS 51 MB)
+w2 = 6: commutant dim 0  (cands 28, rows 72, pivots 41; 0.0s, peak RSS 51 MB)
+w2 = 7: commutant dim 0  (cands 44, rows 112, pivots 70; 0.1s, peak RSS 51 MB)
+w2 = 8: commutant dim 0  (cands 69, rows 176, pivots 113; 0.4s, peak RSS 51 MB)
+written towers_K_s8-7_w2_3_4_5_6_7_8.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_K_s8-7_w2_3_4_5_6_7_8.json before the run
+
+
+===== b2_towers_K_t11o3_w10_12 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_K_s8-7_w10_12.json', '--', 'towers.py', 'K', '8/7', '10,12']  exit 0  22s
+tower K, s = 8/7 (c = -15/2), eta = (Fraction(8, 7), Fraction(-8, 7)), vertices: S1, S2, S3, S4+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S3: b = (Fraction(-1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S4+(1/7,0): b = (Fraction(-5, 14), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(1, 2)}
+w2 = 10: commutant dim 0  (cands 152, rows 416, pivots 259; 2.7s, peak RSS 52 MB)
+w2 = 12: commutant dim 0  (cands 323, rows 888, pivots 587; 18.5s, peak RSS 58 MB)
+written towers_K_s8-7_w10_12.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_K_s8-7_w10_12.json before the run
+
+
+===== b2_towers_Z_t13o5_w2_8 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_Z_s8-9_w2_3_4_5_6_7_8.json', '--', 'towers.py', 'Z', '8/9', '2,3,4,5,6,7,8']  exit 0  1s
+tower Z, s = 8/9 (c = -21/2), eta = (Fraction(8, 9), Fraction(-8, 9)), vertices: S1, S2, W0_top[G]+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   W0_top[G]+(1/7,0): b = (Fraction(-6, 7), Fraction(0, 1)), W = {((1, 0, 0), (1, 0, 1)): Fraction(-1, 1), ((0, 1, 1),): Fraction(1, 1)}
+w2 = 2: commutant dim 1  (cands 3, rows 7, pivots 3; 0.0s, peak RSS 51 MB)
+   charge 0: 2 monomials; sample: [(((0, 1, 1),), Fraction(18, 1)), (((1, 0, 0), (1, 0, 1)), Fraction(-9, 1))]
+w2 = 3: commutant dim 0  (cands 6, rows 12, pivots 8; 0.0s, peak RSS 51 MB)
+w2 = 4: commutant dim 1  (cands 11, rows 23, pivots 14; 0.0s, peak RSS 51 MB)
+   charge 0: 4 monomials; sample: [(((0, 1, 0), (0, 1, 0)), Fraction(-63, 1)), (((0, 1, 1), (0, 1, 1)), Fraction(63, 1)), (((1, 0, 0), (1, 1, 0)), Fraction(63, 1)), (((1, 0, 1), (1, 1, 1)), Fraction(-63, 1))]
+w2 = 5: commutant dim 0  (cands 18, rows 40, pivots 24; 0.0s, peak RSS 51 MB)
+w2 = 6: commutant dim 0  (cands 28, rows 64, pivots 40; 0.0s, peak RSS 51 MB)
+w2 = 7: commutant dim 0  (cands 44, rows 100, pivots 66; 0.1s, peak RSS 51 MB)
+w2 = 8: commutant dim 0  (cands 69, rows 157, pivots 105; 0.2s, peak RSS 51 MB)
+written towers_Z_s8-9_w2_3_4_5_6_7_8.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_Z_s8-9_w2_3_4_5_6_7_8.json before the run
+
+
+===== b2_towers_Z_t13o5_w10_12 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_Z_s8-9_w10_12.json', '--', 'towers.py', 'Z', '8/9', '10,12']  exit 0  10s
+tower Z, s = 8/9 (c = -21/2), eta = (Fraction(8, 9), Fraction(-8, 9)), vertices: S1, S2, W0_top[G]+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   W0_top[G]+(1/7,0): b = (Fraction(-6, 7), Fraction(0, 1)), W = {((1, 0, 0), (1, 0, 1)): Fraction(-1, 1), ((0, 1, 1),): Fraction(1, 1)}
+w2 = 10: commutant dim 0  (cands 152, rows 360, pivots 240; 1.0s, peak RSS 52 MB)
+w2 = 12: commutant dim 0  (cands 323, rows 767, pivots 531; 8.6s, peak RSS 56 MB)
+written towers_Z_s8-9_w10_12.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_Z_s8-9_w10_12.json before the run
+
+
+===== b2_towers_K_t13o5_w2_8 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_K_s8-9_w2_3_4_5_6_7_8.json', '--', 'towers.py', 'K', '8/9', '2,3,4,5,6,7,8']  exit 0  1s
+tower K, s = 8/9 (c = -21/2), eta = (Fraction(8, 9), Fraction(-8, 9)), vertices: S1, S2, S3, S4+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S3: b = (Fraction(-1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S4+(1/7,0): b = (Fraction(-5, 14), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(1, 2)}
+w2 = 2: commutant dim 0  (cands 3, rows 8, pivots 3; 0.0s, peak RSS 51 MB)
+w2 = 3: commutant dim 1  (cands 6, rows 12, pivots 7; 0.0s, peak RSS 51 MB)
+   charge 0: 4 monomials; sample: [(((0, 1, 0), (1, 0, 0)), Fraction(63, 1)), (((0, 1, 0), (1, 0, 1)), Fraction(-63, 1)), (((0, 1, 1), (1, 0, 0)), Fraction(63, 1)), (((0, 1, 1), (1, 0, 1)), Fraction(-63, 1))]
+w2 = 4: commutant dim 1  (cands 11, rows 24, pivots 15; 0.0s, peak RSS 51 MB)
+   charge 0: 4 monomials; sample: [(((0, 1, 0), (0, 1, 0)), Fraction(63, 1)), (((0, 1, 1), (0, 1, 1)), Fraction(-63, 1)), (((1, 0, 0), (1, 1, 0)), Fraction(-63, 1)), (((1, 0, 1), (1, 1, 1)), Fraction(63, 1))]
+w2 = 5: commutant dim 0  (cands 18, rows 44, pivots 24; 0.0s, peak RSS 51 MB)
+w2 = 6: commutant dim 0  (cands 28, rows 72, pivots 41; 0.0s, peak RSS 51 MB)
+w2 = 7: commutant dim 0  (cands 44, rows 112, pivots 70; 0.1s, peak RSS 51 MB)
+w2 = 8: commutant dim 0  (cands 69, rows 176, pivots 113; 0.4s, peak RSS 51 MB)
+written towers_K_s8-9_w2_3_4_5_6_7_8.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_K_s8-9_w2_3_4_5_6_7_8.json before the run
+
+
+===== b2_towers_K_t13o5_w10_12 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'towers_K_s8-9_w10_12.json', '--', 'towers.py', 'K', '8/9', '10,12']  exit 0  29s
+tower K, s = 8/9 (c = -21/2), eta = (Fraction(8, 9), Fraction(-8, 9)), vertices: S1, S2, S3, S4+(1/7,0)
+   S1: b = (Fraction(1, 2), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}
+   S2: b = (Fraction(1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S3: b = (Fraction(-1, 2), Fraction(-1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(-1, 2)}
+   S4+(1/7,0): b = (Fraction(-5, 14), Fraction(1, 2)), W = {((1, 0, 0),): Fraction(-1, 2), ((1, 0, 1),): Fraction(1, 2)}
+w2 = 10: commutant dim 0  (cands 152, rows 416, pivots 259; 1.4s, peak RSS 52 MB)
+w2 = 12: commutant dim 0  (cands 323, rows 888, pivots 587; 27.2s, peak RSS 58 MB)
+written towers_K_s8-9_w10_12.json
+--- stderr ---
+[kit_b2/fresh] removed archived copy of towers_K_s8-9_w10_12.json before the run
+
+
+===== b2_sol1_t2 [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'sol1_t2.json', '--', 'sol1.py', '2']  exit 3  9s
+t = 2: N = -7, sc = -16, p^2 = s = 2/3, rho = -sqrt(6)/3, kappa^2 = 5/6, c_{X,phi} = -6
+certified I_3 (mixed basis): {((), ((1, 1), (1, 1))): Fraction(1, 1), ((), ((2, 2),)): Fraction(-2, 1), ((2, 2), ()): Fraction(14, 3), ((1, 1), ((1, 1),)): Fraction(6, 1), ((1, 1, 1, 1), ()): Fraction(-7, 1)}
+(11)(11) - 2(22) - 4(T_Y T_Y) is a total derivative in the Y-pair algebra: True
+I_3 in (X, phi) letters: {((0, 1, 1), (0, 1, 1), (0, 1, 1), (0, 1, 1)): '1', ((0, 1, 1), (0, 3, 1)): '2', ((0, 1, 1), (0, 1, 1), (0, 2, 1)): '-4*sqrt(6)/3', ((0, 4, 1),): '-4*sqrt(6)/9', ((0, 2, 1), (0, 2, 1)): '8/3', ((0, 1, 0), (0, 1, 0), (0, 1, 1), (0, 1, 1)): '6', ((0, 1, 0), (0, 1, 0), (0, 2, 1)): '-4*sqrt(6)', ((0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0)): '-7', ((0, 2, 0), (0, 2, 0)): '14/3'}
+I_3 in (u, v) letters (rational): {((0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0)): Fraction(9, 4), ((0, 1, 0), (0, 3, 0)): Fraction(3, 1), ((0, 1, 0), (0, 1, 0), (0, 2, 0)): Fraction(6, 1), ((0, 4, 0),): Fraction(4, 3), ((0, 2, 0), (0, 2, 0)): Fraction(4, 1), ((0, 1, 0), (0, 1, 0), (0, 1, 1), (0, 1, 1)): Fraction(27, 10), ((0, 1, 1), (0, 1, 1), (0, 2, 0)): Fraction(18, 5), ((0, 1, 1), (0, 1, 1), (0, 1, 1), (0, 1, 1)): Fraction(-63, 100), ((0, 2, 1), (0, 2, 1)): Fraction(7, 5)}
+(u,v) commutant of Solution 1's vectors at w2 = 4: dim 1; v-parity of generators [0]
+(u,v) commutant of Solution 1's vectors at w2 = 6: dim 1; v-parity of generators [1]
+(u,v) commutant of Solution 1's vectors at w2 = 8: dim 1; v-parity of generators [0]
+(u,v) commutant of Solution 1's vectors at w2 = 10: dim 1; v-parity of generators [1]
+(u,v) commutant of Solution 1's vectors at w2 = 12: dim 2; v-parity of generators [1, 0]
+certified I_3 (u,v) in the w2 = 8 commutant mod d: True
+repo eigenvalue of certified I_3 (P2, Q2): -7*P2**2 + 6*P2*Q2 + 7*P2 + Q2**2 + Q2/3 - 7/20
+my (X, phi) eigenvalue (P_X, P_phi): -7*P_X**4 + 6*P_X**2*P_phi**2 + 3*P_X**2 + P_phi**4 - P_phi**2 - 23/180
+MOMENTUM DICTIONARY: P2 = +P_X^2, Q2 = pi^2 - rho^2 with pi = P_phi(evaluator), pi = P_phi - rho  (exact match)
+dictionary: ('P2 = +P_X^2', 'Q2 = pi^2 - rho^2 with pi = P_phi(evaluator)')
+ad I_3 kernel at weight 6: dim 1
+certified I_5: (dX)^6 coefficient in the ALT normalisation (Q2^3 coefficient = 1): 25; kit normalisation defined: True
+certified I_5 eigenvalue (repo recipe) == kit table at t = 2 (article P = i P_ours): False
+   with P_art = P_ours instead: False
+written
+--- stderr ---
+[kit_b2/fresh] removed archived copy of sol1_t2.json before the run
+[kit_b2/fresh] FAIL: sol1_t2.json differs from the archived file as a JSON object
+
+
+===== b2_sol1_t7o2 [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'sol1_t7-2.json', '--', 'sol1.py', '7/2']  exit 3  12s
+t = 7/2: N = -17/15, sc = -112/15, p^2 = s = 10/9, rho = -2*sqrt(10)/15, kappa^2 = 13/18, c_{X,phi} = -2/15
+certified I_3 (mixed basis): {((), ((1, 1), (1, 1))): Fraction(1, 1), ((), ((2, 2),)): Fraction(-2, 1), ((2, 2), ()): Fraction(14, 45), ((1, 1), ((1, 1),)): Fraction(6, 1), ((1, 1, 1, 1), ()): Fraction(-11, 5)}
+(11)(11) - 2(22) - 4(T_Y T_Y) is a total derivative in the Y-pair algebra: True
+I_3 in (X, phi) letters: {((0, 1, 1), (0, 1, 1), (0, 1, 1), (0, 1, 1)): '1', ((0, 1, 1), (0, 3, 1)): '2', ((0, 1, 1), (0, 1, 1), (0, 2, 1)): '-8*sqrt(10)/15', ((0, 4, 1),): '-8*sqrt(10)/45', ((0, 2, 1), (0, 2, 1)): '32/45', ((0, 1, 0), (0, 1, 0), (0, 1, 1), (0, 1, 1)): '6', ((0, 1, 0), (0, 1, 0), (0, 2, 1)): '-8*sqrt(10)/5', ((0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0)): '-11/5', ((0, 2, 0), (0, 2, 0)): '14/45'}
+I_3 in (u, v) letters (rational): {((0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0)): Fraction(81, 100), ((0, 1, 0), (0, 3, 0)): Fraction(9, 5), ((0, 1, 0), (0, 1, 0), (0, 2, 0)): Fraction(36, 25), ((0, 4, 0),): Fraction(8, 15), ((0, 2, 0), (0, 2, 0)): Fraction(16, 25), ((0, 1, 0), (0, 1, 0), (0, 1, 1), (0, 1, 1)): Fraction(243, 130), ((0, 1, 1), (0, 1, 1), (0, 2, 0)): Fraction(108, 65), ((0, 1, 1), (0, 1, 1), (0, 1, 1), (0, 1, 1)): Fraction(-891, 3380), ((0, 2, 1), (0, 2, 1)): Fraction(7, 65)}
+(u,v) commutant of Solution 1's vectors at w2 = 4: dim 1; v-parity of generators [0]
+(u,v) commutant of Solution 1's vectors at w2 = 6: dim 1; v-parity of generators [1]
+(u,v) commutant of Solution 1's vectors at w2 = 8: dim 1; v-parity of generators [0]
+(u,v) commutant of Solution 1's vectors at w2 = 10: dim 1; v-parity of generators [1]
+(u,v) commutant of Solution 1's vectors at w2 = 12: dim 1; v-parity of generators [0]
+certified I_3 (u,v) in the w2 = 8 commutant mod d: True
+repo eigenvalue of certified I_3 (P2, Q2): -11*P2**2/5 + 6*P2*Q2 + 5*P2/3 + Q2**2 - 29*Q2/45 - 983/8100
+my (X, phi) eigenvalue (P_X, P_phi): -11*P_X**4/5 + 6*P_X**2*P_phi**2 + 3*P_X**2/5 + P_phi**4 - P_phi**2 + 67/2700
+MOMENTUM DICTIONARY: P2 = +P_X^2, Q2 = pi^2 - rho^2 with pi = P_phi(evaluator), pi = P_phi - rho  (exact match)
+dictionary: ('P2 = +P_X^2', 'Q2 = pi^2 - rho^2 with pi = P_phi(evaluator)')
+ad I_3 kernel at weight 6: dim 1
+certified I_5: (dX)^6 coefficient in the ALT normalisation (Q2^3 coefficient = 1): 9/25; kit normalisation defined: True
+certified I_5 eigenvalue (repo recipe) == kit table at t = 7/2 (article P = i P_ours): False
+   with P_art = P_ours instead: False
+written
+--- stderr ---
+[kit_b2/fresh] removed archived copy of sol1_t7-2.json before the run
+[kit_b2/fresh] FAIL: sol1_t7-2.json differs from the archived file as a JSON object
+
+
+===== b2_sol1_t11o3 [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'sol1_t11-3.json', '--', 'sol1.py', '11/3']  exit 3  12s
+t = 11/3: N = -13/14, sc = -99/14, p^2 = s = 8/7, rho = -3*sqrt(14)/28, kappa^2 = 5/7, c_{X,phi} = 1/14
+certified I_3 (mixed basis): {((), ((1, 1), (1, 1))): Fraction(1, 1), ((), ((2, 2),)): Fraction(-2, 1), ((2, 2), ()): Fraction(1, 7), ((1, 1), ((1, 1),)): Fraction(6, 1), ((1, 1, 1, 1), ()): Fraction(-2, 1)}
+(11)(11) - 2(22) - 4(T_Y T_Y) is a total derivative in the Y-pair algebra: True
+I_3 in (X, phi) letters: {((0, 1, 1), (0, 1, 1), (0, 1, 1), (0, 1, 1)): '1', ((0, 1, 1), (0, 3, 1)): '2', ((0, 1, 1), (0, 1, 1), (0, 2, 1)): '-3*sqrt(14)/7', ((0, 4, 1),): '-sqrt(14)/7', ((0, 2, 1), (0, 2, 1)): '9/14', ((0, 1, 0), (0, 1, 0), (0, 1, 1), (0, 1, 1)): '6', ((0, 1, 0), (0, 1, 0), (0, 2, 1)): '-9*sqrt(14)/7', ((0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0)): '-2', ((0, 2, 0), (0, 2, 0)): '1/7'}
+I_3 in (u, v) letters (rational): {((0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0)): Fraction(49, 64), ((0, 1, 0), (0, 3, 0)): Fraction(7, 4), ((0, 1, 0), (0, 1, 0), (0, 2, 0)): Fraction(21, 16), ((0, 4, 0),): Fraction(1, 2), ((0, 2, 0), (0, 2, 0)): Fraction(9, 16), ((0, 1, 0), (0, 1, 0), (0, 1, 1), (0, 1, 1)): Fraction(147, 80), ((0, 1, 1), (0, 1, 1), (0, 2, 0)): Fraction(63, 40), ((0, 1, 1), (0, 1, 1), (0, 1, 1), (0, 1, 1)): Fraction(-49, 200), ((0, 2, 1), (0, 2, 1)): Fraction(1, 20)}
+(u,v) commutant of Solution 1's vectors at w2 = 4: dim 1; v-parity of generators [0]
+(u,v) commutant of Solution 1's vectors at w2 = 6: dim 1; v-parity of generators [1]
+(u,v) commutant of Solution 1's vectors at w2 = 8: dim 1; v-parity of generators [0]
+(u,v) commutant of Solution 1's vectors at w2 = 10: dim 1; v-parity of generators [1]
+(u,v) commutant of Solution 1's vectors at w2 = 12: dim 1; v-parity of generators [0]
+certified I_3 (u,v) in the w2 = 8 commutant mod d: True
+repo eigenvalue of certified I_3 (P2, Q2): -2*P2**2 + 6*P2*Q2 + 20493*P2/14000 + Q2**2 - 28507*Q2/42000 - 732931351/7056000000
+my (X, phi) eigenvalue (P_X, P_phi): -2*P_X**4 + 6*P_X**2*P_phi**2 + P_X**2/2 + P_phi**4 - P_phi**2 + 13/420
+dictionary: None
+ad I_3 kernel at weight 6: dim 1
+certified I_5: (dX)^6 coefficient in the ALT normalisation (Q2^3 coefficient = 1): 0; kit normalisation defined: False
+kit normalisation singular at this fibre; E5_alt recorded; kit comparison skipped
+written
+--- stderr ---
+[kit_b2/fresh] removed archived copy of sol1_t11-3.json before the run
+[kit_b2/fresh] FAIL: sol1_t11-3.json differs from the archived file as a JSON object
+
+
+===== b2_sol1_t13o5 [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'sol1_t13-5.json', '--', 'sol1.py', '13/5']  exit 3  11s
+t = 13/5: N = -19/6, sc = -65/6, p^2 = s = 8/9, rho = -5*sqrt(2)/12, kappa^2 = 7/9, c_{X,phi} = -13/6
+certified I_3 (mixed basis): {((), ((1, 1), (1, 1))): Fraction(1, 1), ((), ((2, 2),)): Fraction(-2, 1), ((2, 2), ()): Fraction(17, 9), ((1, 1), ((1, 1),)): Fraction(6, 1), ((1, 1, 1, 1), ()): Fraction(-4, 1)}
+(11)(11) - 2(22) - 4(T_Y T_Y) is a total derivative in the Y-pair algebra: True
+I_3 in (X, phi) letters: {((0, 1, 1), (0, 1, 1), (0, 1, 1), (0, 1, 1)): '1', ((0, 1, 1), (0, 3, 1)): '2', ((0, 1, 1), (0, 1, 1), (0, 2, 1)): '-5*sqrt(2)/3', ((0, 4, 1),): '-5*sqrt(2)/9', ((0, 2, 1), (0, 2, 1)): '25/18', ((0, 1, 0), (0, 1, 0), (0, 1, 1), (0, 1, 1)): '6', ((0, 1, 0), (0, 1, 0), (0, 2, 1)): '-5*sqrt(2)', ((0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0)): '-4', ((0, 2, 0), (0, 2, 0)): '17/9'}
+I_3 in (u, v) letters (rational): {((0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0)): Fraction(81, 64), ((0, 1, 0), (0, 3, 0)): Fraction(9, 4), ((0, 1, 0), (0, 1, 0), (0, 2, 0)): Fraction(45, 16), ((0, 4, 0),): Fraction(5, 6), ((0, 2, 0), (0, 2, 0)): Fraction(25, 16), ((0, 1, 0), (0, 1, 0), (0, 1, 1), (0, 1, 1)): Fraction(243, 112), ((0, 1, 1), (0, 1, 1), (0, 2, 0)): Fraction(135, 56), ((0, 1, 1), (0, 1, 1), (0, 1, 1), (0, 1, 1)): Fraction(-81, 196), ((0, 2, 1), (0, 2, 1)): Fraction(17, 28)}
+(u,v) commutant of Solution 1's vectors at w2 = 4: dim 1; v-parity of generators [0]
+(u,v) commutant of Solution 1's vectors at w2 = 6: dim 1; v-parity of generators [1]
+(u,v) commutant of Solution 1's vectors at w2 = 8: dim 1; v-parity of generators [0]
+(u,v) commutant of Solution 1's vectors at w2 = 10: dim 1; v-parity of generators [1]
+(u,v) commutant of Solution 1's vectors at w2 = 12: dim 1; v-parity of generators [0]
+certified I_3 (u,v) in the w2 = 8 commutant mod d: True
+repo eigenvalue of certified I_3 (P2, Q2): -4*P2**2 + 6*P2*Q2 + 43*P2/12 + Q2**2 - 11*Q2/36 - 6691/25920
+my (X, phi) eigenvalue (P_X, P_phi): -4*P_X**4 + 6*P_X**2*P_phi**2 + 3*P_X**2/2 + P_phi**4 - P_phi**2 - 17/540
+MOMENTUM DICTIONARY: P2 = +P_X^2, Q2 = pi^2 - rho^2 with pi = P_phi(evaluator), pi = P_phi - rho  (exact match)
+dictionary: ('P2 = +P_X^2', 'Q2 = pi^2 - rho^2 with pi = P_phi(evaluator)')
+ad I_3 kernel at weight 6: dim 1
+certified I_5: (dX)^6 coefficient in the ALT normalisation (Q2^3 coefficient = 1): 6; kit normalisation defined: True
+certified I_5 eigenvalue (repo recipe) == kit table at t = 13/5 (article P = i P_ours): False
+   with P_art = P_ours instead: False
+written
+--- stderr ---
+[kit_b2/fresh] removed archived copy of sol1_t13-5.json before the run
+[kit_b2/fresh] FAIL: sol1_t13-5.json differs from the archived file as a JSON object
+
+
+===== b2_level2_Z_t2 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'level2_Z_t2.json', '--', 'level2.py', 'Z', '2']  exit 0  30s
+tower Z, t = 2, s = 2/3; charges at w2 = [2, 3, 4, 5, 6, 7, 8, 10, 12]; dims [1, 2, 1, 0, 1, 0, 1, 1, 1]
+
+== w2 = 6 (spin 2) charge 0: J-charge sectors (size, total derivative?) {0: (9, False), 2: (1, True), -2: (1, True)}; projected q-powers [0, 1, 3]; Solution 1 (u,v) commutant dim 1
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {6: (True, 1)}, 1: {0: (True, 'const'), 4: (True, 1)}, 3: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [6]; top piece (weight 6) has 4 monomials
+   v-parity (= X-parity) of D_0: [1]; of the commutant generators: [[1]]
+   spin 2: (q^k, weight w) piece = c x (Solution 1 generator at weight w) mod d: {(0, 6): 2/25, (1, 0): 'trivial', (1, 4): -12/25, (3, 0): 'trivial'}
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-4, 15)}, 0: {((0, 1, 1),): Fraction(-1, 5)}}), S1uv, S2uv: {'pure': {0: True, 1: True, 3: True}, 'W0proj': {0: False, 1: True, 2: True, 3: True, 4: True}, 'S1': {0: True, 1: True, 3: True}, 'S2': {0: True, 1: True, 3: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 8 (spin 3) charge 0: J-charge sectors (size, total derivative?) {0: (17, False)}; projected q-powers [0, 1, 2, 4]; Solution 1 (u,v) commutant dim 2
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 1: {6: (True, 1)}, 2: {0: (True, 'const'), 4: (True, 1)}, 4: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8]; top piece (weight 8) has 7 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0]]
+   q = 0: D_0 = c_3 * I_3^cert mod d with c_3 = None
+   (q^k, weight w) piece = c x (generator at that weight): {(0, 0): ('trivial', '{(): Fraction(121, 60)}'), (0, 4): ('gen w2=4', 33/25), (0, 8): ('I_3^cert', None), (1, 6): ('gen w2=6', -72/125), (2, 0): ('trivial', '{(): Fraction(286, 25)}'), (2, 4): ('gen w2=4', 396/125), (4, 0): ('trivial', '{(): Fraction(572, 125)}')}
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [kit (dX)^4 normalisation of cyl_P4]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-4, 15)}, 0: {((0, 1, 1),): Fraction(-1, 5)}}), S1uv, S2uv: {'pure': {0: False, 1: True, 2: True, 4: True}, 'W0proj': {0: False, 1: False, 2: True, 3: True, 4: True, 5: True}, 'S1': {0: True, 1: True, 2: True, 4: True}, 'S2': {0: True, 1: True, 2: True, 4: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 10 (spin 4) charge 0: J-charge sectors (size, total derivative?) {0: (42, False), 2: (1, True), -2: (1, True)}; projected q-powers [0, 1, 2, 3, 5]; Solution 1 (u,v) commutant dim 2
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {6: (True, 1), 10: (True, 2)}, 1: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 2: {6: (True, 1)}, 3: {0: (True, 'const'), 4: (True, 1)}, 5: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [6, 10]; top piece (weight 10) has 11 monomials
+   v-parity (= X-parity) of D_0: [1]; of the commutant generators: [[1], [1]]
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-4, 15)}, 0: {((0, 1, 1),): Fraction(-1, 5)}}), S1uv, S2uv: {'pure': {0: False, 1: False, 2: True, 3: True, 5: True}, 'W0proj': {0: False, 1: False, 2: False, 3: True, 4: True, 5: True, 6: True}, 'S1': {0: True, 1: True, 2: True, 3: True, 5: True}, 'S2': {0: True, 1: True, 2: True, 3: True, 5: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 12 (spin 5) charge 0: J-charge sectors (size, total derivative?) {0: (80, False)}; projected q-powers [0, 1, 2, 3, 4, 6]; Solution 1 (u,v) commutant dim 6
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2), 12: (True, 6)}, 1: {6: (True, 1), 10: (True, 2)}, 2: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 3: {6: (True, 1)}, 4: {0: (True, 'const'), 4: (True, 1)}, 6: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8, 12]; top piece (weight 12) has 19 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [1], [0], [0], [1], [0]]
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [ALT normalisation (P2^2 Q2 coefficient = 1)]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-4, 15)}, 0: {((0, 1, 1),): Fraction(-1, 5)}}), S1uv, S2uv: {'pure': {0: False, 1: False, 2: False, 3: True, 4: True, 6: True}, 'W0proj': {0: False, 1: False, 2: False, 3: False, 4: True, 5: True, 6: True, 7: True}, 'S1': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}, 'S2': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+info: Z's charge at w2 = 8 equals K's mod d: False
+
+info: Z's charge at w2 = 12 equals K's mod d: False
+
+== CONTROLS
+   control wrong dictionary (s' = 17/21) at w2 = 8: D_0(s') in span(I_3^cert(t)) + Im d in the (X, phi) frame: False  (must be False)
+   control wrong dictionary at w2 = 12: eigenvalue proportional to the certified I_5: None  (must be None)
+   real projection at s in the (X, phi) frame: D_0 in span(I_3^cert) + Im d: False  (must be True)
+   control perturbed screening at w2 = 8: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed screening at w2 = 12: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed Solution 1 vector at w2 = 8: commutant dim 2; membership {0: True, 1: True, 2: True, 4: True}  (must fail)
+   control perturbed Solution 1 vector at w2 = 12: commutant dim 6; membership {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}  (must fail)
+done in 29.8s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of level2_Z_t2.json before the run
+
+
+===== b2_level2_Z_t7o2 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'level2_Z_t7-2.json', '--', 'level2.py', 'Z', '7/2']  exit 0  32s
+tower Z, t = 7/2, s = 10/9; charges at w2 = [2, 3, 4, 5, 6, 7, 8, 10, 12]; dims [1, 2, 1, 0, 1, 0, 1, 1, 1]
+
+== w2 = 6 (spin 2) charge 0: J-charge sectors (size, total derivative?) {0: (9, False), 2: (1, True), -2: (1, True)}; projected q-powers [0, 1, 3]; Solution 1 (u,v) commutant dim 1
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {6: (True, 1)}, 1: {0: (True, 'const'), 4: (True, 1)}, 3: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [6]; top piece (weight 6) has 4 monomials
+   v-parity (= X-parity) of D_0: [1]; of the commutant generators: [[1]]
+   spin 2: (q^k, weight w) piece = c x (Solution 1 generator at weight w) mod d: {(0, 6): -10/169, (1, 0): 'trivial', (1, 4): 180/169, (3, 0): 'trivial'}
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-40, 117)}, 0: {((0, 1, 1),): Fraction(-5, 13)}}), S1uv, S2uv: {'pure': {0: True, 1: True, 3: True}, 'W0proj': {0: False, 1: True, 2: True, 3: True, 4: True}, 'S1': {0: True, 1: True, 3: True}, 'S2': {0: True, 1: True, 3: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 8 (spin 3) charge 0: J-charge sectors (size, total derivative?) {0: (17, False)}; projected q-powers [0, 1, 2, 4]; Solution 1 (u,v) commutant dim 2
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 1: {6: (True, 1)}, 2: {0: (True, 'const'), 4: (True, 1)}, 4: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8]; top piece (weight 8) has 7 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0]]
+   q = 0: D_0 = c_3 * I_3^cert mod d with c_3 = None
+   (q^k, weight w) piece = c x (generator at that weight): {(0, 0): ('trivial', '{(): Fraction(-27931, 156)}'), (0, 4): ('gen w2=4', -1395/169), (0, 8): ('I_3^cert', None), (1, 6): ('gen w2=6', 5400/2197), (2, 0): ('trivial', '{(): Fraction(-271250, 169)}'), (2, 4): ('gen w2=4', -83700/2197), (4, 0): ('trivial', '{(): Fraction(-2712500, 2197)}')}
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [kit (dX)^4 normalisation of cyl_P4]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-40, 117)}, 0: {((0, 1, 1),): Fraction(-5, 13)}}), S1uv, S2uv: {'pure': {0: False, 1: True, 2: True, 4: True}, 'W0proj': {0: False, 1: False, 2: True, 3: True, 4: True, 5: True}, 'S1': {0: True, 1: True, 2: True, 4: True}, 'S2': {0: True, 1: True, 2: True, 4: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 10 (spin 4) charge 0: J-charge sectors (size, total derivative?) {0: (42, False), 2: (1, True), -2: (1, True)}; projected q-powers [0, 1, 2, 3, 5]; Solution 1 (u,v) commutant dim 2
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {6: (True, 1), 10: (True, 2)}, 1: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 2: {6: (True, 1)}, 3: {0: (True, 'const'), 4: (True, 1)}, 5: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [6, 10]; top piece (weight 10) has 11 monomials
+   v-parity (= X-parity) of D_0: [1]; of the commutant generators: [[1], [1]]
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-40, 117)}, 0: {((0, 1, 1),): Fraction(-5, 13)}}), S1uv, S2uv: {'pure': {0: False, 1: False, 2: True, 3: True, 5: True}, 'W0proj': {0: False, 1: False, 2: False, 3: True, 4: True, 5: True, 6: True}, 'S1': {0: True, 1: True, 2: True, 3: True, 5: True}, 'S2': {0: True, 1: True, 2: True, 3: True, 5: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 12 (spin 5) charge 0: J-charge sectors (size, total derivative?) {0: (80, False)}; projected q-powers [0, 1, 2, 3, 4, 6]; Solution 1 (u,v) commutant dim 5
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2), 12: (True, 5)}, 1: {6: (True, 1), 10: (True, 2)}, 2: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 3: {6: (True, 1)}, 4: {0: (True, 'const'), 4: (True, 1)}, 6: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8, 12]; top piece (weight 12) has 19 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0], [0], [1], [0]]
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [ALT normalisation (P2^2 Q2 coefficient = 1)]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-40, 117)}, 0: {((0, 1, 1),): Fraction(-5, 13)}}), S1uv, S2uv: {'pure': {0: False, 1: False, 2: False, 3: True, 4: True, 6: True}, 'W0proj': {0: False, 1: False, 2: False, 3: False, 4: True, 5: True, 6: True, 7: True}, 'S1': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}, 'S2': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+info: Z's charge at w2 = 8 equals K's mod d: False
+
+info: Z's charge at w2 = 12 equals K's mod d: False
+
+== CONTROLS
+   control wrong dictionary (s' = 79/63) at w2 = 8: D_0(s') in span(I_3^cert(t)) + Im d in the (X, phi) frame: False  (must be False)
+   control wrong dictionary at w2 = 12: eigenvalue proportional to the certified I_5: None  (must be None)
+   real projection at s in the (X, phi) frame: D_0 in span(I_3^cert) + Im d: False  (must be True)
+   control perturbed screening at w2 = 8: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed screening at w2 = 12: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed Solution 1 vector at w2 = 8: commutant dim 2; membership {0: True, 1: True, 2: True, 4: True}  (must fail)
+   control perturbed Solution 1 vector at w2 = 12: commutant dim 5; membership {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}  (must fail)
+done in 31.2s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of level2_Z_t7-2.json before the run
+
+
+===== b2_level2_Z_t11o3 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'level2_Z_t11-3.json', '--', 'level2.py', 'Z', '11/3']  exit 0  24s
+tower Z, t = 11/3, s = 8/7; charges at w2 = [2, 3, 4, 5, 6, 7, 8, 10, 12]; dims [1, 2, 1, 0, 1, 0, 1, 1, 1]
+
+== w2 = 6 (spin 2) charge 0: J-charge sectors (size, total derivative?) {0: (9, False), 2: (1, True), -2: (1, True)}; projected q-powers [0, 1, 3]; Solution 1 (u,v) commutant dim 1
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {6: (True, 1)}, 1: {0: (True, 'const'), 4: (True, 1)}, 3: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [6]; top piece (weight 6) has 4 monomials
+   v-parity (= X-parity) of D_0: [1]; of the commutant generators: [[1]]
+   spin 2: (q^k, weight w) piece = c x (Solution 1 generator at weight w) mod d: {(0, 6): -2/75, (1, 0): 'trivial', (1, 4): 28/25, (3, 0): 'trivial'}
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-12, 35)}, 0: {((0, 1, 1),): Fraction(-2, 5)}}), S1uv, S2uv: {'pure': {0: True, 1: True, 3: True}, 'W0proj': {0: False, 1: True, 2: True, 3: True, 4: True}, 'S1': {0: True, 1: True, 3: True}, 'S2': {0: True, 1: True, 3: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 8 (spin 3) charge 0: J-charge sectors (size, total derivative?) {0: (17, False)}; projected q-powers [0, 1, 2, 4]; Solution 1 (u,v) commutant dim 2
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 1: {6: (True, 1)}, 2: {0: (True, 'const'), 4: (True, 1)}, 4: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8]; top piece (weight 8) has 7 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0]]
+   q = 0: D_0 = c_3 * I_3^cert mod d with c_3 = None
+   (q^k, weight w) piece = c x (generator at that weight): {(0, 0): ('trivial', '{(): Fraction(-224, 5)}'), (0, 4): ('gen w2=4', -168/25), (0, 8): ('I_3^cert', None), (1, 6): ('gen w2=6', 112/125), (2, 0): ('trivial', '{(): Fraction(-10368, 25)}'), (2, 4): ('gen w2=4', -4032/125), (4, 0): ('trivial', '{(): Fraction(-41472, 125)}')}
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [kit (dX)^4 normalisation of cyl_P4]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-12, 35)}, 0: {((0, 1, 1),): Fraction(-2, 5)}}), S1uv, S2uv: {'pure': {0: False, 1: True, 2: True, 4: True}, 'W0proj': {0: False, 1: False, 2: True, 3: True, 4: True, 5: True}, 'S1': {0: True, 1: True, 2: True, 4: True}, 'S2': {0: True, 1: True, 2: True, 4: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 10 (spin 4) charge 0: J-charge sectors (size, total derivative?) {0: (42, False), 2: (1, True), -2: (1, True)}; projected q-powers [0, 1, 2, 3, 5]; Solution 1 (u,v) commutant dim 2
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {6: (True, 1), 10: (True, 2)}, 1: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 2: {6: (True, 1)}, 3: {0: (True, 'const'), 4: (True, 1)}, 5: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [6, 10]; top piece (weight 10) has 11 monomials
+   v-parity (= X-parity) of D_0: [1]; of the commutant generators: [[1], [1]]
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-12, 35)}, 0: {((0, 1, 1),): Fraction(-2, 5)}}), S1uv, S2uv: {'pure': {0: False, 1: False, 2: True, 3: True, 5: True}, 'W0proj': {0: False, 1: False, 2: False, 3: True, 4: True, 5: True, 6: True}, 'S1': {0: True, 1: True, 2: True, 3: True, 5: True}, 'S2': {0: True, 1: True, 2: True, 3: True, 5: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 12 (spin 5) charge 0: J-charge sectors (size, total derivative?) {0: (80, False)}; projected q-powers [0, 1, 2, 3, 4, 6]; Solution 1 (u,v) commutant dim 5
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2), 12: (True, 5)}, 1: {6: (True, 1), 10: (True, 2)}, 2: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 3: {6: (True, 1)}, 4: {0: (True, 'const'), 4: (True, 1)}, 6: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8, 12]; top piece (weight 12) has 19 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0], [0], [1], [0]]
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [ALT normalisation (P2^2 Q2 coefficient = 1)]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-12, 35)}, 0: {((0, 1, 1),): Fraction(-2, 5)}}), S1uv, S2uv: {'pure': {0: False, 1: False, 2: False, 3: True, 4: True, 6: True}, 'W0proj': {0: False, 1: False, 2: False, 3: False, 4: True, 5: True, 6: True, 7: True}, 'S1': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}, 'S2': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+info: Z's charge at w2 = 8 equals K's mod d: False
+
+info: Z's charge at w2 = 12 equals K's mod d: False
+
+== CONTROLS
+   control wrong dictionary (s' = 9/7) at w2 = 8: D_0(s') in span(I_3^cert(t)) + Im d in the (X, phi) frame: False  (must be False)
+   control wrong dictionary at w2 = 12: eigenvalue proportional to the certified I_5: None  (must be None)
+   real projection at s in the (X, phi) frame: D_0 in span(I_3^cert) + Im d: False  (must be True)
+   control perturbed screening at w2 = 8: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed screening at w2 = 12: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed Solution 1 vector at w2 = 8: commutant dim 2; membership {0: True, 1: True, 2: True, 4: True}  (must fail)
+   control perturbed Solution 1 vector at w2 = 12: commutant dim 5; membership {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}  (must fail)
+done in 23.0s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of level2_Z_t11-3.json before the run
+
+
+===== b2_level2_Z_t13o5 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'level2_Z_t13-5.json', '--', 'level2.py', 'Z', '13/5']  exit 0  25s
+tower Z, t = 13/5, s = 8/9; charges at w2 = [2, 3, 4, 5, 6, 7, 8, 10, 12]; dims [1, 2, 1, 0, 1, 0, 1, 1, 1]
+
+== w2 = 6 (spin 2) charge 0: J-charge sectors (size, total derivative?) {0: (9, False), 2: (1, True), -2: (1, True)}; projected q-powers [0, 1, 3]; Solution 1 (u,v) commutant dim 1
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {6: (True, 1)}, 1: {0: (True, 'const'), 4: (True, 1)}, 3: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [6]; top piece (weight 6) has 4 monomials
+   v-parity (= X-parity) of D_0: [1]; of the commutant generators: [[1]]
+   spin 2: (q^k, weight w) piece = c x (Solution 1 generator at weight w) mod d: {(0, 6): 2/49, (1, 0): 'trivial', (1, 4): -36/49, (3, 0): 'trivial'}
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-20, 63)}, 0: {((0, 1, 1),): Fraction(-2, 7)}}), S1uv, S2uv: {'pure': {0: True, 1: True, 3: True}, 'W0proj': {0: False, 1: True, 2: True, 3: True, 4: True}, 'S1': {0: True, 1: True, 3: True}, 'S2': {0: True, 1: True, 3: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 8 (spin 3) charge 0: J-charge sectors (size, total derivative?) {0: (17, False)}; projected q-powers [0, 1, 2, 4]; Solution 1 (u,v) commutant dim 2
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 1: {6: (True, 1)}, 2: {0: (True, 'const'), 4: (True, 1)}, 4: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8]; top piece (weight 8) has 7 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0]]
+   q = 0: D_0 = c_3 * I_3^cert mod d with c_3 = None
+   (q^k, weight w) piece = c x (generator at that weight): {(0, 0): ('trivial', '{(): Fraction(5696, 105)}'), (0, 4): ('gen w2=4', 288/49), (0, 8): ('I_3^cert', None), (1, 6): ('gen w2=6', -432/343), (2, 0): ('trivial', '{(): Fraction(18944, 49)}'), (2, 4): ('gen w2=4', 6912/343), (4, 0): ('trivial', '{(): Fraction(75776, 343)}')}
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [kit (dX)^4 normalisation of cyl_P4]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-20, 63)}, 0: {((0, 1, 1),): Fraction(-2, 7)}}), S1uv, S2uv: {'pure': {0: False, 1: True, 2: True, 4: True}, 'W0proj': {0: False, 1: False, 2: True, 3: True, 4: True, 5: True}, 'S1': {0: True, 1: True, 2: True, 4: True}, 'S2': {0: True, 1: True, 2: True, 4: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 10 (spin 4) charge 0: J-charge sectors (size, total derivative?) {0: (42, False), 2: (1, True), -2: (1, True)}; projected q-powers [0, 1, 2, 3, 5]; Solution 1 (u,v) commutant dim 2
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {6: (True, 1), 10: (True, 2)}, 1: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 2: {6: (True, 1)}, 3: {0: (True, 'const'), 4: (True, 1)}, 5: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [6, 10]; top piece (weight 10) has 11 monomials
+   v-parity (= X-parity) of D_0: [1]; of the commutant generators: [[1], [1]]
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-20, 63)}, 0: {((0, 1, 1),): Fraction(-2, 7)}}), S1uv, S2uv: {'pure': {0: False, 1: False, 2: True, 3: True, 5: True}, 'W0proj': {0: False, 1: False, 2: False, 3: True, 4: True, 5: True, 6: True}, 'S1': {0: True, 1: True, 2: True, 3: True, 5: True}, 'S2': {0: True, 1: True, 2: True, 3: True, 5: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 12 (spin 5) charge 0: J-charge sectors (size, total derivative?) {0: (80, False)}; projected q-powers [0, 1, 2, 3, 4, 6]; Solution 1 (u,v) commutant dim 5
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2), 12: (True, 5)}, 1: {6: (True, 1), 10: (True, 2)}, 2: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 3: {6: (True, 1)}, 4: {0: (True, 'const'), 4: (True, 1)}, 6: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8, 12]; top piece (weight 12) has 19 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0], [0], [1], [0]]
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [ALT normalisation (P2^2 Q2 coefficient = 1)]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-20, 63)}, 0: {((0, 1, 1),): Fraction(-2, 7)}}), S1uv, S2uv: {'pure': {0: False, 1: False, 2: False, 3: True, 4: True, 6: True}, 'W0proj': {0: False, 1: False, 2: False, 3: False, 4: True, 5: True, 6: True, 7: True}, 'S1': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}, 'S2': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}}
+   info: unprojected charge commutes with S3, S4: {3: False, 4: False}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+info: Z's charge at w2 = 8 equals K's mod d: False
+
+info: Z's charge at w2 = 12 equals K's mod d: False
+
+== CONTROLS
+   control wrong dictionary (s' = 65/63) at w2 = 8: D_0(s') in span(I_3^cert(t)) + Im d in the (X, phi) frame: False  (must be False)
+   control wrong dictionary at w2 = 12: eigenvalue proportional to the certified I_5: None  (must be None)
+   real projection at s in the (X, phi) frame: D_0 in span(I_3^cert) + Im d: False  (must be True)
+   control perturbed screening at w2 = 8: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed screening at w2 = 12: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed Solution 1 vector at w2 = 8: commutant dim 2; membership {0: True, 1: True, 2: True, 4: True}  (must fail)
+   control perturbed Solution 1 vector at w2 = 12: commutant dim 5; membership {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}  (must fail)
+done in 24.6s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of level2_Z_t13-5.json before the run
+
+
+===== b2_level2_K_t2 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'level2_K_t2.json', '--', 'level2.py', 'K', '2']  exit 0  53s
+tower K, t = 2, s = 2/3; charges at w2 = [2, 3, 4, 5, 6, 7, 8, 10, 12]; dims [0, 2, 1, 0, 0, 0, 1, 0, 1]
+
+== w2 = 8 (spin 3) charge 0: J-charge sectors (size, total derivative?) {0: (15, False)}; projected q-powers [0, 1, 2, 4]; Solution 1 (u,v) commutant dim 2
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 1: {6: (True, 1)}, 2: {0: (True, 'const'), 4: (True, 1)}, 4: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8]; top piece (weight 8) has 7 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0]]
+   q = 0: D_0 = c_3 * I_3^cert mod d with c_3 = None
+   (q^k, weight w) piece = c x (generator at that weight): {(0, 0): ('trivial', '{(): Fraction(141, 20)}'), (0, 4): ('gen w2=4', -9/25), (0, 8): ('I_3^cert', None), (1, 6): ('gen w2=6', -504/125), (2, 0): ('trivial', '{(): Fraction(162, 25)}'), (2, 4): ('gen w2=4', -108/125), (4, 0): ('trivial', '{(): Fraction(324, 125)}')}
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [kit (dX)^4 normalisation of cyl_P4]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-4, 15)}, 0: {((0, 1, 1),): Fraction(-1, 5)}}), S1uv, S2uv: {'pure': {0: False, 1: True, 2: True, 4: True}, 'W0proj': {0: False, 1: False, 2: True, 3: True, 4: True, 5: True}, 'S1': {0: True, 1: True, 2: True, 4: True}, 'S2': {0: True, 1: True, 2: True, 4: True}}
+   info: unprojected charge commutes with S3, S4: {3: True, 4: True}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 12 (spin 5) charge 0: J-charge sectors (size, total derivative?) {0: (52, False)}; projected q-powers [0, 1, 2, 3, 4, 6]; Solution 1 (u,v) commutant dim 6
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2), 12: (True, 6)}, 1: {6: (True, 1), 10: (True, 2)}, 2: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 3: {6: (True, 1)}, 4: {0: (True, 'const'), 4: (True, 1)}, 6: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8, 12]; top piece (weight 12) has 18 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [1], [0], [0], [1], [0]]
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [ALT normalisation (P2^2 Q2 coefficient = 1)]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-4, 15)}, 0: {((0, 1, 1),): Fraction(-1, 5)}}), S1uv, S2uv: {'pure': {0: False, 1: False, 2: False, 3: True, 4: True, 6: True}, 'W0proj': {0: False, 1: False, 2: False, 3: False, 4: True, 5: True, 6: True, 7: True}, 'S1': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}, 'S2': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}}
+   info: unprojected charge commutes with S3, S4: {3: True, 4: True}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== CONTROLS
+   control wrong dictionary (s' = 17/21) at w2 = 8: D_0(s') in span(I_3^cert(t)) + Im d in the (X, phi) frame: False  (must be False)
+   control wrong dictionary at w2 = 12: eigenvalue proportional to the certified I_5: None  (must be None)
+   real projection at s in the (X, phi) frame: D_0 in span(I_3^cert) + Im d: False  (must be True)
+   control perturbed screening at w2 = 8: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed screening at w2 = 12: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed Solution 1 vector at w2 = 8: commutant dim 2; membership {0: True, 1: True, 2: True, 4: True}  (must fail)
+   control perturbed Solution 1 vector at w2 = 12: commutant dim 6; membership {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}  (must fail)
+done in 52.9s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of level2_K_t2.json before the run
+
+
+===== b2_level2_K_t7o2 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'level2_K_t7-2.json', '--', 'level2.py', 'K', '7/2']  exit 0  65s
+tower K, t = 7/2, s = 10/9; charges at w2 = [2, 3, 4, 5, 6, 7, 8, 10, 12]; dims [0, 2, 1, 0, 0, 0, 1, 0, 1]
+
+== w2 = 8 (spin 3) charge 0: J-charge sectors (size, total derivative?) {0: (15, False)}; projected q-powers [0, 1, 2, 4]; Solution 1 (u,v) commutant dim 2
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 1: {6: (True, 1)}, 2: {0: (True, 'const'), 4: (True, 1)}, 4: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8]; top piece (weight 8) has 7 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0]]
+   q = 0: D_0 = c_3 * I_3^cert mod d with c_3 = None
+   (q^k, weight w) piece = c x (generator at that weight): {(0, 0): ('trivial', '{(): Fraction(21339, 52)}'), (0, 4): ('gen w2=4', -675/169), (0, 8): ('I_3^cert', None), (1, 6): ('gen w2=6', -124200/2197), (2, 0): ('trivial', '{(): Fraction(141750, 169)}'), (2, 4): ('gen w2=4', -40500/2197), (4, 0): ('trivial', '{(): Fraction(1417500, 2197)}')}
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [kit (dX)^4 normalisation of cyl_P4]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-40, 117)}, 0: {((0, 1, 1),): Fraction(-5, 13)}}), S1uv, S2uv: {'pure': {0: False, 1: True, 2: True, 4: True}, 'W0proj': {0: False, 1: False, 2: True, 3: True, 4: True, 5: True}, 'S1': {0: True, 1: True, 2: True, 4: True}, 'S2': {0: True, 1: True, 2: True, 4: True}}
+   info: unprojected charge commutes with S3, S4: {3: True, 4: True}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 12 (spin 5) charge 0: J-charge sectors (size, total derivative?) {0: (52, False)}; projected q-powers [0, 1, 2, 3, 4, 6]; Solution 1 (u,v) commutant dim 5
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2), 12: (True, 5)}, 1: {6: (True, 1), 10: (True, 2)}, 2: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 3: {6: (True, 1)}, 4: {0: (True, 'const'), 4: (True, 1)}, 6: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8, 12]; top piece (weight 12) has 18 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0], [0], [1], [0]]
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [ALT normalisation (P2^2 Q2 coefficient = 1)]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-40, 117)}, 0: {((0, 1, 1),): Fraction(-5, 13)}}), S1uv, S2uv: {'pure': {0: False, 1: False, 2: False, 3: True, 4: True, 6: True}, 'W0proj': {0: False, 1: False, 2: False, 3: False, 4: True, 5: True, 6: True, 7: True}, 'S1': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}, 'S2': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}}
+   info: unprojected charge commutes with S3, S4: {3: True, 4: True}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== CONTROLS
+   control wrong dictionary (s' = 79/63) at w2 = 8: D_0(s') in span(I_3^cert(t)) + Im d in the (X, phi) frame: False  (must be False)
+   control wrong dictionary at w2 = 12: eigenvalue proportional to the certified I_5: None  (must be None)
+   real projection at s in the (X, phi) frame: D_0 in span(I_3^cert) + Im d: False  (must be True)
+   control perturbed screening at w2 = 8: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed screening at w2 = 12: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed Solution 1 vector at w2 = 8: commutant dim 2; membership {0: True, 1: True, 2: True, 4: True}  (must fail)
+   control perturbed Solution 1 vector at w2 = 12: commutant dim 5; membership {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}  (must fail)
+done in 64.7s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of level2_K_t7-2.json before the run
+
+
+===== b2_level2_K_t11o3 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'level2_K_t11-3.json', '--', 'level2.py', 'K', '11/3']  exit 0  72s
+tower K, t = 11/3, s = 8/7; charges at w2 = [2, 3, 4, 5, 6, 7, 8, 10, 12]; dims [0, 2, 1, 0, 0, 0, 1, 0, 1]
+
+== w2 = 8 (spin 3) charge 0: J-charge sectors (size, total derivative?) {0: (15, False)}; projected q-powers [0, 1, 2, 4]; Solution 1 (u,v) commutant dim 2
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 1: {6: (True, 1)}, 2: {0: (True, 'const'), 4: (True, 1)}, 4: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8]; top piece (weight 8) has 7 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0]]
+   q = 0: D_0 = c_3 * I_3^cert mod d with c_3 = None
+   (q^k, weight w) piece = c x (generator at that weight): {(0, 0): ('trivial', '{(): Fraction(168, 5)}'), (0, 4): ('gen w2=4', -28/25), (0, 8): ('I_3^cert', None), (1, 6): ('gen w2=6', -1008/125), (2, 0): ('trivial', '{(): Fraction(1792, 25)}'), (2, 4): ('gen w2=4', -672/125), (4, 0): ('trivial', '{(): Fraction(7168, 125)}')}
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [kit (dX)^4 normalisation of cyl_P4]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-12, 35)}, 0: {((0, 1, 1),): Fraction(-2, 5)}}), S1uv, S2uv: {'pure': {0: False, 1: True, 2: True, 4: True}, 'W0proj': {0: False, 1: False, 2: True, 3: True, 4: True, 5: True}, 'S1': {0: True, 1: True, 2: True, 4: True}, 'S2': {0: True, 1: True, 2: True, 4: True}}
+   info: unprojected charge commutes with S3, S4: {3: True, 4: True}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 12 (spin 5) charge 0: J-charge sectors (size, total derivative?) {0: (52, False)}; projected q-powers [0, 1, 2, 3, 4, 6]; Solution 1 (u,v) commutant dim 5
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2), 12: (True, 5)}, 1: {6: (True, 1), 10: (True, 2)}, 2: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 3: {6: (True, 1)}, 4: {0: (True, 'const'), 4: (True, 1)}, 6: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8, 12]; top piece (weight 12) has 18 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0], [0], [1], [0]]
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [ALT normalisation (P2^2 Q2 coefficient = 1)]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-12, 35)}, 0: {((0, 1, 1),): Fraction(-2, 5)}}), S1uv, S2uv: {'pure': {0: False, 1: False, 2: False, 3: True, 4: True, 6: True}, 'W0proj': {0: False, 1: False, 2: False, 3: False, 4: True, 5: True, 6: True, 7: True}, 'S1': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}, 'S2': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}}
+   info: unprojected charge commutes with S3, S4: {3: True, 4: True}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== CONTROLS
+   control wrong dictionary (s' = 9/7) at w2 = 8: D_0(s') in span(I_3^cert(t)) + Im d in the (X, phi) frame: False  (must be False)
+   control wrong dictionary at w2 = 12: eigenvalue proportional to the certified I_5: None  (must be None)
+   real projection at s in the (X, phi) frame: D_0 in span(I_3^cert) + Im d: False  (must be True)
+   control perturbed screening at w2 = 8: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed screening at w2 = 12: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed Solution 1 vector at w2 = 8: commutant dim 2; membership {0: True, 1: True, 2: True, 4: True}  (must fail)
+   control perturbed Solution 1 vector at w2 = 12: commutant dim 5; membership {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}  (must fail)
+done in 71.7s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of level2_K_t11-3.json before the run
+
+
+===== b2_level2_K_t13o5 [DRILL]: argv ['../../kit_b2/fresh.py', '--rm', 'level2_K_t13-5.json', '--', 'level2.py', 'K', '13/5']  exit 0  69s
+tower K, t = 13/5, s = 8/9; charges at w2 = [2, 3, 4, 5, 6, 7, 8, 10, 12]; dims [0, 2, 1, 0, 0, 0, 1, 0, 1]
+
+== w2 = 8 (spin 3) charge 0: J-charge sectors (size, total derivative?) {0: (15, False)}; projected q-powers [0, 1, 2, 4]; Solution 1 (u,v) commutant dim 2
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 1: {6: (True, 1)}, 2: {0: (True, 'const'), 4: (True, 1)}, 4: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8]; top piece (weight 8) has 7 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0]]
+   q = 0: D_0 = c_3 * I_3^cert mod d with c_3 = None
+   (q^k, weight w) piece = c x (generator at that weight): {(0, 0): ('trivial', '{(): Fraction(-5112, 35)}'), (0, 4): ('gen w2=4', 108/49), (0, 8): ('I_3^cert', None), (1, 6): ('gen w2=6', 4752/343), (2, 0): ('trivial', '{(): Fraction(-10368, 49)}'), (2, 4): ('gen w2=4', 2592/343), (4, 0): ('trivial', '{(): Fraction(-41472, 343)}')}
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [kit (dX)^4 normalisation of cyl_P4]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-20, 63)}, 0: {((0, 1, 1),): Fraction(-2, 7)}}), S1uv, S2uv: {'pure': {0: False, 1: True, 2: True, 4: True}, 'W0proj': {0: False, 1: False, 2: True, 3: True, 4: True, 5: True}, 'S1': {0: True, 1: True, 2: True, 4: True}, 'S2': {0: True, 1: True, 2: True, 4: True}}
+   info: unprojected charge commutes with S3, S4: {3: True, 4: True}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== w2 = 12 (spin 5) charge 0: J-charge sectors (size, total derivative?) {0: (52, False)}; projected q-powers [0, 1, 2, 3, 4, 6]; Solution 1 (u,v) commutant dim 5
+   (q^k, weight-w) pieces in Solution 1's commutant at weight w mod d [k: {w: (member, dim)}]: {0: {0: (True, 'const'), 4: (True, 1), 8: (True, 2), 12: (True, 5)}, 1: {6: (True, 1), 10: (True, 2)}, 2: {0: (True, 'const'), 4: (True, 1), 8: (True, 2)}, 3: {6: (True, 1)}, 4: {0: (True, 'const'), 4: (True, 1)}, 6: {0: (True, 'const')}}; ALL: True
+   q = 0 part has weight pieces [0, 4, 8, 12]; top piece (weight 12) has 18 monomials
+   v-parity (= X-parity) of D_0: [0]; of the commutant generators: [[0], [0], [0], [1], [0]]
+   eigenvalue level: vev(D_0)(P_u = -p pi, P_v = -2 kappa P_X) = c * E_cert [ALT normalisation (P2^2 Q2 coefficient = 1)]: c = None
+   [oint V, oint D(q)] = 0 order by order in q for V = e^(-u) pure, W0 projected (prefactor {1: {(): Fraction(-20, 63)}, 0: {((0, 1, 1),): Fraction(-2, 7)}}), S1uv, S2uv: {'pure': {0: False, 1: False, 2: False, 3: True, 4: True, 6: True}, 'W0proj': {0: False, 1: False, 2: False, 3: False, 4: True, 5: True, 6: True, 7: True}, 'S1': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}, 'S2': {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}}
+   info: unprojected charge commutes with S3, S4: {3: True, 4: True}; (u,v)-components of S3, S4 on D_0: {3: False, 4: False}
+
+== CONTROLS
+   control wrong dictionary (s' = 65/63) at w2 = 8: D_0(s') in span(I_3^cert(t)) + Im d in the (X, phi) frame: False  (must be False)
+   control wrong dictionary at w2 = 12: eigenvalue proportional to the certified I_5: None  (must be None)
+   real projection at s in the (X, phi) frame: D_0 in span(I_3^cert) + Im d: False  (must be True)
+   control perturbed screening at w2 = 8: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed screening at w2 = 12: commutant dim 0 (no charge to project) -> Level II fails
+   control perturbed Solution 1 vector at w2 = 8: commutant dim 2; membership {0: True, 1: True, 2: True, 4: True}  (must fail)
+   control perturbed Solution 1 vector at w2 = 12: commutant dim 5; membership {0: True, 1: True, 2: True, 3: True, 4: True, 6: True}  (must fail)
+done in 68.3s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of level2_K_t13-5.json before the run
+
+
+===== b2_validate2_t2 [DRILL]: argv ['validate2.py', '2']  exit 0  11s
+(1) bosonisation vev check on 11 neutral words (w2 <= 8; 1 of length >= 4, split-independence too): ALL OK
+(2) tower Z w2 = 4 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 1/20
+(2) tower Z w2 = 6 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 24*P1/25
+(2) tower Z w2 = 8 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = -297*P0**2/50 + 297*P1**2/10 + 3531/2000
+(2) tower Z w2 = 10 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 504*P1*(675*P0**2 - 1575*P1**2 - 289)/625
+(2) tower Z w2 = 12 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 24786*P0**4/5 - 347004*P0**2*P1**2/5 - 5674617*P0**2/1000 + 520506*P1**4/5 + 38733633*P1**2/1000 + 21681137/20000
+(2) tower K w2 = 4 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = -1/20
+(2) tower K w2 = 8 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 81*P0**2/50 + 891*P1**2/50 + 4437/2000
+(2) tower K w2 = 12 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = -16038*P0**4/5 - 125388*P0**2*P1**2/5 + 2045979*P0**2/1000 - 173502*P1**4/5 - 19194003*P1**2/1000 - 51675699/20000
+
+===== b2_validate2_t7o2 [DRILL]: argv ['validate2.py', '7/2']  exit 0  11s
+(1) bosonisation vev check on 11 neutral words (w2 <= 8; 1 of length >= 4, split-independence too): ALL OK
+(2) tower Z w2 = 4 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 15/52
+(2) tower Z w2 = 6 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = -2970*P1/169
+(2) tower Z w2 = 8 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 112995*P0**2/338 - 564975*P1**2/338 - 5738193/35152
+(2) tower Z w2 = 10 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 38880*P1*(-68445*P0**2 + 159705*P1**2 + 47987)/28561
+(2) tower Z w2 = 12 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = -434010150*P0**4/169 + 6076142100*P0**2*P1**2/169 + 1115185865535*P0**2/228488 - 9114213150*P1**4/169 - 7498298522295*P1**2/228488 - 20018184782295/11881376
+(2) tower K w2 = 4 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = -15/52
+(2) tower K w2 = 8 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 54675*P0**2/338 + 338985*P1**2/338 + 4663251/35152
+(2) tower K w2 = 12 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 13330311750*P0**4/169 + 73781725500*P0**2*P1**2/169 - 21146284575675*P0**2/228488 + 33418781550*P1**4/169 + 28472359373955*P1**2/228488 + 313981094797515/11881376
+
+===== b2_validate2_t11o3 [DRILL]: argv ['validate2.py', '11/3']  exit 0  11s
+(1) bosonisation vev check on 11 neutral words (w2 <= 8; 1 of length >= 4, split-independence too): ALL OK
+(2) tower Z w2 = 4 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 7/30
+(2) tower Z w2 = 6 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = -833*P1/150
+(2) tower Z w2 = 8 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 2058*P0**2/25 - 2058*P1**2/5 - 10297/250
+(2) tower Z w2 = 10 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 1519*P1*(-44100*P0**2 + 102900*P1**2 + 31697)/7500
+(2) tower Z w2 = 12 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 957999*P0**4/10 - 6705993*P0**2*P1**2/5 - 186927111*P0**2/1000 + 20117979*P1**4/10 + 1255350159*P1**2/1000 + 5971606349/90000
+(2) tower K w2 = 4 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = -7/30
+(2) tower K w2 = 8 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 343*P0**2/25 + 2058*P1**2/25 + 4067/375
+(2) tower K w2 = 12 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 857157*P0**4/10 + 2319366*P0**2*P1**2/5 - 52032071*P0**2/500 + 957999*P1**4/5 + 59057397*P1**2/500 + 1229314499/45000
+
+===== b2_validate2_t13o5 [DRILL]: argv ['validate2.py', '13/5']  exit 0  7s
+(1) bosonisation vev check on 11 neutral words (w2 <= 8; 1 of length >= 4, split-independence too): ALL OK
+(2) tower Z w2 = 4 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 3/14
+(2) tower Z w2 = 6 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 621*P1/98
+(2) tower Z w2 = 8 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = -5832*P0**2/49 + 29160*P1**2/49 + 81234/1715
+(2) tower Z w2 = 10 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 29889*P1*(-26460*P0**2 + 61740*P1**2 + 15097)/48020
+(2) tower Z w2 = 12 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 22143375*P0**4/98 - 22143375*P0**2*P1**2/7 - 6653346075*P0**2/19208 + 66430125*P1**4/14 + 45091620675*P1**2/19208 + 25349961225/268912
+(2) tower K w2 = 4 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = -3/14
+(2) tower K w2 = 8 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = -2187*P0**2/49 - 17496*P1**2/49 - 161433/3430
+(2) tower K w2 = 12 charge 0: full-frame eigenvalue == projected eigenvalue at q = -2P_1/s: False   diff = 16828965*P0**4/98 + 54915570*P0**2*P1**2/49 - 739050723*P0**2/4802 + 44286750*P1**4/49 + 2748015801*P1**2/4802 + 5828503311/67228
+
+===== b2b_Z_t2 [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'b2b_Z_t2.json', '--ignore-key', 'secs', '--', 'b2b.py', 'Z', '2']  exit 3  25s
+tower Z, t = 2, s = 2/3: L_2 (3 monomials), L_3 (9), L_5 (16; (u,v) commutant dim 2 at w2 = 12)
+  I_2 of Z: 8 monomials; charge sectors [-2, 0, 2] (non-neutral parts total derivatives: asserted); bosonised+rotated 9 monomials
+  I_3 of Z: 17 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 20 monomials
+  I_5 of Z: 80 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 76 monomials
+
+== main test: [oint L_s, oint I_r] = 0 mod d in the three-boson algebra
+   [L_2, I_2] = 0 mod d: False   (residue 24 monomials, 0.0s)
+   [L_2, I_3] = 0 mod d: False   (residue 62 monomials, 0.0s)
+   [L_2, I_5] = 0 mod d: False   (residue 277 monomials, 0.2s)
+   [L_3, I_2] = 0 mod d: False   (residue 47 monomials, 0.0s)
+   [L_3, I_3] = 0 mod d: False   (residue 116 monomials, 0.1s)
+   [L_3, I_5] = 0 mod d: False   (residue 505 monomials, 0.6s)
+   [L_5, I_2] = 0 mod d: False   (residue 159 monomials, 0.1s)
+   [L_5, I_3] = 0 mod d: False   (residue 377 monomials, 0.6s)
+   [L_5, I_5] = 0 mod d: False   (residue 1541 monomials, 9.3s)
+
+== consistency: Solution 1's charges among themselves (u,v frame) and the tower's charges among themselves
+   [L_2, L_3] = 0 mod d: False
+   [L_2, L_5] = 0 mod d: True
+   [L_3, L_5] = 0 mod d: False
+   [I_2, I_3] = 0 mod d: fermionic frame True; bosonised frame True
+   [I_2, I_5] = 0 mod d: fermionic frame True; bosonised frame True
+   [I_3, I_5] = 0 mod d: fermionic frame True; bosonised frame True
+
+== negative control: lift with kappa -> kappa + 1/7  (X -> -v/(2 kappa') instead of -v/(2 kappa): factor (kappa/kappa')^(n_v))
+   control [L_2', I_2] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_2', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_2', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_2] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_2] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_5] = 0 mod d: False   (rational part False, kappa part False)
+
+done in 24.1s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of b2b_Z_t2.json before the run
+[kit_b2/fresh] FAIL: b2b_Z_t2.json differs from the archived file as a JSON object
+
+
+===== b2b_Z_t7o2 [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'b2b_Z_t7-2.json', '--ignore-key', 'secs', '--', 'b2b.py', 'Z', '7/2']  exit 3  25s
+tower Z, t = 7/2, s = 10/9: L_2 (3 monomials), L_3 (9), L_5 (16; (u,v) commutant dim 1 at w2 = 12)
+  I_2 of Z: 8 monomials; charge sectors [-2, 0, 2] (non-neutral parts total derivatives: asserted); bosonised+rotated 9 monomials
+  I_3 of Z: 17 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 20 monomials
+  I_5 of Z: 80 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 76 monomials
+
+== main test: [oint L_s, oint I_r] = 0 mod d in the three-boson algebra
+   [L_2, I_2] = 0 mod d: False   (residue 24 monomials, 0.0s)
+   [L_2, I_3] = 0 mod d: False   (residue 62 monomials, 0.0s)
+   [L_2, I_5] = 0 mod d: False   (residue 280 monomials, 0.2s)
+   [L_3, I_2] = 0 mod d: False   (residue 47 monomials, 0.1s)
+   [L_3, I_3] = 0 mod d: False   (residue 116 monomials, 0.1s)
+   [L_3, I_5] = 0 mod d: False   (residue 507 monomials, 0.7s)
+   [L_5, I_2] = 0 mod d: False   (residue 159 monomials, 0.1s)
+   [L_5, I_3] = 0 mod d: False   (residue 377 monomials, 0.6s)
+   [L_5, I_5] = 0 mod d: False   (residue 1542 monomials, 9.5s)
+
+== consistency: Solution 1's charges among themselves (u,v frame) and the tower's charges among themselves
+   [L_2, L_3] = 0 mod d: False
+   [L_2, L_5] = 0 mod d: True
+   [L_3, L_5] = 0 mod d: False
+   [I_2, I_3] = 0 mod d: fermionic frame True; bosonised frame True
+   [I_2, I_5] = 0 mod d: fermionic frame True; bosonised frame True
+   [I_3, I_5] = 0 mod d: fermionic frame True; bosonised frame True
+
+== negative control: lift with kappa -> kappa + 1/7  (X -> -v/(2 kappa') instead of -v/(2 kappa): factor (kappa/kappa')^(n_v))
+   control [L_2', I_2] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_2', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_2', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_2] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_2] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_5] = 0 mod d: False   (rational part False, kappa part False)
+
+done in 24.2s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of b2b_Z_t7-2.json before the run
+[kit_b2/fresh] FAIL: b2b_Z_t7-2.json differs from the archived file as a JSON object
+
+
+===== b2b_Z_t13o5 [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'b2b_Z_t13-5.json', '--ignore-key', 'secs', '--', 'b2b.py', 'Z', '13/5']  exit 3  22s
+tower Z, t = 13/5, s = 8/9: L_2 (3 monomials), L_3 (9), L_5 (16; (u,v) commutant dim 1 at w2 = 12)
+  I_2 of Z: 8 monomials; charge sectors [-2, 0, 2] (non-neutral parts total derivatives: asserted); bosonised+rotated 9 monomials
+  I_3 of Z: 17 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 20 monomials
+  I_5 of Z: 80 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 76 monomials
+
+== main test: [oint L_s, oint I_r] = 0 mod d in the three-boson algebra
+   [L_2, I_2] = 0 mod d: False   (residue 24 monomials, 0.0s)
+   [L_2, I_3] = 0 mod d: False   (residue 62 monomials, 0.0s)
+   [L_2, I_5] = 0 mod d: False   (residue 279 monomials, 0.2s)
+   [L_3, I_2] = 0 mod d: False   (residue 47 monomials, 0.0s)
+   [L_3, I_3] = 0 mod d: False   (residue 116 monomials, 0.1s)
+   [L_3, I_5] = 0 mod d: False   (residue 507 monomials, 0.7s)
+   [L_5, I_2] = 0 mod d: False   (residue 157 monomials, 0.1s)
+   [L_5, I_3] = 0 mod d: False   (residue 374 monomials, 0.6s)
+   [L_5, I_5] = 0 mod d: False   (residue 1538 monomials, 7.8s)
+
+== consistency: Solution 1's charges among themselves (u,v frame) and the tower's charges among themselves
+   [L_2, L_3] = 0 mod d: False
+   [L_2, L_5] = 0 mod d: True
+   [L_3, L_5] = 0 mod d: False
+   [I_2, I_3] = 0 mod d: fermionic frame True; bosonised frame True
+   [I_2, I_5] = 0 mod d: fermionic frame True; bosonised frame True
+   [I_3, I_5] = 0 mod d: fermionic frame True; bosonised frame True
+
+== negative control: lift with kappa -> kappa + 1/7  (X -> -v/(2 kappa') instead of -v/(2 kappa): factor (kappa/kappa')^(n_v))
+   control [L_2', I_2] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_2', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_2', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_2] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_2] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_5] = 0 mod d: False   (rational part False, kappa part False)
+
+done in 21.2s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of b2b_Z_t13-5.json before the run
+[kit_b2/fresh] FAIL: b2b_Z_t13-5.json differs from the archived file as a JSON object
+
+
+===== b2b_K_t2 [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'b2b_K_t2.json', '--ignore-key', 'secs', '--', 'b2b.py', 'K', '2']  exit 3  15s
+tower K, t = 2, s = 2/3: L_2 (3 monomials), L_3 (9), L_5 (16; (u,v) commutant dim 2 at w2 = 12)
+  I_3 of K: 15 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 20 monomials
+  I_5 of K: 52 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 75 monomials
+
+== main test: [oint L_s, oint I_r] = 0 mod d in the three-boson algebra
+   [L_2, I_3] = 0 mod d: False   (residue 62 monomials, 0.0s)
+   [L_2, I_5] = 0 mod d: False   (residue 277 monomials, 0.1s)
+   [L_3, I_3] = 0 mod d: False   (residue 116 monomials, 0.0s)
+   [L_3, I_5] = 0 mod d: False   (residue 505 monomials, 0.3s)
+   [L_5, I_3] = 0 mod d: False   (residue 377 monomials, 0.3s)
+   [L_5, I_5] = 0 mod d: False   (residue 1542 monomials, 5.7s)
+
+== consistency: Solution 1's charges among themselves (u,v frame) and the tower's charges among themselves
+   [L_2, L_3] = 0 mod d: False
+   [L_2, L_5] = 0 mod d: True
+   [L_3, L_5] = 0 mod d: False
+   [I_3, I_5] = 0 mod d: fermionic frame True; bosonised frame True
+
+== negative control: lift with kappa -> kappa + 1/7  (X -> -v/(2 kappa') instead of -v/(2 kappa): factor (kappa/kappa')^(n_v))
+   control [L_2', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_2', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_5] = 0 mod d: False   (rational part False, kappa part False)
+
+done in 14.3s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of b2b_K_t2.json before the run
+[kit_b2/fresh] FAIL: b2b_K_t2.json differs from the archived file as a JSON object
+
+
+===== b2b_K_t7o2 [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'b2b_K_t7-2.json', '--ignore-key', 'secs', '--', 'b2b.py', 'K', '7/2']  exit 3  15s
+tower K, t = 7/2, s = 10/9: L_2 (3 monomials), L_3 (9), L_5 (16; (u,v) commutant dim 1 at w2 = 12)
+  I_3 of K: 15 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 20 monomials
+  I_5 of K: 52 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 75 monomials
+
+== main test: [oint L_s, oint I_r] = 0 mod d in the three-boson algebra
+   [L_2, I_3] = 0 mod d: False   (residue 62 monomials, 0.0s)
+   [L_2, I_5] = 0 mod d: False   (residue 280 monomials, 0.1s)
+   [L_3, I_3] = 0 mod d: False   (residue 116 monomials, 0.1s)
+   [L_3, I_5] = 0 mod d: False   (residue 505 monomials, 0.4s)
+   [L_5, I_3] = 0 mod d: False   (residue 377 monomials, 0.6s)
+   [L_5, I_5] = 0 mod d: False   (residue 1542 monomials, 6.7s)
+
+== consistency: Solution 1's charges among themselves (u,v frame) and the tower's charges among themselves
+   [L_2, L_3] = 0 mod d: False
+   [L_2, L_5] = 0 mod d: True
+   [L_3, L_5] = 0 mod d: False
+   [I_3, I_5] = 0 mod d: fermionic frame True; bosonised frame True
+
+== negative control: lift with kappa -> kappa + 1/7  (X -> -v/(2 kappa') instead of -v/(2 kappa): factor (kappa/kappa')^(n_v))
+   control [L_2', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_2', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_5] = 0 mod d: False   (rational part False, kappa part False)
+
+done in 15.1s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of b2b_K_t7-2.json before the run
+[kit_b2/fresh] FAIL: b2b_K_t7-2.json differs from the archived file as a JSON object
+
+
+===== b2b_K_t13o5 [DRILL]: argv ['../../kit_b2/fresh.py', '--same-json', 'b2b_K_t13-5.json', '--ignore-key', 'secs', '--', 'b2b.py', 'K', '13/5']  exit 3  17s
+tower K, t = 13/5, s = 8/9: L_2 (3 monomials), L_3 (9), L_5 (16; (u,v) commutant dim 1 at w2 = 12)
+  I_3 of K: 15 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 20 monomials
+  I_5 of K: 52 monomials; charge sectors [0] (non-neutral parts total derivatives: asserted); bosonised+rotated 75 monomials
+
+== main test: [oint L_s, oint I_r] = 0 mod d in the three-boson algebra
+   [L_2, I_3] = 0 mod d: False   (residue 62 monomials, 0.0s)
+   [L_2, I_5] = 0 mod d: False   (residue 279 monomials, 0.2s)
+   [L_3, I_3] = 0 mod d: False   (residue 116 monomials, 0.1s)
+   [L_3, I_5] = 0 mod d: False   (residue 505 monomials, 0.6s)
+   [L_5, I_3] = 0 mod d: False   (residue 374 monomials, 0.6s)
+   [L_5, I_5] = 0 mod d: False   (residue 1538 monomials, 5.0s)
+
+== consistency: Solution 1's charges among themselves (u,v frame) and the tower's charges among themselves
+   [L_2, L_3] = 0 mod d: False
+   [L_2, L_5] = 0 mod d: True
+   [L_3, L_5] = 0 mod d: False
+   [I_3, I_5] = 0 mod d: fermionic frame True; bosonised frame True
+
+== negative control: lift with kappa -> kappa + 1/7  (X -> -v/(2 kappa') instead of -v/(2 kappa): factor (kappa/kappa')^(n_v))
+   control [L_2', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_2', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_3', I_5] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_3] = 0 mod d: False   (rational part False, kappa part False)
+   control [L_5', I_5] = 0 mod d: False   (rational part False, kappa part False)
+
+done in 16.4s
+--- stderr ---
+[kit_b2/fresh] removed archived copy of b2b_K_t13-5.json before the run
+[kit_b2/fresh] FAIL: b2b_K_t13-5.json differs from the archived file as a JSON object
+
+
+===== spec1_scope [DRILL]: argv ['code/spec1_s0.py', 'S0']  exit 0  0s
+script /tmp/opers-kit-q0easn8a/tree/results/lab/large_n/spec1/code/spec1_s0.py sha256 8b244b5d7705f138dd90fb687704c2c4655b7346eef5d2a72996e9b61a91a8cd (imports: stdlib only)
+== S0 table (a = 1..6 per solution; Sol 2 listed for completeness, deg L = 2 -> OUT)
+  Sol3 a=1: t=5/3 n=5 s=2 sigma=5 c=10 b=1/2 degP=4 degL=1 | ODE order 4, Gamma order 5, p=2/5, q_ODE=10/3, q_Gamma=2, g(r=0 part)=2/5 | IN SCOPE: True | record Q data: none
+  Sol3 a=2: t=2 n=6 s=5/2 sigma=3 c=9 b=2/3 degP=4 degL=1 | ODE order 4, Gamma order 6, p=1/2, q_ODE=3, q_Gamma=3/2, g(r=0 part)=1/3 | IN SCOPE: True | record Q data: NUM2 item 325 (results/lab/large_n/num2, k = 2; also the sixth-order Gamma form there, T1)
+  Sol3 a=3: t=11/5 n=7 s=3 sigma=7/3 c=28/3 b=3/4 degP=4 degL=1 | ODE order 4, Gamma order 7, p=4/7, q_ODE=28/9, q_Gamma=4/3, g(r=0 part)=2/7 | IN SCOPE: True | record Q data: none
+  Sol3 a=4: t=7/3 n=8 s=7/2 sigma=2 c=10 b=4/5 degP=4 degL=1 | ODE order 4, Gamma order 8, p=5/8, q_ODE=10/3, q_Gamma=5/4, g(r=0 part)=1/4 | IN SCOPE: True | record Q data: none
+  Sol3 a=5: t=17/7 n=9 s=4 sigma=9/5 c=54/5 b=5/6 degP=4 degL=1 | ODE order 4, Gamma order 9, p=2/3, q_ODE=18/5, q_Gamma=6/5, g(r=0 part)=2/9 | IN SCOPE: True | record Q data: none
+  Sol3 a=6: t=5/2 n=10 s=9/2 sigma=5/3 c=35/3 b=6/7 degP=4 degL=1 | ODE order 4, Gamma order 10, p=7/10, q_ODE=35/9, q_Gamma=7/6, g(r=0 part)=1/5 | IN SCOPE: True | record Q data: none
+  Sol1 a=1: t=3 n=3 s=1 sigma=3 c=6 b=1/2 degP=2 degL=1 | ODE order 2, Gamma order 3, p=2/3, q_ODE=6, q_Gamma=2, g(r=0 part)=1/3 | IN SCOPE: True | record Q data: none
+  Sol1 a=2: t=5 n=4 s=3/2 sigma=2 c=6 b=2/3 degP=2 degL=1 | ODE order 2, Gamma order 4, p=3/4, q_ODE=6, q_Gamma=3/2, g(r=0 part)=1/4 | IN SCOPE: True | record Q data: none
+  Sol1 a=3: t=7 n=5 s=2 sigma=5/3 c=20/3 b=3/4 degP=2 degL=1 | ODE order 2, Gamma order 5, p=4/5, q_ODE=20/3, q_Gamma=4/3, g(r=0 part)=1/5 | IN SCOPE: True | record Q data: none
+  Sol1 a=4: t=9 n=6 s=5/2 sigma=3/2 c=15/2 b=4/5 degP=2 degL=1 | ODE order 2, Gamma order 6, p=5/6, q_ODE=15/2, q_Gamma=5/4, g(r=0 part)=1/6 | IN SCOPE: True | record Q data: none
+  Sol1 a=5: t=11 n=7 s=3 sigma=7/5 c=42/5 b=5/6 degP=2 degL=1 | ODE order 2, Gamma order 7, p=6/7, q_ODE=42/5, q_Gamma=6/5, g(r=0 part)=1/7 | IN SCOPE: True | record Q data: none
+  Sol1 a=6: t=13 n=8 s=7/2 sigma=4/3 c=28/3 b=6/7 degP=2 degL=1 | ODE order 2, Gamma order 8, p=7/8, q_ODE=28/3, q_Gamma=7/6, g(r=0 part)=1/8 | IN SCOPE: True | record Q data: none
+  Sol2 a=1: t=5/3 n=5 s=2 sigma=5 c=10 b=1/2 degP=3 degL=2 | ODE order 3, Gamma order 5, p=None, q_ODE=5, q_Gamma=2, g(r=0 part)=2/5 | IN SCOPE: False | record Q data: none
+  Sol2 a=2: t=2 n=7 s=3 sigma=7/2 c=21/2 b=2/3 degP=3 degL=2 | ODE order 3, Gamma order 7, p=None, q_ODE=21/4, q_Gamma=3/2, g(r=0 part)=5/14 | IN SCOPE: False | record Q data: NUM3 item 329 (k = 2; deg L = 2)
+  Sol2 a=3: t=11/5 n=9 s=4 sigma=3 c=12 b=3/4 degP=3 degL=2 | ODE order 3, Gamma order 9, p=None, q_ODE=6, q_Gamma=4/3, g(r=0 part)=1/3 | IN SCOPE: False | record Q data: none
+  Sol2 a=4: t=7/3 n=11 s=5 sigma=11/4 c=55/4 b=4/5 degP=3 degL=2 | ODE order 3, Gamma order 11, p=None, q_ODE=55/8, q_Gamma=5/4, g(r=0 part)=7/22 | IN SCOPE: False | record Q data: none
+  Sol2 a=5: t=17/7 n=13 s=6 sigma=13/5 c=78/5 b=5/6 degP=3 degL=2 | ODE order 3, Gamma order 13, p=None, q_ODE=39/5, q_Gamma=6/5, g(r=0 part)=4/13 | IN SCOPE: False | record Q data: none
+  Sol2 a=6: t=5/2 n=15 s=7 sigma=5/2 c=35/2 b=6/7 degP=3 degL=2 | ODE order 3, Gamma order 15, p=None, q_ODE=35/4, q_Gamma=7/6, g(r=0 part)=3/10 | IN SCOPE: False | record Q data: none
+== record data points not in scope (non-integer a or deg L = 2)
+  Sol3 t=2: a=2, sigma=3, degL=1: NUM2 item 325 (results/lab/large_n/num2, k = 2; also the sixth-order Gamma form there, T1)
+  Sol3 t=9/4: a=10/3, sigma=11/5, degL=1: NUM2 item 325 (k = 10/3, non-integer a)
+  Sol2 t=2: a=2, sigma=7/2, degL=2: NUM3 item 329 (k = 2; deg L = 2)
+  Sol2 t=9/4: a=10/3, sigma=29/10, degL=2: NUM3 item 329 (k = 10/3)
+  Sol1 t=2: a=1/2, sigma=5, degL=1: NUM1 (M = 5, i.e. t = 2: a = 1/2, non-integer)
+  Sol1 t=81/41: a=20/41, sigma=51/10, degL=1: NUM1 (M = 51/10, i.e. t = 81/41: a = 20/41, non-integer)
+== (H) at the proposed S3 momentum points (l0, l1) = A (1/3, 3/5), B (9/10, 1/5)
+  Sol3 a=2 t=2 point A: theta_j=['13/6', '17/6', '19/10', '31/10'], frozen base=1 (lattice base + 3 Z); (H) HOLDS
+  Sol3 a=2 t=2 point B: theta_j=['8/5', '17/5', '8/5', '17/5'], frozen base=1 (lattice base + 3 Z); (H) FAILS [('diff', 0, 2), ('diff', 1, 3), ('diff', 2, 0), ('diff', 3, 1)]
+  Sol3 a=1 t=5/3 point A: theta_j=['5/3', '7/3', '7/5', '13/5'], frozen base=2 (lattice base + 5 Z); (H) HOLDS
+  Sol3 a=1 t=5/3 point B: theta_j=['11/10', '29/10', '11/10', '29/10'], frozen base=2 (lattice base + 5 Z); (H) FAILS [('diff', 0, 2), ('diff', 1, 3), ('diff', 2, 0), ('diff', 3, 1)]
+  Sol3 a=3 t=11/5 point A: theta_j=['8/3', '10/3', '12/5', '18/5'], frozen base=2/3 (lattice base + 7/3 Z); (H) HOLDS
+  Sol3 a=3 t=11/5 point B: theta_j=['21/10', '39/10', '21/10', '39/10'], frozen base=2/3 (lattice base + 7/3 Z); (H) FAILS [('diff', 0, 2), ('diff', 1, 3), ('diff', 2, 0), ('diff', 3, 1)]
+  Sol1 a=1 t=3 point A: theta_j=['2/5', '8/5'], frozen base=2/3 (lattice base + 3 Z); (H) HOLDS
+  Sol1 a=1 t=3 point B: theta_j=['1/10', '19/10'], frozen base=1/10 (lattice base + 3 Z); (H) FAILS [('frozen', 0)]
+  Sol1 a=2 t=5 point A: theta_j=['9/10', '21/10'], frozen base=1/6 (lattice base + 2 Z); (H) HOLDS
+  Sol1 a=2 t=5 point B: theta_j=['3/5', '12/5'], frozen base=-2/5 (lattice base + 2 Z); (H) HOLDS
+S0 DONE
+
+===== spec1_scope_sol1_a3 [DRILL]: argv ['code/spec1_s0b.py', 'S0b']  exit 0  0s
+imported /tmp/opers-kit-_axze_g7/tree/results/lab/large_n/spec1/code/spec1_s0b.py sha256 57bd93c10529fa1e60c852198cb5539ff81a468e38e5aaf38386b2c378aab8b1
+imported /tmp/opers-kit-_axze_g7/tree/results/lab/large_n/spec1/code/spec1_s0.py sha256 a37d44a7fc258f30da87770930d17ca304968c54227c50f8157dbab204635b4c
+Sol1 a=3: t=7 N=1/2 n=5 s=2 sigma=5/3 c=20/3
+  point A: theta_j=['7/5', '13/5'], frozen base=0 (lattice base + 5/3 Z); (H) HOLDS
+  point B: theta_j=['11/10', '29/10'], frozen base=-17/30 (lattice base + 5/3 Z); (H) FAILS [('frozen', 0)]
+  info: Sol3 a=1 t=5/3 N=-25/2
+  info: Sol3 a=3 t=11/5 N=-21/4
+  info: Sol1 a=1 t=3 N=-2
+S0b DONE
+
+===== spec1_kernel [DRILL]: argv ['code/spec1_s1.py', 'S1']  exit 0  8s
+script /tmp/opers-kit-80s2_knw/tree/results/lab/large_n/spec1/code/spec1_s1.py sha256 841ab013dce98212be0c785135057016fb2848dc2f72f30a88896844711410d5
+python 3.12.8 sympy 1.14.0 mpmath 1.3.0
+imported code/spec1_s1.py sha256 841ab013dce98212be0c785135057016fb2848dc2f72f30a88896844711410d5
+imported code/spec1_lib.py sha256 95f444332fd10a9902fc9c99860c0a187839e23b8e988cb8be23499ec810eda0
+[PASS] (a) m(mu+sigma)/m(mu) = s - mu - r - c/2 (symbolic)  -a*sigma/2 - mu - r + s - sigma/2
+[PASS] (a) tamper g + 1/7 fails
+[PASS] (b) general a: Gamma arguments and the power of sigma match exactly  0, 0, 0
+[PASS] (b) tamper g + 1/7 fails
+[PASS] (b) integer a = 1..8: m(mu)/m(mu-n) = prod_j (T - sigma(a-1)/2 + sigma j) at T = s - mu - r (expanded)
+[PASS] (c) frozen exponents base + sigma j are roots of G_a(s - f - r) and poles of 1/Gamma (argument -j), a = 1..8
+[PASS] (c) tamper base + sigma/2: neither a root nor a pole
+[PASS] (c) frozen Frobenius lattice (steps sigma a, sigma(a+1)) misses the other frozen exponents, a = 1..8
+   (d) Sol3 a=1: x^mu coefficient diff 5*(l0**2 - (mu - 2)**2)*(l1**2 - (mu - 2)**2)/(7*mu - 19), x^(mu+c) diff 5/7
+   (d) Sol3 a=2: x^mu coefficient diff (4*l0**2 - (2*mu - 5)**2)*(4*l1**2 - (2*mu - 5)**2)*(49*(mu - 4)*(mu - 1) - (7*mu - 31)*(7*mu - 10))/(16*(7*mu - 31)*(7*mu - 10)), x^(mu+c) diff 3/7
+   (d) Sol3 a=3: x^mu coefficient diff (l0**2 - (mu - 3)**2)*(l1**2 - (mu - 3)**2)*((mu - 3)*(3*mu - 16)*(3*mu - 2) - (mu - 1)*(3*mu - 17)*(3*mu - 10))/((mu - 1)*(3*mu - 17)*(3*mu - 10)), x^(mu+c) diff 1/3
+   (d) Sol1 a=1: x^mu coefficient diff 3*(-l1**2 + (mu - 1)**2)/(7*l0 + 7*mu - 10), x^(mu+c) diff 3/7
+   (d) Sol1 a=2: x^mu coefficient diff (4*l1**2 - (2*mu - 3)**2)*(-49*(2*l0 + 2*mu - 5)*(2*l0 + 2*mu - 1) + (14*l0 + 14*mu - 39)*(14*l0 + 14*mu - 11))/(4*(14*l0 + 14*mu - 39)*(14*l0 + 14*mu - 11)), x^(mu+c) diff 2/7
+   (d) Sol1 a=3: x^mu coefficient diff (l1**2 - (mu - 2)**2)*(-343*(l0 + mu - 2)*(3*l0 + 3*mu - 11)*(3*l0 + 3*mu - 1) + (7*l0 + 7*mu - 4)*(21*l0 + 21*mu - 82)*(21*l0 + 21*mu - 47))/((7*l0 + 7*mu - 4)*(21*l0 + 21*mu - 82)*(21*l0 + 21*mu - 47)), x^(mu+c) diff 5/21
+[FAIL] (d) L_O K = x^n K x^-n L_Gamma on monomials at all six S0 points (symbolic in mu, l0, l1, E)
+[PASS] (e) Sol3 a=1 (g = 19/35, sigma = 5): K x^mu = m(mu) x^mu at mu = 0.37+0.2i  rel err 2.68e-51
+[PASS] (e) Sol3 a=1: Lemma 2(i) on psi = x^0.4 exp(-x)  rel err 1.34e-51; value (-0.112405476631 + 2.65864822083e-53j)
+[PASS] (e) Sol3 a=1: tamper (psi -> psi x^(1/7) on one side) differs
+[PASS] (e) Sol3 a=3 (g = 3/7, sigma = 7/3): K x^mu = m(mu) x^mu at mu = 0.37+0.2i  rel err 2.76e-51
+[PASS] (e) Sol3 a=3: Lemma 2(i) on psi = x^0.4 exp(-x)  rel err 4.02e-51; value (-0.195869449425 + 5.31729644166e-53j)
+[PASS] (e) Sol3 a=3: tamper (psi -> psi x^(1/7) on one side) differs
+[PASS] (e) Sol1 a=3 (g = 1/7, sigma = 5/3): K x^mu = m(mu) x^mu at mu = 0.37+0.2i  rel err 2.04e-51
+[PASS] (e) Sol1 a=3: Lemma 2(i) on psi = x^0.4 exp(-x)  rel err 1.35e-51; value (-0.386555410391 + 0.0j)
+[PASS] (e) Sol1 a=3: tamper (psi -> psi x^(1/7) on one side) differs
+imported(end) code/spec1_s1.py sha256 841ab013dce98212be0c785135057016fb2848dc2f72f30a88896844711410d5
+imported(end) code/spec1_lib.py sha256 95f444332fd10a9902fc9c99860c0a187839e23b8e988cb8be23499ec810eda0
+S1 DONE: FAILURES ['(d) L_O K = x^n K x^-n L_Gamma on monomials at all six S0 points (symbolic in mu, l0, l1, E)']
+
+===== spec1_constant [DRILL]: argv ['code/spec1_s2.py', 'S2']  exit 0  3s
+script /tmp/opers-kit-g48z8g5v/tree/results/lab/large_n/spec1/code/spec1_s2.py sha256 6f6f2db86113e5258304fbdefe9338a8d7e59dba2fad25f4435745e52d2534d3
+python 3.12.8 sympy 1.14.0 mpmath 1.3.0
+imported code/spec1_s2.py sha256 6f6f2db86113e5258304fbdefe9338a8d7e59dba2fad25f4435745e52d2534d3
+imported deps_snapshot/ode.py sha256 595e6e1af6ffd25a3bf88bc0dd795c75b800538a99cd4f11a8fb656ff52f8f72
+imported deps_snapshot/ops.py sha256 0807a4e8e3d0f12444b83ae2511518d06d007be90fd3d53590c3ec08d5926f76
+imported code/spec1_lib.py sha256 448b5ab6a75fccc4b4568a775cd39d9b9d2bffb83972195dd6bd0bb307bc6e78
+[PASS] S2a power identity -g q_O + beta_G (1 + q_O/sigma) + q_O/2 = beta_O (symbolic)  residual 0
+[PASS] S2a saddle: f'(tau*) = 0, f(tau*) = -x^q_O/q_O, f''(tau*) = (1-p)/tau* (symbolic, x > 0)  0, 0, 0
+[PASS] S2a X* = x^(1 + q_O/sigma)  x**((a + d)/(d - 1))
+   Sol3 a=1: beta_G = [-2] (formula -2); beta_O = [-3] (formula -3)
+   Sol3 a=2: beta_G = [-5/4] (formula -5/4); beta_O = [-2] (formula -2)
+   Sol3 a=3: beta_G = [-1] (formula -1); beta_O = [-5/3] (formula -5/3)
+   Sol3 a=4: beta_G = [-7/8] (formula -7/8); beta_O = [-3/2] (formula -3/2)
+   Sol3 a=5: beta_G = [-4/5] (formula -4/5); beta_O = [-7/5] (formula -7/5)
+   Sol3 a=6: beta_G = [-3/4] (formula -3/4); beta_O = [-4/3] (formula -4/3)
+   Sol1 a=1: beta_G = [-l0/3 - 1] (formula -l0/3 - 1); beta_O = [l0 - 2] (formula l0 - 2)
+   Sol1 a=2: beta_G = [-l0/2 - 3/4] (formula -l0/2 - 3/4); beta_O = [l0 - 3/2] (formula l0 - 3/2)
+   Sol1 a=3: beta_G = [-3*l0/5 - 2/3] (formula -3*l0/5 - 2/3); beta_O = [l0 - 4/3] (formula l0 - 4/3)
+   Sol1 a=4: beta_G = [-2*l0/3 - 5/8] (formula -2*l0/3 - 5/8); beta_O = [l0 - 5/4] (formula l0 - 5/4)
+   Sol1 a=5: beta_G = [-5*l0/7 - 3/5] (formula -5*l0/7 - 3/5); beta_O = [l0 - 6/5] (formula l0 - 6/5)
+   Sol1 a=6: beta_G = [-3*l0/4 - 7/12] (formula -3*l0/4 - 7/12); beta_O = [l0 - 7/6] (formula l0 - 7/6)
+[PASS] S2a beta_G, beta_O by exact conjugation = PREREG formulas, a = 1..6, both solutions (symbolic l0, l1)
+[PASS] S2a tamper beta + 1/7 leaves the matching coefficient non-zero
+[FAIL] S2b omega(t = 2) = 3^(-1/6) pi^(-1/2) exactly  8*3**(5/6)/(21*sqrt(pi))
+== S2c positive control: generic Meijer formulas vs archived t = 2 closed forms (ops.py byte copy)
+   t=2 point A: max rel diff ODE 1.56e-61, Gamma 1.56e-61
+   t=2 point B: max rel diff ODE 7.78e-62, Gamma 1.56e-61
+[PASS] S2c control: generic E = 0 formulas reproduce the archived t = 2 closed forms (both forms, A and B)
+== S2c ratio test of the SEALED omega
+   Sol3 a=1 t=5/3 A dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.258; 1/omega = 1.995586755118675135451387
+   Sol3 a=1 t=5/3 A dps 120: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.258; 1/omega = 1.995586755118675135451387
+   Sol3 a=1 t=5/3 B dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.258; 1/omega = 1.995586755118675135451387
+   Sol3 a=1 t=5/3 B dps 120: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.258; 1/omega = 1.995586755118675135451387
+   Sol3 a=2 t=2 A dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.17; 1/omega = 1.862529664534394731043838
+   Sol3 a=2 t=2 A dps 120: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.17; 1/omega = 1.862529664534394731043838
+   Sol3 a=2 t=2 B dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.17; 1/omega = 1.862529664534394731043838
+   Sol3 a=2 t=2 B dps 120: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.17; 1/omega = 1.862529664534394731043838
+   Sol3 a=3 t=11/5 A dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.129; 1/omega = 1.721716980887311655412544
+   Sol3 a=3 t=11/5 A dps 120: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.129; 1/omega = 1.721716980887311655412544
+   Sol3 a=3 t=11/5 B dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.129; 1/omega = 1.721716980887311655412544
+   Sol3 a=3 t=11/5 B dps 120: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.129; 1/omega = 1.721716980887311655412544
+   Sol3 a=4 t=7/3 A dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.104; 1/omega = 1.597243465206736843140225
+   Sol3 a=4 t=7/3 B dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.104; 1/omega = 1.597243465206736843140225
+   Sol3 a=5 t=17/7 A dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.0876; 1/omega = 1.490892702625622225209436
+   Sol3 a=5 t=17/7 B dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.0876; 1/omega = 1.490892702625622225209436
+   Sol3 a=6 t=5/2 A dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.0757; 1/omega = 1.400274691440901234348502
+   Sol3 a=6 t=5/2 B dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.0757; 1/omega = 1.400274691440901234348502
+   Sol1 a=1 t=3 A dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.17; 1/omega = 1.718189424872129138461729
+   Sol1 a=1 t=3 A dps 120: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.17; 1/omega = 1.718189424872129138461729
+   Sol1 a=1 t=3 B dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.17; 1/omega = 2.114433083535450220261703
+   Sol1 a=1 t=3 B dps 120: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.17; 1/omega = 2.114433083535450220261703
+   Sol1 a=2 t=5 A dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.104; 1/omega = 1.463851952748031682964832
+   Sol1 a=2 t=5 A dps 120: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.104; 1/omega = 1.463851952748031682964832
+   Sol1 a=2 t=5 B dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.104; 1/omega = 1.781512969987910431445126
+   Sol1 a=2 t=5 B dps 120: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.104; 1/omega = 1.781512969987910431445126
+   Sol1 a=3 t=7 A dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.0757; 1/omega = 1.266302195476968403885276
+   Sol1 a=3 t=7 A dps 120: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.0757; 1/omega = 1.266302195476968403885276
+   Sol1 a=3 t=7 B dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.0757; 1/omega = 1.506488895235196997566604
+   Sol1 a=3 t=7 B dps 120: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.0757; 1/omega = 1.506488895235196997566604
+   Sol1 a=4 t=9 A dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.0596; 1/omega = 1.121633157298116524592964
+   Sol1 a=4 t=9 B dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.0596; 1/omega = 1.307296817096247289240897
+   Sol1 a=5 t=11 A dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.0492; 1/omega = 1.012814571128404341408945
+   Sol1 a=5 t=11 B dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.0492; 1/omega = 1.160585132692394888663561
+   Sol1 a=6 t=13 A dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.042; 1/omega = 0.9281960247113777801110685
+   Sol1 a=6 t=13 B dps 60: max_h |omega Q^O/(m Q^G) - 1| = 0.143; tamper min dev 0.042; 1/omega = 1.048911065774198830726616
+[PASS] S2c exact exponent consistency c*vt = beta (both forms, every point/momentum)
+[FAIL] S2c sealed omega: omega Q^O_h(0) = m(theta_h) Q^G_h(0) for every h, every S0 point a = 1..6, both solutions, A and B (< 10^-(dps-10))
+[PASS] S2c tamper (omega from g + 1/7) fails everywhere (> 1e-3)
+imported(end) code/spec1_s2.py sha256 6f6f2db86113e5258304fbdefe9338a8d7e59dba2fad25f4435745e52d2534d3
+imported(end) deps_snapshot/ode.py sha256 595e6e1af6ffd25a3bf88bc0dd795c75b800538a99cd4f11a8fb656ff52f8f72
+imported(end) deps_snapshot/ops.py sha256 0807a4e8e3d0f12444b83ae2511518d06d007be90fd3d53590c3ec08d5926f76
+imported(end) code/spec1_lib.py sha256 448b5ab6a75fccc4b4568a775cd39d9b9d2bffb83972195dd6bd0bb307bc6e78
+S2 DONE: FAILURES ['S2b omega(t = 2) = 3^(-1/6) pi^(-1/2) exactly', 'S2c sealed omega: omega Q^O_h(0) = m(theta_h) Q^G_h(0) for every h, every S0 point a = 1..6, both solutions, A and B (< 10^-(dps-10))']
+
+===== spec1_e0_gauss [DRILL]: argv ['code/spec1_s2c_gauss.py', 'GAUSS']  exit 0  1s
+script /tmp/opers-kit-3yov56jh/tree/results/lab/large_n/spec1/code/spec1_s2c_gauss.py sha256 d5b88a1fa7b49d8a872ca57ec576d6ce8069de1e3d6eaf4e0703f616cebb696f
+python 3.12.8 sympy 1.14.0 mpmath 1.3.0
+imported code/spec1_s2c_gauss.py sha256 d5b88a1fa7b49d8a872ca57ec576d6ce8069de1e3d6eaf4e0703f616cebb696f
+imported code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+[PASS] (G1) eps_{f_i} - al_j = u + i/(a+1)
+[PASS] (G2) u + a/(a+1) = beta1' - al_j
+[PASS] (G3) (a+1) u = g - theta_j/sigma
+[PASS] (G4) sum_i eps_{f_i} = a (s - r)/c  a*(-r + s)/(sigma*(a + 1))
+[PASS] (G5) X = (d-1) vt_O - D vt_G = 1/2 - g
+[FAIL] (G6) log(Q^O_j/Q^G_j) - log m(theta_j) + log omega = 0 identically (symbolic s, r, theta, sigma, d, a)  residual Ld1
+[PASS] (G6) tamper g -> g + 1/7 in omega leaves a nonzero residual  Ld1 + Lsigma/7
+[PASS] (G2) tamper: u + (a-1)/a != beta1' - al_j
+[PASS] (GM) Gauss multiplication at dps 100, k = 2..9, three u (one complex)  5.0e-101
+[PASS] lib tie Sol3 a=3 A: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  4.67e-61
+[PASS] lib tie Sol3 a=3 B: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  1.63e-60
+[PASS] lib tie Sol1 a=3 A: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  3.11e-61
+[PASS] lib tie Sol1 a=3 B: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  4.67e-61
+[PASS] lib tie Sol3 a=1 A: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  7.78e-61
+[PASS] lib tie Sol3 a=1 B: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  7.78e-61
+[PASS] lib tie Sol1 a=1 A: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  1.56e-61
+[PASS] lib tie Sol1 a=1 B: omega Q^O(0)/(m Q^G(0)) = 1 (dps 60)  0.0
+imported(end) code/spec1_s2c_gauss.py sha256 d5b88a1fa7b49d8a872ca57ec576d6ce8069de1e3d6eaf4e0703f616cebb696f
+imported(end) code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+GAUSS DONE: FAILURES ['(G6) log(Q^O_j/Q^G_j) - log m(theta_j) + log omega = 0 identically (symbolic s, r, theta, sigma, d, a)']
+
+===== spec1_saddle [DRILL]: argv ['code/spec1_s4_checks.py', 'S4']  exit 0  3s
+script /tmp/opers-kit-pg66jmp6/tree/results/lab/large_n/spec1/code/spec1_s4_checks.py sha256 28fadf6842906dbc424d26436e7d6d9f1bf15c3a93fc84e4b8b3078436688149
+python 3.12.8 sympy 1.14.0 mpmath 1.3.0
+imported code/spec1_s4_checks.py sha256 28fadf6842906dbc424d26436e7d6d9f1bf15c3a93fc84e4b8b3078436688149
+imported code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+[PASS] (C1) p = q_G/sigma = (a+1)/(d+a); 1 - p = (d-1)/(d+a)
+[FAIL] (C1) ODE E-correction power n - (d-1) q_O = -sigma
+[PASS] (C1) Gamma E-correction power n - (D-1) q_G = sigma (p - 1) < 0 for d > 1
+[FAIL] (C1) q_O = p sigma/(1 - p)
+[FAIL] (C2) tau* = x^(q_O)/sigma solves p x^(q_G) sigma^p tau^(p-1)/q_G = 1  x**(sigma*(a + 1)/(d*(a + d)))
+[FAIL] (C2) tau - X^(q_G)/q_G = tau* (v - v^p/p) at tau = tau* v  v**((a + 1)/(a + d))*(a*x**(sigma*(a + 1)/d) - a*x**(sigma*(a**2 + a*d + 2*a + d + 1)/(d*(a + d))) + d*x**(sigma*(a + 1)/d) - d*x**(sigma*(a**2 + a*d + 2*a + d + 1)/(d*(a + d))))/(sigma*(a + 1))
+[FAIL] (C2) tau* h(1) = -x^(q_O)/q_O
+[PASS] (C2) h'(1) = 0, h''(1) = 1 - p
+[PASS] (C3) R(y) = p(1-p) y^2/2 + O(y^4)  -p*(p - 1)/2
+[PASS] (C3) Re h(1+iy) - h(1) = -R(y)/p (dps 40, two p, four y)  7.02e-37
+   info (C3) p = 2/5: min over y in [1e-3, 1e6] of R/min(y^2, y^p) = 0.0924771  (p(1-p)/2 = 0.12, cos(p pi/2) = 0.809017)
+[PASS] (C3) R/min(y^2, y^p) bounded below by a positive constant on the grid, p = 2/5
+   info (C3) p = 1/2: min over y in [1e-3, 1e6] of R/min(y^2, y^p) = 0.0986841  (p(1-p)/2 = 0.125, cos(p pi/2) = 0.707107)
+[PASS] (C3) R/min(y^2, y^p) bounded below by a positive constant on the grid, p = 1/2
+   info (C3) p = 4/7: min over y in [1e-3, 1e6] of R/min(y^2, y^p) = 0.0982934  (p(1-p)/2 = 0.122449, cos(p pi/2) = 0.62349)
+[PASS] (C3) R/min(y^2, y^p) bounded below by a positive constant on the grid, p = 4/7
+   info (C3) p = 2/3: min over y in [1e-3, 1e6] of R/min(y^2, y^p) = 0.0911236  (p(1-p)/2 = 0.111111, cos(p pi/2) = 0.5)
+[PASS] (C3) R/min(y^2, y^p) bounded below by a positive constant on the grid, p = 2/3
+   info (C3) p = 3/4: min over y in [1e-3, 1e6] of R/min(y^2, y^p) = 0.0782827  (p(1-p)/2 = 0.09375, cos(p pi/2) = 0.382683)
+[PASS] (C3) R/min(y^2, y^p) bounded below by a positive constant on the grid, p = 3/4
+   info (C3) p = 4/5: min over y in [1e-3, 1e6] of R/min(y^2, y^p) = 0.0675043  (p(1-p)/2 = 0.08, cos(p pi/2) = 0.309017)
+[PASS] (C3) R/min(y^2, y^p) bounded below by a positive constant on the grid, p = 4/5
+   info (C4) lam = 50: sqrt(lam)/(2 pi) int = (0.889861635214 + 0.00706839248011j); |ratio - 1| = 0.008299
+   info (C4) lam = 200: sqrt(lam)/(2 pi) int = (0.891506450525 + 0.001779639343j); |ratio - 1| = 0.00209
+   info (C4) lam = 800: sqrt(lam)/(2 pi) int = (0.891922795344 + 0.000445746688984j); |ratio - 1| = 0.0005235
+[PASS] (C4) Laplace main term -> (2 pi (1-p))^(-1/2) with error ~ 1/lam (ratios 4 +- 1 between lam steps)  ['0.0083', '0.00209', '0.000524']
+imported(end) code/spec1_s4_checks.py sha256 28fadf6842906dbc424d26436e7d6d9f1bf15c3a93fc84e4b8b3078436688149
+imported(end) code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+S4CHK DONE: FAILURES ['(C1) ODE E-correction power n - (d-1) q_O = -sigma', '(C1) q_O = p sigma/(1 - p)', '(C2) tau* = x^(q_O)/sigma solves p x^(q_G) sigma^p tau^(p-1)/q_G = 1', '(C2) tau - X^(q_G)/q_G = tau* (v - v^p/p) at tau = tau* v', '(C2) tau* h(1) = -x^(q_O)/q_O']
+
+===== spec1_ddt [DRILL]: argv ['code/spec1_ddt.py', 'DDT']  exit 0  1s
+script /tmp/opers-kit-p97wflwb/tree/results/lab/large_n/spec1/code/spec1_ddt.py sha256 5b7d1dd628f2bfc8bdf2d5dab98cbf6f30f108d42fa4862c3a3041d02311086c
+python 3.12.8 sympy 1.14.0 mpmath 1.3.0
+imported code/spec1_ddt.py sha256 5b7d1dd628f2bfc8bdf2d5dab98cbf6f30f108d42fa4862c3a3041d02311086c
+imported code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+[FAIL] (i) y^2 e^(-y^4/4) y^(1/6) S[Phi] = -(4/9) L_O[f] on f = x^nu (symbolic nu, l0, l1, E), mu^6 = 3, E_S = -kappa E  residual 2*E*y**2*(-2*sqrt(3) + 3*sqrt(2))/9
+[PASS] (i) tamper E_S = -E (kappa -> 1) fails
+   alpha = -4*l0/3 (with l0 = 3 sqrt3 P_X: alpha = -4 sqrt3 P_X); l = [-2*l1/3 - 1/2, 2*l1/3 - 1/2] (l + 1/2 = 2 l1/3; with l1 = 3 pi: 2 pi)
+[PASS] (i) decaying branches correspond: exp(-y^4/2) = exp(-x^6/6) at x = mu y^(2/3), mu^6 = 3
+[PASS] (ii) gauge x^(-l0/3): prod(theta - e_i) x^(nu - l0/3) = x^(-l0/3) prod(theta - g_i) x^nu, g = e + l0/3, sum g = 3  g = [l0/3 - l1 + 1, l0/3 + l1 + 1, 1 - 2*l0/3]
+   (ii) the x^6 and E x^3 terms are unchanged by the gauge, so E_D = E_G (no rescaling)
+[PASS] composite: E_D = E_G = -E and E_S = -kappa E give E_D = kappa^-1 E_S (DDT (4.4))
+imported(end) code/spec1_ddt.py sha256 5b7d1dd628f2bfc8bdf2d5dab98cbf6f30f108d42fa4862c3a3041d02311086c
+imported(end) code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+DDT DONE: FAILURES ['(i) y^2 e^(-y^4/4) y^(1/6) S[Phi] = -(4/9) L_O[f] on f = x^nu (symbolic nu, l0, l1, E), mu^6 = 3, E_S = -kappa E']
+
+===== spec1_s3_control [DRILL]: argv ['code/spec1_s3.py', 'S3', 'Sol3', '2', 'ctrl']  exit 0  186s
+script /tmp/opers-kit-5oznue5k/tree/results/lab/large_n/spec1/code/spec1_s3.py sha256 2aaf8fcffaad799c33ee2044dce4da76963e8349cb0beac500515ca37ed59a19
+python 3.12.8 sympy 1.14.0 mpmath 1.3.0
+imported code/spec1_s3.py sha256 2aaf8fcffaad799c33ee2044dce4da76963e8349cb0beac500515ca37ed59a19
+imported deps_snapshot/ode.py sha256 595e6e1af6ffd25a3bf88bc0dd795c75b800538a99cd4f11a8fb656ff52f8f72
+imported code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+   control t=2 A E=-20: max rel diff vs t1.json (Q3, Q6 incl. frozen) 1.0e-20 (12.5s + 12.4s)
+   control t=2 A E=-5: max rel diff vs t1.json (Q3, Q6 incl. frozen) 6.78e-59 (9.5s + 8.1s)
+   control t=2 A E=2: max rel diff vs t1.json (Q3, Q6 incl. frozen) 4.99e-59 (6.2s + 7.7s)
+   control t=2 A E=50: max rel diff vs t1.json (Q3, Q6 incl. frozen) 3.03e-60 (6.9s + 6.8s)
+   control t=2 A E=500: max rel diff vs t1.json (Q3, Q6 incl. frozen) 1.42e-59 (9.7s + 7.1s)
+   control t=2 B E=-20: max rel diff vs t1.json (Q3, Q6 incl. frozen) 6.72e-59 (6.3s + 11.2s)
+   control t=2 B E=-5: max rel diff vs t1.json (Q3, Q6 incl. frozen) 5.02e-57 (12.3s + 10.2s)
+   control t=2 B E=2: max rel diff vs t1.json (Q3, Q6 incl. frozen) 1.16e-58 (6.3s + 8.2s)
+   control t=2 B E=50: max rel diff vs t1.json (Q3, Q6 incl. frozen) 1.21e-58 (12.7s + 6.8s)
+   control t=2 B E=500: max rel diff vs t1.json (Q3, Q6 incl. frozen) 2.82e-59 (11.1s + 13.3s)
+[FAIL] S3 positive control: Sol 3 a = 2 reproduces the archived t1.json Q3/Q6 (>= 45 digits)  worst 1.0e-20
+total wall time 185s
+imported(end) code/spec1_s3.py sha256 2aaf8fcffaad799c33ee2044dce4da76963e8349cb0beac500515ca37ed59a19
+imported(end) deps_snapshot/ode.py sha256 595e6e1af6ffd25a3bf88bc0dd795c75b800538a99cd4f11a8fb656ff52f8f72
+imported(end) code/spec1_lib.py sha256 ca418f766f5c69533a3c98862f66081dd63e0de433ec273683c00c706ecd5bba
+S3 DONE: FAILURES ['S3 positive control: Sol 3 a = 2 reproduces the archived t1.json Q3/Q6 (>= 45 digits)']
+
+===== spec1_s3_archive [DRILL]: argv ['verify_s3.py']  exit 1  1s
+[PASS] Sol3_a3.json: sha256 = ORIGIN_SHA256  ea824f03ead20a0a
+== Sol3 a=3 t=11/5: ODE order 4, Gamma order 7
+   A E=0: relation dev 2.4e-66; Q^O vs Meijer 5.3e-67; Q^Gamma vs Meijer 2.9e-66
+[PASS] Sol3 a=3 A E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol3 a=3 A E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   A max_j dev by E: -20:1.5e-65 -5:6.5e-66 0:2.4e-66 1:3.8e-66 7:6.1e-67 37:1.0e-8 100:1.9e-65 500:1.1e-65
+   B E=0: relation dev 2.8e-66; Q^O vs Meijer 1.2e-67; Q^Gamma vs Meijer 2.8e-66
+[PASS] Sol3 a=3 B E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol3 a=3 B E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   B max_j dev by E: -20:1.5e-65 -5:1.4e-65 0:2.8e-66 1:2.0e-66 7:2.4e-66 37:4.7e-66 100:3.2e-65 500:8.9e-66
+   recomputed deviations = archived 'dev': 63/64
+[FAIL] Sol3 a=3: recomputed deviations equal the archived ones
+[FAIL] Sol3 a=3: relation holds, max deviation < 1e-30 (registered criterion)  worst 1.0e-8
+[FAIL] Sol3 a=3: max deviation < 2e-56 (paper: 'about 1e-56 or better')  worst 1.0e-8
+[FAIL] Sol3 a=3: max deviation at every E < 1e-64 (paper: better than 1e-64 except at E = 0 for Solution 1)  worst 1.0e-8
+[PASS] Sol3 a=3: tamper omega * 8/7 fails at every E (min dev > 1e-3)  0.14 (= 1/7 by construction)
+[PASS] Sol3 a=3: tamper m(theta_j) interchanged fails at every E (min over E of max_j dev > 1e-3)  3.8
+[PASS] Sol1_a3.json: sha256 = ORIGIN_SHA256  d5a5df1eb22dd4c8
+== Sol1 a=3 t=7: ODE order 2, Gamma order 5
+   A E=0: relation dev 1.5e-57; Q^O vs Meijer 1.5e-57; Q^Gamma vs Meijer 8.4e-67
+[PASS] Sol1 a=3 A E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol1 a=3 A E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   A max_j dev by E: -20:9.6e-67 -5:1.1e-65 0:1.5e-57 1:2.0e-65 7:4.1e-67 37:1.4e-66 100:3.7e-66 500:1.0e-65
+   B E=0: relation dev 1.1e-56; Q^O vs Meijer 1.1e-56; Q^Gamma vs Meijer 3.3e-67
+[PASS] Sol1 a=3 B E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol1 a=3 B E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   B max_j dev by E: -20:1.7e-66 -5:1.2e-66 0:1.1e-56 1:4.5e-65 7:3.7e-67 37:4.8e-67 100:2.7e-66 500:1.1e-65
+   recomputed deviations = archived 'dev': 32/32
+[PASS] Sol1 a=3: recomputed deviations equal the archived ones
+[PASS] Sol1 a=3: relation holds, max deviation < 1e-30 (registered criterion)  worst 1.1e-56
+[PASS] Sol1 a=3: max deviation < 2e-56 (paper: 'about 1e-56 or better')  worst 1.1e-56
+[PASS] Sol1 a=3: max deviation at E != 0 < 1e-64 (paper: better than 1e-64 except at E = 0 for Solution 1)  worst 4.5e-65
+[PASS] Sol1 a=3: tamper omega * 8/7 fails at every E (min dev > 1e-3)  0.14 (= 1/7 by construction)
+[PASS] Sol1 a=3: tamper m(theta_j) interchanged fails at every E (min over E of max_j dev > 1e-3)  0.22
+[PASS] Sol3_a1.json: sha256 = ORIGIN_SHA256  cbecb09c0f18aa8e
+== Sol3 a=1 t=5/3: ODE order 4, Gamma order 5
+   A E=0: relation dev 7.7e-67; Q^O vs Meijer 1.7e-67; Q^Gamma vs Meijer 6.0e-67
+[PASS] Sol3 a=1 A E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol3 a=1 A E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   A max_j dev by E: -20:2.7e-66 -5:1.3e-66 0:7.7e-67 1:9.1e-67 7:1.2e-66 37:9.9e-68 100:3.2e-67 500:1.5e-67
+   B E=0: relation dev 5.7e-67; Q^O vs Meijer 8.8e-67; Q^Gamma vs Meijer 3.0e-67
+[PASS] Sol3 a=1 B E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol3 a=1 B E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   B max_j dev by E: -20:3.5e-66 -5:1.0e-66 0:5.7e-67 1:1.2e-66 7:2.5e-67 37:3.6e-68 100:4.1e-67 500:1.5e-67
+   recomputed deviations = archived 'dev': 64/64
+[PASS] Sol3 a=1: recomputed deviations equal the archived ones
+[PASS] Sol3 a=1: relation holds, max deviation < 1e-30 (registered criterion)  worst 3.5e-66
+[PASS] Sol3 a=1: max deviation < 2e-56 (paper: 'about 1e-56 or better')  worst 3.5e-66
+[PASS] Sol3 a=1: max deviation at every E < 1e-64 (paper: better than 1e-64 except at E = 0 for Solution 1)  worst 3.5e-66
+[PASS] Sol3 a=1: tamper omega * 8/7 fails at every E (min dev > 1e-3)  0.14 (= 1/7 by construction)
+[PASS] Sol3 a=1: tamper m(theta_j) interchanged fails at every E (min over E of max_j dev > 1e-3)  3.2
+[PASS] Sol1_a1.json: sha256 = ORIGIN_SHA256  1c462a590d31020b
+== Sol1 a=1 t=3: ODE order 2, Gamma order 3
+   A E=0: relation dev 2.3e-62; Q^O vs Meijer 2.3e-62; Q^Gamma vs Meijer 1.5e-67
+[PASS] Sol1 a=1 A E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol1 a=1 A E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   A max_j dev by E: -20:3.7e-67 -5:4.7e-67 0:2.3e-62 1:1.2e-67 7:9.8e-67 37:5.5e-67 100:4.6e-67 500:7.9e-67
+   B E=0: relation dev 4.4e-61; Q^O vs Meijer 4.4e-61; Q^Gamma vs Meijer 1.5e-67
+[PASS] Sol1 a=1 B E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol1 a=1 B E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   B max_j dev by E: -20:4.7e-67 -5:4.3e-67 0:4.4e-61 1:1.1e-66 7:1.7e-67 37:1.4e-67 100:4.7e-67 500:1.5e-66
+   recomputed deviations = archived 'dev': 32/32
+[PASS] Sol1 a=1: recomputed deviations equal the archived ones
+[PASS] Sol1 a=1: relation holds, max deviation < 1e-30 (registered criterion)  worst 4.4e-61
+[PASS] Sol1 a=1: max deviation < 2e-56 (paper: 'about 1e-56 or better')  worst 4.4e-61
+[PASS] Sol1 a=1: max deviation at E != 0 < 1e-64 (paper: better than 1e-64 except at E = 0 for Solution 1)  worst 1.5e-66
+[PASS] Sol1 a=1: tamper omega * 8/7 fails at every E (min dev > 1e-3)  0.14 (= 1/7 by construction)
+[PASS] Sol1 a=1: tamper m(theta_j) interchanged fails at every E (min over E of max_j dev > 1e-3)  0.55
+[PASS] Sol1_a2.json: sha256 = ORIGIN_SHA256  ecda8851f1b18e05
+== Sol1 a=2 t=5: ODE order 2, Gamma order 4
+   A E=0: relation dev 1.6e-62; Q^O vs Meijer 1.6e-62; Q^Gamma vs Meijer 7.2e-68
+[PASS] Sol1 a=2 A E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol1 a=2 A E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   A max_j dev by E: -20:1.1e-66 -5:5.6e-67 0:1.6e-62 1:8.8e-67 7:8.4e-67 37:2.1e-67 100:1.7e-66 500:8.3e-68
+   B E=0: relation dev 4.6e-61; Q^O vs Meijer 4.6e-61; Q^Gamma vs Meijer 1.1e-67
+[PASS] Sol1 a=2 B E=0: both Q's = exact Meijer-G values to >= 40 digits
+[PASS] Sol1 a=2 B E=0: relation deviation is of the size of the Meijer difference (ratio in [1/10, 10])  (only tested where dev > 1e-64)
+   B max_j dev by E: -20:6.6e-67 -5:3.7e-67 0:4.6e-61 1:3.9e-67 7:1.5e-66 37:9.0e-68 100:1.1e-66 500:3.7e-67
+   recomputed deviations = archived 'dev': 32/32
+[PASS] Sol1 a=2: recomputed deviations equal the archived ones
+[PASS] Sol1 a=2: relation holds, max deviation < 1e-30 (registered criterion)  worst 4.6e-61
+[PASS] Sol1 a=2: max deviation < 2e-56 (paper: 'about 1e-56 or better')  worst 4.6e-61
+[PASS] Sol1 a=2: max deviation at E != 0 < 1e-64 (paper: better than 1e-64 except at E = 0 for Solution 1)  worst 1.7e-66
+[PASS] Sol1 a=2: tamper omega * 8/7 fails at every E (min dev > 1e-3)  0.14 (= 1/7 by construction)
+[PASS] Sol1 a=2: tamper m(theta_j) interchanged fails at every E (min over E of max_j dev > 1e-3)  3.3
+[PASS] Solution 1, E = 0 (3 points x 2 momenta): deviations between about 1e-61 and 1e-56 (paper; tested as [1e-63, 2e-56])  range 1.6e-62 .. 1.1e-56
+VERIFY S3 ARCHIVE: FAILURES ['Sol3 a=3: recomputed deviations equal the archived ones', 'Sol3 a=3: relation holds, max deviation < 1e-30 (registered criterion)', "Sol3 a=3: max deviation < 2e-56 (paper: 'about 1e-56 or better')", 'Sol3 a=3: max deviation at every E < 1e-64 (paper: better than 1e-64 except at E = 0 for Solution 1)']
+
+===== spec1_s3_spot [DRILL]: argv ['spot_s3.py']  exit 1  325s
+[FAIL] Sol3 a=3 t=11/5 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)
+[FAIL] Sol3 a=3 t=11/5 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol3 a=3 t=11/5 A E=7: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.45, 2.4
+[FAIL] Sol3 a=3 t=11/5 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)
+[FAIL] Sol3 a=3 t=11/5 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol3 a=3 t=11/5 B E=500: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.81, 2.1
+[FAIL] Sol1 a=3 t=7 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)
+[FAIL] Sol1 a=3 t=7 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol1 a=3 t=7 A E=7: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.51, 2.8
+[FAIL] Sol1 a=3 t=7 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)
+[FAIL] Sol1 a=3 t=7 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol1 a=3 t=7 B E=500: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.91, 0.93
+[FAIL] Sol3 a=1 t=5/3 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)
+[FAIL] Sol3 a=1 t=5/3 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol3 a=1 t=5/3 A E=7: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.41, 2.1
+[FAIL] Sol3 a=1 t=5/3 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)
+[FAIL] Sol3 a=1 t=5/3 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol3 a=1 t=5/3 B E=500: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.7, 2.5
+[FAIL] Sol1 a=1 t=3 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)
+[FAIL] Sol1 a=1 t=3 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol1 a=1 t=3 A E=7: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.47, 2.8
+[FAIL] Sol1 a=1 t=3 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)
+[FAIL] Sol1 a=1 t=3 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol1 a=1 t=3 B E=500: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.86, 0.92
+[FAIL] Sol1 a=2 t=5 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)
+[FAIL] Sol1 a=2 t=5 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol1 a=2 t=5 A E=7: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.49, 1.2
+[FAIL] Sol1 a=2 t=5 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)
+[FAIL] Sol1 a=2 t=5 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol1 a=2 t=5 B E=500: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.89, 1.2
+SPOT S3: FAILURES ["Sol3 a=3 t=11/5 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)", 'Sol3 a=3 t=11/5 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60', "Sol3 a=3 t=11/5 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)", 'Sol3 a=3 t=11/5 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60', "Sol1 a=3 t=7 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)", 'Sol1 a=3 t=7 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60', "Sol1 a=3 t=7 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)", 'Sol1 a=3 t=7 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60', "Sol3 a=1 t=5/3 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)", 'Sol3 a=1 t=5/3 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60', "Sol3 a=1 t=5/3 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)", 'Sol3 a=1 t=5/3 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60', "Sol1 a=1 t=3 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)", 'Sol1 a=1 t=3 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60', "Sol1 a=1 t=3 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)", 'Sol1 a=1 t=3 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60', "Sol1 a=2 t=5 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)", 'Sol1 a=2 t=5 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60', "Sol1 a=2 t=5 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)", 'Sol1 a=2 t=5 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60']

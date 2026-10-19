@@ -1,0 +1,41 @@
+derive G': 2 solutions of the ansatz (G' = i g'): {a1: -I, a2: I, a3: -2*I, a4: 0}; {a1: I, a2: -I, a3: 2*I, a4: 0}
+the fixed real g' of currents() is solution index [0] (the other is g' -> -g')
+  g' = {((0, 1, 1), (1, 0, 0)): -1/s, ((0, 1, 0), (1, 0, 1)): 1/s, ((1, 1, 1),): -2/s}
+  J  = (G+ G-)_2 / 2 in sqrt2-normalisation = {((1, 0, 0), (1, 0, 1)): 1/s, ((0, 1, 1),): -2/s}
+  V1 TT/4 = c/2: OK
+  V1 TT/3 = 0: OK
+  V1 TT/2 = 2T: OK
+  V1 TT/1 = dT: OK
+  V1 TT/5 = 0: OK
+  V1 TJ/3 = 0 (primary): OK
+  V1 TJ/4 = 0: OK
+  V1 TJ/2 = 1 J: OK
+  V1 TJ/1 = dJ: OK
+  V1 TG+/3 = 0 (primary): OK
+  V1 TG+/4 = 0: OK
+  V1 TG+/2 = 3/2 G+: OK
+  V1 TG+/1 = dG+: OK
+  V1 TG-/3 = 0 (primary): OK
+  V1 TG-/4 = 0: OK
+  V1 TG-/2 = 3/2 G-: OK
+  V1 TG-/1 = dG-: OK
+  J J double pole = (s - 4)/s  (c/3 = (s - 4)/s)
+  V1 JJ/2 = c/3: OK
+  V1 JJ/1 = 0: OK
+  V1 JJ/3 = 0: OK
+  J G+ simple pole = 1 G+ (sign convention of J-charge)
+  V1 JG+/1 = +-G+: OK
+  V1 JG+/2 = 0: OK
+  V1 JG-/1 = -+G-: OK
+  V1 JG-/2 = 0: OK
+  V1 G+G+/1 = 0: OK
+  V1 G-G-/1 = 0: OK
+  V1 G+G+/2 = 0: OK
+  V1 G-G-/2 = 0: OK
+  V1 G+G+/3 = 0: OK
+  V1 G-G-/3 = 0: OK
+  V1 G+G-/3 = 2c/3 (x2): OK
+  V1 G+G-/2 = 2J (x2): OK
+  V1 G+G-/1 = 2T + dJ (x2): OK
+V1 result: c = 3 - 12/s; all N = 2 OPEs (complex basis T, G+, G-, J; KL (9) form): ALL OK  (0.2s)
+done v1 in 0.2s

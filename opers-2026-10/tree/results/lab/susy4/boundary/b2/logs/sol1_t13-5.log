@@ -1,0 +1,19 @@
+t = 13/5: N = -19/6, sc = -65/6, p^2 = s = 8/9, rho = -5*sqrt(2)/12, kappa^2 = 7/9, c_{X,phi} = -13/6
+certified I_3 (mixed basis): {((), ((1, 1), (1, 1))): Fraction(1, 1), ((), ((2, 2),)): Fraction(-2, 1), ((2, 2), ()): Fraction(17, 9), ((1, 1), ((1, 1),)): Fraction(6, 1), ((1, 1, 1, 1), ()): Fraction(-4, 1)}
+(11)(11) - 2(22) - 4(T_Y T_Y) is a total derivative in the Y-pair algebra: True
+I_3 in (X, phi) letters: {((0, 1, 1), (0, 1, 1), (0, 1, 1), (0, 1, 1)): '1', ((0, 1, 1), (0, 3, 1)): '2', ((0, 1, 1), (0, 1, 1), (0, 2, 1)): '-5*sqrt(2)/3', ((0, 4, 1),): '-5*sqrt(2)/9', ((0, 2, 1), (0, 2, 1)): '25/18', ((0, 1, 0), (0, 1, 0), (0, 1, 1), (0, 1, 1)): '6', ((0, 1, 0), (0, 1, 0), (0, 2, 1)): '-5*sqrt(2)', ((0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0)): '-4', ((0, 2, 0), (0, 2, 0)): '17/9'}
+I_3 in (u, v) letters (rational): {((0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0)): Fraction(81, 64), ((0, 1, 0), (0, 3, 0)): Fraction(9, 4), ((0, 1, 0), (0, 1, 0), (0, 2, 0)): Fraction(45, 16), ((0, 4, 0),): Fraction(5, 6), ((0, 2, 0), (0, 2, 0)): Fraction(25, 16), ((0, 1, 0), (0, 1, 0), (0, 1, 1), (0, 1, 1)): Fraction(243, 112), ((0, 1, 1), (0, 1, 1), (0, 2, 0)): Fraction(135, 56), ((0, 1, 1), (0, 1, 1), (0, 1, 1), (0, 1, 1)): Fraction(-81, 196), ((0, 2, 1), (0, 2, 1)): Fraction(17, 28)}
+(u,v) commutant of Solution 1's vectors at w2 = 4: dim 1; v-parity of generators [0]
+(u,v) commutant of Solution 1's vectors at w2 = 6: dim 1; v-parity of generators [1]
+(u,v) commutant of Solution 1's vectors at w2 = 8: dim 1; v-parity of generators [0]
+(u,v) commutant of Solution 1's vectors at w2 = 10: dim 1; v-parity of generators [1]
+(u,v) commutant of Solution 1's vectors at w2 = 12: dim 1; v-parity of generators [0]
+certified I_3 (u,v) in the w2 = 8 commutant mod d: True
+repo eigenvalue of certified I_3 (P2, Q2): -4*P2**2 + 6*P2*Q2 + 43*P2/12 + Q2**2 - 11*Q2/36 - 6691/25920
+my (X, phi) eigenvalue (P_X, P_phi): -4*P_X**4 + 6*P_X**2*P_phi**2 + 3*P_X**2/2 + P_phi**4 - P_phi**2 - 17/540
+MOMENTUM DICTIONARY: P2 = +P_X^2, Q2 = pi^2 - rho^2 with pi = P_phi(evaluator), pi = P_phi - rho  (exact match)
+dictionary: ('P2 = +P_X^2', 'Q2 = pi^2 - rho^2 with pi = P_phi(evaluator)')
+ad I_3 kernel at weight 6: dim 1
+certified I_5: (dX)^6 coefficient in the ALT normalisation (Q2^3 coefficient = 1): 6; kit normalisation defined: True
+certified I_5 eigenvalue (repo recipe) == kit table at t = 13/5 (article P = i P_ours): True
+written

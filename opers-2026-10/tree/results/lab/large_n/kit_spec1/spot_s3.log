@@ -1,0 +1,31 @@
+[PASS] Sol3 a=3 t=11/5 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)
+[PASS] Sol3 a=3 t=11/5 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol3 a=3 t=11/5 A E=7: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.14, 3.8
+[PASS] Sol3 a=3 t=11/5 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)
+[PASS] Sol3 a=3 t=11/5 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol3 a=3 t=11/5 B E=500: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.14, 7.7
+[PASS] Sol1 a=3 t=7 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)
+[PASS] Sol1 a=3 t=7 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol1 a=3 t=7 A E=7: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.14, 5.3
+[PASS] Sol1 a=3 t=7 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)
+[PASS] Sol1 a=3 t=7 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol1 a=3 t=7 B E=500: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.14, 0.22
+[PASS] Sol3 a=1 t=5/3 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)
+[PASS] Sol3 a=1 t=5/3 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol3 a=1 t=5/3 A E=7: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.14, 3.2
+[PASS] Sol3 a=1 t=5/3 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)
+[PASS] Sol3 a=1 t=5/3 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol3 a=1 t=5/3 B E=500: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.14, 6.5
+[PASS] Sol1 a=1 t=3 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)
+[PASS] Sol1 a=1 t=3 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol1 a=1 t=3 A E=7: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.14, 4.9
+[PASS] Sol1 a=1 t=3 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)
+[PASS] Sol1 a=1 t=3 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol1 a=1 t=3 B E=500: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.14, 0.55
+[PASS] Sol1 a=2 t=5 A E=7: recomputed Q's = archived out/s3 values (>= 60 digits)
+[PASS] Sol1 a=2 t=5 A E=7: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol1 a=2 t=5 A E=7: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.14, 4.2
+[PASS] Sol1 a=2 t=5 B E=500: recomputed Q's = archived out/s3 values (>= 60 digits)
+[PASS] Sol1 a=2 t=5 B E=500: relation |omega Q^O/(m Q^Gamma) - 1| < 1e-60
+[PASS] Sol1 a=2 t=5 B E=500: tampers omega*8/7 and m interchanged fail (> 1e-3)  0.14, 3.3
+SPOT S3: ALL PASS

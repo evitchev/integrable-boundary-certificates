@@ -1,0 +1,14 @@
+PASS  (i) NS: <T_l> = P**2/2 - 1/16 = Delta_NS(p) - c/24 with engine c(l) = 3/2 - 12*l**2, P = p - l
+PASS  (i) R: <T_l> = P**2/2 = Delta_R(p) - c/24 with engine c(l) = 3/2 - 12*l**2, P = p - l
+PASS  (i) engine central charge c(l) = 3/2 - 12 l^2 (= Tanabe (4.16) at alpha_0 = -2l)
+PASS  (ii) R: G_0 = (P) psi_0 on the ground space, G_0^2 = P**2/2 = L_0 - c/24 = P**2/2
+PASS  [neg. control fails as required] (iii) NS check with the R kernel
+PASS  [neg. control fails as required] (iii) R check with the NS kernel
+PASS  [neg. control fails as required] (iii) NS check with the fermion coefficient of T_l perturbed by 1/100
+PASS  [neg. control fails as required] (iii) R check with the fermion coefficient of T_l perturbed by 1/100
+PASS  [neg. control fails as required] (iii) NS check with K_NS'(0) perturbed by 1/1000
+PASS  [neg. control fails as required] (iii) R G_0^2 check with the zero mode psi_0 dropped
+PASS  (iv) 66 bosonic monomials (w2 <= 16), NS and R, at 7 momenta: even-in-P part identical to cyl_vev.py exactly
+PASS  (v) vev(d b) = 0 for all 111 monomials b (w2(b) <= 12), NS and R
+
+SUPER CYL VEV VALIDATED

@@ -11,6 +11,10 @@ Exact-arithmetic engines and machine certificates for the results of
 - *Opers for the cylindrical integrals of motion* (E. Vitchev, 2026);
   its verification kit is `opers-2026-10/` (see below).
 
+The directory `super-kdv-2026-10/` (new in v1.2.6) holds an independent computation of the
+cylinder vacuum eigenvalues of the N = 1 super-KdV integrals of motion I_1 ... I_9 in the
+Neveu-Schwarz and Ramond sectors (see below).
+
 arXiv identifiers will be added upon announcement.
 
 Pure Python; the only dependency is `sympy` (see `requirements.txt`).
@@ -34,11 +38,26 @@ paper, the certified input tables they compare against (with hashes),
 the registered predictions, and the Lean proofs (five files since v1.2.4) with a Lake project.
 
     cd opers-2026-10
-    python3 run_all.py --quick     # 55 checks, about 35 min; exits non-zero on any failure
+    python3 run_all.py --quick     # 212 quick checks, about 2 h; exits non-zero on any failure
+    python3 run_all.py --full      # all 235 checks, about 12 h on one core
     python3 run_all.py --drill     # every check re-run with a tamper that must fail
 
 See `opers-2026-10/README.md` for what each check establishes and what
 the kit does not establish. Requires `sympy` and `mpmath`.
+
+## N = 1 super-KdV eigenvalues (`super-kdv-2026-10/`)
+
+Code and results for the vacuum eigenvalues of the local integrals of
+motion I_1, I_3, I_5, I_7, I_9 of quantum N = 1 super-KdV on the
+cylinder, in the NS and Ramond sectors, exact and symbolic in the
+momentum and the background charge.
+
+    cd super-kdv-2026-10
+    python3 run_checks.py           # about 50 min; must end with ALL PASS
+    python3 run_checks.py --drill   # both checks re-run with a tamper that must FAIL
+
+See `super-kdv-2026-10/README.md` for the conventions, the method and
+the results files. Requires `sympy` and `mpmath`.
 
 ## Independent verification engine
 

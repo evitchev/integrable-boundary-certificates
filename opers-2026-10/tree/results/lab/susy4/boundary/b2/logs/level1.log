@@ -1,0 +1,48 @@
+J direction a = (0, -2/s, -1): a.a = (s - 4)/s (= c/3 = (s - 4)/s);  v = b.Y, b = (0, -1, -2): v.v = 4 - s;  u.u = s
+
+momenta in Y = (X_0, X_1, X_3), metric (s, -s, 1); (u, v, H~) coordinates; J-charge a.m; norm:
+  S1 = (m_1.psi)e^{m_1.X}       : Y-momentum (1/2, 1/2, 1); (u, v, H~) = (1/2, -1/2, 0); J-charge 0; m.m = 1
+  S2 = (m_2.psi)e^{m_2.X}       : Y-momentum (1/2, -1/2, -1); (u, v, H~) = (1/2, 1/2, 0); J-charge 0; m.m = 1
+  S3 = (-m_1.psi)e^{-m_1.X}     : Y-momentum (-1/2, -1/2, 1); (u, v, H~) = (-1/2, (s + 4)/(2*(s - 4)), -2*s/(s - 4)); J-charge -2; m.m = 1
+  S4 = (-m_2.psi)e^{-m_2.X}     : Y-momentum (-1/2, 1/2, -1); (u, v, H~) = (-1/2, (-s - 4)/(2*(s - 4)), 2*s/(s - 4)); J-charge 2; m.m = 1
+  W0 (exponential e^{-X_0})     : Y-momentum (-1, 0, 0); (u, v, H~) = (-1, 0, 0); J-charge 0; m.m = s
+
+Gram matrix of Tower Z's three (J-neutral) vectors (S1, S2, W0):
+⎡       s      -s ⎤
+⎢  1    ─ - 1  ───⎥
+⎢       2       2 ⎥
+⎢                 ⎥
+⎢s             -s ⎥
+⎢─ - 1    1    ───⎥
+⎢2              2 ⎥
+⎢                 ⎥
+⎢ -s     -s       ⎥
+⎢ ───    ───    s ⎥
+⎣  2      2       ⎦
+
+Gram matrix of Solution 1's (V+, V-, e^{p phi}) (metric (1,1), opers paper Sec. 4):
+⎡       s      -s ⎤
+⎢  1    ─ - 1  ───⎥
+⎢       2       2 ⎥
+⎢                 ⎥
+⎢s             -s ⎥
+⎢─ - 1    1    ───⎥
+⎢2              2 ⎥
+⎢                 ⎥
+⎢ -s     -s       ⎥
+⎢ ───    ───    s ⎥
+⎣  2      2       ⎦
+EQUAL: True
+Gram with the dual Virasoro screening e^{-2phi/p} instead: [1, 1, -2, 4/s]
+
+isometry: u = -p phi, v = (kappa/xi) X with xi = -1/2: (kappa/xi)^2 = 4 - s = v.v = 4 - s: True
+  S1 = (m_1.psi)e^{m_1.X}        -> (m_X, m_phi) = (sqrt(4 - s)/2, -sqrt(s)/2)
+  S2 = (m_2.psi)e^{m_2.X}        -> (m_X, m_phi) = (-sqrt(4 - s)/2, -sqrt(s)/2)
+  W0 (exponential e^{-X_0})      -> (m_X, m_phi) = (0, sqrt(s))
+Solution 1: {'V+': (sqrt(4 - s)/2, -sqrt(s)/2), 'V-': (-sqrt(4 - s)/2, -sqrt(s)/2), 'e^{p phi}': (0, sqrt(s)), 'e^{-2phi/p}': (0, -2/sqrt(s))}
+
+background charge along phi: coset inherits rho' = 1/p (c_uv = 1 + (1 - 12/p^2) = 2 - 12/p^2 = 2 - 12/s); opers paper rho = p/2 - 1/p (c = 1 + N = 2 - 3*(s - 2)**2/s); difference (rho - rho') = (s - 4)/(2*sqrt(s)) = p/2 - 2/p
+  weight of V+          : under rho (opers) s/4; under rho' = 1/p (coset) 1
+  weight of V-          : under rho (opers) s/4; under rho' = 1/p (coset) 1
+  weight of e^{p phi}   : under rho (opers) 1; under rho' = 1/p (coset) s/2 - 1
+  weight of e^{-2phi/p} : under rho (opers) 1; under rho' = 1/p (coset) 4/s

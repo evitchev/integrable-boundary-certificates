@@ -1,0 +1,44 @@
+classical tower Z: vertices S1: b=(Fraction(1, 2), Fraction(1, 2)), W={((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(1, 2)}, S2: b=(Fraction(1, 2), Fraction(-1, 2)), W={((1, 0, 0),): Fraction(1, 2), ((1, 0, 1),): Fraction(-1, 2)}, W0_cl: b=(Fraction(-1, 1), Fraction(0, 1)), W={((1, 0, 0), (1, 0, 1)): Fraction(-1, 1), ((0, 1, 1),): Fraction(1, 1)}
+  classical commutant w2 = 2: dim 1
+  classical commutant w2 = 3: dim 2
+  classical commutant w2 = 4: dim 1
+  classical commutant w2 = 5: dim 0
+  classical commutant w2 = 6: dim 1
+  classical commutant w2 = 7: dim 0
+  classical commutant w2 = 8: dim 1
+  J^ in classical commutant (mod d): True
+  G^ in classical commutant (mod d): True
+  gp^ in classical commutant (mod d): True
+  T^ in classical commutant (mod d): True
+classical weight-4 density (normalised (dX_0)^4 = 1): 17 monomials
+quantum kernels at s = 1/j, j = 2..31 (w2 = 8) ...
+quantum (s -> 0, reconstructed from 25 points, verified on 5) == classical commutant density: True
+superfield structure [Q_i] with (G -> Q_1, gp -> Q_2): 4 solution(s): [{b1: -1/2, b2: 1/2, d: -2*I, e: 0, g1: I/2, g2: I/2, k1: 1, k2: -I}, {b1: -1/2, b2: 1/2, d: 2*I, e: 0, g1: -I/2, g2: -I/2, k1: 1, k2: I}, {b1: 1/2, b2: -1/2, d: -2*I, e: 0, g1: -I/2, g2: -I/2, k1: -1, k2: I}, {b1: 1/2, b2: -1/2, d: 2*I, e: 0, g1: I/2, g2: I/2, k1: -1, k2: -I}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -1/2, b2: 1/2, d: -2*I, e: 0, g1: I/2, g2: I/2, k1: 1, k2: -I}: [{a: 4, alpha: -I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -1/2, b2: 1/2, d: 2*I, e: 0, g1: -I/2, g2: -I/2, k1: 1, k2: I}: [{a: 4, alpha: I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: 1/2, b2: -1/2, d: -2*I, e: 0, g1: -I/2, g2: -I/2, k1: -1, k2: I}: [{a: 4, alpha: -I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: 1/2, b2: -1/2, d: 2*I, e: 0, g1: I/2, g2: I/2, k1: -1, k2: -I}: [{a: 4, alpha: I/4, tau: 1/8}]
+superfield structure [Q_i] with (gp -> Q_1, G -> Q_2): 4 solution(s): [{b1: -I/2, b2: -I/2, d: -2*I, e: 0, g1: -1/2, g2: 1/2, k1: I, k2: 1}, {b1: -I/2, b2: -I/2, d: 2*I, e: 0, g1: 1/2, g2: -1/2, k1: I, k2: -1}, {b1: I/2, b2: I/2, d: -2*I, e: 0, g1: 1/2, g2: -1/2, k1: -I, k2: -1}, {b1: I/2, b2: I/2, d: 2*I, e: 0, g1: -1/2, g2: 1/2, k1: -I, k2: 1}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -I/2, b2: -I/2, d: -2*I, e: 0, g1: -1/2, g2: 1/2, k1: I, k2: 1}: [{a: 4, alpha: -I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -I/2, b2: -I/2, d: 2*I, e: 0, g1: 1/2, g2: -1/2, k1: I, k2: -1}: [{a: 4, alpha: I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: I/2, b2: I/2, d: -2*I, e: 0, g1: 1/2, g2: -1/2, k1: -I, k2: -1}: [{a: 4, alpha: -I/4, tau: 1/8}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: I/2, b2: I/2, d: 2*I, e: 0, g1: -1/2, g2: 1/2, k1: -I, k2: 1}: [{a: 4, alpha: I/4, tau: 1/8}]
+superfield structure [D_i] with (G -> D_1, gp -> D_2): 4 solution(s): [{b1: -I/2, b2: I/2, d: -2*I, e: 0, g1: 1/2, g2: 1/2, k1: -I, k2: 1}, {b1: -I/2, b2: I/2, d: 2*I, e: 0, g1: -1/2, g2: -1/2, k1: -I, k2: -1}, {b1: I/2, b2: -I/2, d: -2*I, e: 0, g1: -1/2, g2: -1/2, k1: I, k2: -1}, {b1: I/2, b2: -I/2, d: 2*I, e: 0, g1: 1/2, g2: 1/2, k1: I, k2: 1}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -I/2, b2: I/2, d: -2*I, e: 0, g1: 1/2, g2: 1/2, k1: -I, k2: 1}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -I/2, b2: I/2, d: 2*I, e: 0, g1: -1/2, g2: -1/2, k1: -I, k2: -1}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: I/2, b2: -I/2, d: -2*I, e: 0, g1: -1/2, g2: -1/2, k1: I, k2: -1}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: I/2, b2: -I/2, d: 2*I, e: 0, g1: 1/2, g2: 1/2, k1: I, k2: 1}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+superfield structure [D_i] with (gp -> D_1, G -> D_2): 4 solution(s): [{b1: -1/2, b2: -1/2, d: -2*I, e: 0, g1: -I/2, g2: I/2, k1: -1, k2: -I}, {b1: -1/2, b2: -1/2, d: 2*I, e: 0, g1: I/2, g2: -I/2, k1: -1, k2: I}, {b1: 1/2, b2: 1/2, d: -2*I, e: 0, g1: I/2, g2: -I/2, k1: 1, k2: I}, {b1: 1/2, b2: 1/2, d: 2*I, e: 0, g1: -I/2, g2: I/2, k1: 1, k2: -I}]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -1/2, b2: -1/2, d: -2*I, e: 0, g1: -I/2, g2: I/2, k1: -1, k2: -I}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: -1/2, b2: -1/2, d: 2*I, e: 0, g1: I/2, g2: -I/2, k1: -1, k2: I}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: 1/2, b2: 1/2, d: -2*I, e: 0, g1: I/2, g2: -I/2, k1: 1, k2: I}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+   flow fit (Mao-Liu (1), phi = alpha Phi_s) with {b1: 1/2, b2: 1/2, d: 2*I, e: 0, g1: -I/2, g2: I/2, k1: 1, k2: -I}: NO (a, tau, alpha) solves all component equations
+      167 equations; sample: [1 - 8*tau, 8*tau - 1, 16*tau - 2]
+done in 6.9s

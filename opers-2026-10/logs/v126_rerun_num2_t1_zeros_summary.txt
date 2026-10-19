@@ -1,0 +1,3 @@
+kit integrity: OK (SHA256SUMS, INPUTS.SHA256)
+PASS  num2_t1_zeros              2472s  [numerical: zeros of the projected Q vs the outward-Wronskian determinant; paper: Numerical spectral check (spectral Theorem 1 test)]
+ALL PASS  (1 checks, 2473s)

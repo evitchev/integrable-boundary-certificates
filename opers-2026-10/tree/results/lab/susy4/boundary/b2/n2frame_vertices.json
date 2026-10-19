@@ -1,0 +1,278 @@
+{
+ "2/3": {
+  "T": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "G": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "gp": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "J": {
+   "S1": true,
+   "S2": true,
+   "S3": false,
+   "S4": false,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "bottom": {
+   "W0b[G]": {
+    "G": false,
+    "gp": true,
+    "J": false
+   },
+   "W0b[gp]": {
+    "G": false,
+    "gp": true,
+    "J": false
+   }
+  }
+ },
+ "10/9": {
+  "T": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "G": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "gp": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "J": {
+   "S1": true,
+   "S2": true,
+   "S3": false,
+   "S4": false,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "bottom": {
+   "W0b[G]": {
+    "G": false,
+    "gp": true,
+    "J": false
+   },
+   "W0b[gp]": {
+    "G": false,
+    "gp": true,
+    "J": false
+   }
+  }
+ },
+ "8/7": {
+  "T": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "G": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "gp": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "J": {
+   "S1": true,
+   "S2": true,
+   "S3": false,
+   "S4": false,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "bottom": {
+   "W0b[G]": {
+    "G": false,
+    "gp": true,
+    "J": false
+   },
+   "W0b[gp]": {
+    "G": false,
+    "gp": true,
+    "J": false
+   }
+  }
+ },
+ "8/9": {
+  "T": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "G": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "gp": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "J": {
+   "S1": true,
+   "S2": true,
+   "S3": false,
+   "S4": false,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "bottom": {
+   "W0b[G]": {
+    "G": false,
+    "gp": true,
+    "J": false
+   },
+   "W0b[gp]": {
+    "G": false,
+    "gp": true,
+    "J": false
+   }
+  }
+ },
+ "3": {
+  "T": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "G": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "gp": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "J": {
+   "S1": true,
+   "S2": true,
+   "S3": false,
+   "S4": false,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "bottom": {
+   "W0b[G]": {
+    "G": false,
+    "gp": true,
+    "J": false
+   },
+   "W0b[gp]": {
+    "G": false,
+    "gp": true,
+    "J": false
+   }
+  }
+ },
+ "5/7": {
+  "T": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "G": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "gp": {
+   "S1": true,
+   "S2": true,
+   "S3": true,
+   "S4": true,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "J": {
+   "S1": true,
+   "S2": true,
+   "S3": false,
+   "S4": false,
+   "W0[G]": true,
+   "W0[gp]": true
+  },
+  "bottom": {
+   "W0b[G]": {
+    "G": false,
+    "gp": true,
+    "J": false
+   },
+   "W0b[gp]": {
+    "G": false,
+    "gp": true,
+    "J": false
+   }
+  }
+ }
+}

@@ -1,0 +1,13 @@
+  s = 2/3: T: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | G: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | gp: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | J: S1=Y S2=Y S3=n S4=n W0[G]=Y W0[gp]=Y
+      bottom psi_1 e^(-X_0): {'W0b[G]': {'G': False, 'gp': True, 'J': False}, 'W0b[gp]': {'G': False, 'gp': True, 'J': False}}
+  s = 10/9: T: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | G: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | gp: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | J: S1=Y S2=Y S3=n S4=n W0[G]=Y W0[gp]=Y
+      bottom psi_1 e^(-X_0): {'W0b[G]': {'G': False, 'gp': True, 'J': False}, 'W0b[gp]': {'G': False, 'gp': True, 'J': False}}
+  s = 8/7: T: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | G: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | gp: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | J: S1=Y S2=Y S3=n S4=n W0[G]=Y W0[gp]=Y
+      bottom psi_1 e^(-X_0): {'W0b[G]': {'G': False, 'gp': True, 'J': False}, 'W0b[gp]': {'G': False, 'gp': True, 'J': False}}
+  s = 8/9: T: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | G: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | gp: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | J: S1=Y S2=Y S3=n S4=n W0[G]=Y W0[gp]=Y
+      bottom psi_1 e^(-X_0): {'W0b[G]': {'G': False, 'gp': True, 'J': False}, 'W0b[gp]': {'G': False, 'gp': True, 'J': False}}
+  s = 3: T: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | G: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | gp: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | J: S1=Y S2=Y S3=n S4=n W0[G]=Y W0[gp]=Y
+      bottom psi_1 e^(-X_0): {'W0b[G]': {'G': False, 'gp': True, 'J': False}, 'W0b[gp]': {'G': False, 'gp': True, 'J': False}}
+  s = 5/7: T: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | G: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | gp: S1=Y S2=Y S3=Y S4=Y W0[G]=Y W0[gp]=Y | J: S1=Y S2=Y S3=n S4=n W0[G]=Y W0[gp]=Y
+      bottom psi_1 e^(-X_0): {'W0b[G]': {'G': False, 'gp': True, 'J': False}, 'W0b[gp]': {'G': False, 'gp': True, 'J': False}}
+done vertices in 0.0s

@@ -1,0 +1,3 @@
+kit integrity: OK (SHA256SUMS, INPUTS.SHA256)
+PASS  drill num2_t1_zeros              2428s  tamper detected: output differs from archived run_t1_zeros.log at line 1 (16 vs 16 lines)
+ALL PASS  (1 drills, 2429s)

@@ -1,0 +1,4 @@
+integrity: OK (SHA256SUMS)
+PASS  drill evaluator_validation       12s  tamper detected: exit 1
+PASS  drill tower_eigenvalues        1719s  tamper detected: computed_eigenvalues.json differs from the archived file
+ALL PASS

@@ -1,0 +1,3 @@
+kit integrity: OK (SHA256SUMS, INPUTS.SHA256)
+PASS  spec1_s3_sol3_a3          20337s  [numerical (full re-run, dps 70 + dps-140 repeat); paper: Spectral equivalence (Theorem thm:spectral, App. A); numerics (five points)]
+ALL PASS  (1 checks, 20337s)

@@ -1,0 +1,49 @@
+{
+ "ok": true,
+ "c": "3 - 12/s",
+ "checks": {
+  "TT/4 = c/2": true,
+  "TT/3 = 0": true,
+  "TT/2 = 2T": true,
+  "TT/1 = dT": true,
+  "TT/5 = 0": true,
+  "TJ/3 = 0 (primary)": true,
+  "TJ/4 = 0": true,
+  "TJ/2 = 1 J": true,
+  "TJ/1 = dJ": true,
+  "TG+/3 = 0 (primary)": true,
+  "TG+/4 = 0": true,
+  "TG+/2 = 3/2 G+": true,
+  "TG+/1 = dG+": true,
+  "TG-/3 = 0 (primary)": true,
+  "TG-/4 = 0": true,
+  "TG-/2 = 3/2 G-": true,
+  "TG-/1 = dG-": true,
+  "JJ/2 = c/3": true,
+  "JJ/1 = 0": true,
+  "JJ/3 = 0": true,
+  "JG+/1 = +-G+": true,
+  "JG+/2 = 0": true,
+  "JG-/1 = -+G-": true,
+  "JG-/2 = 0": true,
+  "G+G+/1 = 0": true,
+  "G-G-/1 = 0": true,
+  "G+G+/2 = 0": true,
+  "G-G-/2 = 0": true,
+  "G+G+/3 = 0": true,
+  "G-G-/3 = 0": true,
+  "G+G-/3 = 2c/3 (x2)": true,
+  "G+G-/2 = 2J (x2)": true,
+  "G+G-/1 = 2T + dJ (x2)": true
+ },
+ "gprime": {
+  "((0, 1, 1), (1, 0, 0))": "-1/s",
+  "((0, 1, 0), (1, 0, 1))": "1/s",
+  "((1, 1, 1),)": "-2/s"
+ },
+ "J": {
+  "((1, 0, 0), (1, 0, 1))": "1/s",
+  "((0, 1, 1),)": "-2/s"
+ },
+ "J_charge_sign_of_Gplus": 1
+}

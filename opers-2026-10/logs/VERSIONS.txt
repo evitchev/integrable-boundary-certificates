@@ -29,3 +29,23 @@ v1.2.5 (2026-10-12): fresh copy outside the author's workspace, HOME set to an e
   After these runs, 19 helper scripts of nzero1/ that the kit does not execute had a private path in their text redacted
   (PATCHES.json) and two counts in README.md were corrected; SHA256SUMS was regenerated, and the kit integrity check,
   nzero1_fibres, num3_controls, exc4_regen_six and the nzero1_fibres drill were re-run from a fresh copy (v125_post_redaction_*.txt).
+
+v1.2.6 (2026-10-18): fresh copy outside the author's workspace, HOME set to an empty directory, ulimit -v 8000000, 24 runs in parallel
+  (load average about 13 on 16 cores).
+  Python 3.8.10 / sympy 1.13.3 / mpmath 1.3.0: --full, the 230 checks other than the five spec1_s3 full checks: 229 PASS, 1 FAIL
+    (34960 s) -> v126_full_py38_*.txt; --full --drill, the same 230: 229 PASS, 1 FAIL (38613 s) -> v126_drill_py38_*.txt.
+    The FAILs were the per-check 3600 s cap: num2_t1_zeros (check) and the exc4_regen_six drill. The num2_t1_zeros drill was
+    reported as detected only because it timed out; run_all.py counts a timed-out drill as detected, so that line is no evidence.
+  The five spec1_s3 full checks, each run separately, under both Pythons, check and drill: 20 runs ALL PASS (3831-20852 s each)
+    -> v126_spec1_s3_*.txt.
+  Python 3.12.8 / sympy 1.14.0 / mpmath 1.3.0: the 53 new quick checks ALL PASS (1288 s) -> v126_new_py312_*.txt;
+    their drills ALL PASS (1276 s) -> v126_new_drill_py312_*.txt.
+  Re-run, one at a time and with no other kit run (load average 2-5), from a second fresh copy byte-identical to the first,
+    same harness, Python 3.8.10 -> v126_rerun_*.txt:
+    num2_t1_zeros PASS (2472 s); its drill detected by an output difference at line 1 (2428 s), not by a timeout;
+    exc4_regen_six drill detected (6 s; regenerated file not byte-identical: False). Under load the same drill stopped after
+    its indicial step and ran past 3600 s; the tamper is a fixed edit, and the cause of the stall is not known.
+  Known weakness: a drill that times out is counted as detected. Every drill line in these logs states its reason; only
+    "output differs" or a non-zero exit is evidence. num2_t1_zeros needs about 2500 s alone, so the 3600 s cap is tight under load.
+  Home-directory prefixes in tracebacks printed by tampered runs are redacted to <home>/ in these logs.
+  Lean: files unchanged since v1.2.4 (not rebuilt).

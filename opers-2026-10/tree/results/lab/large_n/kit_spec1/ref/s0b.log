@@ -1,0 +1,10 @@
+imported <stage>/code/spec1_s0b.py sha256 e66ab4e48cd96993664fb218067618dff6d9c8034248e5c4287598c866775fe7
+imported <stage>/code/spec1_s0.py sha256 a37d44a7fc258f30da87770930d17ca304968c54227c50f8157dbab204635b4c
+Sol1 a=3: t=7 N=1/2 n=5 s=2 sigma=5/3 c=20/3
+  point A: theta_j=['7/5', '13/5'], frozen base=0 (lattice base + 5/3 Z); (H) HOLDS
+  point B: theta_j=['9/5', '11/5'], frozen base=-17/30 (lattice base + 5/3 Z); (H) HOLDS
+  info: Sol3 a=1 t=5/3 N=-25/2
+  info: Sol3 a=3 t=11/5 N=-21/4
+  info: Sol1 a=1 t=3 N=-2
+S0b DONE
+exit 0

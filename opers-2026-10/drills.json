@@ -210,5 +210,21 @@
  "results/lab/large_n/num3/wkb_pred3.py": [
   "PTS = {'A': (mp.mpf(1) / 3, mp.mpf(3) / 5)",
   "PTS = {'A': (mp.mpf(1) / 3 + mp.mpf(1) / 1000, mp.mpf(3) / 5)"
+ ],
+ "results/lab/susy4/boundary/b2/n2frame.py": [
+  "    c = sp.expand(3 - 12 / s)",
+  "    c = sp.expand(3 - 11 / s)"
+ ],
+ "results/lab/susy4/boundary/b2/level1.py": [
+  "kappa2 = 1 - s / 4",
+  "kappa2 = 1 - s / 3"
+ ],
+ "results/lab/susy4/boundary/b2/level2.py": [
+  "Vuv = [boson_vertex((F(1, 2), F(-1, 2))), boson_vertex((F(1, 2), F(1, 2))), boson_vertex(third)]",
+  "Vuv = [boson_vertex((F(1, 2), F(-1, 2))), boson_vertex((F(1, 2), F(1, 2)))]"
+ ],
+ "results/lab/susy4/boundary/b2/coset.py": [
+  "    gH = (s - 4) / s",
+  "    gH = (s - 3) / s"
  ]
 }
