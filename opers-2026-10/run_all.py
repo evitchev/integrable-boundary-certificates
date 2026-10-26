@@ -253,6 +253,12 @@ check('vir2r_posthoc_vir_alone', 'Screening systems; Boundary interaction', 'com
       note='VIR2-R post hoc, Sol 1 p = 8/5 (t = -57/7): commutant mod d with e^{p phi} alone 5/13/30 and with e^{p phi} + V_+ 2/5/11 at weights 4/6/8 (with the '
            'full pair: 1, in vir2r_replication). The script has no internal assertion; the check is the archived output. Drill: V_+ X-exponent + 1/7 '
            'changes 2 -> 1 (sec:boundary)')
+# --- KIT INTEGRITY (v1.2.7, P1b): the logs/SHA256SUMS manifest is part of the kit integrity gate; a stale entry must be caught
+check('kit_integrity_manifest', 'Kit integrity (v1.2.7)', 'the integrity gate verifies logs/SHA256SUMS (stale or missing entry must FAIL)', '.', ['kit_integrity_gate.py'],
+      None, crit=('integrity',),
+      drill=dict(edit=[('stale', 'logs/SHA256SUMS', 'logs/VERSIONS.txt')], must=['KIT INTEGRITY FAIL']),
+      note='v1.2.7 (P1b): runs the same verify_integrity() the suite starts with. Drill: one entry of logs/SHA256SUMS set to a wrong hash in a '
+           'temporary copy; the gate must then report the mismatch (a missing file or missing manifest fails it too)')
 # --- g3_reductions (v1.2.5): the known points (Section "The known points", sec:points) and the Solution 2 n < 0 cells (Verification, exceptional cells)
 # Paste after the AKNS1 / NUMTAB block of run_all.py.  DRILLS entries go into drills.json (keys = tree paths, values = [old, new]).
 # Two archived scripts carry a documented one-line KIT PATCH (absolute path -> relative to __file__): red1/b_ch.py, nzero1/exact_series_v4.py (PATCHES.txt).
@@ -643,6 +649,20 @@ for _tw, _t in (('Z', '2'), ('Z', '7/2'), ('Z', '11/3'), ('Z', '13/5'), ('K', '2
                'spin-3, 4, 5 charges are NOT in Solution 1\'s commutant mod d (spin 2 is: c_2 = (t-1)/(t+3)); pieces of weight <= 6 and constants '
                'are; controls (wrong dictionary s + 1/7, perturbed W0, perturbed Solution 1 vector) fail as archived. Drill: drop Solution 1\'s '
                'third screening e^{-u} from the comparison; the top pieces then lie in the pair commutant (the failure is due to the third screening)')
+# --- v1.2.7 (P2): the B2 row labelled "(must be True)" is an informational probe, not a control
+for _tw, _t in (('Z', '2'), ('K', '2')):
+    _st, _tt = _FIB[_t]
+    with open(os.path.join(TREE, _B2, f'logs/level2_w8_agreement_{_tw}.log'), 'w') as _w:
+        _w.write(f'  level2_{_tw}_t2.log: w8 row = False; w2 = 8 membership = ALL: False\n'
+                 f'w8 real-projection row agrees with the rational membership test in 1 level2_{_tw} logs\n')
+    check(f'b2_level2_w8_agreement_{_tw.lower()}', _B2S + ' (v1.2.7 relabel)',
+          f"the w8 real-projection row of level2 (tower {_tw}, t = {_t}) reads False and agrees with the same log's w2 = 8 membership", _B2,
+          ['../kit_b2/level2_w8_agreement.py', _tw], f'logs/level2_w8_agreement_{_tw}.log', mask=_DONE,
+          drill=dict(edit=[('delete', f'{_B2}/logs/level2_{_tw}_t{_tt}.log')], must=['AGREEMENT CHECK FAILED']),
+          note=f'B2 Level II (v1.2.7, P2): the row "real projection at s in the (X, phi) frame: D_0 in span(I_3^cert) + Im d" printed by level2.py is the '
+               'real-dictionary projection at w2 = 8, printed for consistency with the rational membership test -- it is not a positive control. This check '
+               "enforces exactly that agreement on the archived run: the row reads False AND the same log's w2 = 8 membership line ends ALL: False. "
+               'Drill: the archived level2 log removed -> the check cannot establish the agreement and must fail.')
 for _t, (_st, _tt) in _FIB.items():
     check(f'b2_validate2_t{_tt.replace("-", "o")}', _B2S, f'end-to-end validation of the projection machinery (t = {_t}; exact)', _B2,
           ['validate2.py', _t], f'logs/validate2_t{_tt}.log',
@@ -775,17 +795,27 @@ def sha(p):
         for b in iter(lambda: f.read(1 << 20), b''): h.update(b)
     return h.hexdigest()
 
+def _check_sums(p, prefix=''):
+    """verify one SHA256SUMS file; paths are relative to its own directory (logs/SHA256SUMS) or to KIT (the others)"""
+    bad = []
+    base = os.path.dirname(p)
+    for line in open(p):
+        if not line.strip(): continue
+        h, f = line.split(None, 1); f = f.strip()
+        q = os.path.join(base if prefix else KIT, f)
+        if not os.path.exists(q): bad.append(f'missing {f}')
+        elif sha(q) != h: bad.append(f'hash mismatch {f}')
+    return bad
+
 def verify_integrity():
     bad = []
     for name in ('SHA256SUMS', 'INPUTS.SHA256'):
         p = os.path.join(KIT, name)
         if not os.path.exists(p): return [f'missing {name}']
-        for line in open(p):
-            if not line.strip(): continue
-            h, f = line.split(None, 1); f = f.strip()
-            q = os.path.join(KIT, f)
-            if not os.path.exists(q): bad.append(f'missing {f}')
-            elif sha(q) != h: bad.append(f'hash mismatch {f}')
+        bad += _check_sums(p)
+    lp = os.path.join(KIT, 'logs', 'SHA256SUMS')
+    if not os.path.exists(lp): bad.append('missing logs/SHA256SUMS')   # v1.2.7 (P1b): the logs manifest is now part of the kit integrity check
+    else: bad += _check_sums(lp, prefix='logs/')
     return bad
 
 # ---------------------------------------------------------------- normalisation and criteria
@@ -874,14 +904,37 @@ def apply_edits(work, edits):
             s = open(f).read()
             if old not in s: raise RuntimeError(f'replace: pattern not found in {e[1]}: {old!r}')
             open(f, 'w').write(s.replace(old, new, 1))
+        elif e[0] == 'stale':   # v1.2.7 (P1b): set one entry of a SHA256SUMS file to a wrong hash
+            hf = os.path.join(work, e[1])
+            name = e[2].rsplit('/', 1)[-1]
+            lines, done = [], False
+            for l in open(hf):
+                if not done and l.split()[-1].strip() == name:
+                    l = 'd' * 64 + l[64:]; done = True
+                lines.append(l)
+            if not done: raise RuntimeError(f'stale: entry not found: {name} in {e[1]}')
+            open(hf, 'w').writelines(lines)
+        elif e[0] == 'delete':   # v1.2.7 (P2): remove one file from a temporary tree copy
+            import pathlib
+            p = pathlib.Path(os.path.join(work, e[1]))
+            if not p.exists(): raise RuntimeError(f'delete: no such file: {e[1]}')
+            p.unlink()
 
 # ---------------------------------------------------------------- running
 def run_one(name, spec, drill=False, timeout=None, keep=None):
     timeout = timeout or spec.get('timeout', 3600)
     work = tempfile.mkdtemp(prefix='opers-kit-')
+    if spec['cwd'] == '.':   # v1.2.7 (P1b): kit-level checks copy the whole kit so manifest drills can tamper with it;
+        shutil.rmtree(work)                                  # the entry for this file is fixed up after the copy
+        shutil.copytree(KIT, work, symlinks=False, ignore=shutil.ignore_patterns('__pycache__', '.git'))
+        _sums = os.path.join(KIT, 'SHA256SUMS')   # v1.2.7: regenerate after removing the self-reference line
+        _out = [l for l in open(_sums) if not l.split()[-1].strip().endswith('run_all.py')]
+        open(os.path.join(work, 'SHA256SUMS'), 'w').writelines(_out)
     try:
-        shutil.copytree(TREE, os.path.join(work, 'tree'), symlinks=False)
-        root = os.path.join(work, 'tree')
+        root = work
+        if spec['cwd'] != '.':   # v1.2.7 (P1b): tree checks keep the original layout (fresh copy of tree/ only)
+            shutil.copytree(TREE, os.path.join(work, 'tree'), symlinks=False)
+            root = os.path.join(work, 'tree')
         argv = spec['argv']
         if drill:
             d = spec['drill']
@@ -907,7 +960,12 @@ def run_one(name, spec, drill=False, timeout=None, keep=None):
                 k = next((i for i in range(min(len(a), len(b))) if a[i] != b[i]), min(len(a), len(b)))
                 reasons.append(f'output differs from archived {spec["ref"]} at line {k + 1} ({len(a)} vs {len(b)} lines)')
         if spec['crit']:
-            ok, msg = num_diffs(out, spec['crit'][1])
+            kind, arg = (spec['crit'] + (None,))[:2]
+            if kind == 'integrity':   # v1.2.7 (P1b): the gate's own verdict is the criterion
+                ok = rc == 0 and 'KIT INTEGRITY FAIL' not in out
+                msg = '' if ok else f'integrity gate exited {rc}'
+            else:
+                ok, msg = num_diffs(out, arg)
             if not ok: reasons.append(msg)
         if spec['post'] and not drill:
             kind, f = spec['post']

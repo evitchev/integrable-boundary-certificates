@@ -20,7 +20,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 LEAN_DIR = ROOT / "lean"
-WRAPPER = Path.home() / "projects" / "lean-benchmarks" / "lean-mathlib"
+import os
+WRAPPER = Path(os.environ.get("LEAN_MATHLIB", str(Path.home() / "projects" / "lean-benchmarks" / "lean-mathlib")))
 
 _NEGATIVE = (
     "import Mathlib.Algebra.Lie.Basic\n"

@@ -47,8 +47,10 @@ from super_engine import (SuperSector, canonicalize, cur_add, d_cur,
                           mono_weight2, normal_prod, q_dim_super,
                           residue_cur)
 
-lim = 12 * 1024**3
-resource.setrlimit(resource.RLIMIT_AS, (lim, lim))
+_soft, _hard = resource.getrlimit(resource.RLIMIT_AS)
+_lim = 12 * 1024**3 if _soft in (-1, resource.RLIM_INFINITY) else min(12 * 1024**3, _soft)   # v1.2.7 (P6): honour an outer cap but restore 12 GiB when none is set
+if _hard in (-1, resource.RLIM_INFINITY) or _lim < _hard:   # never raise the hard limit; lower only when that lowers the current limit
+    resource.setrlimit(resource.RLIMIT_AS, (_lim, _lim))
 
 NF = 1
 DX, PSI = (0, 1, 0), (1, 0, 0)

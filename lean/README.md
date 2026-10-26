@@ -58,9 +58,11 @@ delivered the ℚ(t)-section and specialization lemmas).
 
 The checker (`code/lean_check.py`) uses the machine-local pinned
 wrapper `lean-benchmarks/lean-mathlib` (a sibling workspace) (Lean 4.24, Mathlib
-with baked search path) and includes a negative control: a
-deliberately false proof must be rejected on every run, so a broken
-toolchain cannot report green. On machines without the toolchain the
+with baked search path), overridable via the `LEAN_MATHLIB` environment
+variable (v1.2.7, P7: it now honours the same variable that
+`build_lean3.sh:8` uses; the default is unchanged), and includes a
+negative control: a deliberately false proof must be rejected on every
+run, so a broken toolchain cannot report green. On machines without the toolchain the
 check fails loudly rather than skipping silently; the sympy-only core
 of this repository does not depend on it.
 

@@ -8,6 +8,7 @@ from fractions import Fraction as F
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 TAMPER = '--tamper' in sys.argv; DO_I7 = '--i7' in sys.argv
 tag = ('_tamper' if TAMPER else '') + ('_i7' if DO_I7 else '')
+import numpy as np
 LOG = open(os.path.join(HERE, f'run_VIR1R{tag}.log'), 'w'); T0 = time.time()
 def say(*a):
     s = ' '.join(str(x) for x in a); print(s, flush=True); LOG.write(s + '\n'); LOG.flush()
@@ -16,7 +17,6 @@ def control(name, ok):
     say(f'CONTROL {name}: {ok}')
     if not ok: FAIL.append(name)
 assert hashlib.sha256(open(os.path.join(HERE, 'SEAL_VIR1R.md'), 'rb').read()).hexdigest().startswith('5f475c8b'), 'seal'
-import numpy as np
 from wick import ope, dfield, fadd
 PRIMES = (2147483647, 2147483629)
 # ---------------- inputs from the record (mixed_engine, read-only clone)

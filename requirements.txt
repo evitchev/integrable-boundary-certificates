@@ -1,3 +1,9 @@
-# The engines and all certifications are pure Python + sympy.
-# Certified environment (results/certification_manifest.json): sympy 1.14.0.
+# The engines and all certifications are pure Python + sympy + mpmath (mpmath for the numerical
+# spectral checks of NUM1/NUM2 and of the opers kit's thm3/spec1 numerics).
+# Certified environment (results/certification_manifest.json): sympy 1.14.0, mpmath 1.3.0.
 sympy>=1.12
+mpmath>=1.3
+# Optional: only two of the opers kit's vir1r checks need numpy (explicit-component randomised rank mod p);
+# python-flint is used by four root lab/ helper scripts (modp_scan.py, cyl_all_spin_a1_deficit.py,
+# cyl_w4_linear.py, cyl_w4_w6_quadratic.py) not required by any quick check or certification.
+#   numpy; python-flint

@@ -17,15 +17,20 @@ Neveu-Schwarz and Ramond sectors (see below).
 
 arXiv identifiers will be added upon announcement.
 
-Pure Python; the only dependency is `sympy` (see `requirements.txt`).
+Pure Python; the dependencies are `sympy` and `mpmath` (see `requirements.txt`). `numpy` is optional:
+only two checks of the opers kit (`vir1r_*`) use it.
 
 ## Reproduction
 
-    pip install sympy
+    pip install sympy mpmath
     cd code
     python3 run_certifications.py          # fast checks + hash pins
     python3 public_lint.py                 # provenance + privacy lint
     python3 run_certifications.py --full   # + hours-class checks
+
+`clean_venv_gate.sh` (new in v1.2.7) builds a fresh virtual environment with only the declared
+requirements and runs the quick certifications, the opers kit's quick suite with its drills and
+the super-KdV checks; it exits 0 only if every line passes (`bash clean_venv_gate.sh`).
 
 The Lean certificates (`lean/`) additionally require a local
 Lean 4.24 + Mathlib toolchain; their check fails loudly, not

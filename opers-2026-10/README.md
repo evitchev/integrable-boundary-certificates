@@ -2,7 +2,7 @@
 
 This directory lets a reader re-run the computations behind the paper by E. Vitchev, "Opers for the cylindrical
 integrals of motion" (2026), and check that the archived results reproduce. Every check is exact rational arithmetic
-(sympy), except the numerical spectral check (mpmath) and the Lean proofs.
+(sympy), except the numerical spectral check (mpmath), the two vir1r checks (numpy) and the Lean proofs.
 
 ## Quick start
 
@@ -166,6 +166,8 @@ Notes on the B2 material:
   exact symbolic computation (not in Lean; the Lean files cover t = 2 only), its E = 0 case exactly (Gauss multiplication, given the quoted
   Meijer-G facts) and the full statement numerically at five points. The analytic steps (growth bounds, termwise action, the quoted
   existence theorem (T) at Poincare rank Nq in xi = x^(1/N), the uniqueness of Lemma 4 and the Laplace estimate) are not machine-checked.
+  **Superseded by paper Appendix A (v1.2.7 note):** the chart is now ξ = x^(σ/M) with M = lcm(d − 1, D) and the contour is the vertical line
+  v = 1 + iy; the previous description xi = x^(1/N) and the tilted steepest-descent contour are kept here for provenance.
   The descent constant of Proposition A.2 is shown only on a grid (`spec1_saddle`). The dps-140 repeat at E = 37 is re-run only by the
   full-mode `spec1_s3_*_a*` checks; the quick checks verify the dps-70 data.
 - B2 runs at t = 2, 7/2, 11/3, 13/5 only, and B2b at t = 2, 7/2, 13/5 only. At these points the checks are exact, but nothing is proved
@@ -254,9 +256,10 @@ The stage notes are kept as written. Three statements in them were later superse
 - `proof3/NOTE.md` says that for sigma < 0 the Hankel integral diverges. That is withdrawn: it is false as stated (a counterexample
   at t = 7 has convergent tails); sigma < 0 is simply not covered.
 - `proof3/NOTE.md` is the first version of the proof of Theorem 3. The paper's Appendix A supersedes it: there the Laplace step
-  uses a tilted steepest-descent contour (the NOTE's claim about the expansion for |arg y| < pi is not used), the existence of
-  the normalised fourth-order solution is derived, the uniqueness lemma divides out the algebraic prefactor, and the quoted
-  existence theorem is pinned to Balser (2000), Theorems 42(d) and 44.
+  uses a vertical contour v = 1 + iy (replacing the NOTE's tilted steepest-descent contour; the NOTE's claim about the expansion
+  for |arg y| < pi is not used), the chart is ξ = x^(σ/M) with M = lcm(d − 1, D) (replacing xi = x^(1/N)), the existence of the
+  normalised fourth-order solution is derived, the uniqueness lemma divides out the algebraic prefactor, and the quoted
+  existence theorem is pinned to Balser (2000), Theorems 42(d) and 44. The old text is kept visible above for provenance.
 
 ## Changes to archived files
 
@@ -279,6 +282,16 @@ The stage notes are kept as written. Three statements in them were later superse
 
 Because of these edits, the per-stage `SHA256SUMS` (and `SHA256SUMS_subset`) from the time of archiving no longer match for those files.
 `PATCHES.json` gives the archived hash of each one.
+
+New in v1.2.7: `logs/SHA256SUMS` is regenerated to cover every file in `logs/` except itself, and the kit
+integrity gate (`run_all.py --quick` starts by checking `SHA256SUMS`, `INPUTS.SHA256`, and now also `logs/SHA256SUMS`) verifies it.
+Erratum: v1.2.6 shipped v1.2.5's `logs/SHA256SUMS` byte for byte (sha256 1e9bd0b3...); it listed v1.2.5's `VERSIONS.txt` (1e88cc62...)
+instead of v1.2.6's (64c2a36a...) and omitted all 54 `v126_*` log files. Nothing caught this because the opers root `SHA256SUMS`
+excludes `logs/` by design and the integrity gate checked only the two root manifests. The B2 row labelled `(must be True)` in the
+archived level2 runs (the real-dictionary projection at w2 = 8, printed for consistency with the rational membership test; False in
+all eight runs, agreeing with that test's w2 = 8 non-membership) is covered by the new check `b2_level2_w8_agreement`; the archived
+output keeps its label. `vir1r.py`'s `import numpy` was moved above the archived-log
+open (recorded in `PATCHES.json`), so a missing numpy no longer empties `run_VIR1R*.log` before failing.
 
 ## AI assistance
 

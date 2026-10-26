@@ -700,5 +700,11 @@
   "kind": "textual redaction of private paths/identifiers (file not executed by the kit; v1.2.6)",
   "sha256_archived": "7fdd5da9a6edb51f7833a1814b62ef3ce6ca76d16870f16fab38521b7bbd10d1",
   "sha256_kit": "1ed697cc124ccc2c1b8a8e368b89251991660d2b07c36671d6ac0517fe73786b"
+ },
+ {
+  "path": "tree/results/lab/large_n/vir1r/vir1r.py",
+  "kind": "functional: import numpy moved above the archived-log open (a missing numpy no longer empties run_VIR1R*.log before failing); output unchanged",
+  "sha256_archived": "0a87c755aa0b285e1c89bdd00097a839ec8cc918ecebeefb4d8b0a73c882bc87",
+  "sha256_kit": "b8d9a37ad5de8fff0d2a17c773786919b5115595d6cc82919dc612d12d729fda"
  }
 ]
