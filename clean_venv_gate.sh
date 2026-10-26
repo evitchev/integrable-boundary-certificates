@@ -10,13 +10,20 @@
 #
 # Usage: bash clean_venv_gate.sh
 #   (run from anywhere; paths are resolved relative to this file's directory)
-set -eu
+# The two virtual environments and the log are written to a work directory OUTSIDE the repository
+# (CLEAN_GATE_DIR if set, else a new mktemp directory), because the certification runner refuses to
+# start in a tree that does not match RELEASE_MANIFEST.json. Inside the repository only the root
+# runner's own output, results/certification_manifest.json, is written.
+set -euo pipefail   # pipefail: the exit status is the gate's, not tee's
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 PY="${PYTHON:-python3}"
-LOG="$ROOT/logs/clean_venv_gate.log"
-mkdir -p "$ROOT/logs"
+WORK="${CLEAN_GATE_DIR:-$(mktemp -d "${TMPDIR:-/tmp}/clean-venv-gate.XXXXXX")}"
+case "$WORK" in "$ROOT"|"$ROOT"/*) echo "CLEAN_GATE_DIR must be outside the repository: $WORK" >&2; exit 2 ;; esac
+mkdir -p "$WORK"
+LOG="$WORK/clean_venv_gate.log"
 {
 echo "=== clean_venv_gate $(date -Iseconds) ==="
+echo "work directory (venvs and this log): $WORK"
 echo "--- declared packages ---"
 cat "$ROOT/requirements.txt"
 # Two environments, exactly as the root requirements.txt declares them (P4):
@@ -25,8 +32,8 @@ cat "$ROOT/requirements.txt"
 #                                        explicit-component rank checks need it)
 # The opers quick suite and its drills must run on 'opers' (sympy+mpmath+numpy) or the
 # two vir1r checks fail; the root certifications and the super-KdV checks run on 'core'.
-VENV_CORE="$ROOT/.venv-clean-gate-core"
-VENV_OPERS="$ROOT/.venv-clean-gate-opers"
+VENV_CORE="$WORK/venv-core"
+VENV_OPERS="$WORK/venv-opers"
 rm -rf "$VENV_CORE" "$VENV_OPERS"
 mk_venv() { # mk_venv <dir> [extra packages]
     local d="$1"; shift

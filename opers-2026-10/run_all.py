@@ -651,10 +651,7 @@ for _tw, _t in (('Z', '2'), ('Z', '7/2'), ('Z', '11/3'), ('Z', '13/5'), ('K', '2
                'third screening e^{-u} from the comparison; the top pieces then lie in the pair commutant (the failure is due to the third screening)')
 # --- v1.2.7 (P2): the B2 row labelled "(must be True)" is an informational probe, not a control
 for _tw, _t in (('Z', '2'), ('K', '2')):
-    _st, _tt = _FIB[_t]
-    with open(os.path.join(TREE, _B2, f'logs/level2_w8_agreement_{_tw}.log'), 'w') as _w:
-        _w.write(f'  level2_{_tw}_t2.log: w8 row = False; w2 = 8 membership = ALL: False\n'
-                 f'w8 real-projection row agrees with the rational membership test in 1 level2_{_tw} logs\n')
+    _st, _tt = _FIB[_t]   # the expected output is the shipped logs/level2_w8_agreement_{Z,K}.log (covered by SHA256SUMS)
     check(f'b2_level2_w8_agreement_{_tw.lower()}', _B2S + ' (v1.2.7 relabel)',
           f"the w8 real-projection row of level2 (tower {_tw}, t = {_t}) reads False and agrees with the same log's w2 = 8 membership", _B2,
           ['../kit_b2/level2_w8_agreement.py', _tw], f'logs/level2_w8_agreement_{_tw}.log', mask=_DONE,
@@ -993,7 +990,7 @@ def main():
     bad = verify_integrity()
     if bad:
         print('KIT INTEGRITY FAIL:'); [print('  ' + b) for b in bad[:50]]; return 2
-    print('kit integrity: OK (SHA256SUMS, INPUTS.SHA256)')
+    print('kit integrity: OK (SHA256SUMS, INPUTS.SHA256, logs/SHA256SUMS)')
     names = [n for n, s in C.items() if (a.full or s['quick'])]
     if a.only: names = [n for n in a.only.split(',')]
     keep = open(a.log, 'w') if a.log else None
