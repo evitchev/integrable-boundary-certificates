@@ -1,0 +1,442 @@
+=== clean_venv_gate 2026-10-26T21:31:33-04:00 ===
+work directory (venvs and this log): <work>
+--- declared packages ---
+# The engines and all certifications are pure Python + sympy + mpmath (mpmath for the numerical
+# spectral checks of NUM1/NUM2 and of the opers kit's thm3/spec1 numerics).
+# Certified environment (results/certification_manifest.json): sympy 1.14.0, mpmath 1.3.0.
+sympy>=1.12
+mpmath>=1.3
+# Optional: only two of the opers kit's vir1r checks need numpy (explicit-component randomised rank mod p);
+# python-flint is used by four root lab/ helper scripts (modp_scan.py, cyl_all_spin_a1_deficit.py,
+# cyl_w4_linear.py, cyl_w4_w6_quadratic.py) not required by any quick check or certification.
+#   numpy; python-flint
+--- environment 1: core (declared required packages only) ---
+--- creating fresh venv: <work>/venv-core ---
+
+[notice] A new release of pip is available: 24.3.1 -> 26.2.2
+[notice] To update, run: <work>/venv-core/bin/python3.12 -m pip install --upgrade pip
+mpmath  1.3.0
+sympy   1.14.0
+--- root certifications (default quick set), core env ---
+launch gate: repository (HEAD e19b145d0bf3, tracked dirty: 0, public edition: True)
+[RUN ] validate_component_engine ...
+        PASS (0.1s)
+[RUN ] validate_invariant_engine ...
+        PASS (5.0s)
+[RUN ] erratum_eq51_p6 ...
+        PASS (0.2s)
+[RUN ] symbolic_commutativity ...
+        PASS (4.9s)
+[RUN ] vacancy_tables_and_I5I7 ...
+        PASS (101.4s)
+[RUN ] screening_fit_lvz_vectors ...
+        PASS (5.1s)
+[RUN ] screening_annihilates_p8 ...
+        PASS (19.7s)
+[RUN ] a2_i7_formula_certification ...
+        PASS (7.3s)
+[RUN ] a2_infinitude_dictionary ...
+        PASS (0.9s)
+[RUN ] cylindrical_mutual_commutativity ...
+        PASS (148.1s)
+[RUN ] resurgence_borel_check ...
+        PASS (0.4s)
+[PIN ] a2_branch_point_mechanism ...
+        SKIPPED_EXPENSIVE
+[PIN ] paperclip_p8_artifact ...
+        PASS_PINS_VERIFIED
+[PIN ] qt_promotion_artifact ...
+        PASS_PINS_VERIFIED
+[PIN ] results_documentation_pins ...
+        PASS
+[RUN ] validate_super_engine ...
+        PASS (0.0s)
+[RUN ] mixed_pole_validation ...
+        PASS (0.2s)
+[RUN ] super_kdv_calibration ...
+        PASS (8.8s)
+[PIN ] super_screening_fit ...
+        SKIPPED_EXPENSIVE
+[PIN ] super_kdv_ext ...
+        SKIPPED_EXPENSIVE
+[PIN ] super_screening_deep ...
+        SKIPPED_EXPENSIVE
+[RUN ] super_lambda_phase3 ...
+        PASS (0.7s)
+[PIN ] super_phase3 ...
+        PASS_PINS_VERIFIED
+[PIN ] paperclip_p10_artifact ...
+        PASS_PINS_VERIFIED
+[PIN ] screening_spin9 ...
+        SKIPPED_EXPENSIVE
+[PIN ] modp_validate ...
+        SKIPPED_EXPENSIVE
+[PIN ] paperclip_vacancy_1214 ...
+        SKIPPED_EXPENSIVE
+[RUN ] lv_g4_reference ...
+        PASS (0.8s)
+[RUN ] cyl_membership ...
+        PASS (0.7s)
+[PIN ] cyl_membership_ext ...
+        SKIPPED_EXPENSIVE
+[RUN ] c1_enhanced_fingerprint ...
+        PASS (71.2s)
+[RUN ] getmanov_stage2 ...
+        PASS (1.3s)
+[RUN ] getmanov_i5_pullback ...
+        PASS (35.5s)
+[RUN ] getmanov_theta_axis ...
+        PASS (4.4s)
+[PIN ] symmetric_pair_character ...
+        PASS_PINS_VERIFIED
+[RUN ] symmetric_pair_character_fast ...
+        PASS (0.9s)
+[PIN ] collapsed_validate ...
+        SKIPPED_EXPENSIVE
+[PIN ] raw_certificate_pins ...
+        PASS
+[PIN ] vacancy_final_modp_smoke ...
+        SKIPPED_EXPENSIVE
+[PIN ] lean_certificates ...
+        SKIPPED_EXPENSIVE
+[PIN ] independent_engine_artifacts ...
+        PASS
+[PIN ] wolfram_triangle ...
+        SKIPPED_EXPENSIVE
+[RUN ] ff_ising_quotient ...
+        PASS (0.7s)
+[RUN ] c1_four_condition_char ...
+        PASS (15.6s)
+[RUN ] kdv_identification ...
+        PASS (0.4s)
+[RUN ] kdv_tower_classes ...
+        PASS (26.1s)
+[RUN ] z2_mechanism ...
+        PASS (4.6s)
+[PIN ] odd_sector_j ...
+        SKIPPED_EXPENSIVE
+[RUN ] j_commutator_identification ...
+        PASS (0.0s)
+[RUN ] cyl_hidden_kdv_scan ...
+        PASS (3.1s)
+[RUN ] cyl_n28_tower_embedding ...
+        PASS (32.8s)
+[RUN ] cyl_jump_point_tower ...
+        PASS (88.1s)
+[RUN ] cyl_strata_points ...
+        PASS (77.8s)
+[PIN ] cyl_strata_points_s11 ...
+        SKIPPED_EXPENSIVE
+[PIN ] cyl_spin13_prediction ...
+        PASS_PINS_VERIFIED
+[PIN ] cyl_spin13_sol3_sporadic ...
+        PASS_PINS_VERIFIED
+[PIN ] cyl_spin15_ladder_probe ...
+        PASS_PINS_VERIFIED
+[PIN ] c1_spin15_l10_exit ...
+        PASS_PINS_VERIFIED
+[PIN ] cyl_spin15_stratification ...
+        PASS_PINS_VERIFIED
+[PIN ] cyl_spin17_double_prediction ...
+        PASS_PINS_VERIFIED
+[RUN ] cyl_coulomb_gas_parametrization ...
+        PASS (0.5s)
+[PIN ] cyl_oddq_controls ...
+        PASS_PINS_VERIFIED
+[PIN ] cyl_discriminant_w1012 ...
+        PASS_PINS_VERIFIED
+[PIN ] cyl_t2_shadow ...
+        PASS_PINS_VERIFIED
+[PIN ] cyl_discriminant_w14 ...
+        PASS_PINS_VERIFIED
+[RUN ] cyl_t2_primary ...
+        PASS (38.1s)
+[RUN ] cyl_mo2_profiles ...
+        PASS (415.5s)
+[RUN ] cyl_vev_validation ...
+        PASS (2.0s)
+[RUN ] cyl_wkb_validation ...
+        PASS (60.9s)
+[RUN ] cyl_vev_tables ...
+        PASS (365.7s)
+[RUN ] cyl_spin19_scans ...
+        PASS (0.1s)
+[RUN ] check_spin13_run_record_public ...
+        PASS (0.0s)
+[PIN ] vacancy_cyl_121416 ...
+        PASS_PINS_VERIFIED
+[PIN ] vacancy_a2_1820 ...
+        PASS_PINS_VERIFIED
+[PIN ] paperclip_joint_kernel_79 ...
+        PASS_PINS_VERIFIED
+[PIN ] kdv_tower_spin14_vacancy ...
+        PASS_PINS_VERIFIED
+[PIN ] w18_lab_records ...
+        PASS
+[PIN ] w16_lab_records ...
+        PASS
+[RUN ] cyl_pole_lattice ...
+        PASS (0.0s)
+[RUN ] cyl_first_order ...
+        PASS (460.9s)
+[RUN ] cyl_heun_exact_elim ...
+        PASS (174.3s)
+[PIN ] cyl_heun_rationality ...
+        PASS_PINS_VERIFIED
+[RUN ] cyl_first_order_kernels ...
+        PASS (123.9s)
+[RUN ] cyl_classical_hierarchy ...
+        PASS (580.6s)
+[RUN ] cyl_pillow_identification ...
+        PASS (1.9s)
+[RUN ] cyl_exact_point ...
+        PASS (518.7s)
+[RUN ] cyl_exact_point_control ...
+        PASS (1.8s)
+[RUN ] cyl_exact_point_deformation ...
+        PASS (39.9s)
+[RUN ] cyl_exact_point_deformation_control ...
+        PASS (14.6s)
+[RUN ] public_provenance_lint ...
+        PASS (16.4s)
+
+manifest: <repo>/results/certification_manifest.json
+status: passed_fast_checks_and_pins (56 executed passes, 20 pins-verified, 14 skipped-expensive, of 90)
+--- super-KdV checks, core env ---
+integrity: OK (SHA256SUMS)
+PASS  evaluator_validation       13s  
+PASS  tower_eigenvalues        1689s  
+ALL PASS
+--- environment 2: opers (core + numpy, the declared optional dependency of the two vir1r checks) ---
+--- creating fresh venv: <work>/venv-opers ---
+
+[notice] A new release of pip is available: 24.3.1 -> 26.2.2
+[notice] To update, run: <work>/venv-opers/bin/python3.12 -m pip install --upgrade pip
+mpmath  1.3.0
+numpy   2.5.4
+sympy   1.14.0
+--- opers quick suite (integrity gate included), opers env ---
+kit integrity: OK (SHA256SUMS, INPUTS.SHA256, logs/SHA256SUMS)
+PASS  gate                         14s  [registered predictions vs certified tables; paper: Verification (table)]
+PASS  gate_missing_charge          13s  [gate drill target: a missing prediction must be rejected; paper: Verification (table)]
+PASS  sol3_operator_t2             93s  [recomputation from the operator; paper: The opers (Sol 3); Verification]
+PASS  sol3_vir4d_compare            2s  [registered predictions vs certified tables; paper: Verification (table)]
+PASS  sol3_ode_equiv                6s  [operator identity (formal WKB); paper: The opers (Theorem 1)]
+PASS  sol2_ode_equiv                8s  [operator identity (formal WKB); paper: The opers (Theorem 1)]
+PASS  sol2_holdout                  2s  [registered prediction vs hold-out table; paper: Verification (table)]
+PASS  sol1_suzuki                   5s  [operator -> charges vs certified tables (dictionary found post hoc); paper: The opers (Sol 1); Verification]
+PASS  thm1_mellin                   9s  [symbolic identity (proof); paper: The opers (Theorem 1)]
+PASS  thm2_ward                     5s  [symbolic identity (proof); paper: Verification (Theorem 2)]
+PASS  num1_exact_M1                 8s  [numerical (control on an exactly solvable case); paper: Numerical spectral check]
+PASS  num1_doublet_average        320s  [numerical (re-analysis of the archived high-precision determinant data); paper: Numerical spectral check]
+PASS  exc1_level1_I3                1s  [oper vs data (post hoc); paper: Excited states (Sol 1)]
+PASS  exc1_level1_I5                0s  [registered prediction vs data; paper: Excited states (Sol 1)]
+PASS  exc2_closed_form              1s  [closed form vs data; paper: Excited states (Sol 3)]
+PASS  exc2_level1_I5                1s  [registered prediction (blind) vs data; paper: Excited states (Sol 3)]
+PASS  br2_commutant               249s  [commutant computation; paper: Screening systems; Boundary interaction]
+PASS  br2_dims                      0s  [boundary dimensions; paper: Boundary interaction]
+PASS  second1_leading             453s  [symbolic coefficient; paper: The opers (second-order descriptions)]
+PASS  second2_gate1                 4s  [engine control (plant + tamper); paper: The opers (second-order descriptions)]
+PASS  second2_h2b_t2                2s  [exact exclusion at the solver output; paper: The opers (second-order descriptions)]
+PASS  second2_h2b_plant             7s  [non-vacuity control (planted dictionary recovered); paper: The opers (second-order descriptions)]
+PASS  sol2_ext_exact_point         11s  [operator -> charges vs certified tables (exact point t = 1/3); paper: The opers (Sol 2); Verification (table)]
+PASS  num2_fit_2_A_60               2s  [fit of archived high-precision Q data vs WKB and the registered log E terms; paper: Numerical spectral check (fourth-order operators)]
+PASS  num2_fit_t10o3_A_60           3s  [fit of archived high-precision Q data vs WKB and the registered log E terms; paper: Numerical spectral check (fourth-order operators)]
+PASS  num2_exact_E0                78s  [numerical control: exact E = 0 Q-functions (Meijer G) vs the solver; paper: Numerical spectral check (fourth-order operators)]
+PASS  exc3_level1_I5                1s  [registered prediction (blind) vs data; paper: Excited states (Solution 2)]
+PASS  exc3_lead_blind               0s  [lead's blind comparison of the registered prediction with its own data blocks; paper: Excited states (Solution 2)]
+PASS  proof2_p1_factor             51s  [symbolic proof (rank-drop vanishing at losses 1-3); paper: Spins that are multiples of n]
+PASS  proof2_p1_proof             375s  [symbolic proof (rank-drop vanishing at losses 1-3); paper: Spins that are multiples of n]
+PASS  proof2_p1_proof_b            57s  [symbolic proof (rank-drop vanishing at losses 1-3); paper: Spins that are multiples of n]
+PASS  proof2_general_case1          6s  [operator identity (formal WKB), general P and L; paper: The opers (Theorem 1)]
+PASS  proof2_general_case1_near      7s  [operator identity (formal WKB), general P and L; paper: The opers (Theorem 1)]
+PASS  proof2_general_case2          6s  [operator identity (formal WKB), general P and L; paper: The opers (Theorem 1)]
+PASS  proof2_general_case3          6s  [operator identity (formal WKB), general P and L; paper: The opers (Theorem 1)]
+PASS  proof2_general_case4          3s  [operator identity (formal WKB), general P and L; paper: The opers (Theorem 1)]
+PASS  proof2_general_case5          3s  [operator identity (formal WKB), general P and L; paper: The opers (Theorem 1)]
+PASS  proof2_aequiv_s3_k3o2         7s  [operator identity (formal WKB); paper: The opers (Theorem 1)]
+PASS  proof2_aequiv_s3_k5o3         7s  [operator identity (formal WKB); paper: The opers (Theorem 1)]
+PASS  proof2_aequiv_s3_km6o5        7s  [operator identity (formal WKB); paper: The opers (Theorem 1)]
+PASS  proof2_aequiv_s3_k7o2         7s  [operator identity (formal WKB); paper: The opers (Theorem 1)]
+PASS  proof2_aequiv_s2_k3o2         6s  [operator identity (formal WKB); paper: The opers (Theorem 1)]
+PASS  proof2_aequiv_s2_k5o2         7s  [operator identity (formal WKB); paper: The opers (Theorem 1)]
+PASS  proof2_aequiv_s2_km6o5        8s  [operator identity (formal WKB); paper: The opers (Theorem 1)]
+PASS  thm3_constant                 0s  [numerical: (Q4/Q6) m(theta_j)^-1 is one E-independent constant 1/omega (archived NUM2 data, t = 2); paper: Theorem 3 (Appendix A)]
+PASS  thm3_kernel                   2s  [Hankel kernel, integration by parts, intertwining, frozen zeros, Laplace constant (numerical + symbolic); paper: Theorem 3 (Appendix A)]
+PASS  joint1_C1                     1s  [oper vs data: joint (I_3, I_5) pairing; paper: Excited states]
+PASS  joint1_C2                     1s  [oper vs data: joint (I_3, I_5) pairing; paper: Excited states]
+PASS  joint1_C3                     1s  [oper vs data: joint (I_3, I_5) pairing; paper: Excited states]
+PASS  joint1_C4                     1s  [oper vs data: joint (I_3, I_5) pairing; paper: Excited states]
+PASS  joint1_C5                     1s  [oper vs data: joint (I_3, I_5) pairing; paper: Excited states]
+PASS  joint1_C6                     1s  [oper vs data: joint (I_3, I_5) pairing; paper: Excited states]
+PASS  akns_spin3                    1s  [FL (95) vs the certified Sol 1 spin-3 table (29 fibres; one fixed dictionary); paper: Relation to quantum AKNS]
+PASS  akns_top                      1s  [FL top layer vs the Sol 1 top layer (spins 3-9); paper: Relation to quantum AKNS]
+PASS  numtab                        6s  [table of fitted vs predicted coefficients from the archived high-precision data; paper: Numerical spectral check (evidence table)]
+PASS  vir1_engine_selftest          0s  [engine control; paper: The Y-sector is Vir_N (Proposition 1)]
+PASS  vir1_heisvir_I3_I5            3s  [membership test (exact, 120 fibres + special points); paper: The Y-sector is Vir_N (Proposition 1)]
+PASS  vir1_heisvir_I5_symbolic     46s  [symbolic in t; paper: The Y-sector is Vir_N (Proposition 1)]
+PASS  vir1_heisvir_I7_kernel        4s  [membership test (own ad I_3 kernel, 16 fibres); paper: The Y-sector is Vir_N (Proposition 1)]
+PASS  vir1_heisvir_I7_I11_symbolic_N     58s  [symbolic in N on the certified promoted charges; paper: The Y-sector is Vir_N (Proposition 1)]
+PASS  vir1r_explicit_I3_I5         22s  [explicit components, randomised rank mod p (2 primes x 2 seeds); paper: The Y-sector is Vir_N (Proposition 1)]
+PASS  vir1r_explicit_I7           281s  [explicit components, randomised rank mod p; paper: The Y-sector is Vir_N (Proposition 1)]
+PASS  vir2_gates                    0s  [engine gates; paper: Screening systems]
+PASS  vir2_I5_symbolic             49s  [symbolic I_5(t) (input of vir2_pairs_symbolic); paper: Screening systems]
+PASS  vir2_pairs_symbolic          17s  [symbolic in p; paper: Screening systems; Boundary interaction]
+PASS  vir2_points_gram              9s  [Gram matrices, exponents, known points (symbolic + exact); paper: Screening systems]
+PASS  vir2_commutant_w4_w6         16s  [commutant dimension mod d (exact, two fibres); paper: Screening systems]
+PASS  vir2_commutant_w8            41s  [commutant dimension mod d at weight 8 (exact, one fibre); paper: Screening systems]
+PASS  vir2_spectrum                31s  [commutant dimensions at weights 2..7 (exact, two fibres); paper: Screening systems]
+PASS  vir2r_engine_control          0s  [engine control (formal N vs explicit components); paper: The Y-sector is Vir_N (Proposition 1)]
+PASS  vir2r_replication           227s  [independent replication (exact); paper: Screening systems; The Y-sector is Vir_N (Proposition 1)]
+PASS  vir2r_posthoc_vir_alone       7s  [commutant dimension mod d (post hoc, informational); paper: Screening systems; Boundary interaction]
+PASS  kit_integrity_manifest        0s  [the integrity gate verifies logs/SHA256SUMS (stale or missing entry must FAIL); paper: Kit integrity (v1.2.7)]
+PASS  red1_anchor_operator          3s  [operator limit (exact symbolic); paper: The known points (anchor t = 3)]
+PASS  red1_anchor_charges          34s  [charge-level limit k -> infinity (exact rationals at k = 1e4, 1e8); paper: The known points (anchor t = 3)]
+PASS  red1_n0_operator              1s  [operator limit (exact operator algebra); paper: The known points (N = 0)]
+PASS  red1_n0_charges              77s  [charge-level limits vs certified tables at t = +-5 (exact rationals, h = 1e-8, 1e-16); paper: The known points (N = 0)]
+PASS  red2_paperclip_sol1_and_exact_local      1s  [exact identities; paper: The known points (paperclip; exact point)]
+PASS  red2_paperclip_sol3_tensor      1s  [tensor product of two Coulomb problems (exact); paper: The known points (paperclip)]
+PASS  red2_paperclip_sol3_mellin      1s  [formal Mellin-recurrence identity (exact); paper: The known points (paperclip)]
+PASS  red2_exact_laplace            1s  [exponent obstruction (exact); paper: The known points (exact point)]
+PASS  pillow1_mellin_forms         13s  [pillow Mellin forms (exact); paper: The known points (exact point)]
+PASS  pillow1_invariants           28s  [shift-ratio invariant (exact); paper: The known points (exact point)]
+PASS  pillow1_doublet               2s  [doublet tensor product shift pattern (exact); paper: The known points (exact point)]
+PASS  pillow1_expgauge              1s  [Newton polygon and exponential gauges (exact); paper: The known points (exact point)]
+PASS  nz_loss1_identity             4s  [symbolic identity + lattice scan (operator loss-1 layer = Ward loss-1, vanishing on the drop locus); paper: Spins that are multiples of n]
+PASS  nz_op_vanish_k1o2            11s  [operator WKB coefficient, exact (all layers); paper: Spins that are multiples of n]
+PASS  nz_op_vanish_k7              23s  [operator WKB coefficient, exact (all layers); paper: Spins that are multiples of n]
+PASS  nz_op_vanish_k3o2            32s  [operator WKB coefficient, exact (all layers); paper: Spins that are multiples of n]
+PASS  nz_op_vanish_k9              63s  [operator WKB coefficient, exact (all layers); paper: Spins that are multiples of n]
+PASS  nz_op_vanish_k5o2            86s  [operator WKB coefficient, exact (all layers); paper: Spins that are multiples of n]
+PASS  nz_op_vanish_k1o3            84s  [operator WKB coefficient, exact (all layers); paper: Spins that are multiples of n]
+PASS  nz_op_vanish_km1o2            3s  [operator WKB coefficient, exact (all layers); paper: Spins that are multiples of n]
+PASS  nz_op_stripped_k1o2          11s  [control: the operator without its Gamma ratio does not vanish at the boundary drop point; paper: Spins that are multiples of n]
+PASS  nz_limit_point_k1_s5_h8       1s  [operator charge at k0 + 10^-h (exact rationals); paper: Spins that are multiples of n]
+PASS  nz_limit_point_k1_s5_h16      1s  [operator charge at k0 + 10^-h (exact rationals); paper: Spins that are multiples of n]
+PASS  nz_limit_point_k3_s7_h8       4s  [operator charge at k0 + 10^-h (exact rationals); paper: Spins that are multiples of n]
+PASS  nz_limit_point_k3_s7_h16      5s  [operator charge at k0 + 10^-h (exact rationals); paper: Spins that are multiples of n]
+PASS  nz_limit_point_k5_s9_h8      15s  [operator charge at k0 + 10^-h (exact rationals); paper: Spins that are multiples of n]
+PASS  nz_limit_point_k5_s9_h16     18s  [operator charge at k0 + 10^-h (exact rationals); paper: Spins that are multiples of n]
+PASS  nz_limit_point_k1o2_s9_h8     14s  [operator charge at k0 + 10^-h (exact rationals); paper: Spins that are multiples of n]
+PASS  nz_limit_point_k1o2_s9_h16     18s  [operator charge at k0 + 10^-h (exact rationals); paper: Spins that are multiples of n]
+PASS  nz_limits_sol3                0s  [directional limits vs certified tables (Sol 3 at t = 5/3, 11/5, 17/7, 7/5); paper: Spins that are multiples of n]
+PASS  nz_ode_vanish                17s  [three-term ODE WKB coefficient at the nZ cells (cB = cG = 0); paper: Spins that are multiples of n]
+PASS  nz_limits_sol2_ode           66s  [directional limits of the ODE families vs certified tables (incl. Sol 2 at t = 5/3); paper: Spins that are multiples of n]
+PASS  nz_kernel_t5o3_K3             0s  [ker ad I_3 mod d at weight 2K (exact) and its vacuum eigenvalues; paper: Spins that are multiples of n]
+PASS  nz_kernel_t7o5_K5             6s  [ker ad I_3 mod d at weight 2K (exact) and its vacuum eigenvalues; paper: Spins that are multiples of n]
+PASS  nz_kernel_t11o5_K4            1s  [ker ad I_3 mod d at weight 2K (exact) and its vacuum eigenvalues; paper: Spins that are multiples of n]
+PASS  nz_kernel_t17o7_K5            6s  [ker ad I_3 mod d at weight 2K (exact) and its vacuum eigenvalues; paper: Spins that are multiples of n]
+PASS  nz_kernel_t13o7_K6           65s  [ker ad I_3 mod d at weight 2K (exact) and its vacuum eigenvalues; paper: Spins that are multiples of n]
+PASS  nz_kernel_t23o9_K6           62s  [ker ad I_3 mod d at weight 2K (exact) and its vacuum eigenvalues; paper: Spins that are multiples of n]
+PASS  nz_pw_law_i123                0s  [eigenvalue law E_i at i = 1, 2 (read off) and 3 (sealed hold-out), from the kernel JSONs; paper: Spins that are multiples of n]
+PASS  nz_kernel_gate_K6_K7          1s  [certified Sol-3 spin-11/13 table charges lie in the computed kernels; paper: Spins that are multiples of n]
+PASS  nz_fusion_fit_q4_q6           0s  [fusion law vs the certified-recipe eigenvalues at q = 4, 6 (i = 1, 2); paper: Spins that are multiples of n]
+PASS  nz_fusion_q10                 7s  [fusion law vs the extra invariant of the weight-18 kernel record (i = 4); paper: Spins that are multiples of n]
+PASS  nz_fusion_q12                15s  [fusion law vs the extra invariant of the weight-22 kernel record (i = 5); paper: Spins that are multiples of n]
+PASS  nz_fusion_q14                76s  [fusion law vs the extra invariant of the weight-26 kernel record (i = 6); paper: Spins that are multiples of n]
+PASS  nz_wuw1                      16s  [density-level identification at i = 1 (sealed tests; archived exit 1: one vacuous control); paper: Spins that are multiples of n]
+PASS  nz_wuw1_uniqueness           19s  [uniqueness of W_U W_W among weight-3 bilinears in K_6 + d (post hoc); paper: Spins that are multiples of n]
+PASS  nz_wuw1_vacuity               2s  [why the eigenvalue test is automatic at weight 3 (post hoc); paper: Spins that are multiples of n]
+PASS  nz_wuw2                      17s  [density-level identification at i = 2 (sealed tests); paper: Spins that are multiples of n]
+PASS  nz_wuw2_k10_full             50s  [full K_10 = ker ad I_3 at weight 10 mod d; paper: Spins that are multiples of n]
+PASS  br2_direct_paperclip          1s  [residue identity on a printed density (exact); paper: Boundary interaction]
+PASS  num3_fitext_2_A_60            2s  [fit of archived high-precision Q data vs WKB (sealed bases; POST-HOC extended grid E <= 1e9); paper: Numerical spectral check (third-order operator)]
+PASS  num3_fitext_2_B_60            2s  [fit of archived high-precision Q data vs WKB (sealed bases; POST-HOC extended grid E <= 1e9); paper: Numerical spectral check (third-order operator)]
+PASS  num3_fitext_t10o3_A_60        2s  [fit of archived high-precision Q data vs WKB (sealed bases; POST-HOC extended grid E <= 1e9); paper: Numerical spectral check (third-order operator)]
+PASS  num3_fitext_t10o3_B_60        2s  [fit of archived high-precision Q data vs WKB (sealed bases; POST-HOC extended grid E <= 1e9); paper: Numerical spectral check (third-order operator)]
+PASS  num3_fit_2_A_60               2s  [fit of archived high-precision Q data vs WKB (sealed bases; sealed grid 1e3..1e7); paper: Numerical spectral check (third-order operator)]
+PASS  num3_fit_2_B_60               2s  [fit of archived high-precision Q data vs WKB (sealed bases; sealed grid 1e3..1e7); paper: Numerical spectral check (third-order operator)]
+PASS  num3_fit_t10o3_A_60           2s  [fit of archived high-precision Q data vs WKB (sealed bases; sealed grid 1e3..1e7); paper: Numerical spectral check (third-order operator)]
+PASS  num3_fit_t10o3_B_60           2s  [fit of archived high-precision Q data vs WKB (sealed bases; sealed grid 1e3..1e7); paper: Numerical spectral check (third-order operator)]
+PASS  num3_fit_2_A_120              3s  [fit of archived high-precision Q data vs WKB (sealed bases; sealed grid 1e3..1e7); paper: Numerical spectral check (third-order operator)]
+PASS  num3_wrong_ordering           2s  [negative control: the ordering x^c T must fail (reproduces its archived failing output, extended grid); paper: Numerical spectral check (third-order operator)]
+PASS  num3_wrong_ordering_sealed      2s  [negative control on the sealed grid (archived failing output); paper: Numerical spectral check (third-order operator)]
+PASS  num3_controls               135s  [numerical controls X0 (NUM1 exact M = 1; archived NUM2 fourth-order point to 5e-59), X1 (exact E = 0 Meijer G, 3rd order, 54.5-56 digits), X1' (7th order); paper: Numerical spectral check (third-order operator)]
+PASS  num3_t1_verify               17s  [verifier of the archived t1_3.json (Q3_j/Q7_j/C_j - 1 recomputed from the archived Q values, C_j exact E = 0) + one T1 energy recomputed from both ODEs; paper: Numerical spectral check (third-order operator) (spectral Theorem 1 test, Sol 2)]
+PASS  num3_spot_point              11s  [spot check: one archived ODE point (t = 2, point A, E = 1e3, dps 60) recomputed from the third-order equation; paper: Numerical spectral check (third-order operator)]
+PASS  num3_assemble                 0s  [data provenance: each fitted data_<tag>.json equals the assembly of its 36 archived per-energy point files; paper: Numerical spectral check (third-order operator)]
+PASS  num3_diag_window_2_A_60       0s  [POST-HOC diagnostic: sealed-basis fit improves by 8-10 digits when E < 1e4 is dropped (the reason for the grid extension); paper: Numerical spectral check (third-order operator)]
+PASS  num3_diag_window_t10o3_A_60      0s  [POST-HOC diagnostic: sealed-basis fit improves by 8-10 digits when E < 1e4 is dropped (the reason for the grid extension); paper: Numerical spectral check (third-order operator)]
+PASS  num3_diag_k8                  3s  [POST-HOC: t = 2 fits without the log terms (as good) and the E^-3 collision cell vs lim C_8; paper: Numerical spectral check (third-order operator)]
+PASS  exc4_data_level2_t2P12Q13      6s  [data side: the 6x6 level-two singlet I_3 block (record tool lab/excited_states.py) recomputed; JSON byte-identical; paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_gb_t2P12Q13             29s  [pure-Python verification of the archived msolve Groebner basis and Singular fglm eliminants (no solver re-run); paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_regen_t2P12Q13          30s  [the four-point polynomial system given to the solvers is regenerated by h_four_q.py (pure Python, before its Singular call); byte-identical; paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_data_level2_t94P12Q13      6s  [data side: the 6x6 level-two singlet I_3 block (record tool lab/excited_states.py) recomputed; JSON byte-identical; paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_gb_t94P12Q13            51s  [pure-Python verification of the archived msolve Groebner basis and Singular fglm eliminants (no solver re-run); paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_regen_t94P12Q13         31s  [the four-point polynomial system given to the solvers is regenerated by h_four_q.py (pure Python, before its Singular call); byte-identical; paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_data_level2_t2P13Q15      7s  [data side: the 6x6 level-two singlet I_3 block (record tool lab/excited_states.py) recomputed; JSON byte-identical; paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_gb_t2P13Q15             39s  [pure-Python verification of the archived msolve Groebner basis and Singular fglm eliminants (no solver re-run); paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_regen_t2P13Q15          31s  [the four-point polynomial system given to the solvers is regenerated by h_four_q.py (pure Python, before its Singular call); byte-identical; paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_data_level2_t94P25Q14      6s  [data side: the 6x6 level-two singlet I_3 block (record tool lab/excited_states.py) recomputed; JSON byte-identical; paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_gb_t94P25Q14            54s  [pure-Python verification of the archived msolve Groebner basis and Singular fglm eliminants (no solver re-run); paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_regen_t94P25Q14         32s  [the four-point polynomial system given to the solvers is regenerated by h_four_q.py (pure Python, before its Singular call); byte-identical; paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_holdout_compare          0s  [registered prediction (blind) vs data: the three hold-out quintics; paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_lead_blind               0s  [lead's blind comparison of the registered prediction with its own level-two blocks (computed first); paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_posthoc_t2               0s  [post hoc: the archived fglm I_3 eliminant at t = 2, (1/2,1/3) equals the quintic factor of the level-two block; paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_pair_regression          0s  [control: the same code with ONE sigma pair gives the EXC2 level-one data quadratic (archived Singular eliminant vs data); paper: Excited states (Solution 3, level two; half-level rule)]
+PASS  exc4_six_onepoint             2s  [pure-Python verification of the sixth-order one-point solution (archived Singular basis): r41 = -b, Delta I_1 = 1 = half a level; paper: Excited states (half-level rule, order 6)]
+PASS  exc4_regen_six                5s  [the sixth-order one-point system is regenerated by f_six_sol3.py (before its Singular call); byte-identical; paper: Excited states (half-level rule, order 6)]
+PASS  exc4_regen_six_charges        1s  [the I_1 / I_3 relations of the one-point solutions are regenerated by f_six_charges.py (Gamma-form engine; before its Singular call); paper: Excited states (half-level rule, order 6)]
+PASS  b2_n2frame_v1                 0s  [N = 2 superconformal OPEs of the two-superfield frame, symbolic in s = p^2 (exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_n2frame_vertices           0s  [commutation of T, G, g', J with the five screening vertices at six values of s (exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_level1                     1s  [Level I: Gram matrix of the J-neutral screenings = Solution 1's, symbolic in s (exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_classical_Z                7s  [V2: classical limit of tower Z fits the N = 2 KdV flow with a = 4 (exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_classical_K                9s  [V2: classical limit of tower K fits the N = 2 KdV flow with a = -2 (exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_Z_t2_w2_8           0s  [tower Z commutant mod d at w2 = 2,3,4,5,6,7,8 (t = 2, s = 2/3; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_Z_t2_w10_12         5s  [tower Z commutant mod d at w2 = 10,12 (t = 2, s = 2/3; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_K_t2_w2_8           1s  [tower K commutant mod d at w2 = 2,3,4,5,6,7,8 (t = 2, s = 2/3; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_K_t2_w10_12        14s  [tower K commutant mod d at w2 = 10,12 (t = 2, s = 2/3; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_Z_t7o2_w2_8         0s  [tower Z commutant mod d at w2 = 2,3,4,5,6,7,8 (t = 7/2, s = 10/9; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_Z_t7o2_w10_12       5s  [tower Z commutant mod d at w2 = 10,12 (t = 7/2, s = 10/9; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_K_t7o2_w2_8         0s  [tower K commutant mod d at w2 = 2,3,4,5,6,7,8 (t = 7/2, s = 10/9; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_K_t7o2_w10_12      14s  [tower K commutant mod d at w2 = 10,12 (t = 7/2, s = 10/9; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_Z_t11o3_w2_8        0s  [tower Z commutant mod d at w2 = 2,3,4,5,6,7,8 (t = 11/3, s = 8/7; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_Z_t11o3_w10_12      5s  [tower Z commutant mod d at w2 = 10,12 (t = 11/3, s = 8/7; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_K_t11o3_w2_8        1s  [tower K commutant mod d at w2 = 2,3,4,5,6,7,8 (t = 11/3, s = 8/7; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_K_t11o3_w10_12     14s  [tower K commutant mod d at w2 = 10,12 (t = 11/3, s = 8/7; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_Z_t13o5_w2_8        0s  [tower Z commutant mod d at w2 = 2,3,4,5,6,7,8 (t = 13/5, s = 8/9; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_Z_t13o5_w10_12      5s  [tower Z commutant mod d at w2 = 10,12 (t = 13/5, s = 8/9; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_K_t13o5_w2_8        1s  [tower K commutant mod d at w2 = 2,3,4,5,6,7,8 (t = 13/5, s = 8/9; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_towers_K_t13o5_w10_12     16s  [tower K commutant mod d at w2 = 10,12 (t = 13/5, s = 8/9; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_sol1_t2                    7s  [certified Solution 1 I_3, I_5 in the coset frame (t = 2; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_sol1_t7o2                  8s  [certified Solution 1 I_3, I_5 in the coset frame (t = 7/2; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_sol1_t11o3                 8s  [certified Solution 1 I_3, I_5 in the coset frame (t = 11/3; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_sol1_t13o5                 7s  [certified Solution 1 I_3, I_5 in the coset frame (t = 13/5; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_level2_Z_t2               17s  [Level II: U(1)-vacuum projection of tower Z charges vs Solution 1's commutant (t = 2; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_level2_Z_t7o2             20s  [Level II: U(1)-vacuum projection of tower Z charges vs Solution 1's commutant (t = 7/2; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_level2_Z_t11o3            16s  [Level II: U(1)-vacuum projection of tower Z charges vs Solution 1's commutant (t = 11/3; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_level2_Z_t13o5            17s  [Level II: U(1)-vacuum projection of tower Z charges vs Solution 1's commutant (t = 13/5; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2) (hold-out fibre)]
+PASS  b2_level2_K_t2               36s  [Level II: U(1)-vacuum projection of tower K charges vs Solution 1's commutant (t = 2; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_level2_K_t7o2             39s  [Level II: U(1)-vacuum projection of tower K charges vs Solution 1's commutant (t = 7/2; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_level2_K_t11o3            41s  [Level II: U(1)-vacuum projection of tower K charges vs Solution 1's commutant (t = 11/3; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_level2_K_t13o5            39s  [Level II: U(1)-vacuum projection of tower K charges vs Solution 1's commutant (t = 13/5; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2) (hold-out fibre)]
+PASS  b2_level2_w8_agreement_z      0s  [the w8 real-projection row of level2 (tower Z, t = 2) reads False and agrees with the same log's w2 = 8 membership; paper: Screening systems (Solution 1: U(1) coset of N = 2) (v1.2.7 relabel)]
+PASS  b2_level2_w8_agreement_k      0s  [the w8 real-projection row of level2 (tower K, t = 2) reads False and agrees with the same log's w2 = 8 membership; paper: Screening systems (Solution 1: U(1) coset of N = 2) (v1.2.7 relabel)]
+PASS  b2_validate2_t2               6s  [end-to-end validation of the projection machinery (t = 2; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_validate2_t7o2             6s  [end-to-end validation of the projection machinery (t = 7/2; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_validate2_t11o3            6s  [end-to-end validation of the projection machinery (t = 11/3; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2_validate2_t13o5            6s  [end-to-end validation of the projection machinery (t = 13/5; exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2b_Z_t2                     13s  [B2b: [oint L_s, oint I_r] mod d, tower Z, t = 2 (exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2b_Z_t7o2                   12s  [B2b: [oint L_s, oint I_r] mod d, tower Z, t = 7/2 (exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2b_Z_t13o5                  13s  [B2b: [oint L_s, oint I_r] mod d, tower Z, t = 13/5 (exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2b_K_t2                     14s  [B2b: [oint L_s, oint I_r] mod d, tower K, t = 2 (exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2b_K_t7o2                   12s  [B2b: [oint L_s, oint I_r] mod d, tower K, t = 7/2 (exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  b2b_K_t13o5                  12s  [B2b: [oint L_s, oint I_r] mod d, tower K, t = 13/5 (exact); paper: Screening systems (Solution 1: U(1) coset of N = 2)]
+PASS  spec1_scope                   0s  [exact (rational arithmetic); paper: Spectral equivalence (Theorem thm:spectral, App. A); scope]
+PASS  spec1_scope_sol1_a3           0s  [exact (rational arithmetic); paper: Spectral equivalence (Theorem thm:spectral, App. A); scope]
+PASS  spec1_kernel                  7s  [symbolic identities (general a) + quadrature; paper: Spectral equivalence (Theorem thm:spectral, App. A)]
+PASS  spec1_constant                2s  [symbolic (beta, saddle) + numerical E = 0 test of the closed-form omega (dps 60, 120); paper: Spectral equivalence (Theorem thm:spectral, App. A)]
+PASS  spec1_e0_gauss                1s  [symbolic proof (Gauss multiplication) + numerical ties; paper: Spectral equivalence (Theorem thm:spectral, App. A); E = 0 identity]
+PASS  spec1_saddle                  1s  [symbolic (exponents, saddle) + numerical (descent constant, Laplace rate); paper: Spectral equivalence (Theorem thm:spectral, App. A) (App. A, Prop. A.2)]
+PASS  spec1_ddt                     1s  [symbolic (operator identities); paper: Solution 1 (relation to DDT at t = 3); Spectral equivalence (Theorem thm:spectral, App. A)]
+PASS  spec1_s3_control            116s  [numerical control (solver vs the archived t = 2 Q data); paper: Spectral equivalence (Theorem thm:spectral, App. A); numerics]
+PASS  spec1_s3_archive              0s  [verifier of the archived S3 outputs (no ODE solved); paper: Spectral equivalence (Theorem thm:spectral, App. A); numerics (five points)]
+PASS  spec1_s3_spot               213s  [recomputation from the operators at two (E, momentum) pairs per point; paper: Spectral equivalence (Theorem thm:spectral, App. A); numerics (five points)]
+ALL PASS  (215 checks, 5035s)
+--- opers drills: every changed/new check of v1.2.7, opers env ---
+kit integrity: OK (SHA256SUMS, INPUTS.SHA256, logs/SHA256SUMS)
+PASS  drill kit_integrity_manifest        0s  tamper detected: exit 1 (expected 0)
+PASS  drill b2_level2_w8_agreement_z      0s  tamper detected: exit 1 (expected 0)
+PASS  drill b2_level2_w8_agreement_k      0s  tamper detected: exit 1 (expected 0)
+ALL PASS  (3 drills, 1s)
+CLEAN-VENV GATE: ALL PASS (2026-10-27T00:22:25-04:00)

@@ -1,0 +1,8 @@
+kit integrity: OK (SHA256SUMS, INPUTS.SHA256, logs/SHA256SUMS)
+PASS  drill exc4_regen_t2P12Q13          41s  tamper detected: exit 1 (expected 0)
+PASS  drill exc4_regen_t94P12Q13         39s  tamper detected: exit 1 (expected 0)
+PASS  drill exc4_regen_t2P13Q15          43s  tamper detected: exit 1 (expected 0)
+PASS  drill exc4_regen_t94P25Q14         44s  tamper detected: exit 1 (expected 0)
+PASS  drill exc4_regen_six                7s  tamper detected: exit 1 (expected 0)
+PASS  drill exc4_regen_six_charges        1s  tamper detected: exit 1 (expected 0)
+ALL PASS  (6 drills, 176s)
