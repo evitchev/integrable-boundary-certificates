@@ -3,7 +3,8 @@ that the polynomial system it writes is byte-identical to the archived solver in
 Usage: regen.py <expected output file> <script.py> <script args...>
 The archived script is NOT edited: its source is read, cut at the first line beginning 'res = subprocess.run' (the Singular call), and executed
 with sys.argv set.  One runtime path redirection is applied to the in-memory source and printed: h_four_q.py reads EXC2's g_charges_t*.json
-from the seat's workspace (absolute path); the archived copies in ../exc2/ are used instead (hashes printed)."""
+from the seat's workspace (absolute path); the archived copies in ../exc2/ are used instead (hashes printed).
+v1.2.7: before the script runs, Python's and sympy's random generators are seeded with 0 (see the comment above the exec)."""
 import hashlib, os, re, sys
 exp, script = sys.argv[1], sys.argv[2]
 arch = open(exp, 'rb').read()
@@ -17,6 +18,12 @@ if re.search(PAT, src):
         if f.startswith('g_charges_t') and f.endswith('.json'):
             print('   ../exc2/%s sha256 %s' % (f, hashlib.sha256(open('../exc2/' + f, 'rb').read()).hexdigest()))
 sys.argv = [script] + sys.argv[3:]; sys.path.insert(0, os.getcwd())
+# v1.2.7: sympy's multivariate factorisation (factor_list, which the archived scripts call) draws random evaluation points from
+# sympy.core.random, seeded from the operating system at import. Some draws stall it for hours: on f_six_sol3.py, 5 of 40 seeds ran
+# past 120 s and the other 35 took about 5 s, with byte-identical output. Seed 0 is fast for all six regen targets under sympy 1.13.3
+# and 1.14.0, and the written file does not depend on the draw.
+import random; random.seed(0)
+import sympy.core.random as _sympy_random; _sympy_random.seed(0)
 g = {'__name__': '__main__', '__file__': os.path.abspath(script)}
 exec(compile(src, script, 'exec'), g)
 new = open(exp, 'rb').read()

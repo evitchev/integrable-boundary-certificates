@@ -292,6 +292,10 @@ archived level2 runs (the real-dictionary projection at w2 = 8, printed for cons
 all eight runs, agreeing with that test's w2 = 8 non-membership) is covered by the new check `b2_level2_w8_agreement`; the archived
 output keeps its label. `vir1r.py`'s `import numpy` was moved above the archived-log
 open (recorded in `PATCHES.json`), so a missing numpy no longer empties `run_VIR1R*.log` before failing.
+`kit_exc4/regen.py` now seeds Python's and sympy's random generators with 0 before it re-runs an archived EXC4 script. sympy's
+multivariate factorisation draws random evaluation points, and some draws stall it: `exc4_regen_six` timed out at 3600 s in a v1.2.7
+test run and in one v1.2.6 drill run, and one py3.8 run of a four-point check stalled for over 12 minutes (the `exc4_regen_t*` notes).
+On `f_six_sol3.py`, 5 of 40 seeds ran past 120 s and the other 35 took about 5 s; every run that finished wrote a byte-identical file.
 
 ## AI assistance
 
