@@ -1,0 +1,395 @@
+{
+ "certificate": "cyl_stratification_w1014",
+ "claims_sha256sums": "265a6cbef0e63aa6d626d17e65c717e4cad3722fb8ec23fd1348156b6434a43b",
+ "expectations": [
+  "results/cyl_discriminant_preregistration.md (H_F1-H_F3)",
+  "results/cyl_discriminant_w14_preregistration.md (H_W14)"
+ ],
+ "parametrization": "N = (t^2-25)/(t^2-1), s = -24t/(t^2-1), beta^2 = (t-1)/(t+1); t = +-1 excluded",
+ "weights": {
+  "10": {
+   "sheet1": {
+    "G_degree": 2,
+    "G_factors": [
+     [
+      "t - 9",
+      2
+     ]
+    ],
+    "P1_degree": 93,
+    "P1o_degree": 23,
+    "P1o_sha256": "40f40792da9c5a0355cab6b322636a22a2616312adb4e6e2fe323c83d73fbe3a",
+    "P2_degree": 123,
+    "P2o_degree": 73,
+    "P2o_sha256": "8f04fe0d00a940716ac58a71edbed5ae43e7802f54130386b6b998e0d7b6aba3",
+    "decisions": {
+     "no drop": 1
+    },
+    "jump_set": [],
+    "m": 185,
+    "matrix_sha256": "86791da0754b204a9dac8fc950d70ebaff1d44a7dcf33be9c37e68175c9149ec",
+    "n": 68,
+    "r": 67,
+    "scalar": "M_poly = (t^2-1)^1 * 630 * M"
+   },
+   "sheet2": {
+    "G_degree": 23,
+    "G_factors": [
+     [
+      "4*t - 7",
+      1
+     ],
+     [
+      "5*t - 11",
+      1
+     ],
+     [
+      "11*t - 17",
+      1
+     ],
+     [
+      "17*t - 23",
+      1
+     ],
+     [
+      "t - 3",
+      19
+     ]
+    ],
+    "P1_degree": 145,
+    "P1o_degree": 74,
+    "P1o_sha256": "ae43e523f952c749087758e02f68facf07f395a60a39681a5d5a1a387c446841",
+    "P2_degree": 162,
+    "P2o_degree": 112,
+    "P2o_sha256": "d47bd9e5fc69ab534ef751dabbbb7b72fbd9e5e5e79f48b9c0c4b96a07a42e97",
+    "decisions": {
+     "drop": 1,
+     "no drop": 4
+    },
+    "jump_set": [
+     {
+      "beta2": "1/2",
+      "nullity": 2,
+      "t": "3"
+     }
+    ],
+    "m": 185,
+    "matrix_sha256": "90b68ffa717b0f498c658fb55a4d487aa038819ce2c82979483c1d0d5b09b9d6",
+    "n": 68,
+    "r": 67,
+    "scalar": "M_poly = (t^2-1)^2 * 5040 * M"
+   },
+   "sheet3": {
+    "G_degree": 16,
+    "G_factors": [
+     [
+      "5*t - 7",
+      1
+     ],
+     [
+      "7*t - 17",
+      1
+     ],
+     [
+      "13*t - 11",
+      1
+     ],
+     [
+      "17*t - 31",
+      1
+     ],
+     [
+      "t - 3",
+      12
+     ]
+    ],
+    "P1_degree": 114,
+    "P1o_degree": 50,
+    "P1o_sha256": "31a8555094582d5c7305e5839799eb79a2939c5b7e0dad90e7d9fee262230805",
+    "P2_degree": 153,
+    "P2o_degree": 111,
+    "P2o_sha256": "d1da835a198724662328ec1e89a02aa010f0d73d6749988a68880189e7e88cda",
+    "decisions": {
+     "drop": 2,
+     "no drop": 3
+    },
+    "jump_set": [
+     {
+      "beta2": "1/6",
+      "nullity": 2,
+      "t": "7/5"
+     },
+     {
+      "beta2": "1/2",
+      "nullity": 2,
+      "t": "3"
+     }
+    ],
+    "m": 185,
+    "matrix_sha256": "4f7bbba93047e3bb1175c3471c5fdeac0165419df4d932c1105e8424b08b7bd8",
+    "n": 68,
+    "r": 67,
+    "scalar": "M_poly = (t^2-1)^2 * 630 * M"
+   }
+  },
+  "12": {
+   "sheet1": {
+    "G_degree": 3,
+    "G_factors": [
+     [
+      "7*t - 23",
+      1
+     ],
+     [
+      "t - 9",
+      2
+     ]
+    ],
+    "P1_degree": 261,
+    "P1o_degree": 52,
+    "P1o_sha256": "83bc7fb9281b15c7488b2050c5fd429cfb851dc7003b669f0c4bb3ec27201f05",
+    "P2_degree": 298,
+    "P2o_degree": 162,
+    "P2o_sha256": "3fb9393944e41dbd92d140327a4ed2a3742e9bb8fd7766259ca938307a11316c",
+    "decisions": {
+     "no drop": 2
+    },
+    "jump_set": [],
+    "m": 461,
+    "matrix_sha256": "d0a897d9ac6d746ae77d1b7669805fa97906acc3a482e8cce186c521775d928a",
+    "n": 160,
+    "r": 159,
+    "scalar": "M_poly = (t^2-1)^1 * 415800 * M"
+   },
+   "sheet2": {
+    "G_degree": 34,
+    "G_factors": [
+     [
+      "3*t - 7",
+      1
+     ],
+     [
+      "5*t - 11",
+      1
+     ],
+     [
+      "13*t - 23",
+      1
+     ],
+     [
+      "7*t - 9",
+      3
+     ],
+     [
+      "t - 3",
+      28
+     ]
+    ],
+    "P1_degree": 383,
+    "P1o_degree": 186,
+    "P1o_sha256": "d6b180b17309f9380adaf9448e7e9da0024411fcf68d7dacea358c3dea7c0bd7",
+    "P2_degree": 402,
+    "P2o_degree": 257,
+    "P2o_sha256": "837ed4d964f6602d68d150c34434a574d7c677f36e991a6c72c79bccc5358c7f",
+    "decisions": {
+     "drop": 2,
+     "no drop": 3
+    },
+    "jump_set": [
+     {
+      "beta2": "1/8",
+      "nullity": 2,
+      "t": "9/7"
+     },
+     {
+      "beta2": "1/2",
+      "nullity": 2,
+      "t": "3"
+     }
+    ],
+    "m": 461,
+    "matrix_sha256": "1e333f94753809bc1a9158c522a1cce6a37968ab9e07a921f49bbc70f58fc9b1",
+    "n": 160,
+    "r": 159,
+    "scalar": "M_poly = (t^2-1)^2 * 1663200 * M"
+   },
+   "sheet3": {
+    "G_degree": 25,
+    "G_factors": [
+     [
+      "3*t + 7",
+      1
+     ],
+     [
+      "19*t - 29",
+      1
+     ],
+     [
+      "23*t - 49",
+      1
+     ],
+     [
+      "5*t - 3",
+      2
+     ],
+     [
+      "t - 3",
+      20
+     ]
+    ],
+    "P1_degree": 325,
+    "P1o_degree": 117,
+    "P1o_sha256": "5b94051c960d4b4e8822d16544aa9a65c1bdf49b7be4c3575147df54ae19dc98",
+    "P2_degree": 395,
+    "P2o_degree": 253,
+    "P2o_sha256": "4b2a608c42454381d91f743339b7ce74684b39175dc023b840ebdd16e586d7f4",
+    "decisions": {
+     "drop": 1,
+     "no drop": 4
+    },
+    "jump_set": [
+     {
+      "beta2": "1/2",
+      "nullity": 2,
+      "t": "3"
+     }
+    ],
+    "m": 461,
+    "matrix_sha256": "9c8e57d80a7c6036f7e843eaaa665d73f4022bf26e039660a1b4e333f8efcef9",
+    "n": 160,
+    "r": 159,
+    "scalar": "M_poly = (t^2-1)^2 * 415800 * M"
+   }
+  },
+  "14": {
+   "sheet1": {
+    "G_degree": 0,
+    "G_factors": [],
+    "P1_degree": 623,
+    "P1o_degree": 94,
+    "P1o_sha256": "b24d08faba78661df315e31c6b7ab6ef632a2ad257d42027dca164cf81b5bb5f",
+    "P2_degree": 701,
+    "P2o_degree": 391,
+    "P2o_sha256": "1d387de330b850b862cafe52f73c7ba07567b6647f21f8a615cb7f4e4a8d901b",
+    "decisions": {},
+    "jump_set": [],
+    "m": 1082,
+    "matrix_sha256": "7b2e8ae47226156965dbc27af722df21da7e8061067b3a87f1190e6a0a019811",
+    "n": 365,
+    "r": 364,
+    "scalar": "M_poly = (t^2-1)^1 * 10810800 * M"
+   },
+   "sheet2": {
+    "G_degree": 59,
+    "G_factors": [
+     [
+      "7*t - 17",
+      1
+     ],
+     [
+      "9*t - 7",
+      1
+     ],
+     [
+      "15*t - 29",
+      1
+     ],
+     [
+      "17*t - 19",
+      1
+     ],
+     [
+      "25*t - 31",
+      1
+     ],
+     [
+      "2*t - 3",
+      2
+     ],
+     [
+      "t - 3",
+      52
+     ]
+    ],
+    "P1_degree": 892,
+    "P1o_degree": 394,
+    "P1o_sha256": "4d97736539b33875026838cf72ae7b2e4c87373d63c61bccb6f44f856b964b89",
+    "P2_degree": 955,
+    "P2o_degree": 687,
+    "P2o_sha256": "682f428569c18487e63d916f65820e089e9ee4b95745d153b665255001171f61",
+    "decisions": {
+     "drop": 1,
+     "no drop": 6
+    },
+    "jump_set": [
+     {
+      "beta2": "1/2",
+      "nullity": 2,
+      "t": "3"
+     }
+    ],
+    "m": 1082,
+    "matrix_sha256": "1cac02ab7a3d0c5c8c67ec1089c2d401c29ebccb128b46277cfb5395dcbae2d8",
+    "n": 365,
+    "r": 364,
+    "scalar": "M_poly = (t^2-1)^2 * 43243200 * M"
+   },
+   "sheet3": {
+    "G_degree": 37,
+    "G_factors": [
+     [
+      "5*t + 1",
+      1
+     ],
+     [
+      "11*t - 29",
+      1
+     ],
+     [
+      "17*t - 7",
+      1
+     ],
+     [
+      "29*t - 67",
+      1
+     ],
+     [
+      "7*t - 9",
+      3
+     ],
+     [
+      "t - 3",
+      30
+     ]
+    ],
+    "P1_degree": 773,
+    "P1o_degree": 254,
+    "P1o_sha256": "d5f3cf783e7da6fe0ed94038807a9588a06a9eb21e41193111a224691991b2c5",
+    "P2_degree": 911,
+    "P2o_degree": 620,
+    "P2o_sha256": "f5994386371782cfb952c49578cf3f399355a301b98ed21be98123dd17f59eac",
+    "decisions": {
+     "drop": 2,
+     "no drop": 4
+    },
+    "jump_set": [
+     {
+      "beta2": "1/8",
+      "nullity": 2,
+      "t": "9/7"
+     },
+     {
+      "beta2": "1/2",
+      "nullity": 2,
+      "t": "3"
+     }
+    ],
+    "m": 1082,
+    "matrix_sha256": "615780bbd8723a6fb25437a19148b15296634dfae6626bd85a9450a61abfe41c",
+    "n": 365,
+    "r": 364,
+    "scalar": "M_poly = (t^2-1)^2 * 10810800 * M"
+   }
+  }
+ }
+}

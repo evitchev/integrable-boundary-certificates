@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "repository": "integrable-boundary-certificates",
-  "generated_on": "2026-10-30T09:18:52Z",
+  "generated_on": "2026-10-30T10:07:58Z",
   "coverage": "every file in the release except this manifest itself",
   "files": {
     ".gitignore": "sha256:3e5ac31406be8126e579aa04f5b5343b4133a32fe5a26a2a893f839ae66d34ac",
@@ -19,7 +19,7 @@
     "code/c1_four_condition_char.py": "sha256:612b78d56a8ce8f5b5f4ff50ab7d19cc3be508715ec3ecf3c638beb069712b2d",
     "code/c1_spin15_l10_exit.py": "sha256:954341ebf31508be087fddcea10a6c8b1553165aecb83bd387beb9c07cd4d0db",
     "code/certificate.py": "sha256:33c5bc6b14f8bde6a3a1b152d221131baf77cb436b2d1139caff7bfb5f5a8544",
-    "code/certifications.json": "sha256:036a4c4c0d3dde467483eb1958a89e0bc1a04ca39d6cf6553f54c9b7ecfed5c5",
+    "code/certifications.json": "sha256:4c317f2d90a667b2cbd8b08d2a0d2afe2b9f280803f107b30b1f010026721b51",
     "code/check_spin13_run_record_public.py": "sha256:5cbb8d0aef995b19c304e7d0634e0477e493bbb325e47ed31cf9a2f93a852f0e",
     "code/cluster_collect.sh": "sha256:82e52bb43f82de7a089c7266cad27b52ba62cc40f7847762a46ae36a9e08e63f",
     "code/cluster_dispatch.sh": "sha256:4ce0cf8f9582deba494ce23a8789a1941fcfb484231c270b2678f7aa31db1e1a",
@@ -3145,6 +3145,8 @@
     "results/cyl_stratification_w1014/claims/S3_sheet3_W12.json": "sha256:0c98630e549e27b9e0761f6fc8a3a84e42f7e8a3e55712d8a2098713106162a5",
     "results/cyl_stratification_w1014/claims/S3_sheet3_W14.json": "sha256:44dfd8c0f6a5cbdb1301d4886e96f256b791e75a0da0cef6e1bb30ad6ba49247",
     "results/cyl_stratification_w1014/claims/SHA256SUMS": "sha256:265a6cbef0e63aa6d626d17e65c717e4cad3722fb8ec23fd1348156b6434a43b",
+    "results/cyl_stratification_w1014.json": "sha256:a7ff065607cd08efac75918410714f8d38e394c1a3a46fa0978cde98d09e31c2",
+    "results/cyl_stratification_w1014_run.json": "sha256:f21bf3d82d42502f417808ee9a494baa3c5ca88429429fe3eb2f37c789e661ed",
     "results/cyl_t2_primary_preregistration.md": "sha256:6c3a868c296f7f3ff01a34333456716a08661c50afac31573dccced37fc3e89d",
     "results/cyl_t2_shadow_preregistration.md": "sha256:ac73a9d8687d12af7e8e73072462f9130520ba37531fc385ee8f891092f34a56",
     "results/cyl_t2_shadow_run.json": "sha256:bd919ec3771070dd3cc0e9f144a0bfd7b7d01e7a3574c59d8ccb0555b358473a",

@@ -1,0 +1,419 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-10-30",
+  "generated_at_utc": "2026-10-30T10:07:08+00:00",
+  "git_commit": "43e40b815d92adceda285fe2b9d2c7e8b783730b",
+  "worktree": {
+    "worktree_dirty": true,
+    "dirty_path_count": 1,
+    "dirty_paths": [
+      "results/cyl_stratification_w1014.json"
+    ],
+    "tracked_dirty": false,
+    "tracked_dirty_paths": [],
+    "untracked_paths": [
+      "results/cyl_stratification_w1014.json"
+    ]
+  },
+  "environment": {
+    "python": "3.12.8",
+    "python_executable": "python3",
+    "sympy": "1.14.0",
+    "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+    "machine": "x86_64"
+  },
+  "invocation": {
+    "full": false,
+    "only": "cyl_stratification_w1014"
+  },
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_expensive": 0,
+    "pins_verified": 0
+  },
+  "status": "passed_fast_checks_and_pins",
+  "claim_coverage": {
+    "(-143/4,-189/4) is a spin-11-only pure multiplicity jump of cylindrical Solution 2; the other lab-reported spin-11 data confirmed": [
+      "cyl_strata_points_s11"
+    ],
+    "First order around the N = 1 anchor of the cylindrical family: with the response columns of the WKB coefficients S_1..S_9 of the paperclip operator at n = -1 pinned here (produced in the lab with an independent Wolfram port of the integrator; the delta-m and u/(1+u)^{1,2,3} columns re-derived by code/wkb.py at spins 1-5 exactly), the base equals alpha_s I_s + beta_s of the paper at spins 3, 5, 7 and is proportional to the certified weight-10 tables at N = 1 at spin 9 (alpha_9 = -1/1440: the paperclip correspondence at spin 9); the pipeline recovers the paperclip's own n-deformation exactly (delta m = 1, delta A = X/2, delta B = Y/2); and for Solutions 3 and 1, with spins 1-9 (55 rational data coordinates from the certified tables and the pinned weight-4 table), the two LVZ terms, the (1+u)-library with growth terms, and the library with the moving-exponent columns at u = -1 and at the origin are INCONSISTENT with the first-order deformation, as is (spins 1-7) a fixed fourth point at u = -3, -9, -1/2, -2.  Negative controls inside (tampered coordinate; delta m = 2 rejected).  Classification: exact linear algebra on pinned exact inputs; the exclusions hold for the listed classes and affine momentum dependence.": [
+      "cyl_first_order"
+    ],
+    "Heun family at m = -1: the no-transcendental conditions of the WKB coefficients reconstructed as complete rational functions of the pole position v from 20 exact positions with 4 hold-outs each, under an ASSERTED degree bound 8 (spin 1: E = 2D(v-1); spin 3: D[(v-1)^2 A + B + (15v-14)(v-1)D/16 - (v^2-2v+4)/16]; spin 5: -3D(v-2)(Dv-D+v)(64A(v-1) + (63v-60)D - 4(v-1))/(256v); spin 7 on the momentum-dependent branch: 15D^2(v-4)(v-2)(3v-4)(Dv-D+v)(Dv-D+3v)/(8192v(v-1))).  Classification: exact finite-sample interpolation evidence, not a proof for all v.  Output pinned: results/lab/heun/heun_rationality.json.": [
+      "cyl_heun_rationality"
+    ],
+    "LAB RESULT, pinned not recomputed (extra_factorization.txt regenerated in full by lab/classical_extra_factorization.py; quantum_extra_out.txt; sec. 29 addenda): at every lattice point (s, j) of Solution 3 the extra classical density is (x^2 - r^2)^(2j+1) times a palindromic cofactor, the pure power at the first occurrence of each ladder rung (t = (k+2)/k, k = W/2); the quantum extra invariants at t = 5/3 (identical on sheets 2 and 3) and 7/5 are quantizations of (x^2 - r^2)^(W/2) with even-level corrections": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_bidiagonal_supports.py, 8 PASS lines; sec. 37(d)): from the bidiagonal theorem (P3f), at every isolated lattice point (j, j') the 2-dim classical kernel contains a RIGHT-supported density r^(2(k-j)) x (degree j) and a LEFT-supported x^(W-2j') x (degree j'), independent (all 445 affine lattice points with W <= 30); Solution 2's c_{1,q} series (t = (q+1)/(q-1), q = 0 mod 4, W = 3q/2) is exactly its j = 1 lattice points ((j, j') = (1, q/2-1); the j = 1 weights are 6, 12, ..., 36), where the right-supported density is r^(W-2)((W-3) x^2 - r^2): the sheet-2 law's top symbol, its slope 3(q-2)/2 = W - 3 and its linearity in P^2 (degree-j cofactor with j = 1) are DERIVED classically, q = 4..20; at q = 4 the left-supported density x^4 (x^2 - 3 r^2) is the X-type member's top symbol; at Solution 3's points (j = j' = (q-2)/2, c = 1) the supported densities r^q(...) and x^q(...) are the two halves of the binomial expansion of (x^2 - r^2)^(q-1), whose sum is the fusion member's pure-power density (q = 6, 8, 10); at all 49 palindromic lattice points (c = 1, j = j') with W <= 30 the symmetric combination of the supports is (x^2 - r^2)^(2j+1) times a palindromic cofactor, constant exactly at the first occurrences W = 4j + 2 (sec. 29's statement derived)": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_bihamiltonian.wls, lab/classical_frobenius_test.py; ansatz note sec. 27): with the free-field metric, a second flat metric of Lie-derivative form quadratic in the fields making the weight-4 flow bihamiltonian exists only on the decoupled line b = 0 and at the paperclip point (6, 1); the principal hierarchies of two-dimensional charge-0 Frobenius manifolds reach the same two loci only -- no second flat metric of the tested class (Lie-derivative form, quadratic in the fields) exists for the families at generic t; other classes are not covered": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_cofactors.py; sec. 37(b)): the cofactors R_10 (e_15 = e_5 R_10, weight 16, t = 5/3) and Q_5 (the weight-16 Y-type member's quintic) are irreducible over Q and over Q(i), Q(sqrt2), Q(i sqrt2), Q(sqrt3), Q(i sqrt3), Q(sqrt6), Q(i sqrt6), Q(sqrt5), Q(i sqrt5) and the biquadratic fields Q(i, sqrt2), Q(i, sqrt3), Q(i sqrt2, i sqrt3), Q(sqrt2, sqrt3), Q(i sqrt2, sqrt5); under the P-shifts i sqrt2 k beta, k = 1/2, 1, 3/2, 2, neither has a common factor with e_5, e_15 or its own unshifted self; R_10's rational zeros on the Kac grid (nu_X = nu_{1,s}, nu_Y^2 = h_{1,s'}) are the eight points (s, s') = (-1,1), (1,-1), (0,2), (1,1), (2,0), (1,3), (2,2), (3,1), all with s' - s in {-2, 0, 2} (on the zero loci of e_5's three factors) though R_10 contains none of those factors; Q_5 has one, (2, 0); at Q = 0, R_10's rational X-roots are nu_X = nu_{1,3}, nu_{1,1}, nu_{1,-1}; R_10's discriminants in X and Y are irreducible over Q while Q_5's factor as -(8Y+7)^4 (8Y+27)^2 (64Y^2+32Y+27)(sextic) and (2X+1)^3 (degree 15): branch loci at the Kac values -2 h_{1,0}, -2 h_{2,2}, -2 nu_{1,2}^2": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_extra_commute.py; sec. 30): the extra invariant E_5 at t = 5/3 commutes with I_5, I_7 and I_9 exactly on both merged sheets (brackets at weights 11, 13, 15 vanish modulo total derivatives; the control bracket with a random weight-8 density has 173 nonzero terms) -- it commutes with the ordinary integrals through weight 10 (the checked range), not only with I_3": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_extra_vev.py; sec. 30 addendum): the vacuum eigenvalues of the extra charges factorize -- at t = 5/3 (weight 6) into (8u+9)[(8u+5)^2 + 128P^2]/(-512), at t = 7/5 (weight 10) into (12u+25)[3(4u+7)^2 + 64P^2][3(4u+3)^2 + 256P^2]/(-27648), u = P^2 - Q^2 (article momenta) -- while the ordinary charges' eigenvalues at the same points do not": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_fusion_product.py; sec. 31): the extra charges' eigenvalues at q = 1/beta^2 = 4 and 6 equal -prod_{m=-(q-2)/2}^{(q-2)/2} Lambda(P + i sqrt2 m beta) with Lambda = P^2 - Q^2 + (q-1)^2/(2q), exactly; the q = 8 eigenvalue is a filed prediction": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_lifting.py; ansatz note sec. 28): at the certified quantum jumps (t = 5/3 w6 on sheets 2 and 3, t = 7/5 w10 on sheet 3) the whole two-dimensional classical space lifts; at the classical-only points (11/5 w8, 2 w8 on sheet 2, 17/7 w10) exactly a line lifts and the obstruction of the other direction first appears at derivative-excess level 3": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_pencil_quadratic_search.py on the seven two-dimensional kernel records -- the eighth, weight 10 on sheet 2 at t = 7/5, is one-dimensional and has no pencil; slope a searched over Q, kappa and mu over algebraic numbers; sec. 37(e)): conjugate-shift quadratic factors (a X + Y + kappa)^2 + mu X, + mu Y, and (X + kappa)^2 + mu Y with mu != 0 occur in the kernel pencils ONLY as the fusion members' conjugate pairs on sheet 3 (q = 4, 6, 8, 10 and the weight-16 recurrence's e_5 factor) and as regroupings of the Y-type members' pure-Y linear factors (q = 4, 8, 12 and weight 16): the non-fusion members at sheet 3's points and the non-Y-type members at sheet 2's points carry no conjugate-shift structure": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_pencil_search.py, results/lab/classical/pencil_search_out.txt; sec. 36(c)): SHEET-2 LAW, exact at q = 4, 8, 12 (t = 5/3, 9/7, 13/11; weights 6, 12, 18 = 3q/2; the weight-6 kernel certified, weights 12 and 18 from the pinned fast-path records): the kernel pencil contains a member with top part Y^(3q/4-1) ((3q/2-3) X - Y) (X = P^2, Y = Q^2, article momenta) whose eigenvalue is prod_{m in M} (c - 2 m^2 beta^2 - Y) times (c - 2 (q/4)^2 beta^2 - Y + (3q/2-3) X), c = (q-1)^2/(2q), beta^2 = 1/q, M = {0, +-1, ..., +-(q/4-1), q/4, ..., q/2-1} -- the Lambda factors of the sheet-3 fusion product evaluated at P = 0 over a truncated orbit, with a single factor carrying P^2; the form was fixed on q = 8, 12 and retrodicts q = 4 exactly; the slope a of a linear factor a X + Y + kappa is searched over Q (rational roots of the top-degree condition), kappa over algebraic numbers": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_rank_drop_locus.py 12): the exceptional locus at weight 12 gives the non-decoupling classical jumping points Solution 3 {13/7, 23/9}, Solution 2 {9/7, 7/3}, Solution 1 none -- containing the certified quantum jumping point 9/7 (w12, sheet 2); the closed form of P3c is checked against all three pinned loci": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_rank_drop_locus.py 14 16 18, fail-closed exhaustive enumeration): the exceptional locus at weights 14, 16, 18 gives the non-decoupling classical jumping points Solution 3 {9/7, 19/9, 29/11}, {5/3, 25/11, 35/13}, {11/9, 21/11, 31/13, 41/15}; Solution 2 {3/2, 17/7}, {5/3, 5/2}, {13/11, 9/5, 23/9}; Solution 1 none -- containing the certified quantum jumping points 9/7 (w14, sheet 3), 5/3 (w16, sheets 2, 3), 11/9 and 13/11 (w18, sheets 3 and 2)": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_rank_drop_locus.py 20 22, fail-closed exhaustive enumeration): non-decoupling classical jumping points Solution 3 {17/11, 27/13, 37/15, 47/17} (w20), {13/11, 23/13, 11/5, 43/17, 53/19} (w22); Solution 2 {4/3, 21/11, 13/5} (w20), {19/13, 2, 29/11} (w22); Solution 1 none -- t = 7/5 is NOT a classical jumping point at weight 20 (the recurrence hypothesis R1u fails classically, consistent with the sheet-3 spin-19 scan), and the two-ladder prediction for spin 21 (sheet 3 at t = 13/11) is a classical jumping point": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_sheet2_reading.py, 16 PASS lines; sec. 37(a)): KAC FORM of the sheet-2 law, exact at q = 4, 8, 12 -- with Lambda_s(Q) := Lambda(P = i sqrt2 nu_{1,s}, Q) = -2 h_{1,s} - Q^2 = (s-1)(2q-1-s)/(2q) - Q^2, the Y-type member's eigenvalue is proportional to prod_{s even, 2 <= s <= 3q/2-2} Lambda_s(Q) x [Lambda_{q/2}(Q) + (3 nu_{1,2}/beta) P^2]; the multiset {nu_{1,s}^2} is sheet 3's orbit {m^2 beta^2 : |m| <= q/2-1} with the points |m| >= q/4 taken once; the eigenvalue is linear in P^2; over Q(i sqrt2 beta) no factor carries a Q-shift; the X-type member at q = 4 vanishes exactly at nu_X = nu_{1,2}, nu_{1,4}; the weight-16 Y-type member is prod_{s=2,4,6} Lambda_s times an irreducible quintic; the filed prediction S2-16 equals the Kac form at q = 16": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_symbolic_N_probe.py; sec. 38(a), RESCOPED 2026-09-07 after Codex round 28): with N symbolic in the vacuum recipe and the kernel densities fixed at their points, the fusion products at q = 4 (weight 6) and q = 6 (weight 10) and the Y-type eigenvalues at q = 4 (weight 6) and q = 8 (weight 12, sheet 2) are IRREDUCIBLE polynomials in (P^2, Q^2, N) of N-degree 3, 5, 3, 6: at generic N there is no factorization, and at the point's N = c_{1,q} the full orbit or Kac factorization appears.  The specializations can be reducible at finitely many other N: for the q = 4 Y-type density the complete reducible-specialization locus is {-25/2, -2070/49} (Res_Y of the two X-coefficients = (2N+25)^2 (49N+2070)/const; at N = -2070/49 a single linear factor 49Y - 183 splits off, not the Kac factorization), for the q = 4 fusion density it is {-25/2} (the review's linear-factor elimination); for the q = 8 Y-type density the resultant is (4N+143)^5 times a degree-10 polynomial in N with no rational root, so the point is its only rational reducible specialization; for the q = 6 fusion density the top-degree condition forces the slope a = -1 and the point N = -24 is the only rational N with a linear factor (a quadratic x cubic splitting at another N is not excluded by a linear-factor search) -- lab/classical_symbolic_N_loci.py, output pinned.  The X-type member at q = 4 factors for every N as P^2 (2P^2 + 1)(N - 3 - 4P^2 + 12Q^2).  The earlier wording 'factoring only at the point's N' was an overstatement": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_tq_relation_test.py; sec. 37(c)): five candidate functional relations between the sheet-3 fusion product T_q(P, Q) and the sheet-2 Kac form e2_q are EXCLUDED exactly at q = 4, 8, 12 -- e2_q is not proportional to the linearization of T_q in P^2 at P = 0 with the outer orbit factors removed, nor at any orbit or half-orbit expansion point i sqrt2 k beta (k = 1/2..q/2: no common factor); T_q'(Q) Lambda_{q/2}(Q) != sigma T_q(0, Q); the mixed factor Lambda_{q/2} + sigma P^2 divides neither dT_q/dP^2 nor any difference or sum T_q(P + i sqrt2 k beta) -+ T_q(P - i sqrt2 k beta), k = 1/2..2; and e2_q is not a(Q) T_q(P + P0) + b(Q) T_q(P + P1) with polynomial a, b for any two orbit/half-orbit points": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_w12_sheet2_*.py; sec. 33 addendum; CORRECTED 2026-09-06, sec. 36(d)): on sheet 2 at t = 9/7, weight 12, no element of the two-dimensional kernel pencil has a factor 3P^2 - Q^2 + kappa or 6P^2 + Q^2 + kappa (the two slopes of the distinguished top part) nor a conjugate-shift quadratic of those slopes -- so the X-orbit fusion product of Solution 3's palindromic points is absent on sheet 2's own point.  The earlier wording 'irreducible for every element of the pencil' was an overstatement: the slope-free search (lab/classical_pencil_search.py) finds the member lam = -2359/120 with top part -Y^5 (9X - Y), whose eigenvalue splits completely into linear factors -(16Y-49)(16Y-45)^2(16Y-33)(16Y-13)(144X-16Y+33)/2^24": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_w14_fusion_test.py, lab/vev_genfun.py; sec. 31): the PREREGISTERED q = 8 prediction is confirmed -- the weight-14 extra charge at t = 9/7 on sheet 3 (fast-path kernel record pinned) has eigenvalue -prod_{m=-3}^{3} Lambda(P + i m/2), Lambda = P^2 - Q^2 + 49/16, every coefficient, by the generating-function vacuum recipe (validated against the certified recipe on the twelve certified densities; output pinned)": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_w16_recurrence_test.py, lab/classical_w16_fit.py; sec. 35): the recurrence charge of sheet 3 at t = 5/3, weight 16 (fast-path kernel record pinned) has eigenvalue e_15 = e_5 x R_10, exactly divisible by the weight-6 fusion element, with R_10 irreducible over Q(i sqrt2), top part (P^2-Q^2)^4 (P^2+Q^2), and not a polynomial in the ordinary charges' eigenvalues (nor e_5 times weight-4 products)": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_w18_fusion_test.py; preregistered 2026-09-05 22:26; sec. 36): the extra charge of sheet 3 at t = 11/9 (q = 10, weight 18, kernel record pinned) has eigenvalue EXACTLY equal to the filed fusion product -prod_{m=-4}^{4} Lambda(P + i sqrt2 m/sqrt10), Lambda = P^2 - Q^2 + 81/20 -- the fourth coupling (q = 4, 6, 8, 10) and the second preregistered confirmation; computed with the exact-arithmetic generating-function recipe lab/vev_genfun_fast.py, validated exactly against lab/vev_genfun.py on the twelve certified densities and against the pinned weight-14 and weight-16 eigenvalues (results/lab/classical/vev_genfun_fast_validation.txt)": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_w18_sheet2_test.py, lab/classical_w18_sheet2_pencil.py; sec. 36(c)): at t = 13/11, weight 18, the classical conserved space of Solution 2 has nullity 2 with no member divisible by a square of x^2 - m r^2 for m in {1, 1/3, 3, 1/6, 6, 2, 1/2}; the member divisible by x^2 - r^2 lifts to a quantum element whose eigenvalue is irreducible over Q, Q(i), Q(i sqrt2), Q(i sqrt3), Q(i sqrt6), Q(sqrt2), Q(sqrt3), Q(sqrt6) and the biquadratic fields Q(i sqrt2, i sqrt3), Q(i, sqrt2), Q(i, sqrt3); the resultant search of the pencil then finds the Y-type member (lam = 40106/315) and shows its conjugate-quadratic hits are regroupings of the pure-Y linear factors": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_w6_members_by_Y_content.py; sec. 38(h)): splitting the weight-6 members at t = 5/3 by the number of Y-pairs per monomial and taking each part's vacuum value with N symbolic: the X-type member's pure-X part has value -X(2X+1)(4X+3)/60 and its one-pair part X(2X+1)(N+12Y)/60 -- both carry the X-sector Kac zeros nu_(1,4), nu_(1,2), and their cofactors add to the N-linear mixed factor N - 3 - 4X + 12Y; the Y-type member's parts (pure-X constant 5/3024; one, two, three pairs) and the fusion member's parts do not factor individually -- their Kac and orbit factorizations arise only in the sum, at the point's N": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/classical_w6_xtype_uniqueness.py; sec. 38(j)): the X-type member's pair part decomposes by pair type -- both derivative pairs (Y.d^2Y), (dY.dY) carry the X-coefficient -(3/5) J^2 (vacuum value (12X+1)/20, no Kac zeros), the zero-mode pair (Y.Y) carries B_0 = -(2/5) J^4 + J d^2J (vacuum value -X(2X+1)/5); the pure-X weight-6 densities modulo total derivatives form a 3-dim space on which the vacuum map is injective, so the pure-X part A = (2/15) J^6 + (1/3) J^3 d^2J - (7/15) J d^4J is the UNIQUE weight-6 pure-X density up to scale with vacuum zeros at nu_(1,4) and nu_(1,2), and B_0 the unique weight-4 one; the Hamiltonian's own pure-X part J^4 - 2(dJ)^2 has no such zeros; the N-linear factor N + 12Y arises only after summing the three pair types": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/fast_kernel3.py sha256 5e29e28a8cdb4137, record results/lab/fast_kernel3/w22_t1311_sheet3.json; lab/classical_w22_fusion_test.py; preregistered F-12 2026-09-06 03:45 (commit effe325; the earlier wording 08:49 named a later commit); sec. 38(d)): the weight-22 kernel of sheet 3 at t = 13/11 (q = 12; (N, s) = (-119/2, -143/2)) has genuine dimension 2 -- the coupling rule's filed jump at spin 21 -- computed by the quotient formulation in 1233 s with 5 primes and both witnesses verified by exact identities; the extra charge with top part (x^2 - r^2)^11 (7,908 monomials, levels 0-20 even) has vacuum eigenvalue EXACTLY equal to the filed fusion product -prod_{m=-5}^{5} Lambda(P + i sqrt2 m/sqrt12), Lambda = P^2 - Q^2 + 121/24: the fifth coupling (q = 4, 6, 8, 10, 12) and the third preregistered confirmation.  Pencil searches on the weight-22 record (results/lab/classical/w22_pencil_searches_out.txt): the only member with a linear factor a X + Y + kappa (slope over Q) is the fusion member at lam = 1/66 (factor a = -1, kappa = -121/24, i.e. Lambda itself), and the only conjugate-shift quadratic factors are that member's five orbit pairs; no X + kappa factor; no other structured member": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (lab/fast_kernel3.py sha256 5e29e28a8cdb4137, record results/lab/fast_kernel3/w24_t1715_sheet2.json; lab/classical_w24_s2_test.py; preregistered S2-16 2026-09-06 03:45 (commit effe325; the earlier wording 08:49 named a later commit); sec. 38(e)): the weight-24 kernel of sheet 2 at t = 17/15 (q = 16; (N, s) = (-667/8, -765/8)) has genuine dimension 2 -- the coupling rule's filed jump at spin 23 -- computed by the quotient formulation in 12,045 s with 6 primes (ten eliminations of 50,307 x 17,494, two at a time) and both witnesses verified by exact identities; the member with top part Y^11 (21X - Y) has vacuum eigenvalue EXACTLY a constant multiple of the filed Kac form prod_{s even, 2..22} Lambda_s(Q) x [Lambda_8(Q) + 21 P^2]: the sheet-2 law holds at q = 4, 8, 12, 16, the last preregistered.  Pencil searches on the weight-24 record (results/lab/classical/w24_pencil_searches_out.txt): the only member with linear factors is the Y-type member at lam = 29/1848 (the eight pure-Y factors of the Kac form and the mixed factor 21X - Y + 161/32); its conjugate-shift quadratic hits are regroupings of those factors; no X + kappa factor; no other structured member": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (same run; sec. 36(c)): on sheet 3 the slope-free search finds ONLY the pure-power member (the fusion product) at q = 6, 8, 10 (weights 10, 14, 18) -- no Y-type and no X-type member; at the merged point q = 4 (weight 6, sheets 2 and 3 identical) the pencil carries three structured members: the fusion product, the sheet-2 Y-type member (8Y-9)(8Y-5)(24X-8Y+5)/4608, and an X-type member -X(2X+1)(8X-24Y+31)/120 vanishing at P^2 = 0 and P^2 = -1/2 (nu_X = 0 and 1/2 in the BLZ dictionary); the X-type member appears nowhere else through weight 18": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB RESULT, pinned not recomputed (same run; sec. 36(c)): the weight-16 recurrence pencil at t = 5/3 carries, besides e_5 x R_10, a Y-type member with top part -Y^5 (14X^3 - 14X^2 Y + 6XY^2 - Y^3) and eigenvalue -(8Y-9)(8Y-5)^2 x (irreducible quintic)/(3 2^24): the m = 0, +-1 pure-Y factors of the q = 4 law with a cofactor outside the law": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB TOOL + LAB RESULT, pinned not recomputed (lab/excited_states.py, lab/classical_excited_driver.py, lab/classical_excited_shift_test.py; sec. 38(k)): matrix elements of the cylindrical charges between oscillator states of the two-sector Fock space on the Euclidean cylinder (modes a_n, a^i_n with [a_n, a_m] = n delta, zero modes P and Q e), by the Wick expansion of the plane-normal-ordered monomials with the certified cylinder constants C(a, b) for letter-letter pairs and Euclidean mode factors n(-n)^k / n n^k for absorption and creation; the Y-index structure by pair objects (loops N, zero-mode chains Q^2, the direction e, transverse ends).  Validated: level 0 equals the certified vacuum eigenvalues for I_3 and the three weight-6 members at t = 5/3; on the O(N-1)-singlet and transverse-vector blocks at levels 1 and 2 (2, 6 and 1, 3 states) every extra charge's matrix commutes EXACTLY with I_3's (12 distinct extra-charge-versus-I_3 comparisons on the four blocks; the committed count of 24 includes self-commutators and the level-0 blocks).  Result (scope corrected in Codex round 29): on the level-1 TRANSVERSE block and on both level-2 blocks exactly one eigenvalue of each charge is polynomial in (P, Q), and it equals the VACUUM law with Q^2 -> Q^2 - 2L (the Y-sector weight shifted by the level) for the fusion member, the Y-type member, the X-type member and I_3 alike (level-shift law, 12 of 12 cases = 4 charges x 3 blocks); the level-1 SINGLET block has no polynomial eigenvalue (its characteristic polynomial is an irreducible quadratic and the shifted vacuum value is not a root), and the remaining eigenvalues on the other blocks are roots of an irreducible quadratic (level 2 transverse) or quintic (level 2 singlet), the states where the X excitation mixes with the Y excitation along the momentum": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB TOOL, validated (lab/fast_kernel3.py v3 sha256 c38606e5b23be691, lab/fast_kernel3_distributed.sh; sec. 38(f)): the quotient-formulation kernel in three phases -- build and normal forms on the head node, one dense elimination per prime per worker node from a compact file, merge with CRT, rational reconstruction and exact verification on the head; the phases reproduce the single-process path at weights 14 and 16 and the pinned weight-22 record of sheet 3 at t = 13/11 with IDENTICAL witness vectors (build 257 s, eight primes on four nodes at about 285 s each, merge 110 s).  v4 (sha256 0821aa5af03e44a3, 2026-09-07): a prime dividing a residue denominator is skipped instead of aborting the build (review finding; negative control results/lab/fast_kernel3/badprime_control_out.txt: the weight-6 Hamiltonian scaled by the reciprocal of the first prime -- that prime skipped, certified with three others, charge parts identical to the unscaled run).  The comparison helper lab/fast_kernel3_compare.py (v2) now takes the sheet, N and s from the records, always verifies every witness's exact identity with a parallel residue computation, and exits nonzero on any failure; its re-pinned output covers weights 14, 16, 18 (sheet 2) and the distributed weight-22 record, all PASSED -- the earlier output had no identity check at weight 18 and the earlier helper hard-coded sheet 3 (review finding).  The committed v4 re-validated against the pinned fast_kernel2 records at weights 14, 16 and 18 (sheet 2) with the v2 comparison helper: all three PASSED (results/lab/fast_kernel3/v4_validation.txt), closing the review's remark that the capped-solver version had not itself been compared": [
+      "cyl_classical_hierarchy"
+    ],
+    "LAB TOOL, validated (lab/fast_kernel3.py, sha256 3981272caec1251e; lab/fast_kernel3_compare.py; sec. 38(c)): the genuine kernel by the QUOTIENT formulation -- ad commutes with d, so the commutator map descends to V/Im D_c -> T/Im D_t; d is triangular under the descending-letter-multiset order (fail-closed distinctness of leading terms), both quotients have the non-pivot monomials as bases, and the genuine kernel is the plain kernel of the induced matrix built from exact residues of the NON-PIVOT candidates only (8,357 of 25,258 at weight 22), with the d-parts recovered by the triangular sweep; parallel exact build, CRT lifting, exact verification of every witness by the certified engine (identity sum v_b ad(b) + sum S_j d(b'_j) = 0), upper bound by the mod-p nullity.  Reproduces the pinned fast_kernel2 records at weight 14 (sheet 3, t = 9/7), weight 16 (t = 5/3) and weight 18 (sheet 2, t = 13/11): genuine dimension 2 each, the two witnesses' eigenvalue pencils coincide with the pinned ones (rank 2 of the four eigenvalue vectors), exact identities re-verified; run times 3 s / 10 s / 35 s against 44 s / 359 s / 8,084 s (v2: one multi-prime sweep in the pool, per-prime eliminations in parallel)": [
+      "cyl_classical_hierarchy"
+    ],
+    "M-O2 (outcome form): the gauge-invariant all-first-order profiles a_j (coefficients of (dX)^{W-2j}(dY.dY)^j, normalized to a_0 = 1) of the one-dimensional ad_{I_3} kernels of the three cylindrical solutions at weights 4, 6, 8 and 10 are the pinned exact rational functions of t (26 curve points per table, 25 where a certified jumping point is excluded, exact equality; in addition EVERY denominator root of every pinned profile -- 21 occurrences, 20 distinct values, in all, excluding t = +-1 and Solution 2's certified jump t = 3 -- is visited and the unnormalized (dX)^W coefficient vanishes there exactly; the formulas are certified on these fibers, not proven globally). Consequences pinned: Solution 3 is palindromic at all four weights with coupling u_W = C(W,2)(t-3)/(t+2W-7) (zero at the c_{1,2} decoupling point, pole at the unitary minimal model c_{s-3,s-2} on the partner branch); Solution 1 obeys the single closed form a_j = C(W,2j)(2j-1)!!(t-1)^j / prod_{i<=j}[(2i-1)t-(4W-1-6i)], whose i-th denominator vanishes at the Kac collision nu_{2s+2-4i,2s+1-2i} = 0 (s = W-1); Solution 2 has t = 3 as a pole of order j-1 for j >= 2. The weight-10 profiles of Solutions 1 and 3 were preregistered from the weight-6/8 forms (notes, 5ebfca2) and matched exactly.": [
+      "cyl_mo2_profiles"
+    ],
+    "M2 (outcome form): at t_2 = 7/5 (Solution 3, spin 9) the 2-dim ad_I3 kernel contains ZERO T-primary class directions -- under T_total = (dX)^2/2 + (dY.dY)/2, T_X alone and T_Y alone (classes modulo Im d, poles k = 3..12 stacked, exact over Q) -- and the generic controls t = -7/5, 7/3, 11/5 (kernel dim 1) also give zero; the preregistered Phi_{1,3}-shadow expectation of exactly one primary direction at t_2 is REFUTED and recorded (the extra class is not a primary composite field, consistent with h_{1,3} being fractional) -- with a positive control (Codex round 17): the same detector returns exactly 1 on span{T_X, T_Y} at weight 2, where V = T_X - T_Y/N is T_total-primary (no poles of order >= 3, pole 2 = 2V, checked at all four points), and 0 on span{T_total}": [
+      "cyl_t2_primary"
+    ],
+    "R1": [
+      "validate_component_engine",
+      "vacancy_tables_and_I5I7",
+      "paperclip_vacancy_1214",
+      "lean_certificates"
+    ],
+    "R2": [
+      "screening_annihilates_p8",
+      "paperclip_p8_artifact"
+    ],
+    "R3": [
+      "validate_component_engine",
+      "symbolic_commutativity",
+      "vacancy_tables_and_I5I7",
+      "lean_certificates"
+    ],
+    "R4": [
+      "screening_fit_lvz_vectors",
+      "screening_annihilates_p8",
+      "paperclip_p10_artifact",
+      "screening_spin9",
+      "paperclip_joint_kernel_79"
+    ],
+    "R5": [
+      "validate_invariant_engine",
+      "a2_i7_formula_certification",
+      "a2_infinitude_dictionary",
+      "a2_branch_point_mechanism",
+      "qt_promotion_artifact",
+      "results_documentation_pins",
+      "raw_certificate_pins",
+      "vacancy_final_modp_smoke",
+      "kdv_tower_spin14_vacancy"
+    ],
+    "R6": [
+      "cylindrical_mutual_commutativity",
+      "qt_promotion_artifact",
+      "results_documentation_pins",
+      "collapsed_validate",
+      "raw_certificate_pins",
+      "vacancy_final_modp_smoke",
+      "vacancy_cyl_121416",
+      "vacancy_a2_1820"
+    ],
+    "R7": [
+      "validate_component_engine",
+      "validate_invariant_engine",
+      "erratum_eq51_p6",
+      "a2_i7_formula_certification",
+      "results_documentation_pins"
+    ],
+    "SUSY Phase 3 (finite range, five sampled lambda in {0,3/4,1/2,1,2}, doubled weight <= 24): the ad_{I3(lam)} centralizer spectrum is identical at all five lambda -- dim 1 at sigma in {0,1/2,1,3,5,7,9,11}, 0 at every other spin in range; I5, I7, I9(lam) unique, mutually commuting G-singlets with no half-integer partners; at lam = 3/4 the joint kernel of all four fermionic screenings equals the centralizer for 3 <= w2 <= 16 (momentum exception at sigma = 0) and the dual pair's kernel equals the NS super-Virasoro vacuum class count p(h)-p(h-1) through w2 = 16 at lam in {3/4, 4/3, 5/12}": [
+      "super_phase3"
+    ],
+    "Solution 3 has spin-13 ad_{I_3} kernel dimension 2 at t=9/7, (N,s)=(-143/4,-189/4) -- the first sporadic spin-13 point -- while Solutions 1 and 2 have dimension 1 there": [
+      "cyl_spin13_sol3_sporadic"
+    ],
+    "Spin-19 (weight-20) two-prime residue scans, preregistration e6dc226: sheet 1 -- 10,005 residues at p = 10007 and 10,007 at p = 10009, ZERO rank drops (t = 3 included); sheet 2 -- 10,005 residues at p = 10007 and 10,007 at p = 10009, exactly ONE drop per prime, at residue 3 (rank 3926, nullity 2, lifting to t = 3, the all-spin decoupling); sheet 3 -- 10,005 residues at p = 10007 (ATTESTED launch: every chunk log carries the scanner and matrix hashes and the clean commit 0406a45, verified against the repository), exactly ONE drop, at residue 3 (rank 3926, nullity 2, lifting to t = 3), and NO drop at t = 7/5 -- the recurrence hypothesis R1u refuted on this prime, the preregistration e6dc226 ('nothing beyond the all-spin decoupling') holding on all three sheets; sheet 3 at p = 10009 (ATTESTED as well, commit 9e742a5): 10,007 residues, exactly ONE drop, at residue 3 (rank 3926, nullity 2, lifting to t = 3), none at t = 7/5 -- both primes agree; spin 19 is closed on all three sheets with two primes each, exactly as preregistered, with the check points t_3 = 9/7, t_4 = 11/9 and the q = 3 control t = 2 at the generic rank 3927 in every chunk. This is finite-field EVIDENCE consistent with the preregistered 'nothing beyond the all-spin decoupling', not a characteristic-zero proof. The machine-readable summary records prime, the 16 contiguous chunks covering [0, p) with per-chunk evaluated counts and drops, drop details, check points, the log path, and the scanner / matrix sidecar hashes; the certificate ENFORCES all of these against the archived chunk logs -- headers, chunk table entry by entry, moduli of drop lines, generic ranks, check points at their exact residues (num * den^-1 mod p), the exact (sheet, prime) inventory {(1, 10007), (1, 10009), (2, 10007), (2, 10009), (3, 10007), (3, 10009)}, and, for scans recorded as attested, exactly one valid attestation block per chunk (scanner hash, matrix == sidecar hash, 40-hex clean commit); the four scans archived before the attested wrapper existed (sheets 1 and 2, both primes) are recorded as unattested and the sheet-3 p = 10007 scan as attested. Provenance caveat, scoped to the four UNATTESTED scans (sheets 1 and 2, both primes): their logs carry no execution provenance, so for those four the scanner and matrix hashes are an operator-asserted retrospective association, not an execution binding; the two sheet-3 scans were run through the attested wrapper that prints provenance first, and their per-chunk attestation blocks are verified by the certificate. All six scans are in; nothing is pending (summary status field).": [
+      "cyl_spin19_scans"
+    ],
+    "The certified profile poles of the three cylindrical solutions at weights 4, 6, 8, 10 (POLES of cyl_mo2_profiles, plus the t = -1 pole of Solution 3's weight-10 profile) are Beta-function lattices s m(t) + 2j = 0, j in 1..s-1, of one Moebius exponent function per solution -- m_1 = (1-t)/(t+3), m_2 = (2t-14)/(t+5), m_3 = (3-t)/(t-5) -- anchored at t -> infinity to the paperclip values n = -1, 2, -1 (the lattice of the factors (2j + s n) of hep-th/0404195 eqs. (66)-(68)); Solution 1's closed-form denominators are the lattice factors exactly; Solution 3's certified jumping points t = (q+1)/(q-1), q = 4, 6, 8, are lattice points with j = (q-2)/2 at spin 2q-3, and no c_{1,q}, q = 2..12 even, is a lattice point at spin 19.  Negative controls inside (shifted pole, shifted exponent) and a registry-level drill on a tampered pole (1 FAIL line) proven.": [
+      "cyl_pole_lattice"
+    ],
+    "The nine cylindrical VEV tables results/lab/vev/vev_sol{1,2,3}_w{6,8,10}.json -- <I_s>(P, Q^2; t) for spins 5, 7, 9 of Solutions 1-3 as rational functions of t (article momenta; plane-density (dX)^W coefficient normalized to 1), obtained in the lab by rational interpolation on 32 fit points with 4 hold-outs -- are verified on EIGHT exact fibres each: at every visited t the ad_{I_3} kernel is recomputed and the cylinder eigenvalue's coefficients, reconstructed exactly on a full-rank evaluation set, equal the stored functions coefficient by coefficient. The tables are certified on those fibres, not proven as global identities in t. Executable structural predicate on the stored tables: every irreducible denominator factor of a lower-degree coefficient divides the product of the top-degree (profile) denominators and (t-1)(t+1) -- no lower-degree poles beyond the profile lattice and the curve's poles. The files are hash-pinned.": [
+      "cyl_vev_tables"
+    ],
+    "Under the proportionality reading of rationality (normalization constants may contain the pole position's transcendental), a momentum-dependent fourth regular singular point is excluded EXACTLY from the top-degree conditions: for the m = -1 Heun family at v = 3, 7/3, 5/2, 9, 1/2, 2 (spins 1-5) and for the sliding-pole family at v = 3 (spins 1-7), the Groebner basis of the top-degree system with the fourth point's coefficient scaled to 1 (four branches) and u_4 outside {+-2, 6} (t outside {5, 2, infinity}) is {1}.  Inputs: the general S_k at each position as pinned lab artifacts (results/lab/heun/general_S), whose spin-1 form is re-derived by hand inside.  Negative controls: dropping the palindromy conditions or the fourth point produces solutions.": [
+      "cyl_heun_exact_elim"
+    ],
+    "VEV recipe (code/cyl_vev.py): reading a plane density on the cylinder (d_z^k X -> d_w^{k-1} J), cylinder normal ordering on the momentum state |P,Q> (unpaired J -> momentum, contracted pair (a,b) -> (-1)^b R^{(a+b)}(0) with R = 1/(4 sinh^2(eps/2)) - 1/eps^2, O(N) cycles -> N and chains -> Q^2, article momenta P_art = iP) reproduces hep-th/0404195 eq. (59) (paperclip <I_3>, 6 coefficients) and eq. (60) (<I_5>, 10 coefficients) coefficient by coefficient (exact reconstruction on a full-rank evaluation set) at five values of n; the eq.-(51) erratum (factor n in the P_6^{[10]} coefficient) is required for (60); and the cylindrical <I_3> of Solutions 1, 2, 3 (mixed_engine.cyl_P4) at N = 1 equal 6x, 3/2x, 6x the paperclip (59) at n = -1, 2, -1 respectively, on all 6 coefficients -- the paper's N = 1 coincidences hold at the level of vacuum eigenvalues": [
+      "cyl_vev_validation"
+    ],
+    "WKB side (code/wkb.py, Riccati recursion + Beta-function integration for Psi'' = [kappa^2 (1+e^z)^m + V] Psi): for the paperclip ODE (62) of hep-th/0404195 in its corrected form (the ((n+2)Q^2/2 + 1/4) term multiplies e^z/(1+e^z)^2 as in LVZ (90)), S_1, S_3, S_5, S_7 equal alpha_s I_s + beta_s with the paper's own VEVs (59)-(61) and residuals exactly the Bernoulli constants of eq. (70); S_1 and S_5 equal the printed (65), (67) verbatim (executable); S_3 and S_7 differ from the printed (66), (68) in exactly one term each (executable: the P^2Q^2 term of (66) lacks (3n+4); the P^2Q^6 term of (68) has (2+n)^2 for (2+n)^3). The MINIMAL LVZ shape V = A e^z/(1+e^z) + B e^z/(1+e^z)^2 with A, B quadratic in (P,Q) is REFUTED for Solution 3: palindromic top-degree VEVs force C_5(ker l_1) = -32(m+1)/(5(5m+2)(5m+4)(5m+6)(5m+8)) = 0, i.e. m = -1 on the whole conic, the certified u_4 = 6(t-3)/(t+1) fixes r = (t-5)/(t-2), and the shape predicts u_6 = 3(5t-13)/(t+7) against the certified 15(t-3)/(t+5): the difference is -24(t-5)/((t+5)(t+7)), nonzero generically and vanishing only on the N = 0 fiber t = 5 and as t -> infinity (N = 1)": [
+      "cyl_wkb_validation"
+    ],
+    "Weight 4 (added 2026-09-04): the profiles [1, 6(t-1)/(t-9), (t-1)/(t-9)] (Solution 1, the closed form's W = 4 instance), [1, 12(t-1)/(5t-11), 8(t-1)^2/((t-3)(5t-11))] (Solution 2) and [1, 6(t-3)/(t+1), 1] (Solution 3, the coupling u_4 = 6(t-3)/(t+1) used by the oper-program exclusions) are reproduced exactly at 26 curve points each, with the pinned poles t = 9 and t = 11/5 verified as zeros of the (dX)^4 coefficient.": [
+      "cyl_mo2_profiles"
+    ],
+    "X-axis sinh-Gordon screening of the cylindrical I_3 occurs only on an exactly computed finite locus of the curve": [
+      "cyl_hidden_kdv_scan"
+    ],
+    "[Q_{2sqrt2}, Q_{-2sqrt2}] == (sqrt2/45) J mod total derivatives, constant exact; parity-even residue part is a total derivative": [
+      "j_commutator_identification"
+    ],
+    "a kappa^{-1} term in the potential does not change S_1, S_3, S_5 at first order (two shapes, wkb.py recursion): 2x2 first-order systems add no first-order direction beyond the potential class": [
+      "cyl_first_order_kernels"
+    ],
+    "at (-25/2,-45/2): Solutions 2 and 3 merge; kernel dims 2,1,1,1 at spins 5..11; screened line through I_11; extra spin-5 class mixed; generic towers of both solutions coincide there": [
+      "cyl_jump_point_tower"
+    ],
+    "at (N, s) = (28, -9) [Solution 1] and (28, 9) [Solution 2] the sec.-38(ad) operator is the cylindrical oper through spin 11: the certified vacuum eigenvalues equal its continued-Beta coefficients exactly (kernels and VEVs recomputed at the point)": [
+      "cyl_exact_point"
+    ],
+    "at (N, s) = (28, -9) the first-order deformation of the sec.-38(ad) operator along the O(N) curve is not a scalar potential change in the classes W, X f + Y g, W + X f + Y g (order kappa^0), U/(kappa^2 Lambda), the momentum-quadratic kappa^-2 Lambda^-1 class or the momentum-quadratic kappa^0 class, nor a change of the symbol kappa^2 Lambda (1 + h sigma), nor an analytic kappa-odd term, for any shape in the monomial span with any exponents: eight proved integrand identities, each violated by the exact first-order targets": [
+      "cyl_exact_point_deformation"
+    ],
+    "at N=28 cylindrical Solutions 1 and 2 coincide through I_11 and the merged tower I_3..I_11 is conserved under e^{+-sqrt2 X} (finite-range; nonzero classes asserted)": [
+      "cyl_n28_tower_embedding"
+    ],
+    "at b = 0 the universal densities are x^W + c^{W/2-1} r^W; the paperclip family is the curve c = b(b-4)/(4(b-3)); the families are c = 1, c = b/6, c = b^2/(6-b), meeting it at t -> infinity, t = 5 (Solution 3), t = -5 (Solution 2), and at the closure point t = 1 (Solutions 1, 2; the pole of the curve, not a fiber)": [
+      "cyl_classical_hierarchy"
+    ],
+    "at spin 15 no cylindrical Solution jumps at t2, t3, t4 or the t=2 baseline on the probed sheets: the sporadic spin-13 point of Solution 3 is single-spin and the two-ladder hypothesis H1 survives its first preregistered test": [
+      "cyl_spin15_ladder_probe"
+    ],
+    "at spin 17 the cylindrical curve jumps at t4=11/9 on sheet 3 and at t5=13/11 on sheet 2 (kernel dimension 2 each) and at none of the nine preregistered control points -- the two-ladder hypothesis's double positive prediction, made before any weight-18 computation": [
+      "cyl_spin17_double_prediction"
+    ],
+    "c=-25/2 identification, class-by-class: ker ad_{I'3} = tower classes at sigma 5,7,9 (mult 1 odd / 0 even); even-sector sine-Gordon pair kernel K-dim 1 at odd sigma 1..9 (infinitude anchor)": [
+      "kdv_tower_classes"
+    ],
+    "c=-25/2 identification: the enhanced c=1 tower is quantum KdV at c_{1,4} in Feigin-Fuchs realization on the c=1 boson (T_Q at Q^2=9/8)": [
+      "kdv_identification"
+    ],
+    "c=1 enhancement mechanism: even-sector +-alpha kernel coincidence; the A2(2) pair symmetrizes to the FF quartet at the branch point": [
+      "z2_mechanism"
+    ],
+    "companion Sec. 2: four-condition characterization (joint kernel multiplicity one at odd spins 1..9, zero at even, weights 2..10)": [
+      "c1_four_condition_char"
+    ],
+    "cylindrical I_3 families are not the invariant background-charge KdV ray at any N != 0": [
+      "cyl_hidden_kdv_scan"
+    ],
+    "discriminant classification over Q-bar away from the parametrization poles t = +-1 at weight 14 (spin 13, preregistered): jump sets exactly -- sheet 1 empty, sheet 2 {3}, sheet 3 {3, 9/7} with nullity 2 and the (1-8x) factor at t_3 = c_{1,8} (2q-3 = 13 at q = 8); sheet 2 silent beyond c_{1,2} over all of Q-bar ((3q-2)/2 = 13 has no integer solution -- the Phi-reading's asymmetry prediction); no odd-q point jumps": [
+      "cyl_discriminant_w14"
+    ],
+    "discriminant classification over Q-bar away from the parametrization poles t = +-1 at weights 10 and 12 (preregistered): one maximal minor D(t) of the ad_I3 matrix is a complete over-approximation of the rank-drop locus; every irreducible factor classified by exact rank (GF(p)-screened) -- jump sets exactly w10: sol1 {}, sol2 {3}, sol3 {3, 7/5}; w12: sol1 {}, sol2 {3, 9/7}, sol3 {3}; nullity 2 at every jump; beta^2 = (t-1)/(t+1) images exactly 1/2, 1/6 (w10 sol3), 1/8 (w12 sol2); no jump anywhere at beta^2 = 1/7, 1/5, 1/3 -- the odd-q Kac slots (incl. q = 7 solving 2q-3 = 11 at weight 12, sheet 3) are empty over ALL of Q-bar, strictly beyond the rational-residue scans": [
+      "cyl_discriminant_w1012"
+    ],
+    "engines": [
+      "collapsed_validate"
+    ],
+    "exact classification over Q-bar away from the parametrization poles t = +-1 at weights 10, 12 and 14 (spins 9, 11, 13) with open tools only, against the expectations preregistered for cyl_discriminant_w1012 and cyl_discriminant_w14: for each sheet the family matrix M(t) of ad_I3 is rebuilt from the engine, its generic rank r = n - 1 is proved both ways, the gcd G of two maximal minors (computed exactly by CRT under proven bounds, the FLINT images recomputed) is a complete over-approximation of the rank-drop locus, and every irreducible factor of G is decided by rank -- jump sets exactly w10: sheet1 {}, sheet2 {3}, sheet3 {3, 7/5}; w12: sheet1 {}, sheet2 {3, 9/7}, sheet3 {3}; w14: sheet1 {}, sheet2 {3}, sheet3 {3, 9/7}; nullity 2 at every jump; beta^2 = (t-1)/(t+1) images exactly 1/2, 1/6, 1/8; no jump at beta^2 = 1/7, 1/5, 1/3 (t = 4/3, 3/2, 2); no deck image -t0 of a jump is a jump": [
+      "cyl_stratification_w1014"
+    ],
+    "exact rational identities only: with x = (t-1)/(t+1), N = 13 - 6(x + 1/x) and s = 6(x - 1/x) identically in t (hence s^2 = (N-25)(N-1)); sheet exchange x -> 1/x is t -> -t; N is the value c(beta^2) with beta^2 = x (c_Y: the theory's full free-boson charge is N + 1); the named detected/predicted points map exactly -- t_k = (q+1)/(q-1) with q = 2k+2 and N(t_k) = c_(1,2k+2) for k = 1..5, t = 3 to c_(1,2) = -2, the odd-q rational points t = 2, 3/2, 4/3, 5/4, 6/5 to c_(1,q), q = 3..11 -- and c_(1,2k+2) = -(4k+1)(3k+2)/(k+1). Scan and kernel outcomes are certified by their own certificates, not here": [
+      "cyl_coulomb_gas_parametrization"
+    ],
+    "exact spin-15 kernel dimensions at the two lifted rational points of the weight-16 residue scans: (-25/2,-45/2) has dimension 2 on both merged sheets -- the first recurrence at one point (spins 5 and 15) -- and 1 on sheet 1; the (-2,-9) decoupling has dimension 2 on sheets 2,3 and 1 on sheet 1; the complete GF(10007) scans detecting no other reduction are evidence, not proof, that no further characteristic-zero point exists": [
+      "cyl_spin15_stratification"
+    ],
+    "for each solution the conservation PDE of the weight-4 density has a one-dimensional space of polynomial densities at weights 6, 8, 10, spanned by the certified density; for the generic quartic x^4 + b x^2 r^2 + c r^4 (over Q(b, c)) the same holds at weights 6-12": [
+      "cyl_classical_hierarchy"
+    ],
+    "independent Mathematica replication (unrelated implementation, vendor, algorithm lineage) agrees with every baked target T1-T6c": [
+      "wolfram_triangle"
+    ],
+    "lab-found multiplicity jump points of the cylindrical families at spins 5-9 confirmed; (-24,-35) is a new pure multiplicity jump of Solution 3 at spin 9": [
+      "cyl_strata_points"
+    ],
+    "m(u_4) equals the pinned lattice exponents of Solutions 1 and 3, the lattice dual of Solution 2's, and -2-n on the paperclip family of eq. (59)": [
+      "cyl_classical_hierarchy"
+    ],
+    "mixed_pole.ope_pole_mixed_mono (pole-k coefficients for the mixed Z2 x O(N) engine; M1 of the cylindrical oper lane): k = 1 reproduces mixed_engine.residue_mixed_mono on every weight-4 monomial pair and 40 random weight-6 pairs; T(z)T(w) with T = (dX)^2/2 + (dY.dY)/2 gives pole-4 = (N+1)/2, pole-3 = 0, pole-2 = 2T, pole-1 = dT at N = 3, -24, 7/2; pure-X inputs agree with the single-boson ope_poles at every pole order 0..8 on 81 (pair, k) cases": [
+      "mixed_pole_validation"
+    ],
+    "odd-q controls (preregistered): at t = 2, 3/2, 4/3 (beta^2 = 1/q, q = 3, 5, 7 -- c_(1,3), c_(1,5), c_(1,7)) the exact spin-9, -11 and -13 kernels on Solutions 2 and 3 all have dimension 1 (generic): the odd-q rational points are certified generic exactly at the spins where the even-q neighbours t_2, t_3 jump (finite-range)": [
+      "cyl_oddq_controls"
+    ],
+    "provenance": [
+      "raw_certificate_pins",
+      "public_provenance_lint"
+    ],
+    "survey-sec5": [
+      "resurgence_borel_check"
+    ],
+    "t_2 = 7/5 (c_{1,6}), Solution 3, weights 6-12: kernel dims [1,1,2,1]; NO screening structure extended to the c_{1,6} Kac pair -- e^{aX}-screened dims are 0 at a^2 = 1/3 and 12 (the roots of c(a)-1 = -3(a^2-2)^2/a^2 at c = -24), individually and jointly, at every weight, as at the certified a^2 = 2, 3; the spin-9 kernel is genuinely mixed (projection ranks 2, 2); the preregistered screened-shadow reading is REFUTED and recorded (foreseeable from the certified no-screening classification in cyl_strata_lab.md -- process rule adopted)": [
+      "cyl_t2_shadow"
+    ],
+    "the affine rational class u^p/(1+u)^q (1 <= p <= q+2, q <= 9 by explicit columns; every (p, q) by the symbolic identity of P8, for non-integral q as an identity of the meromorphic continuation wherever the moments are defined; coefficients 1, X, Y) with the exponent direction has rank 26 in the 55-dimensional first-order data space of spins 1-9; its left null space is the pinned set of 29 relations": [
+      "cyl_first_order_kernels"
+    ],
+    "the c=1 tower member at spin 15 is conserved under {+-1/sqrt2, +-2sqrt2} and not under +-sqrt2: the L(1,0) exit predicted at spin 15 is realized; tower multiplicity one holds at sigma=15": [
+      "c1_spin15_l10_exit"
+    ],
+    "the decoupling component b = 0 of the exceptional locus has nullity 2 at every weight; Solution 3 reaches it at t = 3 and Solution 2 reaches the decoupled point at infinity (c -> infinity) at t = 3 -- the classical face of the all-spin decoupling drop of sheets 2 and 3": [
+      "cyl_classical_hierarchy"
+    ],
+    "the deformation certificate's prover rejects wrong coefficients and wrong kinds, its violation test can pass and can fail, and its kappa-odd source is wiring-sensitive (misplacement breaks the identity; the amplitude is fixed by the local Riccati balance)": [
+      "cyl_exact_point_deformation_control"
+    ],
+    "the exact-point pipeline reports nonzero mismatches at a generic point, for a perturbed operator and on the same-sheet deck partner (28, +9) of Solution 1": [
+      "cyl_exact_point_control"
+    ],
+    "the exceptional locus of the universal hierarchy is the line b = 0 plus the isolated points {(-3,1)} (weight 6), {(-3/2,1/8), (-3/2,1), (-12,8)} (weight 8), {(-1,0), (-1,1/4), (-1,1), (-4,1), (-4,4)} (weight 10); on the families these are the isolated non-decoupling classical jumping points t = 5/3, 11/5, 7/5, 17/7 (Solution 3), 5/3, 2 (Solution 2), none (Solution 1), and they contain the certified non-decoupling quantum jumping points t = 5/3 (weight 6, sheets 2 and 3) and 7/5 (weight 10, sheet 3)": [
+      "cyl_classical_hierarchy"
+    ],
+    "the full-space centralizer's odd-parity sector: the spin-6 charge J commutes with the tower (I'3, I5, I'7, I'9), conserved under +-1/sqrt2 only; c_{1,2} even-sector kernel jump (K-dim 2 at spin 7) is real": [
+      "odd_sector_j"
+    ],
+    "the lifting rule (P3d; lab/classical_lifting_rule.py; sec. 29): a classical jumping point is a certified quantum jumping point iff beta^2 = (t-1)/(t+1) = 1/(2k); predictions for spins 21-29 filed in results/cyl_spin19_21_preregistration.md": [
+      "cyl_classical_hierarchy"
+    ],
+    "the paperclip's n-deformation satisfies the 29 relations; cylindrical Solutions 1 and 3 do not (unknown block rank 7, augmented 8)": [
+      "cyl_first_order_kernels"
+    ],
+    "the pinned adjoint response kernels reproduce the pinned first-order columns u/(1+u)^b (b = 1..6), u, u^2 and the exponent direction at spins 1-9, exactly": [
+      "cyl_first_order_kernels"
+    ],
+    "the pinned first-order density coefficients per mixed-basis monomial reproduce the pinned VEV tables' base and first order at weights 4, 6, 8, 10 for Solutions 1 and 3": [
+      "cyl_first_order_kernels"
+    ],
+    "the preregistered t=11/9 spin-13 jump is not observed on any sheet; the spin-13 kernel dimensions at the 19 preregistered points are as pinned": [
+      "cyl_spin13_prediction"
+    ],
+    "the retained cyl_spin13_prediction run record passes the repository-local semantic checks; the git-bound checks are explicitly scoped out of the public edition": [
+      "check_spin13_run_record_public"
+    ],
+    "the sec.-38(ad) operator is the Lukyanov-Zamolodchikov pillow-brane vacuum oper at P_1^2 = 1/6, with (5.13) = its I_1, I_3 exactly; the cylindrical spin-3 gap is the closed-form constant Delta(t) of sec. 38(af)": [
+      "cyl_pillow_identification"
+    ],
+    "the sigma<=15 independent-engine extension and its scripts are pinned, auditable artifacts": [
+      "independent_engine_artifacts"
+    ],
+    "the top-degree parts of the pinned weight-4..10 tables of Solutions 1, 2, 3 Poisson-commute pairwise (all six pairs) under diag(d, d) in (dX, |dY|)": [
+      "cyl_classical_hierarchy"
+    ],
+    "the universal profiles' denominators are polynomials in b alone with zeros exactly at b = 6j/(3j-s), j = 1..(s-1)/2: the Beta lattice of the exponent m(b) = -2b/(3b-6)": [
+      "cyl_classical_hierarchy"
+    ],
+    "tower-level self-dual (a^2=2) embeddings at the multiplicity-one locus points and inside the enlarged kernel at (-25/2,-45/2) (screened dim 1 of 2); decouplings of Solutions 2 and 3 at (-2,-9); locus completeness via Groebner": [
+      "cyl_hidden_kdv_scan"
+    ]
+  },
+  "coverage_gaps": [
+    "R2's zero/pole-divisor and duality-covariance prose is verified narratively (second audit pass), not by a retained script.",
+    "R8 is a data-backed conjecture: the kernel side comes from vacancy_tables_and_I5I7 and the screening side from screening_annihilates_p8; no certification can apply to the conjecture itself.",
+    "Cylindrical printed I5 formulas eqs. (54)/(56)/(58) are not encoded; the R7 erratum is deliberately narrowed to eqs. (53)/(55)/(57).",
+    "Mutual commutativity of higher promoted pairs: COMPLETE 2026-08-11 -- all 21 instances of the inventory (18 cylindrical pair instances + the three higher A2(2) pairs; brackets with each family's defining low charge vanish by construction) are proved identically over Q(t) via even-spin vacancy certificates, ALL EIGHTEEN sector verdicts on the same GF(p) tags=d-rank footing (cyl sigma=12 x3 = 379, sigma=14 x3 = 929, sigma=16 x3 = 2211 [vacancy_cyl_121416, 2026-08-24]; cyl sigma=18 x3 = 5106, cyl sigma=20 x3 = 11491; A2 sigma=18 = 678, sigma=20 = 1351 [vacancy_a2_1820, 2026-08-25], sigma=24 = 5117; the two batches supersede the earlier fraction-free runs that retained no artifacts).  Evidence: pinned artifacts incl. the preregistered launch declaration and the merged batch record; results/vacancy_final.md supersedes the partial doc.  The historical 70-71-point checks stand as independent evidence.  This closes computed-range mutual commutativity; it does NOT prove infinitude of the cylindrical hierarchies.",
+    "a2_generic_scan.py and cyl_diagnosis.py are multiprocessing scans whose outputs are summarized in the pinned narrative documents; they are not wired for --full regeneration."
+  ],
+  "results": [
+    {
+      "id": "cyl_stratification_w1014",
+      "claims": [
+        "exact classification over Q-bar away from the parametrization poles t = +-1 at weights 10, 12 and 14 (spins 9, 11, 13) with open tools only, against the expectations preregistered for cyl_discriminant_w1012 and cyl_discriminant_w14: for each sheet the family matrix M(t) of ad_I3 is rebuilt from the engine, its generic rank r = n - 1 is proved both ways, the gcd G of two maximal minors (computed exactly by CRT under proven bounds, the FLINT images recomputed) is a complete over-approximation of the rank-drop locus, and every irreducible factor of G is decided by rank -- jump sets exactly w10: sheet1 {}, sheet2 {3}, sheet3 {3, 7/5}; w12: sheet1 {}, sheet2 {3, 9/7}, sheet3 {3}; w14: sheet1 {}, sheet2 {3}, sheet3 {3, 9/7}; nullity 2 at every jump; beta^2 = (t-1)/(t+1) images exactly 1/2, 1/6, 1/8; no jump at beta^2 = 1/7, 1/5, 1/3 (t = 4/3, 3/2, 2); no deck image -t0 of a jump is a jump"
+      ],
+      "description": "Fail-closed open-tool certificate (code/cyl_stratification_w1014.py: Python, sympy and numpy, and FLINT through the C driver code/strat1014_detmodp.c, compiled at run time; FLINT_PREFIX selects a FLINT outside the default paths). Rebuilds the nine matrices from mixed_engine (strat1014_family) and pins their sha256; re-verifies the archived claims results/cyl_stratification_w1014/claims/ (54 files; the sha256 of their SHA256SUMS is pinned in the script) with strat1014_verify: generic rank both ways; P1 and P2 recomputed modulo every listed 62-bit prime and matched under proven degree and Hadamard bounds; G exact, with coprime cofactors; every factor decided by the rank modulo a prime at a root, or by exact null vectors at a rational drop. Then pins the classification. Same expectations (results/cyl_discriminant_preregistration.md, results/cyl_discriminant_w14_preregistration.md) as the wolframscript certificates cyl_discriminant_w1012 and cyl_discriminant_w14, which it replaces as the support of the jumping-loci paper. Claims computed 2026-10-29 by an independent recomputation and reproduced from byte copies. Negative drills at W = 10 (a claim altered in place; the claim list regenerated after an alteration; an altered claim in an unpinned directory; a jump deleted; an altered expectation; an extra file; an altered matrix pin; no FLINT; python -O) each fail at the intended check. Expensive (about 50 minutes); runner record predeclared; artifact deterministic and pinned after the run.",
+      "mode": "run",
+      "executed": true,
+      "status": "pass",
+      "failures": [],
+      "runtime_s": 2870.2,
+      "artifact_hashes": {
+        "results/cyl_stratification_w1014.json": "sha256:a7ff065607cd08efac75918410714f8d38e394c1a3a46fa0978cde98d09e31c2"
+      },
+      "script_sha256": "sha256:ea9bc9ac6aa2b1f8042815e2bffe8b113f6a3d9e78f9a3332966b1d24edf7132",
+      "sources_sha256": {
+        "../results/cyl_stratification_w1014/claims/SHA256SUMS": "sha256:265a6cbef0e63aa6d626d17e65c717e4cad3722fb8ec23fd1348156b6434a43b",
+        "cyl_stratification_w1014.py": "sha256:ea9bc9ac6aa2b1f8042815e2bffe8b113f6a3d9e78f9a3332966b1d24edf7132",
+        "invariant_engine.py": "sha256:472d7eca24b29730e3bb9a274d13df82c9e19526b47c58c940a35a384cee8638",
+        "mixed_engine.py": "sha256:078a03212132d0224ca317f1e0c57d1c7d940a18090e9042e088b64e42aeb0a6",
+        "strat1014_detmodp.c": "sha256:c7216c6d60d243218ebd4ff320b4364b26293bc1effbbd6cb9b1387ab7f8a84c",
+        "strat1014_family.py": "sha256:9e88425ad8d433616486ddf84a469f4ed296edecab0911d29d0f0d2fcea01fd0",
+        "strat1014_modla.py": "sha256:08ee98db386db69d7b0cb41889948985380cac8d7e7960b9a550df098f1c49ad",
+        "strat1014_s2.py": "sha256:c39df45705786109217833b1030ba7a2519e6cd66c46d83202755e7ba298f94e",
+        "strat1014_verify.py": "sha256:2c32cd3e3ea9a77ce6c54d3ed1713e39ff93a1b7ae0c37fc3288d9bfbf7c628b"
+      },
+      "runner_sha256": "sha256:ef35d824a2d64ccc00c4c703e7dd933d7465c9847866166c1d377ce51a72c313",
+      "closure_unresolved": [],
+      "launch": {
+        "commit": "43e40b815d92adceda285fe2b9d2c7e8b783730b",
+        "worktree": {
+          "worktree_dirty": false,
+          "dirty_path_count": 0,
+          "dirty_paths": [],
+          "tracked_dirty": false,
+          "tracked_dirty_paths": [],
+          "untracked_paths": []
+        },
+        "bytecode_clean": true
+      },
+      "exit_code": 0
+    }
+  ],
+  "partial_of": "certification_manifest.json"
+}

@@ -1330,10 +1330,12 @@
       "artifacts": [
         {
           "path": "results/cyl_stratification_w1014_run.json",
-          "kind": "runner_record"
+          "kind": "runner_record",
+          "sha256": "sha256:f21bf3d82d42502f417808ee9a494baa3c5ca88429429fe3eb2f37c789e661ed"
         },
         {
-          "path": "results/cyl_stratification_w1014.json"
+          "path": "results/cyl_stratification_w1014.json",
+          "sha256": "sha256:a7ff065607cd08efac75918410714f8d38e394c1a3a46fa0978cde98d09e31c2"
         }
       ],
       "sources": [
