@@ -1,0 +1,141 @@
+{
+ "sheet": 2,
+ "W": 14,
+ "matrix_sha256": "1cac02ab7a3d0c5c8c67ec1089c2d401c29ebccb128b46277cfb5395dcbae2d8",
+ "r": 364,
+ "n": 365,
+ "generic_nullity": 1,
+ "decisions": [
+  {
+   "factor": "7*t - 17",
+   "degree": 1,
+   "multiplicity_in_G": 1,
+   "decision": "no drop",
+   "nullity": 1,
+   "proof": "rank mod p at a root of f mod p",
+   "p": 2147463641,
+   "g": "t - 1227122083",
+   "alpha": 1227122083,
+   "rank_mod_p": 364
+  },
+  {
+   "factor": "9*t - 7",
+   "degree": 1,
+   "multiplicity_in_G": 1,
+   "decision": "no drop",
+   "nullity": 1,
+   "proof": "rank mod p at a root of f mod p",
+   "p": 2147463641,
+   "g": "t - 238607072",
+   "alpha": 238607072,
+   "rank_mod_p": 364
+  },
+  {
+   "factor": "15*t - 29",
+   "degree": 1,
+   "multiplicity_in_G": 1,
+   "decision": "no drop",
+   "nullity": 1,
+   "proof": "rank mod p at a root of f mod p",
+   "p": 2147463641,
+   "g": "t - 1574806672",
+   "alpha": 1574806672,
+   "rank_mod_p": 364
+  },
+  {
+   "factor": "17*t - 19",
+   "degree": 1,
+   "multiplicity_in_G": 1,
+   "decision": "no drop",
+   "nullity": 1,
+   "proof": "rank mod p at a root of f mod p",
+   "p": 2147463641,
+   "g": "t - 757928345",
+   "alpha": 757928345,
+   "rank_mod_p": 364
+  },
+  {
+   "factor": "25*t - 31",
+   "degree": 1,
+   "multiplicity_in_G": 1,
+   "decision": "no drop",
+   "nullity": 1,
+   "proof": "rank mod p at a root of f mod p",
+   "p": 2147463641,
+   "g": "t - 773086912",
+   "alpha": 773086912,
+   "rank_mod_p": 364
+  },
+  {
+   "factor": "2*t - 3",
+   "degree": 1,
+   "multiplicity_in_G": 2,
+   "decision": "no drop",
+   "nullity": 1,
+   "proof": "rank mod p at a root of f mod p",
+   "p": 2147463641,
+   "g": "t - 1073731822",
+   "alpha": 1073731822,
+   "rank_mod_p": 364
+  },
+  {
+   "factor": "t - 3",
+   "degree": 1,
+   "multiplicity_in_G": 52,
+   "decision": "drop",
+   "nullity": 2,
+   "t0": "3",
+   "beta2": "1/2",
+   "N": "-2",
+   "s": "-9",
+   "proof": "exact null vectors at the rational root",
+   "rank_primes": [
+    2147483647,
+    2147483629
+   ],
+   "ranks_mod_p": [
+    363,
+    363
+   ],
+   "null_vectors_verified": 2,
+   "null_vector_max_bits": 24,
+   "free_cols": [
+    58,
+    364
+   ],
+   "recon_primes_used": 4,
+   "tried_mod_p": [
+    {
+     "p": 2147463641,
+     "alpha": 3,
+     "rank": 363
+    },
+    {
+     "p": 2147463631,
+     "alpha": 3,
+     "rank": 363
+    },
+    {
+     "p": 2147463599,
+     "alpha": 3,
+     "rank": 363
+    }
+   ],
+   "deck_image": "-3",
+   "deck_image_root_of_G": false,
+   "null_vectors_file": "results/S3_nullvectors_sheet2_W14_t3.json"
+  }
+ ],
+ "jump_set": [
+  {
+   "t": "3",
+   "m": 2,
+   "beta2": "1/2",
+   "N": "-2",
+   "s": "-9",
+   "deck_image": "-3",
+   "deck_image_root_of_G": false
+  }
+ ],
+ "seconds": 8.6
+}

@@ -1,0 +1,161 @@
+{
+ "sheet": 2,
+ "W": 12,
+ "matrix_sha256": "1e333f94753809bc1a9158c522a1cce6a37968ab9e07a921f49bbc70f58fc9b1",
+ "r": 159,
+ "n": 160,
+ "generic_nullity": 1,
+ "decisions": [
+  {
+   "factor": "3*t - 7",
+   "degree": 1,
+   "multiplicity_in_G": 1,
+   "decision": "no drop",
+   "nullity": 1,
+   "proof": "rank mod p at a root of f mod p",
+   "p": 2147463641,
+   "g": "t - 715821216",
+   "alpha": 715821216,
+   "rank_mod_p": 159
+  },
+  {
+   "factor": "5*t - 11",
+   "degree": 1,
+   "multiplicity_in_G": 1,
+   "decision": "no drop",
+   "nullity": 1,
+   "proof": "rank mod p at a root of f mod p",
+   "p": 2147463641,
+   "g": "t - 1717970915",
+   "alpha": 1717970915,
+   "rank_mod_p": 159
+  },
+  {
+   "factor": "13*t - 23",
+   "degree": 1,
+   "multiplicity_in_G": 1,
+   "decision": "no drop",
+   "nullity": 1,
+   "proof": "rank mod p at a root of f mod p",
+   "p": 2147463641,
+   "g": "t - 825947556",
+   "alpha": 825947556,
+   "rank_mod_p": 159
+  },
+  {
+   "factor": "7*t - 9",
+   "degree": 1,
+   "multiplicity_in_G": 3,
+   "decision": "drop",
+   "nullity": 2,
+   "t0": "9/7",
+   "beta2": "1/8",
+   "N": "-143/4",
+   "s": "-189/4",
+   "proof": "exact null vectors at the rational root",
+   "rank_primes": [
+    2147483647,
+    2147483629
+   ],
+   "ranks_mod_p": [
+    158,
+    158
+   ],
+   "null_vectors_verified": 2,
+   "null_vector_max_bits": 46,
+   "free_cols": [
+    158,
+    159
+   ],
+   "recon_primes_used": 4,
+   "tried_mod_p": [
+    {
+     "p": 2147463641,
+     "alpha": 1533902602,
+     "rank": 158
+    },
+    {
+     "p": 2147463631,
+     "alpha": 306780520,
+     "rank": 158
+    },
+    {
+     "p": 2147463599,
+     "alpha": 1533902572,
+     "rank": 158
+    }
+   ],
+   "deck_image": "-9/7",
+   "deck_image_root_of_G": false,
+   "null_vectors_file": "results/S3_nullvectors_sheet2_W12_t9_7.json"
+  },
+  {
+   "factor": "t - 3",
+   "degree": 1,
+   "multiplicity_in_G": 28,
+   "decision": "drop",
+   "nullity": 2,
+   "t0": "3",
+   "beta2": "1/2",
+   "N": "-2",
+   "s": "-9",
+   "proof": "exact null vectors at the rational root",
+   "rank_primes": [
+    2147483647,
+    2147483629
+   ],
+   "ranks_mod_p": [
+    158,
+    158
+   ],
+   "null_vectors_verified": 2,
+   "null_vector_max_bits": 15,
+   "free_cols": [
+    30,
+    159
+   ],
+   "recon_primes_used": 1,
+   "tried_mod_p": [
+    {
+     "p": 2147463641,
+     "alpha": 3,
+     "rank": 158
+    },
+    {
+     "p": 2147463631,
+     "alpha": 3,
+     "rank": 158
+    },
+    {
+     "p": 2147463599,
+     "alpha": 3,
+     "rank": 158
+    }
+   ],
+   "deck_image": "-3",
+   "deck_image_root_of_G": false,
+   "null_vectors_file": "results/S3_nullvectors_sheet2_W12_t3.json"
+  }
+ ],
+ "jump_set": [
+  {
+   "t": "9/7",
+   "m": 2,
+   "beta2": "1/8",
+   "N": "-143/4",
+   "s": "-189/4",
+   "deck_image": "-9/7",
+   "deck_image_root_of_G": false
+  },
+  {
+   "t": "3",
+   "m": 2,
+   "beta2": "1/2",
+   "N": "-2",
+   "s": "-9",
+   "deck_image": "-3",
+   "deck_image_root_of_G": false
+  }
+ ],
+ "seconds": 1.6
+}

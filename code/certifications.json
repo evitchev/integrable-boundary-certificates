@@ -1312,6 +1312,36 @@
       ]
     },
     {
+      "id": "cyl_stratification_w1014",
+      "claims": [
+        "exact classification over Q-bar away from the parametrization poles t = +-1 at weights 10, 12 and 14 (spins 9, 11, 13) with open tools only, against the expectations preregistered for cyl_discriminant_w1012 and cyl_discriminant_w14: for each sheet the family matrix M(t) of ad_I3 is rebuilt from the engine, its generic rank r = n - 1 is proved both ways, the gcd G of two maximal minors (computed exactly by CRT under proven bounds, the FLINT images recomputed) is a complete over-approximation of the rank-drop locus, and every irreducible factor of G is decided by rank -- jump sets exactly w10: sheet1 {}, sheet2 {3}, sheet3 {3, 7/5}; w12: sheet1 {}, sheet2 {3, 9/7}, sheet3 {3}; w14: sheet1 {}, sheet2 {3}, sheet3 {3, 9/7}; nullity 2 at every jump; beta^2 = (t-1)/(t+1) images exactly 1/2, 1/6, 1/8; no jump at beta^2 = 1/7, 1/5, 1/3 (t = 4/3, 3/2, 2); no deck image -t0 of a jump is a jump"
+      ],
+      "description": "Fail-closed open-tool certificate (code/cyl_stratification_w1014.py: Python, sympy and numpy, and FLINT through the C driver code/strat1014_detmodp.c, compiled at run time; FLINT_PREFIX selects a FLINT outside the default paths). Rebuilds the nine matrices from mixed_engine (strat1014_family) and pins their sha256; re-verifies the archived claims results/cyl_stratification_w1014/claims/ (54 files; the sha256 of their SHA256SUMS is pinned in the script) with strat1014_verify: generic rank both ways; P1 and P2 recomputed modulo every listed 62-bit prime and matched under proven degree and Hadamard bounds; G exact, with coprime cofactors; every factor decided by the rank modulo a prime at a root, or by exact null vectors at a rational drop. Then pins the classification. Same expectations (results/cyl_discriminant_preregistration.md, results/cyl_discriminant_w14_preregistration.md) as the wolframscript certificates cyl_discriminant_w1012 and cyl_discriminant_w14, which it replaces as the support of the jumping-loci paper. Claims computed 2026-10-29 by an independent recomputation and reproduced from byte copies. Negative drills at W = 10 (a claim altered in place; the claim list regenerated after an alteration; an altered claim in an unpinned directory; a jump deleted; an altered expectation; an extra file; an altered matrix pin; no FLINT; python -O) each fail at the intended check. Expensive (about 50 minutes); runner record predeclared; artifact deterministic and pinned after the run.",
+      "mode": "run",
+      "command": [
+        "PYTHON",
+        "cyl_stratification_w1014.py"
+      ],
+      "timeout_s": 21600,
+      "required_markers": [
+        "STRATIFICATION W10-W14 CERTIFIED"
+      ],
+      "expensive": true,
+      "artifacts": [
+        {
+          "path": "results/cyl_stratification_w1014_run.json",
+          "kind": "runner_record"
+        },
+        {
+          "path": "results/cyl_stratification_w1014.json"
+        }
+      ],
+      "sources": [
+        "strat1014_detmodp.c",
+        "../results/cyl_stratification_w1014/claims/SHA256SUMS"
+      ]
+    },
+    {
       "id": "cyl_t2_primary",
       "claims": [
         "M2 (outcome form): at t_2 = 7/5 (Solution 3, spin 9) the 2-dim ad_I3 kernel contains ZERO T-primary class directions -- under T_total = (dX)^2/2 + (dY.dY)/2, T_X alone and T_Y alone (classes modulo Im d, poles k = 3..12 stacked, exact over Q) -- and the generic controls t = -7/5, 7/3, 11/5 (kernel dim 1) also give zero; the preregistered Phi_{1,3}-shadow expectation of exactly one primary direction at t_2 is REFUTED and recorded (the extra class is not a primary composite field, consistent with h_{1,3} being fractional) -- with a positive control (Codex round 17): the same detector returns exactly 1 on span{T_X, T_Y} at weight 2, where V = T_X - T_Y/N is T_total-primary (no poles of order >= 3, pole 2 = 2V, checked at all four points), and 0 on span{T_total}"

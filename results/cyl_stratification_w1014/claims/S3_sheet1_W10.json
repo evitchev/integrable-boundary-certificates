@@ -1,0 +1,24 @@
+{
+ "sheet": 1,
+ "W": 10,
+ "matrix_sha256": "86791da0754b204a9dac8fc950d70ebaff1d44a7dcf33be9c37e68175c9149ec",
+ "r": 67,
+ "n": 68,
+ "generic_nullity": 1,
+ "decisions": [
+  {
+   "factor": "t - 9",
+   "degree": 1,
+   "multiplicity_in_G": 2,
+   "decision": "no drop",
+   "nullity": 1,
+   "proof": "rank mod p at a root of f mod p",
+   "p": 2147463641,
+   "g": "t - 9",
+   "alpha": 9,
+   "rank_mod_p": 67
+  }
+ ],
+ "jump_set": [],
+ "seconds": 0.0
+}

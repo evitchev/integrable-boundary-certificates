@@ -1,5 +1,7 @@
 # The engines and all certifications are pure Python + sympy + mpmath (mpmath for the numerical
 # spectral checks of NUM1/NUM2 and of the opers kit's thm3/spec1 numerics).
+# Exception: the expensive entry cyl_stratification_w1014 also needs numpy, a C compiler and FLINT
+# (see the header of code/cyl_stratification_w1014.py).
 # Certified environment (results/certification_manifest.json): sympy 1.14.0, mpmath 1.3.0.
 sympy>=1.12
 mpmath>=1.3
