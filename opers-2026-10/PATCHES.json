@@ -706,5 +706,11 @@
   "kind": "functional: import numpy moved above the archived-log open (a missing numpy no longer empties run_VIR1R*.log before failing); output unchanged",
   "sha256_archived": "0a87c755aa0b285e1c89bdd00097a839ec8cc918ecebeefb4d8b0a73c882bc87",
   "sha256_kit": "b8d9a37ad5de8fff0d2a17c773786919b5115595d6cc82919dc612d12d729fda"
+ },
+ {
+  "path": "results/lab/large_n/num3/NOTE.md",
+  "kind": "textual redaction of cluster host names (file not executed by the kit; v1.2.8)",
+  "sha256_archived": "39e29fa0c3df4829527a10c28f9ee3e2ebc1b40750249a895c8ac9746c09387a",
+  "sha256_kit": "49b582e174922e769e34e233e5c6dd0f816b81a4b819e6e5c879329d31d66576"
  }
 ]

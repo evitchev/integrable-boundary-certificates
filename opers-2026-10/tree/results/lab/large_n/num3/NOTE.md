@@ -62,7 +62,7 @@ cc (Opus 5.5 seat), 2026-10-07. Lead's commission at the operator's request (bri
 - `wkb_pred3.py` v1 crashed in the residue step: the trivial K = 1 pole (E^0 log E) was included. It was fixed to exclude K = 1 and the log kept (`run_wkb_pred3_v1_crash.stdout`).
 - The fits on the sealed grid miss the sealed spin-3/5 levels (point 3). The verdict rests on the post-hoc extended grid.
 - Memory: one job measured at 20.7 MB RSS, 45 MB VSZ. Runs used `ulimit -v 120000`, 14 concurrent, on the head only (free memory checked). Runner PIDs are in pid_*.txt. No outer timeout on the data runs.
-- The cluster nodes dsk002-005 do not share ~ (checked) and were not used.
+- The cluster's compute nodes do not share ~ (checked) and were not used (their host names were removed in v1.2.8).
 
 ## Files
 - Code: `ode.py`, `ops3.py`, `gwkb.py`, `thwkb.py`, `controls.py`, `wkb_pred3.py`, `num3_point.py`, `num3_point_ext.py`, `assemble3.py`, `num3_fit.py`, `num3_fit_ext.py`, `t1_zeros3.py`, `diag_window.py`, `diag_k8.py`, `tasks*.txt`.

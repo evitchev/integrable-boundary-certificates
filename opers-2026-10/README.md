@@ -297,6 +297,9 @@ multivariate factorisation draws random evaluation points, and some draws stall 
 test run and in one v1.2.6 drill run, and one py3.8 run of a four-point check stalled for over 12 minutes (the `exc4_regen_t*` notes).
 On `f_six_sol3.py`, 5 of 40 seeds ran past 120 s and the other 35 took about 5 s; every run that finished wrote a byte-identical file.
 
+New in v1.2.8: one note that the kit does not execute, `tree/results/lab/large_n/num3/NOTE.md`, named the cluster's compute
+nodes by host name; the names were removed (recorded in `PATCHES.json`).
+
 ## AI assistance
 
 As stated in the paper, this work used AI tools (Claude, Anthropic; and other assistants) extensively for computation,
