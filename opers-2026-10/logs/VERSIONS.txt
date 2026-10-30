@@ -65,3 +65,16 @@ v1.2.7 (2026-10-26/27): clean_venv_gate.sh at e19b145, the commit before this ru
   The exc4_regen_six stall of v1.2.6 (above) came from sympy's random evaluation points; see the README, "New in v1.2.7".
   Not re-run for v1.2.7: the 23 full-mode checks (none of the scripts they run changed) and the root hours-class certifications.
   Lean: files unchanged since v1.2.4 (not rebuilt).
+v1.2.8 (2026-10-30): clean_venv_gate.sh at 7734094, the commit before this run record (the record adds only files in logs/,
+  one README sentence and the regenerated manifests), from a fresh clone outside the author's workspace, run under env -i with only
+  HOME (an empty directory), PATH, LANG, PYTHON and CLEAN_GATE_DIR set, as for v1.2.7. Each run builds two fresh virtual environments
+  with pip and the declared packages only (core: sympy, mpmath; opers: core + numpy) and runs the root quick certifications (56
+  executed passes, 21 pins verified, 14 hours-class checks skipped, of 91), the super-KdV checks, the opers quick suite (215 checks,
+  integrity gate included) and the drills of v1.2.7's three new checks. Paths in these logs are redacted to <repo> and <work>.
+  Python 3.12.8 / sympy 1.14.0 / mpmath 1.3.0 / numpy 2.5.4: ALL PASS; the opers quick suite took 4509 s -> v128_gate_py312.txt.
+  Python 3.8.10 / sympy 1.13.3 / mpmath 1.3.0 / numpy 1.24.4: ALL PASS; the opers quick suite took 5953 s -> v128_gate_py38.txt.
+  The kit changed in v1.2.8 only by the redaction of host names in tree/results/lab/large_n/num3/NOTE.md (PATCHES.json); no check's
+  script or data changed, so no drill or full-mode check was re-run. The repository's new registry entry cyl_stratification_w1014
+  (hours-class, so skipped by the quick set; its pins are among the 21 verified) ran registered from a clean clone: PASS in 2870 s
+  (results/cyl_stratification_w1014_run.json).
+  Lean: files unchanged since v1.2.4 (not rebuilt).
