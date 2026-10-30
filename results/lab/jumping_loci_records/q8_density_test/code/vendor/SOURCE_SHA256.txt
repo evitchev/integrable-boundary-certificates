@@ -1,0 +1,5 @@
+# Byte copies (unchanged) of the free-field engine modules kwick.py and wick.py. Source: the identical files
+# opers-2026-10/tree/results/lab/large_n/wuw2/kwick.py and opers-2026-10/tree/results/lab/large_n/wuw2/wick.py
+# of this repository (release v1.2.7). Check from this directory: sha256sum -c SOURCE_SHA256.txt
+e51854d14a4e878197f4361e69f33b5db43ac8624459010b0b297a1dfa63da32  kwick.py
+1962b022276bab8bc5fee5673e8e09526e29eb1d4e56d6cea5cfab9d867b02cd  wick.py

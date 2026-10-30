@@ -1,0 +1,53 @@
+PASS  vendor/mixed_engine.py is a byte copy of the repository's code/mixed_engine.py (sha256 078a03212132d022)
+PASS  vendor/invariant_engine.py is a byte copy of the repository's code/invariant_engine.py (sha256 472d7eca24b29730)
+PASS  vendor/cyl_mo2_profiles.py is a byte copy of the repository's code/cyl_mo2_profiles.py (sha256 2ca3173b5ab279a2)
+== (1) the maps from the committed I_3 (cyl_P4 over Q(t))
+PASS  sheet 1: b(t) = [x^2 r^2]/[x^4] of the committed I_3 equals the claimed 6*(t - 1)/(t - 9)
+PASS  sheet 1: c(t) = [r^4]/[x^4] of the committed I_3 equals the claimed (t - 1)/(t - 9)
+      sheet 1: the unnormalized symbol [x^4 : x^2 r^2 : r^4] = [(t - 9)/(t - 1) : 6 : 1]
+PASS  sheet 2: b(t) = [x^2 r^2]/[x^4] of the committed I_3 equals the claimed 12*(t - 1)/(5*t - 11)
+PASS  sheet 2: c(t) = [r^4]/[x^4] of the committed I_3 equals the claimed 8*(t - 1)**2/((t - 3)*(5*t - 11))
+      sheet 2: the unnormalized symbol [x^4 : x^2 r^2 : r^4] = [(t - 3)*(5*t - 11)/(8*(t - 1)**2) : 3*(t - 3)/(2*(t - 1)) : 1]
+PASS  sheet 3: b(t) = [x^2 r^2]/[x^4] of the committed I_3 equals the claimed 6*(t - 3)/(t + 1)
+PASS  sheet 3: c(t) = [r^4]/[x^4] of the committed I_3 equals the claimed 1
+      sheet 3: the unnormalized symbol [x^4 : x^2 r^2 : r^4] = [1 : 6*(t - 3)/(t + 1) : 1]
+== (1b) the weight-4 profiles PINS (cyl_mo2_profiles): a_1 = b, a_2 = c
+PASS  sheet 1: PINS[1](4) = [1, b, c] with the claimed b, c (over Q(t))
+PASS  sheet 2: PINS[2](4) = [1, b, c] with the claimed b, c (over Q(t))
+PASS  sheet 3: PINS[3](4) = [1, b, c] with the claimed b, c (over Q(t))
+== (2) consequences
+      sheet 1 in x = beta^2: b = 6*x/(5*x - 4), c = x/(5*x - 4)
+      sheet 2 in x = beta^2: b = 12*x/(8*x - 3), c = 8*x**2/((2*x - 1)*(8*x - 3))
+      sheet 3 in x = beta^2: b = 6*(2*x - 1), c = 1
+PASS  sheet 1: c = b/6 identically
+PASS  sheet 2: c = b^2/(6 - b) identically
+PASS  sheet 3: b = 12 beta^2 - 6, c = 1
+PASS  sheet 1 (c = b/6) on eq. (3): s = 2j' (even): no affine classical point at odd spin
+PASS  sheet 1 at infinity (its normalization pole t = 9: c/b = 1/6) against C' = (3j'-s)/(6j'): s = 2j' (even): none at odd spin
+PASS  sheet 2 (c = b^2/(6-b)) on eq. (3): s = 2j + 3j' (solutions [2*j + 3*jp])
+PASS  sheet 3 (c = 1) on eq. (3): j' = j
+PASS  sheet 3: beta^2 = (s - 4j)/(2(s - 3j)) ([(4*j - s)/(2*(3*j - s))])
+PASS  sheet 2: beta^2 = j/(2(j + j')) (the hand derivation) ([j/(2*(j + jp))])
+PASS  odd s <= 61: every closed-form point lies on its sheet's curve at the stated t (eq. (3) or the point at infinity); sheet-3 beta^2 always odd/even in lowest terms (0 exceptions)
+PASS  sheet 3: beta^2 = 1/q with q odd never occurs classically (odd s <= 61); q even occurs 24 times
+      sheet 3, beta^2 = 1/q (q even), s <= 61: s=5 q=4 t=5/3, s=9 q=6 t=7/5, s=13 q=8 t=9/7, s=15 q=4 t=5/3, s=17 q=10 t=11/9, s=21 q=12 t=13/11, s=25 q=4 t=5/3, s=25 q=14 t=15/13, s=27 q=6 t=7/5, s=29 q=16 t=17/15, s=33 q=18 t=19/17, s=35 q=4 t=5/3, s=37 q=20 t=21/19, s=39 q=8 t=9/7, s=41 q=22 t=23/21, s=45 q=4 t=5/3, s=45 q=6 t=7/5, s=45 q=24 t=25/23, s=49 q=26 t=27/25, s=51 q=10 t=11/9, s=53 q=28 t=29/27, s=55 q=4 t=5/3, s=57 q=30 t=31/29, s=61 q=32 t=33/31
+      sheet 2, beta^2 = 1/q (q odd),  s <= 61: s=7 q=3 (j,j')=(2,1) t=2, s=13 q=5 (j,j')=(2,3) t=3/2, s=19 q=7 (j,j')=(2,5) t=4/3, s=21 q=3 (j,j')=(6,3) t=2, s=25 q=9 (j,j')=(2,7) t=5/4, s=31 q=11 (j,j')=(2,9) t=6/5, s=35 q=3 (j,j')=(10,5) t=2, s=37 q=13 (j,j')=(2,11) t=7/6, s=39 q=5 (j,j')=(6,9) t=3/2, s=43 q=15 (j,j')=(2,13) t=8/7, s=49 q=3 (j,j')=(14,7) t=2, s=49 q=17 (j,j')=(2,15) t=9/8, s=55 q=19 (j,j')=(2,17) t=10/9, s=57 q=7 (j,j')=(6,15) t=4/3, s=61 q=21 (j,j')=(2,19) t=11/10
+      sheet 2, beta^2 = 1/q (q even), s <= 61: s=5 q=4 (j,j')=(1,1) t=5/3, s=11 q=8 (j,j')=(1,3) t=9/7, s=15 q=4 (j,j')=(3,3) t=5/3, s=17 q=12 (j,j')=(1,5) t=13/11, s=23 q=16 (j,j')=(1,7) t=17/15, s=25 q=4 (j,j')=(5,5) t=5/3, s=29 q=20 (j,j')=(1,9) t=21/19, s=33 q=8 (j,j')=(3,9) t=9/7, s=35 q=4 (j,j')=(7,7) t=5/3, s=35 q=24 (j,j')=(1,11) t=25/23, s=41 q=28 (j,j')=(1,13) t=29/27, s=45 q=4 (j,j')=(9,9) t=5/3, s=47 q=32 (j,j')=(1,15) t=33/31, s=51 q=12 (j,j')=(3,15) t=13/11, s=53 q=36 (j,j')=(1,17) t=37/35, s=55 q=4 (j,j')=(11,11) t=5/3, s=55 q=8 (j,j')=(5,15) t=9/7, s=59 q=40 (j,j')=(1,19) t=41/39
+PASS  sheet 2: beta^2 = 1/q with q odd occurs exactly at s = m(3q - 2), m odd, with (j, j') = (2m, m(q-2)) (s <= 61)
+PASS  sheet 2: the lowest odd-q points (j, j') = (2, q-2): t = 2, 3/2, 4/3 at spins 7, 13, 19
+== (3) the repository's classical lists against the closed forms
+PASS  the pinned lists cover weights 12-22 for the three sheets
+PASS  weight 6 (spin 5): sheet 3 [Fraction(5, 3)], sheet 2 affine [Fraction(5, 3)], sheet 1 none: equal to P3b EXPECT_JUMPS; sheet 2 at infinity: none
+PASS  weight 8 (spin 7): sheet 3 [Fraction(11, 5)], sheet 2 affine [Fraction(2, 1)], sheet 1 none: equal to P3b EXPECT_JUMPS; sheet 2 at infinity: none
+PASS  weight 10 (spin 9): sheet 3 [Fraction(7, 5), Fraction(17, 7)], sheet 2 affine [], sheet 1 none: equal to P3b EXPECT_JUMPS; sheet 2 at infinity: [Fraction(11, 5)]
+PASS  weight 12 (spin 11): sheet 3 [Fraction(13, 7), Fraction(23, 9)], sheet 2 affine [Fraction(9, 7), Fraction(7, 3)], sheet 1 none: equal to the pinned list; sheet 2 at infinity: none
+PASS  weight 14 (spin 13): sheet 3 [Fraction(9, 7), Fraction(19, 9), Fraction(29, 11)], sheet 2 affine [Fraction(3, 2), Fraction(17, 7)], sheet 1 none: equal to the pinned list; sheet 2 at infinity: none
+PASS  weight 16 (spin 15): sheet 3 [Fraction(5, 3), Fraction(25, 11), Fraction(35, 13)], sheet 2 affine [Fraction(5, 3), Fraction(5, 2)], sheet 1 none: equal to the pinned list; sheet 2 at infinity: none
+PASS  weight 18 (spin 17): sheet 3 [Fraction(11, 9), Fraction(21, 11), Fraction(31, 13), Fraction(41, 15)], sheet 2 affine [Fraction(13, 11), Fraction(9, 5), Fraction(23, 9)], sheet 1 none: equal to the pinned list; sheet 2 at infinity: none
+PASS  weight 20 (spin 19): sheet 3 [Fraction(17, 11), Fraction(27, 13), Fraction(37, 15), Fraction(47, 17)], sheet 2 affine [Fraction(4, 3), Fraction(21, 11), Fraction(13, 5)], sheet 1 none: equal to the pinned list; sheet 2 at infinity: none
+PASS  weight 22 (spin 21): sheet 3 [Fraction(13, 11), Fraction(23, 13), Fraction(11, 5), Fraction(43, 17), Fraction(53, 19)], sheet 2 affine [Fraction(19, 13), Fraction(2, 1), Fraction(29, 11)], sheet 1 none: equal to the pinned list; sheet 2 at infinity: none
+PASS  the odd-q point t = 2 is in the repository's sheet-2 list at weight 8
+PASS  the odd-q point t = 3/2 is in the repository's sheet-2 list at weight 14
+PASS  the odd-q point t = 4/3 is in the repository's sheet-2 list at weight 20
+
+A4 DONE: all checks pass

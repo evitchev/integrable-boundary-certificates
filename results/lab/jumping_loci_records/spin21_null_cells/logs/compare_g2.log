@@ -1,0 +1,17 @@
+<folder>/out/w22_t1311_sheet3.json: sha256 aa4f82e1bf464219f56d97c1e98faa538628c2f567981da59933429cb56fc10a, 9850409 bytes
+<repository>/results/lab/fast_kernel3/w22_t1311_sheet3.json: sha256 31128b848fca4126a981e1b41e8945e919d4ce933b797d5ee193fbd95239edb7, 9850409 bytes
+  tool: mine "lab/fast_kernel3.py (quotient formulation, v2)" | repository "lab/fast_kernel3.py (quotient formulation, v2)"
+  tool_sha256: mine "07c3e3f227a719703e8a2e6108083871f14f91d997aa4201bcb03f0d30d4846e" | repository "5e29e28a8cdb4137d7d83787f7873b212cd6678cf9f9f1c8a041388a8e274719"
+  weight: mine 22 | repository 22
+  solution: mine 3 | repository 3
+  N: mine "-119/2" | repository "-119/2"
+  s: mine "-143/2" | repository "-143/2"
+  genuine_dim: mine 2 | repository 2
+  kc: mine 16901 | repository 16901
+  primes_used: mine 5 | repository 5
+  seconds: mine 1381 | repository 1233
+  status: mine "lab record: exact fast-path computation (quotient formulation), pending independent certification by the registered pure-Python certificate" | repository "lab record: exact fast-path computation (quotient formulation), pending independent certification by the registered pure-Python certificate"
+  witness counts: mine 2 | repository 2
+  witnesses, canonical form: mine sha256 15363a5ffcb081b14778895cfc391ac1fa82715e36190ac61176fdcec2831664 (9097211 bytes) | repository sha256 15363a5ffcb081b14778895cfc391ac1fa82715e36190ac61176fdcec2831664 (9097211 bytes)
+  control: the repository record's witnesses 0 and 1 differ (31a6f104baef841b vs b5af783f3786c7b1), so the comparison can fail
+WITNESSES EQUAL

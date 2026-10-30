@@ -1,0 +1,9 @@
+# The code files of this folder (paths relative to code/).
+# Columns: sha256 as shipped, path, sha256 of the file the original runs used, origin and changes.
+# run.sh checks the first two columns before it runs anything.
+07c3e3f227a719703e8a2e6108083871f14f91d997aa4201bcb03f0d30d4846e  vendor/lab/fast_kernel3.py  07c3e3f227a719703e8a2e6108083871f14f91d997aa4201bcb03f0d30d4846e  byte copy of lab/fast_kernel3.py of the development repository (not in the public tree at v1.2.7); the shipped records name it, tool_sha256 07c3e3f2...
+078a03212132d0224ca317f1e0c57d1c7d940a18090e9042e088b64e42aeb0a6  vendor/code/mixed_engine.py  078a03212132d0224ca317f1e0c57d1c7d940a18090e9042e088b64e42aeb0a6  byte copy of code/mixed_engine.py of this repository (v1.2.7)
+472d7eca24b29730e3bb9a274d13df82c9e19526b47c58c940a35a384cee8638  vendor/code/invariant_engine.py  472d7eca24b29730e3bb9a274d13df82c9e19526b47c58c940a35a384cee8638  byte copy of code/invariant_engine.py of this repository (v1.2.7)
+840360c5180447fff81a0e39ee68520d98ce7f98f101a864c2325f62ee3d15a6  jl_lib.py  9ff3e9d0f544908bf91c7cd67bbf41f881ac3549ec606ea3832556c02b6dfc1a  the library of the classical checks used by the original run; one comment line and one docstring line differ (reviewer references removed), no code
+5f639247bda70a79f264af0737183d3ece82163a0521022dd4d85f80b3f19ace  run_g1.py  153792ab37b631fd60074d54c35c9112612569dd55ecb3a9f7315461fb8c7d9c  the repository root found relative to this file; jl_lib.py checked against its pinned sha256 instead of a reference copy outside the repository; first docstring line reworded
+331b91f0232d811e5d5d2714f57d09aaf402c2a820fac28a85a9a8649438ab30  compare_g2.sh  6e335c04907eef33bac15adf8ab65b06d1d0788e28b38211c6dd96badbc09afe  two absolute paths replaced by paths relative to this folder and to the repository root

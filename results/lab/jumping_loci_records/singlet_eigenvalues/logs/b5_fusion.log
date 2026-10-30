@@ -1,0 +1,43 @@
+script sha256 d7e70fc7af1fd560d72d37b37d3a5853b0b072948c7951c4083e102d182d7e8d
+== (i) E_i = F_m(P_X+pi) F_m(P_X-pi), F_m(z) = prod_{j=-(m-1)}^{m-1}(z - j p) = p^(2m-1)(2m-1)! binom(z/p + m-1, 2m-1), m = i+1 = q/2, p^2 = 1/m
+q=4 (m=2): E_i - F_m(P_X+pi)F_m(P_X-pi): PASS
+q=4 (m=2): F_m(z) - p^(2m-1)(2m-1)! binom(z/p+m-1, 2m-1): PASS
+q=4 (m=2): E_i - B(P_X+pi) B(P_X-pi): PASS
+q=6 (m=3): E_i - F_m(P_X+pi)F_m(P_X-pi): PASS
+q=6 (m=3): F_m(z) - p^(2m-1)(2m-1)! binom(z/p+m-1, 2m-1): PASS
+q=6 (m=3): E_i - B(P_X+pi) B(P_X-pi): PASS
+q=8 (m=4): E_i - F_m(P_X+pi)F_m(P_X-pi): PASS
+q=8 (m=4): F_m(z) - p^(2m-1)(2m-1)! binom(z/p+m-1, 2m-1): PASS
+q=8 (m=4): E_i - B(P_X+pi) B(P_X-pi): PASS
+q=10 (m=5): E_i - F_m(P_X+pi)F_m(P_X-pi): PASS
+q=10 (m=5): F_m(z) - p^(2m-1)(2m-1)! binom(z/p+m-1, 2m-1): PASS
+q=10 (m=5): E_i - B(P_X+pi) B(P_X-pi): PASS
+q=12 (m=6): E_i - F_m(P_X+pi)F_m(P_X-pi): PASS
+q=12 (m=6): F_m(z) - p^(2m-1)(2m-1)! binom(z/p+m-1, 2m-1): PASS
+q=12 (m=6): E_i - B(P_X+pi) B(P_X-pi): PASS
+q=14 (m=7): E_i - F_m(P_X+pi)F_m(P_X-pi): PASS
+q=14 (m=7): F_m(z) - p^(2m-1)(2m-1)! binom(z/p+m-1, 2m-1): PASS
+q=14 (m=7): E_i - B(P_X+pi) B(P_X-pi): PASS
+q=16 (m=8): E_i - F_m(P_X+pi)F_m(P_X-pi): PASS
+q=16 (m=8): F_m(z) - p^(2m-1)(2m-1)! binom(z/p+m-1, 2m-1): PASS
+q=16 (m=8): E_i - B(P_X+pi) B(P_X-pi): PASS
+== (ii) records: WUW1 (q=4, p_Ad=2): eigen(W_U) = (4/3) P_U (P_U^2 - 1/4), P_U = (P_X+pi)/sqrt2; lattice alpha = 2U, <alpha,alpha> = 4; background: T_U = (1/2)(dU)^2 + (1/2) d^2U, kappa = 1
+eigen(W_U) == binom(2 P_U + 1, 3) exactly: PASS
+   shift p-1 = 1 = 2 a kappa = 2*(1/2)*1 -> True
+== (ii) records: WUW2 (q=6, p_Ad=3): eigen(W^(5)) = (1/15) P_V (P_V^2-1)(4P_V^2-1), P_V = (sqrt3/2)(P_X+pi); alpha = 2V, <V,V> = kappa = 3/2, <alpha,alpha> = 6; T_U = (1/3)(dV)^2 + (2/3) d^2V
+eigen(W^(5)) == binom(2 P_V + 2, 5) exactly: PASS
+   shift p-1 = 2 = 2 a kappa = 2*(2/3)*(3/2) -> True
+== (ii) the records' product constants: eigen(G_6) = -(2/9) E_1 (WUW1 P3), eigen(G_10) = -(81/4800) E_2 (WUW2 P3), versus the product of the two one-boson eigenvalues
+q=4: eigen(W_U) eigen(W_W) == -(2/9) E_1: PASS
+q=6: eigen(W^(5)_V) eigen(W^(5)_Z) == -(81/4800) E_2: PASS
+   (so the records' G eigenvalues are exactly the products of the two binomials; consistent with the zero mode of H_U H_W acting on the grade-0 vector as (H_U)_0 (H_W)_0)
+== general m: binom(2P + m - 1, 2m-1) = 2^(2m-1)/(2m-1)! prod_{j=-(m-1)}^{m-1} (P - j/2): the root string P = j/2
+m=2: binom(2P+m-1,2m-1) - 2^(2m-1)/(2m-1)! prod_j (P - j/2): PASS
+m=3: binom(2P+m-1,2m-1) - 2^(2m-1)/(2m-1)! prod_j (P - j/2): PASS
+m=4: binom(2P+m-1,2m-1) - 2^(2m-1)/(2m-1)! prod_j (P - j/2): PASS
+m=5: binom(2P+m-1,2m-1) - 2^(2m-1)/(2m-1)! prod_j (P - j/2): PASS
+m=6: binom(2P+m-1,2m-1) - 2^(2m-1)/(2m-1)! prod_j (P - j/2): PASS
+m=7: binom(2P+m-1,2m-1) - 2^(2m-1)/(2m-1)! prod_j (P - j/2): PASS
+m=8: binom(2P+m-1,2m-1) - 2^(2m-1)/(2m-1)! prod_j (P - j/2): PASS
+ALL PASS
+exit 0

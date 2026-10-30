@@ -1,0 +1,5100 @@
+{
+ "classes": [
+  "certified",
+  "certified scan evidence",
+  "pinned lab record",
+  "lab result",
+  "untested"
+ ],
+ "deck_images": [
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 5,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 5,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 5,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 7,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 7,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 7,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 9,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 9,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 9,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 11,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 11,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 11,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 13,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 13,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 13,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 15,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 15,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 15,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 17,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 17,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 17,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 19,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 19,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 19,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 21,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 21,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 21,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 23,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 23,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 23,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 25,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 25,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 25,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 27,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 27,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 27,
+   "t": "-3"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 5,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 5,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 5,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 7,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 7,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 7,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 9,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 9,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 9,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 11,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 11,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 11,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 13,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 13,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 13,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 15,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 15,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 15,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 17,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 17,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 17,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 19,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 19,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 19,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 21,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 21,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 21,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 23,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 23,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 23,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 25,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 25,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 25,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 27,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 27,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 27,
+   "t": "-5/3"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 5,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 5,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 5,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 7,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 7,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 7,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 9,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 9,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 9,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 11,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 11,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 11,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 13,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 13,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 13,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 15,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 15,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 15,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 17,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 17,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 17,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 19,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 19,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 19,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 21,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 21,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 21,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 23,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 23,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 23,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 25,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 25,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 25,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 27,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 27,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 27,
+   "t": "-7/5"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 5,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 5,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 5,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 7,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 7,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 7,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 9,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 9,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 9,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 11,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 11,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 11,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 13,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 13,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 13,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 15,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 15,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 15,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 17,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 17,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 17,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 19,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 19,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 19,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 21,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 21,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 21,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 23,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 23,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 23,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 25,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 25,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 25,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 27,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 27,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 27,
+   "t": "-9/7"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 5,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 5,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 5,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 7,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 7,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 7,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 9,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 9,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 9,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 11,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 11,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 11,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 13,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 13,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 13,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 15,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 15,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 15,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 17,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 17,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 17,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 19,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 19,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 19,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 21,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 21,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 21,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 23,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 23,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 23,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 25,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 25,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 25,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 27,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 27,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 27,
+   "t": "-11/9"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 5,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 5,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 5,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 7,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 7,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 7,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 9,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 9,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 9,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 11,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 11,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 11,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 13,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 13,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 13,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 15,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 15,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 15,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 17,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 17,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 17,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 19,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 19,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 19,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 21,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 21,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 21,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 23,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 23,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 23,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 25,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 25,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 25,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 27,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 27,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 27,
+   "t": "-13/11"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 5,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 5,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 5,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 7,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 7,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 7,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 9,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 9,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 9,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 11,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 11,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 11,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 13,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 13,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 13,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 15,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 15,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 15,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 17,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 17,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 17,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 19,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 19,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 19,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 21,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 21,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 21,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 23,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 23,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 23,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 25,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 25,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 25,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 27,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 27,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 27,
+   "t": "-15/13"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 5,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 5,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w6.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 5,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 1,
+   "spin": 7,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 2,
+   "spin": 7,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "lab result",
+   "outcome": "no jump",
+   "record": "wolfram/lab/cyl_strata_w8.json (not a root of the maximal minor)",
+   "sheet": 3,
+   "spin": 7,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 9,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 9,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 9,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 11,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 11,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 11,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 1,
+   "spin": 13,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 2,
+   "spin": 13,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "sheet": 3,
+   "spin": 13,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 15,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 15,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 15,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 17,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 17,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 17,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 19,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 2,
+   "spin": 19,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 3,
+   "spin": 19,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 21,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 21,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 21,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 23,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 23,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 23,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 25,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 25,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 25,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 27,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 27,
+   "t": "-17/15"
+  },
+  {
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 27,
+   "t": "-17/15"
+  }
+ ],
+ "generated_by": "code/run_a5.py",
+ "nonclassical_kernels_w22plus": [
+  {
+   "dim": 1,
+   "record": "results/lab/fast_kernel3/w22_sol1_t117.json",
+   "sheet": 1,
+   "t": "11/7",
+   "weight": 22
+  }
+ ],
+ "rows": [
+  {
+   "N": "-25/2",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)"
+    },
+    {
+     "cls": "certified",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "code/cyl_jump_point_tower.py:127 (EXPECT; the merged I_3 of sheets 2 and 3 at t = 5/3; certified)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "wolfram/lab/cyl_strata_w6.json (jump root)"
+    },
+    {
+     "cls": "pinned lab record",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "results/lab/classical/lifting_out.txt"
+    }
+   ],
+   "beta2": "1/4",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "certified",
+   "j": 1,
+   "jp": 1,
+   "kind": "ladder",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 4,
+   "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-45/2",
+   "sheet": 3,
+   "spin": 5,
+   "t": "5/3",
+   "weight": 6
+  },
+  {
+   "N": "-25/2",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)"
+    },
+    {
+     "cls": "certified",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "code/cyl_jump_point_tower.py:127 (EXPECT; the merged I_3 of sheets 2 and 3 at t = 5/3; certified)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "wolfram/lab/cyl_strata_w6.json (jump root)"
+    },
+    {
+     "cls": "pinned lab record",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "results/lab/classical/lifting_out.txt"
+    }
+   ],
+   "beta2": "1/4",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "certified",
+   "j": 1,
+   "jp": 1,
+   "kind": "ladder",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 4,
+   "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-45/2",
+   "sheet": 2,
+   "spin": 5,
+   "t": "5/3",
+   "weight": 6
+  },
+  {
+   "N": "-21/4",
+   "all_records": [
+    {
+     "cls": "lab result",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "wolfram/lab/cyl_strata_w8.json (rejected root, exact rank)"
+    },
+    {
+     "cls": "pinned lab record",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "results/lab/classical/lifting_out.txt"
+    }
+   ],
+   "beta2": "3/8",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 1,
+   "evidence_class": "pinned lab record",
+   "j": 1,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/classical/lifting_out.txt",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-55/4",
+   "sheet": 3,
+   "spin": 7,
+   "t": "11/5",
+   "weight": 8
+  },
+  {
+   "N": "-7",
+   "all_records": [
+    {
+     "cls": "lab result",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "wolfram/lab/cyl_strata_w8.json (rejected root, exact rank)"
+    },
+    {
+     "cls": "pinned lab record",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "results/lab/classical/lifting_out.txt"
+    }
+   ],
+   "beta2": "1/3",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 1,
+   "evidence_class": "pinned lab record",
+   "j": 2,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": true,
+   "outcome": "no jump",
+   "q": 3,
+   "record": "results/lab/classical/lifting_out.txt",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-16",
+   "sheet": 2,
+   "spin": 7,
+   "t": "2",
+   "weight": 8
+  },
+  {
+   "N": "-39/10",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a non-jump factor)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "wolfram/lab/cyl_strata_w10.json (rejected root, exact rank)"
+    },
+    {
+     "cls": "pinned lab record",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "results/lab/classical/lifting_out.txt"
+    }
+   ],
+   "beta2": "5/12",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified",
+   "j": 1,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a non-jump factor)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-119/10",
+   "sheet": 3,
+   "spin": 9,
+   "t": "17/7",
+   "weight": 10
+  },
+  {
+   "N": "-24",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)"
+    },
+    {
+     "cls": "certified",
+     "dim": null,
+     "outcome": "jump",
+     "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a jump)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "wolfram/lab/cyl_strata_w10.json (jump root)"
+    },
+    {
+     "cls": "pinned lab record",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "results/lab/classical/lifting_out.txt"
+    }
+   ],
+   "beta2": "1/6",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "certified",
+   "j": 2,
+   "jp": 2,
+   "kind": "ladder",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 6,
+   "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-35",
+   "sheet": 3,
+   "spin": 9,
+   "t": "7/5",
+   "weight": 10
+  },
+  {
+   "N": "-21/4",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a non-jump factor)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "wolfram/lab/cyl_strata_w10.json (rejected root, exact rank)"
+    }
+   ],
+   "beta2": "3/8",
+   "chart": "infinity",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified",
+   "j": 3,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a non-jump factor)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-55/4",
+   "sheet": 2,
+   "spin": 9,
+   "t": "11/5",
+   "weight": 10
+  },
+  {
+   "N": "-187/56",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a non-jump factor)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "wolfram/lab/cyl_strata_w12.json (rejected root, exact rank)"
+    }
+   ],
+   "beta2": "7/16",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified",
+   "j": 1,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a non-jump factor)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-621/56",
+   "sheet": 3,
+   "spin": 11,
+   "t": "23/9",
+   "weight": 12
+  },
+  {
+   "N": "-44/5",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a non-jump factor)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "wolfram/lab/cyl_strata_w12.json (rejected root, exact rank)"
+    }
+   ],
+   "beta2": "3/10",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified",
+   "j": 2,
+   "jp": 2,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a non-jump factor)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-91/5",
+   "sheet": 3,
+   "spin": 11,
+   "t": "13/7",
+   "weight": 12
+  },
+  {
+   "N": "-22/5",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "wolfram/lab/cyl_strata_w12.json (not a root of the maximal minor)"
+    }
+   ],
+   "beta2": "2/5",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified",
+   "j": 4,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-63/5",
+   "sheet": 2,
+   "spin": 11,
+   "t": "7/3",
+   "weight": 12
+  },
+  {
+   "N": "-143/4",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "code/cyl_strata_points_s11.py:50-68 (certified)"
+    },
+    {
+     "cls": "certified",
+     "dim": null,
+     "outcome": "jump",
+     "record": "results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a jump)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "wolfram/lab/cyl_strata_w12.json (jump root)"
+    }
+   ],
+   "beta2": "1/8",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "certified",
+   "j": 1,
+   "jp": 3,
+   "kind": "ladder",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 8,
+   "record": "code/cyl_strata_points_s11.py:50-68 (certified)",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-189/4",
+   "sheet": 2,
+   "spin": 11,
+   "t": "9/7",
+   "weight": 12
+  },
+  {
+   "N": "-91/30",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t a non-jump factor)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "wolfram/lab/cyl_strata_w14.json (rejected root, exact rank)"
+    }
+   ],
+   "beta2": "9/20",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified",
+   "j": 1,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t a non-jump factor)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-319/30",
+   "sheet": 3,
+   "spin": 13,
+   "t": "29/11",
+   "weight": 14
+  },
+  {
+   "N": "-208/35",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t a non-jump factor)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "wolfram/lab/cyl_strata_w14.json (rejected root, exact rank)"
+    }
+   ],
+   "beta2": "5/14",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified",
+   "j": 2,
+   "jp": 2,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t a non-jump factor)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-513/35",
+   "sheet": 3,
+   "spin": 13,
+   "t": "19/9",
+   "weight": 14
+  },
+  {
+   "N": "-143/4",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "code/cyl_spin13_sol3_sporadic.py:59-62 (certified; results/cyl_spin13_sol3_sporadic_run.json pass)"
+    },
+    {
+     "cls": "certified",
+     "dim": null,
+     "outcome": "jump",
+     "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t a jump)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "wolfram/lab/cyl_strata_w14.json (jump root)"
+    }
+   ],
+   "beta2": "1/8",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "certified",
+   "j": 3,
+   "jp": 3,
+   "kind": "ladder",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 8,
+   "record": "code/cyl_spin13_sol3_sporadic.py:59-62 (certified; results/cyl_spin13_sol3_sporadic_run.json pass)",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-189/4",
+   "sheet": 3,
+   "spin": 13,
+   "t": "9/7",
+   "weight": 14
+  },
+  {
+   "N": "-39/10",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t a non-jump factor)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "wolfram/lab/cyl_strata_w14.json (rejected root, exact rank)"
+    }
+   ],
+   "beta2": "5/12",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified",
+   "j": 5,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t a non-jump factor)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-119/10",
+   "sheet": 2,
+   "spin": 13,
+   "t": "17/7",
+   "weight": 14
+  },
+  {
+   "N": "-91/5",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "code/cyl_oddq_controls.py:29-34 (certified; results/cyl_oddq_controls_run.json pass)"
+    },
+    {
+     "cls": "certified",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t a non-jump factor)"
+    },
+    {
+     "cls": "lab result",
+     "dim": 1,
+     "outcome": "no jump",
+     "record": "wolfram/lab/cyl_strata_w14.json (rejected root, exact rank)"
+    }
+   ],
+   "beta2": "1/5",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 1,
+   "evidence_class": "certified",
+   "j": 2,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": true,
+   "outcome": "no jump",
+   "q": 5,
+   "record": "code/cyl_oddq_controls.py:29-34 (certified; results/cyl_oddq_controls_run.json pass)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-144/5",
+   "sheet": 2,
+   "spin": 13,
+   "t": "3/2",
+   "weight": 14
+  },
+  {
+   "N": "-125/44",
+   "all_records": [
+    {
+     "cls": "pinned lab record",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "11/24",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "pinned lab record",
+   "j": 1,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-455/44",
+   "sheet": 3,
+   "spin": 15,
+   "t": "35/13",
+   "weight": 16
+  },
+  {
+   "N": "-100/21",
+   "all_records": [
+    {
+     "cls": "pinned lab record",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "7/18",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "pinned lab record",
+   "j": 2,
+   "jp": 2,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-275/21",
+   "sheet": 3,
+   "spin": 15,
+   "t": "25/11",
+   "weight": 16
+  },
+  {
+   "N": "-25/2",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "code/cyl_spin15_stratification.py:65-68 (certified; results/cyl_spin15_stratification_run.json pass)"
+    },
+    {
+     "cls": "pinned lab record",
+     "dim": null,
+     "outcome": "jump",
+     "record": "results/lab/modp_scan/w16_p10007_summary.json (drop at both primes)"
+    }
+   ],
+   "beta2": "1/4",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "certified",
+   "j": 3,
+   "jp": 3,
+   "kind": "recurrence",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 4,
+   "record": "code/cyl_spin15_stratification.py:65-68 (certified; results/cyl_spin15_stratification_run.json pass)",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-45/2",
+   "sheet": 3,
+   "spin": 15,
+   "t": "5/3",
+   "weight": 16
+  },
+  {
+   "N": "-25/7",
+   "all_records": [
+    {
+     "cls": "pinned lab record",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "3/7",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "pinned lab record",
+   "j": 6,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-80/7",
+   "sheet": 2,
+   "spin": 15,
+   "t": "5/2",
+   "weight": 16
+  },
+  {
+   "N": "-25/2",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "code/cyl_spin15_stratification.py:65-68 (certified; results/cyl_spin15_stratification_run.json pass)"
+    },
+    {
+     "cls": "pinned lab record",
+     "dim": null,
+     "outcome": "jump",
+     "record": "results/lab/modp_scan/w16_p10007_summary.json (drop at both primes)"
+    }
+   ],
+   "beta2": "1/4",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "certified",
+   "j": 3,
+   "jp": 3,
+   "kind": "recurrence",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 4,
+   "record": "code/cyl_spin15_stratification.py:65-68 (certified; results/cyl_spin15_stratification_run.json pass)",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-45/2",
+   "sheet": 2,
+   "spin": 15,
+   "t": "5/3",
+   "weight": 16
+  },
+  {
+   "N": "-493/182",
+   "all_records": [
+    {
+     "cls": "pinned lab record",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "13/28",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "pinned lab record",
+   "j": 1,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-1845/182",
+   "sheet": 3,
+   "spin": 17,
+   "t": "41/15",
+   "weight": 18
+  },
+  {
+   "N": "-136/33",
+   "all_records": [
+    {
+     "cls": "pinned lab record",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "9/22",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "pinned lab record",
+   "j": 2,
+   "jp": 2,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-403/33",
+   "sheet": 3,
+   "spin": 17,
+   "t": "31/13",
+   "weight": 18
+  },
+  {
+   "N": "-323/40",
+   "all_records": [
+    {
+     "cls": "pinned lab record",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "5/16",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "pinned lab record",
+   "j": 3,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-693/40",
+   "sheet": 3,
+   "spin": 17,
+   "t": "21/11",
+   "weight": 18
+  },
+  {
+   "N": "-238/5",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "code/cyl_spin17_double_prediction.py:58-63 (certified; results/cyl_spin17_double_prediction_run.json pass)"
+    },
+    {
+     "cls": "pinned lab record",
+     "dim": null,
+     "outcome": "jump",
+     "record": "results/lab/modp_scan/w18_p10007_summary.json (drop at both primes)"
+    }
+   ],
+   "beta2": "1/10",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "certified",
+   "j": 4,
+   "jp": 4,
+   "kind": "ladder",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 10,
+   "record": "code/cyl_spin17_double_prediction.py:58-63 (certified; results/cyl_spin17_double_prediction_run.json pass)",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-297/5",
+   "sheet": 3,
+   "spin": 17,
+   "t": "11/9",
+   "weight": 18
+  },
+  {
+   "N": "-187/56",
+   "all_records": [
+    {
+     "cls": "pinned lab record",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "7/16",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "pinned lab record",
+   "j": 7,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-621/56",
+   "sheet": 2,
+   "spin": 17,
+   "t": "23/9",
+   "weight": 18
+  },
+  {
+   "N": "-68/7",
+   "all_records": [
+    {
+     "cls": "pinned lab record",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "2/7",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "pinned lab record",
+   "j": 4,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-135/7",
+   "sheet": 2,
+   "spin": 17,
+   "t": "9/5",
+   "weight": 18
+  },
+  {
+   "N": "-119/2",
+   "all_records": [
+    {
+     "cls": "certified",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "code/cyl_spin17_double_prediction.py:58-63 (certified; results/cyl_spin17_double_prediction_run.json pass)"
+    },
+    {
+     "cls": "pinned lab record",
+     "dim": null,
+     "outcome": "jump",
+     "record": "results/lab/modp_scan/w18_p10007_summary.json (drop at both primes)"
+    }
+   ],
+   "beta2": "1/12",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "certified",
+   "j": 1,
+   "jp": 5,
+   "kind": "ladder",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 12,
+   "record": "code/cyl_spin17_double_prediction.py:58-63 (certified; results/cyl_spin17_double_prediction_run.json pass)",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-143/2",
+   "sheet": 2,
+   "spin": 17,
+   "t": "13/11",
+   "weight": 18
+  },
+  {
+   "N": "-209/80",
+   "all_records": [
+    {
+     "cls": "certified scan evidence",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/spin19/summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "15/32",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified scan evidence",
+   "j": 1,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-799/80",
+   "sheet": 3,
+   "spin": 19,
+   "t": "47/17",
+   "weight": 20
+  },
+  {
+   "N": "-532/143",
+   "all_records": [
+    {
+     "cls": "certified scan evidence",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/spin19/summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "11/26",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified scan evidence",
+   "j": 2,
+   "jp": 2,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-1665/143",
+   "sheet": 3,
+   "spin": 19,
+   "t": "37/15",
+   "weight": 20
+  },
+  {
+   "N": "-437/70",
+   "all_records": [
+    {
+     "cls": "certified scan evidence",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/spin19/summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "7/20",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified scan evidence",
+   "j": 3,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-1053/70",
+   "sheet": 3,
+   "spin": 19,
+   "t": "27/13",
+   "weight": 20
+  },
+  {
+   "N": "-114/7",
+   "all_records": [
+    {
+     "cls": "certified scan evidence",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/spin19/summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "3/14",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified scan evidence",
+   "j": 4,
+   "jp": 4,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-187/7",
+   "sheet": 3,
+   "spin": 19,
+   "t": "17/11",
+   "weight": 20
+  },
+  {
+   "N": "-19/6",
+   "all_records": [
+    {
+     "cls": "certified scan evidence",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/spin19/summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "4/9",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified scan evidence",
+   "j": 8,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-65/6",
+   "sheet": 2,
+   "spin": 19,
+   "t": "13/5",
+   "weight": 20
+  },
+  {
+   "N": "-323/40",
+   "all_records": [
+    {
+     "cls": "certified scan evidence",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/spin19/summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "5/16",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified scan evidence",
+   "j": 5,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "no jump",
+   "q": null,
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-693/40",
+   "sheet": 2,
+   "spin": 19,
+   "t": "21/11",
+   "weight": 20
+  },
+  {
+   "N": "-209/7",
+   "all_records": [
+    {
+     "cls": "certified scan evidence",
+     "dim": null,
+     "outcome": "no jump",
+     "record": "results/lab/spin19/summary.json (no drop at either prime)"
+    }
+   ],
+   "beta2": "1/7",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": null,
+   "evidence_class": "certified scan evidence",
+   "j": 2,
+   "jp": 5,
+   "kind": "rule null",
+   "odd_q": true,
+   "outcome": "no jump",
+   "q": 7,
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-288/7",
+   "sheet": 2,
+   "spin": 19,
+   "t": "4/3",
+   "weight": 20
+  },
+  {
+   "N": "-259/102",
+   "all_records": [],
+   "beta2": "17/36",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 1,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-1007/102",
+   "sheet": 3,
+   "spin": 21,
+   "t": "53/19",
+   "weight": 22
+  },
+  {
+   "N": "-224/65",
+   "all_records": [],
+   "beta2": "13/30",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 2,
+   "jp": 2,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-731/65",
+   "sheet": 3,
+   "spin": 21,
+   "t": "43/17",
+   "weight": 22
+  },
+  {
+   "N": "-21/4",
+   "all_records": [],
+   "beta2": "3/8",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 3,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-55/4",
+   "sheet": 3,
+   "spin": 21,
+   "t": "11/5",
+   "weight": 22
+  },
+  {
+   "N": "-154/15",
+   "all_records": [],
+   "beta2": "5/18",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 4,
+   "jp": 4,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-299/15",
+   "sheet": 3,
+   "spin": 21,
+   "t": "23/13",
+   "weight": 22
+  },
+  {
+   "N": "-119/2",
+   "all_records": [
+    {
+     "cls": "pinned lab record",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "results/lab/fast_kernel3/w22_t1311_sheet3.json"
+    }
+   ],
+   "beta2": "1/12",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "pinned lab record",
+   "j": 5,
+   "jp": 5,
+   "kind": "ladder",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 12,
+   "record": "results/lab/fast_kernel3/w22_t1311_sheet3.json",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-143/2",
+   "sheet": 3,
+   "spin": 21,
+   "t": "13/11",
+   "weight": 22
+  },
+  {
+   "N": "-91/30",
+   "all_records": [],
+   "beta2": "9/20",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 9,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-319/30",
+   "sheet": 2,
+   "spin": 21,
+   "t": "29/11",
+   "weight": 22
+  },
+  {
+   "N": "-7",
+   "all_records": [],
+   "beta2": "1/3",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 6,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": true,
+   "outcome": "untested",
+   "q": 3,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-16",
+   "sheet": 2,
+   "spin": 21,
+   "t": "2",
+   "weight": 22
+  },
+  {
+   "N": "-161/8",
+   "all_records": [],
+   "beta2": "3/16",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 3,
+   "jp": 5,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-247/8",
+   "sheet": 2,
+   "spin": 21,
+   "t": "19/13",
+   "weight": 22
+  },
+  {
+   "N": "-943/380",
+   "all_records": [],
+   "beta2": "19/40",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 1,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-3717/380",
+   "sheet": 3,
+   "spin": 23,
+   "t": "59/21",
+   "weight": 24
+  },
+  {
+   "N": "-276/85",
+   "all_records": [],
+   "beta2": "15/34",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 2,
+   "jp": 2,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-931/85",
+   "sheet": 3,
+   "spin": 23,
+   "t": "49/19",
+   "weight": 24
+  },
+  {
+   "N": "-713/154",
+   "all_records": [],
+   "beta2": "11/28",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 3,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-1989/154",
+   "sheet": 3,
+   "spin": 23,
+   "t": "39/17",
+   "weight": 24
+  },
+  {
+   "N": "-598/77",
+   "all_records": [],
+   "beta2": "7/22",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 4,
+   "jp": 4,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-1305/77",
+   "sheet": 3,
+   "spin": 23,
+   "t": "29/15",
+   "weight": 24
+  },
+  {
+   "N": "-161/8",
+   "all_records": [],
+   "beta2": "3/16",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 5,
+   "jp": 5,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-247/8",
+   "sheet": 3,
+   "spin": 23,
+   "t": "19/13",
+   "weight": 24
+  },
+  {
+   "N": "-161/55",
+   "all_records": [],
+   "beta2": "5/11",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 10,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-576/55",
+   "sheet": 2,
+   "spin": 23,
+   "t": "8/3",
+   "weight": 24
+  },
+  {
+   "N": "-437/70",
+   "all_records": [],
+   "beta2": "7/20",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 7,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-1053/70",
+   "sheet": 2,
+   "spin": 23,
+   "t": "27/13",
+   "weight": 24
+  },
+  {
+   "N": "-46/3",
+   "all_records": [],
+   "beta2": "2/9",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 4,
+   "jp": 5,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-77/3",
+   "sheet": 2,
+   "spin": 23,
+   "t": "11/7",
+   "weight": 24
+  },
+  {
+   "N": "-667/8",
+   "all_records": [
+    {
+     "cls": "pinned lab record",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "results/lab/fast_kernel3/w24_t1715_sheet2.json"
+    }
+   ],
+   "beta2": "1/16",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "pinned lab record",
+   "j": 1,
+   "jp": 7,
+   "kind": "ladder",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 16,
+   "record": "results/lab/fast_kernel3/w24_t1715_sheet2.json",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-765/8",
+   "sheet": 2,
+   "spin": 23,
+   "t": "17/15",
+   "weight": 24
+  },
+  {
+   "N": "-375/154",
+   "all_records": [],
+   "beta2": "21/44",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 1,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-1495/154",
+   "sheet": 3,
+   "spin": 25,
+   "t": "65/23",
+   "weight": 26
+  },
+  {
+   "N": "-1000/323",
+   "all_records": [],
+   "beta2": "17/38",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 2,
+   "jp": 2,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-3465/323",
+   "sheet": 3,
+   "spin": 25,
+   "t": "55/21",
+   "weight": 26
+  },
+  {
+   "N": "-875/208",
+   "all_records": [],
+   "beta2": "13/32",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 3,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-2565/208",
+   "sheet": 3,
+   "spin": 25,
+   "t": "45/19",
+   "weight": 26
+  },
+  {
+   "N": "-250/39",
+   "all_records": [],
+   "beta2": "9/26",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 4,
+   "jp": 4,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-595/39",
+   "sheet": 3,
+   "spin": 25,
+   "t": "35/17",
+   "weight": 26
+  },
+  {
+   "N": "-25/2",
+   "all_records": [
+    {
+     "cls": "lab result",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "results/lab/fast_kernel3/w26_t53_sheet3.json"
+    }
+   ],
+   "beta2": "1/4",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "lab result",
+   "j": 5,
+   "jp": 5,
+   "kind": "recurrence",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 4,
+   "record": "results/lab/fast_kernel3/w26_t53_sheet3.json",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-45/2",
+   "sheet": 3,
+   "spin": 25,
+   "t": "5/3",
+   "weight": 26
+  },
+  {
+   "N": "-500/7",
+   "all_records": [
+    {
+     "cls": "lab result",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "results/lab/fast_kernel3/w26_t1513_sheet3.json"
+    }
+   ],
+   "beta2": "1/14",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "lab result",
+   "j": 6,
+   "jp": 6,
+   "kind": "ladder",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 14,
+   "record": "results/lab/fast_kernel3/w26_t1513_sheet3.json",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-585/7",
+   "sheet": 3,
+   "spin": 25,
+   "t": "15/13",
+   "weight": 26
+  },
+  {
+   "N": "-125/44",
+   "all_records": [],
+   "beta2": "11/24",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 11,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-455/44",
+   "sheet": 2,
+   "spin": 25,
+   "t": "35/13",
+   "weight": 26
+  },
+  {
+   "N": "-125/22",
+   "all_records": [],
+   "beta2": "4/11",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 8,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-315/22",
+   "sheet": 2,
+   "spin": 25,
+   "t": "15/7",
+   "weight": 26
+  },
+  {
+   "N": "-25/2",
+   "all_records": [
+    {
+     "cls": "lab result",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "results/lab/fast_kernel3/w26_t53_sheet2.json"
+    }
+   ],
+   "beta2": "1/4",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "lab result",
+   "j": 5,
+   "jp": 5,
+   "kind": "recurrence",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 4,
+   "record": "results/lab/fast_kernel3/w26_t53_sheet2.json",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-45/2",
+   "sheet": 2,
+   "spin": 25,
+   "t": "5/3",
+   "weight": 26
+  },
+  {
+   "N": "-125/3",
+   "all_records": [],
+   "beta2": "1/9",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 2,
+   "jp": 7,
+   "kind": "rule null",
+   "odd_q": true,
+   "outcome": "untested",
+   "q": 9,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-160/3",
+   "sheet": 2,
+   "spin": 25,
+   "t": "5/4",
+   "weight": 26
+  },
+  {
+   "N": "-441/184",
+   "all_records": [],
+   "beta2": "23/48",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 1,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-1775/184",
+   "sheet": 3,
+   "spin": 27,
+   "t": "71/25",
+   "weight": 28
+  },
+  {
+   "N": "-396/133",
+   "all_records": [],
+   "beta2": "19/42",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 2,
+   "jp": 2,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-1403/133",
+   "sheet": 3,
+   "spin": 27,
+   "t": "61/23",
+   "weight": 28
+  },
+  {
+   "N": "-39/10",
+   "all_records": [],
+   "beta2": "5/12",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 3,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-119/10",
+   "sheet": 3,
+   "spin": 27,
+   "t": "17/7",
+   "weight": 28
+  },
+  {
+   "N": "-306/55",
+   "all_records": [],
+   "beta2": "11/30",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 4,
+   "jp": 4,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-779/55",
+   "sheet": 3,
+   "spin": 27,
+   "t": "41/19",
+   "weight": 28
+  },
+  {
+   "N": "-261/28",
+   "all_records": [],
+   "beta2": "7/24",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 5,
+   "jp": 5,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-527/28",
+   "sheet": 3,
+   "spin": 27,
+   "t": "31/17",
+   "weight": 28
+  },
+  {
+   "N": "-24",
+   "all_records": [
+    {
+     "cls": "lab result",
+     "dim": 2,
+     "outcome": "jump",
+     "record": "results/lab/fast_kernel3/w28_t75_sheet3.json"
+    }
+   ],
+   "beta2": "1/6",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": true,
+   "dim": 2,
+   "evidence_class": "lab result",
+   "j": 6,
+   "jp": 6,
+   "kind": "recurrence",
+   "odd_q": false,
+   "outcome": "jump",
+   "q": 6,
+   "record": "results/lab/fast_kernel3/w28_t75_sheet3.json",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-35",
+   "sheet": 3,
+   "spin": 27,
+   "t": "7/5",
+   "weight": 28
+  },
+  {
+   "N": "-36/13",
+   "all_records": [],
+   "beta2": "6/13",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 12,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-133/13",
+   "sheet": 2,
+   "spin": 27,
+   "t": "19/7",
+   "weight": 28
+  },
+  {
+   "N": "-21/4",
+   "all_records": [],
+   "beta2": "3/8",
+   "chart": "infinity",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 9,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-55/4",
+   "sheet": 2,
+   "spin": 27,
+   "t": "11/5",
+   "weight": 28
+  },
+  {
+   "N": "-117/11",
+   "all_records": [],
+   "beta2": "3/11",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 6,
+   "jp": 5,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-224/11",
+   "sheet": 2,
+   "spin": 27,
+   "t": "7/4",
+   "weight": 28
+  },
+  {
+   "N": "-279/10",
+   "all_records": [],
+   "beta2": "3/20",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 3,
+   "jp": 7,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-391/10",
+   "sheet": 2,
+   "spin": 27,
+   "t": "23/17",
+   "weight": 28
+  },
+  {
+   "N": "-1537/650",
+   "all_records": [],
+   "beta2": "25/52",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 1,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-6237/650",
+   "sheet": 3,
+   "spin": 29,
+   "t": "77/27",
+   "weight": 30
+  },
+  {
+   "N": "-464/161",
+   "all_records": [],
+   "beta2": "21/46",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 2,
+   "jp": 2,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-1675/161",
+   "sheet": 3,
+   "spin": 29,
+   "t": "67/25",
+   "weight": 30
+  },
+  {
+   "N": "-1247/340",
+   "all_records": [],
+   "beta2": "17/40",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 3,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-3933/340",
+   "sheet": 3,
+   "spin": 29,
+   "t": "57/23",
+   "weight": 30
+  },
+  {
+   "N": "-1102/221",
+   "all_records": [],
+   "beta2": "13/34",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 4,
+   "jp": 4,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-2961/221",
+   "sheet": 3,
+   "spin": 29,
+   "t": "47/21",
+   "weight": 30
+  },
+  {
+   "N": "-319/42",
+   "all_records": [],
+   "beta2": "9/28",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 5,
+   "jp": 5,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-703/42",
+   "sheet": 3,
+   "spin": 29,
+   "t": "37/19",
+   "weight": 30
+  },
+  {
+   "N": "-812/55",
+   "all_records": [],
+   "beta2": "5/22",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 6,
+   "jp": 6,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-1377/55",
+   "sheet": 3,
+   "spin": 29,
+   "t": "27/17",
+   "weight": 30
+  },
+  {
+   "N": "-667/8",
+   "all_records": [],
+   "beta2": "1/16",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 7,
+   "jp": 7,
+   "kind": "ladder",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": 16,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-765/8",
+   "sheet": 3,
+   "spin": 29,
+   "t": "17/15",
+   "weight": 30
+  },
+  {
+   "N": "-493/182",
+   "all_records": [],
+   "beta2": "13/28",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 13,
+   "jp": 1,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-1845/182",
+   "sheet": 2,
+   "spin": 29,
+   "t": "41/15",
+   "weight": 30
+  },
+  {
+   "N": "-319/65",
+   "all_records": [],
+   "beta2": "5/13",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 10,
+   "jp": 3,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-864/65",
+   "sheet": 2,
+   "spin": 29,
+   "t": "9/4",
+   "weight": 30
+  },
+  {
+   "N": "-261/28",
+   "all_records": [],
+   "beta2": "7/24",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 7,
+   "jp": 5,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-527/28",
+   "sheet": 2,
+   "spin": 29,
+   "t": "31/17",
+   "weight": 30
+  },
+  {
+   "N": "-232/11",
+   "all_records": [],
+   "beta2": "2/11",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 4,
+   "jp": 7,
+   "kind": "rule null",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": null,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "no jump",
+   "s_curve": "-351/11",
+   "sheet": 2,
+   "spin": 29,
+   "t": "13/9",
+   "weight": 30
+  },
+  {
+   "N": "-1073/10",
+   "all_records": [],
+   "beta2": "1/20",
+   "chart": "affine",
+   "classical_nullity": 2,
+   "consistent_with_rule": null,
+   "dim": null,
+   "evidence_class": "untested",
+   "j": 1,
+   "jp": 9,
+   "kind": "ladder",
+   "odd_q": false,
+   "outcome": "untested",
+   "q": 20,
+   "record": "",
+   "records_agree": true,
+   "rule_prediction": "jump",
+   "s_curve": "-1197/10",
+   "sheet": 2,
+   "spin": 29,
+   "t": "21/19",
+   "weight": 30
+  }
+ ],
+ "t3": [
+  {
+   "dim": 1,
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)",
+   "sheet": 1,
+   "spin": 5
+  },
+  {
+   "dim": 1,
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)",
+   "sheet": 1,
+   "spin": 7
+  },
+  {
+   "dim": 1,
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)",
+   "sheet": 1,
+   "spin": 9
+  },
+  {
+   "dim": 1,
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "code/cyl_strata_points_s11.py:50-68 (certified)",
+   "sheet": 1,
+   "spin": 11
+  },
+  {
+   "dim": 1,
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "code/cyl_spin13_prediction.py:51-61 (certified; results/cyl_spin13_prediction_run.json pass)",
+   "sheet": 1,
+   "spin": 13
+  },
+  {
+   "dim": 1,
+   "evidence_class": "certified",
+   "outcome": "no jump",
+   "record": "code/cyl_spin15_stratification.py:65-68 (certified; results/cyl_spin15_stratification_run.json pass)",
+   "sheet": 1,
+   "spin": 15
+  },
+  {
+   "dim": null,
+   "evidence_class": "pinned lab record",
+   "outcome": "no jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 17
+  },
+  {
+   "dim": null,
+   "evidence_class": "certified scan evidence",
+   "outcome": "no jump",
+   "record": "results/lab/spin19/summary.json (no drop at either prime)",
+   "sheet": 1,
+   "spin": 19
+  },
+  {
+   "dim": null,
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 21
+  },
+  {
+   "dim": null,
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 23
+  },
+  {
+   "dim": null,
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 25
+  },
+  {
+   "dim": null,
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 1,
+   "spin": 27
+  },
+  {
+   "dim": 2,
+   "evidence_class": "certified",
+   "outcome": "jump",
+   "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)",
+   "sheet": 2,
+   "spin": 5
+  },
+  {
+   "dim": 2,
+   "evidence_class": "certified",
+   "outcome": "jump",
+   "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)",
+   "sheet": 2,
+   "spin": 7
+  },
+  {
+   "dim": 2,
+   "evidence_class": "certified",
+   "outcome": "jump",
+   "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)",
+   "sheet": 2,
+   "spin": 9
+  },
+  {
+   "dim": 2,
+   "evidence_class": "certified",
+   "outcome": "jump",
+   "record": "code/cyl_strata_points_s11.py:50-68 (certified)",
+   "sheet": 2,
+   "spin": 11
+  },
+  {
+   "dim": 2,
+   "evidence_class": "certified",
+   "outcome": "jump",
+   "record": "code/cyl_spin13_prediction.py:51-61 (certified; results/cyl_spin13_prediction_run.json pass)",
+   "sheet": 2,
+   "spin": 13
+  },
+  {
+   "dim": 2,
+   "evidence_class": "certified",
+   "outcome": "jump",
+   "record": "code/cyl_spin15_stratification.py:65-68 (certified; results/cyl_spin15_stratification_run.json pass)",
+   "sheet": 2,
+   "spin": 15
+  },
+  {
+   "dim": null,
+   "evidence_class": "pinned lab record",
+   "outcome": "jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (drop at both primes)",
+   "sheet": 2,
+   "spin": 17
+  },
+  {
+   "dim": null,
+   "evidence_class": "certified scan evidence",
+   "outcome": "jump",
+   "record": "results/lab/spin19/summary.json (drop at both primes)",
+   "sheet": 2,
+   "spin": 19
+  },
+  {
+   "dim": null,
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 21
+  },
+  {
+   "dim": null,
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 23
+  },
+  {
+   "dim": null,
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 25
+  },
+  {
+   "dim": null,
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 2,
+   "spin": 27
+  },
+  {
+   "dim": 2,
+   "evidence_class": "certified",
+   "outcome": "jump",
+   "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)",
+   "sheet": 3,
+   "spin": 5
+  },
+  {
+   "dim": 2,
+   "evidence_class": "certified",
+   "outcome": "jump",
+   "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)",
+   "sheet": 3,
+   "spin": 7
+  },
+  {
+   "dim": 2,
+   "evidence_class": "certified",
+   "outcome": "jump",
+   "record": "code/cyl_strata_points.py:63-71 (TABLE; certified)",
+   "sheet": 3,
+   "spin": 9
+  },
+  {
+   "dim": 2,
+   "evidence_class": "certified",
+   "outcome": "jump",
+   "record": "code/cyl_strata_points_s11.py:50-68 (certified)",
+   "sheet": 3,
+   "spin": 11
+  },
+  {
+   "dim": 2,
+   "evidence_class": "certified",
+   "outcome": "jump",
+   "record": "code/cyl_spin13_prediction.py:51-61 (certified; results/cyl_spin13_prediction_run.json pass)",
+   "sheet": 3,
+   "spin": 13
+  },
+  {
+   "dim": 2,
+   "evidence_class": "certified",
+   "outcome": "jump",
+   "record": "code/cyl_spin15_stratification.py:65-68 (certified; results/cyl_spin15_stratification_run.json pass)",
+   "sheet": 3,
+   "spin": 15
+  },
+  {
+   "dim": null,
+   "evidence_class": "pinned lab record",
+   "outcome": "jump",
+   "record": "results/lab/modp_scan/w18_p10007_summary.json (drop at both primes)",
+   "sheet": 3,
+   "spin": 17
+  },
+  {
+   "dim": null,
+   "evidence_class": "certified scan evidence",
+   "outcome": "jump",
+   "record": "results/lab/spin19/summary.json (drop at both primes)",
+   "sheet": 3,
+   "spin": 19
+  },
+  {
+   "dim": null,
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 21
+  },
+  {
+   "dim": null,
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 23
+  },
+  {
+   "dim": null,
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 25
+  },
+  {
+   "dim": null,
+   "evidence_class": "untested",
+   "outcome": "untested",
+   "record": "",
+   "sheet": 3,
+   "spin": 27
+  }
+ ]
+}

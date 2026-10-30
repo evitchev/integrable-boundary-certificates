@@ -1,0 +1,31 @@
+w1_gates.py sha256 1a4ea7649a5e4739c5082ef064d204ad68d47264036f289ed99abc29a7680382
+CONTROL c(T_V) = -25/2: 4th pole {(): Fraction(-25, 4)} == c/2: True  (0s)
+CONTROL c(T_total) = -139/4: 4th pole {(): Fraction(-139, 8)} == c/2: True  (0s)
+CONTROL T_V + T_Z - T_total = (13/8)(d^2V + d^2Z): True  (0s)
+   weights of e^{alpha V} under T_V (pole-2 coefficient): {'2': {(): Fraction(1, 1)}, '-1/2': {(): Fraction(1, 1)}, '-2': {(): Fraction(7, 1)}}
+CONTROL weights under T_V: e^{2V} 1, e^{-V/2} 1, e^{-2V} 7 (exponentials primary: pole 2 is a constant): True  (0s)
+CONTROL Virasoro screenings e^{(V+Z)/4}, e^{-2(V+Z)} have weight 1 under T_total: True  (0s)
+   weight-4 commutant of {e^((V+Z)/4), e^(2V), e^(2Z)}: dim 1
+   I_3 = {((1, 0), (1, 0), (1, 0), (1, 0)): Fraction(1, 88), ((1, 0), (1, 0), (2, 0), (2, 0)): Fraction(-21, 220), ((1, 0), (1, 0), (2, 1)): Fraction(-63, 220), ((1, 0), (1, 2)): Fraction(-5, 88), ((1, 0), (2, 0), (2, 1)): Fraction(63, 110), ((1, 0), (2, 2)): Fraction(189, 220), ((2, 0), (2, 0), (2, 0), (2, 0)): Fraction(1, 88), ((2, 0), (2, 2)): Fraction(-5, 88)}
+   eigen(I_3) = -(192*P_X**4 - 864*P_X**2*pi**2 - 24*P_X**2 + 192*pi**4 - 24*pi**2 + 7)/2640
+   record cyl(3,4) at 9/7 = (192*P_X**4 - 864*P_X**2*pi**2 - 24*P_X**2 + 192*pi**4 - 24*pi**2 + 7)/192
+CONTROL GATE G1: I_3 dim 1 and eigen(I_3) proportional to the record Sol-3 cyl(3,4) at t = 9/7: True  (0s)
+   ratio eigen(I_3)/cyl(3,4) = -4/55
+   (reported) I_3 conserved at field level by e^{-V/2}: True
+   (reported) I_3 conserved at field level by e^{-Z/2}: True
+   (reported) I_3 conserved at field level by e^{-2(V+Z)}: True
+   (reported) a generic exponent e^{V/3} does NOT conserve I_3: True
+(1) H^(7) = Res e^(2V) e^(-2V) = S_7(2 d^kV/k!), 15 terms: {((1, 0), (1, 0), (1, 0), (1, 0), (1, 0), (1, 0), (1, 0)): Fraction(8, 315), ((1, 0), (1, 0), (1, 0), (1, 0), (1, 0), (1, 1)): Fraction(4, 15), ((1, 0), (1, 0), (1, 0), (1, 0), (1, 2)): Fraction(2, 9), ((1, 0), (1, 0), (1, 0), (1, 1), (1, 1)): Fraction(2, 3), ((1, 0), (1, 0), (1, 0), (1, 3)): Fraction(1, 9), ((1, 0), (1, 0), (1, 1), (1, 2)): Fraction(2, 3), ((1, 0), (1, 0), (1, 4)): Fraction(1, 30), ((1, 0), (1, 1), (1, 1), (1, 1)): Fraction(1, 3), ((1, 0), (1, 1), (1, 3)): Fraction(1, 6), ((1, 0), (1, 2), (1, 2)): Fraction(1, 9), ((1, 0), (1, 5)): Fraction(1, 180), ((1, 1), (1, 1), (1, 2)): Fraction(1, 6), ((1, 1), (1, 4)): Fraction(1, 60), ((1, 2), (1, 3)): Fraction(1, 36), ((1, 6),): Fraction(1, 2520)}
+CONTROL (1)(i) H^(7) T_V-primary of weight 7: True  (0s)
+CONTROL (1)(ii) field level Res e^(-V/2)(z) H^(7)(w) = 0: True  (0s)
+   (reported) field level Res e^(2V) H^(7) has 11 terms
+CONTROL (1)(iii) H^(7) not in the weight-7 T_V vacuum-module span [(7,), (5, 2), (4, 3), (3, 2, 2)]: True  (0s)
+   eigen(H^(7)) = P_A*(P_A - 1)*(P_A + 1)*(2*P_A - 3)*(2*P_A - 1)*(2*P_A + 1)*(2*P_A + 3)/630
+   binom(2P+3, 7) = P_A*(P_A - 1)*(P_A + 1)*(2*P_A - 3)*(2*P_A - 1)*(2*P_A + 1)*(2*P_A + 3)/630
+SEALED TEST P1 eigen(H^(7)) = binom(2 P_V + 3, 7) = (8/315) P_V (P_V^2-1/4)(P_V^2-1)(P_V^2-9/4) EXACTLY: True  (0s)
+CONTROL eigen_fast == eigen_raw on H^(7), on 10 random weight-7 one-boson fields and 5 random weight-6 two-boson fields: True  (0s)
+   vacuity: the eigenvalues of the 15 one-boson weight-7 monomials span dim 3 of the 4-dim odd shape space (predicted: 3)
+SEALED TEST P4a G_14 = H_V^(7) H_Z^(7) primary of weight 14 under T_V + T_Z: True  (0s)
+done (0s)
+w1: all sealed items pass
+EXIT 0

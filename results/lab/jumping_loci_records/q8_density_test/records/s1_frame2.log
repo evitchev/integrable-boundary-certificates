@@ -1,0 +1,40 @@
+s1_frame2.py sha256 d3c516f46dc0c345d554185444626616f9333bf81a06572aededfba55b499384
+
+== t = 9/7 ==
+p^2 = 1/4  p = 1/2  rho = -7/4  N = -143/4  kappa = <V,V> = 2
+OK   p^2 = 1/4, p = 1/2 (rational: V = X + phi, Z = phi - X exactly)
+OK   rho = -7/4, N = -143/4 = 13 - 6(beta^2 + beta^-2) with beta^2 = (t-1)/(t+1) = 1/8
+OK   curve: s^2 = (N - 25)(N - 1) at N = -143/4, s = -189/4
+OK   kappa = 2
+S3  (beta = 1/p = 2, a = +-2):  e^{2X + 2phi} -> (alpha_V, alpha_Z) = (2, 0) ;  e^{-2X + 2phi} -> (0, 2)
+S3' (beta = -p = -1/2, a = +-1/2): e^{X/2 - phi/2} -> (0, -1/2) ;  e^{-X/2 - phi/2} -> (-1/2, 0)
+Virasoro beta_+ = 1/2 -> (1/4, 1/4) ;  beta_- = -4 -> (-2, -2)
+OK   pair A = {e^{2V}, e^{2Z}} (S3)
+OK   pair B = {e^{-V/2}, e^{-Z/2}} (S3')
+OK   Virasoro = {e^{(V+Z)/4}, e^{-2(V+Z)}}
+T_V = 1/4 (dV)^2 + 3/4 d^2V   (from T_U = (1/2)(dU)^2 + rho_U d^2U, rho_U = 3*sqrt(2)/4, U = sqrt2 p V)
+T_total per boson = 1/4 (dV)^2 + -7/8 d^2V ;  T_V + T_Z - T_total = 13/8 (d^2V + d^2Z)
+OK   T_V = (1/4)(dV)^2 + (3/4) d^2V
+OK   c_V = -25/2 = c_(1,4) = VIR2 c_U = -(2p^2-3)(3p^2-2)/p^2 at p^2 = 1/4
+OK   T_total = (1/4)((dV)^2+(dZ)^2) - (7/8)(d^2V + d^2Z); c_total = 1 + N = -139/4
+OK   T_V + T_Z - T_total = (13/8)(d^2V + d^2Z)
+weights under T_V: e^{2V}: 1  e^{-V/2}: 1  e^{-2V}: 7  e^{V/4}: -5/16
+OK   e^{2V}, e^{-V/2} weight 1 under T_V (the c_(1,4) Coulomb gas: alpha_+ = 2, alpha_- = -1/2, alpha_+ alpha_- kappa = -2)
+OK   e^{-2V} weight 7 = 2p_Ad - 1 (p_Ad = 4): H^(7) = Res e^{2V} e^{-2V} has weight 7
+OK   Virasoro screenings weight 1 under T_total (1/2 per boson): e^{(V+Z)/4}, e^{-2(V+Z)}
+momenta: P_V = P_X + pi  P_Z = -P_X + pi
+OK   P_V = P_X + pi, P_Z = pi - P_X
+OK   binom(2P+3, 7) = (8/315) P (P^2-1/4)(P^2-1)(P^2-9/4) = (128/5040) prod_{j=-3}^{3} (P - j/2)
+OK   binom(2P_V+3,7) binom(2P_Z+3,7) = -(64/99225) E_3 (E_3 = prod_j (P_X+pi-j/2)(P_X-pi-j/2), p = 1/2)
+OK   E_3 antisymmetric under P_X <-> pi
+OK   DERIVED FRAME == DESIGN FRAME of B5(iv) (no difference to record)
+
+== reproduction of the records at t = 5/3 (WUW1) and t = 7/5 (WUW2) by the same pipeline ==
+OK   t = 5/3: p^2 = 1/2, kappa = 1 (V = U): pair A e^{2U}, pair B e^{-U}, Virasoro e^{(U+W)/2}, e^{-2(U+W)}; T_U = (1/2)(dU)^2 + (1/2)d^2U, c = -2
+OK   t = 7/5: p^2 = 1/3, kappa = 3/2: pair A e^{2V}, pair B e^{-(2/3)V}, Virasoro e^{(V+Z)/3}, e^{-2(V+Z)}; T_U = (1/3)(dV)^2 + (2/3)d^2V, c = -7; T_total - (T_U+T_W) = -(3/2)(d^2V+d^2Z); P_V = (sqrt3/2)(P_X+pi)
+
+== general even q = 2m (p^2 = 1/m, kappa = m/2): pair A e^{2V}, pair B e^{-(2/m)V}, Virasoro e^{(V+Z)/m}, e^{-2(V+Z)}, T_V = (1/m)(dV)^2 + ((m-1)/m) d^2V, c = c_(1,m), P_V = (sqrt m/2)(P_X+pi) ==
+OK   general m: p^2 = 1/m, kappa = m/2, pair B exponent -2/m, Virasoro (1/m, 1/m) and (-2,-2), T_V = (1/m)(dV)^2 + ((m-1)/m) d^2V, c_V = 1 - 6(m-1)^2/m
+
+ALL CHECKS PASS
+EXIT 0

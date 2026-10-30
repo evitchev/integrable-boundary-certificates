@@ -1,0 +1,187 @@
+PASS  vendor/mixed_engine.py is a byte copy of the repository's code/mixed_engine.py
+PASS  vendor/invariant_engine.py is a byte copy of the repository's code/invariant_engine.py
+PASS  results/cyl_spin13_prediction_run.json: status pass, exit 0
+PASS  results/cyl_spin13_sol3_sporadic_run.json: status pass, exit 0
+PASS  results/cyl_spin15_stratification_run.json: status pass, exit 0
+PASS  results/cyl_spin15_ladder_probe_run.json: status pass, exit 0
+PASS  results/cyl_spin17_double_prediction_run.json: status pass, exit 0
+PASS  results/cyl_oddq_controls_run.json: status pass, exit 0
+PASS  results/cyl_discriminant_w1012_run.json: status pass, exit 0
+PASS  results/cyl_discriminant_w14_run.json: status pass, exit 0
+PASS  the 119 transcribed certified pins are mutually consistent (110 cells)
+PASS  scan summaries present for every sheet, weight 16/18/20 and both primes
+PASS  every scan evaluated p - 2 residues (all but the poles 1 and p - 1)
+PASS  fast_kernel3/w22_t1311_sheet3.json: (N, s) = (-119/2, -143/2) is the fiber t = [Fraction(13, 11)]
+PASS  fast_kernel3/w24_t1715_sheet2.json: (N, s) = (-667/8, -765/8) is the fiber t = [Fraction(17, 15)]
+PASS  fast_kernel3/w22_sol1_t117.json: (N, s) = (-46/3, -77/3) is the fiber t = [Fraction(11, 7)]
+PASS  fast_kernel3/w26_t1513_sheet3.json: (N, s) = (-500/7, -585/7) is the fiber t = [Fraction(15, 13)]
+PASS  fast_kernel3/w26_t53_sheet2.json: (N, s) = (-25/2, -45/2) is the fiber t = [Fraction(5, 3)]
+PASS  fast_kernel3/w26_t53_sheet3.json: (N, s) = (-25/2, -45/2) is the fiber t = [Fraction(5, 3)]
+PASS  fast_kernel3/w28_t75_sheet3.json: (N, s) = (-24, -35) is the fiber t = [Fraction(7, 5)]
+PASS  results/lab/fast_kernel3/w22_t1311_sheet3.json: listed in code/certifications.json -> pinned lab record
+PASS  results/lab/fast_kernel3/w24_t1715_sheet2.json: listed in code/certifications.json -> pinned lab record
+PASS  results/lab/fast_kernel3/w22_sol1_t117.json: not listed in code/certifications.json -> lab result
+PASS  results/lab/fast_kernel3/w26_t1513_sheet3.json: not listed in code/certifications.json -> lab result
+PASS  results/lab/fast_kernel3/w26_t53_sheet2.json: not listed in code/certifications.json -> lab result
+PASS  results/lab/fast_kernel3/w26_t53_sheet3.json: not listed in code/certifications.json -> lab result
+PASS  results/lab/fast_kernel3/w28_t75_sheet3.json: not listed in code/certifications.json -> lab result
+PASS  lifting_out.txt: 6 entries, listed in the registry
+PASS  all 84 ledger points have classical nullity exactly 2 with the committed I_3's symbol at the fiber
+PASS  generic controls t = 37/11, -29/13 on the three sheets at every W = 6..30 have classical nullity 1 ([])
+PASS  where several records cover a point they agree
+PASS  no recorded outcome contradicts the lifting rule (0: [])
+== the ledger (spin, sheet, t, beta^2, (j, j'), chart, kind, rule, outcome, class, record)
+  s= 5 sheet 3 t=   5/3 x=   1/4 (j,j')=(1,1) affine   ladder     rule:jump    -> jump     [certified] code/cyl_strata_points.py:63-71 (TABLE; certified)
+  s= 5 sheet 2 t=   5/3 x=   1/4 (j,j')=(1,1) affine   ladder     rule:jump    -> jump     [certified] code/cyl_strata_points.py:63-71 (TABLE; certified)
+  s= 7 sheet 3 t=  11/5 x=   3/8 (j,j')=(1,1) affine   rule null  rule:no jump -> no jump  [pinned lab record] results/lab/classical/lifting_out.txt
+  s= 7 sheet 2 t=     2 x=   1/3 (j,j')=(2,1) affine   rule null  rule:no jump -> no jump  [pinned lab record] results/lab/classical/lifting_out.txt
+  s= 9 sheet 3 t=  17/7 x=  5/12 (j,j')=(1,1) affine   rule null  rule:no jump -> no jump  [certified] results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a non-jump factor)
+  s= 9 sheet 3 t=   7/5 x=   1/6 (j,j')=(2,2) affine   ladder     rule:jump    -> jump     [certified] code/cyl_strata_points.py:63-71 (TABLE; certified)
+  s= 9 sheet 2 t=  11/5 x=   3/8 (j,j')=(3,1) infinity rule null  rule:no jump -> no jump  [certified] results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a non-jump factor)
+  s=11 sheet 3 t=  23/9 x=  7/16 (j,j')=(1,1) affine   rule null  rule:no jump -> no jump  [certified] results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a non-jump factor)
+  s=11 sheet 3 t=  13/7 x=  3/10 (j,j')=(2,2) affine   rule null  rule:no jump -> no jump  [certified] results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t a non-jump factor)
+  s=11 sheet 2 t=   7/3 x=   2/5 (j,j')=(4,1) affine   rule null  rule:no jump -> no jump  [certified] results/cyl_discriminant_w1012.json (Q-bar classification minus t = +-1; t not a root of the minor)
+  s=11 sheet 2 t=   9/7 x=   1/8 (j,j')=(1,3) affine   ladder     rule:jump    -> jump     [certified] code/cyl_strata_points_s11.py:50-68 (certified)
+  s=13 sheet 3 t= 29/11 x=  9/20 (j,j')=(1,1) affine   rule null  rule:no jump -> no jump  [certified] results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t a non-jump factor)
+  s=13 sheet 3 t=  19/9 x=  5/14 (j,j')=(2,2) affine   rule null  rule:no jump -> no jump  [certified] results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t a non-jump factor)
+  s=13 sheet 3 t=   9/7 x=   1/8 (j,j')=(3,3) affine   ladder     rule:jump    -> jump     [certified] code/cyl_spin13_sol3_sporadic.py:59-62 (certified; results/cyl_spin13_sol3_sporadic_run.json pass)
+  s=13 sheet 2 t=  17/7 x=  5/12 (j,j')=(5,1) affine   rule null  rule:no jump -> no jump  [certified] results/cyl_discriminant_w14.json (Q-bar classification minus t = +-1; t a non-jump factor)
+  s=13 sheet 2 t=   3/2 x=   1/5 (j,j')=(2,3) affine   rule null  rule:no jump -> no jump  [certified] code/cyl_oddq_controls.py:29-34 (certified; results/cyl_oddq_controls_run.json pass)
+  s=15 sheet 3 t= 35/13 x= 11/24 (j,j')=(1,1) affine   rule null  rule:no jump -> no jump  [pinned lab record] results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)
+  s=15 sheet 3 t= 25/11 x=  7/18 (j,j')=(2,2) affine   rule null  rule:no jump -> no jump  [pinned lab record] results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)
+  s=15 sheet 3 t=   5/3 x=   1/4 (j,j')=(3,3) affine   recurrence rule:jump    -> jump     [certified] code/cyl_spin15_stratification.py:65-68 (certified; results/cyl_spin15_stratification_run.json pass)
+  s=15 sheet 2 t=   5/2 x=   3/7 (j,j')=(6,1) affine   rule null  rule:no jump -> no jump  [pinned lab record] results/lab/modp_scan/w16_p10007_summary.json (no drop at either prime)
+  s=15 sheet 2 t=   5/3 x=   1/4 (j,j')=(3,3) affine   recurrence rule:jump    -> jump     [certified] code/cyl_spin15_stratification.py:65-68 (certified; results/cyl_spin15_stratification_run.json pass)
+  s=17 sheet 3 t= 41/15 x= 13/28 (j,j')=(1,1) affine   rule null  rule:no jump -> no jump  [pinned lab record] results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)
+  s=17 sheet 3 t= 31/13 x=  9/22 (j,j')=(2,2) affine   rule null  rule:no jump -> no jump  [pinned lab record] results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)
+  s=17 sheet 3 t= 21/11 x=  5/16 (j,j')=(3,3) affine   rule null  rule:no jump -> no jump  [pinned lab record] results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)
+  s=17 sheet 3 t=  11/9 x=  1/10 (j,j')=(4,4) affine   ladder     rule:jump    -> jump     [certified] code/cyl_spin17_double_prediction.py:58-63 (certified; results/cyl_spin17_double_prediction_run.json pass)
+  s=17 sheet 2 t=  23/9 x=  7/16 (j,j')=(7,1) affine   rule null  rule:no jump -> no jump  [pinned lab record] results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)
+  s=17 sheet 2 t=   9/5 x=   2/7 (j,j')=(4,3) affine   rule null  rule:no jump -> no jump  [pinned lab record] results/lab/modp_scan/w18_p10007_summary.json (no drop at either prime)
+  s=17 sheet 2 t= 13/11 x=  1/12 (j,j')=(1,5) affine   ladder     rule:jump    -> jump     [certified] code/cyl_spin17_double_prediction.py:58-63 (certified; results/cyl_spin17_double_prediction_run.json pass)
+  s=19 sheet 3 t= 47/17 x= 15/32 (j,j')=(1,1) affine   rule null  rule:no jump -> no jump  [certified scan evidence] results/lab/spin19/summary.json (no drop at either prime)
+  s=19 sheet 3 t= 37/15 x= 11/26 (j,j')=(2,2) affine   rule null  rule:no jump -> no jump  [certified scan evidence] results/lab/spin19/summary.json (no drop at either prime)
+  s=19 sheet 3 t= 27/13 x=  7/20 (j,j')=(3,3) affine   rule null  rule:no jump -> no jump  [certified scan evidence] results/lab/spin19/summary.json (no drop at either prime)
+  s=19 sheet 3 t= 17/11 x=  3/14 (j,j')=(4,4) affine   rule null  rule:no jump -> no jump  [certified scan evidence] results/lab/spin19/summary.json (no drop at either prime)
+  s=19 sheet 2 t=  13/5 x=   4/9 (j,j')=(8,1) affine   rule null  rule:no jump -> no jump  [certified scan evidence] results/lab/spin19/summary.json (no drop at either prime)
+  s=19 sheet 2 t= 21/11 x=  5/16 (j,j')=(5,3) affine   rule null  rule:no jump -> no jump  [certified scan evidence] results/lab/spin19/summary.json (no drop at either prime)
+  s=19 sheet 2 t=   4/3 x=   1/7 (j,j')=(2,5) affine   rule null  rule:no jump -> no jump  [certified scan evidence] results/lab/spin19/summary.json (no drop at either prime)
+  s=21 sheet 3 t= 53/19 x= 17/36 (j,j')=(1,1) affine   rule null  rule:no jump -> untested [untested] 
+  s=21 sheet 3 t= 43/17 x= 13/30 (j,j')=(2,2) affine   rule null  rule:no jump -> untested [untested] 
+  s=21 sheet 3 t=  11/5 x=   3/8 (j,j')=(3,3) affine   rule null  rule:no jump -> untested [untested] 
+  s=21 sheet 3 t= 23/13 x=  5/18 (j,j')=(4,4) affine   rule null  rule:no jump -> untested [untested] 
+  s=21 sheet 3 t= 13/11 x=  1/12 (j,j')=(5,5) affine   ladder     rule:jump    -> jump     [pinned lab record] results/lab/fast_kernel3/w22_t1311_sheet3.json
+  s=21 sheet 2 t= 29/11 x=  9/20 (j,j')=(9,1) affine   rule null  rule:no jump -> untested [untested] 
+  s=21 sheet 2 t=     2 x=   1/3 (j,j')=(6,3) affine   rule null  rule:no jump -> untested [untested] 
+  s=21 sheet 2 t= 19/13 x=  3/16 (j,j')=(3,5) affine   rule null  rule:no jump -> untested [untested] 
+  s=23 sheet 3 t= 59/21 x= 19/40 (j,j')=(1,1) affine   rule null  rule:no jump -> untested [untested] 
+  s=23 sheet 3 t= 49/19 x= 15/34 (j,j')=(2,2) affine   rule null  rule:no jump -> untested [untested] 
+  s=23 sheet 3 t= 39/17 x= 11/28 (j,j')=(3,3) affine   rule null  rule:no jump -> untested [untested] 
+  s=23 sheet 3 t= 29/15 x=  7/22 (j,j')=(4,4) affine   rule null  rule:no jump -> untested [untested] 
+  s=23 sheet 3 t= 19/13 x=  3/16 (j,j')=(5,5) affine   rule null  rule:no jump -> untested [untested] 
+  s=23 sheet 2 t=   8/3 x=  5/11 (j,j')=(10,1) affine   rule null  rule:no jump -> untested [untested] 
+  s=23 sheet 2 t= 27/13 x=  7/20 (j,j')=(7,3) affine   rule null  rule:no jump -> untested [untested] 
+  s=23 sheet 2 t=  11/7 x=   2/9 (j,j')=(4,5) affine   rule null  rule:no jump -> untested [untested] 
+  s=23 sheet 2 t= 17/15 x=  1/16 (j,j')=(1,7) affine   ladder     rule:jump    -> jump     [pinned lab record] results/lab/fast_kernel3/w24_t1715_sheet2.json
+  s=25 sheet 3 t= 65/23 x= 21/44 (j,j')=(1,1) affine   rule null  rule:no jump -> untested [untested] 
+  s=25 sheet 3 t= 55/21 x= 17/38 (j,j')=(2,2) affine   rule null  rule:no jump -> untested [untested] 
+  s=25 sheet 3 t= 45/19 x= 13/32 (j,j')=(3,3) affine   rule null  rule:no jump -> untested [untested] 
+  s=25 sheet 3 t= 35/17 x=  9/26 (j,j')=(4,4) affine   rule null  rule:no jump -> untested [untested] 
+  s=25 sheet 3 t=   5/3 x=   1/4 (j,j')=(5,5) affine   recurrence rule:jump    -> jump     [lab result] results/lab/fast_kernel3/w26_t53_sheet3.json
+  s=25 sheet 3 t= 15/13 x=  1/14 (j,j')=(6,6) affine   ladder     rule:jump    -> jump     [lab result] results/lab/fast_kernel3/w26_t1513_sheet3.json
+  s=25 sheet 2 t= 35/13 x= 11/24 (j,j')=(11,1) affine   rule null  rule:no jump -> untested [untested] 
+  s=25 sheet 2 t=  15/7 x=  4/11 (j,j')=(8,3) affine   rule null  rule:no jump -> untested [untested] 
+  s=25 sheet 2 t=   5/3 x=   1/4 (j,j')=(5,5) affine   recurrence rule:jump    -> jump     [lab result] results/lab/fast_kernel3/w26_t53_sheet2.json
+  s=25 sheet 2 t=   5/4 x=   1/9 (j,j')=(2,7) affine   rule null  rule:no jump -> untested [untested] 
+  s=27 sheet 3 t= 71/25 x= 23/48 (j,j')=(1,1) affine   rule null  rule:no jump -> untested [untested] 
+  s=27 sheet 3 t= 61/23 x= 19/42 (j,j')=(2,2) affine   rule null  rule:no jump -> untested [untested] 
+  s=27 sheet 3 t=  17/7 x=  5/12 (j,j')=(3,3) affine   rule null  rule:no jump -> untested [untested] 
+  s=27 sheet 3 t= 41/19 x= 11/30 (j,j')=(4,4) affine   rule null  rule:no jump -> untested [untested] 
+  s=27 sheet 3 t= 31/17 x=  7/24 (j,j')=(5,5) affine   rule null  rule:no jump -> untested [untested] 
+  s=27 sheet 3 t=   7/5 x=   1/6 (j,j')=(6,6) affine   recurrence rule:jump    -> jump     [lab result] results/lab/fast_kernel3/w28_t75_sheet3.json
+  s=27 sheet 2 t=  19/7 x=  6/13 (j,j')=(12,1) affine   rule null  rule:no jump -> untested [untested] 
+  s=27 sheet 2 t=  11/5 x=   3/8 (j,j')=(9,3) infinity rule null  rule:no jump -> untested [untested] 
+  s=27 sheet 2 t=   7/4 x=  3/11 (j,j')=(6,5) affine   rule null  rule:no jump -> untested [untested] 
+  s=27 sheet 2 t= 23/17 x=  3/20 (j,j')=(3,7) affine   rule null  rule:no jump -> untested [untested] 
+  s=29 sheet 3 t= 77/27 x= 25/52 (j,j')=(1,1) affine   rule null  rule:no jump -> untested [untested] 
+  s=29 sheet 3 t= 67/25 x= 21/46 (j,j')=(2,2) affine   rule null  rule:no jump -> untested [untested] 
+  s=29 sheet 3 t= 57/23 x= 17/40 (j,j')=(3,3) affine   rule null  rule:no jump -> untested [untested] 
+  s=29 sheet 3 t= 47/21 x= 13/34 (j,j')=(4,4) affine   rule null  rule:no jump -> untested [untested] 
+  s=29 sheet 3 t= 37/19 x=  9/28 (j,j')=(5,5) affine   rule null  rule:no jump -> untested [untested] 
+  s=29 sheet 3 t= 27/17 x=  5/22 (j,j')=(6,6) affine   rule null  rule:no jump -> untested [untested] 
+  s=29 sheet 3 t= 17/15 x=  1/16 (j,j')=(7,7) affine   ladder     rule:jump    -> untested [untested] 
+  s=29 sheet 2 t= 41/15 x= 13/28 (j,j')=(13,1) affine   rule null  rule:no jump -> untested [untested] 
+  s=29 sheet 2 t=   9/4 x=  5/13 (j,j')=(10,3) affine   rule null  rule:no jump -> untested [untested] 
+  s=29 sheet 2 t= 31/17 x=  7/24 (j,j')=(7,5) affine   rule null  rule:no jump -> untested [untested] 
+  s=29 sheet 2 t=  13/9 x=  2/11 (j,j')=(4,7) affine   rule null  rule:no jump -> untested [untested] 
+  s=29 sheet 2 t= 21/19 x=  1/20 (j,j')=(1,9) affine   ladder     rule:jump    -> untested [untested] 
+== counts (kind, class, outcome): ('ladder', 'certified', 'jump'): 7; ('ladder', 'lab result', 'jump'): 1; ('ladder', 'pinned lab record', 'jump'): 2; ('ladder', 'untested', 'untested'): 2; ('recurrence', 'certified', 'jump'): 2; ('recurrence', 'lab result', 'jump'): 3; ('rule null', 'certified', 'no jump'): 9; ('rule null', 'certified scan evidence', 'no jump'): 7; ('rule null', 'pinned lab record', 'no jump'): 10; ('rule null', 'untested', 'untested'): 41
+== R2's three statements
+PASS  (i) the sheet-3 non-lifting classical points at spin 21: beta^2 = ['5/18', '3/8', '13/30', '17/36']
+PASS  (ii) no rule-null classical point at spin >= 21 has a record (0)
+      exact kernels at weight >= 22 at points that are not classical jumping points: [(1, '11/7', 22, 1, 'results/lab/fast_kernel3/w22_sol1_t117.json')]
+PASS  (iii) the rule's positive cells at spins 21-29 = the two ladders' slots plus the classical recurrence spins (4k+1)(2i+1) on sheet 3, (3k+2)(2i+1), k odd, on sheet 2: [(21, 3, '13/11'), (23, 2, '17/15'), (25, 2, '5/3'), (25, 3, '15/13'), (25, 3, '5/3'), (27, 3, '7/5'), (29, 2, '21/19'), (29, 3, '17/15')]
+      their recorded outcomes: [((21, 3, '13/11'), ('jump', 'pinned lab record')), ((23, 2, '17/15'), ('jump', 'pinned lab record')), ((25, 2, '5/3'), ('jump', 'lab result')), ((25, 3, '15/13'), ('jump', 'lab result')), ((25, 3, '5/3'), ('jump', 'lab result')), ((27, 3, '7/5'), ('jump', 'lab result')), ((29, 2, '21/19'), ('untested', 'untested')), ((29, 3, '17/15'), ('untested', 'untested'))]
+PASS  for every classical point at odd s <= 61: beta^2 = 1/(2k) iff t is a ladder point t_k (the rule's positive content = ladders + recurrences)
+== A1: the deck images -t0 of the jump points
+PASS  no record shows a jump at any deck image -t0 (0)
+      -t0 =      -3: certified                at spins [9, 11, 13] (all three sheets)
+      -t0 =      -3: certified scan evidence  at spins [19] (all three sheets)
+      -t0 =      -3: pinned lab record        at spins [15, 17] (all three sheets)
+      -t0 =      -3: lab result               at spins [5, 7] (all three sheets)
+      -t0 =      -3: untested                 at spins [21, 23, 25, 27] (all three sheets)
+      -t0 =    -5/3: certified                at spins [9, 11, 13] (all three sheets)
+      -t0 =    -5/3: certified scan evidence  at spins [19] (all three sheets)
+      -t0 =    -5/3: pinned lab record        at spins [15, 17] (all three sheets)
+      -t0 =    -5/3: lab result               at spins [5, 7] (all three sheets)
+      -t0 =    -5/3: untested                 at spins [21, 23, 25, 27] (all three sheets)
+      -t0 =    -7/5: certified                at spins [9, 11, 13] (all three sheets)
+      -t0 =    -7/5: certified scan evidence  at spins [19] (all three sheets)
+      -t0 =    -7/5: pinned lab record        at spins [15, 17] (all three sheets)
+      -t0 =    -7/5: lab result               at spins [5, 7] (all three sheets)
+      -t0 =    -7/5: untested                 at spins [21, 23, 25, 27] (all three sheets)
+      -t0 =    -9/7: certified                at spins [9, 11, 13] (all three sheets)
+      -t0 =    -9/7: certified scan evidence  at spins [19] (all three sheets)
+      -t0 =    -9/7: pinned lab record        at spins [15, 17] (all three sheets)
+      -t0 =    -9/7: lab result               at spins [5, 7] (all three sheets)
+      -t0 =    -9/7: untested                 at spins [21, 23, 25, 27] (all three sheets)
+      -t0 =   -11/9: certified                at spins [9, 11, 13] (all three sheets)
+      -t0 =   -11/9: certified scan evidence  at spins [19] (all three sheets)
+      -t0 =   -11/9: pinned lab record        at spins [15, 17] (all three sheets)
+      -t0 =   -11/9: lab result               at spins [5, 7] (all three sheets)
+      -t0 =   -11/9: untested                 at spins [21, 23, 25, 27] (all three sheets)
+      -t0 =  -13/11: certified                at spins [9, 11, 13] (all three sheets)
+      -t0 =  -13/11: certified scan evidence  at spins [19] (all three sheets)
+      -t0 =  -13/11: pinned lab record        at spins [15, 17] (all three sheets)
+      -t0 =  -13/11: lab result               at spins [5, 7] (all three sheets)
+      -t0 =  -13/11: untested                 at spins [21, 23, 25, 27] (all three sheets)
+      -t0 =  -15/13: certified                at spins [9, 11, 13] (all three sheets)
+      -t0 =  -15/13: certified scan evidence  at spins [19] (all three sheets)
+      -t0 =  -15/13: pinned lab record        at spins [15, 17] (all three sheets)
+      -t0 =  -15/13: lab result               at spins [5, 7] (all three sheets)
+      -t0 =  -15/13: untested                 at spins [21, 23, 25, 27] (all three sheets)
+      -t0 =  -17/15: certified                at spins [9, 11, 13] (all three sheets)
+      -t0 =  -17/15: certified scan evidence  at spins [19] (all three sheets)
+      -t0 =  -17/15: pinned lab record        at spins [15, 17] (all three sheets)
+      -t0 =  -17/15: lab result               at spins [5, 7] (all three sheets)
+      -t0 =  -17/15: untested                 at spins [21, 23, 25, 27] (all three sheets)
+== A6: t = 3, per sheet and spin
+      sheet 1: s=5: no jump (dim 1) [certified]; s=7: no jump (dim 1) [certified]; s=9: no jump (dim 1) [certified]; s=11: no jump (dim 1) [certified]; s=13: no jump (dim 1) [certified]; s=15: no jump (dim 1) [certified]; s=17: no jump [pinned lab record]; s=19: no jump [certified scan evidence]; s=21: untested [untested]; s=23: untested [untested]; s=25: untested [untested]; s=27: untested [untested]
+      sheet 2: s=5: jump (dim 2) [certified]; s=7: jump (dim 2) [certified]; s=9: jump (dim 2) [certified]; s=11: jump (dim 2) [certified]; s=13: jump (dim 2) [certified]; s=15: jump (dim 2) [certified]; s=17: jump [pinned lab record]; s=19: jump [certified scan evidence]; s=21: untested [untested]; s=23: untested [untested]; s=25: untested [untested]; s=27: untested [untested]
+      sheet 3: s=5: jump (dim 2) [certified]; s=7: jump (dim 2) [certified]; s=9: jump (dim 2) [certified]; s=11: jump (dim 2) [certified]; s=13: jump (dim 2) [certified]; s=15: jump (dim 2) [certified]; s=17: jump [pinned lab record]; s=19: jump [certified scan evidence]; s=21: untested [untested]; s=23: untested [untested]; s=25: untested [untested]; s=27: untested [untested]
+PASS  sheet 1 at t = 3: no jump at every recorded spin (5-19); nothing recorded at 21-27
+PASS  sheets 2 and 3 at t = 3: a jump at every spin 5-19 in the records
+PASS  t = 3 at spins 21-27: no record on any sheet
+PASS  classically at t = 3 (W = 4..30): sheets 2, 3 nullity 2 (sheet 3 on b = 0, sheet 2 at r^4), sheet 1 nullity 1 ((b, c) = -2, -1/3)
+PASS  Table 1's spin-7 row '1 everywhere': the certified record has dimension 2 at t = 3 on sheets 2, 3 at spin 7 (['code/cyl_strata_points.py:63-71 (TABLE; ', 'code/cyl_strata_points.py:63-71 (TABLE; '])
+      the spin-7 classical points and their records: [(3, '11/5', 'no jump', 'pinned lab record', 'results/lab/classical/lifting_out.txt'), (2, '2', 'no jump', 'pinned lab record', 'results/lab/classical/lifting_out.txt')]
+== A9: sheet 2 at t = 7/5 (q = 6)
+      records at spin 7: [('no jump', 1, 'certified', 'code/cyl_strata_points.py:63-71 (TABLE; certified)'), ('no jump', 1, 'lab result', 'wolfram/lab/cyl_strata_w8.json (not a root of the maximal mi')]
+PASS  sheet 2, spin 7, t = 7/5: no jump (records above); the weight-8 maximal minor of sheet 2 has no factor 5t - 7 (factors ['-2 + t', '-1 + t', '1 + t', '-11 + 5*t', '-19 + 13*t', '-38469807 + 56577768*t + 9756556*t^2 - 50208136*t^3 + 13861814*t^4 + 13606168*t^5 - 6292308*t^6 - 1092600*t^7 + 705345*t^8', '-3 + t'])
+PASS  q = 6: the sheet-2 slot (3q-2)/2 = 8 is even, and t = 7/5 is a sheet-2 classical point at no odd spin < 200 (x = 1/6 needs s = 8j)
+== A10: t_2 = 7/5 on sheet 3
+PASS  sheet-3 classical spins of t_2 (s <= 61): [9, 27, 45] = 9(2i+1)
+PASS  the weight-28 record at t_2 on sheet 3: genuine dimension 2 [lab result] results/lab/fast_kernel3/w28_t75_sheet3.json
+wrote LEDGER.json (84 rows) and LEDGER.md
+
+A5 DONE: all checks pass

@@ -10,6 +10,10 @@ Exact-arithmetic engines and machine certificates for the results of
   vacuum algebra at the self-dual point* (E. Vitchev, 2026).
 - *Opers for the cylindrical integrals of motion* (E. Vitchev, 2026);
   its verification kit is `opers-2026-10/` (see below).
+- *Jumping loci of the cylindrical commuting families: arithmetic ladders
+  on the curve s^2 = (N-25)(N-1)* (E. Vitchev, 2026); its certificates are
+  entries of the registry, and the lab records it cites are in
+  `results/lab/jumping_loci_records/` (new in v1.2.8; see below).
 
 The directory `super-kdv-2026-10/` (new in v1.2.6) holds an independent computation of the
 cylinder vacuum eigenvalues of the N = 1 super-KdV integrals of motion I_1 ... I_9 in the
@@ -18,7 +22,9 @@ Neveu-Schwarz and Ramond sectors (see below).
 arXiv identifiers will be added upon announcement.
 
 Pure Python; the dependencies are `sympy` and `mpmath` (see `requirements.txt`). `numpy` is optional:
-only two checks of the opers kit (`vir1r_*`) use it.
+only two checks of the opers kit (`vir1r_*`) use it. One expensive certificate, `cyl_stratification_w1014`
+(new in v1.2.8; run by `--full` only), also needs `numpy`, a C compiler and the FLINT library
+(see the header of `code/cyl_stratification_w1014.py`).
 
 ## Reproduction
 
@@ -35,6 +41,13 @@ the super-KdV checks; it exits 0 only if every line passes (`bash clean_venv_gat
 The Lean certificates (`lean/`) additionally require a local
 Lean 4.24 + Mathlib toolchain; their check fails loudly, not
 silently, where the toolchain is absent.
+
+## Lab records of the jumping-loci paper (`results/lab/jumping_loci_records/`)
+
+New in v1.2.8: one subfolder per lab result of the paper that is not a row of its Table 1, each with
+a README, the scripts, the records, `run.sh` (re-runs the scripts into a new directory) and
+`compare.sh` (compares the output with the records). The folder's README lists them, with their
+costs; one of them (`spin21_null_cells/`) needs about 60 GiB of memory per kernel run.
 
 ## Verification kit for the opers paper (`opers-2026-10/`)
 

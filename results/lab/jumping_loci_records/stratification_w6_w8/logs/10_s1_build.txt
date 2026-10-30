@@ -1,0 +1,30 @@
+sheet 1: I_3 density (engine cyl_P4 evaluated in Q(t)):
+    Y(11)Y(11)       1
+    Y(22)            -2
+    X(1,1)Y(11)      6
+    X(1,1,1,1)       (t - 9)/(t - 1)
+    X(2,2)           (-2*t**2 + 4*t + 14)/(t**2 - 1)
+  W=6: M is 24 x 12 (target classes x domain classes); scalar (t^2-1)^1 * 15; nonzero entries 123; max entry degree 2; saved data/M_sheet1_W6.json (0.1 s)
+    domain classes: Y(11)Y(11)Y(11) Y(11)Y(22) Y(12)Y(12) Y(33) X(1,1)Y(11)Y(11) X(1,1)Y(22) X(1,1,1,1)Y(11) X(1,1,1,1,1,1) X(1,1,2,2) X(1,3)Y(11) X(2,2)Y(11) X(3,3)
+  W=8: M is 71 x 29 (target classes x domain classes); scalar (t^2-1)^1 * 315; nonzero entries 678; max entry degree 2; saved data/M_sheet1_W8.json (0.7 s)
+    domain classes: Y(11)Y(11)Y(11)Y(11) Y(11)Y(11)Y(22) Y(11)Y(12)Y(12) Y(11)Y(33) Y(13)Y(13) Y(13)Y(22) Y(22)Y(22) Y(44) X(1,1)Y(11)Y(11)Y(11) X(1,1)Y(11)Y(22) X(1,1)Y(12)Y(12) X(1,1)Y(33) X(1,1,1,1)Y(11)Y(11) X(1,1,1,1)Y(22) X(1,1,1,1,1,1)Y(11) X(1,1,1,1,1,1,1,1) X(1,1,1,1,2,2) X(1,1,1,3)Y(11) X(1,1,2,2)Y(11) X(1,1,3,3) X(1,3)Y(11)Y(11) X(1,3)Y(22) X(1,5)Y(11) X(2,2)Y(11)Y(11) X(2,2)Y(22) X(2,2,2,2) X(2,4)Y(11) X(3,3)Y(11) X(4,4)
+sheet 2: I_3 density (engine cyl_P4 evaluated in Q(t)):
+    Y(11)Y(11)       1
+    Y(22)            -2
+    X(1,1)Y(11)      (3*t - 9)/(2*t - 2)
+    X(1,1,1,1)       (5*t**2 - 26*t + 33)/(8*t**2 - 16*t + 8)
+    X(2,2)           (-19*t**3 + 15*t**2 + 71*t - 91)/(8*t**3 - 8*t**2 - 8*t + 8)
+  W=6: M is 24 x 12 (target classes x domain classes); scalar (t^2-1)^2 * 60; nonzero entries 126; max entry degree 4; saved data/M_sheet2_W6.json (0.1 s)
+    domain classes: Y(11)Y(11)Y(11) Y(11)Y(22) Y(12)Y(12) Y(33) X(1,1)Y(11)Y(11) X(1,1)Y(22) X(1,1,1,1)Y(11) X(1,1,1,1,1,1) X(1,1,2,2) X(1,3)Y(11) X(2,2)Y(11) X(3,3)
+  W=8: M is 71 x 29 (target classes x domain classes); scalar (t^2-1)^2 * 2520; nonzero entries 687; max entry degree 4; saved data/M_sheet2_W8.json (0.7 s)
+    domain classes: Y(11)Y(11)Y(11)Y(11) Y(11)Y(11)Y(22) Y(11)Y(12)Y(12) Y(11)Y(33) Y(13)Y(13) Y(13)Y(22) Y(22)Y(22) Y(44) X(1,1)Y(11)Y(11)Y(11) X(1,1)Y(11)Y(22) X(1,1)Y(12)Y(12) X(1,1)Y(33) X(1,1,1,1)Y(11)Y(11) X(1,1,1,1)Y(22) X(1,1,1,1,1,1)Y(11) X(1,1,1,1,1,1,1,1) X(1,1,1,1,2,2) X(1,1,1,3)Y(11) X(1,1,2,2)Y(11) X(1,1,3,3) X(1,3)Y(11)Y(11) X(1,3)Y(22) X(1,5)Y(11) X(2,2)Y(11)Y(11) X(2,2)Y(22) X(2,2,2,2) X(2,4)Y(11) X(3,3)Y(11) X(4,4)
+sheet 3: I_3 density (engine cyl_P4 evaluated in Q(t)):
+    Y(11)Y(11)       1
+    Y(22)            -2
+    X(1,1)Y(11)      (6*t - 18)/(t + 1)
+    X(1,1,1,1)       1
+    X(2,2)           (-2*t**3 - 14*t**2 + 82*t - 98)/(t**3 + t**2 - t - 1)
+  W=6: M is 24 x 12 (target classes x domain classes); scalar (t^2-1)^2 * 15; nonzero entries 126; max entry degree 4; saved data/M_sheet3_W6.json (0.1 s)
+    domain classes: Y(11)Y(11)Y(11) Y(11)Y(22) Y(12)Y(12) Y(33) X(1,1)Y(11)Y(11) X(1,1)Y(22) X(1,1,1,1)Y(11) X(1,1,1,1,1,1) X(1,1,2,2) X(1,3)Y(11) X(2,2)Y(11) X(3,3)
+  W=8: M is 71 x 29 (target classes x domain classes); scalar (t^2-1)^2 * 315; nonzero entries 687; max entry degree 4; saved data/M_sheet3_W8.json (0.7 s)
+    domain classes: Y(11)Y(11)Y(11)Y(11) Y(11)Y(11)Y(22) Y(11)Y(12)Y(12) Y(11)Y(33) Y(13)Y(13) Y(13)Y(22) Y(22)Y(22) Y(44) X(1,1)Y(11)Y(11)Y(11) X(1,1)Y(11)Y(22) X(1,1)Y(12)Y(12) X(1,1)Y(33) X(1,1,1,1)Y(11)Y(11) X(1,1,1,1)Y(22) X(1,1,1,1,1,1)Y(11) X(1,1,1,1,1,1,1,1) X(1,1,1,1,2,2) X(1,1,1,3)Y(11) X(1,1,2,2)Y(11) X(1,1,3,3) X(1,3)Y(11)Y(11) X(1,3)Y(22) X(1,5)Y(11) X(2,2)Y(11)Y(11) X(2,2)Y(22) X(2,2,2,2) X(2,4)Y(11) X(3,3)Y(11) X(4,4)

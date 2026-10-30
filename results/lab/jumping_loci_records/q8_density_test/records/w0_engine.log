@@ -1,0 +1,26 @@
+w0_engine.py sha256 18cf7a866ec9a93cfcf906463f66b160897996f4b3bae956ad01bf575d9a58eb
+CONTROL C8 C_6: |dF_5| = 36 (p2 = 36), |C_w| = 29, all independent mod dF: True, dF + C_w = 65 (p2(6) = 65): True  (0s)
+CONTROL C8 C_10: |dF_9| = 300 (p2 = 300), |C_w| = 181, all independent mod dF: True, dF + C_w = 481 (p2(10) = 481): True  (0s)
+CONTROL C8 C_14: |dF_13| = 1770 (p2 = 1770), |C_w| = 895, all independent mod dF: True, dF + C_w = 2665 (p2(14) = 2665): True  (0s)
+CONTROL C9 rank(E_V, E_Z) on F_6 = 29 == p2(w) - p2(w-1) = 29: True  (0s)
+CONTROL C9 rank(E_V, E_Z) on F_10 = 181 == p2(w) - p2(w-1) = 181: True  (0s)
+CONTROL C9 Euler == Ech at weight 10 (20 random P, dQ, P + dQ; non-exact seen 40/60): True  (0s)
+CONTROL C9 Euler == Ech at weight 13 (20 random P, dQ, P + dQ; non-exact seen 40/60): True  (1s)
+CONTROL (a) kappa = 1: I_3 dim 1; W_U = (4/3)(dU)^3 + 2 dU d^2U + (1/3) d^3U: True  (1s)
+CONTROL (a) kappa = 1: the bilinear space in K_6 + d is 1-dim = W_U (x) W_W, i.e. (1, 3/2, 1/4)^2 (Euler route): True  (1s)
+CONTROL C7 eigen of total derivatives = 0 (kappa = 1, 5 random weight-5 fields): True  (1s)
+CONTROL (b) kappa = 3/2: I_3 dim 1 and eigen ~ cyl(3,4) at 7/5 (record vev_w4_points.json): True  (1s)
+CONTROL (b) W^(5) equals the record (run_wuw2.log line 4): True  (1s)
+CONTROL (b) P1 of WUW2: eigen(W^(5)) = (1/15) P (P^2 - 1)(4P^2 - 1) = binom(2P + 2, 5) exactly: True  (1s)
+CONTROL (b) P2 of WUW2: the 49-bilinear space in K_10 + d is 1-dim = W^(5) (x) W^(5) (Euler route; rank 48): True  (3s)
+   K_10 route: 181 columns, images + Euler 4s
+CONTROL (b) dim K_10 = 2 == 2 (record/VIR5d) by the Euler + fmpq_mat route on C_10; rank 179 over Q, 179 mod 2^31-1: True  (7s)
+CONTROL (b) P3 of WUW2: Euler image of Res_1 I_3 x G_10 vanishes (G_10 in K_10 + d): True  (8s)
+CONTROL (b) eigen(G_10) = -(81/4800) E_2 exactly (record): True  (8s)
+CONTROL (b) record file vev_sol3_w10.json has WUW2 inputs/ORIGIN_SHA256 hash 51eecbbc...: True  (8s)
+CONTROL (b) GATE of k10_full: certified vev_sol3_w10 at 7/5 in span eigen(K_10): True  (13s)
+CONTROL (b) P4b of WUW2 by the fmpq_mat route: no T_total-primary representative G_10 + dH (rank 300 -> augmented 301): True  (14s)
+CONTROL (b) W^(5) not in the weight-5 T_U vacuum module span ([(5,), (3, 2)]): True  (14s)
+done (14s)
+ALL ENGINE CONTROLS PASS
+EXIT 0

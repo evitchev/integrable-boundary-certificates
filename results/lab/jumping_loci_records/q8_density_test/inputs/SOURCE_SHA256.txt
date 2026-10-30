@@ -1,0 +1,5 @@
+# Byte copy (unchanged) of the record of the two weight-14 kernel classes at t = 9/7 computed in the other frame
+# (one boson X and a Virasoro algebra at central charge N). Source: the identical file
+# opers-2026-10/tree/results/lab/large_n/vir5d/z2_kernel_t9_7_K7.json of this repository (release v1.2.7).
+# Read by code/w3_kernel.py for cross-check X1 only. Check from this directory: sha256sum -c SOURCE_SHA256.txt
+804f296049c2e85ea85d40801784a030e35c1b446d5040de8023a112ecb2aa52  z2_kernel_t9_7_K7.json

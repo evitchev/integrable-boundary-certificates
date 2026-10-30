@@ -1,0 +1,31 @@
+w3_kernel.py sha256 fdd7c60060e9683ed921324e5b8cf7aa85e6e07722acefa8e251891724783a44
+GATE I_3 dim 1 (recomputed): True  (0s)
+   C_14: 895 monomials (p2(14) - p2(13) = 895)
+   images + Euler: 100/895 (25s)
+   images + Euler: 200/895 (39s)
+   images + Euler: 300/895 (49s)
+   images + Euler: 400/895 (58s)
+   images + Euler: 500/895 (64s)
+   images + Euler: 600/895 (70s)
+   images + Euler: 700/895 (73s)
+   images + Euler: 800/895 (76s)
+   images + Euler done: 80s; matrix 11482 x 895, nonzeros 1124440
+   exact nullspace over Q (fmpq_mat rref): rank 893, nullity 2 (7s)
+   rank mod 2^31-1 and mod 10^9+7: [893, 893] (13s)
+GATE G2 dim K_14 = 2 (VIR5d: kernel dimension 2 at t = 9/7): True  (100s)
+CROSS-CHECK X5 nullity mod two primes equals the exact nullity: True  (100s)
+   kernel representatives (C_14 coordinates): terms [457, 843]
+   eigenvalues of the kernel classes (1s):
+   eigen(K_14 class 0) = -4096*P_X**14 + 28672*P_X**12*pi**2 + 28672*P_X**12 - 86016*P_X**10*pi**4 - 114688*P_X**10*pi**2 - 75264*P_X**10 + 143360*P_X**8*pi**6 + 143360*P_X**8*pi**4 + 175616*P_X**8*pi**2 + 92416*P_X**8 - 143360*P_X**6*pi**8 - 150528*P_X**6*pi**4 - 111104*P_X**6*pi**2 - 54544*P_X**6 + 86016*P_X**4*pi**10 - 143360*P_X**4*pi**8 + 150528*P_X**4*pi**6 + 34608*P_X**4*pi**2 + 14112*P_X**4 - 28672*P_X**2*pi**12 + 114688*P_X**2*pi**10 - 175616*P_X**2*pi**8 + 111104*P_X**2*pi**6 - 34608*P_X**2*pi**4 - 1296*P_X**2 + 4096*pi**14 - 28672*pi**12 + 75264*pi**10 - 92416*pi**8 + 54544*pi**6 - 14112*pi**4 + 1296*pi**2
+   eigen(K_14 class 1) = -37433678274560*P_X**14/4549814601 + 262035747921920*P_X**12*pi**2/4549814601 + 262035747921920*P_X**12/4549814601 - 262035747921920*P_X**10*pi**4/1516604867 - 1048142991687680*P_X**10*pi**2/4549814601 - 229281279431680*P_X**10/1516604867 + 1310178739609600*P_X**8*pi**6/4549814601 + 1310178739609600*P_X**8*pi**4/4549814601 + 1604968956021760*P_X**8*pi**2/4549814601 + 844597366069760*P_X**8/4549814601 - 77069336780800*P_X**6*pi**8/267636153 - 100352000*P_X**6*pi**6/13649443803 - 4127062998410240*P_X**6*pi**4/13649443803 - 1015388531261440*P_X**6*pi**2/4549814601 - 4486338676268960*P_X**6/40948331409 + 15413867356160*P_X**4*pi**10/89212051 - 77069336780800*P_X**4*pi**8/267636153 + 4127063015971840*P_X**4*pi**6/13649443803 - 23744000*P_X**4*pi**4/13649443803 + 316285305088480*P_X**4*pi**2/4549814601 + 1160735853686080*P_X**4/40948331409 - 15413867356160*P_X**2*pi**12/267636153 + 61655469424640*P_X**2*pi**10/267636153 - 94409937556480*P_X**2*pi**8/267636153 + 1015388504023040*P_X**2*pi**6/4549814601 - 316285364168480*P_X**2*pi**4/4549814601 - 455425600*P_X**2*pi**2/13649443803 - 106602058766240*P_X**2/40948331409 + 2201981050880*pi**14/267636153 - 15413867356160*pi**12/267636153 + 13487133936640*pi**10/89212051 - 49682197460480*pi**8/267636153 + 4486338486686560*pi**6/40948331409 - 1160737087858880*pi**4/40948331409 + 106594435865440*pi**2/40948331409 - 4104083200/13649443803
+   certified Sol-3 weight-14 eigenvalue at 9/7 (anchor13): P_X**14 - 7*P_X**12*pi**2 - 7*P_X**12 + 21*P_X**10*pi**4 + 28*P_X**10*pi**2 + 147*P_X**10/8 - 35*P_X**8*pi**6 - 35*P_X**8*pi**4 - 343*P_X**8*pi**2/8 - 361*P_X**8/16 - 35*P_X**6*pi**8 + 490*P_X**6*pi**6/3 - 343*P_X**6*pi**4/24 + 133*P_X**6*pi**2/2 + 118489*P_X**6/2304 + 21*P_X**4*pi**10 - 35*P_X**4*pi**8 - 343*P_X**4*pi**6/24 + 1855*P_X**4*pi**4/48 + 36925*P_X**4*pi**2/256 + 385679*P_X**4/1152 - 7*P_X**2*pi**12 + 28*P_X**2*pi**10 - 343*P_X**2*pi**8/8 + 133*P_X**2*pi**6/2 + 36925*P_X**2*pi**4/256 + 284641*P_X**2*pi**2/384 + 4764313*P_X**2/2304 + pi**14 - 7*pi**12 + 147*pi**10/8 - 361*pi**8/16 + 118489*pi**6/2304 + 385679*pi**4/1152 + 4764313*pi**2/2304 + 641263/96
+GATE G3 the certified Sol-3 weight-14 eigenvalue at 9/7 lies in span eigen(K_14): True  (101s)
+   coefficients: {c0: 228477039/5120, c1: -4549814601/204800}
+CROSS-CHECK X1 span eigen(K_14) == span of VIR5d's two t = 9/7 classes (rank of the 4 x 36 matrix = 2; mine 2, VIR5d 2): True  (101s)
+   antisymmetric combinations: solution [{c1: 0}]; free symbols [c0]
+CROSS-CHECK X2 exactly one antisymmetric class and it is proportional to eigen(G_14): True  (101s)
+CROSS-CHECK X3 the certified Sol-3 eigenvalue is NOT proportional to eigen(G_14) (expected: the Sol-3 class is symmetric): True  (101s)
+CROSS-CHECK X4 G_14's class (C_14 coordinates, 457 terms) lies in span K_14 (rank 2 == 2) (3s): True  (104s)
+done (104s)
+w3: gates G2, G3 pass
+EXIT 0

@@ -1,0 +1,23 @@
+read results/cyl_stratification_w1014.json sha256 a7ff065607cd08efac75918410714f8d38e394c1a3a46fa0978cde98d09e31c2
+read results/lab/jumping_loci_records/stratification_w6_w8/results/S23_sheet1_W6.json sha256 6fe66460239b453723eab39ea0756295069f921f8aa2ee73dab8870de739e45a
+read results/lab/jumping_loci_records/stratification_w6_w8/results/S23_sheet2_W6.json sha256 3469a28b1379214a36f3e7cccd71ef9a1dba2df104d814b3e7138a71b85abf46
+read results/lab/jumping_loci_records/stratification_w6_w8/results/S23_sheet3_W6.json sha256 c7963733032642a084004126c015895e78093a9d0554dee58830e1ab79556787
+read results/lab/jumping_loci_records/stratification_w6_w8/results/S23_sheet1_W8.json sha256 84f5eb6d913083b0c2f8db76a896ba0c5f28b5b2ced47b8246843ff4716134c2
+read results/lab/jumping_loci_records/stratification_w6_w8/results/S23_sheet2_W8.json sha256 3b24901572236f587dbf14f0297cd00d248110b5f1241026049ac8f7637b1f9e
+read results/lab/jumping_loci_records/stratification_w6_w8/results/S23_sheet3_W8.json sha256 159b71a51cd16732e45f65189556f9edd37468f960712de66bc96ebd75efac03
+results/cyl_discriminant_w1012.json      weight 10  jump       1 entries,   1 agree
+results/cyl_discriminant_w1012.json      weight 10  no jump   28 entries,  28 agree
+results/cyl_discriminant_w1012.json      weight 12  jump       1 entries,   1 agree
+results/cyl_discriminant_w1012.json      weight 12  no jump   30 entries,  30 agree
+results/cyl_discriminant_w14.json        weight 14  jump       1 entries,   1 agree
+results/cyl_discriminant_w14.json        weight 14  no jump   31 entries,  31 agree
+wolfram/lab/cyl_strata_w                 weight  6  jump       2 entries,   2 agree
+wolfram/lab/cyl_strata_w                 weight  6  no jump   24 entries,  24 agree
+wolfram/lab/cyl_strata_w                 weight  8  no jump   26 entries,  26 agree
+wolfram/lab/cyl_strata_w                 weight 10  jump       1 entries,   1 agree
+wolfram/lab/cyl_strata_w                 weight 10  no jump    2 entries,   2 agree
+wolfram/lab/cyl_strata_w                 weight 12  jump       1 entries,   1 agree
+wolfram/lab/cyl_strata_w                 weight 12  no jump    3 entries,   3 agree
+wolfram/lab/cyl_strata_w                 weight 14  jump       1 entries,   1 agree
+wolfram/lab/cyl_strata_w                 weight 14  no jump    4 entries,   4 agree
+OPEN-TOOL CROSS-CHECK: ALL 156 ENTRIES AGREE

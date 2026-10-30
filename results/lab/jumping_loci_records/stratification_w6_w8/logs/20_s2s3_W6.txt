@@ -1,0 +1,54 @@
+matrix data/M_sheet1_W6.json: sheet 1, W = 6, 24 x 12, M_poly = (t^2-1)^1 * 15 * M; note: 
+seed 68116
+random points ['-105/193', '-526/367', '-54/229', '-3/167']: ranks [11, 11, 11, 11]; r0 = 11
+  row set 0: point -105/193, R = [0, 2, 3, 4, 7, 8, 12, 13, 16, 18, 22], C = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], free columns [11]; det A(t*) = -3867116614188982623248835534451096992843981941354493975718619535900672000000000000000/191540580003116921429323712183642218614831262597249 != 0; degree bound 22 (row 22, column 22); 25 interpolation points; deg det A = 22; M_poly * w^(j) = 0 identically for every free j: verified; gcd of this set's 13 minors: degree 18
+  row set 1: point -526/367, R = [1, 4, 9, 12, 13, 14, 16, 17, 21, 22, 23], C = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], free columns [11]; det A(t*) = 755876646137772059873549440179749157051178258224598889617517009336175113011200000000000000/264638735999480827156185738343112840094453729311824181089 != 0; degree bound 22 (row 22, column 22); 25 interpolation points; deg det A = 22; M_poly * w^(j) = 0 identically for every free j: verified; gcd of this set's 13 minors: degree 18
+  row set 2: point -54/229, R = [0, 5, 6, 8, 9, 12, 13, 15, 16, 17, 18], C = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], free columns [11]; det A(t*) = -73524457174543902043652781711288967928687287503646063248000000000000000000000000000000000/8248606982609556597726707415412390581699657264984841 != 0; degree bound 22 (row 22, column 22); 25 interpolation points; deg det A = 22; M_poly * w^(j) = 0 identically for every free j: verified; gcd of this set's 13 minors: degree 18
+  row set 3: point -3/167, R = [1, 3, 5, 8, 10, 12, 16, 18, 19, 20, 22], C = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], free columns [11]; det A(t*) = 255618793437720601565384960134112007234127302167075643400946960459366400000000000000000/7938937176650717435915084655818624631312211326289 != 0; degree bound 22 (row 22, column 22); 25 interpolation points; deg det A = 22; M_poly * w^(j) = 0 identically for every free j: verified; gcd of this set's 13 minors: degree 18
+r = rank over Q(t) = 11 (n = 12; generic nullity n - r = 1)
+D(t) = det A of row set 0: degree 22
+G(t) = gcd over 4 row sets: degree 7: t**7 - 7*t**6 - 19*t**5 + 5*t**4 + 35*t**3 + 11*t**2 - 17*t - 9
+factorization of G over Q: 3 irreducible factor(s)
+  factor t - 9 (deg 1, mult 1): exact rank 11 over Q[t]/(f) -> nullity 1; no drop; t = 9, beta^2 = 4/5, N = 7/10, s = -27/10
+  factor t - 1 (mult 2): root t = 1: EXCLUDED (pole)
+  factor t + 1 (mult 4): root t = -1: EXCLUDED (pole)
+jump set (m >= 2): []
+saved results/S23_sheet1_W6.json (0.3 s)
+matrix data/M_sheet2_W6.json: sheet 2, W = 6, 24 x 12, M_poly = (t^2-1)^2 * 60 * M; note: 
+seed 68126
+random points ['15/943', '-487/235', '907/31', '-5/18']: ranks [11, 11, 11, 11]; r0 = 11
+  row set 0: point 15/943, R = [3, 4, 6, 8, 9, 11, 12, 14, 17, 18, 19], C = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], free columns [11]; det A(t*) = -48594355827562027538516584518788425418142353093272513076043560935828509353487425789679297564105155523203028193534691789871477052417632910600585290448896000000000000000000/75598726638703029936366384291272718263900789993584033991215251306720940119644551755438668424116294678771465531674076878784481624001 != 0; degree bound 44 (row 44, column 44); 47 interpolation points; deg det A = 44; M_poly * w^(j) = 0 identically for every free j: verified; gcd of this set's 13 minors: degree 39
+  row set 1: point -487/235, R = [0, 1, 2, 9, 10, 11, 12, 13, 16, 19, 21], C = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], free columns [11]; det A(t*) = 98534831794084315590552419503196120142762269394602840427171555255334684482730633545303526874379139487181288912135359466693674812675146645504/6957222213215845271540848927346786039139026712866669105792168672633727729506790637969970703125 != 0; degree bound 44 (row 44, column 44); 47 interpolation points; deg det A = 44; M_poly * w^(j) = 0 identically for every free j: verified; gcd of this set's 13 minors: degree 39
+  row set 2: point 907/31, R = [7, 8, 10, 11, 14, 15, 18, 19, 20, 22, 23], C = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], free columns [11]; det A(t*) = -92085953131087518954006740399451643678851524887752175089469070682074400998189218552817791153081977294108851248005135877278518778948984326062080000000000000000/433701716541192355457229753999917360820651622584523552060436161 != 0; degree bound 44 (row 44, column 44); 47 interpolation points; deg det A = 42; M_poly * w^(j) = 0 identically for every free j: verified; gcd of this set's 13 minors: degree 37
+  row set 3: point -5/18, R = [1, 2, 3, 5, 7, 8, 12, 15, 16, 21, 22], C = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], free columns [11]; det A(t*) = -5798142577992782472203818650394684217411882731568852423233296482086181640625/2344061487986355189526424978282496 != 0; degree bound 44 (row 44, column 44); 47 interpolation points; deg det A = 44; M_poly * w^(j) = 0 identically for every free j: verified; gcd of this set's 13 minors: degree 39
+r = rank over Q(t) = 11 (n = 12; generic nullity n - r = 1)
+D(t) = det A of row set 0: degree 44
+G(t) = gcd over 4 row sets: degree 22: t**22 + 4*t**21/3 - 23*t**20 - 56*t**19 + 493*t**18/3 + 700*t**17 + 31*t**16 - 9952*t**15/3 - 4758*t**14 + 3608*t**13 + 15834*t**12 + 11440*t**11 - 12194*t**10 - 79544*t**9/3 - 12002*t**8 + 11872*t**7 + 53327*t**6/3 + 6972*t**5 - 2771*t**4 - 12712*t**3/3 - 2013*t**2 - 468*t - 45
+factorization of G over Q: 4 irreducible factor(s)
+  factor t - 5/3 (deg 1, mult 1): exact rank 10 over Q[t]/(f) -> nullity 2; DROP; t = 5/3, beta^2 = 1/4, N = -25/2, s = -45/2
+  factor t - 3 (deg 1, mult 3): exact rank 10 over Q[t]/(f) -> nullity 2; DROP; t = 3, beta^2 = 1/2, N = -2, s = -9
+  factor t - 1 (mult 3): root t = 1: EXCLUDED (pole)
+  factor t + 1 (mult 15): root t = -1: EXCLUDED (pole)
+jump set (m >= 2): ['t - 5/3', 't - 3']
+  deck image of t - 5/3 = 0: t + 5/3: not a factor of G -> rank r, nullity 1: not a jump point
+  deck image of t - 3 = 0: t + 3: not a factor of G -> rank r, nullity 1: not a jump point
+saved results/S23_sheet2_W6.json (0.5 s)
+matrix data/M_sheet3_W6.json: sheet 3, W = 6, 24 x 12, M_poly = (t^2-1)^2 * 15 * M; note: 
+seed 68136
+random points ['-702/433', '930/773', '388/975', '-821/168']: ranks [11, 11, 11, 11]; r0 = 11
+  row set 0: point -702/433, R = [2, 4, 5, 6, 9, 14, 16, 17, 18, 19, 21], C = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], free columns [11]; det A(t*) = 26382365936579060109408685739910327437559788468331750916270466067967224769537070504661114651730913289737197562725736195301850308787680000000000000000000000000000000/101266882293481206344706083188788344813945340785448831475637115931478152446490874052690425794444446128339230859488321 != 0; degree bound 44 (row 44, column 44); 47 interpolation points; deg det A = 44; M_poly * w^(j) = 0 identically for every free j: verified; gcd of this set's 13 minors: degree 39
+  row set 1: point 930/773, R = [0, 2, 6, 8, 9, 15, 17, 18, 19, 20, 21], C = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], free columns [11]; det A(t*) = -3675907919387735253416917786400899653874740553225451698556109614856948663015770743877672302357315772135870414867424648775918878474240000000000000000000000/12019813589152259230136180729539387039194233450663310205181447276960330499177314384865579550260604161687974299447738813571532241 != 0; degree bound 44 (row 44, column 44); 47 interpolation points; deg det A = 44; M_poly * w^(j) = 0 identically for every free j: verified; gcd of this set's 13 minors: degree 39
+  row set 2: point 388/975, R = [0, 1, 6, 7, 8, 14, 17, 18, 19, 21, 22], C = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], free columns [11]; det A(t*) = 36998573384172658637864804506726487453496580507738688877119722410563108154606878791800424850255307177027516781115988676740940341370400511763677184/342756280915652146408861751345335084141879927569452987168846133422925488709598340619777445681393146514892578125 != 0; degree bound 44 (row 44, column 44); 47 interpolation points; deg det A = 44; M_poly * w^(j) = 0 identically for every free j: verified; gcd of this set's 13 minors: degree 39
+  row set 3: point -821/168, R = [1, 3, 5, 8, 9, 13, 15, 16, 17, 18, 22], C = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], free columns [11]; det A(t*) = 6646490737883539226278153845930006967677376767852146681562535126630450716407734095853487177761733277807680741266587261540642520904541015625/14252538273689177413230386832616804816444397990857538316835656037183556419584 != 0; degree bound 44 (row 44, column 44); 47 interpolation points; deg det A = 44; M_poly * w^(j) = 0 identically for every free j: verified; gcd of this set's 13 minors: degree 39
+r = rank over Q(t) = 11 (n = 12; generic nullity n - r = 1)
+D(t) = det A of row set 0: degree 44
+G(t) = gcd over 4 row sets: degree 26: t**26 - 50*t**25/3 + 117*t**24 - 1288*t**23/3 + 742*t**22 + 244*t**21 - 3850*t**20 + 20248*t**19/3 - 93*t**18 - 49582*t**17/3 + 65429*t**16/3 + 3920*t**15 - 112340*t**14/3 + 92680*t**13/3 + 15140*t**12 - 127504*t**11/3 + 58085*t**10/3 + 17094*t**9 - 69671*t**8/3 + 5384*t**7 + 7126*t**6 - 5900*t**5 + 2834*t**4/3 + 936*t**3 - 1841*t**2/3 + 154*t - 15
+factorization of G over Q: 4 irreducible factor(s)
+  factor t - 5/3 (deg 1, mult 1): exact rank 10 over Q[t]/(f) -> nullity 2; DROP; t = 5/3, beta^2 = 1/4, N = -25/2, s = -45/2
+  factor t - 3 (deg 1, mult 2): exact rank 10 over Q[t]/(f) -> nullity 2; DROP; t = 3, beta^2 = 1/2, N = -2, s = -9
+  factor t + 1 (mult 7): root t = -1: EXCLUDED (pole)
+  factor t - 1 (mult 16): root t = 1: EXCLUDED (pole)
+jump set (m >= 2): ['t - 5/3', 't - 3']
+  deck image of t - 5/3 = 0: t + 5/3: not a factor of G -> rank r, nullity 1: not a jump point
+  deck image of t - 3 = 0: t + 3: not a factor of G -> rank r, nullity 1: not a jump point
+saved results/S23_sheet3_W6.json (0.5 s)
